@@ -2,9 +2,9 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 5. Engine spike and marker build, in progress (VWF on all 7 glyph-lookup renderers; width gate next).
-  Last builds 2026-11-16: `build.py` (engine, JP text) sha1 1e81a765…, smoke ok, check ok;
-  `build.py --marker` → build/marker.gba sha1 e537daa1….
+- **Phase:** 5. Engine spike and marker build, in progress (VWF on every renderer incl. the small font; width gate next).
+  Last builds 2026-11-16: `build.py` (engine, JP text) sha1 dbca5fa5…, smoke ok, check ok;
+  `build.py --marker` → build/marker.gba sha1 ffe294b5….
 - **Done:**
   - Step 0: ROM pinned (`rom.sha1`), MesenCE 2.2.1 + GBA BIOS in `tools/mesen/`, guard hook in `.claude/settings.json`
     (canary blocked), pre-commit runs `tools/check.py` (a failing test was rejected), boot route `tools/routes/boot.txt`
@@ -55,14 +55,24 @@ Updated at the end of every session. Keep it to what the next session needs; his
     `[id]` + filler, so each field shows its pixel budget (marker ROM grows to 10 MiB: strings relocate).
     Shots: `work/qa/menu2/`, `work/qa/tb/`; full tour `warp_all.py build/marker.gba --out work/qa/mtour2`:
     44/44 scenes reached (sheets `work/qa/mtour2/scenes*.png`, not yet reviewed scene by scene).
-- **Next (phase 5):** battle speaker name tag is centred by character count (marker tag starts off-screen:
-  battle_forest, tutorial_battle; `docs/re/font.md`): find the centring (callers 0x080036D4 / 0x08003796 of
-  0x080029F0) and centre by pixel width. Check stray OBJ text over the battle command wheel in battle_forest
-  (`work/qa/tb/z.png`: "quick", "0000" near the wheel; new since the wider markers?). Then measure each variant from
-  `work/qa/mtour2` (EWRAM 0x0203FF00 checked, 44 scenes, original ROM: never read by
+  - Phase 5 small font (2026-11-16, fourth session): the battle speaker name tag is NOT the window routine but the
+    small 8x8 font (resource type 12): 0x08111B50 → OBJ tiles 0x3DB..0x3DF (40 px), centred by byte count at
+    0x0810F98A. Now `tag` (VWF, English small art `tools/ensmall.py`, drop shadow) + `tagw` (centre by pixels);
+    small-font BG labels 0x08110AE8 → `smapline` (ceil(w/8) tiles: the original's unbounded tile-per-char write
+    caused the stray "quick"/"hchc" fragments around the battle wheel). `build.py --qa ID=text` builds
+    build/qa.gba with single-entry overrides. Verified "Kogenta"/"Ryuuko" tags + "View foe" label
+    (`work/qa/tag2/z.png`, `work/qa/tag3/z.png`). New probes: `winopen.lua`, `objcalls.lua`, `linecalls.lua`,
+    `oamfind.lua`. Details `docs/re/font.md` "Small font".
+- **Next (phase 5):** the width gate. (1) Window data file (e.g. `tbl/windows.json`: per variant px budget, lines,
+  font big/small, measured/guess + shot; per-entry or per-file mapping) that `marker.py` and the lint both read:
+  small-font strings (the 0x08110AE8 labels, e.g. 410C0C; the tag names = `str_shikigami_names` and any speaker
+  names) must get markers sized in `ensmall` px (JP chars × 8 px, tag 40 px) — today they are sized in big-font px
+  and overrun in the marker build. Find which string ids each of the 10 callers of 0x08110AE8 draws
+  (`linecalls.lua` over all scenes). (2) Then measure each variant from `work/qa/mtour2` (EWRAM 0x0203FF00 checked, 44 scenes, original ROM: never read by
   the game, only zero-filled by CpuSet at boot/title (f1, f272, f283, f605); a zeroed VWF state falls back to the
   game's cell position, so it is safe to keep there.) Then:
   check the 0x080144F4 string drawer (battle quotes, `pad` strings, newline 0x81AD) in a battle;
+  0x08014098 size-8 mode (small font, OBJ) still runs the original fixed cells;
   widen the 5-cell shikigami-name copy; find code-built
   or base+immediate strings (Japanese that stays in the marker build; `jp_left.py` on build/marker.gba);
   identify `str_battle_kanji`; English name-entry grid; width gate per box variant (dialogue measured as
@@ -71,5 +81,5 @@ Updated at the end of every session. Keep it to what the next session needs; his
 - **Known limits of the warp:** event scenes run over map 23 (the house) unless the script changes map itself
   (`map=` per scene overrides); which map normally hosts each event is not mapped yet (NPCs come from `/116`
   entries in map scripts 8000+). No GOD/NOENC yet (battles: mash wins; `poke=` for HP).
-- **Open bugs:** none.
+- **Open bugs:** none. (battle_win's scene shot is black in both the old and new tours: a fade frame, not a crash.)
 - **Waiting on the user:** nothing. (Title logo kept Japanese per D5: no official English logo exists.)
