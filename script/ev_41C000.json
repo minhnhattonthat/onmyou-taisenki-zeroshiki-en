@@ -6,42 +6,42 @@
    "script": "41FCFC",
    "op": "073 0001",
    "jp": "回復ポイントだ…{0010}",
-   "en": ""
+   "en": "A recovery point...{0010}"
   },
   {
    "id": "41FD48",
    "script": "41FCFC",
    "op": "073 0001",
    "jp": "式神のＨＰが全快した！{0010}",
-   "en": ""
+   "en": "Your shikigami's HP is fully restored!{0010}"
   },
   {
    "id": "41FD9C",
    "script": "41FD70",
    "op": "073 0001",
    "jp": "ここに入っては、なんねぇべ{0010}",
-   "en": ""
+   "en": "Ya can't go in there, nope.{0010}"
   },
   {
    "id": "41FDD4",
    "script": "41FDC8",
    "op": "073 0001",
    "jp": "敵だ…。{0010}",
-   "en": ""
+   "en": "An enemy....{0010}"
   },
   {
    "id": "41FE1C",
    "script": "41FDC8",
    "op": "073 0001",
    "jp": "負け！{0010}",
-   "en": ""
+   "en": "Lost!{0010}"
   },
   {
    "id": "41FE42",
    "script": "41FDC8",
    "op": "073 0001",
    "jp": "勝ち！{0010}",
-   "en": ""
+   "en": "Won!{0010}"
   }
  ]
 }

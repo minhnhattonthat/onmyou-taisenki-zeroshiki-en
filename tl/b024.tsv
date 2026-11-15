@@ -1,0 +1,150 @@
+40BB78		str_areas	areas 224px x1	太白神社（地下１５Ｆ）
+40BB90		str_areas	areas 224px x1	太白神社（地下１４Ｆ）
+40BBA8		str_areas	areas 224px x1	太白神社（地下１３Ｆ）
+40BBC0		str_areas	areas 224px x1	太白神社（地下１２Ｆ）
+40BBD8		str_areas	areas 224px x1	太白神社（地下１１Ｆ）
+40BBF0		str_areas	areas 224px x1	太白神社（地下１０Ｆ）
+40BC08		str_areas	areas 224px x1	太白神社（地下９Ｆ）
+40BC20		str_areas	areas 224px x1	太白神社（地下８Ｆ）
+40BC38		str_areas	areas 224px x1	太白神社（地下７Ｆ）
+40BC50		str_areas	areas 224px x1	太白神社（地下６Ｆ）
+40BC68		str_areas	areas 224px x1	太白神社（地下５Ｆ）
+40BC80		str_areas	areas 224px x1	太白神社（地下４Ｆ）
+40BC98		str_areas	areas 224px x1	太白神社（地下３Ｆ）
+40BCB0		str_areas	areas 224px x1	太白神社（地下２Ｆ）
+40BCC8		str_areas	areas 224px x1	太白神社（地下１Ｆ）
+40BCE0		str_areas	areas 224px x1	鬼門道
+40BCE8		str_areas	areas 224px x1	地流ビル（地下５Ｆ）
+40BD00		str_areas	areas 224px x1	地流ビル（地下４Ｆ）
+40BD18		str_areas	areas 224px x1	地流ビル（地下３Ｆ）
+40BD30		str_areas	areas 224px x1	地流ビル（地下２Ｆ）
+40BD48		str_areas	areas 224px x1	地流ビル（地下１Ｆ）
+40BD60		str_areas	areas 224px x1	地流ビル前
+40BD6C		str_areas	areas 224px x1	地流中継基地（地下３Ｆ）
+40BD88		str_areas	areas 224px x1	地流中継基地（地下２Ｆ）
+40BDA4		str_areas	areas 224px x1	地流中継基地（地下１Ｆ）
+40BDC0		str_areas	areas 224px x1	ダム湖
+40BDC8		str_areas	areas 224px x1	太白神社
+40BDD4		str_areas	areas 224px x1	太陰神社
+40BDE0		str_areas	areas 224px x1	天流の分社
+40BDEC		str_areas	areas 224px x1	病院
+40BDF4		str_areas	areas 224px x1	学校（３Ｆ）
+40BE04		str_areas	areas 224px x1	学校（２Ｆ）
+40BE14		str_areas	areas 224px x1	学校（１Ｆ）
+40BE24		str_areas	areas 224px x1	学校（校舎前）
+40BE34		str_areas	areas 224px x1	京東町
+40BE3C		str_areas	areas 224px x1	京北町
+40BE44		str_areas	areas 224px x1	京西町
+40BE4C		str_areas	areas 224px x1	京中町
+40BE54		str_areas	areas 224px x1	京南町
+40BE5C		str_areas	areas 224px x1	天神町
+40BE64		str_areas	areas 224px x1	京北エリア
+40BE70		str_areas	areas 224px x1	京東エリア
+40BE7C		str_areas	areas 224px x1	京西エリア
+40BE88		str_areas	areas 224px x1	京中エリア
+40BE94		str_areas	areas 224px x1	京南エリア
+40BEA0		str_areas	areas 224px x1	天神エリア
+40C9BC		str_battle_msgs	window 220px x2	ＨＰは吸収できなかった！
+40C9D8		str_battle_msgs	window 220px x2	のＨＰを吸収した！
+40D3B0		str_battle_msgs	window 220px x2	【
+40D3B4		str_battle_msgs	window 220px x2	】
+40D3B8		str_battle_msgs	window 220px x2	すでに同じ効果が　　　　　　かかっている！
+40D3E4		str_battle_msgs	window 220px x2	効果がなかった！
+40D3F8		str_battle_msgs	window 220px x2	１回だけ自身蘇生の効果！
+40D734		str_battle_msgs	window 220px x2	に・に・・・
+40D744		str_battle_msgs	window 220px x2	敵は逃げ出した！
+40D758		str_battle_msgs	window 220px x2	に～げろおぉ～～～～～っ！！
+40D778		str_battle_msgs	window 220px x2	逃げることはできないっ！！
+40D794		str_battle_msgs	window 220px x2	よし！　交替だ！
+40D7A8		str_battle_msgs	window 220px x2	　降・神！
+40D7B4		str_battle_msgs	window 220px x2	敵は、
+40D7BC		str_battle_msgs	window 220px x2	を降神！
+40D7C8		str_battle_msgs	window 220px x2	仲間のＨＰが回復した！
+40D7E0		str_battle_msgs	window 220px x2	仲間のステータス異常が　　　回復した！
+40D808		str_battle_msgs	window 220px x2	ＺＺＺ・・・
+40D818		str_battle_msgs	window 220px x2	動けない・・・
+40D828		str_battle_msgs	window 220px x2	石化している・・・
+40D83C		str_battle_msgs	window 220px x2	・・・・・
+40D878		str_battle_msgs	window 220px x2	を倒した！
+40D884		str_battle_msgs	window 220px x2	は倒された！
+40D894		str_battle_msgs	window 220px x2	はふっかつ！！
+40D8A8		str_battle_msgs	window 220px x2	逃げられなかった！
+40D8BC		str_battle_msgs	window 220px x2	逃げることができた！
+40D8D4		str_battle_msgs	window 220px x2	敵に逃げられた！
+40D8E8		str_battle_msgs	window 220px x2	効果がなかった！
+40D8FC		str_battle_msgs	window 220px x2	すでに呪縛されている！
+40D914		str_battle_msgs	window 220px x2	呪縛の効果！！
+40D964		str_battle_msgs	window 220px x2	攻撃力が
+40D970		str_battle_msgs	window 220px x2	アップ！
+40D97C		str_battle_msgs	window 220px x2	効果が相殺されて消え去った！
+40D99C		str_battle_msgs	window 220px x2	すでに同じ効果が　　　　　　かかっている！
+40D9C8		str_battle_msgs	window 220px x2	効果がなかった！
+40D9DC		str_battle_msgs	window 220px x2	加護力が
+40D9E8		str_battle_msgs	window 220px x2	素早さが
+40D9F4		str_battle_msgs	window 220px x2	防御力が
+40DA00		str_battle_msgs	window 220px x2	妖力が
+40DA48		str_battle_msgs	window 220px x2	すでに睡眠にかかっている！
+40DA64		str_battle_msgs	window 220px x2	睡眠の効果！！
+40DA74		str_battle_msgs	window 220px x2	すでに毒にかかっている！
+40DA90		str_battle_msgs	window 220px x2	毒の効果！！
+40DAA0		str_battle_msgs	window 220px x2	すでに石化している！
+40DAB8		str_battle_msgs	window 220px x2	石化の効果！！
+40DAC8		str_battle_msgs	window 220px x2	すでに呪いにかかっている！
+40DAE4		str_battle_msgs	window 220px x2	呪いの効果！！
+40DAF4		str_battle_msgs	window 220px x2	すでに混乱している！
+40DB0C		str_battle_msgs	window 220px x2	混乱の効果！！
+40DB1C		str_battle_msgs	window 220px x2	！！！
+40DB24		str_battle_msgs	window 220px x2	すでに呪縛されている！
+40DB3C		str_battle_msgs	window 220px x2	呪縛の効果！！
+40DC20		str_battle_msgs	window 220px x2	魅了の効果！！
+40DC30		str_battle_msgs	window 220px x2	ダウン！
+40DC3C		str_battle_msgs	window 220px x2	幻影の効果！
+40DC4C		str_battle_msgs	window 220px x2	カウンターの効果！！
+40E2E0		str_battle_msgs	window 220px x2	【防御】
+40E31C		str_battle_msgs	window 220px x2	自分を攻撃！　
+40E330		str_battle_msgs	window 220px x2	のダメージ！
+40E340		str_battle_msgs	window 220px x2	のダメージを受けた！
+40E358		str_battle_msgs	window 220px x2	のダメージを与えた！
+40E370		str_battle_msgs	window 220px x2	　睡眠から覚めた！
+40E384		str_battle_msgs	window 220px x2	のカウンターを与えた！
+40E39C		str_battle_msgs	window 220px x2	のカウンターを受けた！
+40E3B4		str_battle_msgs	window 220px x2	両者
+40E3BC		str_battle_msgs	window 220px x2	幻影が身代わりとなった！
+40E3D8		str_battle_msgs	window 220px x2	の毒ダメージ！
+40E3E8		str_battle_msgs	window 220px x2	の呪いダメージ！
+40E52C		str_battle_msgs	window 220px x2	【
+40E530		str_battle_msgs	window 220px x2	】
+413BFC		str_char_names	speaker_tag 40px x1 small	しんじ
+413C04		str_char_names	speaker_tag 40px x1 small	ただし
+413C0C		str_char_names	speaker_tag 40px x1 small	ゆみこ
+413C14		str_char_names	speaker_tag 40px x1 small	まこと
+413C1C		str_char_names	speaker_tag 40px x1 small	はなむら
+413C28		str_char_names	speaker_tag 40px x1 small	むらびと
+413C34		str_char_names	speaker_tag 40px x1 small	しじょう
+413C40		str_char_names	speaker_tag 40px x1 small	なみえ
+413C48		str_char_names	speaker_tag 40px x1 small	まりあ
+413C50		str_char_names	speaker_tag 40px x1 small	じょう
+413C58		str_char_names	speaker_tag 40px x1 small	たけお
+413C60		str_char_names	speaker_tag 40px x1 small	あい
+413C68		str_char_names	speaker_tag 40px x1 small	ゆうじ
+413C70		str_char_names	speaker_tag 40px x1 small	てれやっこ
+413C7C		str_char_names	speaker_tag 40px x1 small	りゅうじ
+413C88		str_char_names	speaker_tag 40px x1 small	みく
+413C90		str_char_names	speaker_tag 40px x1 small	たざわ
+413C98		str_char_names	speaker_tag 40px x1 small	よしだ
+413CA0		str_char_names	speaker_tag 40px x1 small	しみず
+413CA8		str_char_names	speaker_tag 40px x1 small	リンダ
+413CB0		str_char_names	speaker_tag 40px x1 small	つねやっこ
+413CBC		str_char_names	speaker_tag 40px x1 small	しげお
+413CC4		str_char_names	speaker_tag 40px x1 small	しげた
+413CCC		str_char_names	speaker_tag 40px x1 small	はらだ
+413CD4		str_char_names	speaker_tag 40px x1 small	りゅういち
+413CE0		str_char_names	speaker_tag 40px x1 small	めぐみ
+413CE8		str_char_names	speaker_tag 40px x1 small	しほ
+413CF0		str_char_names	speaker_tag 40px x1 small	しまだ
+413CF8		str_char_names	speaker_tag 40px x1 small	ゆめじ
+413D00		str_char_names	speaker_tag 40px x1 small	きょういち
+413D0C		str_char_names	speaker_tag 40px x1 small	すずえ
+413D14		str_char_names	speaker_tag 40px x1 small	まるやっこ
+413D20		str_char_names	speaker_tag 40px x1 small	すぎむら
+413D2C		str_char_names	speaker_tag 40px x1 small	みちこ

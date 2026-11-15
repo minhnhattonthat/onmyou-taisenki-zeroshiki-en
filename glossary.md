@@ -1,29 +1,139 @@
-# Glossary - <Game title>
+# Glossary - Onmyou Taisenki Zeroshiki
 
 Binding for every translator and reviewer. Agents propose additions in reports; only the controller edits this file.
+`tools/batches.py check` enforces the tables: a JP term in a line needs one of its EN forms (separated by ` / `).
 
 ## Rulings (asked of the user once; options and reasons in docs/decisions.md)
-- Honorifics: <kept, hyphenated (Johannes-san) | dropped>. Name order: <JP | Western>.
-- Romanisation source: <official art / anime / Hepburn>.
-- Credits: <stay kanji | English>.
-- Register / flavour: <e.g. keep light JP flavour>. Sound effects: <*Slam!*>.
-- Abbreviations: <default: full names and terms everywhere, prefer engine changes over shortening>.
+- Honorifics: kept, hyphenated (Yakumo-san, Riku-kun, Mahoroba-sama); 先生 as a title = "-sensei", as a job = "teacher".
+  Name order: Western (given name first). (D1)
+- Romanisation source: official English names where they exist (none known for this series), else Hepburn without
+  macrons: ソウタロウ Sotaro, リュージ Ryuji, ユーマ Yuma, ソーマ Soma. (D2)
+- Credits: English. (D3)
+- Register / flavour: keep light Japanese flavour (shikigami, Tojinshi, -san, onmyoji terms); speech quirks carried
+  by English devices (see Style rules). Sound effects: plain words with ! ("Hah!", "Ugh...").
+- Abbreviations: full names and terms everywhere, prefer engine changes over shortening (D4).
 
 ## Style rules
-- Punctuation map: 「」 -> "...", 『』 -> '...', ・・・ -> ..., ！？ -> !?, <more>.
-- <voice notes per character, or point to docs/style-reference.md>
+- Punctuation map: 「」 -> "...", 『』 -> '...', … and ・・・ -> ..., ！？ -> !?, ～ -> drop or "~" only in sing-song
+  speech, full-width ＨＰ -> HP.
+- Control codes stay exactly as in the JP, same count: {0010} = new page (also closes the box), {0000} = line break
+  inside a page (max 2 lines a page; line 1 <= 224 px, line 2 <= 216 px, ~45 / ~43 characters), {00C8} = the
+  player's name (45 px, write no suffix after it: "{00C8}'s" is fine, "{00C8}th" is not).
+- Plain ASCII only. No a/an right before {00C8}.
+- First-person markers carry voice: オレ = rough boy ("I", contractions, "ya", "gonna"); ボク = polite boy;
+  ワシ / わし = old man ("my boy", "eh?", "hmm"); 拙者 = samurai ("this one", formal, "indeed"); マロ = courtly
+  noble ("We"/"I" with old-fashioned diction, "most", "pray"); キサマ = hostile "you", "bastard"-level contempt only
+  when the scene is vicious; ～ニャ = cat quirk ("-nya" kept at sentence ends, sparingly); ～べ / なんねぇべ =
+  rural dialect (dropped g's: "ya can't go in there").
+- Tutorial / system lines: short, direct, second person.
 
 ## Characters
 | JP | EN | max | notes | Avoid |
 |---|---|---|---|---|
+| リク | Riku | 45px | default player name; text uses {00C8} | |
+| ヤクモ | Yakumo | | Tenryu Tojinshi | |
+| コゲンタ | Kogenta | | Byakko (white tiger) shikigami | |
+| マホロバ | Mahoroba | | | |
+| マサオミ | Masaomi | | | |
+| ユーマ | Yuma | | | Yuuma |
+| ソーマ | Soma | | | Souma |
+| ソウタロウ | Sotaro | | | Soutarou |
+| リュージ | Ryuji | | | Ryuuji |
+| モモ | Momo | | | |
+| ナヅナ | Nazuna | | | |
+| ミササ | Misasa | | | |
+| ヤマセ | Yamase | | | |
+| テル | Teru | | | |
+| ヒロコ | Hiroko | | | |
+| イッセイ | Issei | | | |
+| オロチ | Orochi | | | |
+| ランマル | Ranmaru | | | |
+| ナギ | Nagi | | | |
+| ウンリュウ | Unryu | | | |
+| カゲロウ | Kagero | | | Kagerou |
+| シラヌイ | Shiranui | | | |
+| カムイ | Kamui | | | |
+| ゲンタロウ | Gentaro | | shikigami | |
+| ランゲツ | Rangetsu | | shikigami | |
+| ブリュネ | Brune | | shikigami (Seiryu) | |
+| フサノシン | Fusanoshin | | shikigami (Suzaku) | |
+| リクドウ | Rikudo | | shikigami (Genbu) | |
+| オニシバ | Onishiba | | shikigami | |
+| ツイガ | Tsuiga | | shikigami; あか/くろ/しろ = Red/Black/White | |
+
+Other shikigami and NPC names: Hepburn without macrons, as in `script/str_shikigami_names.json` and
+`script/str_char_names.json` once translated (the tables are the reference).
 
 ## Places
 | JP | EN | max | notes | Avoid |
 |---|---|---|---|---|
+| 京東町 | East Kyo Town | | 京 town names: direction + Kyo | |
+| 京北町 | North Kyo Town | | | |
+| 京西町 | West Kyo Town | | | |
+| 京中町 | Central Kyo Town | | | |
+| 京南町 | South Kyo Town | | | |
+| 天神町 | Tenjin Town | | | |
+| 伏魔殿 | Fukumaden | | the demon realm | |
+| 鬼門塚 | Kimon Mound | | 鬼門 = Kimon (the demon gate) | |
+| 太白神社 | Taihaku Shrine | | | |
+| 太陰神社 | Taiin Shrine | | | |
+| 御所 | the Gosho | | the palace | |
+| 妙霊山 | Mt. Myorei | | | |
+| 黄龍のいおり | Koryu's Hermitage | | | |
+| 天流修練場 | Tenryu Training Hall | | | |
+| 天流の分社 | Tenryu Branch Shrine | | | |
+| 神流の隠れ家 | Jinryu Hideout | | | |
+| 霊石塚 | Spirit Stone Mound | | | |
+| 聖獣のほこら | Sacred Beast Sanctum | | ほこら = Sanctum | |
+| 地流ビル | Chiryu Building | | | |
+| 地流中継基地 | Chiryu Relay Base | | | |
+| 謎の洞窟 | Mystery Cave | | | |
+| 竹林 | bamboo grove / Bamboo Grove | | | |
 
 ## Items / skills / terms
 | JP | EN | max | notes | Avoid |
 |---|---|---|---|---|
+| 式神 | shikigami | | never "familiar" | familiar |
+| 闘神士 | Tojinshi | | shikigami fighters; plural Tojinshi | Toujinshi |
+| 天流 | Tenryu | | faction | Tenryuu |
+| 地流 | Chiryu | | faction | Chiryuu |
+| 神流 | Jinryu | | faction | |
+| 陰陽師 | onmyoji | | | |
+| 宗家 | head family / Head of the Family / Grand Master | | head of a school | |
+| 妖怪 | yokai | | | youkai |
+| 邪気 | evil aura | | | |
+| 聖獣 | Sacred Beast | | | |
+| 白虎 | Byakko | | | |
+| 朱雀 | Suzaku | | | |
+| 青龍 | Seiryu | | | |
+| 玄武 | Genbu | | | |
+| 黄龍 | Koryu | | | |
+| 相性 | affinity / matchup | | elemental matchup | |
+| 連携攻撃 | combo attack / Combo | | | |
+| 必殺技 | special move / super move | | | |
+| 祭壇 | altar | | | |
+| 霊石 | spirit stone | | | |
+| 符 | talisman | | | |
+| 経験値 | EXP / experience | | | |
+| ＨＰ | HP | | | |
+| 陰陽道 | Way of Onmyo | | | |
+| 印 | seal | | the hand seals the player uses in battle | |
+| 楓族 | Maple clan | | kind (族) names: English meaning + "clan" | |
+| 消雪族 | Snowmelt clan | | | |
+| 雷火 | Thunderfire | | kind; "Fusanoshin of Thunderfire" | |
 
 ## Decisions from earlier batches
-- <batch> <JP> -> <EN> (reason)
+- b001-b004 (contract scenes): けいやくした -> "You formed a contract with X."; けいやく -> contract; だんな -> "boss";
+  item quotes keep "..." ("honey", "sake", "gold koban", "Peacock Fan", "Silver Sake Cup", "Golden Arrow").
+- Shikigami voices so far: Goroza rough ("boss", dropped g's); Takamaru/Kotaro solemn; Bannai polite; Juzo/Fuji
+  samurai "this one"; Kujirabee/Genpaku old man ("my boy", "eh?"); Sanemaro courtly "We/thou ... ojaru";
+  Zukumaru/Masurao Kansai hustler ("pal", "ya"); Isoroku Satsuma ("lad", "I reckon"); Kuradayu archaic diviner;
+  Chiyorozu sultry ("darlin'"); Namazubo DJ ("the great me", "Yo!"); Onishiba drifter ("this fella", "boss");
+  Kantaro country boy ("y'know!" for っしょ); Brune soldier ("sir!"); Otochika baby-talk genius ("it iz", z for s);
+  Komachi/Komaki/Jakuya bratty ("Stuuupid!").
+- Shikigami kinds (str_shikigami_kinds) get English meanings: 霜花 Frost Flower, 埋火 Embers, 柊 Holly, 秋水 Autumn
+  Water, 白銀 Silver, 豊穣 Harvest, 癒火 Healing Fire, 楓 Maple, 甘露 Nectar, 赤銅 Copper, 繁茂 Overgrowth, 大火 Blaze,
+  榎 Hackberry, 消雪 Snowmelt, 青錫 Blue Tin, 芽吹 Sprout, 雷火 Thunderfire, 椿 Camellia, 凝寂 Stillness, 黒鉄 Black
+  Iron; 麒麟/白虎/朱雀/青龍/玄武 keep their names (Kirin, Byakko, Suzaku, Seiryu, Genbu). The 32 px menu cells need
+  engine work (phase 7) for these.
+- Puns: 誇り/埃 (pride/dust) -> "pride" / lion pride; 鯛/恋 quiz kept as "koi"... love (polish candidate).

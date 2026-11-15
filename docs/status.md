@@ -2,11 +2,10 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 6. Translate, not started (phase 5 done 2026-11-16: width gate complete, every variant in
-  `tbl/windows.json` measured, link-cable menus `static`).
-  Last builds 2026-11-16 (session 7): `build.py` (engine, JP text) sha1 896f2839…, smoke ok, check ok (28 tests,
-  lint 0 errors); `build.py --marker` → build/marker.gba sha1 4aeb352d…, smoke ok, tour
-  `warp_all.py build/marker.gba --out work/qa/mtour3` 50/50 scenes.
+- **Phase:** 6. Translate in progress: batches b001-b004 of 41 translated (262 of 4,843 entries; contract scenes
+  ev_41C000/420000/424000 merged, b004's ev_428000 part held until b005).
+  Last build 2026-11-16 (session 8): `build.py` sha1 546cb33c…, smoke ok, check ok (29 tests, lint 0, batches
+  check 0). Marker build unchanged (sha1 4aeb352d…, tour `work/qa/mtour3` 50/50).
 - **Done:**
   - Step 0: ROM pinned (`rom.sha1`), MesenCE 2.2.1 + GBA BIOS in `tools/mesen/`, guard hook in `.claude/settings.json`
     (canary blocked), pre-commit runs `tools/check.py` (a failing test was rejected), boot route `tools/routes/boot.txt`
@@ -90,8 +89,18 @@ Updated at the end of every session. Keep it to what the next session needs; his
     `link_window` (static: window system, needs a partner). Lint: keep_jp variants reject `en`; markers honour
     `chars`. New probe `tools/debug/mapcalls.lua`. keystone gotcha: no sp-relative byte/halfword access
     (`_asm` rejects it). Details `docs/re/font.md` "names_list", "Name entry".
-- **Next (phase 6, translate; `references/translation.md`):** batch the 57 `script/*.json` files with the
-  translator agent type; the lint (`tools/check.py`) is the width gate (`tools/windows.py show` for budgets).
+  - Phase 6 set-up (2026-11-16, session 8): `glossary.md` filled (rulings D1-D4, names, places, terms, kind names,
+    per-shikigami voices), `docs/translator-brief.md`, `docs/style-reference.md`, `tools/batches.py` (skill asset,
+    adapted: `{XXXX}` codes, pixel widths via `lint.py`, keep_jp skipped, `\n` escaped in TSV, batches in tracked
+    `tl/`, grouped by event script; `merge` writes whole files only and reports the rest as held). `check.py` now
+    also runs `batches.py check` (glossary). Batches: `tl/b001..b041.tsv` (split --size 3000), outputs
+    `tl/bNNN.out.tsv`. Speaker hints: op `036 00000001` = the player (ボク); `098 00XX0000` = portrait XX.
+- **Next (phase 6, translate; `references/translation.md`):** translate `tl/b005.tsv` onward in order (read each
+  with Read in ~40-line chunks: context-mode cuts larger outputs), write `tl/bNNN.out.tsv`, `batches.py check bNNN`
+  to OK, then `batches.py merge b004 b005 ...` (held files merge once complete), `tools/check.py`, build, smoke,
+  commit. No translator agent type is installed in this harness and the Orca brief forbids helpers: the worker
+  translates itself, ~4 batches per session. Still to write: `docs/synopsis.md` (build it from the story batches
+  as they are read). After b041: reviewer pass (fresh read-only pass or `codex exec`), polish list `docs/polish.md`.
   Translator notes to carry into the briefs: str_battle_msgs 40E534 starts with `\n` (code-built weapon/skill
   message); str_abilities rows split with `\n` (224 + 224 px); default name 40C51C ≤ 4 letters; keep_jp files
   (str_battle_kanji, str_debug_menu, str_battle_help, name-entry grid rows) stay empty.

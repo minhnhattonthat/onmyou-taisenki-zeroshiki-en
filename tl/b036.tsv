@@ -1,0 +1,150 @@
+13A410		str_quotes10	window 220px x2	敵との相性悪いけど　　　　　おいら負けねぇ！
+13A440		str_quotes10	window 220px x2	敵との相性悪いけど　　　　　おいらがんばるよ！
+13A470		str_quotes10	window 220px x2	だんな！この闘い、あっしの　分が悪いですぜ！
+13A4A0		str_quotes10	window 220px x2	アイツと当たるとは　　　　　運命のいたずらですかねぇ
+13A4D8		str_quotes10	window 220px x2	この闘い、ボクのほうが　　　不利だよー！
+13A504		str_quotes10	window 220px x2	敵との相性が悪いよー！
+13A51C		str_quotes10	window 220px x2	この敵が相手では　　　　　　私の分が悪い
+13A548		str_quotes10	window 220px x2	この敵が相手ではマズイ…
+13A564		str_quotes10	window 220px x2	Ｈｅｙ！敵との相性が悪いぜ　早くかえてくれＹｏ！
+13A598		str_quotes10	window 220px x2	Ｙｏ！この闘いオレさまの分が悪そうだぜ！
+13A5C4		str_quotes10	window 220px x2	この闘い、あちきが不利だねぇ
+13A5E4		str_quotes10	window 220px x2	この相性の悪い相手と　　　　あちきは闘うのかい？
+13A618		str_quotes10	window 220px x2	おい！この敵はオレには　　　不利な相手だぜ！
+13A648		str_quotes10	window 220px x2	コイツはオレのほうが不利だな
+13A668		str_quotes10	window 220px x2	この敵との相性だと　　　　　ネネ負けちゃうよ！
+13A698		str_quotes10	window 220px x2	あー！この闘いネネのほうが　不利だよ！
+13A6C0		str_quotes10	window 220px x2	この闘い敵のほうが有利ね
+13A6DC		str_quotes10	window 220px x2	敵との相性が悪いわね
+13A6F4		str_quotes10	window 220px x2	この闘い、私のほうが不利だ
+13A710		str_quotes10	window 220px x2	このままだと敵が有利ですぞ！
+13A730		str_quotes10	window 220px x2	この闘い、わらわのほうが　　不利でありまする
+13A760		str_quotes10	window 220px x2	占いによりますと敵との　　　相性は最悪とでておりまする
+13A798		str_quotes10	window 220px x2	この闘いは相手のほうが　　　有利でごわす
+13A7C4		str_quotes10	window 220px x2	この相性で闘うと　　　　　　いかんでごわす
+13A7F0		str_quotes10	window 220px x2	この敵との相性だと　　　　　あたい負けちゃうよー！
+13A824		str_quotes10	window 220px x2	あーん！敵とあたいの　　　　相性が悪いよぉー！
+13A854		str_quotes10	window 220px x2	まずいぜ！　この闘い　　　　おいらのほうが不利だぜ！
+13A88C		str_quotes10	window 220px x2	敵とおいらの相性は悪いぜ！
+13A8A8		str_quotes10	window 220px x2	あんさん！こりゃあ　　　　　わいが不利でっせ！
+13A8D8		str_quotes10	window 220px x2	あんさん！こりゃあ　　　　　相手が悪いでっせ！
+13A908		str_quotes10	window 220px x2	マロと闘う相手との　　　　　相性が悪いでおじゃる
+13A93C		str_quotes10	window 220px x2	敵との相性は悪いのじゃが　　闘うでおじゃるか？
+13A96C		str_quotes10	window 220px x2	この闘いはわしのほうが　　　分が悪いのぅ
+13A998		str_quotes10	window 220px x2	敵はわしの種族にとって　　　天敵みたいなもんじゃ
+13A9CC		str_quotes10	window 220px x2	敵のデータによりますと　　　私のほうが分が悪いでござる
+13AA04		str_quotes10	window 220px x2	それがしの分析ですと　　　　敵との相性は最悪でござる
+13AA3C		str_quotes10	window 220px x2	敵との相性は悪いが　　　　　このまま闘おう！
+13AA6C		str_quotes10	window 220px x2	これは相手が悪いな！
+13AA84		str_quotes10	window 220px x2	敵との相性は最悪ですが　　　何とか闘ってみましょう
+13AAB8		str_quotes10	window 220px x2	この闘いは私のほうが　　　　いささか分が悪いようです
+13AAF0		str_quotes10	window 220px x2	どうやら、敵との相性が　　　悪いようだ
+13AB18		str_quotes10	window 220px x2	むう…この勝負はわれのほうの分が悪いようだ
+13AB44		str_quotes10	window 220px x2	こりゃあ、敵との　　　　　　相性は最悪だぜ！
+13AB74		str_quotes10	window 220px x2	コイツぁ、相手が悪いぜ！
+127968		str_save	obj_cells 32px x1	記録
+127970		str_save	obj_cells 48px x1	読込み
+127980		str_save	obj_cells 128px x1	上書きしますか？
+127994		str_save	obj_cells 96px x1	記録中・・・
+1279A4		str_save	obj_cells 112px x1	読込み中・・・
+1279B4		str_save	obj_cells 128px x1	記録終了しました
+1279C8		str_save	obj_cells 128px x1	記録失敗しました
+1279DC		str_save	obj_cells 192px x1	セーブデータがありません
+12B440		str_shikigami_kinds	obj_cells 32px x1	Ф麟
+12B448		str_shikigami_kinds	obj_cells 32px x1	凝寂
+12B450		str_shikigami_kinds	obj_cells 32px x1	黒鉄
+12B458		str_shikigami_kinds	obj_cells 32px x1	玄武
+12B460		str_shikigami_kinds	obj_cells 32px x1	霜花
+12B468		str_shikigami_kinds	obj_cells 32px x1	埋火
+12B470		str_shikigami_kinds	obj_cells 16px x1	柊
+12B474		str_shikigami_kinds	obj_cells 32px x1	秋水
+12B47C		str_shikigami_kinds	obj_cells 32px x1	白銀
+12B484		str_shikigami_kinds	obj_cells 32px x1	白虎
+12B48C		str_shikigami_kinds	obj_cells 32px x1	豊穣
+12B494		str_shikigami_kinds	obj_cells 32px x1	癒火
+12B49C		str_shikigami_kinds	obj_cells 16px x1	楓
+12B4A0		str_shikigami_kinds	obj_cells 32px x1	甘露
+12B4A8		str_shikigami_kinds	obj_cells 32px x1	赤銅
+12B4B0		str_shikigami_kinds	obj_cells 32px x1	朱雀
+12B4B8		str_shikigami_kinds	obj_cells 32px x1	繁茂
+12B4C0		str_shikigami_kinds	obj_cells 32px x1	大火
+12B4C8		str_shikigami_kinds	obj_cells 16px x1	榎
+12B4CC		str_shikigami_kinds	obj_cells 32px x1	消雪
+12B4D4		str_shikigami_kinds	obj_cells 32px x1	青錫
+12B4DC		str_shikigami_kinds	obj_cells 32px x1	青龍
+12B4E4		str_shikigami_kinds	obj_cells 32px x1	芽吹
+12B4EC		str_shikigami_kinds	obj_cells 32px x1	雷火
+12B4F4		str_shikigami_kinds	obj_cells 16px x1	椿
+12B024		str_shikigami_names	small_tag 40px x1 small	ワニュウドウ
+12B034		str_shikigami_names	small_tag 40px x1 small	カマイタチ
+12B040		str_shikigami_names	small_tag 40px x1 small	コロポックル
+12B050		str_shikigami_names	small_tag 40px x1 small	トラブシン
+12B05C		str_shikigami_names	small_tag 40px x1 small	ツイガあか
+12B068		str_shikigami_names	small_tag 40px x1 small	ツイガくろ
+12B074		str_shikigami_names	small_tag 40px x1 small	ツイガしろ
+12B080		str_shikigami_names	small_tag 40px x1 small	カブトオウ
+12B08C		str_shikigami_names	small_tag 40px x1 small	ココトウ
+12B098		str_shikigami_names	small_tag 40px x1 small	ラクサイ
+12B0A4		str_shikigami_names	small_tag 40px x1 small	クロイチ
+12B0B0		str_shikigami_names	small_tag 40px x1 small	コウフク
+12B0BC		str_shikigami_names	small_tag 40px x1 small	ジャジャ
+12B0C8		str_shikigami_names	small_tag 40px x1 small	リュウコン
+12B0D4		str_shikigami_names	small_tag 40px x1 small	ヒフミヨ
+12B0E0		str_shikigami_names	small_tag 40px x1 small	ゲンタロウ
+12B0EC		str_shikigami_names	small_tag 40px x1 small	アンジ
+12B0F4		str_shikigami_names	small_tag 40px x1 small	ヒヨシノ
+12B100		str_shikigami_names	small_tag 40px x1 small	ダイカク
+12B10C		str_shikigami_names	small_tag 40px x1 small	ミユキ
+12B114		str_shikigami_names	small_tag 40px x1 small	イツム
+12B11C		str_shikigami_names	small_tag 40px x1 small	ライザ
+12B124		str_shikigami_names	small_tag 40px x1 small	ニンクロウ
+12B130		str_shikigami_names	small_tag 40px x1 small	ヤタロウ
+12B13C		str_shikigami_names	small_tag 40px x1 small	コンゴウ
+12B148		str_shikigami_names	small_tag 40px x1 small	マガホシ
+12B154		str_shikigami_names	small_tag 40px x1 small	ナナヤ
+12B15C		str_shikigami_names	small_tag 40px x1 small	キバチヨ
+12B168		str_shikigami_names	small_tag 40px x1 small	フウライ
+12B174		str_shikigami_names	small_tag 40px x1 small	ジョニザ
+12B180		str_shikigami_names	small_tag 40px x1 small	ホウシュン
+12B18C		str_shikigami_names	small_tag 40px x1 small	カニエモン
+12B198		str_shikigami_names	small_tag 40px x1 small	リクドウ
+12B1A4		str_shikigami_names	small_tag 40px x1 small	ガンゾウ
+12B1B0		str_shikigami_names	small_tag 40px x1 small	ライデン
+12B1BC		str_shikigami_names	small_tag 40px x1 small	ミンゴベエ
+12B1C8		str_shikigami_names	small_tag 40px x1 small	ホリン
+12B1D0		str_shikigami_names	small_tag 40px x1 small	エレキテル
+12B1DC		str_shikigami_names	small_tag 40px x1 small	イザヨイ
+12B1E8		str_shikigami_names	small_tag 40px x1 small	ランゲツ
+12B1F4		str_shikigami_names	small_tag 40px x1 small	ルリ
+12B1FC		str_shikigami_names	small_tag 40px x1 small	ツルヤッコ
+12B208		str_shikigami_names	small_tag 40px x1 small	ベニマル
+12B214		str_shikigami_names	small_tag 40px x1 small	コマキ
+12B21C		str_shikigami_names	small_tag 40px x1 small	ミソヒト
+12B228		str_shikigami_names	small_tag 40px x1 small	バラワカ
+12B234		str_shikigami_names	small_tag 40px x1 small	マスラオ
+12B240		str_shikigami_names	small_tag 40px x1 small	ムミョウ
+12B24C		str_shikigami_names	small_tag 40px x1 small	オトチカ
+12B258		str_shikigami_names	small_tag 40px x1 small	タンカムイ
+12B264		str_shikigami_names	small_tag 40px x1 small	ツクモ
+12B26C		str_shikigami_names	small_tag 40px x1 small	ブリュネ
+12B278		str_shikigami_names	small_tag 40px x1 small	ゲンパク
+12B284		str_shikigami_names	small_tag 40px x1 small	フサノシン
+12B290		str_shikigami_names	small_tag 40px x1 small	カンタロウ
+12B29C		str_shikigami_names	small_tag 40px x1 small	エビヒコ
+12B2A8		str_shikigami_names	small_tag 40px x1 small	フジ
+12B2B0		str_shikigami_names	small_tag 40px x1 small	コロク
+12B2B8		str_shikigami_names	small_tag 40px x1 small	オニシバ
+12B2C4		str_shikigami_names	small_tag 40px x1 small	ジャクヤ
+12B2D0		str_shikigami_names	small_tag 40px x1 small	トウベエ
+12B2DC		str_shikigami_names	small_tag 40px x1 small	ナマズボウ
+12B2E8		str_shikigami_names	small_tag 40px x1 small	チヨロズ
+12B2F4		str_shikigami_names	small_tag 40px x1 small	コゲンタ
+12B300		str_shikigami_names	small_tag 40px x1 small	ネネ
+12B308		str_shikigami_names	small_tag 40px x1 small	シラトリ
+12B314		str_shikigami_names	small_tag 40px x1 small	クレナイ
+12B320		str_shikigami_names	small_tag 40px x1 small	クラダユウ
+12B32C		str_shikigami_names	small_tag 40px x1 small	イソロク
+12B338		str_shikigami_names	small_tag 40px x1 small	コマチ
+12B340		str_shikigami_names	small_tag 40px x1 small	チュウキチ
+12B34C		str_shikigami_names	small_tag 40px x1 small	ズクマル
+12B358		str_shikigami_names	small_tag 40px x1 small	サネマロ

@@ -9,6 +9,9 @@ steps = [[sys.executable, "-X", "utf8", "-m", "pytest", "-q", str(ROOT / "tests"
 lint = ROOT / "tools" / "lint.py"
 if lint.exists():
     steps.append([sys.executable, "-X", "utf8", str(lint)])
+batches = ROOT / "tools" / "batches.py"
+if batches.exists():  # glossary terms and Avoid spellings in all shipped English
+    steps.append([sys.executable, "-X", "utf8", str(batches), "check"])
 
 for cmd in steps:
     r = subprocess.run(cmd, cwd=ROOT)

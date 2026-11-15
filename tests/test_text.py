@@ -76,7 +76,7 @@ def test_en_equal_to_jp_builds_the_original(orig, files):
 
 
 def test_en_replaces_one_run(orig, files):
-    filled = copy.deepcopy(files)
+    filled = {name: [dict(x, en="") for x in es] for name, es in files.items()}  # only this one run is English
     e = filled["ev_420000"][0]
     e["en"] = "あ{0010}"
     scripts, _ = textdb.overrides(orig, filled)

@@ -1,0 +1,150 @@
+128A38		str_credits	credits 240px x1	　　　　富沢　義彦　　　　　　
+128A58		str_credits	credits 240px x1	　　　　福田　道生　　　　　　
+128A78		str_credits	credits 240px x1	　　　　菱田　正和　　　　　　
+128A98		str_credits	credits 240px x1	プロモーション　　　　　　　　
+128AB8		str_credits	credits 240px x1	　　　　田中　穣　　　　　　　
+128AD8		str_credits	credits 240px x1	　　　　熊田　直樹　　　　　　
+128AF8		str_credits	credits 240px x1	　　　　岡　　香織　　　　　　
+128B18		str_credits	credits 240px x1	　　　　武井　由香　　　　　　
+128B38		str_credits	credits 240px x1	パブリシティ　　　　　　　　　
+128B58		str_credits	credits 240px x1	　　　　黒С　豪　　　　　　　
+128B78		str_credits	credits 240px x1	　　　　向山　里映　　　　　　
+128B98		str_credits	credits 240px x1	プロデューサー　　　　　　　　
+128BB8		str_credits	credits 240px x1	　　　　三戸　亮　　　　　　　
+128BD8		str_credits	credits 240px x1	チーフプロデューサー　　　　　
+128BF8		str_credits	credits 240px x1	　　　　渡辺　浩孝　　　　　　
+128C18		str_credits	credits 240px x1	　　　　内山　大輔　　　　　　
+128C38		str_credits	credits 240px x1	エグゼクティブ・プロデューサー
+128C58		str_credits	credits 240px x1	　　　　鵜之С　伸　　　　　　
+128C78		str_credits	credits 240px x1	　　　　東海林　隆　　　　　　
+128C98		str_credits	credits 240px x1	企画・製作　　　　　　　　　　
+128CB8		str_credits	credits 240px x1	株式会社　バンダイ　　　　　　
+128CD8		str_credits	credits 240px x1	　　　　　　ビデオゲーム事業部
+12802C		str_intro	intro_strip 224px x1	？？？？？
+12812C		str_intro	intro_strip 224px x1	時をさかのぼること１０００年
+12814C		str_intro	intro_strip 224px x1	妖怪がОП（ばっこ）する世　
+12818C		str_intro	intro_strip 224px x1	己を鍛錬し、伝説の「式神」と
+1281AC		str_intro	intro_strip 224px x1	契約を結び、妖怪に立ち向かう
+1281CC		str_intro	intro_strip 224px x1	ひとつの集団があった　　　　
+1281EC		str_intro	intro_strip 224px x1	その名を「闘神士」という　　
+12820C		str_intro	intro_strip 224px x1	「闘神士」により世の中には　
+12822C		str_intro	intro_strip 224px x1	平和が訪れたかに見えた　　　
+12824C		str_intro	intro_strip 224px x1	しかし、強すぎる「式神」の力
+12826C		str_intro	intro_strip 224px x1	は「闘神士」を変えてしまった
+12828C		str_intro	intro_strip 224px x1	「闘神士」は、いくつかの　　
+1282AC		str_intro	intro_strip 224px x1	「流派」に分裂し、争うことと
+1282CC		str_intro	intro_strip 224px x1	なった・・・　　　　　　　　
+1282EC		str_intro	intro_strip 224px x1	式神と人間の協調を目指した　
+12830C		str_intro	intro_strip 224px x1	「天流」は、力こそすべて　　
+12832C		str_intro	intro_strip 224px x1	という「地流」に攻められ、　
+12834C		str_intro	intro_strip 224px x1	風前の灯火（ともしび）だった
+40C698		str_menus	link_window 220px x2	ルールの設定　　　　　［１Ｐ］
+40C6B8		str_menus	link_window 220px x2	ルールの確認待機　　　［１Ｐ］
+40C6D8		str_menus	link_window 220px x2	ルールの設定待機　　　［２Ｐ］
+40C6F8		str_menus	link_window 220px x2	１Ｐのルール確定を　　　　　待っています
+40C724		str_menus	link_window 220px x2	ルールの確認　　　　　［２Ｐ］
+40C744		str_menus	link_window 220px x2	コンティニュー　　　　［１Ｐ］
+40C764		str_menus	link_window 220px x2	もう一度対戦しますか？
+40C77C		str_menus	link_window 220px x2	対戦を終了します　　　　　　２Ｐの勝敗終了を待っています
+40C7B8		str_menus	link_window 220px x2	コンティニューします　　　　２Ｐの勝敗終了を待っています
+40C7F4		str_menus	link_window 220px x2	対戦を終了します
+40C808		str_menus	link_window 220px x2	コンティニュー待機　　［１Ｐ］
+40C828		str_menus	link_window 220px x2	コンティニューします
+40C840		str_menus	link_window 220px x2	コンティニュ－待機　　［２Ｐ］
+40C860		str_menus	link_window 220px x2	１Ｐのコンティニュー確定を　待っています
+40C88C		str_menus	link_window 220px x2	２Ｐのバトルメンバー選定を　待っています
+40C8B8		str_menus	link_window 220px x2	１Ｐのバトルメンバー選定を　待っています
+40C8E4		str_menus	link_window 220px x2	バトル開始　　　　　　［１Ｐ］
+40C904		str_menus	link_window 220px x2	バトル開始　　　　　　［２Ｐ］
+40F718		str_menus2	small_label 32px x1 small	けってい
+40F724		str_menus2	small_label 32px x1 small	ショート
+40F730		str_menus2	small_label 32px x1 small	　カット
+40F740		str_menus2	small_tag 40px x1 small	バンナイ
+40F74C		str_menus2	battle_2row 224/208px x2	まず、十字ボタンを上方向に入力してみてください
+40F77C		str_menus2	battle_2row 224/208px x2	なかなかいいスジです。
+40F794		str_menus2	battle_2row 224/208px x2	赤い線を続けて入力することで「印」ができます
+40F7C4		str_menus2	battle_2row 224/208px x2	あなたは私たち式神に「印」で指示を出すのです
+40F7F4		str_menus2	battle_2row 224/208px x2	次は、十字ボタンを左方向に　入力してみてください
+40F828		str_menus2	battle_2row 224/208px x2	よくできました　　　　　　　赤い線が金色に光りましたね？
+40F864		str_menus2	battle_2row 224/208px x2	これは「印」が完成した　　　という意味です
+40F890		str_menus2	battle_2row 224/208px x2	ちなみに、今作ったのは　　　「必殺技１」の印です
+40F8C4		str_menus2	battle_2row 224/208px x2	「印」を完成させることで
+40F8E0		str_menus2	battle_2row 224/208px x2	式神は必殺技をだすことが　　できるようになるのです
+40F914		str_menus2	battle_2row 224/208px x2	様々な「印」があるので　　　探してみてください
+40F944		str_menus2	battle_2row 224/208px x2	おっと、長話しすぎました
+40F960		str_menus2	battle_2row 224/208px x2	「印」が完成したらＡボタンを押して決定してくださいね
+40F9F0		str_menus2	window 220px x2	【
+40F9F4		str_menus2	window 220px x2	】
+40C51C		str_name_entry	name_field 80px x1	リク
+40C524		str_name_entry	name_title 64px x1	名前入力
+40C530		str_name_entry	small_label 32px x1 small	けってい
+40C540		str_name_entry	window 220px x2	タイトル画面にもどりますか？
+40C560		str_name_entry	window 220px x2	この名前でいいですか？
+40C578		str_name_entry	link_window 220px x2	接続しています
+40C588		str_name_entry	link_window 220px x2	Ｂボタンで中断します
+40C5A0		str_name_entry	link_window 220px x2	１Ｐで接続しました
+40C5B4		str_name_entry	link_window 220px x2	２Ｐで接続しました
+40C5C8		str_name_entry	link_window 220px x2	接続が途切れました
+40C5DC		str_name_entry	link_window 220px x2	Ａボタンを押すとタイトルへ戻ります
+40C600		str_name_entry	link_window 220px x2	　　　　　　　　　　　　　　　　　－相手を待っています－
+40C63C		str_name_entry	link_window 220px x2	　　　　　　　　　　　　　　　　　　　　　　　－通信中－
+12BDC8		str_quotes01	window 220px x2	この私に立ち向かうとは　　　面白い！
+12BDF0		str_quotes01	window 220px x2	この私に勝てると　　　　　　思っているのか？
+12BE20		str_quotes01	window 220px x2	我は負けぬ！
+12BE30		str_quotes01	window 220px x2	この勝負、誰にもゆずらぬ
+12BE4C		str_quotes01	window 220px x2	勝負は勝たなきゃな
+12BE60		str_quotes01	window 220px x2	さて、どうしてくれようか
+12BE7C		str_quotes01	window 220px x2	ファンキーでいきましょう
+12BE98		str_quotes01	window 220px x2	わしゃノリノリですよ
+12BEB0		str_quotes01	window 220px x2	ここはオレにまかせてくれ！
+12BECC		str_quotes01	window 220px x2	勝負のときが来たか…
+12BEE4		str_quotes01	window 220px x2	明るく行こうぜ
+12BEF4		str_quotes01	window 220px x2	おいらの名を覚えさせてやるよ
+12BF14		str_quotes01	window 220px x2	我にまかすぞよ
+12BF24		str_quotes01	window 220px x2	行くぞよ　みなの衆
+12BF38		str_quotes01	window 220px x2	すみませんねぇ…　　　　　　０．１秒遅れちゃいました
+12BF70		str_quotes01	window 220px x2	先手必勝ですよ
+12BF80		str_quotes01	window 220px x2	決着をつけましょう
+12BF94		str_quotes01	window 220px x2	私におまかせあれ！
+12BFA8		str_quotes01	window 220px x2	さあっ！指示をたのむ
+12BFC0		str_quotes01	window 220px x2	この時を待っていた
+12BFD4		str_quotes01	window 220px x2	楽しそうですねぇ
+12BFE8		str_quotes01	window 220px x2	お呼びですか？
+12BFF8		str_quotes01	window 220px x2	よくぞせっちゃを召喚した　　ほめて使わす
+12C024		str_quotes01	window 220px x2	せっちゃが斬る！　　　　　　ってゆーか刺す！
+12C054		str_quotes01	window 220px x2	どんな相手でも全力を尽くす
+12C070		str_quotes01	window 220px x2	楓族の誇りにかけて闘おう
+12C08C		str_quotes01	window 220px x2	気持ちなら誰にも負けないわ
+12C0A8		str_quotes01	window 220px x2	私があなたを守るわ！
+12C0C0		str_quotes01	window 220px x2	さあっ！いくである！
+12C0D8		str_quotes01	window 220px x2	わしが白黒つけるである
+12C0F0		str_quotes01	window 220px x2	本当の闘いを見せてあげる
+12C10C		str_quotes01	window 220px x2	さあっ！私についておいで！
+12C128		str_quotes01	window 220px x2	おっ！？仕事かい？
+12C13C		str_quotes01	window 220px x2	おいら、しっかり働くぜ！
+12C158		str_quotes01	window 220px x2	敵は向こうか…
+12C168		str_quotes01	window 220px x2	オレがやる！
+12C178		str_quotes01	window 220px x2	軽くひねってしんぜよう
+12C190		str_quotes01	window 220px x2	さて、どんな闘いになるかな？
+12C1B0		str_quotes01	window 220px x2	ジャマなヤツはどいつだ？
+12C1CC		str_quotes01	window 220px x2	オレが淘汰してやる！
+12C1E4		str_quotes01	window 220px x2	さっさと終わらせましょう
+12C200		str_quotes01	window 220px x2	気楽にいきましょう
+12C214		str_quotes01	window 220px x2	モタモタすんな！行くぜ！
+12C230		str_quotes01	window 220px x2	オレにまかせろ！
+12C244		str_quotes01	window 220px x2	積年の力を使うときが　　　　来たようじゃ
+12C270		str_quotes01	window 220px x2	おまえさんの腕を　　　　　　見せてもらおうかの
+12C2A0		str_quotes01	window 220px x2	やったろうじゃねぇか
+12C2B8		str_quotes01	window 220px x2	めんどうだが、しかたがねぇな
+12C2D8		str_quotes01	window 220px x2	ボクを応援してね！
+12C2EC		str_quotes01	window 220px x2	元気いっぱい、いくよー！
+12C308		str_quotes01	window 220px x2	わしが極刑を与えてくれるわ！
+12C328		str_quotes01	window 220px x2	汝の罪、わしが裁いてくれよう
+12C348		str_quotes01	window 220px x2	さあっ！私の闘いを　　　　　見てらっしゃい！
+12C378		str_quotes01	window 220px x2	ファンの皆様　　　　　　　　お待たせしました！
+12C3A8		str_quotes01	window 220px x2	年寄りだからって　　　　　　ナメんじゃねぇ
+12C3D4		str_quotes01	window 220px x2	ちっ…ヒヨっ子どもが…
+12C3EC		str_quotes01	window 220px x2	戦場で花を開かせてやろう
+12C408		str_quotes01	window 220px x2	わしが神風を吹かせてやる
+12C424		str_quotes01	window 220px x2	オレが楽しい祭りにしてやるぜ
+12C444		str_quotes01	window 220px x2	やあっまた会ったな！
