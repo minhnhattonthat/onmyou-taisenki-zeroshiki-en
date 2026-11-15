@@ -1,0 +1,64 @@
+# Scene list for tools/debug/warp.lua (one per line): NAME KIND ARGS [key=value ...]
+#   boot   press=ROUTE          cold-boot input only (title, name entry, intro)
+#   top    N                    at the title, set the top-level state 0x03003523 = N (63 = staff credits)
+#   field  MAP [x= y=]          new game, then stand on MAP via an injected /144
+#   script ID [map= x= y=]      new game, field on map (default 23, the house), then run event script ID
+#   raw    BYTECODE until_op=H  new game, field, then run BYTECODE (e.g. a /035 battle); reached when opcode H runs
+# Common keys: flags=a,b,c (story flags set to 1 first, or a=0), press=ROUTE (input after the scene is reached),
+#   hold=N (frames after reaching it, default 600), mash=N (emu.py --mash, default 40; 0 = none), frames=N.
+# ROUTE = steps "FRAMES:BUTTONS" joined by "|" (e.g. 6:start|60:-). Script ids: tools/script_index.py.
+
+# --- boot, title, name entry, intro
+title          boot  press=600:-|6:start|300:-                                             mash=0 hold=60
+title_menu     boot  press=600:-|6:start|150:-|6:start|200:-                               mash=0 hold=60
+name_entry     boot  press=600:-|6:start|150:-|6:start|150:-|6:a|400:-                     mash=0 hold=60
+name_confirm   boot  press=600:-|6:start|150:-|6:start|150:-|6:a|400:-|6:start|150:-       mash=0 hold=60
+intro_scroll   boot  press=600:-|6:start|150:-|6:start|150:-|6:a|400:-|6:start|200:-|6:left|20:-|6:a|300:- mash=0 hold=60
+intro_event    boot  press=600:-|6:start|150:-|6:start|150:-|6:a|400:-|6:start|200:-|6:left|20:-|6:a|1200:- hold=300
+tutorial_battle boot press=600:-|6:start|150:-|6:start|150:-|6:a|400:-|6:start|200:-|6:left|20:-|6:a|400:- until_op=035 hold=900
+credits        top   63                                                                    mash=0 hold=900
+
+# --- field and menus
+field_house    field 23                                                                     mash=0 hold=300
+field_walk     field 23  press=60:down|60:right|60:-                                        mash=0 hold=1
+# START opens the ring menu (needs the prologue flags); A picks the item under the cursor, left/right turn it
+menu_ring      field 23  flags=0,1,2,21,22,23,24,28 press=6:start|500:-                          mash=0 hold=1
+menu_status    field 23  flags=0,1,2,21,22,23,24,28 press=6:start|300:-|6:a|200:-                mash=0 hold=1
+menu_save      field 23  flags=0,1,2,21,22,23,24,28 press=6:start|300:-|6:right|30:-|6:a|200:-   mash=0 hold=1
+menu_shikigami field 23  flags=0,1,2,21,22,23,24,28 press=6:start|300:-|6:right|30:-|6:right|30:-|6:a|200:- mash=0 hold=1
+menu_map       field 23  flags=0,1,2,21,22,23,24,28 press=6:start|300:-|6:left|30:-|6:a|200:-    mash=0 hold=1
+menu_party     field 23  flags=0,1,2,21,22,23,24,28 press=6:start|300:-|6:left|30:-|6:left|30:-|6:a|200:- mash=0 hold=1
+shikigami_talk field 23  flags=0,1,2,21,22,23,24,28 press=6:l|200:-                             mash=0 hold=1
+
+# --- battles
+# /035 args are copied from script 1060's first battle. Mash A wins it; with the player shikigami's HP
+# (0x02019938) poked to 1 the enemy's first hit knocks it out and the screen fades (the loss).
+battle_forest  raw   /0350110000800060000  until_op=035                                     mash=0 hold=900
+battle_win     raw   /0350110000800060000  until_op=035                                     hold=3000
+battle_lose    raw   /0350110000800060000  until_op=035  poke=0x02019938:1                  hold=480
+
+# --- story events, one per chapter group (opening script of each id block)
+prologue_morning script 1004
+ch1_school     script 1050
+ch1_mitsusa    script 1060
+ch2_start      script 1100
+ch3_start      script 1150
+ch4_start      script 1200
+ch5_start      script 1250
+ch6_start      script 1300
+ch6_taihaku    script 1301
+ch7_start      script 1350
+ch8_fukumaden  script 1400
+ch9_start      script 1450
+ch10_start     script 1500
+ch11_start     script 1550
+ch12_start     script 1600
+ch13_start     script 1650
+final_battle   script 1700
+ending_a       script 1711
+ending_b       script 1713
+drive_event    script 700
+npc_town       script 1800
+npc_school     script 1830
+npc_park       script 1900
+npc_village    script 1910

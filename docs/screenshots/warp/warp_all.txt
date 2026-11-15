@@ -1,0 +1,44 @@
+ok   title                    SCENE_OK title f906 route done
+ok   title_menu               SCENE_OK title_menu f962 route done
+ok   name_entry               SCENE_OK name_entry f1318 route done
+ok   name_confirm             SCENE_OK name_confirm f1474 route done
+ok   intro_scroll             SCENE_OK intro_scroll f1856 route done
+ok   intro_event              SCENE_OK intro_event f2756 route done
+ok   tutorial_battle          SCENE_OK tutorial_battle f7281 route done + op
+ok   credits                  SCENE_OK credits f1058 top=64
+ok   field_house              SCENE_OK field_house f2719 field map 23
+ok   field_walk               SCENE_OK field_walk f2719 field map 23
+ok   menu_ring                SCENE_OK menu_ring f2719 field map 23
+ok   menu_status              SCENE_OK menu_status f2719 field map 23
+ok   menu_save                SCENE_OK menu_save f2719 field map 23
+ok   menu_shikigami           SCENE_OK menu_shikigami f2719 field map 23
+ok   menu_map                 SCENE_OK menu_map f2719 field map 23
+ok   menu_party               SCENE_OK menu_party f2719 field map 23
+ok   shikigami_talk           SCENE_OK shikigami_talk f2719 field map 23
+ok   battle_forest            SCENE_OK battle_forest f2660 op 035
+ok   battle_win               SCENE_OK battle_win f2577 op 035
+ok   battle_lose              SCENE_OK battle_lose f2577 op 035
+ok   prologue_morning         SCENE_OK prologue_morning f2639 script 1004 op 036
+ok   ch1_school               SCENE_OK ch1_school f2639 script 1050 op 036
+ok   ch1_mitsusa              SCENE_OK ch1_mitsusa f2639 script 1060 op 036
+ok   ch2_start                SCENE_OK ch2_start f2640 script 1100 op 036
+ok   ch3_start                SCENE_OK ch3_start f2639 script 1150 op 036
+ok   ch4_start                SCENE_OK ch4_start f2655 script 1200 op 036
+ok   ch5_start                SCENE_OK ch5_start f2659 script 1250 op 036
+ok   ch6_start                SCENE_OK ch6_start f2639 script 1300 op 036
+ok   ch6_taihaku              SCENE_OK ch6_taihaku f2639 script 1301 op 036
+ok   ch7_start                SCENE_OK ch7_start f2639 script 1350 op 036
+ok   ch8_fukumaden            SCENE_OK ch8_fukumaden f2639 script 1400 op 036
+ok   ch9_start                SCENE_OK ch9_start f2639 script 1450 op 073
+ok   ch10_start               SCENE_OK ch10_start f2639 script 1500 op 073
+ok   ch11_start               SCENE_OK ch11_start f2639 script 1550 op 073
+ok   ch12_start               SCENE_OK ch12_start f2639 script 1600 op 073
+ok   ch13_start               SCENE_OK ch13_start f2639 script 1650 op 036
+ok   final_battle             SCENE_OK final_battle f2639 script 1700 op 036
+ok   ending_a                 SCENE_OK ending_a f2833 script 1711 op 036
+ok   ending_b                 SCENE_OK ending_b f2835 script 1713 op 036
+ok   drive_event              SCENE_OK drive_event f2647 script 700 op 036
+ok   npc_town                 SCENE_OK npc_town f2639 script 1800 op 073
+ok   npc_school               SCENE_OK npc_school f2639 script 1830 op 073
+ok   npc_park                 SCENE_OK npc_park f2639 script 1900 op 073
+ok   npc_village              SCENE_OK npc_village f2639 script 1910 op 073

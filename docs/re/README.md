@@ -16,8 +16,9 @@ Addresses are for the dump in `rom.sha1` unless a note says otherwise.
 | [font.md](font.md) | 16×16 4bpp font, resource lookup, draw path | verified |
 | [rom-map.md](rom-map.md) | ROM layout, LZ77, file table, EEPROM, free space | verified; 0xFF tail is a candidate |
 | [graphics.md](graphics.md) | graphics-text survey (tour + static sweep) | survey done; sources partly guessed |
+| [debug.md](debug.md) | warp tool: StartScript hook, game modes, story flags, credits state, scene list | verified (every scene reached) |
 
 Prior work: no earlier English or other-language patch found for this game (searched 2026-11-16); the
 anime (Onmyou Taisenki, 2004) had no official English release, so names follow D2 (Hepburn fallback).
 Recon helpers: `tools/sjis_survey.py`, `tools/recon_strings.py`, `tools/lzscan.py`, `tools/gfx_sweep.py`,
-`tools/gfx_review.sh`.
+`tools/gfx_review.sh`. Script helpers: `tools/script_index.py`, `tools/script_dump.py`, `tools/script_refs.py`.

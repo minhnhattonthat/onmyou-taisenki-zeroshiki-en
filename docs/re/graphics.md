@@ -28,6 +28,9 @@ Phase 5's marker build re-checks this list: any Japanese still on screen there t
 | G13 | Small kana/symbol font | raw 0x1B12D4+0x0C00..0x2800 (283:13..20) | a second, smaller font; find its users in phase 5 |
 
 ## Mid-game screens not yet seen (warp to each with the debug tool, phase 2/8)
+Phase 2 warps now reach: battle win banner 勝利 (`battle_win`, graphic), loss (`battle_lose`), status (`menu_status`:
+labels レベル/経験値/式点), save 記録 (`menu_save`), shikigami status しきがみせんたく with stat labels
+(`menu_shikigami`), party (`menu_party`), world map (`menu_map`), staff credits (`credits`). Map them to G-rows in phase 5/8.
 Chapter/area banners (area names are font strings at 0x40B6B4 — check whether a banner graphic also exists),
 battle start / win / lose banners, game over, link-cable screens, status and shikigami-list screens, ending,
 staff credits (credits text is font: 0x128418..), save/load screens.
