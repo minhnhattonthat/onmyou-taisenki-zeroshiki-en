@@ -1,0 +1,8 @@
+# Boot to title and press start a few times
+600 -
+6 start
+120 -
+6 start
+120 -
+6 a
+300 -
