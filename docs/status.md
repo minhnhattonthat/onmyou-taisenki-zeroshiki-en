@@ -2,8 +2,8 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 5. Engine spike and marker build, in progress (dialogue VWF works in-game). Last builds 2026-11-16:
-  `build.py` (engine, JP text) sha1 22cabf13…, smoke ok; `build.py --marker` → build/marker.gba sha1 44e7247e….
+- **Phase:** 5. Engine spike and marker build, in progress (VWF on 5 of 7 renderers). Last builds 2026-11-16:
+  `build.py` (engine, JP text) sha1 f56ff550…, smoke ok; `build.py --marker` → build/marker.gba sha1 733552a0….
 - **Done:**
   - Step 0: ROM pinned (`rom.sha1`), MesenCE 2.2.1 + GBA BIOS in `tools/mesen/`, guard hook in `.claude/settings.json`
     (canary blocked), pre-commit runs `tools/check.py` (a failing test was rejected), boot route `tools/routes/boot.txt`
@@ -41,8 +41,15 @@ Updated at the end of every session. Keep it to what the next session needs; his
     0x080029F0 (every other fixed-cell text: menus, status labels, name tags, area names, battle messages, intro
     scroll), and the staff credits (CpuSet of whole glyph tiles). `tools/debug/ewram_watch.lua` = who touches the
     VWF state RAM.
-- **Next (phase 5):** VWF for 0x080029F0 (plan in `docs/re/font.md` "Renderer catalogue"; read callers 0x080036D4
-  and 0x08003796 first), then re-tour and measure each window variant; credits renderer approach. (EWRAM 0x0203FF00 checked, 44 scenes, original ROM: never read by
+  - Phase 5 renderers (2026-11-16, second session): `tools/debug/fontcalls.lua` lists every glyph-lookup caller
+    (7, table in `docs/re/font.md` "Full renderer list"). VWF now on: dialogue, window glyph routine 0x080029F0
+    (`WIN_SRC`, battle messages verified), strip renderers 0x080235D4 (intro scroll) / 0x08023E3C (credits) and the
+    map-line renderer 0x0803A168 (name-entry screen) via one shared `line` plotter (`STRIP_SRC`), all verified in
+    shots (`work/qa/wvwf*/c_*.png`). Probes `wincalls.lua` (window calls), `callshot.lua` (shot after a routine
+    runs). `vwf._asm` rejects Thumb `adds rd, rn, #imm>7` (keystone mis-encodes it silently).
+- **Next (phase 5):** VWF for the menu renderer 0x0801417B / 0x080142EB (status/save/shikigami, OBJ tiles) and
+  battle results 0x08110BF3; identify the fixed-cell texts outside the lookup list (status digits, name tags
+  "88"/"B2F4" — small font or sprites); then re-tour all 44 scenes on the marker build and measure each variant. (EWRAM 0x0203FF00 checked, 44 scenes, original ROM: never read by
   the game, only zero-filled by CpuSet at boot/title (f1, f272, f283, f605); a zeroed VWF state falls back to the
   game's cell position, so it is safe to keep there.) Then:
   check the 0x080144F4 string drawer (battle quotes, `pad` strings, newline 0x81AD) in a battle;

@@ -13,6 +13,7 @@ BL at 0x08014526). The patch:
   * the script newline code {0000} sets idx = 64 instead of 14 (0x0802DD36), so a 13-character first line can't
     look sequential.
 """
+import re
 import struct
 import sys
 from pathlib import Path
@@ -268,6 +269,7 @@ def win_code(far, widths_addr):
 STRIP_ORIG = {  # the glyph-strip line renderers (docs/re/font.md "Renderer catalogue"), replaced by thunks
     0x0235D4: "f0b581b00549064a89180d68041c0026",  # 0x080235D4(str): 28 cells, intro scroll
     0x023E3C: "f0b581b00649074a89180c68051c0026",  # 0x08023E3C(str): 30 cells, staff credits
+    0x03A168: "f0b557464e464546e0b40004060c0904",  # 0x0803A168(x, y, pal, map, dest, base, str): + tile map
 }
 
 # Strip renderers copy one whole 16x16 glyph (128 bytes, tiles TL TR BL BR) per character into the buffer
@@ -276,12 +278,70 @@ STRIP_ORIG = {  # the glyph-strip line renderers (docs/re/font.md "Renderer cata
 STRIP_SRC = """
     b strip28
     b strip30
+    b mapline
 strip28:
-    movs r1, #28
+    movs r2, #28
     b strip
 strip30:
-    movs r1, #30
+    movs r2, #30
 strip:
+    push {{lr}}
+    ldr r1, bufp
+    ldr r1, [r1]
+    bl line
+    movs r0, #1
+    pop {{r1}}
+    bx r1
+
+@ 0x0803A168(x, y, pal, map, [sp]=tile dest, [sp+4]=tile base, [sp+8]=string) -> next free tile address
+mapline:
+    push {{r4, r5, r6, r7, lr}}
+    lsls r0, r0, #16
+    asrs r0, r0, #15
+    adds r4, r3, r0
+    lsls r1, r1, #16
+    asrs r1, r1, #10
+    adds r4, r4, r1
+    lsls r5, r2, #28
+    lsrs r5, r5, #16
+    ldr r6, [sp, #20]
+    ldr r7, [sp, #24]
+    ldr r0, [sp, #28]
+    adds r1, r6, #0
+    movs r2, #0
+    bl line
+    adds r0, #15
+    lsrs r0, r0, #4
+    beq mdone
+    subs r1, r6, r7
+    lsls r1, r1, #16
+    lsrs r1, r1, #21
+    orrs r1, r5
+    lsls r2, r0, #7
+    adds r6, r6, r2
+mloop:
+    strh r1, [r4]
+    adds r1, #1
+    strh r1, [r4, #2]
+    adds r1, #1
+    adds r2, r4, #0
+    adds r2, #0x40
+    strh r1, [r2]
+    adds r1, #1
+    strh r1, [r2, #2]
+    adds r1, #1
+    adds r4, #4
+    subs r0, #1
+    bne mloop
+mdone:
+    adds r0, r6, #0
+    pop {{r4, r5, r6, r7}}
+    pop {{r1}}
+    bx r1
+
+@ line(string, dest, cells): clear `cells` 128-byte cells at dest (0 = as many as the string's width needs), plot
+@ the string across them; returns its width in px.
+line:
     push {{r4, r5, r6, r7, lr}}
     mov r4, r8
     mov r5, sb
@@ -290,27 +350,33 @@ strip:
     push {{r4, r5, r6, r7}}
     sub sp, #8
     mov r8, r0
-    lsls r2, r1, #4
-    mov fp, r2
-    lsls r2, r1, #5
+    mov sb, r1
+    cmp r2, #0
+    bne lclr
+    bl measure
+    adds r0, #15
+    lsrs r2, r0, #4
+lclr:
+    lsls r3, r2, #4
+    mov fp, r3
+    movs r0, #0
+    mov sl, r0
+    cmp r2, #0
+    beq loop
+    lsls r2, r2, #5
     movs r3, #5
     lsls r3, r3, #24
     orrs r2, r3
-    ldr r0, bufp
-    ldr r0, [r0]
-    mov sb, r0
-    adds r1, r0, #0
-    movs r0, #0
+    mov r1, sb
     str r0, [sp]
     mov r0, sp
     svc #0xb
-    movs r0, #0
-    mov sl, r0
 loop:
     mov r0, r8
-    ldrh r4, [r0]
+    ldrb r4, [r0]
     cmp r4, #0
     beq done
+    ldrh r4, [r0]
     adds r0, #2
     mov r8, r0
     lsrs r5, r4, #8
@@ -394,7 +460,7 @@ advance:
     add sl, r0
     b loop
 done:
-    movs r0, #1
+    mov r0, sl
     add sp, #8
     pop {{r4, r5, r6, r7}}
     mov r8, r4
@@ -406,6 +472,32 @@ done:
     bx r1
 call_r3:
     bx r3
+measure:
+    push {{r4, r5, r6}}
+    movs r6, #0
+mloop2:
+    ldrb r4, [r0]
+    cmp r4, #0
+    beq mend
+    ldrh r4, [r0]
+    adds r0, #2
+    lsrs r5, r4, #8
+    lsls r4, r4, #24
+    lsrs r4, r4, #16
+    orrs r4, r5
+    ldr r5, base
+    subs r4, r4, r5
+    ldr r5, ncodes
+    cmp r4, r5
+    bhs mloop2
+    ldr r5, widths
+    ldrb r4, [r5, r4]
+    adds r6, r6, r4
+    b mloop2
+mend:
+    adds r0, r6, #0
+    pop {{r4, r5, r6}}
+    bx lr
 pixoff:
     push {{r2, r3}}
     lsrs r2, r0, #3
@@ -443,10 +535,17 @@ ftab:   .word 0x084028EC
 def strip_code(far, widths_addr):
     addr = 0x08000000 | far
     src = STRIP_SRC.format(ncodes=NCODES, widths=0x08000000 | widths_addr)
-    return _asm(src, addr), addr, addr + 2
+    return _asm(src, addr), addr, addr + 2, addr + 4
+
+
+_IMM3 = re.compile(r"^\s*(adds|subs)\s+(r[0-7]),\s*(r[0-7]),\s*#(0x[0-9a-fA-F]+|\d+)", re.M)
 
 
 def _asm(src, addr):
+    # keystone silently mis-encodes `adds rd, rn, #imm` with rd != rn and imm > 7 (Thumb has 3 bits there)
+    for m in _IMM3.finditer(src):
+        if m.group(2) != m.group(3) and int(m.group(4), 0) > 7:
+            raise ValueError(f"vwf asm: '{m.group(0).strip()}' needs imm <= 7 (use adds rd, #imm)")
     ks = keystone.Ks(keystone.KS_ARCH_ARM, keystone.KS_MODE_THUMB)
     enc, _ = ks.asm(src, addr)
     return bytes(enc)
@@ -517,8 +616,9 @@ def install(img, write):
         b = bytes.fromhex(hx)
         assert orig[off:off + len(b)] == b, f"vwf: unexpected bytes at {off:06X}"
     sfar = img.alloc(len(strip_code(0x800000, 0x800000)[0]) + 16)
-    scode, s28, s30 = strip_code(sfar, wt_off)
+    scode, s28, s30, smap = strip_code(sfar, wt_off)
     write(sfar, scode, "vwf strip code")
+    write(0x3A168, thunk(0x3A168, smap), "vwf strip thunk (map line 0x0803A168)")
     write(0x235D4, thunk(0x235D4, s28), "vwf strip thunk (intro scroll)")
     write(0x23E3C, thunk(0x23E3C, s30), "vwf strip thunk (credits)")
     return far

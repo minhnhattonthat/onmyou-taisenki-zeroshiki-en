@@ -54,5 +54,18 @@ Only three code paths read the 16×16 font:
 3. **Staff credits**: no plotter reads at all, only BIOS CpuSet (pc 0x00000B8E) copying font data straight to the
    tile area — the credits copy whole glyph tiles by code; English needs a narrow-tile or pre-rendered approach.
 
+### Full renderer list — `tools/debug/fontcalls.lua` (every caller of the glyph lookup 0x080059A0 with type 13), 44 scenes, 2026-11-16
+| caller (lr) | routine | draws | English status |
+|---|---|---|---|
+| 0x08002FDF | dialogue 0x08002F88 | script text, NPC/shikigami talk, `pad` strings | VWF (`vwf.py` FAR_SRC) |
+| 0x08002AC1 | window glyph 0x080029F0 | battle messages (and any window text) | VWF (`WIN_SRC`): per-call pixel cursor, verified battle_forest |
+| 0x08023621 | strip 0x080235D4(str), 28 cells → [0x0201DE48] (VRAM) | intro scroll | VWF (`STRIP_SRC` strip28), verified |
+| 0x08023E9F | strip 0x08023E3C(str), 30 cells | staff credits | VWF (strip30), verified; only ~240 px of a line shows |
+| 0x0803A1B9 | map line 0x0803A168(x, y, pal, map, [sp] dest, base, str) | name-entry title, name field, kana grid | VWF (mapline: tiles + 2×2 map entries for ceil(w/16) cells), verified |
+| 0x0801417B, 0x080142EB | menus (OBJ tiles 0x06010280) | status / save / shikigami menus | **todo** |
+| 0x08110BF3 | battle results | battle_win, tutorial | **todo** |
+Fixed-cell texts not in this list (status digits, name tags "88"/"B2F4") use other fonts/sprites: still to identify.
+The strip/map renderers write VRAM directly: plot by halfword read-modify-write (a byte store lands in both bytes).
+
 - A small 8×8-ish symbol/kana font sits just before the big font (0x1B12D4..0x1B4E74, sweep sheet 283), probably for
   status numbers; confirm in phase 5.
