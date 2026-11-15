@@ -30,7 +30,20 @@
   cursor in EWRAM **0x0203FF00** (last idx, next x, last buf, x, y); sequential idx continues at the cursor, any
   other idx starts at the game's own cell; width table 1 byte per code (JP = 16, so Japanese still lines up);
   auto-wrap past x 232; 0x81AD = newline; 0x08002FFE.. reads x/y from the state; `{0000}` now sets idx 64.
-- Box: text x 8..232 (224 px). Marker line of 221 px shows whole; the exact last column is still to be measured.
+- Box: text x 8..232 (224 px): a stress line exactly 224 px wide shows whole (work/qa/wg1/intro_event-z.png). The
+  page-wait orb sits at x 226.. over row 2 (work/qa/tort/orb.png), so a page's last line gets 216 px.
+
+## Width gate (2026-11-16): `tbl/windows.json`, `tools/windows.py`, `tools/lint.py`
+- `tools/debug/drawcalls.lua` logs (routine, caller, string) for every renderer; `windows.py map TOUR` turns a tour
+  into `drawmap.tsv` (entry id → renderer, scenes; ROM pointers mapped through the build's `.writes`).
+- Stress lines: `windows.py fill PX [big|small] [head]` = a line exactly PX wide; `build.py --qa ID=...`.
+- Measured: dialogue 224 (last line of a page 216), battle window 0x080029F0 **220** (row 1 shows 224, row 2 drops a
+  glyph ending past x 228), map-menu area name: the padded drawer stops after **28 characters**, status labels =
+  the JP's 16 px cells (the next label's OBJ tiles follow), battle tag 40 px small font.
+- Glyph torture line (all 93 glyphs + double spaces) renders correctly in the dialogue and battle windows
+  (work/qa/tort/z.png, ie2.png).
+- The dialogue **speaker plate** (str_char_names) is not VWF: fixed 8 px cells, 5 shown ("[4140" in the marker
+  build); it is the OBJ-cells size-8 path or its own routine — still to do.
 - Other renderers seen in the marker build (still fixed 16 px cells, need their own work): see "Renderer
   catalogue" below.
 

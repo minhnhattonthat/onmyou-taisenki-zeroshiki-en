@@ -1,0 +1,1 @@
+410E18 digit glyph set (number drawing), not text: stays as the font's digit codes

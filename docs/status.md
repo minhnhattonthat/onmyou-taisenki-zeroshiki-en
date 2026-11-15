@@ -2,9 +2,9 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 5. Engine spike and marker build, in progress (VWF on every renderer incl. the small font; width gate next).
+- **Phase:** 5. Engine spike and marker build, in progress (width gate: 5 of 14 variants measured, lint live).
   Last builds 2026-11-16: `build.py` (engine, JP text) sha1 dbca5fa5…, smoke ok, check ok;
-  `build.py --marker` → build/marker.gba sha1 ffe294b5….
+  `build.py --marker` → build/marker.gba sha1 5f29489b…, smoke ok.
 - **Done:**
   - Step 0: ROM pinned (`rom.sha1`), MesenCE 2.2.1 + GBA BIOS in `tools/mesen/`, guard hook in `.claude/settings.json`
     (canary blocked), pre-commit runs `tools/check.py` (a failing test was rejected), boot route `tools/routes/boot.txt`
@@ -63,21 +63,26 @@ Updated at the end of every session. Keep it to what the next session needs; his
     build/qa.gba with single-entry overrides. Verified "Kogenta"/"Ryuuko" tags + "View foe" label
     (`work/qa/tag2/z.png`, `work/qa/tag3/z.png`). New probes: `winopen.lua`, `objcalls.lua`, `linecalls.lua`,
     `oamfind.lua`. Details `docs/re/font.md` "Small font".
-- **Next (phase 5):** the width gate. (1) Window data file (e.g. `tbl/windows.json`: per variant px budget, lines,
-  font big/small, measured/guess + shot; per-entry or per-file mapping) that `marker.py` and the lint both read:
-  small-font strings (the 0x08110AE8 labels, e.g. 410C0C; the tag names = `str_shikigami_names` and any speaker
-  names) must get markers sized in `ensmall` px (JP chars × 8 px, tag 40 px) — today they are sized in big-font px
-  and overrun in the marker build. Find which string ids each of the 10 callers of 0x08110AE8 draws
-  (`linecalls.lua` over all scenes). (2) Then measure each variant from `work/qa/mtour2` (EWRAM 0x0203FF00 checked, 44 scenes, original ROM: never read by
-  the game, only zero-filled by CpuSet at boot/title (f1, f272, f283, f605); a zeroed VWF state falls back to the
-  game's cell position, so it is safe to keep there.) Then:
-  check the 0x080144F4 string drawer (battle quotes, `pad` strings, newline 0x81AD) in a battle;
-  0x08014098 size-8 mode (small font, OBJ) still runs the original fixed cells;
-  widen the 5-cell shikigami-name copy; find code-built
-  or base+immediate strings (Japanese that stays in the marker build; `jp_left.py` on build/marker.gba);
-  identify `str_battle_kanji`; English name-entry grid; width gate per box variant (dialogue measured as
-  x 8..232 = 224 px, last-column check pending; battle quotes, help 21, menus) recorded in a window-data file the
-  lint will read; glyph torture line; add tests for enfont/vwf/marker (encode, widths table, ORIG asserts).
+  - Phase 5 width gate (2026-11-16, fifth session): window data `tbl/windows.json` (13 variants: font, px, lines,
+    chars cap, measured + shot / guess; files and ids mapped to variants) read by `tools/windows.py` (`budget`,
+    `map`, `fill`, `show`), `tools/marker.py` (markers sized per variant and font, last dialogue line 216 px) and the
+    new text lint `tools/lint.py` (in `check.py`: width per line, lines per page, chars cap, control-code multiset,
+    glyphs, Japanese left, ordinal after a variable, empty en vs `script/keep_jp.txt`; `--marker` lints the marker
+    text: 0 errors). Renderer map: `tools/debug/drawcalls.lua` + `windows.py map` (75 entries seen,
+    `work/qa/dc/drawmap.tsv`). Measured: dialogue 224 / last line 216 (page-wait orb), battle window 220, area name
+    28 chars, status labels = JP cells, battle tag 40 px small. Glyph torture line renders right
+    (`work/qa/tort/`). Tests `tests/test_windows.py`. Details `docs/re/font.md` "Width gate".
+- **Next (phase 5, still guess in `tbl/windows.json`; `python -X utf8 tools/windows.py show`):** measure
+  `battle_2row` (tutorial_battle; the warp failed once on a `--qa` build at 44001 frames: retry with more frames),
+  `small_label` (10 callers of 0x08110AE8: which ids, budget = next label's tiles), `names_list` (skills, weapons,
+  techniques: find the menus that list them, add scenes), `intro_strip`, `credits`, `fixed` (link-cable menus,
+  battle help, debug menu, `str_battle_kanji` unidentified). The dialogue **speaker plate** (`str_char_names`) still
+  draws fixed 8 px cells, 5 shown: find its routine (unmapped `obj_cells@0802EBCD a=10` / window caller with a RAM
+  string), give it VWF, then measure (`speaker_tag`, now a 40 px guess). Also: 0x08014098 size-8 mode still runs
+  the original fixed cells; widen the 5-cell shikigami-name copy; code-built strings (`jp_left.py` on
+  build/marker.gba); English name-entry grid; player-name width `vars.00C8` (45 px guess) once the grid sets the
+  name length; tests for enfont/vwf (widths table, ORIG asserts).
+  (EWRAM 0x0203FF00, the VWF state, is never read by the original game: safe.)
 - **Known limits of the warp:** event scenes run over map 23 (the house) unless the script changes map itself
   (`map=` per scene overrides); which map normally hosts each event is not mapped yet (NPCs come from `/116`
   entries in map scripts 8000+). No GOD/NOENC yet (battles: mash wins; `poke=` for HP).
