@@ -46,3 +46,7 @@ always; SCRIPT 9999 = this script), `/124 N` label, `/144 MAP X Y` change map, `
 1300-1301 ch6; 1350-1364 ch7; 1400-1401 Fukumaden; 1450-1454, 1500-1504, 1550-1554, 1600-1604 shrine chapters;
 1650-1653; 1700-1795 final, endings (1711, 1713) and post-battle shikigami contracts; 1800-1928 NPC talk;
 700-704 Drive events; 8000-8337 map scripts; 0-23 map-link stubs.
+
+## Probes (`--probe` for warp_all.py)
+`tools/debug/romreads.lua` (reads of vacated text rooms), `glyphreads.lua` (who reads font data: renderer
+catalogue in `docs/re/font.md`), `ewram_watch.lua` (who touches 0x0203FF00.., the VWF state; run on the original ROM).

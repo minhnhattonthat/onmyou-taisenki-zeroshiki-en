@@ -34,11 +34,19 @@ Updated at the end of every session. Keep it to what the next session needs; his
     with `--no-engine` and in the identity tests), marker text `tools/marker.py` (`build.py --marker`). Proven on
     intro_event: `[4376A8] The quick brown fox…` drawn proportionally, 2 lines, pages. Helpers `tools/font.py`
     (glyph lookup/show), `tools/litref.py` (who loads a literal). Details: `docs/re/font.md`.
-- **Next (phase 5):** tour the marker build over all 44 warp scenes (`tools/debug/warp_all.py build/marker.gba`)
-  and list each box variant + renderer; renderers still on fixed 16 px cells need VWF/width work: speaker name tag
-  (`4050` shown = a string-table name), intro scroll (vertical), battle/menu text not yet seen; check the
-  0x080144F4 string drawer (battle quotes, `pad` strings, newline 0x81AD) in a battle; verify EWRAM 0x0203FF00 is
-  never used by the game (watch it over the warp tour); widen the 5-cell shikigami-name copy; find code-built
+  - Phase 5 marker tour (2026-11-16): `warp_all.py build/marker.gba --out work/qa/mtour` reaches 43/44
+    (tutorial_battle only needed more frames: scenes.txt now `frames=45000 deadline=44000`). `jp_left.py --sjis
+    --gba-ptrs --orig` on the marker build: only `str_name_entry` (skipped on purpose) is left. Renderer catalogue
+    from `tools/debug/glyphreads.lua` in `docs/re/font.md`: dialogue (VWF done), the window glyph routine
+    0x080029F0 (every other fixed-cell text: menus, status labels, name tags, area names, battle messages, intro
+    scroll), and the staff credits (CpuSet of whole glyph tiles). `tools/debug/ewram_watch.lua` = who touches the
+    VWF state RAM.
+- **Next (phase 5):** VWF for 0x080029F0 (plan in `docs/re/font.md` "Renderer catalogue"; read callers 0x080036D4
+  and 0x08003796 first), then re-tour and measure each window variant; credits renderer approach. (EWRAM 0x0203FF00 checked, 44 scenes, original ROM: never read by
+  the game, only zero-filled by CpuSet at boot/title (f1, f272, f283, f605); a zeroed VWF state falls back to the
+  game's cell position, so it is safe to keep there.) Then:
+  check the 0x080144F4 string drawer (battle quotes, `pad` strings, newline 0x81AD) in a battle;
+  widen the 5-cell shikigami-name copy; find code-built
   or base+immediate strings (Japanese that stays in the marker build; `jp_left.py` on build/marker.gba);
   identify `str_battle_kanji`; English name-entry grid; width gate per box variant (dialogue measured as
   x 8..232 = 224 px, last-column check pending; battle quotes, help 21, menus) recorded in a window-data file the
