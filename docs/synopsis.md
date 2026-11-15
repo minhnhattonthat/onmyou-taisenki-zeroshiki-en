@@ -59,6 +59,12 @@ Translators: read this before a batch so early lines don't contradict or give aw
    village) soaked up Mahoroba's evil aura; Gentaro (Kogenta's senior), elder Rakusai (Genbu), Kotaro (Seiryu) are
    freed by battle. **Tsuiga** of the Kirin clan rules from the Sacred Beast Altar after driving off the old ruler
    **Koryu**; Koryu (hermit, "Fefefe") lets Kogenta use the "Great-Des-cent" once. Guardians on the way to the altar.
+7. (ev_460000) Final battle at the altar: Mahoroba, absorbing every shikigami and human, summons Tsuiga ("the
+   shikigami who rules all shikigami"); Kogenta's Great-Des-cent, "Mahoroba... SEAL!". The player wakes ("Another
+   dream!?"); Kogenta: the Chiryu will lie low for a while; "Time for trainin'." Friends thank him (Momo, Ryuji,
+   Teru, Soma, Masaomi); Momo's picnic is cut off by Hiroko: someone was spirited away, maybe the Chiryu (post-game).
+   Post-game Hiroko reveals she is of a third power (Jinryu) and fights the player as thanks. Then town/school NPC
+   chatter (ev_460000-ev_468000) and the Fukumaden villagers' thanks.
 
 ## The world
 - Factions: Tenryu (the player's), Chiryu (rival, modern, relies on shikigami power alone; Chiryu Building),

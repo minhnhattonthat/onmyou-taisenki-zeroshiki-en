@@ -318,19 +318,19 @@
   {
    "id": "40C51C",
    "jp": "リク",
-   "en": "",
+   "en": "Riku",
    "max": 8
   },
   {
    "id": "40C524",
    "jp": "名前入力",
-   "en": "",
+   "en": "Enter Name",
    "max": 12
   },
   {
    "id": "40C530",
    "jp": "けってい",
-   "en": "",
+   "en": "OK",
    "max": 12
   },
   {
@@ -342,55 +342,55 @@
   {
    "id": "40C540",
    "jp": "タイトル画面にもどりますか？",
-   "en": "",
+   "en": "Return to the title screen?",
    "max": 32
   },
   {
    "id": "40C560",
    "jp": "この名前でいいですか？",
-   "en": "",
+   "en": "Is this name OK?",
    "max": 24
   },
   {
    "id": "40C578",
    "jp": "接続しています",
-   "en": "",
+   "en": "Connecting...",
    "max": 16
   },
   {
    "id": "40C588",
    "jp": "Ｂボタンで中断します",
-   "en": "",
+   "en": "Press the B Button to cancel.",
    "max": 24
   },
   {
    "id": "40C5A0",
    "jp": "１Ｐで接続しました",
-   "en": "",
+   "en": "Connected as 1P.",
    "max": 20
   },
   {
    "id": "40C5B4",
    "jp": "２Ｐで接続しました",
-   "en": "",
+   "en": "Connected as 2P.",
    "max": 20
   },
   {
    "id": "40C5C8",
    "jp": "接続が途切れました",
-   "en": "",
+   "en": "The connection was lost.",
    "max": 20
   },
   {
    "id": "40C5DC",
    "jp": "Ａボタンを押すとタイトルへ戻ります",
-   "en": "",
+   "en": "Press the A Button to return\nto the title screen.",
    "max": 36
   },
   {
    "id": "40C600",
    "jp": "　　　　　　　　　　　　　　　　　－相手を待っています－",
-   "en": "",
+   "en": "\n   - Waiting for opponent -",
    "max": 60,
    "pad": 17,
    "ptrs": 3
@@ -398,7 +398,7 @@
   {
    "id": "40C63C",
    "jp": "　　　　　　　　　　　　　　　　　　　　　　　－通信中－",
-   "en": "",
+   "en": "\n        - Communicating -",
    "max": 57,
    "pad": 23,
    "ptrs": 9

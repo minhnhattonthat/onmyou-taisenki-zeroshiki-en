@@ -168,4 +168,11 @@ Other shikigami and NPC names: Hepburn without macrons, as in `script/str_shikig
   Gentaro (Kogenta's senior, "little brother in training") gruff-formal, calls the player {00C8}-dono; Koryu old hermit
   ("Fefefe", "my boy", "eh"); Kotaro solemn; Genbu villager rural ("ain't", "dooo!"); Shiran (シラン = 知らん pun:
   "Dunno..." / "Shiran", "The world's going to the dogs").
+- b021-b026: stats 攻撃力 Attack, 防御力 Defense, 加護力 Guard, 妖力 Power, 素早さ Speed (str_system cells 32/48 px);
+  術 (status arts) -> arts; conditions 睡眠 Sleep, 呪縛 Bind, 毒 Poison, 石化 Petrify, 呪い Curse, 混乱 Confusion,
+  魅了 Charm, 一撃死 Instant Death, ＨＰ吸収 HP Drain, 幻影 Phantom, カウンター Counter; battle message pieces that
+  follow a name/number start with a space (" damage!", " was defeated!"); 【】 -> [ ]; ability multipliers "x1.5" on
+  row 2 (`\n`); 地下ＮＦ -> (BNF); かみかくし -> spirited away; マホロバ封印 -> "Mahoroba... SEAL!"; Kyoto maiko
+  (～やっこ, どす) -> polite "dear"; ヒロシです -> "It's Hiroshi..." (comedian gag); おねえさん tag -> "Lady".
+  Hiroko reveals she belongs to a third power (neither Tenryu nor Chiryu: the Jinryu).
 - Puns: 誇り/埃 (pride/dust) -> "pride" / lion pride; 鯛/恋 quiz kept as "koi"... love (polish candidate).

@@ -6,1232 +6,1232 @@
    "script": "4640F4",
    "op": "124 0002",
    "jp": "京の南のはずれの町さ{0000}からっかぜがふくぜ{0010}",
-   "en": ""
+   "en": "This town's at the south edge of Kyo.{0000}Gets a dry, cold wind.{0010}"
   },
   {
    "id": "46418A",
    "script": "4640F4",
    "op": "124 0008",
    "jp": "あんちゃんは、何しに{0000}ここにきたんだ？{0010}",
-   "en": ""
+   "en": "What'd ya come here{0000}for, kid?{0010}"
   },
   {
    "id": "4641C6",
    "script": "4640F4",
    "op": "124 0015",
    "jp": "そろそろ、おなかがへったから{0000}おうちに帰ろっと！{0010}",
-   "en": ""
+   "en": "I'm getting hungry, so{0000}I'm gonna go home now!{0010}"
   },
   {
    "id": "464264",
    "script": "46420C",
    "op": "124 0002",
    "jp": "右上にいくとお寺{0000}左上にいくと京中よ{0010}",
-   "en": ""
+   "en": "Up and right is the temple,{0000}up and left is Central Kyo.{0010}"
   },
   {
    "id": "46429E",
    "script": "46420C",
    "op": "124 0008",
    "jp": "クスクス・・・私が何を{0000}しているかって？ヒミツよ{0010}",
-   "en": ""
+   "en": "Hee hee... What am I doing?{0000}It's a secret.{0010}"
   },
   {
    "id": "4642E4",
    "script": "46420C",
    "op": "124 0015",
    "jp": "なんだか、町の外が{0000}静かになったみたいね{0010}",
-   "en": ""
+   "en": "It seems like things have gotten{0000}quiet outside town.{0010}"
   },
   {
    "id": "464378",
    "script": "464320",
    "op": "124 0002",
    "jp": "母ちゃんが、町の外に{0000}でるなって、うるさいんだ{0010}",
-   "en": ""
+   "en": "My mom keeps nagging me{0000}not to leave town.{0010}"
   },
   {
    "id": "4643BC",
    "script": "464320",
    "op": "124 0008",
    "jp": "町の外に出られないから{0000}つまんないや{0010}",
-   "en": ""
+   "en": "I can't go outside town,{0000}so it's boring.{0010}"
   },
   {
    "id": "4643F6",
    "script": "464320",
    "op": "124 0015",
    "jp": "やったー！母ちゃんが{0000}町の外で遊んでもいいってさ！{0010}",
-   "en": ""
+   "en": "Yay! My mom says I can{0000}play outside town now!{0010}"
   },
   {
    "id": "464494",
    "script": "46443C",
    "op": "124 0002",
    "jp": "いつもなら、町の外にでて{0000}散歩するんじゃがなあ{0010}",
-   "en": ""
+   "en": "Normally I'd go out of town{0000}for a stroll, but, well...{0010}"
   },
   {
    "id": "4644D8",
    "script": "46443C",
    "op": "124 0008",
    "jp": "おおっ何をそんなに{0000}いそいでおるのじゃ？{0010}",
-   "en": ""
+   "en": "Oho, what are you in{0000}such a hurry for, eh?{0010}"
   },
   {
    "id": "464516",
    "script": "46443C",
    "op": "124 0015",
    "jp": "いい天気じゃのう・・・{0000}散歩にちょうどいいわい{0010}",
-   "en": ""
+   "en": "Lovely weather, eh...{0000}Just right for a stroll.{0010}"
   },
   {
    "id": "4645B0",
    "script": "464558",
    "op": "124 0000",
    "jp": "ひろしです・・・{0000}かぎをなくしました・・・{0010}",
-   "en": ""
+   "en": "It's Hiroshi...{0000}I lost my keys...{0010}"
   },
   {
    "id": "4645F0",
    "script": "464558",
    "op": "124 0008",
    "jp": "ひろしです・・・{0000}すこしつかれました・・・{0010}",
-   "en": ""
+   "en": "It's Hiroshi...{0000}I'm a little tired...{0010}"
   },
   {
    "id": "464630",
    "script": "464558",
    "op": "124 0015",
    "jp": "ひろしです・・・{0000}ひろしです・・・{0010}",
-   "en": ""
+   "en": "It's Hiroshi...{0000}It's Hiroshi...{0010}"
   },
   {
    "id": "4646D0",
    "script": "464668",
    "op": "124 0000",
    "jp": "ぎりぎり登校セーフ{0000}そして教室までダーッシュ{0010}",
-   "en": ""
+   "en": "Made it to school just in time!{0000}Now a mad dash to the classroom!{0010}"
   },
   {
    "id": "464712",
    "script": "464668",
    "op": "124 0001",
    "jp": "いい風がふいてるわ{0000}ねむくなっちゃう{0010}",
-   "en": ""
+   "en": "What a nice breeze.{0000}It's making me sleepy.{0010}"
   },
   {
    "id": "46474C",
    "script": "464668",
    "op": "124 0015",
    "jp": "うわわっ！{0000}立ったまま寝てた！{0010}",
-   "en": ""
+   "en": "Whoa!{0000}I fell asleep standing up!{0010}"
   },
   {
    "id": "4647E8",
    "script": "464780",
    "op": "124 0000",
    "jp": "あれれ・・{0000}間に合った！のかな？{0010}",
-   "en": ""
+   "en": "Huh...?{0000}Did I make it in time?{0010}"
   },
   {
    "id": "46481E",
    "script": "464780",
    "op": "124 0001",
    "jp": "あれれ・・{0000}ぼくの自転車がない！{0010}",
-   "en": ""
+   "en": "Huh...?{0000}My bike is gone!{0010}"
   },
   {
    "id": "464854",
    "script": "464780",
    "op": "124 0015",
    "jp": "あれれ・・・{0000}そういえば今日は歩きだった{0010}",
-   "en": ""
+   "en": "Huh...?{0000}Oh right, I walked today.{0010}"
   },
   {
    "id": "4648F8",
    "script": "464890",
    "op": "124 0000",
    "jp": "私は、この朝の時間が一番{0000}好きなの{0010}",
-   "en": ""
+   "en": "This morning time is my{0000}favorite part of the day.{0010}"
   },
   {
    "id": "464930",
    "script": "464890",
    "op": "124 0001",
    "jp": "かだんのお手入れ{0000}しなきゃね{0010}",
-   "en": ""
+   "en": "I need to take care{0000}of the flower beds.{0010}"
   },
   {
    "id": "464962",
    "script": "464890",
    "op": "124 0015",
    "jp": "花ってすてき{0000}お花屋さんになりたいわ{0010}",
-   "en": ""
+   "en": "Flowers are lovely.{0000}I want to be a florist.{0010}"
   },
   {
    "id": "464A04",
    "script": "46499C",
    "op": "124 0000",
    "jp": "キミの教室は、３階だよ{0000}ダッシュしよう！{0010}",
-   "en": ""
+   "en": "Your classroom's on the 3rd floor.{0000}Let's dash!{0010}"
   },
   {
    "id": "464A42",
    "script": "46499C",
    "op": "124 0001",
    "jp": "あー、あのコが好きだーっ{0000}勉強が手につかないっ！{0010}",
-   "en": ""
+   "en": "Aaah, I love that girl!{0000}I can't focus on studying!{0010}"
   },
   {
    "id": "464A88",
    "script": "46499C",
    "op": "124 0015",
    "jp": "あちゃー{0000}告白したけどフラれちゃった{0010}",
-   "en": ""
+   "en": "Oh, man...{0000}I confessed and got turned down.{0010}"
   },
   {
    "id": "464B28",
    "script": "464AC0",
    "op": "124 0000",
    "jp": "あなたの教室は３階よ{0000}急いだほうがいいよ{0010}",
-   "en": ""
+   "en": "Your classroom is on the 3rd floor.{0000}You'd better hurry.{0010}"
   },
   {
    "id": "464B66",
    "script": "464AC0",
    "op": "124 0001",
    "jp": "あれれ・・{0000}メガネ落としちゃった{0010}",
-   "en": ""
+   "en": "Huh...?{0000}I dropped my glasses.{0010}"
   },
   {
    "id": "464B9C",
    "script": "464AC0",
    "op": "124 0015",
    "jp": "メガネをなくしたから{0000}コンタクトにしたわ{0010}",
-   "en": ""
+   "en": "I lost my glasses,{0000}so I switched to contacts.{0010}"
   },
   {
    "id": "464C40",
    "script": "464BD8",
    "op": "124 0000",
    "jp": "ここは２Ｆだよ。キミの{0000}教室は、この上だよ{0010}",
-   "en": ""
+   "en": "This is the 2nd floor. Your{0000}classroom is upstairs.{0010}"
   },
   {
    "id": "464C80",
    "script": "464BD8",
    "op": "124 0001",
    "jp": "なんとか、カンニングの{0000}方法を考えなければ{0010}",
-   "en": ""
+   "en": "I must think up some way{0000}to cheat on the test.{0010}"
   },
   {
    "id": "464CC0",
    "script": "464BD8",
    "op": "124 0015",
    "jp": "やっぱカンニングは{0000}ダメだね。勉強、勉強{0010}",
-   "en": ""
+   "en": "Cheating's no good after all.{0000}Study, study!{0010}"
   },
   {
    "id": "464D64",
    "script": "464CFC",
    "op": "124 0000",
    "jp": "おはよう{0000}キミ、名前なんだっけ？{0010}",
-   "en": ""
+   "en": "Morning!{0000}Hey, what was your name again?{0010}"
   },
   {
    "id": "464D9A",
    "script": "464CFC",
    "op": "124 0001",
    "jp": "やあ！{0000}キミ、名前なんだっけ？{0010}",
-   "en": ""
+   "en": "Hiya!{0000}Hey, what was your name again?{0010}"
   },
   {
    "id": "464DCE",
    "script": "464CFC",
    "op": "124 0015",
    "jp": "元気？ところで{0000}キミ、名前なんだっけ？{0010}",
-   "en": ""
+   "en": "How's it going? By the way,{0000}what was your name again?{0010}"
   },
   {
    "id": "464E70",
    "script": "464E08",
    "op": "124 0000",
    "jp": "廊下は走っちゃダメだけど{0000}階段はいいのかしら・・・{0010}",
-   "en": ""
+   "en": "We can't run in the halls, but{0000}I wonder if the stairs are okay...{0010}"
   },
   {
    "id": "464EB8",
    "script": "464E08",
    "op": "124 0001",
    "jp": "にきびって、いつも{0000}私を悩ませる・・・{0010}",
-   "en": ""
+   "en": "Pimples are always{0000}the bane of my life...{0010}"
   },
   {
    "id": "464EF4",
    "script": "464E08",
    "op": "124 0015",
    "jp": "まあ、にきびも{0000}青春のあかしってやつね{0010}",
-   "en": ""
+   "en": "Oh well, pimples are what{0000}they call proof of youth.{0010}"
   },
   {
    "id": "464F98",
    "script": "464F30",
    "op": "124 0000",
    "jp": "あ！もうこんな時間！{0000}早く教室に入らなきゃ{0010}",
-   "en": ""
+   "en": "Oh! Look at the time!{0000}I've gotta get to class!{0010}"
   },
   {
    "id": "464FD8",
    "script": "464F30",
    "op": "124 0001",
    "jp": "塾なんて行きたくないなあ{0000}人生って、何なのかしらね{0010}",
-   "en": ""
+   "en": "I don't wanna go to cram school.{0000}What is life even about?{0010}"
   },
   {
    "id": "465020",
    "script": "464F30",
    "op": "124 0015",
    "jp": "ぜったい良い学校入って{0000}えらくなってやるんだから{0010}",
-   "en": ""
+   "en": "I'm gonna get into a good school{0000}and be somebody, no matter what!{0010}"
   },
   {
    "id": "4650B4",
    "script": "465064",
    "op": "124 0000",
    "jp": "おはよう。こっちは{0000}行き止まりでしょ{0010}",
-   "en": ""
+   "en": "Morning. This way's{0000}a dead end, you know.{0010}"
   },
   {
    "id": "4650EE",
    "script": "465064",
    "op": "124 0001",
    "jp": "ふー！つかれた{0000}あ！こっちは行き止まりよ{0010}",
-   "en": ""
+   "en": "Phew! I'm beat.{0000}Oh! This way's a dead end.{0010}"
   },
   {
    "id": "465284",
    "script": "46512C",
    "op": "124 0001",
    "jp": "妖怪って本当にいるのかな{0000}ぜったい会いたくないな{0010}",
-   "en": ""
+   "en": "Do yokai really exist?{0000}I sure never want to meet one.{0010}"
   },
   {
    "id": "4652CA",
    "script": "46512C",
    "op": "124 0002",
    "jp": "地流？ああ！{0000}京中に地流ビルってあるよね{0010}",
-   "en": ""
+   "en": "Chiryu? Oh, right!{0000}There's a Chiryu Building in Central Kyo.{0010}"
   },
   {
    "id": "465308",
    "script": "46512C",
    "op": "124 0003",
    "jp": "京西って大きな竹林が{0000}あるのよね{0010}",
-   "en": ""
+   "en": "West Kyo has a big{0000}bamboo grove, you know.{0010}"
   },
   {
    "id": "46533E",
    "script": "46512C",
    "op": "124 0005",
    "jp": "京中の北にある建物って{0000}御所っていうんでしょ？{0010}",
-   "en": ""
+   "en": "The building north of Central Kyo{0000}is called the Gosho, right?{0010}"
   },
   {
    "id": "465382",
    "script": "46512C",
    "op": "124 0006",
    "jp": "京東って{0000}森林のイメージしかないけど{0010}",
-   "en": ""
+   "en": "When I think of East Kyo,{0000}all I picture is forest.{0010}"
   },
   {
    "id": "4653BC",
    "script": "46512C",
    "op": "124 0007",
    "jp": "ねえ、鬼門っていう言葉{0000}しってる？{0010}",
-   "en": ""
+   "en": "Hey, do you know the word{0000}\"Kimon\"?{0010}"
   },
   {
    "id": "4653F4",
    "script": "46512C",
    "op": "124 0008",
    "jp": "もうすぐテストだけど{0000}勉強してる？{0010}",
-   "en": ""
+   "en": "Tests are coming up soon.{0000}Have you been studying?{0010}"
   },
   {
    "id": "46542C",
    "script": "46512C",
    "op": "124 0009",
    "jp": "この町って、古い史跡が{0000}いっぱいあるよね{0010}",
-   "en": ""
+   "en": "This town has lots of{0000}old historic sites, huh?{0010}"
   },
   {
    "id": "46546A",
    "script": "46512C",
    "op": "124 0010",
    "jp": "そろそろ、帰らないと{0000}ママにしかられるよ{0010}",
-   "en": ""
+   "en": "I'd better head home soon,{0000}or my mom will scold me.{0010}"
   },
   {
    "id": "4654A8",
    "script": "46512C",
    "op": "124 0011",
    "jp": "今日の授業のノートを{0000}かしてほしいんだけど・・・{0010}",
-   "en": ""
+   "en": "Could you lend me your{0000}notes from today's class...?{0010}"
   },
   {
    "id": "4654EE",
    "script": "46512C",
    "op": "124 0012",
    "jp": "さいきん、妖怪のうわさを{0000}あまり聞かなくなったね{0010}",
-   "en": ""
+   "en": "Lately you don't hear many{0000}rumors about yokai, huh?{0010}"
   },
   {
    "id": "465534",
    "script": "46512C",
    "op": "124 0013",
    "jp": "あ！そろそろ部活に{0000}いかなきゃ！{0010}",
-   "en": ""
+   "en": "Oh! I've gotta get{0000}to club practice!{0010}"
   },
   {
    "id": "46556A",
    "script": "46512C",
    "op": "124 0014",
    "jp": "告白するけど、向こうの{0000}女の子のことが好きだったんだ{0010}",
-   "en": ""
+   "en": "I'm gonna confess, but actually I liked{0000}the girl over there all along.{0010}"
   },
   {
    "id": "4655B4",
    "script": "46512C",
    "op": "124 0015",
    "jp": "ねえ、ボクたちはもっと{0000}青春するべきだと思う{0010}",
-   "en": ""
+   "en": "Hey, I think we oughta{0000}live our youth more fully.{0010}"
   },
   {
    "id": "46574C",
    "script": "4655F4",
    "op": "124 0001",
    "jp": "妖怪だけじゃなく{0000}変な人にも会いたくない{0010}",
-   "en": ""
+   "en": "Not just yokai. I don't wanna{0000}meet any weirdos either.{0010}"
   },
   {
    "id": "46578A",
    "script": "4655F4",
    "op": "124 0002",
    "jp": "でもあそこ、京中っていっても{0000}北のほうだぜ{0010}",
-   "en": ""
+   "en": "But that's the north part{0000}of Central Kyo, y'know.{0010}"
   },
   {
    "id": "4657CA",
    "script": "4655F4",
    "op": "124 0003",
    "jp": "あの竹林は迷うから{0000}近寄らないほうがいいよ{0010}",
-   "en": ""
+   "en": "You get lost in that bamboo grove,{0000}so you'd better stay away from it.{0010}"
   },
   {
    "id": "46580A",
    "script": "4655F4",
    "op": "124 0005",
    "jp": "さいきん、あそこにも{0000}変な人が出入りしてるらしいよ{0010}",
-   "en": ""
+   "en": "I heard weird people have been{0000}going in and out of there lately too.{0010}"
   },
   {
    "id": "465852",
    "script": "4655F4",
    "op": "124 0006",
    "jp": "古びた神社が建っている{0000}らしいよ{0010}",
-   "en": ""
+   "en": "I hear there's an old, rundown{0000}shrine out there.{0010}"
   },
   {
    "id": "465888",
    "script": "4655F4",
    "op": "124 0007",
    "jp": "くわしくは知らないが、京東に{0000}ある塚に、その名があったよ{0010}",
-   "en": ""
+   "en": "I don't know the details, but there's{0000}a mound in East Kyo with that name.{0010}"
   },
   {
    "id": "4658D6",
    "script": "4655F4",
    "op": "124 0008",
    "jp": "さっぱり・・・{0000}こんな状況じゃしかたないよ{0010}",
-   "en": ""
+   "en": "Not a bit...{0000}Can't be helped, the way things are.{0010}"
   },
   {
    "id": "465916",
    "script": "4655F4",
    "op": "124 0009",
    "jp": "だから、妖怪さわぎが{0000}おこるんだろうなあ{0010}",
-   "en": ""
+   "en": "Which is probably why all{0000}this yokai trouble keeps happening.{0010}"
   },
   {
    "id": "465954",
    "script": "4655F4",
    "op": "124 0010",
    "jp": "おまえのところの親は{0000}キビしいからなあ{0010}",
-   "en": ""
+   "en": "Your folks sure{0000}are strict, huh?{0010}"
   },
   {
    "id": "465990",
    "script": "4655F4",
    "op": "124 0011",
    "jp": "かまわないけど、帰りに{0000}ラーメンおごれよ{0010}",
-   "en": ""
+   "en": "Sure, but you're buying{0000}me ramen on the way home.{0010}"
   },
   {
    "id": "4659CE",
    "script": "4655F4",
    "op": "124 0012",
    "jp": "それでも変な人が{0000}多いのはなぜだ？{0010}",
-   "en": ""
+   "en": "Then why are there still{0000}so many weirdos around?{0010}"
   },
   {
    "id": "465A06",
    "script": "4655F4",
    "op": "124 0013",
    "jp": "塾か・・・{0000}帰宅部もたいへんだな{0010}",
-   "en": ""
+   "en": "Cram school, huh...{0000}Even the go-home club's got it rough.{0010}"
   },
   {
    "id": "465A3C",
    "script": "4655F4",
    "op": "124 0014",
    "jp": "それで、この時間まで{0000}オレをダシにしてたわけだ{0010}",
-   "en": ""
+   "en": "So that's why you kept using me{0000}as your excuse till now.{0010}"
   },
   {
    "id": "465A80",
    "script": "4655F4",
    "op": "124 0015",
    "jp": "勉強にスポーツに恋・・・{0000}これから、いくらでもできるさ{0010}",
-   "en": ""
+   "en": "Studying, sports, love...{0000}There's plenty of time for all that.{0010}"
   },
   {
    "id": "465C24",
    "script": "465ACC",
    "op": "124 0001",
    "jp": "学校の北にダムがあるでしょ{0000}あそこ、魚がすごいらしいわ{0010}",
-   "en": ""
+   "en": "There's a dam north of the school,{0000}right? I hear the fish there are amazing.{0010}"
   },
   {
    "id": "465C70",
    "script": "465ACC",
    "op": "124 0002",
    "jp": "やっぱ、京中いく？{0000}あそこ、都会だし{0010}",
-   "en": ""
+   "en": "Wanna go to Central Kyo after all?{0000}It's the big city, y'know.{0010}"
   },
   {
    "id": "465CAA",
    "script": "465ACC",
    "op": "124 0003",
    "jp": "京西のほうって{0000}いったことある？{0010}",
-   "en": ""
+   "en": "Have you ever been{0000}over to West Kyo?{0010}"
   },
   {
    "id": "465CE0",
    "script": "465ACC",
    "op": "124 0005",
    "jp": "御所かあ・・・{0000}何かありそうなのよね{0010}",
-   "en": ""
+   "en": "The Gosho, huh...{0000}I just feel like something's there.{0010}"
   },
   {
    "id": "465D1A",
    "script": "465ACC",
    "op": "124 0006",
    "jp": "京東は行ったこと{0000}ないのよね{0010}",
-   "en": ""
+   "en": "I've never been{0000}to East Kyo.{0010}"
   },
   {
    "id": "465D4C",
    "script": "465ACC",
    "op": "124 0007",
    "jp": "きっと、この町は{0000}のろわれてるんだわ！{0010}",
-   "en": ""
+   "en": "I bet this town{0000}is cursed!{0010}"
   },
   {
    "id": "465D88",
    "script": "465ACC",
    "op": "124 0008",
    "jp": "京中に新しいお店が{0000}できたんだよ。行ってみない？{0010}",
-   "en": ""
+   "en": "A new shop opened in Central Kyo.{0000}Wanna go check it out?{0010}"
   },
   {
    "id": "465DCE",
    "script": "465ACC",
    "op": "124 0009",
    "jp": "ないしょだけど、ピンクの{0000}口紅をぬってきたんだ{0010}",
-   "en": ""
+   "en": "Don't tell anyone, but I've{0000}got pink lipstick on.{0010}"
   },
   {
    "id": "465E12",
    "script": "465ACC",
    "op": "124 0010",
    "jp": "さいきん、このクラスに{0000}なじめてきた気がする・・・{0010}",
-   "en": ""
+   "en": "Lately I feel like I'm finally{0000}fitting in with this class...{0010}"
   },
   {
    "id": "465E5A",
    "script": "465ACC",
    "op": "124 0011",
    "jp": "あそこの男の子たち{0000}ずーといるよね？{0010}",
-   "en": ""
+   "en": "Those boys over there{0000}have been there forever, huh?{0010}"
   },
   {
    "id": "465E94",
    "script": "465ACC",
    "op": "124 0012",
    "jp": "ねえ、今日の数学の授業・・・{0000}私、あまり理解できなかったよ{0010}",
-   "en": ""
+   "en": "Hey, today's math class...{0000}I barely understood any of it.{0010}"
   },
   {
    "id": "465EE4",
    "script": "465ACC",
    "op": "124 0013",
    "jp": "さっき、男の子から{0000}ラブレターもらっちゃった！{0010}",
-   "en": ""
+   "en": "A boy just gave me{0000}a love letter!{0010}"
   },
   {
    "id": "465F28",
    "script": "465ACC",
    "op": "124 0014",
    "jp": "京中においしいお店が{0000}できたんだよ。行ってみない？{0010}",
-   "en": ""
+   "en": "A tasty new place opened in Central{0000}Kyo. Wanna go check it out?{0010}"
   },
   {
    "id": "465F70",
    "script": "465ACC",
    "op": "124 0015",
    "jp": "ぐすんっ、さっき先生に{0000}おこられちゃった！{0010}",
-   "en": ""
+   "en": "*Sniff* The teacher{0000}just chewed me out!{0010}"
   },
   {
    "id": "466108",
    "script": "465FB0",
    "op": "124 0001",
    "jp": "魚がすごいって・・・{0000}釣りやすいってこと？{0010}",
-   "en": ""
+   "en": "Amazing fish...?{0000}You mean they're easy to catch?{0010}"
   },
   {
    "id": "466148",
    "script": "465FB0",
    "op": "124 0002",
    "jp": "京中って、京南町から{0000}北に向かえばいいんでしょ{0010}",
-   "en": ""
+   "en": "To get to Central Kyo, you just{0000}head north from South Kyo Town, right?{0010}"
   },
   {
    "id": "46618C",
    "script": "465FB0",
    "op": "124 0003",
    "jp": "聞いたところによると{0000}大きな神社があるみたいよ{0010}",
-   "en": ""
+   "en": "From what I've heard, there's{0000}a big shrine out there.{0010}"
   },
   {
    "id": "4661D0",
    "script": "465FB0",
    "op": "124 0005",
    "jp": "まったく・・・{0000}それは刑事ドラマのみすぎよ{0010}",
-   "en": ""
+   "en": "Honestly...{0000}You watch way too many cop shows.{0010}"
   },
   {
    "id": "466210",
    "script": "465FB0",
    "op": "124 0006",
    "jp": "そりゃあ、岩山と森林{0000}ばかりだからね{0010}",
-   "en": ""
+   "en": "Well, sure, it's nothing but{0000}rocky hills and forest.{0010}"
   },
   {
    "id": "46624A",
    "script": "465FB0",
    "op": "124 0007",
    "jp": "ちょっと・・・{0000}それはホラー映画のみすぎよ{0010}",
-   "en": ""
+   "en": "Come on...{0000}You watch way too many horror movies.{0010}"
   },
   {
    "id": "46628A",
    "script": "465FB0",
    "op": "124 0008",
    "jp": "あんたのお気楽ぶりには{0000}頭がさがるわ{0010}",
-   "en": ""
+   "en": "I've got to hand it to you,{0000}you're so carefree.{0010}"
   },
   {
    "id": "4662C4",
    "script": "465FB0",
    "op": "124 0009",
    "jp": "あんた、それで色じかけの{0000}つもり？　さらに校則違反よ{0010}",
-   "en": ""
+   "en": "Is that supposed to seduce someone?{0000}It's against school rules, too.{0010}"
   },
   {
    "id": "46630E",
    "script": "465FB0",
    "op": "124 0010",
    "jp": "私とあんたは、どうやら{0000}くされ縁ね。まあいいけど・・{0010}",
-   "en": ""
+   "en": "Looks like you and I are stuck with{0000}each other. Oh well, I don't mind...{0010}"
   },
   {
    "id": "466358",
    "script": "465FB0",
    "op": "124 0011",
    "jp": "なに言ってんの？{0000}あたしたちも同類じゃない！{0010}",
-   "en": ""
+   "en": "What are you talking about?{0000}We're just the same as them!{0010}"
   },
   {
    "id": "46639A",
    "script": "465FB0",
    "op": "124 0012",
    "jp": "あんた、あの時間{0000}ずーと、寝てたでしょ！{0010}",
-   "en": ""
+   "en": "You slept through{0000}that whole class, didn't you!{0010}"
   },
   {
    "id": "4663D8",
    "script": "465FB0",
    "op": "124 0013",
    "jp": "よーく、あて名をみてごらん{0000}べつの人の名前よ、きっと{0010}",
-   "en": ""
+   "en": "Take a good look at the address.{0000}I bet it's someone else's name.{0010}"
   },
   {
    "id": "466422",
    "script": "465FB0",
    "op": "124 0014",
    "jp": "いくいく！　さいきんまで{0000}ぶっそうだったからね{0010}",
-   "en": ""
+   "en": "I'm in, I'm in! Things were{0000}so dangerous until recently.{0010}"
   },
   {
    "id": "466466",
    "script": "465FB0",
    "op": "124 0015",
    "jp": "そりゃあ、先生のことを{0000}「オバサン」って言えばねぇ{0010}",
-   "en": ""
+   "en": "Well, sure, if you go calling{0000}the teacher \"Granny\"...{0010}"
   },
   {
    "id": "4664D4",
    "script": "4664AC",
    "op": "124 0000",
    "jp": "こっちのドアは{0000}こわれてるんだ{0010}",
-   "en": ""
+   "en": "This door here{0000}is broken.{0010}"
   },
   {
    "id": "466560",
    "script": "466508",
    "op": "124 0002",
    "jp": "お昼ごはん、おいしかったー{0000}私、ちょっとしあわせ気分{0010}",
-   "en": ""
+   "en": "Lunch was so yummy!{0000}I'm feeling kinda happy.{0010}"
   },
   {
    "id": "4665AA",
    "script": "466508",
    "op": "124 0008",
    "jp": "さっき、ケーキを食べたのー{0000}私、ちょっとしあわせ気分{0010}",
-   "en": ""
+   "en": "I just had some cake!{0000}I'm feeling kinda happy.{0010}"
   },
   {
    "id": "4665F4",
    "script": "466508",
    "op": "124 0015",
    "jp": "あーあ、食べすぎちゃって{0000}お金がないわー{0010}",
-   "en": ""
+   "en": "Ahh, I ate too much,{0000}and now I'm broke.{0010}"
   },
   {
    "id": "466688",
    "script": "466630",
    "op": "124 0002",
    "jp": "西にある神社で光るものを{0000}みたっていうウワサがあるよ{0010}",
-   "en": ""
+   "en": "There's a rumor someone saw something{0000}shining at the shrine to the west.{0010}"
   },
   {
    "id": "4666D2",
    "script": "466630",
    "op": "124 0008",
    "jp": "町から出るのも{0000}ひと苦労だよ{0010}",
-   "en": ""
+   "en": "Even getting out of town{0000}is a real hassle.{0010}"
   },
   {
    "id": "466704",
    "script": "466630",
    "op": "124 0015",
    "jp": "いそがなきゃ{0000}まにあわないなー{0010}",
-   "en": ""
+   "en": "I've gotta hurry,{0000}or I won't make it in time.{0010}"
   },
   {
    "id": "466790",
    "script": "466738",
    "op": "124 0002",
    "jp": "京北から来たんだけど{0000}道に迷っちゃったよ{0010}",
-   "en": ""
+   "en": "I came from North Kyo,{0000}but I got lost.{0010}"
   },
   {
    "id": "4667CE",
    "script": "466738",
    "op": "124 0008",
    "jp": "英会話スクールに入りたいけど{0000}勇気がないな・・・{0010}",
-   "en": ""
+   "en": "I wanna join an English school,{0000}but I don't have the guts...{0010}"
   },
   {
    "id": "466814",
    "script": "466738",
    "op": "124 0015",
    "jp": "アイアム、ザパニーズ！{0000}これで英会話はバッチリだ{0010}",
-   "en": ""
+   "en": "Ai amu Japaneezu!{0000}Now my English is perfect!{0010}"
   },
   {
    "id": "4668B0",
    "script": "466858",
    "op": "124 0002",
    "jp": "英会話の教材売ってます{0000}あなたもどうですか？{0010}",
-   "en": ""
+   "en": "I'm selling English study materials.{0000}How about some for you?{0010}"
   },
   {
    "id": "4668F2",
    "script": "466858",
    "op": "124 0008",
    "jp": "英会話の教材いかがですか？{0000}これで英語もグーンとアップ{0010}",
-   "en": ""
+   "en": "English study materials, anyone?{0000}They'll boost your English way up!{0010}"
   },
   {
    "id": "46693E",
    "script": "466858",
    "op": "124 0015",
    "jp": "英語の教材売ってるけど{0000}オレ自身、英語できないんだよ{0010}",
-   "en": ""
+   "en": "I sell English materials, but{0000}I can't speak English myself.{0010}"
   },
   {
    "id": "4669E0",
    "script": "466988",
    "op": "124 0002",
    "jp": "あー！この街、広すぎる{0000}ドラッグストアどこーー{0010}",
-   "en": ""
+   "en": "Aaah! This city's way too big!{0000}Where's the drugstore!?{0010}"
   },
   {
    "id": "466A24",
    "script": "466988",
    "op": "124 0008",
    "jp": "なによ！女の子はいろいろと{0000}タイヘンなんだから！{0010}",
-   "en": ""
+   "en": "What!? Girls have all kinds{0000}of things to deal with!{0010}"
   },
   {
    "id": "466A6A",
    "script": "466988",
    "op": "124 0015",
    "jp": "やっぱり、好きな人には{0000}自分の想いを伝えなきゃね{0010}",
-   "en": ""
+   "en": "If you like someone, you really{0000}have to tell them how you feel.{0010}"
   },
   {
    "id": "466B08",
    "script": "466AB0",
    "op": "124 0002",
    "jp": "あんさん、ここは{0000}初めてどすかえ？{0010}",
-   "en": ""
+   "en": "Is this your first time{0000}here, dear?{0010}"
   },
   {
    "id": "466B40",
    "script": "466AB0",
    "op": "124 0008",
    "jp": "ここは日本の中心地{0000}どすえ{0010}",
-   "en": ""
+   "en": "This is the very heart{0000}of Japan, dear.{0010}"
   },
   {
    "id": "466B70",
    "script": "466AB0",
    "op": "124 0015",
    "jp": "あら、おまぃさん{0000}いいおとこ{0010}",
-   "en": ""
+   "en": "My, my, aren't you{0000}a handsome one.{0010}"
   },
   {
    "id": "466BF8",
    "script": "466BA0",
    "op": "124 0002",
    "jp": "この角を左にすすむと{0000}京西どすえ{0010}",
-   "en": ""
+   "en": "Turn left at this corner{0000}for West Kyo, dear.{0010}"
   },
   {
    "id": "466C2E",
    "script": "466BA0",
    "op": "124 0008",
    "jp": "町は広いから、迷わんように{0000}しとくんなはれ{0010}",
-   "en": ""
+   "en": "The town is big, so mind{0000}you don't get lost, now.{0010}"
   },
   {
    "id": "466C6E",
    "script": "466BA0",
    "op": "124 0015",
    "jp": "この町の道は、もう{0000}覚えたどすか？{0010}",
-   "en": ""
+   "en": "Have you learned the roads{0000}of this town yet, dear?{0010}"
   },
   {
    "id": "466CFC",
    "script": "466CA4",
    "op": "124 0002",
    "jp": "いちげんさん{0000}おことわりどす！{0010}",
-   "en": ""
+   "en": "No first-time guests{0000}without an introduction, dear!{0010}"
   },
   {
    "id": "466D30",
    "script": "466CA4",
    "op": "124 0008",
    "jp": "この京中を中心に、{0000}四方の町に行けるんや{0010}",
-   "en": ""
+   "en": "From here in Central Kyo,{0000}you can reach the towns on all four sides.{0010}"
   },
   {
    "id": "466D6E",
    "script": "466CA4",
    "op": "124 0015",
    "jp": "あんさんがオトナになったら{0000}相手にしてあげる{0010}",
-   "en": ""
+   "en": "When you're all grown up,{0000}I'll keep you company.{0010}"
   },
   {
    "id": "466E08",
    "script": "466DB0",
    "op": "124 0002",
    "jp": "この町は古くから{0000}都として栄えてたんどす{0010}",
-   "en": ""
+   "en": "Since olden times, this town{0000}has flourished as the capital, dear.{0010}"
   },
   {
    "id": "466E46",
    "script": "466DB0",
    "op": "124 0008",
    "jp": "私はうめやっこ。たけやっこと{0000}まつやっことは姉妹どす{0010}",
-   "en": ""
+   "en": "I am Umeyakko. Takeyakko and{0000}Matsuyakko are my sisters, dear.{0010}"
   },
   {
    "id": "466E90",
    "script": "466DB0",
    "op": "124 0015",
    "jp": "いそいでいるんどす{0000}ごめんあそばせ{0010}",
-   "en": ""
+   "en": "I'm in a hurry, dear.{0000}Do excuse me.{0010}"
   },
   {
    "id": "466F20",
    "script": "466EC8",
    "op": "124 0002",
    "jp": "おやまあ、ぼうや{0000}私に何か用どすか？{0010}",
-   "en": ""
+   "en": "Oh my, little one.{0000}Is there something you need?{0010}"
   },
   {
    "id": "466F5A",
    "script": "466EC8",
    "op": "124 0008",
    "jp": "ガラの悪い人がおるから{0000}気をつけなはれ{0010}",
-   "en": ""
+   "en": "There are some rough types about,{0000}so do be careful, dear.{0010}"
   },
   {
    "id": "466F96",
    "script": "466EC8",
    "op": "124 0015",
    "jp": "また、お会いしましたね{0000}お元気で何より{0010}",
-   "en": ""
+   "en": "We meet again.{0000}I'm glad to see you're well.{0010}"
   },
   {
    "id": "467028",
    "script": "466FD0",
    "op": "124 0002",
    "jp": "ここを右上に行くと{0000}お寺だったと思うがな{0010}",
-   "en": ""
+   "en": "I think if you go up and right{0000}from here, there's a temple.{0010}"
   },
   {
    "id": "467066",
    "script": "466FD0",
    "op": "124 0008",
    "jp": "おまえ、学校はどうした？{0000}サボってちゃいかんぞ！{0010}",
-   "en": ""
+   "en": "Hey, what about school?{0000}No skipping class!{0010}"
   },
   {
    "id": "4670AC",
    "script": "466FD0",
    "op": "124 0015",
    "jp": "さて、すこし遠くへ{0000}散歩にでも出てみるかな{0010}",
-   "en": ""
+   "en": "Now then, maybe I'll go for{0000}a stroll a bit farther out.{0010}"
   },
   {
    "id": "467144",
    "script": "4670EC",
    "op": "124 0002",
    "jp": "いいだろー！この町で{0000}かくれんぼもできるんだぞ{0010}",
-   "en": ""
+   "en": "Pretty cool, huh! You can even{0000}play hide-and-seek in this town!{0010}"
   },
   {
    "id": "467188",
    "script": "4670EC",
    "op": "124 0008",
    "jp": "走りすぎて{0000}つかれちゃったよ{0010}",
-   "en": ""
+   "en": "I ran too much,{0000}and now I'm worn out.{0010}"
   },
   {
    "id": "4671BA",
    "script": "4670EC",
    "op": "124 0015",
    "jp": "そろそろ帰らなきゃ{0000}ママにおこられるー！{0010}",
-   "en": ""
+   "en": "I'd better get home soon,{0000}or Mom'll get mad!{0010}"
   },
   {
    "id": "467250",
    "script": "4671F8",
    "op": "124 0002",
    "jp": "この着物、ちとキツくて{0000}たまらんわ{0010}",
-   "en": ""
+   "en": "This kimono's a wee bit tight.{0000}I can hardly stand it.{0010}"
   },
   {
    "id": "467288",
    "script": "4671F8",
    "op": "124 0008",
    "jp": "はやく私服をきて、パァーと{0000}遊びに行きたいわぁ{0010}",
-   "en": ""
+   "en": "I wanna put on my own clothes{0000}and go have some fun!{0010}"
   },
   {
    "id": "4672CC",
    "script": "4671F8",
    "op": "124 0015",
    "jp": "そんなに私をじーと見て{0000}もう、オ・マ・セさん{0010}",
-   "en": ""
+   "en": "Staring at me like that...{0000}My, aren't you a fresh one.{0010}"
   },
   {
    "id": "467364",
    "script": "46730C",
    "op": "124 0002",
    "jp": "この町の外にはな・・・{0000}四方に塚があるんじゃ{0010}",
-   "en": ""
+   "en": "Outside this town, y'see...{0000}there are mounds on all four sides.{0010}"
   },
   {
    "id": "4673A6",
    "script": "46730C",
    "op": "124 0008",
    "jp": "まるで、おぬしはこれから{0000}遠くに行く顔をしとるのう{0010}",
-   "en": ""
+   "en": "You look like someone who's{0000}about to go somewhere far away.{0010}"
   },
   {
    "id": "4673EE",
    "script": "46730C",
    "op": "124 0015",
    "jp": "おお・・おぬし、何かに{0000}ふっきれた顔をしとるのう{0010}",
-   "en": ""
+   "en": "Oho... You look like someone{0000}who's gotten past something, eh?{0010}"
   },
   {
    "id": "46748C",
    "script": "467434",
    "op": "124 0002",
    "jp": "今日は月刊バンバンの{0000}発売日だったよ{0010}",
-   "en": ""
+   "en": "Today was the day the new{0000}Monthly BangBang came out.{0010}"
   },
   {
    "id": "4674C6",
    "script": "467434",
    "op": "124 0008",
    "jp": "あやか姉ちゃんに{0000}つかまらないようにしなきゃ{0010}",
-   "en": ""
+   "en": "I can't let Big Sis Ayaka{0000}catch me!{0010}"
   },
   {
    "id": "467508",
    "script": "467434",
    "op": "124 0015",
    "jp": "とうぶん、おうちに{0000}帰れないや！{0010}",
-   "en": ""
+   "en": "I can't go home{0000}for a while!{0010}"
   },
   {
    "id": "467594",
    "script": "46753C",
    "op": "124 0002",
    "jp": "たくまっていう子みなかった？{0000}あれ、私の弟なの！{0010}",
-   "en": ""
+   "en": "Have you seen a kid named Takuma?{0000}He's my little brother!{0010}"
   },
   {
    "id": "4675DA",
    "script": "46753C",
    "op": "124 0008",
    "jp": "たくまのバカ、つかまえたら{0000}ゆるさないんだから！{0010}",
-   "en": ""
+   "en": "That idiot Takuma! When I catch him,{0000}he's in big trouble!{0010}"
   },
   {
    "id": "467620",
    "script": "46753C",
    "op": "124 0015",
    "jp": "ねえ、たくまって子知らない？{0000}私のクツをはいて歩いてるのよ{0010}",
-   "en": ""
+   "en": "Hey, do you know a kid named Takuma?{0000}He's walking around in my shoes!{0010}"
   },
   {
    "id": "4676C8",
    "script": "467670",
    "op": "124 0002",
    "jp": "ここらあたりに{0000}お寺があったはず・・・{0010}",
-   "en": ""
+   "en": "There should be a temple{0000}around here somewhere...{0010}"
   },
   {
    "id": "467704",
    "script": "467670",
    "op": "124 0008",
    "jp": "あそこのお寺は、{0000}なかなかよかったよ{0010}",
-   "en": ""
+   "en": "That temple over there{0000}was pretty nice.{0010}"
   },
   {
    "id": "46773E",
    "script": "467670",
    "op": "124 0015",
    "jp": "こんどは京北あたりのお寺を{0000}めぐろうかな{0010}",
-   "en": ""
+   "en": "Next, maybe I'll tour the{0000}temples around North Kyo.{0010}"
   },
   {
    "id": "4677D4",
    "script": "46777C",
    "op": "124 0002",
    "jp": "ここは、風雅な場所{0000}京西町よ{0010}",
-   "en": ""
+   "en": "This is the elegant{0000}town of West Kyo.{0010}"
   },
   {
    "id": "467806",
    "script": "46777C",
    "op": "124 0008",
    "jp": "喫茶店で彼とまちあわせなの{0000}おそいなあ{0010}",
-   "en": ""
+   "en": "I'm meeting my boyfriend at the cafe.{0000}He's so late...{0010}"
   },
   {
    "id": "467842",
    "script": "46777C",
    "op": "124 0015",
    "jp": "けっきょく、彼はこなかったわ{0000}でも、前向きでがんばるわ{0010}",
-   "en": ""
+   "en": "In the end, he never came.{0000}But I'll stay positive!{0010}"
   },
   {
    "id": "4678E4",
    "script": "46788C",
    "op": "124 0002",
    "jp": "町を出た西には広い竹林が{0000}広がっているそうじゃ{0010}",
-   "en": ""
+   "en": "They say a wide bamboo grove{0000}spreads out west of town.{0010}"
   },
   {
    "id": "467928",
    "script": "46788C",
    "op": "124 0008",
    "jp": "さいきんの薬は{0000}飲みやすくなったもんじゃ{0010}",
-   "en": ""
+   "en": "Medicine these days{0000}sure goes down easier.{0010}"
   },
   {
    "id": "467966",
    "script": "46788C",
    "op": "124 0015",
    "jp": "あれから、だいぶ体の{0000}調子がよいようじゃ{0010}",
-   "en": ""
+   "en": "Since then, my body's been{0000}feeling much better.{0010}"
   },
   {
    "id": "4679FC",
    "script": "4679A4",
    "op": "124 0002",
    "jp": "竹林で光り輝くものを{0000}みたどすえ{0010}",
-   "en": ""
+   "en": "I saw something shining{0000}in the bamboo grove, dear.{0010}"
   },
   {
    "id": "467A32",
    "script": "4679A4",
    "op": "124 0008",
    "jp": "この町もずいぶん{0000}変わったどすなあ{0010}",
-   "en": ""
+   "en": "This town has changed{0000}so very much, dear.{0010}"
   },
   {
    "id": "467A6A",
    "script": "4679A4",
    "op": "124 0015",
    "jp": "また、この町を{0000}ひいきにしておくれやす{0010}",
-   "en": ""
+   "en": "Do come and visit our{0000}town again, dear.{0010}"
   },
   {
    "id": "467AFC",
    "script": "467AA4",
    "op": "124 0002",
    "jp": "あの、きょういち、って子{0000}いたずらっこなのよ！{0010}",
-   "en": ""
+   "en": "That kid Kyoichi{0000}is such a little prankster!{0010}"
   },
   {
    "id": "467B40",
    "script": "467AA4",
    "op": "124 0008",
    "jp": "町の西にある竹林は{0000}行っちゃダメっていわれてるの{0010}",
-   "en": ""
+   "en": "They told me not to go into{0000}the bamboo grove west of town.{0010}"
   },
   {
    "id": "467B86",
    "script": "467AA4",
    "op": "124 0015",
    "jp": "まったくもう、ませた子が{0000}多くて困っちゃう！{0010}",
-   "en": ""
+   "en": "Honestly, there are so many{0000}cheeky little kids around!{0010}"
   },
   {
    "id": "467C20",
    "script": "467BC8",
    "op": "124 0002",
    "jp": "すずえっていう姉ちゃんに{0000}おこられちゃった{0010}",
-   "en": ""
+   "en": "A big girl named Suzue{0000}chewed me out.{0010}"
   },
   {
    "id": "467C60",
    "script": "467BC8",
    "op": "124 0008",
    "jp": "この町にはコンビ二が{0000}ないんだぞ！{0010}",
-   "en": ""
+   "en": "This town doesn't even{0000}have a convenience store!{0010}"
   },
   {
    "id": "467C98",
    "script": "467BC8",
    "op": "124 0015",
    "jp": "お兄ちゃんにだけ教えてあげる{0000}すずえ姉ちゃんは白だったよ{0010}",
-   "en": ""
+   "en": "I'll tell just you, mister:{0000}Suzue's undies were white!{0010}"
   },
   {
    "id": "467D3C",
    "script": "467CE4",
    "op": "124 0002",
    "jp": "ここを西へ向かうと{0000}神社があるという・・・{0010}",
-   "en": ""
+   "en": "They say if you head west{0000}from here, there's a shrine...{0010}"
   },
   {
    "id": "467D7C",
    "script": "467CE4",
    "op": "124 0008",
    "jp": "・・・ああ、すまん、{0000}夢を見ていたようじゃ{0010}",
-   "en": ""
+   "en": "...Ah, sorry,{0000}I seem to have been dreaming.{0010}"
   },
   {
    "id": "467DBC",
    "script": "467CE4",
    "op": "124 0015",
    "jp": "ぼうやは天神町から来たのか{0000}あそこはいいところだ{0010}",
-   "en": ""
+   "en": "So you came from Tenjin Town,{0000}sonny? That's a nice place.{0010}"
   },
   {
    "id": "467E58",
    "script": "467E00",
    "op": "124 0002",
    "jp": "森できらびやかな扇が{0000}落ちていたような気が・・・{0010}",
-   "en": ""
+   "en": "I think I saw a gorgeous fan{0000}lying in the forest...{0010}"
   },
   {
    "id": "467E9E",
    "script": "467E00",
    "op": "124 0008",
    "jp": "今この床屋に寄ったんだけど{0000}キマってるかな？{0010}",
-   "en": ""
+   "en": "I just stopped by the barber.{0000}Am I looking sharp?{0010}"
   },
   {
    "id": "467EE0",
    "script": "467E00",
    "op": "124 0015",
    "jp": "今日も無遅刻、無欠勤！{0000}がんばるぞー！{0010}",
-   "en": ""
+   "en": "Never late, never absent,{0000}again today! Let's do this!{0010}"
   },
   {
    "id": "467F74",
    "script": "467F1C",
    "op": "124 0002",
    "jp": "御所に「金の矢」がある{0000}って聞いたけど、ホントかしら{0010}",
-   "en": ""
+   "en": "I heard there's a \"Golden Arrow\"{0000}at the Gosho. I wonder if it's true.{0010}"
   },
   {
    "id": "467FBE",
    "script": "467F1C",
    "op": "124 0008",
    "jp": "学校は・・・そうそう{0000}創立記念日でお休みなの{0010}",
-   "en": ""
+   "en": "School...? Oh, right, it's the{0000}founding anniversary, so no school.{0010}"
   },
   {
    "id": "468000",
    "script": "467F1C",
    "op": "124 0015",
    "jp": "（・・じつは学校を{0000}サボっちゃったのよね・・）{0010}",
-   "en": ""
+   "en": "(...Actually, I'm{0000}skipping school...){0010}"
   }
  ]
 }

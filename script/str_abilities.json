@@ -4,211 +4,211 @@
   {
    "id": "13AC10",
    "jp": "逃げる１００％成功　　　　　（エンカウント時）",
-   "en": "",
+   "en": "Escape always succeeds\n(on encounter)",
    "max": 48,
    "pad": 14
   },
   {
    "id": "13AC40",
    "jp": "敵の特殊能力を無効化",
-   "en": "",
+   "en": "Nullifies the foe's special abilities",
    "max": 24
   },
   {
    "id": "13AC58",
    "jp": "カウンター持続　　　　　　　２倍",
-   "en": "",
+   "en": "Counter duration\nx2",
    "max": 36,
    "pad": 14
   },
   {
    "id": "13AC7C",
    "jp": "カウンター持続　　　　　　　１．５倍",
-   "en": "",
+   "en": "Counter duration\nx1.5",
    "max": 40,
    "pad": 14
   },
   {
    "id": "13ACA4",
    "jp": "ターン毎式点回復値が　　　　２倍",
-   "en": "",
+   "en": "Shiki Points regained per turn\nx2",
    "max": 36,
    "pad": 14
   },
   {
    "id": "13ACC8",
    "jp": "ターン毎式点回復値が　　　　１．５倍",
-   "en": "",
+   "en": "Shiki Points regained per turn\nx1.5",
    "max": 40,
    "pad": 14
   },
   {
    "id": "13ACF0",
    "jp": "ターン毎ＨＰ自動回復（中）",
-   "en": "",
+   "en": "Regain HP every turn (medium)",
    "max": 28
   },
   {
    "id": "13AD0C",
    "jp": "ターン毎ＨＰ自動回復（小）",
-   "en": "",
+   "en": "Regain HP every turn (small)",
    "max": 28
   },
   {
    "id": "13AD28",
    "jp": "バトル中１回だけ味方蘇生",
-   "en": "",
+   "en": "Revive an ally once per battle",
    "max": 28
   },
   {
    "id": "13AD44",
    "jp": "バトル開始時式点５に回復",
-   "en": "",
+   "en": "Shiki Points set to 5 at battle start",
    "max": 28
   },
   {
    "id": "13AD60",
    "jp": "加護力　　　　　　　　　　　２倍",
-   "en": "",
+   "en": "Guard\nx2",
    "max": 36,
    "pad": 14
   },
   {
    "id": "13AD84",
    "jp": "加護力　　　　　　　　　　　１．５倍",
-   "en": "",
+   "en": "Guard\nx1.5",
    "max": 40,
    "pad": 14
   },
   {
    "id": "13ADAC",
    "jp": "妖力　　　　　　　　　　　　２倍",
-   "en": "",
+   "en": "Power\nx2",
    "max": 36,
    "pad": 14
   },
   {
    "id": "13ADD0",
    "jp": "妖力　　　　　　　　　　　　１．５倍",
-   "en": "",
+   "en": "Power\nx1.5",
    "max": 40,
    "pad": 14
   },
   {
    "id": "13ADF8",
    "jp": "素早さ　　　　　　　　　　　２倍",
-   "en": "",
+   "en": "Speed\nx2",
    "max": 36,
    "pad": 14
   },
   {
    "id": "13AE1C",
    "jp": "素早さ　　　　　　　　　　　１．５倍",
-   "en": "",
+   "en": "Speed\nx1.5",
    "max": 40,
    "pad": 14
   },
   {
    "id": "13AE44",
    "jp": "経験値　　　　　　　　　　　２倍",
-   "en": "",
+   "en": "Experience\nx2",
    "max": 36,
    "pad": 14
   },
   {
    "id": "13AE68",
    "jp": "経験値　　　　　　　　　　　１．５倍",
-   "en": "",
+   "en": "Experience\nx1.5",
    "max": 40,
    "pad": 14
   },
   {
    "id": "13AE90",
    "jp": "敵の「ＨＰ吸収」術、無効",
-   "en": "",
+   "en": "Foes' \"HP Drain\" arts have no effect",
    "max": 28
   },
   {
    "id": "13AEAC",
    "jp": "敵の「睡眠」術、無効",
-   "en": "",
+   "en": "Foes' \"Sleep\" arts have no effect",
    "max": 24
   },
   {
    "id": "13AEC4",
    "jp": "敵の「呪縛」術、無効",
-   "en": "",
+   "en": "Foes' \"Bind\" arts have no effect",
    "max": 24
   },
   {
    "id": "13AEDC",
    "jp": "敵の「毒」術、無効",
-   "en": "",
+   "en": "Foes' \"Poison\" arts have no effect",
    "max": 20
   },
   {
    "id": "13AEF0",
    "jp": "敵の「石化」術、無効",
-   "en": "",
+   "en": "Foes' \"Petrify\" arts have no effect",
    "max": 24
   },
   {
    "id": "13AF08",
    "jp": "敵の「魅了」術、無効",
-   "en": "",
+   "en": "Foes' \"Charm\" arts have no effect",
    "max": 24
   },
   {
    "id": "13AF20",
    "jp": "敵の「一撃死」術、無効",
-   "en": "",
+   "en": "Foes' \"Instant Death\" arts have no effect",
    "max": 24
   },
   {
    "id": "13AF38",
    "jp": "味方の「ＨＰ吸収」術の吸収量１．５倍",
-   "en": "",
+   "en": "Allies' \"HP Drain\" arts: amount\nx1.5",
    "max": 40
   },
   {
    "id": "13AF60",
    "jp": "味方の「睡眠」術の成功率　　１．５倍",
-   "en": "",
+   "en": "Allies' \"Sleep\" arts: success rate\nx1.5",
    "max": 40,
    "pad": 14
   },
   {
    "id": "13AF88",
    "jp": "味方の「呪縛」術の成功率　　１．５倍",
-   "en": "",
+   "en": "Allies' \"Bind\" arts: success rate\nx1.5",
    "max": 40,
    "pad": 14
   },
   {
    "id": "13AFB0",
    "jp": "味方の「毒」術の成功率　　　１．５倍",
-   "en": "",
+   "en": "Allies' \"Poison\" arts: success rate\nx1.5",
    "max": 40,
    "pad": 14
   },
   {
    "id": "13AFD8",
    "jp": "味方の「石化」術の成功率　　１．５倍",
-   "en": "",
+   "en": "Allies' \"Petrify\" arts: success rate\nx1.5",
    "max": 40,
    "pad": 14
   },
   {
    "id": "13B000",
    "jp": "味方の「魅了」術の成功率　　１．５倍",
-   "en": "",
+   "en": "Allies' \"Charm\" arts: success rate\nx1.5",
    "max": 40,
    "pad": 14
   },
   {
    "id": "13B028",
    "jp": "味方の「一撃死」術の成功率　１．５倍",
-   "en": "",
+   "en": "Allies' \"Instant Death\" arts: success rate\nx1.5",
    "max": 37
   }
  ]

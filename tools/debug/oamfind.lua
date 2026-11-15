@@ -2,7 +2,7 @@
 -- written by 0x08111B50)? Logs each distinct entry once: "OAM f<frame> i=.. x=.. y=.. shape=.. size=.. tile=.. pal=.."
 --   python -X utf8 tools/debug/warp_all.py ROM --only battle_forest --out work/qa/oam --states work/qa/oam/st --probe tools/debug/oamfind.lua
 local M = emu.memType.gbaMemory
-local TLO, THI = 0x3D8, 0x3E8
+local TLO, THI = rawget(_G, "TLO") or 0x3D8, rawget(_G, "THI") or 0x3E8  -- --var TLO=0x60 --var THI=0x80
 local seen = {}
 local frame = 0
 L.on_frame(function()

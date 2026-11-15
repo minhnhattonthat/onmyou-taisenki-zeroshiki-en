@@ -4,120 +4,120 @@
   {
    "id": "40C698",
    "jp": "ルールの設定　　　　　［１Ｐ］",
-   "en": "",
+   "en": "Set the Rules [1P]",
    "max": 32,
    "pad": 11
   },
   {
    "id": "40C6B8",
    "jp": "ルールの確認待機　　　［１Ｐ］",
-   "en": "",
+   "en": "Waiting for Rule Check [1P]",
    "max": 32,
    "pad": 11
   },
   {
    "id": "40C6D8",
    "jp": "ルールの設定待機　　　［２Ｐ］",
-   "en": "",
+   "en": "Waiting for Rule Setup [2P]",
    "max": 32,
    "pad": 11
   },
   {
    "id": "40C6F8",
    "jp": "１Ｐのルール確定を　　　　　待っています",
-   "en": "",
+   "en": "Waiting for 1P to\nconfirm the rules",
    "max": 44,
    "pad": 14
   },
   {
    "id": "40C724",
    "jp": "ルールの確認　　　　　［２Ｐ］",
-   "en": "",
+   "en": "Check the Rules [2P]",
    "max": 32,
    "pad": 11
   },
   {
    "id": "40C744",
    "jp": "コンティニュー　　　　［１Ｐ］",
-   "en": "",
+   "en": "Continue [1P]",
    "max": 32,
    "pad": 11
   },
   {
    "id": "40C764",
    "jp": "もう一度対戦しますか？",
-   "en": "",
+   "en": "Battle again?",
    "max": 24
   },
   {
    "id": "40C77C",
    "jp": "対戦を終了します　　　　　　２Ｐの勝敗終了を待っています",
-   "en": "",
+   "en": "Ending the match.\nWaiting for 2P to finish",
    "max": 60,
    "pad": 14
   },
   {
    "id": "40C7B8",
    "jp": "コンティニューします　　　　２Ｐの勝敗終了を待っています",
-   "en": "",
+   "en": "Continuing.\nWaiting for 2P to finish",
    "max": 60,
    "pad": 14
   },
   {
    "id": "40C7F4",
    "jp": "対戦を終了します",
-   "en": "",
+   "en": "Ending the match.",
    "max": 20
   },
   {
    "id": "40C808",
    "jp": "コンティニュー待機　　［１Ｐ］",
-   "en": "",
+   "en": "Waiting to Continue [1P]",
    "max": 32,
    "pad": 11
   },
   {
    "id": "40C828",
    "jp": "コンティニューします",
-   "en": "",
+   "en": "Continuing.",
    "max": 24
   },
   {
    "id": "40C840",
    "jp": "コンティニュ－待機　　［２Ｐ］",
-   "en": "",
+   "en": "Waiting to Continue [2P]",
    "max": 32,
    "pad": 11
   },
   {
    "id": "40C860",
    "jp": "１Ｐのコンティニュー確定を　待っています",
-   "en": "",
+   "en": "Waiting for 1P to\nconfirm Continue",
    "max": 44
   },
   {
    "id": "40C88C",
    "jp": "２Ｐのバトルメンバー選定を　待っています",
-   "en": "",
+   "en": "Waiting for 2P to\npick a battle team",
    "max": 44
   },
   {
    "id": "40C8B8",
    "jp": "１Ｐのバトルメンバー選定を　待っています",
-   "en": "",
+   "en": "Waiting for 1P to\npick a battle team",
    "max": 44
   },
   {
    "id": "40C8E4",
    "jp": "バトル開始　　　　　　［１Ｐ］",
-   "en": "",
+   "en": "Battle Start [1P]",
    "max": 32,
    "pad": 11
   },
   {
    "id": "40C904",
    "jp": "バトル開始　　　　　　［２Ｐ］",
-   "en": "",
+   "en": "Battle Start [2P]",
    "max": 32,
    "pad": 11
   },

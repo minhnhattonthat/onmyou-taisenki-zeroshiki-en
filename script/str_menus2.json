@@ -4,120 +4,120 @@
   {
    "id": "40F718",
    "jp": "けってい",
-   "en": "",
+   "en": "OK",
    "max": 12
   },
   {
    "id": "40F724",
    "jp": "ショート",
-   "en": "",
+   "en": "Short",
    "max": 12
   },
   {
    "id": "40F730",
    "jp": "　カット",
-   "en": "",
+   "en": "cut",
    "max": 9
   },
   {
    "id": "40F740",
    "jp": "バンナイ",
-   "en": "",
+   "en": "Bannai",
    "max": 12
   },
   {
    "id": "40F74C",
    "jp": "まず、十字ボタンを上方向に入力してみてください",
-   "en": "",
+   "en": "First, try pressing Up\non the +Control Pad.",
    "max": 48
   },
   {
    "id": "40F77C",
    "jp": "なかなかいいスジです。",
-   "en": "",
+   "en": "You have a real knack for this.",
    "max": 24
   },
   {
    "id": "40F794",
    "jp": "赤い線を続けて入力することで「印」ができます",
-   "en": "",
+   "en": "Keep tracing the red line\nto form a \"seal\".",
    "max": 48
   },
   {
    "id": "40F7C4",
    "jp": "あなたは私たち式神に「印」で指示を出すのです",
-   "en": "",
+   "en": "You give us shikigami our\norders with \"seals\".",
    "max": 48
   },
   {
    "id": "40F7F4",
    "jp": "次は、十字ボタンを左方向に　入力してみてください",
-   "en": "",
+   "en": "Next, try pressing Left\non the +Control Pad.",
    "max": 52
   },
   {
    "id": "40F828",
    "jp": "よくできました　　　　　　　赤い線が金色に光りましたね？",
-   "en": "",
+   "en": "Well done!\nThe red line glowed gold, yes?",
    "max": 60,
    "pad": 14
   },
   {
    "id": "40F864",
    "jp": "これは「印」が完成した　　　という意味です",
-   "en": "",
+   "en": "That means the \"seal\"\nis complete.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "40F890",
    "jp": "ちなみに、今作ったのは　　　「必殺技１」の印です",
-   "en": "",
+   "en": "By the way, the one you just made\nis the seal for \"Special Move 1\".",
    "max": 52,
    "pad": 14
   },
   {
    "id": "40F8C4",
    "jp": "「印」を完成させることで",
-   "en": "",
+   "en": "By completing a \"seal\",",
    "max": 28
   },
   {
    "id": "40F8E0",
    "jp": "式神は必殺技をだすことが　　できるようになるのです",
-   "en": "",
+   "en": "you let your shikigami\nunleash a special move.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "40F914",
    "jp": "様々な「印」があるので　　　探してみてください",
-   "en": "",
+   "en": "There are all sorts of \"seals\",\nso try looking for them.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "40F944",
    "jp": "おっと、長話しすぎました",
-   "en": "",
+   "en": "Oops, I've talked too long.",
    "max": 28
   },
   {
    "id": "40F960",
    "jp": "「印」が完成したらＡボタンを押して決定してくださいね",
-   "en": "",
+   "en": "Once a \"seal\" is complete,\npress the A Button to confirm it.",
    "max": 53
   },
   {
    "id": "40F9F0",
    "jp": "【",
-   "en": "",
+   "en": "[",
    "max": 4
   },
   {
    "id": "40F9F4",
    "jp": "】",
-   "en": "",
+   "en": "]",
    "max": 3
   }
  ]

@@ -1,0 +1,150 @@
+468BF4	Go up from here and{0000}you'll find a temple.{0010}
+468C24	Grandpa said there's a shrine{0000}on the east side of town.{0010}
+468C6E	Finally I can go out and play{0000}without my folks fussing!{0010}
+468D00	This is a town of memories,{0000}East Kyo Town, dear.{0010}
+468D36	Have you taken a liking{0000}to this town, dear?{0010}
+468D74	I'd best be taking{0000}my leave now, dear.{0010}
+468DD8	This is a sacred place.{0000}The Gosho, it is.{0010}
+468E60	Got any shikigami cards?{0000}Whaaat, you don't?{0010}
+468EA0	The park's packed with{0000}people, same as always.{0010}
+468EDE	At least here, it feels{0000}peaceful, huh?{0010}
+468F70	Hey, hey, there was something{0000}shiny in the sandbox!{0010}
+468FB4	Maria-chan...{0000}Isn't she here...?{0010}
+468FF4	Oh! Maria-chan{0000}was over there!{0010}
+469084	We're playing hide-and-seek.{0000}Don't get in the way!{0010}
+4690C4	We're playing kick-the-can!{0000}You're in the way!{0010}
+4690FE	We're playing kick-the-can,{0000}but nobody's coming out...{0010}
+469194	I gotta go{0000}to the bathroom!{0010}
+4691CA	My name's Jo!{0000}Pretty cool, huh!{0010}
+46920C	I'm hungry.{0000}Time to head home.{0010}
+4692A8	Ai-chan...{0000}Where could she be?{0010}
+4692E4	Y'know, today Daddy and Mommy{0000}both went out.{0010}
+469322	Daddy and Mommy will be back soon,{0000}so I'm going home!{0010}
+4693C4	I'm first on the{0000}slide today!{0010}
+469402	Oh, you climbin' up{0000}the slide too, mister?{0010}
+46943E	Phew... I went down the slide{0000}like a hundred times!{0010}
+4694DC	Pretty flowers bloom{0000}in this park.{0010}
+46951A	Ufufu...{0000}I have to water the flowers.{0010}
+469554	My dream for the future is...{0000}to be a lovely bride!{0010}
+4695E4	Lately everyone in the village{0000}has been acting strange.{0010}
+469628	Human, thank you.{0000}Now the village will be calm.{0010}
+4696A8	This is the Byakko Village{0000}of "Fukumaden"!{0010}
+4696DE	Looks like Mahoroba's{0000}evil aura is gone.{0010}
+469760	There's a sanctum{0000}farther in.{0010}
+469790	Human, you're always{0000}more than welcome here.{0010}
+469804	Gentaro-san is{0000}in the sanctum.{0010}
+46983C	We'll do our part too,{0000}so this peace may last.{0010}
+4698B8	This is the Genbu Village{0000}of "Fukumaden".{0010}
+4698EC	Human, thank you.{0000}Now the village is calm.{0010}
+46996C	There's a sanctum{0000}farther in.{0010}
+46999E	Looks like Mahoroba's{0000}evil aura is gone.{0010}
+469A1C	That Mahoroba hit our elder{0000}with his evil aura.{0010}
+469A5A	Human, you're always{0000}more than welcome here.{0010}
+469ACC	Rakusai, our elder,{0000}is in the sanctum.{0010}
+469B04	We'll do our part too,{0000}so this peace may last.{0010}
+469B80	This is the Seiryu Village{0000}of "Fukumaden".{0010}
+469BB4	Human, thank you.{0000}Now the village is calm.{0010}
+469C34	What could the likes of you{0000}possibly do!?{0010}
+469C6E	Looks like Mahoroba's{0000}evil aura is gone.{0010}
+469CEC	There's a sanctum{0000}farther in.{0010}
+469D1E	Human, you're always{0000}more than welcome here.{0010}
+469D90	Kotaro is{0000}in the sanctum.{0010}
+469DC4	Who'd have thought the Byakko clan{0000}would protect our village?{0010}
+469E34	......{0000}......{0010}
+469E84	Human, thank you.{0000}Now the village is at peace.{0010}
+469EFC	......{0000}......{0010}
+469F4C	To think we'd been taken by{0000}Mahoroba's evil aura!{0010}
+469FC4	......{0000}......{0010}
+46A014	Human, you're always{0000}more than welcome here.{0010}
+46A07C	......{0000}......{0010}
+46A0CC	We'll do our part too,{0000}so this peace may last.{0010}
+13AC10	Escape always succeeds\n(on encounter)
+13AC40	Nullifies the foe's special abilities
+13AC58	Counter duration\nx2
+13AC7C	Counter duration\nx1.5
+13ACA4	Shiki Points regained per turn\nx2
+13ACC8	Shiki Points regained per turn\nx1.5
+13ACF0	Regain HP every turn (medium)
+13AD0C	Regain HP every turn (small)
+13AD28	Revive an ally once per battle
+13AD44	Shiki Points set to 5 at battle start
+13AD60	Guard\nx2
+13AD84	Guard\nx1.5
+13ADAC	Power\nx2
+13ADD0	Power\nx1.5
+13ADF8	Speed\nx2
+13AE1C	Speed\nx1.5
+13AE44	Experience\nx2
+13AE68	Experience\nx1.5
+13AE90	Foes' "HP Drain" arts have no effect
+13AEAC	Foes' "Sleep" arts have no effect
+13AEC4	Foes' "Bind" arts have no effect
+13AEDC	Foes' "Poison" arts have no effect
+13AEF0	Foes' "Petrify" arts have no effect
+13AF08	Foes' "Charm" arts have no effect
+13AF20	Foes' "Instant Death" arts have no effect
+13AF38	Allies' "HP Drain" arts: amount\nx1.5
+13AF60	Allies' "Sleep" arts: success rate\nx1.5
+13AF88	Allies' "Bind" arts: success rate\nx1.5
+13AFB0	Allies' "Poison" arts: success rate\nx1.5
+13AFD8	Allies' "Petrify" arts: success rate\nx1.5
+13B000	Allies' "Charm" arts: success rate\nx1.5
+13B028	Allies' "Instant Death" arts: success rate\nx1.5
+40B6B4	Koryu's Hermitage
+40B6C4	Tenryu Training Hall
+40B6D0	Kimon Mound
+40B6D8	Forest
+40B6DC	Jinryu Hideout
+40B6EC	Suzaku Village
+40B6F8	Seiryu Village
+40B704	Genbu Village
+40B710	Byakko Village
+40B71C	Spirit Stone Mound
+40B724	Park
+40B72C	Bamboo Grove
+40B734	Mt. Myorei
+40B73C	Sacred Beast Sanctum (B7F)
+40B758	Sacred Beast Sanctum (B6F)
+40B774	Sacred Beast Sanctum (B5F)
+40B790	Sacred Beast Sanctum (B4F)
+40B7AC	Sacred Beast Sanctum (B3F)
+40B7C8	Sacred Beast Sanctum (B2F)
+40B7E4	Sacred Beast Sanctum (B1F)
+40B800	Sacred Beast Sanctum
+40B810	Koryu Sanctum (B2F)
+40B82C	Koryu Sanctum (B1F)
+40B848	Koryu Sanctum
+40B858	Suzaku Sanctum (B3F)
+40B874	Suzaku Sanctum (B2F)
+40B890	Suzaku Sanctum (B1F)
+40B8AC	Suzaku Sanctum
+40B8BC	Seiryu Sanctum (B3F)
+40B8D8	Seiryu Sanctum (B2F)
+40B8F4	Seiryu Sanctum (B1F)
+40B910	Seiryu Sanctum
+40B920	Genbu Sanctum (B2F)
+40B93C	Genbu Sanctum (B1F)
+40B958	Genbu Sanctum
+40B968	Byakko Sanctum (B2F)
+40B984	Byakko Sanctum (B1F)
+40B9A0	Byakko Sanctum
+40B9B0	The Gosho (B2F)
+40B9C4	The Gosho (B1F)
+40B9D8	The Gosho
+40B9E0	Mystery Cave (B2F)
+40B9F8	Mystery Cave (B1F)
+40BA10	Taiin Shrine (B15F)
+40BA28	Taiin Shrine (B14F)
+40BA40	Taiin Shrine (B13F)
+40BA58	Taiin Shrine (B12F)
+40BA70	Taiin Shrine (B11F)
+40BA88	Taiin Shrine (B10F)
+40BAA0	Taiin Shrine (B9F)
+40BAB8	Taiin Shrine (B8F)
+40BAD0	Taiin Shrine (B7F)
+40BAE8	Taiin Shrine (B6F)
+40BB00	Taiin Shrine (B5F)
+40BB18	Taiin Shrine (B4F)
+40BB30	Taiin Shrine (B3F)
+40BB48	Taiin Shrine (B2F)
+40BB60	Taiin Shrine (B1F)

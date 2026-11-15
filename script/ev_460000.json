@@ -6,686 +6,686 @@
    "script": "4602DC",
    "op": "073 0001",
    "jp": "君たちは、ここまで進んできて{0000}何を思う？{0010}平和か？自分のことか？{0010}我は、何を置いても{0000}勝負にこだわる！{0010}我が一門のかんばんにかけて{0000}この勝負はゆずらぬ！{0010}",
-   "en": ""
+   "en": "Having come this far,{0000}what do you think about?{0010}Peace? Yourselves?{0010}I care about winning{0000}above all else!{0010}On the honor of my school's name,{0000}I will not yield this match!{0010}"
   },
   {
    "id": "460424",
    "script": "4602DC",
    "op": "098 00150000",
    "jp": "よォし！いくぜ、{00C8}{0010}",
-   "en": ""
+   "en": "All right! Let's go, {00C8}!{0010}"
   },
   {
    "id": "4604A8",
    "script": "4602DC",
    "op": "073 0001",
    "jp": "グハハハ{0000}勝負は、勝てばいいのだよ！{0010}勝てばこそ、未来もある{0000}一門のかんばんも{0010}汚さずに済むのだ{0010}",
-   "en": ""
+   "en": "Guhahaha!{0000}All that matters is winning!{0010}Only by winning is there a future,{0000}and only then is my school's name{0010}kept free of shame!{0010}"
   },
   {
    "id": "460564",
    "script": "4602DC",
    "op": "073 0001",
    "jp": "わ、我は、一門のかんばんを{0000}汚してしまった！{0010}どんな言葉もむなしいだけだ{0000}いさぎよくトドメをさしてくれ{0010}",
-   "en": ""
+   "en": "I-I have shamed my{0000}school's name!{0010}Any words would be hollow.{0000}Finish me off cleanly.{0010}"
   },
   {
    "id": "460660",
    "script": "4602DC",
    "op": "073 0001",
    "jp": "また来るとは！{0010}君たちは、ほこりというものが{0000}ないようだな！{0010}我が一門のかんばんにかけて{0000}この勝負はゆずらぬ！{0010}",
-   "en": ""
+   "en": "You've come again!{0010}You seem to have no such{0000}thing as pride!{0010}On the honor of my school's name,{0000}I will not yield this match!{0010}"
   },
   {
    "id": "4606EA",
    "script": "4602DC",
    "op": "098 00150000",
    "jp": "よォし！いくぜ、{00C8}{0010}",
-   "en": ""
+   "en": "All right! Let's go, {00C8}!{0010}"
   },
   {
    "id": "460874",
    "script": "4607E4",
    "op": "073 0001",
    "jp": "うわ！！{0000}びっくりしたっ！{0010}せっかくかくれてたのに{0000}みつけらるとはオドロキー{0010}ボク、つよいよ！？{0000}それでも、闘うっての？{0010}",
-   "en": ""
+   "en": "Whoa!!{0000}You scared me!{0010}I was all hidden, and you{0000}found me! What a surprise!{0010}I'm strong, y'know!?{0000}You still wanna fight?{0010}"
   },
   {
    "id": "46090A",
    "script": "4607E4",
    "op": "098 00150000",
    "jp": "あったりめえだ！{0000}よォし！いくぜ、{00C8}{0010}",
-   "en": ""
+   "en": "Damn right I do!{0000}All right! Let's go, {00C8}!{0010}"
   },
   {
    "id": "4609A2",
    "script": "4607E4",
    "op": "073 0001",
    "jp": "え？{0000}あ！{0010}あはは{0000}勝っちゃった{0010}やったー{0010}",
-   "en": ""
+   "en": "Huh?{0000}Oh!{0010}Ahaha,{0000}I won!{0010}Yaaay!{0010}"
   },
   {
    "id": "460A28",
    "script": "4607E4",
    "op": "073 0001",
    "jp": "うわ！！{0000}負けてるっ{0010}負けてるっ{0000}ぎゃああああああ{0010}",
-   "en": ""
+   "en": "Whoa!!{0000}I'm losing!{0010}I'm losing!{0000}Gyaaaaaaah!{0010}"
   },
   {
    "id": "460AF0",
    "script": "4607E4",
    "op": "073 0001",
    "jp": "わわわわ・・・{0000}負けても、また来るなんてっ{0010}ボクびっくりしちゃった{0010}また、闘うの？{0000}わーい{0010}",
-   "en": ""
+   "en": "Wawawawa...{0000}You lost and still came back!{0010}That surprised me!{0010}We're fighting again?{0000}Yaaay!{0010}"
   },
   {
    "id": "460B66",
    "script": "4607E4",
    "op": "098 00150000",
    "jp": "よォし！いくぜ、{00C8}{0010}",
-   "en": ""
+   "en": "All right! Let's go, {00C8}!{0010}"
   },
   {
    "id": "460CF0",
    "script": "460C60",
    "op": "073 0001",
    "jp": "まあ、たしかにココを抜けたら{0000}「聖獣の祭壇」ですけどね{0010}私を見なさい、私を。{0000}ったく、失礼ですよ・・・{0010}女性であれば一通りの礼は{0000}つくすんですけどね{0010}まあ、どうがんばっても{0000}ここより先には進めませんよ{0010}私がいますからね{0010}では、闘いましょう{0000}いきますよ！{0010}",
-   "en": ""
+   "en": "Well, yes, past here lies the{0000}\"Sacred Beast Altar\", but really.{0010}Look at me, at ME.{0000}Honestly, how rude...{0010}Were you a lady, I would show{0000}you every courtesy, but still.{0010}Well, try as you might, you{0000}cannot go any further than this.{0010}Because I am here.{0010}Now, let us fight.{0000}Here I come!{0010}"
   },
   {
    "id": "460E14",
    "script": "460C60",
    "op": "098 00150000",
    "jp": "よォし！いくぜ、{00C8}{0010}",
-   "en": ""
+   "en": "All right! Let's go, {00C8}!{0010}"
   },
   {
    "id": "460E98",
    "script": "460C60",
    "op": "073 0001",
    "jp": "ほらね{0000}先になんて進めないでしょ{0010}いいかげんあきらめて{0010}もう二度とココには{0000}来ないようにしてください{0010}",
-   "en": ""
+   "en": "See?{0000}You can't get any further.{0010}Give it up already,{0010}and kindly never come{0000}here again.{0010}"
   },
   {
    "id": "460F58",
    "script": "460C60",
    "op": "073 0001",
    "jp": "ほほう・・・{0000}思ったよりやりますね{0010}無礼もゆるしましょう{0000}・・・{0010}",
-   "en": ""
+   "en": "Oho...{0000}You're better than I thought.{0010}I'll forgive your rudeness.{0000}...{0010}"
   },
   {
    "id": "46102E",
    "script": "460C60",
    "op": "073 0001",
    "jp": "まあ、どうがんばっても{0000}ここより先には進めませんよ{0010}私がいますからね{0010}では、闘いましょう{0000}いきますよ！{0010}",
-   "en": ""
+   "en": "Well, try as you might, you{0000}cannot go any further than this.{0010}Because I am here.{0010}Now, let us fight.{0000}Here I come!{0010}"
   },
   {
    "id": "4610B0",
    "script": "460C60",
    "op": "098 00150000",
    "jp": "よォし！いくぜ、{00C8}{0010}",
-   "en": ""
+   "en": "All right! Let's go, {00C8}!{0010}"
   },
   {
    "id": "461280",
    "script": "4611AC",
    "op": "073 0001",
    "jp": "人間と式神が協力すれば{0000}ココまでこれるのか{0010}じつにきょうみ深い・・・{0010}",
-   "en": ""
+   "en": "So humans and shikigami working together{0000}can make it this far.{0010}Truly fascinating...{0010}"
   },
   {
    "id": "4612E0",
    "script": "4611AC",
    "op": "047 0020",
    "jp": "だが、ここまできたところで{0000}どうにもならん{0010}我は全ての式神と人間の{0000}パワーを吸収しつつあるのだぞ{0010}見よ！この、みなぎる力を！{0010}",
-   "en": ""
+   "en": "But reaching this place{0000}will change nothing.{0010}We are absorbing the power of{0000}every shikigami and every human!{0010}Behold! This overflowing might!{0010}"
   },
   {
    "id": "46148C",
    "script": "4611AC",
    "op": "073 0001",
    "jp": "フッ{0000}今までにない充実感・・・{0010}もはや、だれにも止められぬ{0010}ついに、全てを無に帰すときが{0000}来たのだ{0010}手始めに、キサマらを{0000}無に帰してやる{0010}式神を統治する式神{0000}キリン族ツイガの力でな！{0010}式・神・降・神！ツイガ{0000}いけっ{0010}",
-   "en": ""
+   "en": "Heh.{0000}A fullness We have never known...{0010}No one can stop Us now.{0010}At last, the time has come to{0000}return all things to nothing.{0010}And We shall begin by returning{0000}you to nothing!{0010}With the power of the shikigami who{0000}rules all shikigami, Tsuiga of the Kirin clan!{0010}Shiki-gami, des-cend! Tsuiga,{0000}go!{0010}"
   },
   {
    "id": "4615DE",
    "script": "4611AC",
    "op": "037",
    "jp": "あなたには、負けられない{0000}式・神・降・神！コゲンタ{0010}いくぞ！{0010}",
-   "en": ""
+   "en": "I can't lose to you!{0000}Shiki-gami, des-cend! Kogenta!{0010}Let's go!{0010}"
   },
   {
    "id": "46180E",
    "script": "4611AC",
    "op": "073 0001",
    "jp": "フッ{0000}まさかそのまま{0010}帰れるとは思っていまいな{0010}キサマの人生に希望はない{0010}",
-   "en": ""
+   "en": "Heh.{0000}Surely you did not think{0010}you could simply go home?{0010}There is no hope left in your life.{0010}"
   },
   {
    "id": "46197C",
    "script": "4611AC",
    "op": "073 0001",
    "jp": "グオオオオオオオオオ{0000}ま・・・さか・・・{0010}ツイガが・・・負ける・・・{0000}・・・とは・・・{0010}回復せねば・・・{0010}",
-   "en": ""
+   "en": "Guoooooooooh!{0000}Im...pos...sible...{0010}Tsuiga...defeated...{0000}...how...{0010}We must...recover...{0010}"
   },
   {
    "id": "461A24",
    "script": "4611AC",
    "op": "037",
    "jp": "今だ！{0000}コゲンタ・大・降・神{0010}",
-   "en": ""
+   "en": "Now!{0000}Kogenta, Great-Des-cent!{0010}"
   },
   {
    "id": "461AAE",
    "script": "4611AC",
    "op": "098 00150000",
    "jp": "消え去れェェェェ！！{0010}",
-   "en": ""
+   "en": "Vanish from this woooorld!!{0010}"
   },
   {
    "id": "461AFE",
    "script": "4611AC",
    "op": "048 00000016",
    "jp": "マホロバ　封・印！{0010}",
-   "en": ""
+   "en": "Mahoroba... SEAL!{0010}"
   },
   {
    "id": "461BD4",
    "script": "4611AC",
    "op": "048 00000049",
    "jp": "グオオオオオオオオオ{0010}",
-   "en": ""
+   "en": "Guoooooooooh!{0010}"
   },
   {
    "id": "461BF8",
    "script": "4611AC",
    "op": "048 00000049",
    "jp": "グオオオオオオオオオ{0010}",
-   "en": ""
+   "en": "Guoooooooooh!{0010}"
   },
   {
    "id": "461C24",
    "script": "4611AC",
    "op": "048 00000049",
    "jp": "・・・・{0010}",
-   "en": ""
+   "en": "....{0010}"
   },
   {
    "id": "461CC8",
    "script": "4611AC",
    "op": "073 0001",
    "jp": "マホロバ封・印・完・了！{0010}",
-   "en": ""
+   "en": "Mahoroba's sealing is com-plete!{0010}"
   },
   {
    "id": "461DC4",
    "script": "4611AC",
    "op": "073 0001",
    "jp": "キサマ、ちょこまかと{0000}動くでない{0010}かくごを決め、闘いにいどめ！{0010}",
-   "en": ""
+   "en": "You! Stop darting about{0000}like a rat!{0010}Steel yourself and face Us in battle!{0010}"
   },
   {
    "id": "461E22",
    "script": "4611AC",
    "op": "036 00000001",
    "jp": "言われなくても、逃げる気は{0000}無い！{0010}",
-   "en": ""
+   "en": "You don't have to tell me! I've got no{0000}intention of running!{0010}"
   },
   {
    "id": "461E62",
    "script": "4611AC",
    "op": "036 00010001",
    "jp": "式・神・降・神！{0000}ツイガ{0010}",
-   "en": ""
+   "en": "Shiki-gami, des-cend!{0000}Tsuiga!{0010}"
   },
   {
    "id": "461E98",
    "script": "4611AC",
    "op": "036 00000001",
    "jp": "あなたには、負けられない{0000}式・神・降・神！コゲンタ{0010}いくぞ！{0010}",
-   "en": ""
+   "en": "I can't lose to you!{0000}Shiki-gami, des-cend! Kogenta!{0010}Let's go!{0010}"
   },
   {
    "id": "462098",
    "script": "461F74",
    "op": "036 00000001",
    "jp": "ハァハァハァ・・・{0000}また　夢！？{0010}",
-   "en": ""
+   "en": "Hah... hah... hah...{0000}Another dream!?{0010}"
   },
   {
    "id": "462108",
    "script": "4620CC",
    "op": "098 00150000",
    "jp": "{00C8}、やったなー{0010}",
-   "en": ""
+   "en": "{00C8}, ya did it!{0010}"
   },
   {
    "id": "462134",
    "script": "4620CC",
    "op": "036 00000001",
    "jp": "え・・・{0010}ボクは、本当にマホロバを{0000}たおすことができたのか{0010}",
-   "en": ""
+   "en": "Huh...{0010}Did I really manage to{0000}defeat Mahoroba?{0010}"
   },
   {
    "id": "462186",
    "script": "4620CC",
    "op": "098 00150000",
    "jp": "おう！封じ込めてやったぜ！{0000}これでしばらくは{0010}地流もおとなしくしてるって{0000}もんだぜ{0010}",
-   "en": ""
+   "en": "Yeah! We sealed him up good!{0000}Now for a while, at least,{0010}the Chiryu oughta keep{0000}their heads down!{0010}"
   },
   {
    "id": "4621FA",
    "script": "4620CC",
    "op": "036 00000001",
    "jp": "よかった・・・{0010}",
-   "en": ""
+   "en": "Thank goodness...{0010}"
   },
   {
    "id": "46221C",
    "script": "4620CC",
    "op": "098 00150000",
    "jp": "さて・・・{0010}",
-   "en": ""
+   "en": "Well, then...{0010}"
   },
   {
    "id": "462242",
    "script": "4620CC",
    "op": "036 00000001",
    "jp": "ん？{0010}",
-   "en": ""
+   "en": "Hm?{0010}"
   },
   {
    "id": "46225A",
    "script": "4620CC",
    "op": "098 00150000",
    "jp": "修行すっぞ{0010}",
-   "en": ""
+   "en": "Time for trainin'.{0010}"
   },
   {
    "id": "462280",
    "script": "4620CC",
    "op": "036 00000001",
    "jp": "えーーーっ！？{0010}",
-   "en": ""
+   "en": "Whaaaaat!?{0010}"
   },
   {
    "id": "462386",
    "script": "4620CC",
    "op": "036 00000001",
    "jp": "あっ。みんな・・・{0010}",
-   "en": ""
+   "en": "Oh. Everyone...{0010}"
   },
   {
    "id": "4623B4",
    "script": "4620CC",
    "op": "036 00140001",
    "jp": "よくわからないけど{0000}妖怪は消えたし平和になったし{0010}{00C8}が、がんばって{0000}くれたからでしょ？{0010}ありがとう{0010}",
-   "en": ""
+   "en": "I don't really get it, but the yokai{0000}are gone and it's peaceful again.{0010}That's because you worked{0000}so hard, {00C8}, right?{0010}Thank you.{0010}"
   },
   {
    "id": "46243C",
    "script": "4620CC",
    "op": "036 00130001",
    "jp": "野菜食えよ{0010}",
-   "en": ""
+   "en": "Eat your veggies, ya hear?{0010}"
   },
   {
    "id": "462462",
    "script": "4620CC",
    "op": "036 00060001",
    "jp": "さすがは、{00C8}さんです{0010}しかし、まだ地流が{0000}なくなったわけじゃないので{0010}これからも力をあわせて{0000}がんばっていきましょう{0010}",
-   "en": ""
+   "en": "As expected of you, {00C8}-san.{0010}But the Chiryu haven't{0000}disappeared just yet,{0010}so let's keep joining forces{0000}and doing our best from here on.{0010}"
   },
   {
    "id": "4624FC",
    "script": "4620CC",
    "op": "036 00050001",
    "jp": "「天流」って、どうしようも{0000}ない人たちだと思ったけど{0010}やってくれますね{0010}",
-   "en": ""
+   "en": "I thought the \"Tenryu\" were a{0000}hopeless bunch,{0010}but you actually pulled it off.{0010}"
   },
   {
    "id": "462562",
    "script": "4620CC",
    "op": "036 00040001",
    "jp": "そうだな{0010}置いていかれないように{0000}オレも力をつけていかないとな{0010}",
-   "en": ""
+   "en": "That's right.{0010}I'd better get stronger too,{0000}or I'll get left behind.{0010}"
   },
   {
    "id": "4625C0",
    "script": "4620CC",
    "op": "036 00140001",
    "jp": "じゃ、今日は休日だし{0000}ピクニッ・・・{0010}",
-   "en": ""
+   "en": "So, since today's a holiday,{0000}how about a picni...{0010}"
   },
   {
    "id": "46268E",
    "script": "4620CC",
    "op": "036 00020001",
    "jp": "{00C8}くん、急いで！{0010}かみかくしがあったって{0000}情報がはいったの{0010}「地流」かもしれないわ{0000}早速行ってみて{0010}",
-   "en": ""
+   "en": "{00C8}-kun, hurry!{0010}We've had word of someone{0000}being spirited away.{0010}It might be the \"Chiryu\".{0000}Go check it out right away.{0010}"
   },
   {
    "id": "46270E",
    "script": "4620CC",
    "op": "098 00150000",
    "jp": "よっしゃあ！{0000}いこうぜ！{00C8}{0010}",
-   "en": ""
+   "en": "All right!{0000}Let's go, {00C8}!{0010}"
   },
   {
    "id": "4628F4",
    "script": "46278C",
    "op": "036 00000001",
    "jp": "ハァハァハァ・・・{0000}また　夢！？{0010}",
-   "en": ""
+   "en": "Hah... hah... hah...{0000}Another dream!?{0010}"
   },
   {
    "id": "4629C8",
    "script": "462928",
    "op": "073 0001",
    "jp": "あなた、ついにやったわね{0010}私は、「天流」でも「地流」{0000}でも無い、もう一つの存在{0010}",
-   "en": ""
+   "en": "So you finally did it.{0010}I am neither \"Tenryu\" nor \"Chiryu\".{0000}I belong to a third power.{0010}"
   },
   {
    "id": "462A36",
    "script": "462928",
    "op": "036 00000001",
    "jp": "なんだって！？{0010}",
-   "en": ""
+   "en": "What did you say!?{0010}"
   },
   {
    "id": "462A60",
    "script": "462928",
    "op": "036 00020001",
    "jp": "いずれ、敵になるかも{0000}しれないわね・・・{0010}でも、今はよくやったと{0000}こころから思うわ{0010}感謝の意をこめて{0000}闘いましょう！{0010}",
-   "en": ""
+   "en": "Someday we may become{0000}enemies...{0010}But right now, I truly think{0000}you did well.{0010}So, as a token of my thanks,{0000}let's fight!{0010}"
   },
   {
    "id": "462AF2",
    "script": "462928",
    "op": "098 00150000",
    "jp": "よっしゃあ！{0000}いこうぜ！{00C8}{0010}",
-   "en": ""
+   "en": "All right!{0000}Let's go, {00C8}!{0010}"
   },
   {
    "id": "462BBC",
    "script": "462928",
    "op": "073 0001",
    "jp": "どうしたの？{0010}私だからって、力を抜いてる{0000}んじゃないでしょうね？{0010}そんなに甘い世界じゃ{0000}ないのは知ってるでしょ？{0010}",
-   "en": ""
+   "en": "What's wrong?{0010}You're not holding back just{0000}because it's me, are you?{0010}You know this world isn't{0000}that soft, don't you?{0010}"
   },
   {
    "id": "462CC8",
    "script": "462928",
    "op": "073 0001",
    "jp": "さすがだわ{0010}これからも、その力を{0000}平和に役立ててちょうだいね{0010}",
-   "en": ""
+   "en": "Impressive.{0010}From now on, please use that{0000}power to keep the peace.{0010}"
   },
   {
    "id": "462DA8",
    "script": "462928",
    "op": "073 0001",
    "jp": "やっぱり闘うのね{0010}こんどは、てかげん{0000}しないで、本気できてね{0010}",
-   "en": ""
+   "en": "So you'll fight after all.{0010}This time, don't hold back.{0000}Come at me for real.{0010}"
   },
   {
    "id": "462DFC",
    "script": "462928",
    "op": "098 00150000",
    "jp": "よっしゃあ！{0000}いこうぜ！{00C8}{0010}",
-   "en": ""
+   "en": "All right!{0000}Let's go, {00C8}!{0010}"
   },
   {
    "id": "4632C4",
    "script": "463230",
    "op": "073 0001",
    "jp": "わん！わんっ！{0010}",
-   "en": ""
+   "en": "Woof! Woof!{0010}"
   },
   {
    "id": "46335A",
    "script": "463230",
    "op": "073 0001",
    "jp": "わん！わんっ！わわんっ！{0010}",
-   "en": ""
+   "en": "Woof! Woof! Wawoof!{0010}"
   },
   {
    "id": "4633E2",
    "script": "463230",
    "op": "073 0001",
    "jp": "きゃいんきゃいんっ{0010}",
-   "en": ""
+   "en": "Yelp, yelp!{0010}"
   },
   {
    "id": "463488",
    "script": "463230",
    "op": "073 0001",
    "jp": "わわんっ！{0010}",
-   "en": ""
+   "en": "Wawoof!{0010}"
   },
   {
    "id": "4635D0",
    "script": "463578",
    "op": "124 0000",
    "jp": "あ、{00C8}くん{0000}おはよう！{0010}",
-   "en": ""
+   "en": "Oh, {00C8}-kun!{0000}Good morning!{0010}"
   },
   {
    "id": "4635FE",
    "script": "463578",
    "op": "124 0001",
    "jp": "神社にお酒が置いてあったけど{0000}何かお祝いでもあったのかな？{0010}",
-   "en": ""
+   "en": "Someone left sake at the shrine.{0000}I wonder if they were celebrating?{0010}"
   },
   {
    "id": "46364E",
    "script": "463578",
    "op": "124 0015",
    "jp": "なんだか平和が{0000}戻ってきたってかんじね{0010}",
-   "en": ""
+   "en": "It kinda feels like peace{0000}has come back, doesn't it?{0010}"
   },
   {
    "id": "4636C8",
    "script": "463688",
    "op": "124 0000",
    "jp": "天神町の北には、ソウタロウ{0000}さんの神社があるんじゃ{0010}",
-   "en": ""
+   "en": "North of Tenjin Town is{0000}Sotaro-san's shrine, y'know.{0010}"
   },
   {
    "id": "463710",
    "script": "463688",
    "op": "124 0015",
    "jp": "グキっ{0000}こしがっ！！{0010}",
-   "en": ""
+   "en": "*Crick*{0000}My baaack!!{0010}"
   },
   {
    "id": "463790",
    "script": "463738",
    "op": "124 0000",
    "jp": "さかな屋の{0000}るすばんしてんだ！{0010}",
-   "en": ""
+   "en": "I'm minding the{0000}fish shop!{0010}"
   },
   {
    "id": "4637C4",
    "script": "463738",
    "op": "124 0008",
    "jp": "さかな屋の{0000}るすばん、あきちゃった{0010}",
-   "en": ""
+   "en": "I'm tired of minding{0000}the fish shop.{0010}"
   },
   {
    "id": "4637FC",
    "script": "463738",
    "op": "124 0015",
    "jp": "将来は{0000}さかな屋になろうかな{0010}",
-   "en": ""
+   "en": "Maybe I'll run a fish shop{0000}when I grow up.{0010}"
   },
   {
    "id": "46389C",
    "script": "46382C",
    "op": "124 0000",
    "jp": "病院は、この上の道を{0000}右に入ったところよ{0010}",
-   "en": ""
+   "en": "The hospital is up this road,{0000}then turn right.{0010}"
   },
   {
    "id": "4638DA",
    "script": "46382C",
    "op": "124 0001",
    "jp": "学校は、北に進んで{0000}神社のさらに北よ{0010}",
-   "en": ""
+   "en": "The school is north,{0000}even farther north than the shrine.{0010}"
   },
   {
    "id": "463914",
    "script": "46382C",
    "op": "124 0005",
    "jp": "うちのねこ{0000}どこいっちゃったのかなあ…{0010}",
-   "en": ""
+   "en": "I wonder where{0000}our cat went...{0010}"
   },
   {
    "id": "463950",
    "script": "46382C",
    "op": "124 0015",
    "jp": "ねこ、みつかったわ{0000}よかったー{0010}",
-   "en": ""
+   "en": "We found our cat.{0000}What a relief!{0010}"
   },
   {
    "id": "4639C4",
    "script": "463984",
    "op": "124 0000",
    "jp": "右に進むと病院、上に行くと{0000}お寺だよ{0010}",
-   "en": ""
+   "en": "Go right for the hospital,{0000}go up for the temple.{0010}"
   },
   {
    "id": "4639FE",
    "script": "463984",
    "op": "124 0015",
    "jp": "病院って{0000}どこでしたっけ？{0010}",
-   "en": ""
+   "en": "Um, where was the{0000}hospital again?{0010}"
   },
   {
    "id": "463A54",
    "script": "463A2C",
    "op": "124 0000",
    "jp": "お寺は、むかしから{0000}傷ついたものをいやす場所{0010}",
-   "en": ""
+   "en": "Since long ago, temples have been{0000}places to heal the wounded.{0010}"
   },
   {
    "id": "463ABC",
    "script": "463A94",
    "op": "124 0000",
    "jp": "順番まだかなー{0000}ちこくしちゃうよー{0010}",
-   "en": ""
+   "en": "Isn't it my turn yet?{0000}I'm gonna be late!{0010}"
   },
   {
    "id": "463B1C",
    "script": "463AF4",
    "op": "124 0000",
    "jp": "妙霊山で{0000}ハチにさされちゃった{0010}",
-   "en": ""
+   "en": "I got stung by a bee{0000}on Mt. Myorei.{0010}"
   },
   {
    "id": "463BB8",
    "script": "463B50",
    "op": "123 00000370000199990008",
    "jp": "南に行くと天神町だよ{0000}このへんは虫がおおいな！{0010}",
-   "en": ""
+   "en": "Go south for Tenjin Town.{0000}Sure are a lot of bugs around here!{0010}"
   },
   {
    "id": "463C14",
    "script": "463B50",
    "op": "123 00000020000199990002",
    "jp": "南に行くと天神町だよ{0000}このへんは虫がおおいな！{0010}",
-   "en": ""
+   "en": "Go south for Tenjin Town.{0000}Sure are a lot of bugs around here!{0010}"
   },
   {
    "id": "463C58",
    "script": "463B50",
    "op": "124 0002",
    "jp": "変なもの拾ったけど{0000}ほしい？{0010}",
-   "en": ""
+   "en": "I picked up something weird.{0000}Want it?{0010}"
   },
   {
    "id": "463CE2",
    "script": "463B50",
    "op": "073 0001",
    "jp": "『銀のオチョコ』を{0000}手に入れた！{0010}",
-   "en": ""
+   "en": "You got{0000}the 'Silver Sake Cup'!{0010}"
   },
   {
    "id": "463D44",
    "script": "463B50",
    "op": "124 0008",
    "jp": "おっきいクワガタみたいなの{0000}見えたけど気のせいかな{0010}",
-   "en": ""
+   "en": "I thought I saw something like a{0000}huge stag beetle... Just my imagination?{0010}"
   },
   {
    "id": "463D8C",
    "script": "463B50",
    "op": "124 0015",
    "jp": "虫をつかまえて{0000}大金持ちになるんだ！{0010}",
-   "en": ""
+   "en": "I'm gonna catch bugs and{0000}get filthy rich!{0010}"
   },
   {
    "id": "463E1C",
    "script": "463DC4",
    "op": "124 0000",
    "jp": "この階段をのぼれば{0000}「天流」の分社じゃ{0010}",
-   "en": ""
+   "en": "Climb these stairs and you'll reach{0000}the \"Tenryu\" Branch Shrine.{0010}"
   },
   {
    "id": "463E58",
    "script": "463DC4",
    "op": "124 0008",
    "jp": "おぬしに死相が{0000}みえておる　キエエエ{0010}",
-   "en": ""
+   "en": "I see the shadow of death{0000}upon you! Kieeeeh!{0010}"
   },
   {
    "id": "463E92",
    "script": "463DC4",
    "op": "124 0015",
    "jp": "なつかしいもんじゃ{0000}ここでばあさんと・・・{0010}",
-   "en": ""
+   "en": "Brings back memories...{0000}Me and my old lady, right here...{0010}"
   },
   {
    "id": "463F28",
    "script": "463ED0",
    "op": "124 0000",
    "jp": "北に行くと京南エリアよ{0000}広いから迷っちゃうわ{0010}",
-   "en": ""
+   "en": "North is the South Kyo area.{0000}It's so big, you'll get lost.{0010}"
   },
   {
    "id": "463F6A",
    "script": "463ED0",
    "op": "124 0008",
    "jp": "なんだか霊力を感じるわ{0000}この土地は・・・{0010}",
-   "en": ""
+   "en": "I sense spiritual power{0000}in this land somehow...{0010}"
   },
   {
    "id": "463FA8",
    "script": "463ED0",
    "op": "124 0015",
    "jp": "この神社って{0000}恋愛にきくのかしら？{0010}",
-   "en": ""
+   "en": "I wonder if this shrine{0000}is good for love luck?{0010}"
   },
   {
    "id": "464038",
    "script": "463FE0",
    "op": "124 0002",
    "jp": "いやー、妖怪のせいで{0000}銀行もやってない{0010}",
-   "en": ""
+   "en": "Man, because of the yokai,{0000}even the bank's closed.{0010}"
   },
   {
    "id": "464074",
    "script": "463FE0",
    "op": "124 0008",
    "jp": "まずいなー、重要な{0000}取り引きができないよ{0010}",
-   "en": ""
+   "en": "This is bad. I can't make{0000}my important deal.{0010}"
   },
   {
    "id": "4640B2",
    "script": "463FE0",
    "op": "124 0015",
    "jp": "もう、この町はすんだし{0000}べつの町で営業しよう{0010}",
-   "en": ""
+   "en": "Well, I'm done with this town.{0000}I'll go sell somewhere else.{0010}"
   }
  ]
 }
