@@ -4,6 +4,7 @@ Skill: translate-retro-game (Claude Code: plugin, enabled in .claude/settings.js
 
 ## Commands (run from repo root)
 - Build:    `python -X utf8 build.py` -> build/onmyou_zeroshiki_en.gba (checks the dump against `rom.sha1` first; `--relocate-all` = pointer stress build)
+- Text:     `python -X utf8 tools/textdb.py dump|stats|coverage` (script/*.json; dump writes missing files only, `--force` keeps `en`)
 - Check:    `python -X utf8 tools/check.py` (tests + lint; the pre-commit hook runs this; needs `pip install pytest`)
 - Smoke:    `python -X utf8 "$(python tools/skill.py)/scripts/emu.py" build/onmyou_zeroshiki_en.gba --out work/qa/smoke --route tools/routes/boot.txt --smoke`
 - Warp:     `python -X utf8 "$(python tools/skill.py)/scripts/emu.py" build/onmyou_zeroshiki_en.gba --out work/qa/warp --script tools/debug/warp.lua --var "SCENE='<name>'" --frames 20000 --mash 40` (stops itself; scenes: `tools/debug/scenes.txt`, notes `docs/re/debug.md`; all scenes + states: `python -X utf8 tools/debug/warp_all.py`; never ask the user to play to a scene)

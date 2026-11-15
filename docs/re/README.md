@@ -22,4 +22,4 @@ Prior work: no earlier English or other-language patch found for this game (sear
 anime (Onmyou Taisenki, 2004) had no official English release, so names follow D2 (Hepburn fallback).
 Recon helpers: `tools/sjis_survey.py`, `tools/recon_strings.py`, `tools/lzscan.py`, `tools/gfx_sweep.py`,
 `tools/gfx_review.sh`. Script helpers: `tools/script_index.py`, `tools/script_dump.py`, `tools/script_refs.py`.
-Build models: `tools/evscript.py` (script codec, regions, slots), `tools/strtab.py` (string tables + pointers).
+Build models: `tools/evscript.py` (script codec, regions, slots), `tools/strtab.py` (string tables + pointers), `tools/textdb.py` (script/*.json dump/load, coverage, gaiji map).

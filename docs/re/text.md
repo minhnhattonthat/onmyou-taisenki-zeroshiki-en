@@ -89,3 +89,21 @@ The build's model is `tools/strtab.py`: strings in 0x120000..0x140000 and 0x4000
 from code (0..0x120000) or those areas reaches: 2,994 strings, 3,899 pointer words, none pointed at mid-string.
 **Not text:** 0x128F50..0x128F64 is a u16 LE table of fullwidth digit codes ０..９ (number drawing) that scans as text.
 Code literal-pool pointers are plain u32 words: repoint them by exact location, never by a ROM-wide value match.
+
+## Extracted text (phase 4) — verified (tests/test_text.py)
+- `script/*.json` from `tools/textdb.py dump`: 5,185 entries = 2,191 script text runs (20 `ev_<16 KiB block>` files
+  + `tutorial`) and 2,994 table strings (36 `str_<group>` files, groups in `textdb.GROUPS`), ~100k JP characters.
+  Format and fields: the textdb docstring. `build.py` reads it (`textdb.overrides`); `en` = `jp` everywhere
+  rebuilds the original ROM (test).
+- **Every script text run is dialogue**: the speaker/portrait is in the preceding op's args (`/098`, `/036`,
+  `/124`...), never in the text. Control codes in the text: only `0010` (3,890), `0000` (2,539), `00C8` player
+  name (149), `00CB`/`00CC` win/loss counts (5 each). No run is codes-only.
+- **Coverage** (`textdb.py coverage`, test): 148 strtab scan candidates in the string areas have no pointer; all
+  are 1-10 byte fragments of code/graphics (no 2+ kana). Outside the text areas, 4 text-like runs are data
+  (`textdb.DATA_RUNS`: u16 LE glyph-code tables at 0x4E1DC9 / 0x4E5C0F, music bytes at 0x6EE2DB).
+- **Gaiji — verified (rendered from the font):** the font holds kanji outside JIS level 1 at the Cyrillic codes
+  0x8440..0x8459 (and Ⅴ at 0x8758): 0x8440 隕, 41 銛, 42 曼, 43 祓, 44 撼, 45 鉈, 46 鯔, 47 咬, 48 毬, 49 棍,
+  4A 穹(?), 4B 棘, 4C 龕, 4D 礫, 4E 翔, 4F 跋, 50 扈, 51 巫, 52 澤, 53 條, 54 晏, 55 麒, 56 荼; 0x8457 = ラ・,
+  0x8458 + 0x8459 = 衛・二 drawn across two cells. The dump adds `notes: gaiji Р=巫` to each entry that uses one.
+- Left for the marker build: strings reached by base + immediate or built from code (none found yet), the tiny
+  script at 0x129560, and the purpose of the one-kanji strings at 0x40EB5C.. (`str_battle_kanji`).

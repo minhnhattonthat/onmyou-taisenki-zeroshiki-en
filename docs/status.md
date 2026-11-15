@@ -2,7 +2,8 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 4. Extract (phase 3 identity build done 2026-11-16). Last build: identity, sha1 47b04f67… = original.
+- **Phase:** 5. Engine spike and marker build (phase 4 extract done 2026-11-16). Last build: from script/*.json with
+  no `en`, sha1 47b04f67… = original, smoke ok.
 - **Done:**
   - Step 0: ROM pinned (`rom.sha1`), MesenCE 2.2.1 + GBA BIOS in `tools/mesen/`, guard hook in `.claude/settings.json`
     (canary blocked), pre-commit runs `tools/check.py` (a failing test was rejected), boot route `tools/routes/boot.txt`
@@ -22,11 +23,17 @@ Updated at the end of every session. Keep it to what the next session needs; his
     to 0x800000+ and is repointed. `build.py --relocate-all` moves everything; 44/44 warp scenes run on it and
     `tools/debug/romreads.lua` + `stale_reads.py` find 0 reads of vacated rooms (53,752 reads checked). Findings in
     `docs/re/text.md` (corrected arg table, pinned script 0x6918F4, 5-char shikigami name variables).
-- **Next (phase 4, extract):** dump `script/` JSON (one file per script region block / string table) from
-  `evscript.Scripts` + `strtab.Strings`: id = offset, `jp`, `en`, text runs per op context (speaker set-ups vs
-  dialogue), fixed-width 14-char padded strings flagged; roundtrip test (re-encode = original bytes) and coverage
-  test (every Shift-JIS run in the text areas is a dumped string or listed as data, e.g. 0x128F50 digit table;
-  strings with no pointer in 0x120000..0x140000 / 0x400000..0x419300 need a look). Then build.py reads the JSON.
+  - Phase 4 extract: `tools/textdb.py dump` → `script/*.json`, 57 files, 5,185 entries (2,191 script runs in
+    `ev_<16 KiB block>` + `tutorial`, 2,994 strings in `str_<group>`), id = original offset, `jp`/`en`, `op` for
+    runs, `max`/`pad`/`ptrs` for strings, gaiji readings in `notes`. `build.py` reads it; tests/test_text.py:
+    JSON in sync with the ROM, every entry re-encodes to its bytes, ids = every run + string, no uncovered text-like
+    run ROM-wide (`textdb.py coverage`), `en`=`jp` rebuilds the original, stale `jp` refused, dump keeps `en`.
+    Findings in `docs/re/text.md` "Extracted text" (gaiji map: Cyrillic codes 0x8440.. = level-2 kanji).
+- **Next (phase 5, engine spike + marker build):** font/VWF decision (16 px fixed cells, 14 chars/line, no ASCII:
+  `docs/re/font.md`); an English encoding for `en` (today `en` goes through cp932 like `jp`); widen the 5-cell
+  shikigami-name copy; marker build (`[id] text` in every entry) toured with the warp scenes; find code-built or
+  base+immediate strings (Japanese that stays in the marker build); identify `str_battle_kanji`; English name-entry
+  grid; width gate per box variant (dialogue, battle quotes `pad` 14, help 21, menus).
 - **Known limits of the warp:** event scenes run over map 23 (the house) unless the script changes map itself
   (`map=` per scene overrides); which map normally hosts each event is not mapped yet (NPCs come from `/116`
   entries in map scripts 8000+). No GOD/NOENC yet (battles: mash wins; `poke=` for HP).

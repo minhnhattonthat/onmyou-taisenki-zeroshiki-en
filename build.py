@@ -1,5 +1,7 @@
 """build.py: rebuild the ROM from its unpacked text (event scripts + string tables).
 
+Text comes from script/*.json (tools/textdb.py): an entry with a non-empty `en` replaces its run or string.
+
     python -X utf8 build.py                  # -> build/onmyou_zeroshiki_en.gba (+ .writes log for romdiff.py)
     python -X utf8 build.py --relocate-all   # stress test: move every script and string past 8 MiB, repoint all
 
@@ -21,6 +23,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 import check_rom  # noqa: E402
 import evscript  # noqa: E402
 import strtab  # noqa: E402
+import textdb  # noqa: E402
 
 ROM = ROOT / "rom" / "Onmyou Taisenki Zeroshiki (Japan).gba"
 OUT = ROOT / "build" / "onmyou_zeroshiki_en.gba"
@@ -104,7 +107,8 @@ def main():
     a = ap.parse_args()
     check_rom.check()
     orig = ROM.read_bytes()
-    rom, log = build(orig, relocate=a.relocate_all)
+    scripts, strings = textdb.overrides(orig)
+    rom, log = build(orig, relocate=a.relocate_all, scripts=scripts, strings=strings)
     out = Path(a.out)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_bytes(rom)
