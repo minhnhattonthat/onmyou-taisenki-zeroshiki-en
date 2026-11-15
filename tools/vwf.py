@@ -265,6 +265,187 @@ def win_code(far, widths_addr):
     return _asm(src, addr), addr
 
 
+STRIP_ORIG = {  # the glyph-strip line renderers (docs/re/font.md "Renderer catalogue"), replaced by thunks
+    0x0235D4: "f0b581b00549064a89180d68041c0026",  # 0x080235D4(str): 28 cells, intro scroll
+    0x023E3C: "f0b581b00649074a89180c68051c0026",  # 0x08023E3C(str): 30 cells, staff credits
+}
+
+# Strip renderers copy one whole 16x16 glyph (128 bytes, tiles TL TR BL BR) per character into the buffer
+# [0x0201DE48] (VRAM, e.g. 0x06008020: plot by halfword, a byte store would land in both bytes), cell k at k*128; the game's tile map shows the cells left to right. The replacement clears the
+# cells, then plots each glyph's pixels at a pixel cursor across the cells (cell = X / 16), advancing by WIDTHS.
+STRIP_SRC = """
+    b strip28
+    b strip30
+strip28:
+    movs r1, #28
+    b strip
+strip30:
+    movs r1, #30
+strip:
+    push {{r4, r5, r6, r7, lr}}
+    mov r4, r8
+    mov r5, sb
+    mov r6, sl
+    mov r7, fp
+    push {{r4, r5, r6, r7}}
+    sub sp, #8
+    mov r8, r0
+    lsls r2, r1, #4
+    mov fp, r2
+    lsls r2, r1, #5
+    movs r3, #5
+    lsls r3, r3, #24
+    orrs r2, r3
+    ldr r0, bufp
+    ldr r0, [r0]
+    mov sb, r0
+    adds r1, r0, #0
+    movs r0, #0
+    str r0, [sp]
+    mov r0, sp
+    svc #0xb
+    movs r0, #0
+    mov sl, r0
+loop:
+    mov r0, r8
+    ldrh r4, [r0]
+    cmp r4, #0
+    beq done
+    adds r0, #2
+    mov r8, r0
+    lsrs r5, r4, #8
+    lsls r4, r4, #24
+    lsrs r4, r4, #16
+    orrs r4, r5
+    ldr r5, base
+    subs r5, r4, r5
+    ldr r6, ncodes
+    cmp r5, r6
+    bhs loop
+    ldr r6, widths
+    ldrb r6, [r6, r5]
+    cmp r6, #0
+    beq loop
+    str r6, [sp, #4]
+    ldr r1, k7ec0
+    adds r1, r4, r1
+    lsls r1, r1, #16
+    asrs r1, r1, #16
+    movs r0, #13
+    ldr r3, lookup
+    bl call_r3
+    cmp r0, #0
+    beq advance
+    ldrh r1, [r0, #8]
+    ldr r2, k0fff
+    ands r1, r2
+    lsls r1, r1, #16
+    ldrh r2, [r0, #10]
+    adds r1, r1, r2
+    ldr r2, ftab
+    ldr r2, [r2, #0x68]
+    adds r7, r1, r2
+    movs r5, #0
+yl:
+    movs r6, #0
+cl:
+    adds r0, r6, #0
+    adds r1, r5, #0
+    bl pixoff
+    ldrb r2, [r7, r0]
+    lsrs r2, r1
+    movs r3, #15
+    ands r2, r3
+    beq next
+    mov r0, sl
+    adds r0, r0, r6
+    cmp r0, fp
+    bge next
+    lsrs r4, r0, #4
+    lsls r4, r4, #7
+    movs r1, #15
+    ands r0, r1
+    adds r1, r5, #0
+    bl pixoff
+    adds r0, r0, r4
+    add r0, sb
+    movs r3, #1
+    ands r3, r0
+    lsls r3, r3, #3
+    adds r1, r1, r3
+    movs r3, #1
+    bics r0, r3
+    ldrh r3, [r0]
+    lsls r2, r1
+    movs r4, #15
+    lsls r4, r1
+    bics r3, r4
+    orrs r3, r2
+    strh r3, [r0]
+next:
+    adds r6, #1
+    cmp r6, #16
+    blt cl
+    adds r5, #1
+    cmp r5, #16
+    blt yl
+advance:
+    ldr r0, [sp, #4]
+    add sl, r0
+    b loop
+done:
+    movs r0, #1
+    add sp, #8
+    pop {{r4, r5, r6, r7}}
+    mov r8, r4
+    mov sb, r5
+    mov sl, r6
+    mov fp, r7
+    pop {{r4, r5, r6, r7}}
+    pop {{r1}}
+    bx r1
+call_r3:
+    bx r3
+pixoff:
+    push {{r2, r3}}
+    lsrs r2, r0, #3
+    lsrs r3, r1, #3
+    lsls r3, r3, #1
+    adds r2, r2, r3
+    lsls r2, r2, #5
+    movs r3, #7
+    ands r3, r1
+    lsls r3, r3, #2
+    adds r2, r2, r3
+    movs r3, #7
+    ands r3, r0
+    lsrs r1, r3, #1
+    adds r2, r2, r1
+    movs r1, #1
+    ands r1, r3
+    lsls r1, r1, #2
+    adds r0, r2, #0
+    pop {{r2, r3}}
+    bx lr
+
+    .align 2
+bufp:   .word 0x0201DE48
+base:   .word 0x8140
+ncodes: .word {ncodes:#x}
+widths: .word {widths:#x}
+k7ec0:  .word 0x7EC0
+k0fff:  .word 0x0FFF
+lookup: .word 0x080059A1
+ftab:   .word 0x084028EC
+"""
+
+
+def strip_code(far, widths_addr):
+    addr = 0x08000000 | far
+    src = STRIP_SRC.format(ncodes=NCODES, widths=0x08000000 | widths_addr)
+    return _asm(src, addr), addr, addr + 2
+
+
 def _asm(src, addr):
     ks = keystone.Ks(keystone.KS_ARCH_ARM, keystone.KS_MODE_THUMB)
     enc, _ = ks.asm(src, addr)
@@ -332,6 +513,14 @@ def install(img, write):
     write(wfar, wcode, "vwf window code")
     write(0x29F0, thunk(0x29F0, waddr), "vwf window thunk")
     write(0x2A16, b"\xc0\x46", "vwf window: allow odd x")
+    for off, hx in STRIP_ORIG.items():
+        b = bytes.fromhex(hx)
+        assert orig[off:off + len(b)] == b, f"vwf: unexpected bytes at {off:06X}"
+    sfar = img.alloc(len(strip_code(0x800000, 0x800000)[0]) + 16)
+    scode, s28, s30 = strip_code(sfar, wt_off)
+    write(sfar, scode, "vwf strip code")
+    write(0x235D4, thunk(0x235D4, s28), "vwf strip thunk (intro scroll)")
+    write(0x23E3C, thunk(0x23E3C, s30), "vwf strip thunk (credits)")
     return far
 
 
