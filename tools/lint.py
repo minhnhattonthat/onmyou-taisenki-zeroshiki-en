@@ -96,6 +96,8 @@ def lint(files, verbose=False):
                 chars = v.get("chars")
                 for k, line in enumerate(page):
                     lim = v.get("last_px", px) if k == len(page) - 1 else px
+                    if v.get("row_px"):  # per-row budgets (row k of the box, not of the page's end)
+                        lim = v["row_px"][min(k, len(v["row_px"]) - 1)]
                     if chars and len(TOKEN.sub("x", line)) > chars:
                         errors.append(f"{where}: {len(line)} characters > {chars} ({line[:40]!r})")
                     w = line_px(line, font)

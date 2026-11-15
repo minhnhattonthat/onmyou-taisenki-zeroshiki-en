@@ -62,7 +62,9 @@ def string_marker(eid, e, file):
     w = lambda s: windows.text_width(s, font)  # noqa: E731
     if e.get("pad") or lines > 1:
         n = min(lines, windows.jp_lines(e)) if e.get("pad") else lines
-        return "\n".join(fill(f"[{eid}] " if i == 0 else "", px, font, chars) for i in range(n))
+        rows = windows.variant(file, e)[1].get("row_px") if b else None
+        return "\n".join(fill(f"[{eid}] " if i == 0 else "", rows[min(i, len(rows) - 1)] if rows else px, font, chars)
+                         for i in range(n))
     if w(f"[{eid}]") <= px:
         return fill(f"[{eid}]", px, font, chars)
     for k in range(len(eid), 0, -1):

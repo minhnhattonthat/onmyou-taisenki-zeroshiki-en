@@ -1,5 +1,5 @@
 {
-  "about": "Width gate: box variants and which entries they draw. Read by tools/windows.py (marker.py, lint.py). px = line budget in px of the variant's font (big = enfont VWF, small = ensmall); \"jp\" = the JP's own cell width (16 px a JP char big, 8 small; pad strings: pad chars). lines 0 = the JP's own line count. status measured = a stress line exactly px wide was seen whole in the named shot. Renderer map from tools/debug/drawcalls.lua (work/qa/dc/drawmap.tsv).",
+  "about": "Width gate: box variants and which entries they draw. Read by tools/windows.py (marker.py, lint.py). px = line budget in px of the variant's font (big = enfont VWF, small = ensmall); \"jp\" = the JP's own cell width (16 px a JP char big, 8 small; pad strings: pad chars). lines 0 = the JP's own line count. last_px = budget of a page's last line (dialogue: wait orb); row_px = budget per row of the box (row 2+ uses the last). status measured = a stress line exactly px wide was seen whole in the named shot. Renderer map from tools/debug/drawcalls.lua (work/qa/dc/drawmap.tsv).",
   "vars": {
     "00C8": 45,
     "00CB": 24,
@@ -11,8 +11,10 @@
                  "shot": "work/qa/wg1/intro_event-z.png", "note": "x 8..232, 224 px line whole with 3 px to the frame; VWF auto-wraps past 232; {0010} = new page"},
     "window": {"font": "big", "px": 220, "lines": 2, "status": "measured", "renderer": "0x080029F0 VWF (callers 0x080036D9/0x0800379B)",
                "shot": "work/qa/wg4/z.png", "note": "battle quotes and messages; newline = \\n (0x81AD). Row 1 shows 224 px whole but row 2 drops a glyph ending past x 228 (work/qa/wg3/z.png); 220 px shows whole on both rows"},
-    "battle_2row": {"font": "big", "px": 224, "lines": 2, "status": "guess", "renderer": "0x08110C88 twoline",
-                    "note": "tutorial prompts; row 2 rest dropped past 224 px"},
+    "battle_2row": {"font": "big", "px": 224, "row_px": [224, 208], "lines": 2, "status": "measured", "renderer": "0x08110C88 twoline",
+                    "shot": "work/qa/wg6d/tutorial_battle/scene.png",
+                    "row_note": "row 2 continues in the tiles after row 1: 224 + 208 px (27 cells) shows clean, 224 + 224 overruns into the battle BG tiles (work/qa/wg6/tutorial_battle/scene.png)",
+                    "note": "tutorial prompts (and quote 135760); newline = \\n, else split at 224 px; row 2 rest dropped"},
     "areas": {"font": "big", "px": 224, "chars": 28, "lines": 1, "status": "measured", "renderer": "0x080144F4 padded (lr 0x080163FB)",
               "shot": "work/qa/wg2/map-c.png", "note": "map-menu area name: the drawer stops after 28 characters (224 px and 160 px stress lines both cut after char 28: work/qa/wg1/map-c.png, wg2/map-c.png)"},
     "obj_cells": {"font": "big", "px": "jp", "lines": 1, "status": "measured", "renderer": "0x08014098 VWF (OBJ tiles index + 4n)",
@@ -23,10 +25,13 @@
                     "note": "plate ~44 px; marker shows only 5 cells ('[4140'); needs VWF like the battle tag"},
     "small_tag": {"font": "small", "px": 40, "lines": 1, "status": "measured", "renderer": "0x08111B50 tag VWF",
                   "shot": "work/qa/tag2/z.png", "note": "battle speaker tag, OBJ tiles 0x3DB..0x3DF"},
-    "small_label": {"font": "small", "px": "jp", "lines": 1, "status": "guess", "renderer": "0x08110AE8 smapline",
-                    "note": "battle BG labels; the tiles after dest belong to the next label"},
-    "intro_strip": {"font": "big", "px": 224, "lines": 1, "status": "guess", "renderer": "0x080235D4 strip28"},
-    "credits": {"font": "big", "px": 224, "lines": 1, "status": "guess", "renderer": "0x08023E3C strip30", "note": "only ~240 px of a row shows"},
+    "small_label": {"font": "small", "px": "jp", "lines": 1, "status": "measured", "renderer": "0x08110AE8 smapline",
+                    "shot": "work/qa/tag3/z.png",
+                    "note": "battle BG labels, all 10 callers read: 40F718/24/30 at tile dests 0x0600CC80/CD00/CD80 (0x80 apart = 4 tiles = the JP's 32 px, 0x0810C1CE..); 410C0C (x 0) and 410C80 (x 27, 3 tiles to the screen edge) share dest 0x06009800. The JP's tile count is the hard cap"},
+    "intro_strip": {"font": "big", "px": 224, "lines": 1, "status": "measured", "renderer": "0x080235D4 strip28",
+                    "shot": "work/qa/wg5/intro/final.png", "note": "line drawn from x 8; a 240 px stress line is cut after x 232 (28 cells x 8 px)"},
+    "credits": {"font": "big", "px": 240, "lines": 1, "status": "measured", "renderer": "0x08023E3C strip30",
+                "shot": "work/qa/wg5/cred/f001320.png", "note": "line drawn from x 0; a 240 px stress line shows whole to x 239 (30 cells x 8 px). Centre with leading spaces"},
     "name_grid": {"font": "big", "px": "jp", "lines": 1, "status": "guess", "renderer": "0x0803A168 mapline",
                   "note": "name-entry kana grid rows (glyph sets, skipped by marker.py); to be replaced by an English grid"},
     "fixed": {"font": "big", "px": "jp", "lines": 0, "status": "guess", "renderer": "various",
@@ -66,6 +71,7 @@
     "40F724": "small_label",
     "40F730": "small_label",
     "410C0C": "small_label",
+    "410C80": "small_label",
     "40F740": "small_tag"
   }
 }
