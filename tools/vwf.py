@@ -156,6 +156,115 @@ widths: .word {widths:#x}
 """
 
 
+WSTATE = 0x0203FF20    # window VWF state: last n, last string, next x, y (16 bytes)
+WIN_ORIG = {
+    0x0029F0: "f0b557464e464546e0b489b088460004",  # prologue, replaced by the thunk
+    0x002A16: "56d1",                              # bne: odd x -> return -1 (the plotter handles odd x)
+}
+
+# Window glyph routine 0x080029F0(flag, win): draws string[n] (n = [[win+0x20]], string = [win+0x1C], halfwords
+# byte-swapped) at x = [win+4], y = [win+6]. Its 4 callers set x/y from a 14-cell grid; this prologue replaces them
+# with a pixel cursor when the call follows the previous one (n = last n + 1, same string). Line start x = the
+# window's base x [win+0x12]. Code NEWLINE moves to the next line and returns 1 (the caller counts it as drawn).
+WIN_SRC = """
+    push {{r0, r1, r4, r5, r6, r7, lr}}
+    ldr r7, wstate
+    ldr r2, [r1, #0x20]
+    ldr r2, [r2]
+    ldr r3, [r1, #0x1c]
+    lsls r4, r2, #1
+    ldrh r4, [r3, r4]
+    lsrs r5, r4, #8
+    lsls r4, r4, #24
+    lsrs r4, r4, #16
+    orrs r4, r5
+    cmp r4, #0
+    beq passthru
+    ldr r5, [r7, #0]
+    adds r5, #1
+    cmp r5, r2
+    bne adopt
+    ldr r5, [r7, #4]
+    cmp r5, r3
+    bne adopt
+    ldr r5, [r7, #8]
+    ldr r6, [r7, #12]
+    b have
+adopt:
+    ldrh r5, [r1, #4]
+    ldrh r6, [r1, #6]
+have:
+    str r2, [r7, #0]
+    str r3, [r7, #4]
+    ldr r3, nlcode
+    cmp r4, r3
+    beq newline
+    ldr r3, base
+    subs r3, r4, r3
+    ldr r0, ncodes
+    cmp r3, r0
+    bhs w16
+    ldr r0, widths
+    ldrb r3, [r0, r3]
+    b wgot
+w16:
+    movs r3, #16
+wgot:
+    adds r0, r5, r3
+    ldrh r4, [r1, #0x12]
+    adds r4, #{span}
+    cmp r0, r4
+    ble fits
+    ldrh r5, [r1, #0x12]
+    adds r6, #16
+    adds r0, r5, r3
+fits:
+    strh r5, [r1, #4]
+    strh r6, [r1, #6]
+    str r0, [r7, #8]
+    str r6, [r7, #12]
+passthru:
+    pop {{r0, r1, r4, r5, r6, r7}}
+    pop {{r2}}
+    mov lr, r2
+    push {{r4, r5, r6, r7, lr}}
+    mov r7, sl
+    mov r6, sb
+    mov r5, r8
+    push {{r5, r6, r7}}
+    sub sp, #0x24
+    mov r8, r1
+    lsls r0, r0, #16
+    ldr r2, back
+    bx r2
+newline:
+    ldrh r5, [r1, #0x12]
+    adds r6, #16
+    str r5, [r7, #8]
+    str r6, [r7, #12]
+    pop {{r0, r1, r4, r5, r6, r7}}
+    movs r0, #1
+    pop {{r2}}
+    bx r2
+
+    .align 2
+back:   .word 0x08002A01
+wstate: .word {wstate:#x}
+nlcode: .word {nl:#x}
+base:   .word 0x8140
+ncodes: .word {ncodes:#x}
+widths: .word {widths:#x}
+"""
+WIN_SPAN = 224  # 14 cells of 16 px: the grid the game lays window text on
+
+
+def win_code(far, widths_addr):
+    addr = 0x08000000 | far
+    src = WIN_SRC.format(span=WIN_SPAN, wstate=WSTATE, nl=enfont.NEWLINE, ncodes=NCODES,
+                         widths=0x08000000 | widths_addr)
+    return _asm(src, addr), addr
+
+
 def _asm(src, addr):
     ks = keystone.Ks(keystone.KS_ARCH_ARM, keystone.KS_MODE_THUMB)
     enc, _ = ks.asm(src, addr)
@@ -215,6 +324,14 @@ def install(img, write):
     assert len(inner) == 0x3028 - 0x2FFE
     write(0x2FFE, inner, "vwf x/y from state")
     write(0x2DD36, struct.pack("<H", 0x2100 | LINE2), "vwf newline idx")
+    for off, hx in WIN_ORIG.items():
+        b = bytes.fromhex(hx)
+        assert orig[off:off + len(b)] == b, f"vwf: unexpected bytes at {off:06X}"
+    wfar = img.alloc(len(win_code(0x800000, 0x800000)[0]) + 16)
+    wcode, waddr = win_code(wfar, wt_off)
+    write(wfar, wcode, "vwf window code")
+    write(0x29F0, thunk(0x29F0, waddr), "vwf window thunk")
+    write(0x2A16, b"\xc0\x46", "vwf window: allow odd x")
     return far
 
 
