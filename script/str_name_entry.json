@@ -1,6 +1,6 @@
 {
  "file": "str_name_entry",
- "about": "Name-entry character grid rows: glyph sets, not prose. Replace with an English grid in phase 5, don't translate.",
+ "about": "Name-entry screen. Grid rows are glyph sets (keep, the ABC tab gives English letters); translate only the title 40C524, label 40C530, default name 40C51C (<= 4 letters), the prompts and the link-cable messages.",
  "entries": [
   {
    "id": "40C2A0",

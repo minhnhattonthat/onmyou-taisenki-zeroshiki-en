@@ -11,7 +11,7 @@ Rules (build-time only, script/*.json is not touched):
   * strings: filled to their variant's px in its font (small-font labels/tags in ensmall px), one line per JP line
     for pad strings (capped at the variant's lines), all lines for multi-line variants; `[id]` + filler when that
     fits, else the longest tail of the id that fits.
-  * SKIP: glyph grids and data-like strings stay Japanese.
+  * SKIP: glyph grids and data-like strings stay Japanese (also every variant marked keep_jp in tbl/windows.json).
 """
 import re
 import sys
@@ -22,7 +22,7 @@ import enfont  # noqa: E402
 import windows  # noqa: E402
 
 FILLER = "The quick brown fox jumps over the lazy dog. Pack my box with five dozen liquor jugs! "
-SKIP_FILES = {"str_name_entry"}
+SKIP_FILES = set()  # whole files; grid rows etc. are skipped through their keep_jp variant
 SKIP_IDS = {"410E18", "12B644"}  # digit glyph set; shared single-space empty slot
 CODE = re.compile(r"\{[0-9A-Fa-f]{4}\}")
 
@@ -65,10 +65,10 @@ def string_marker(eid, e, file):
         rows = windows.variant(file, e)[1].get("row_px") if b else None
         return "\n".join(fill(f"[{eid}] " if i == 0 else "", rows[min(i, len(rows) - 1)] if rows else px, font, chars)
                          for i in range(n))
-    if w(f"[{eid}]") <= px:
+    if w(f"[{eid}]") <= px and (chars is None or len(eid) + 2 <= chars):
         return fill(f"[{eid}]", px, font, chars)
     for k in range(len(eid), 0, -1):
-        if w(eid[-k:]) <= px or k == 1:
+        if (w(eid[-k:]) <= px and (chars is None or k <= chars)) or k == 1:
             return eid[-k:]
 
 
@@ -79,7 +79,8 @@ def markers(files):
         new = []
         for e in entries:
             e = dict(e)
-            if name in SKIP_FILES or e["id"] in SKIP_IDS or not e["jp"].strip("　"):
+            keep = (windows.variant(name, e)[1] or {}).get("keep_jp")
+            if name in SKIP_FILES or e["id"] in SKIP_IDS or keep or not e["jp"].strip("　"):
                 e["en"] = ""
             elif name.startswith("str_"):
                 e["en"] = string_marker(e["id"], e, name)

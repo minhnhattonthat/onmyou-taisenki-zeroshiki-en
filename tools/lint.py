@@ -5,7 +5,7 @@
 Errors (exit 1): a line wider than the variant's px; more lines per page than the variant allows; control codes
 differing from the JP (as a multiset); characters with no English glyph; Japanese left in `en`; an ordinal suffix
 glued onto a variable ({00C8}th); a non-empty `jp` whose `en` is empty while other entries of its file are done
-(unless the id is in script/keep_jp.txt).
+(unless the id is in script/keep_jp.txt); any `en` in a variant marked keep_jp (strings the game uses as data).
 Warnings (one summary line): entries with no variant, entries checked against a guessed budget (-v lists them).
 --marker lints the marker build's text instead of script/ (a self-test of the window data: every marker must fit).
 """
@@ -67,10 +67,14 @@ def lint(files, verbose=False):
         for e in entries:
             en, eid = e.get("en", ""), e["id"]
             if not en:
-                if started and e["jp"].strip("　") and eid not in keep:
+                data = (windows.variant(name, e)[1] or {}).get("keep_jp")
+                if started and e["jp"].strip("　") and eid not in keep and not data:
                     errors.append(f"{name} {eid}: empty en")
                 continue
             where = f"{name} {eid}"
+            if (windows.variant(name, e)[1] or {}).get("keep_jp"):
+                errors.append(f"{where}: data, not text (variant keep_jp): en must stay empty")
+                continue
             if Counter(c.upper() for c in CODE.findall(e["jp"])) != Counter(c.upper() for c in CODE.findall(en)):
                 errors.append(f"{where}: control codes differ from the JP")
             if JAPANESE.search(en):

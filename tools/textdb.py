@@ -58,20 +58,22 @@ GROUPS = [
     (0x40C2A0, "name_entry"),      # character grid rows: glyph sets, not sentences
     (0x40C698, "menus"),           # rules / link-cable menus
     (0x40C9BC, "battle_msgs"),
-    (0x40EB5C, "battle_kanji"),    # one-kanji strings (technique initials?)
+    (0x40EB5C, "battle_kanji"),    # one-kanji lookup keys for the super-move cut-in (0x08109614)
     (0x40F718, "menus2"),
     (0x410AE4, "tutorial_help"),
     (0x413BFC, "char_names"),
 ]
 
 ABOUT = {
-    "str_debug_menu": "Leftover graphics-viewer debug menu; not reached in normal play. Lowest priority.",
-    "str_battle_help": "Battle command help, fixed-width rows; 1261AC is a name-entry kana row (glyph set).",
-    "str_name_entry": "Name-entry character grid rows: glyph sets, not prose. Replace with an English grid in "
-                      "phase 5, don't translate.",
+    "str_debug_menu": "Leftover graphics-viewer debug menu; not reached in normal play. Kept Japanese (D9).",
+    "str_battle_help": "Battle command help rows; their only reader (0x0800F010) is dead code. Kept Japanese (D9).",
+    "str_name_entry": "Name-entry screen. Grid rows are glyph sets (keep, the ABC tab gives English letters); "
+                      "translate only the title 40C524, label 40C530, default name 40C51C (<= 4 letters), the "
+                      "prompts and the link-cable messages.",
     "str_shikigami_names": "Shikigami names: the game copies 5 cells per name to RAM at boot (docs/re/text.md); "
                            "longer English names need that copy widened (phase 5).",
-    "str_battle_kanji": "One-kanji strings, purpose unconfirmed (check in-game before translating).",
+    "str_battle_kanji": "Lookup keys, not text: 0x08109614 matches each kanji of a techniques_b name against these "
+                        "to pick the super-move cut-in graphic. Never translate.",
     "str_credits": "Staff roll; fixed-width rows centred with `　` (D3: translate).",
     "tutorial": "Battle-tutorial scripts (region 0x6918E8..0x693978).",
 }

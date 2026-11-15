@@ -456,7 +456,8 @@
    "id": "40E534",
    "jp": "　　",
    "en": "",
-   "max": 5
+   "max": 5,
+   "notes": "code-built battle message 0x0810638E: weapon name + (28 - its bytes)/2 x 40E32C + this + skill name. The JP pads row 1 to 14 chars; in English start this with \\n so the skill goes to row 2 (max 5 bytes: \\n = 2)"
   }
  ]
 }

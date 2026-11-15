@@ -1,6 +1,6 @@
 {
  "file": "str_battle_help",
- "about": "Battle command help, fixed-width rows; 1261AC is a name-entry kana row (glyph set).",
+ "about": "Battle command help rows; their only reader (0x0800F010) is dead code. Kept Japanese (D9).",
  "entries": [
   {
    "id": "126190",

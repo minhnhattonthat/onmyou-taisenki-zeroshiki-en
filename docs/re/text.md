@@ -106,4 +106,6 @@ Code literal-pool pointers are plain u32 words: repoint them by exact location, 
   4A 穹(?), 4B 棘, 4C 龕, 4D 礫, 4E 翔, 4F 跋, 50 扈, 51 巫, 52 澤, 53 條, 54 晏, 55 麒, 56 荼; 0x8457 = ラ・,
   0x8458 + 0x8459 = 衛・二 drawn across two cells. The dump adds `notes: gaiji Р=巫` to each entry that uses one.
 - Left for the marker build: strings reached by base + immediate or built from code (none found yet), the tiny
-  script at 0x129560, and the purpose of the one-kanji strings at 0x40EB5C.. (`str_battle_kanji`).
+  script at 0x129560. The one-kanji strings at 0x40EB5C.. (`str_battle_kanji`) are lookup keys for the battle
+  super-move cut-in (docs/re/font.md "names_list"), not text. Code-built strings found so far: the weapon/skill
+  battle message (0x0810638E) and `【ability】` (0x08112642).

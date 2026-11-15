@@ -1,6 +1,6 @@
 {
  "file": "str_battle_kanji",
- "about": "One-kanji strings, purpose unconfirmed (check in-game before translating).",
+ "about": "Lookup keys, not text: 0x08109614 matches each kanji of a techniques_b name against these to pick the super-move cut-in graphic. Never translate.",
  "entries": [
   {
    "id": "40EB5C",

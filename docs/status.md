@@ -2,10 +2,11 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 5. Engine spike and marker build, in progress (width gate: 10 of 13 variants measured; left:
-  names_list, name_grid, fixed).
-  Last builds 2026-11-16 (session 6): `build.py` (engine, JP text) sha1 b3ab6b5d…, smoke ok, check ok;
-  `build.py --marker` → build/marker.gba sha1 35f9ed12…, smoke ok.
+- **Phase:** 6. Translate, not started (phase 5 done 2026-11-16: width gate complete, every variant in
+  `tbl/windows.json` measured, link-cable menus `static`).
+  Last builds 2026-11-16 (session 7): `build.py` (engine, JP text) sha1 896f2839…, smoke ok, check ok (28 tests,
+  lint 0 errors); `build.py --marker` → build/marker.gba sha1 4aeb352d…, smoke ok, tour
+  `warp_all.py build/marker.gba --out work/qa/mtour3` 50/50 scenes.
 - **Done:**
   - Step 0: ROM pinned (`rom.sha1`), MesenCE 2.2.1 + GBA BIOS in `tools/mesen/`, guard hook in `.claude/settings.json`
     (canary blocked), pre-commit runs `tools/check.py` (a failing test was rejected), boot route `tools/routes/boot.txt`
@@ -78,17 +79,26 @@ Updated at the end of every session. Keep it to what the next session needs; his
     **speaker plate** found (0x0801EC54, own 5-tile loop) and given VWF + pixel centring (`vwf.plate`,
     `plate_patch`); `speaker_tag` measured 40 px. New scenes `menu_shiki_r1/r2/l1` (they show the same status
     page: R/L don't change it). `fontcalls.lua` takes `--var FONTTYPE=12`. Details `docs/re/font.md` "Width gate".
-- **Next (phase 5, still guess in `tbl/windows.json`; `python -X utf8 tools/windows.py show`):**
-  `names_list`: reach shikigami-menu pages 1..4 of 0x08035CA4 (weapon/skill page 0x08036340, techniques
-  0x08036500): find where its page argument r1 comes from (callers in docs/re/font.md), poke it in a scene (or
-  find the real button), then stress weapon/skill/technique names (field tiles: weapon 0x82..0xA2, skill
-  0xA2..0xC8). The 3 `menu_shiki_*` scenes can then become the real pages. `fixed` (link-cable menus `str_menus`,
-  battle help `str_battle_help`, debug menu, `str_battle_kanji` unidentified): find each one's renderer
-  (litref on their pointer tables, as done for names_list) and measure or mark unreachable; `name_grid` with the
-  English name-entry grid. Also: 0x08014098 size-8 mode still runs
-  the original fixed cells; widen the 5-cell shikigami-name copy; code-built strings (`jp_left.py` on
-  build/marker.gba); English name-entry grid; player-name width `vars.00C8` (45 px guess) once the grid sets the
-  name length; tests for enfont/vwf (widths table, ORIG asserts).
+  - Phase 5 finished (2026-11-16, seventh session): shikigami pages reached (page u16 0x0200512C, d-pad LEFT;
+    scenes `menu_shiki_p1..p4` replace r1/r2/l1); measured weapon 208 / skill 176 / technique 128 px, ability
+    description = 2 rows of 224 (`line` plotter: newline → next 224 px row). `str_battle_kanji` = lookup keys
+    for the super-move cut-in (variant `data_keys`, keep_jp); `build.py` JP_COPIES keeps a JP copy of
+    techniques_b for the cut-in (test_cutin_keeps_japanese_keys). Name entry: grid → `gridline` (one centred
+    glyph per cell; ABC tab = English letters, scene `name_entry_abc`), けってい label 0x0803A0A4 → `smapline`,
+    default-name copy 2 → 5 halfwords, title 64 px, name ≤ 4 letters; prompts 40C540/40C560 = window (scene
+    `name_back`). Debug menu + battle help = `unused` (dead / not reached, kept JP: D9). Link-cable menus =
+    `link_window` (static: window system, needs a partner). Lint: keep_jp variants reject `en`; markers honour
+    `chars`. New probe `tools/debug/mapcalls.lua`. keystone gotcha: no sp-relative byte/halfword access
+    (`_asm` rejects it). Details `docs/re/font.md` "names_list", "Name entry".
+- **Next (phase 6, translate; `references/translation.md`):** batch the 57 `script/*.json` files with the
+  translator agent type; the lint (`tools/check.py`) is the width gate (`tools/windows.py show` for budgets).
+  Translator notes to carry into the briefs: str_battle_msgs 40E534 starts with `\n` (code-built weapon/skill
+  message); str_abilities rows split with `\n` (224 + 224 px); default name 40C51C ≤ 4 letters; keep_jp files
+  (str_battle_kanji, str_debug_menu, str_battle_help, name-entry grid rows) stay empty.
+  Engine items still open (needed by phase 7 at the latest): widen the 5-cell shikigami-name RAM copy
+  (text.md "Shikigami name variables": "Kogenta" is 7 letters); player-name width `vars.00C8` (45 px now; the
+  kana tabs allow 5 × 16 = 80 px JP names); name-entry cursor still at 16 px × length (cosmetic); 0x08014098
+  size-8 mode still original fixed cells; code-built `【ability】` message (0x08112642).
   (EWRAM 0x0203FF00, the VWF state, is never read by the original game: safe.)
 - **Known limits of the warp:** event scenes run over map 23 (the house) unless the script changes map itself
   (`map=` per scene overrides); which map normally hosts each event is not mapped yet (NPCs come from `/116`

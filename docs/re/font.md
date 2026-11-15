@@ -56,11 +56,39 @@
   from all three sources (work/qa/sp3/plates.png). `fontcalls.lua --var FONTTYPE=12` found it.
 - **names_list** (skills, weapons, techniques) is drawn by the OBJ-cell renderer 0x08014098 (VWF) from the
   shikigami menu's page routine **0x08035CA4**(id r0 ≤ 0x4B, page r1 0..4, r2), callers 0x08034EA4/0x08034EDC/
-  0x080354C4/0x080354FE/0x080355D2/0x08035606: weapon (table 0x0812B910) at OBJ tile 0x82, skill (0x0812B4F8) at
-  0xA2, other labels 0x58/0xC8 on that page (0x08036340..); techniques_b (0x0813BD78) at 0xA8 (0x08036528). The
-  tour only reaches page 0 (status); L/R/up/down don't change the page (right moves the bottom selector), so the
-  page comes from somewhere else — find the page argument's source and poke it in a scene. Battle users of the
-  same tables: 0x08106402, 0x0810638E, 0x081096EA.
+  0x080354C4/0x080354FE/0x080355D2/0x08035606. The page is u16 **0x0200512C**; d-pad **left** steps it back and
+  wraps (0 → 4 → 3 → 2 → 1; handler 0x0803551C: keys & 0x30), right only moves the bottom selector, R/L do nothing.
+  Scenes `menu_shiki_p1..p4`. OBJ tiles per page (`tools/debug/objcalls.lua` on the original ROM, work/qa/oc5):
+  page 1 (affinity) labels 0x20/0x58/0x74/0x100/0x11C, kinds 0x6C/0x114; page 2 (ability + weapon) label 0x20,
+  **ability description 0x58 = 28 cells as 2 rows of 14** (str_abilities, pad 14), label 0xC8, **weapon 0x104**
+  (x 24), **skill 0x144** (x 56); page 3 (techniques) labels 0x20/0x58/0x90/0xC8/0x100/0x138 and **technique
+  names 0x38/0x70/0xA8/0xE0** (8 cells each, x 105); page 4 = the same labels + button-input graphics.
+  Measured (work/qa/nl2, nl3a/b): weapon 208 px, skill 176 px, technique 128 px, ability rows 224 + 224 with `\n`
+  (the shared `line` plotter now moves x to the next multiple of 224 at code 0x81AD; a row exactly 224 px wide
+  doesn't skip a row). Variants `weapon_name`, `skill_name`, `technique_name`, `ability_rows`.
+- Other readers of those tables: 0x0810638E/0x08106402 build a battle message in RAM 0x0201A5C4 = weapon +
+  (28 − its bytes)/2 × str 40E32C + str **40E534** + skill (0x0811B7AC = strcat, 0x0811B788 = byte count): the JP
+  pads row 1 to 14 chars, so English 40E534 must start with `\n` (note on the entry). 0x08112642 builds
+  `【` + ability name (table 0x0813B0EC) + `】` (40F9F0/40F9F4).
+- **Battle super-move cut-in**: 0x081096EA reads techniques_b (table 0x0813BD78) and 0x08109614 matches each
+  2-byte char of the name against the 380-entry table 0x0840E56C of one-kanji strings (**str_battle_kanji**, 257
+  strings, only reader) to get a graphic index per kanji. So str_battle_kanji is data (variant `data_keys`,
+  keep_jp), and `build.py` JP_COPIES gives that reader its own copy of the JP table + strings (literal
+  0x0810971C), while the shikigami page (literal 0x08036548) reads the translated table
+  (tests/test_build.py::test_cutin_keeps_japanese_keys).
+
+## Name entry (2026-11-16)
+- Renderers (`tools/debug/mapcalls.lua`, original ROM): title 40C524 = 0x0803A168 (lr 0x0803AD6F) at tiles
+  0x06008020, 4 cells; label けってい 40C530 = **0x0803A0A4** (lr 0x0803AD89), a twin of the small-font label routine
+  0x08110AE8, tiles 0x06008220 (right after the title's 4 cells: title budget 64 px); name field = RAM 0x02010012
+  (lr 0x0803AE29) at 0x06008680, 5 cells up to the grid's tiles 0x06008900; grid rows = BL at **0x0803AEB2**
+  (row strings from table 0x0840C1D4, 5 chars, x 17); prompts 40C540/40C560 = window routine.
+- Patches (`vwf.py`): 0x0803A0A4 → `smapline`; the grid's BL → thunk at 0x0803A178 (dead body of the replaced
+  0x0803A168) → `gridline`: one glyph centred per 16 px cell, every cell redrawn (plain VWF packed "ABCDE" into
+  two cells and left the previous tab's kana in the rest, work/qa/ne1/abc.png). The default name 40C51C is copied
+  to RAM by 0x0812414C(src, 0x02010012, **2** halfwords) at 0x0803A85C: now 5 (English "Riku" showed as "Ri").
+- The name cursor is still placed at 16 px × name length (0x0803ADA4 and the typing code): cosmetic gap after a
+  VWF name. Scene `name_entry_abc` = the ABC tab, `name_back` = B on the empty name.
 - Other renderers seen in the marker build (still fixed 16 px cells, need their own work): see "Renderer
   catalogue" below.
 

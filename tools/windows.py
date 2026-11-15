@@ -5,8 +5,10 @@
 
 Data: tbl/windows.json
   variants: name -> {font: big|small, px: line budget, lines: max lines (0 = per entry from the JP), status:
-            measured|guess, shot: proof, renderer, note}; "px": "jp" = the JP's own cell width (16 px a JP char in
-            the big font, 8 in the small font) because the field is boxed by the next thing drawn.
+            measured|static|guess (static = renderer read in the code but the screen can't be reached, e.g. link
+            cable), shot: proof, renderer, note, keep_jp: data the game reads (lint: en must stay empty, marker
+            skips it)}; "px": "jp" = the JP's own cell width (16 px a JP char in the big font, 8 in the small font)
+            because the field is boxed by the next thing drawn.
   files:    file name (or prefix ending in *) -> variant
   ids:      entry id -> variant (overrides files)
 API: variant(file, entry) -> (name, dict); budget(file, entry) -> (px per line, max lines, font, status).

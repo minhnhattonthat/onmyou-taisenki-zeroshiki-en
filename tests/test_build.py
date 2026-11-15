@@ -96,3 +96,21 @@ def test_overflow_moves_only_the_grown_script(orig):
     assert rom[off:off + sc.room[off]] == b"\0" * sc.room[off]
     others = [o for o in sc.refs if o != off]
     assert all(rom[r:r + 4] == orig[r:r + 4] for o in others for r in sc.refs[o])
+
+
+def test_cutin_keeps_japanese_keys(orig):
+    """build.JP_COPIES: the battle super-move cut-in (0x08109614) still reads the JP techniques_b names after the
+    table is translated; the shikigami page (literal 0x08036548) reads the English."""
+    first = struct.unpack_from("<I", orig, 0x13BD78 + 4)[0] - 0x08000000
+    en = b"\x82\x60\x82\x61\0"  # "ＡＢ" (English font codes)
+    rom, _ = build.build(orig, strings={first: en}, engine=True)
+    r32 = lambda b, o: struct.unpack_from("<I", b, o)[0] - 0x08000000  # noqa: E731
+    menu, cutin = r32(rom, 0x36548), r32(rom, 0x10971C)
+    assert menu == 0x13BD78 and cutin >= build.FREE[0]
+    p_en, p_jp = r32(rom, menu + 4), r32(rom, cutin + 4)
+    assert rom[p_en:p_en + len(en)] == en
+    jp = orig[first:orig.index(b"\0", first) + 1]
+    assert rom[p_jp:p_jp + len(jp)] == jp
+    for k in range(76):  # every entry of the copy = the original string
+        a, b = r32(orig, 0x13BD78 + 4 * k), r32(rom, cutin + 4 * k)
+        assert rom[b:rom.index(b"\0", b)] == orig[a:orig.index(b"\0", a)], k

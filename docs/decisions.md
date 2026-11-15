@@ -14,3 +14,4 @@ decision replaces one, mark the old one "replaced by D<n>" instead of deleting i
 | D6 | 2026-11-16 | Specs and plans | need approval, pre-approved | Pre-approved: keep going through every checkpoint, report at the end. |
 | D7 | 2026-11-16 | Existing saves / savestates | user's saves, none | None provided; build the debug tool as usual. |
 | D8 | 2026-11-16 | Git identity | ask, preset | Already set by new-game.ps1; do not change it. |
+| D9 | 2026-11-16 | Text players never see (str_debug_menu: leftover graphics-viewer menu; str_battle_help: rows whose only reader is dead code) | translate anyway, keep Japanese | Default taken by the agent (pre-approved run, D6): keep Japanese; lint rejects `en` there (variant `unused`, keep_jp). The name-entry kana tabs also stay (the ABC tab already has English letters). Revisit if the user wants them translated. |

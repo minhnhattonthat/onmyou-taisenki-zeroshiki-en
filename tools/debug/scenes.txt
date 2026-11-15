@@ -12,6 +12,8 @@
 title          boot  press=600:-|6:start|300:-                                             mash=0 hold=60
 title_menu     boot  press=600:-|6:start|150:-|6:start|200:-                               mash=0 hold=60
 name_entry     boot  press=600:-|6:start|150:-|6:start|150:-|6:a|400:-                     mash=0 hold=60
+name_entry_abc boot  press=600:-|6:start|150:-|6:start|150:-|6:a|400:-|6:r|60:-|6:r|120:-        mash=0 hold=60
+name_back      boot  press=600:-|6:start|150:-|6:start|150:-|6:a|400:-|6:b|6:-|6:b|6:-|6:b|6:-|6:b|60:-|6:b|60:-|6:b|200:- mash=0 hold=60
 name_confirm   boot  press=600:-|6:start|150:-|6:start|150:-|6:a|400:-|6:start|150:-       mash=0 hold=60
 intro_scroll   boot  press=600:-|6:start|150:-|6:start|150:-|6:a|400:-|6:start|200:-|6:left|20:-|6:a|300:- mash=0 hold=60
 intro_event    boot  press=600:-|6:start|150:-|6:start|150:-|6:a|400:-|6:start|200:-|6:left|20:-|6:a|1200:- hold=300
@@ -26,10 +28,12 @@ menu_ring      field 23  flags=0,1,2,21,22,23,24,28 press=6:start|500:-         
 menu_status    field 23  flags=0,1,2,21,22,23,24,28 press=6:start|300:-|6:a|200:-                mash=0 hold=1
 menu_save      field 23  flags=0,1,2,21,22,23,24,28 press=6:start|300:-|6:right|30:-|6:a|200:-   mash=0 hold=1
 menu_shikigami field 23  flags=0,1,2,21,22,23,24,28 press=6:start|300:-|6:right|30:-|6:right|30:-|6:a|200:- mash=0 hold=1
-# shikigami menu pages: R / L page through status, weapon + skill (0x08036340), techniques (0x08036500)
-menu_shiki_r1  field 23  flags=0,1,2,21,22,23,24,28 press=6:start|300:-|6:right|30:-|6:right|30:-|6:a|200:-|6:r|120:- mash=0 hold=1
-menu_shiki_r2  field 23  flags=0,1,2,21,22,23,24,28 press=6:start|300:-|6:right|30:-|6:right|30:-|6:a|200:-|6:r|120:-|6:r|120:- mash=0 hold=1
-menu_shiki_l1  field 23  flags=0,1,2,21,22,23,24,28 press=6:start|300:-|6:right|30:-|6:right|30:-|6:a|200:-|6:l|120:- mash=0 hold=1
+# shikigami menu pages (page = u16 0x0200512C, 0..4): d-pad LEFT steps back and wraps (0 -> 4 -> 3 ..); right
+# only moves the bottom selector, R/L do nothing. Page routine 0x08035CA4 (docs/re/font.md "names_list").
+menu_shiki_p4  field 23  flags=0,1,2,21,22,23,24,28 press=6:start|300:-|6:right|30:-|6:right|30:-|6:a|200:-|6:left|120:- mash=0 hold=1
+menu_shiki_p3  field 23  flags=0,1,2,21,22,23,24,28 press=6:start|300:-|6:right|30:-|6:right|30:-|6:a|200:-|6:left|120:-|6:left|120:- mash=0 hold=1
+menu_shiki_p2  field 23  flags=0,1,2,21,22,23,24,28 press=6:start|300:-|6:right|30:-|6:right|30:-|6:a|200:-|6:left|120:-|6:left|120:-|6:left|120:- mash=0 hold=1
+menu_shiki_p1  field 23  flags=0,1,2,21,22,23,24,28 press=6:start|300:-|6:right|30:-|6:right|30:-|6:a|200:-|6:left|120:-|6:left|120:-|6:left|120:-|6:left|120:- mash=0 hold=1
 menu_map       field 23  flags=0,1,2,21,22,23,24,28 press=6:start|300:-|6:left|30:-|6:a|200:-    mash=0 hold=1
 menu_party     field 23  flags=0,1,2,21,22,23,24,28 press=6:start|300:-|6:left|30:-|6:left|30:-|6:a|200:- mash=0 hold=1
 shikigami_talk field 23  flags=0,1,2,21,22,23,24,28 press=6:l|200:-                             mash=0 hold=1

@@ -285,6 +285,7 @@ STRIP_SRC = """
     b mapline
     b menu
     b twoline
+    b gridline
 strip28:
     movs r2, #28
     b strip
@@ -341,6 +342,69 @@ mloop:
     bne mloop
 mdone:
     adds r0, r6, #0
+    pop {{r4, r5, r6, r7}}
+    pop {{r1}}
+    bx r1
+
+@ gridline: mapline's arguments, for the name-entry character grid (the BL at 0x0803AEB2 only): one 16 px cell per
+@ character with the glyph centred in it, so cell k still shows character k (the cursor picks by index) and every
+@ cell of the row is redrawn (no tiles left over from the previous tab).
+gridline:
+    push {{r4, r5, r6, r7, lr}}
+    sub sp, #8
+    lsls r0, r0, #16
+    asrs r0, r0, #15
+    adds r4, r3, r0
+    lsls r1, r1, #16
+    asrs r1, r1, #10
+    adds r4, r4, r1
+    lsls r5, r2, #28
+    lsrs r5, r5, #16
+    ldr r6, [sp, #28]
+    ldr r7, [sp, #36]
+gl_loop:
+    ldrb r0, [r7]
+    cmp r0, #0
+    beq gl_done
+    mov r1, sp
+    strb r0, [r1]
+    ldrb r0, [r7, #1]
+    strb r0, [r1, #1]
+    movs r0, #0
+    strh r0, [r1, #2]
+    mov r0, sp
+    bl measure
+    movs r3, #16
+    subs r3, r3, r0
+    asrs r3, r3, #1
+    bpl gl_x
+    movs r3, #0
+gl_x:
+    mov r0, sp
+    adds r1, r6, #0
+    movs r2, #1
+    bl linex
+    ldr r1, [sp, #32]
+    subs r1, r6, r1
+    lsls r1, r1, #16
+    lsrs r1, r1, #21
+    orrs r1, r5
+    strh r1, [r4]
+    adds r1, #1
+    strh r1, [r4, #2]
+    adds r1, #1
+    adds r2, r4, #0
+    adds r2, #0x40
+    strh r1, [r2]
+    adds r1, #1
+    strh r1, [r2, #2]
+    adds r4, #4
+    adds r6, #128
+    adds r7, #2
+    b gl_loop
+gl_done:
+    adds r0, r6, #0
+    add sp, #8
     pop {{r4, r5, r6, r7}}
     pop {{r1}}
     bx r1
@@ -482,15 +546,20 @@ ts_split:
     bx lr
 
 @ line(string, dest, cells): clear `cells` 128-byte cells at dest (0 = as many as the string's width needs), plot
-@ the string across them; returns its width in px.
+@ the string across them; returns its width in px. The newline code 0x81AD moves x to the first multiple of 224 px
+@ (14 cells) that is >= x and > 0, so a row exactly 224 px wide doesn't skip a row: OBJ-cell texts laid out as rows of 14 cells (the shikigami page's ability description, tile 0x58).
+@ linex = line with the start x in r3 (gridline centres one glyph in its cell).
 line:
+    movs r3, #0
+linex:
     push {{r4, r5, r6, r7, lr}}
     mov r4, r8
     mov r5, sb
     mov r6, sl
     mov r7, fp
     push {{r4, r5, r6, r7}}
-    sub sp, #8
+    sub sp, #12
+    str r3, [sp, #8]
     mov r8, r0
     mov sb, r1
     cmp r2, #0
@@ -502,7 +571,8 @@ lclr:
     lsls r3, r2, #4
     mov fp, r3
     movs r0, #0
-    mov sl, r0
+    ldr r3, [sp, #8]
+    mov sl, r3
     cmp r2, #0
     beq loop
     lsls r2, r2, #5
@@ -525,6 +595,19 @@ loop:
     lsls r4, r4, #24
     lsrs r4, r4, #16
     orrs r4, r5
+    ldr r5, nlcode2
+    cmp r4, r5
+    bne lchar
+    movs r0, #224
+lnl:
+    cmp r0, sl
+    bge lnlset
+    adds r0, #224
+    b lnl
+lnlset:
+    mov sl, r0
+    b loop
+lchar:
     ldr r5, base
     subs r5, r4, r5
     ldr r6, ncodes
@@ -603,7 +686,7 @@ advance:
     b loop
 done:
     mov r0, sl
-    add sp, #8
+    add sp, #12
     pop {{r4, r5, r6, r7}}
     mov r8, r4
     mov sb, r5
@@ -627,6 +710,19 @@ mloop2:
     lsls r4, r4, #24
     lsrs r4, r4, #16
     orrs r4, r5
+    ldr r5, nlcode2
+    cmp r4, r5
+    bne mchar
+    movs r4, #224
+mnl:
+    cmp r4, r6
+    bge mnlset
+    adds r4, #224
+    b mnl
+mnlset:
+    adds r6, r4, #0
+    b mloop2
+mchar:
     ldr r5, base
     subs r4, r4, r5
     ldr r5, ncodes
@@ -1015,10 +1111,13 @@ paddr: .word {plate | 1:#x}
 def strip_code(far, widths_addr):
     addr = 0x08000000 | far
     src = STRIP_SRC.format(ncodes=NCODES, widths=0x08000000 | widths_addr, nl=enfont.NEWLINE)
-    return _asm(src, addr), addr, addr + 2, addr + 4, addr + 6, addr + 8
+    return _asm(src, addr), addr, addr + 2, addr + 4, addr + 6, addr + 8, addr + 10
 
 
 _IMM3 = re.compile(r"^\s*(adds|subs)\s+(r[0-7]),\s*(r[0-7]),\s*#(0x[0-9a-fA-F]+|\d+)", re.M)
+
+
+_SPBH = re.compile(r"^\s*(ldr|str)(b|h|sb|sh)\s+r\d+,\s*\[sp\b.*$", re.M)
 
 
 def _asm(src, addr):
@@ -1026,6 +1125,11 @@ def _asm(src, addr):
     for m in _IMM3.finditer(src):
         if m.group(2) != m.group(3) and int(m.group(4), 0) > 7:
             raise ValueError(f"vwf asm: '{m.group(0).strip()}' needs imm <= 7 (use adds rd, #imm)")
+    # ... and turns a byte/halfword access through sp into a 32-bit Thumb-2 strb.w/ldrh.w the GBA can't run
+    m = _SPBH.search(src)
+    if m:
+        raise ValueError(f"vwf asm: '{m.group(0).strip()}': no sp-relative byte/halfword access in Thumb-1 "
+                         "(mov rN, sp first)")
     ks = keystone.Ks(keystone.KS_ARCH_ARM, keystone.KS_MODE_THUMB)
     enc, _ = ks.asm(src, addr)
     return bytes(enc)
@@ -1096,9 +1200,12 @@ def install(img, write):
         b = bytes.fromhex(hx)
         assert orig[off:off + len(b)] == b, f"vwf: unexpected bytes at {off:06X}"
     sfar = img.alloc(len(strip_code(0x800000, 0x800000)[0]) + 16)
-    scode, s28, s30, smap, smenu, s2line = strip_code(sfar, wt_off)
+    scode, s28, s30, smap, smenu, s2line, sgrid = strip_code(sfar, wt_off)
     write(sfar, scode, "vwf strip code")
     write(0x3A168, thunk(0x3A168, smap), "vwf strip thunk (map line 0x0803A168)")
+    assert orig[0x3AEB2:0x3AEB6] == bl(0x0803AEB2, 0x0803A168), "vwf: grid call site moved"
+    write(0x3A178, thunk(0x3A178, sgrid), "vwf gridline thunk (in the replaced map-line routine's body)")
+    write(0x3AEB2, bl(0x0803AEB2, 0x0803A178), "vwf name-entry grid rows -> gridline")
     write(0x235D4, thunk(0x235D4, s28), "vwf strip thunk (intro scroll)")
     write(0x23E3C, thunk(0x23E3C, s30), "vwf strip thunk (credits)")
     write(0x14098, thunk(0x14098, smenu), "vwf strip thunk (OBJ menu cells 0x08014098)")
@@ -1118,6 +1225,12 @@ def install(img, write):
     write(0x01ED64, plate_patch(tplate), "vwf speaker plate (0x0801EC54 loop -> plate, centred by pixels)")
     write(tfar, tcode, "vwf small-font code")
     write(0x110AE8, thunk(0x110AE8, tmap), "vwf smapline thunk (small-font BG labels 0x08110AE8)")
+    # the default player name (40C51C) is copied to RAM 0x02010012 as 2 halfwords (2 JP chars): copy 5 (10 bytes,
+    # "Riku" + NUL; the name field holds 5 characters, so the English default stays <= 4 letters)
+    assert orig[0x3A85C:0x3A85E] == b"\x02\x22", "vwf: default-name copy moved"
+    write(0x3A85C, b"\x05\x22", "default player name copy: 5 halfwords")
+    assert orig[0x3A0A4:0x3A0B4] == bytes.fromhex("f0b557464e464546e0b481b000930004"), "vwf: 0x0803A0A4 moved"
+    write(0x3A0A4, thunk(0x3A0A4, tmap), "vwf smapline thunk (name-entry small label 0x0803A0A4, twin of 0x08110AE8)")
     write(0x111B50, thunk(0x111B50, ttag), "vwf tag thunk (name tag 0x08111B50)")
     write(0x111B60, thunk(0x111B60, ttagw), "vwf tagw thunk (in the replaced routine's body)")
     write(0x10F98A, bl(0x0810F98A, 0x08111B60), "vwf tag centring: pixel width")

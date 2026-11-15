@@ -21,15 +21,25 @@ def test_variants_are_well_formed():
     for name, v in d["variants"].items():
         assert v["font"] in ("big", "small"), name
         assert v["px"] == "jp" or isinstance(v["px"], int), name
-        assert v["status"] in ("measured", "guess"), name
-        if v["status"] == "measured":
+        assert v["status"] in ("measured", "static", "guess"), name
+        if v["status"] == "measured" and not v.get("keep_jp"):  # keep_jp = data, proven in the code, not a shot
             assert v.get("shot"), name
+        if v["status"] == "static":
+            assert v.get("note") and v.get("renderer"), name
     for target in list(d["files"].values()) + list(d["ids"].values()):
         assert target in d["variants"]
 
 
 def test_markers_fit_their_budgets():
     assert lint.lint(marker.markers(textdb.load()))
+
+
+def test_keep_jp_variants_reject_english():
+    e = {"id": "40EB5C", "jp": "荼", "en": "X"}
+    assert not lint.lint({"str_battle_kanji": [e]})
+    e["en"] = ""
+    other = {"id": "40EB60", "jp": "楽", "en": ""}
+    assert lint.lint({"str_battle_kanji": [e, other]})
 
 
 def test_lint_catches_overflow_and_codes():

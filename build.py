@@ -93,13 +93,45 @@ def install_engine(img):
     vwf.install(img, img.write)
 
 
+# Pointer tables whose strings are used as data by some reader: that reader gets a copy of the table + the original
+# JP strings, so translating the table leaves it working. (table offset, literal-pool words of that reader, why)
+JP_COPIES = [
+    (0x13BD78, [0x10971C], "techniques_b for the battle super-move cut-in: 0x08109614 maps each kanji to a graphic "
+                           "by matching it against the one-kanji keys at 0x0840E56C (str_battle_kanji)"),
+]
+
+
+def keep_jp_tables(img):
+    """Copy each JP_COPIES table (entries = consecutive words pointing at JP strings) and its strings into free
+    space, and point the listed literals at the copy."""
+    for table, lits, why in JP_COPIES:
+        ptrs = []
+        while True:
+            p = struct.unpack_from("<I", img.orig, table + 4 * len(ptrs))[0]
+            if not 0x08000000 <= p < 0x08000000 + len(img.orig) or img.orig[p - 0x08000000] < 0x81:
+                break
+            ptrs.append(p - 0x08000000)
+        blob, at = bytearray(), {}
+        for p in ptrs:
+            if p not in at:
+                at[p] = len(blob)
+                end = img.orig.index(b"\0", p)
+                blob += img.orig[p:end + 1] + b"\0" * ((-(end + 1 - p)) % 2)
+        new = img.alloc(4 * len(ptrs) + len(blob))
+        base = new + 4 * len(ptrs)
+        img.write(new, b"".join(struct.pack("<I", 0x08000000 | (base + at[p])) for p in ptrs) + bytes(blob),
+                  f"jp copy {table:06X}")
+        img.repoint(lits, new, f"jp copy {table:06X} ptr")
+
+
 def build(orig, relocate=False, scripts=None, strings=None, engine=False):
     """Return (rom bytes, write log). scripts/strings: optional {offset: tokens} / {offset: bytes} overrides.
     engine: install the English font + VWF (off for the identity tests)."""
     img = Image(orig)
     if engine:
         install_engine(img)
-    sc = evscript.Scripts(orig)
+        keep_jp_tables(img)
+    sc =evscript.Scripts(orig)
     for off, toks in sorted(sc.scripts.items()):
         if off not in sc.refs:
             continue  # dead bare /999
