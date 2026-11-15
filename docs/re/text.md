@@ -13,7 +13,7 @@ Dump: `rom.sha1` (AGB-BITJ, 8 MiB). All offsets are file offsets; GBA address = 
 ## Event script format — verified (decoded known strings; interpreter traced at 0x0802A5C8 / 0x0802DB50)
 Plain ASCII bytecode with inline Shift-JIS text, in **0x41FE58..0x46B000** (~300 KB).
 - **Opcode** = `/` + 3 digits (`/091`), decoded as nibbles (0x0802A5D0). Fixed-length ASCII argument string follows
-  (digits, A-F, `-` for negatives). `/999` ends a script; NUL padding follows.
+  (digits, A-F, `-` for negatives). `/999` stops execution; the script's bytes end at a NUL (see below).
 - After an opcode's arguments, if the next byte is not `/`, the stream is **text** until the next `/`: Shift-JIS
   characters and 4-char hex codes:
   - `0000` newline, `0010` wait for key + new page (last one before `/091` closes the box),
@@ -30,6 +30,33 @@ Plain ASCII bytecode with inline Shift-JIS text, in **0x41FE58..0x46B000** (~300
   20 for 123; 28 for 129; 40 for 052; 52 for 116. Opcodes seen only once or twice (070, 087, 129, 135 with `-`)
   need the extractor's roundtrip test to confirm.
 - Stats: 2,373 text runs, ~63k characters. **Line width: 14 full-width chars (224 px)**; 99.9% of lines are ≤14.
+
+## Script regions and the identity build — verified (phase 3: `tools/evscript.py`, `build.py`, tests/test_build.py)
+- **A script ends at a NUL byte, not at `/999`**: `/999` and `/235` (0 args) also appear mid-script after branches.
+  After the NUL the game pads with NULs to a 4-byte boundary (end%4==0 → 4 NULs, ==2 → 2).
+- **Corrected arg table** (every opcode followed by `/` or NUL, one length each; test checks it): adds 024 235 (0),
+  133 (4), 093 136 (8), 117 134 (12), 055 (32) — the map-script opcodes the recon table lacked. Code: `evscript.ARGS`.
+- **Regions** (walk cleanly as pointer runs / scripts / NUL pad, nothing else): main **0x419300..0x46A104** (map
+  scripts from 0x419304, the id tables 0x41A058 / 0x41F2D8 / 0x41F848 / 0x41FE64..0x420CEC sit inside it, event
+  scripts to 0x46A104; data follows) and tutorial **0x6918E8..0x693978** (code → 0x6918E8 → slot 0x6918F0 →
+  script; table 0x693080 points straight at scripts). 541 scripts, 2,191 text runs, ~64.5k characters.
+- **Slots:** every script but the tutorial ones has a u32 right before it pointing at it; tables point at slots
+  (two slots, 0x4267D8 / 0x446C54, point at another script). The only pointers to script starts are those slot /
+  tutorial-table words (722 in all), so a script moves by rewriting its slot(s); tables never move.
+  Empty table entries hold 0x0200A000 (EWRAM) or the bare `/999` at 0x41FE5C. A bare `/999` at 0x41F840 has no
+  pointer (dead). A tiny no-text script sits in the string area at 0x129560 (slot 0x12955C); left alone.
+- **Pinned script:** 0x6918F4 must sit right after its slot 0x6918F0: code 0x0801DC90 loads [0x6918E8] (= the
+  slot) and scans forward to the first `/`, while 0x08027FB8 dereferences the same word twice. `evscript.PINNED`;
+  the build moves it together with a fresh slot and points 0x6918E8 at that slot.
+- **Relocation proven:** `build.py --relocate-all` moves all 541 scripts and 2,994 strings past 8 MiB (ROM 9 MiB,
+  old rooms 0xFF-filled); every warp scene still runs, and `tools/debug/romreads.lua` + `stale_reads.py` show no
+  read of a vacated room except one the original makes too (below). Jumps are by label, not byte offset.
+  The first run caught two misses, both fixed: the pinned script above, and 0x40F73C (code 0x0810E1A2), an empty
+  string made of the NULs after "　カット" at 0x40F730 (a string's room now stops at any pointed-at byte).
+- **Shikigami name variables are 5 characters:** at boot 0x080111F4.. copies 5 halfwords of each of the 80 names in
+  table 0x12AEE0 into RAM 0x020027B0 + i*16 (the RAM behind the 0x0080..0x00C7 text variables), skipping non-Shift-JIS values and
+  not stopping at NUL (entry 79, the empty 0x12B020, runs on into 0x12B024). English names longer than 5 cells
+  need that copy (and its readers) widened in phase 5.
 
 ## Script pointers — verified (table bytes)
 - Main table **0x420000..0x420CEC**: 827 u32 pointers into 0x41FE58..0x46A040 (275 unique; unused slots →
@@ -58,4 +85,7 @@ full-width spaces (`　`) to 14 chars instead of using a newline code.
 | 0x410AE4..0x410BD0 | battle tutorial help | 0x410AD0 (5) |
 | 0x413BFC..0x4140F8 | character names | 0x41392C (144) |
 Full list with every pointer location: `python -X utf8 tools/recon_strings.py ROM OUT.tsv` (544 pointer clusters).
+The build's model is `tools/strtab.py`: strings in 0x120000..0x140000 and 0x400000..0x419300 that an aligned u32
+from code (0..0x120000) or those areas reaches: 2,994 strings, 3,899 pointer words, none pointed at mid-string.
+**Not text:** 0x128F50..0x128F64 is a u16 LE table of fullwidth digit codes ０..９ (number drawing) that scans as text.
 Code literal-pool pointers are plain u32 words: repoint them by exact location, never by a ROM-wide value match.

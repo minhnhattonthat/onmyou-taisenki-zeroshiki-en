@@ -1,6 +1,7 @@
 """Warp to every scene in tools/debug/scenes.txt from a cold boot; save a shot and a savestate per scene.
 
     python -X utf8 tools/debug/warp_all.py [ROM] [--only a,b] [--jobs 4] [--out work/qa/warp] [--states work/states]
+                                           [--probe tools/debug/romreads.lua]
 
 Each scene runs `emu.py ROM --script tools/debug/warp.lua --var SCENE='<name>'` (mash A unless the scene says
 mash=0), and passes only if warp.lua logged SCENE_OK. Writes <out>/<scene>/scene.png, <states>/<scene>.mss, and
@@ -18,6 +19,7 @@ sys.path.insert(0, str(ROOT / "tools"))
 from skill import SKILL  # noqa: E402
 
 ROM = ROOT / "rom" / "Onmyou Taisenki Zeroshiki (Japan).gba"
+PROBES = []  # extra --script probes (--probe)
 
 
 def scenes(path):
@@ -40,6 +42,8 @@ def run(rom, name, opt, out, states):
            "--script", str(ROOT / "tools" / "debug" / "warp.lua"), "--var", f"SCENE='{name}'",
            "--frames", opt.get("frames", "20000"), "--timeout", "600",
            "--state-out", str((states / f"{name}.mss").resolve())]
+    for p in PROBES:
+        cmd += ["--script", str(Path(p).resolve())]
     mash = opt.get("mash", "40")
     if mash != "0":
         cmd += ["--mash", mash]
@@ -57,7 +61,9 @@ def main():
     ap.add_argument("--jobs", type=int, default=4)
     ap.add_argument("--out", default=str(ROOT / "work" / "qa" / "warp"))
     ap.add_argument("--states", default=str(ROOT / "work" / "states"))
+    ap.add_argument("--probe", action="append", default=[], help="extra Lua probe run beside warp.lua (repeatable)")
     a = ap.parse_args()
+    PROBES[:] = a.probe
     out, states = Path(a.out), Path(a.states)
     states.mkdir(parents=True, exist_ok=True)
     todo = scenes(ROOT / "tools" / "debug" / "scenes.txt")

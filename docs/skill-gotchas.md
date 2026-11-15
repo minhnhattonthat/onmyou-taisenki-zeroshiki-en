@@ -10,3 +10,5 @@ One line per gotcha: the reference file it belongs in, then the fact.
 - emulator-qa.md §Debug tool: a `--var` key with an underscore (`until_op=`) silently failed a `(%w+)=` Lua pattern; use `[%w_]+`.
 - emu.py: `--mash` starts as soon as the route queue empties, including a route a `--script` queued with L.press, so mash runs reach a warp's scene earlier than unmashed ones (frame numbers differ between runs).
 - emu.py: `--sheet` writes only the first 15-16 frames when a run has more shots; run `sheet.py DIR --from --to` for the rest.
+- pipeline.md §Identity: a byte-identical repack doesn't prove the pointer lists; also build a relocate-everything variant (vacated rooms 0xFF) and warp every scene with a ROM-read probe flagging reads of vacated rooms. Here it caught an empty string pointed at inside another string's NUL padding and a script that code finds by scanning forward from its slot.
+- lua/probes/watch.lua: it logs once per PC, so a memcpy or copy loop hides every later address; for 'who still reads old text' log once per address instead (tools/debug/romreads.lua).
