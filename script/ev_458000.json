@@ -6,28 +6,28 @@
    "script": "458470",
    "op": "073 0001",
    "jp": "きゃあーー{0000}のぞきーーーーー{0010}まさかこんなとこに{0000}くるなんてね・・・{0010}せっかく来たんだから{0000}闘ってみる？{0010}",
-   "en": ""
+   "en": "Kyaaah!{0000}Peeping toooom!{0010}I never thought you'd come{0000}to a place like this...{0010}Since you came all this way,{0000}want to have a fight?{0010}"
   },
   {
    "id": "4585C2",
    "script": "458470",
    "op": "073 0001",
    "jp": "なーんだ、つまんないの・・・{0010}",
-   "en": ""
+   "en": "Aww, you're no fun...{0010}"
   },
   {
    "id": "458626",
    "script": "458470",
    "op": "073 0001",
    "jp": "そうこなくっちゃ{0000}ヤクモさまにはひみつよ{0010}いっくわよおおおお！{0010}",
-   "en": ""
+   "en": "That's the spirit!{0000}Keep it secret from Yakumo-sama.{0010}Here I gooooo!{0010}"
   },
   {
    "id": "4586FC",
    "script": "458470",
    "op": "073 0001",
    "jp": "ありがとうございましたあ！{0000}Р女の力、思い知ったか！{0010}って言いたいとこだけど{0000}内心ヒヤヒヤだったの{0010}また闘おうね{0010}",
-   "en": "",
+   "en": "Thank you very much!{0000}Behold a shrine maiden's power!{0010}...is what I'd like to say,{0000}but I was nervous inside.{0010}Let's fight again sometime!{0010}",
    "notes": "gaiji Р=巫"
   },
   {
@@ -35,14 +35,14 @@
    "script": "458470",
    "op": "073 0001",
    "jp": "さすがだわ・・・{0000}{00C8}サン{0010}",
-   "en": ""
+   "en": "You're really something...{0000}{00C8}-san.{0010}"
   },
   {
    "id": "4588AC",
    "script": "458470",
    "op": "073 0001",
    "jp": "またР女の力を{0000}見てみたいのね{0010}今度は本気でいくわよ！{0010}いっくわよおおおお！{0010}",
-   "en": "",
+   "en": "So you want to see a shrine{0000}maiden's power again?{0010}This time I'm going all out!{0010}Here I gooooo!{0010}",
    "notes": "gaiji Р=巫"
   },
   {
@@ -50,175 +50,175 @@
    "script": "4589E4",
    "op": "073 0001",
    "jp": "よくぞ来た！{0010}キミの力を確かめるように、と{0000}ヤクモさまに言われている{0010}地下にいる我々を全てたおせば{0000}ヤクモさまは現れよう{0010}では、参る！{0010}",
-   "en": ""
+   "en": "So you have come!{0010}Yakumo-sama has told us{0000}to test your strength.{0010}Defeat all of us down here,{0000}and Yakumo-sama shall appear.{0010}Now, have at you!{0010}"
   },
   {
    "id": "458BA8",
    "script": "4589E4",
    "op": "073 0001",
    "jp": "ざんねんだったな！{0010}力をたくわえ{0000}再び来るがよい{0010}地下にいる我々を全てたおせば{0000}ヤクモさまは現れよう{0010}",
-   "en": ""
+   "en": "Too bad!{0010}Build up your strength{0000}and come again.{0010}Defeat all of us down here,{0000}and Yakumo-sama shall appear.{0010}"
   },
   {
    "id": "458C90",
    "script": "4589E4",
    "op": "073 0001",
    "jp": "よくぞたおした{0010}ヤクモさまの式神タカマル{0000}を解放しよう{0010}話してみるがいい{0010}",
-   "en": ""
+   "en": "Well fought.{0010}I shall release Yakumo-sama's{0000}shikigami, Takamaru.{0010}Go and speak with him.{0010}"
   },
   {
    "id": "458D7E",
    "script": "4589E4",
    "op": "073 0001",
    "jp": "よくぞ来た！{0000}我々はヤクモさまの影{0010}地下にいる我々を全てたおせば{0000}ヤクモさまは現れよう{0010}では、参る！{0010}",
-   "en": ""
+   "en": "So you have come!{0000}We are Yakumo-sama's shadows.{0010}Defeat all of us down here,{0000}and Yakumo-sama shall appear.{0010}Now, have at you!{0010}"
   },
   {
    "id": "458F70",
    "script": "458ED0",
    "op": "073 0001",
    "jp": "よくぞ来た！{0010}キミの力を確かめるように、と{0000}ヤクモさまに言われている{0010}地下にいる我々を全てたおせば{0000}ヤクモさまは現れよう{0010}では、参る！{0010}",
-   "en": ""
+   "en": "So you have come!{0010}Yakumo-sama has told us{0000}to test your strength.{0010}Defeat all of us down here,{0000}and Yakumo-sama shall appear.{0010}Now, have at you!{0010}"
   },
   {
    "id": "459094",
    "script": "458ED0",
    "op": "073 0001",
    "jp": "ざんねんだったな！{0010}力をたくわえ{0000}再び来るがよい{0010}地下にいる我々を全てたおせば{0000}ヤクモさまは現れよう{0010}",
-   "en": ""
+   "en": "Too bad!{0010}Build up your strength{0000}and come again.{0010}Defeat all of us down here,{0000}and Yakumo-sama shall appear.{0010}"
   },
   {
    "id": "45917C",
    "script": "458ED0",
    "op": "073 0001",
    "jp": "よくぞたおした{0010}ヤクモさまの式神サネマロ{0000}を解放しよう{0010}話してみるがいい{0010}",
-   "en": ""
+   "en": "Well fought.{0010}I shall release Yakumo-sama's{0000}shikigami, Sanemaro.{0010}Go and speak with him.{0010}"
   },
   {
    "id": "45926A",
    "script": "458ED0",
    "op": "073 0001",
    "jp": "よくぞ来た！{0000}我々はヤクモさまの影{0010}地下にいる我々を全てたおせば{0000}ヤクモさまは現れよう{0010}では、参る！{0010}",
-   "en": ""
+   "en": "So you have come!{0000}We are Yakumo-sama's shadows.{0010}Defeat all of us down here,{0000}and Yakumo-sama shall appear.{0010}Now, have at you!{0010}"
   },
   {
    "id": "45945C",
    "script": "4593BC",
    "op": "073 0001",
    "jp": "よくぞ来た！{0010}キミの力を確かめるように、と{0000}ヤクモさまに言われている{0010}地下にいる我々を全てたおせば{0000}ヤクモさまは現れよう{0010}では、参る！{0010}",
-   "en": ""
+   "en": "So you have come!{0010}Yakumo-sama has told us{0000}to test your strength.{0010}Defeat all of us down here,{0000}and Yakumo-sama shall appear.{0010}Now, have at you!{0010}"
   },
   {
    "id": "459580",
    "script": "4593BC",
    "op": "073 0001",
    "jp": "ざんねんだったな！{0010}力をたくわえ{0000}再び来るがよい{0010}地下にいる我々を全てたおせば{0000}ヤクモさまは現れよう{0010}",
-   "en": ""
+   "en": "Too bad!{0010}Build up your strength{0000}and come again.{0010}Defeat all of us down here,{0000}and Yakumo-sama shall appear.{0010}"
   },
   {
    "id": "459668",
    "script": "4593BC",
    "op": "073 0001",
    "jp": "よくぞたおした{0010}ヤクモさまの式神リクドウ{0000}を解放しよう{0010}話してみるがいい{0010}",
-   "en": ""
+   "en": "Well fought.{0010}I shall release Yakumo-sama's{0000}shikigami, Rikudo.{0010}Go and speak with him.{0010}"
   },
   {
    "id": "459756",
    "script": "4593BC",
    "op": "073 0001",
    "jp": "よくぞ来た！{0000}我々はヤクモさまの影{0010}地下にいる我々を全てたおせば{0000}ヤクモさまは現れよう{0010}では、参る！{0010}",
-   "en": ""
+   "en": "So you have come!{0000}We are Yakumo-sama's shadows.{0010}Defeat all of us down here,{0000}and Yakumo-sama shall appear.{0010}Now, have at you!{0010}"
   },
   {
    "id": "459948",
    "script": "4598A8",
    "op": "073 0001",
    "jp": "よくぞ来た！{0010}キミの力を確かめるように、と{0000}ヤクモさまに言われている{0010}地下にいる我々を全てたおせば{0000}ヤクモさまは現れよう{0010}では、参る！{0010}",
-   "en": ""
+   "en": "So you have come!{0010}Yakumo-sama has told us{0000}to test your strength.{0010}Defeat all of us down here,{0000}and Yakumo-sama shall appear.{0010}Now, have at you!{0010}"
   },
   {
    "id": "459A6C",
    "script": "4598A8",
    "op": "073 0001",
    "jp": "ざんねんだったな！{0010}力をたくわえ{0000}再び来るがよい{0010}地下にいる我々を全てたおせば{0000}ヤクモさまは現れよう{0010}",
-   "en": ""
+   "en": "Too bad!{0010}Build up your strength{0000}and come again.{0010}Defeat all of us down here,{0000}and Yakumo-sama shall appear.{0010}"
   },
   {
    "id": "459B54",
    "script": "4598A8",
    "op": "073 0001",
    "jp": "よくぞたおした{0010}ヤクモさまの式神タンカムイ{0000}を解放しよう{0010}話してみるがいい{0010}",
-   "en": ""
+   "en": "Well fought.{0010}I shall release Yakumo-sama's{0000}shikigami, Tankamui.{0010}Go and speak with him.{0010}"
   },
   {
    "id": "459C44",
    "script": "4598A8",
    "op": "073 0001",
    "jp": "よくぞ来た！{0000}我々はヤクモさまの影{0010}地下にいる我々を全てたおせば{0000}ヤクモさまは現れよう{0010}では、参る！{0010}",
-   "en": ""
+   "en": "So you have come!{0000}We are Yakumo-sama's shadows.{0010}Defeat all of us down here,{0000}and Yakumo-sama shall appear.{0010}Now, have at you!{0010}"
   },
   {
    "id": "459E38",
    "script": "459D98",
    "op": "073 0001",
    "jp": "よくぞ来た！{0010}キミの力を確かめるように、と{0000}ヤクモさまに言われている{0010}地下にいる我々を全てたおせば{0000}ヤクモさまは現れよう{0010}では、参る！{0010}",
-   "en": ""
+   "en": "So you have come!{0010}Yakumo-sama has told us{0000}to test your strength.{0010}Defeat all of us down here,{0000}and Yakumo-sama shall appear.{0010}Now, have at you!{0010}"
   },
   {
    "id": "459F5C",
    "script": "459D98",
    "op": "073 0001",
    "jp": "ざんねんだったな！{0010}力をたくわえ{0000}再び来るがよい{0010}地下にいる我々を全てたおせば{0000}ヤクモさまは現れよう{0010}",
-   "en": ""
+   "en": "Too bad!{0010}Build up your strength{0000}and come again.{0010}Defeat all of us down here,{0000}and Yakumo-sama shall appear.{0010}"
   },
   {
    "id": "45A044",
    "script": "459D98",
    "op": "073 0001",
    "jp": "よくぞたおした{0010}ヤクモさまの式神ブリュネ{0000}を解放しよう{0010}話してみるがいい{0010}",
-   "en": ""
+   "en": "Well fought.{0010}I shall release Yakumo-sama's{0000}shikigami, Brune.{0010}Go and speak with him.{0010}"
   },
   {
    "id": "45A132",
    "script": "459D98",
    "op": "073 0001",
    "jp": "よくぞ来た！{0000}我々はヤクモさまの影{0010}地下にいる我々を全てたおせば{0000}ヤクモさまは現れよう{0010}では、参る！{0010}",
-   "en": ""
+   "en": "So you have come!{0000}We are Yakumo-sama's shadows.{0010}Defeat all of us down here,{0000}and Yakumo-sama shall appear.{0010}Now, have at you!{0010}"
   },
   {
    "id": "45A2B4",
    "script": "45A284",
    "op": "073 0001",
    "jp": "この先に{0000}「伏魔殿」があるんだな{0010}いこう、コゲンタ{0010}",
-   "en": ""
+   "en": "So \"Fukumaden\" is{0000}just ahead.{0010}Let's go, Kogenta.{0010}"
   },
   {
    "id": "45A2FE",
    "script": "45A284",
    "op": "098 00150000",
    "jp": "いよっしゃあ！{0010}",
-   "en": ""
+   "en": "Hell yeah!{0010}"
   },
   {
    "id": "45A350",
    "script": "45A31C",
    "op": "073 0001",
    "jp": "ここが、「伏魔殿」への扉よ{0010}「伏魔殿」に行く？{0010}",
-   "en": ""
+   "en": "This is the door to \"Fukumaden\".{0010}Will you go to \"Fukumaden\"?{0010}"
   },
   {
    "id": "45A3C0",
    "script": "45A31C",
    "op": "073 0001",
    "jp": "なーんだ、つまんないの・・・{0010}",
-   "en": ""
+   "en": "Aww, you're no fun...{0010}"
   },
   {
    "id": "45A430",
    "script": "45A31C",
    "op": "073 0001",
    "jp": "Р女ナヅナの名により{0000}{00C8}を「伏魔殿」へ送り{0010}たまうものなり！{0010}道よ開け！{0010}",
-   "en": "",
+   "en": "In the name of the shrine maiden{0000}Nazuna, I hereby send {00C8}{0010}unto \"Fukumaden\"!{0010}O path, open!{0010}",
    "notes": "gaiji Р=巫"
   },
   {
@@ -226,490 +226,490 @@
    "script": "45A31C",
    "op": "042",
    "jp": "聖獣の祭壇へいきますか？{0010}",
-   "en": ""
+   "en": "Go to the Sacred Beast altar?{0010}"
   },
   {
    "id": "45A6A4",
    "script": "45A688",
    "op": "073 0001",
    "jp": "おい。村人に話を聞かなくて{0000}いいのか？{0010}",
-   "en": ""
+   "en": "Hey. Don't you need to talk{0000}to the villagers?{0010}"
   },
   {
    "id": "45A854",
    "script": "45A7DC",
    "op": "073 0001",
    "jp": "お、オマエは人間！？{0010}",
-   "en": ""
+   "en": "Y-you're a human!?{0010}"
   },
   {
    "id": "45A884",
    "script": "45A7DC",
    "op": "036 00000001",
    "jp": "う、うん{0010}",
-   "en": ""
+   "en": "Y-yeah.{0010}"
   },
   {
    "id": "45A8A0",
    "script": "45A7DC",
    "op": "079 01730000",
    "jp": "なんてこった・・・{0000}夢でも見てるのか{0010}",
-   "en": ""
+   "en": "What the heck...{0000}Am I dreamin'?{0010}"
   },
   {
    "id": "45A8DA",
    "script": "45A7DC",
    "op": "098 00150000",
    "jp": "いや、夢じゃねえよ{0010}",
-   "en": ""
+   "en": "Nah, ya ain't dreamin'.{0010}"
   },
   {
    "id": "45A900",
    "script": "45A7DC",
    "op": "079 01730000",
    "jp": "オマエは、白虎族か？{0010}",
-   "en": ""
+   "en": "Are you Byakko clan?{0010}"
   },
   {
    "id": "45A928",
    "script": "45A7DC",
    "op": "098 00150000",
    "jp": "ああ、そうだぜ！{0010}しっかし、オレの住むところと{0000}にてるなあ{0010}",
-   "en": ""
+   "en": "Yeah, that's right!{0010}But man, this place looks a lot{0000}like where I live.{0010}"
   },
   {
    "id": "45A97A",
    "script": "45A7DC",
    "op": "079 01730000",
    "jp": "ここは「伏魔殿」の中{0000}でも特殊な場所なんだ{0010}式神の一部が一時的に住む{0000}ところだ{0010}",
-   "en": ""
+   "en": "This is a special place, even{0000}inside \"Fukumaden\".{0010}It's where some shikigami{0000}live for a while.{0010}"
   },
   {
    "id": "45A9E2",
    "script": "45A7DC",
    "op": "098 00150000",
    "jp": "そうなのか。式神のオレでも{0000}しらなかった{0010}",
-   "en": ""
+   "en": "That so? Even I didn't know{0000}that, and I'm a shikigami.{0010}"
   },
   {
    "id": "45AA28",
    "script": "45A7DC",
    "op": "036 00000001",
    "jp": "ところで、最近ここに{0000}人間が来なかった？{0010}",
-   "en": ""
+   "en": "By the way, has a human{0000}come here lately?{0010}"
   },
   {
    "id": "45AA66",
    "script": "45A7DC",
    "op": "079 01730000",
    "jp": "いや、わからないな{0000}どうしてだい？{0010}",
-   "en": ""
+   "en": "No, can't say I know.{0000}Why do you ask?{0010}"
   },
   {
    "id": "45AA9E",
    "script": "45A7DC",
    "op": "098 00150000",
    "jp": "マホロバっていう人間が{0000}「伏魔殿」に来たって{0010}聞いたもんだからよ{0010}",
-   "en": ""
+   "en": "'Cause we heard some human{0000}called Mahoroba came{0010}into \"Fukumaden\".{0010}"
   },
   {
    "id": "45AAF6",
    "script": "45A7DC",
    "op": "079 01730000",
    "jp": "いや、この村には来ていないな{0010}だけど、最近村のヤツラが{0000}おかしいんだ{0010}妙に凶暴になってな・・・{0000}マホロバとかいう人間のせい{0010}かもしれん{0010}ゲンタロウさんが、おかしく{0000}なっちまってよ{0010}突然オーブを守らなきゃならん{0000}と言って、ふらふらと{0010}「白虎のほこら」に入ったきり{0000}出てこねえんだ{0010}「白虎のほこら」のオーブは{0000}この村に結界を張っている{0010}霊玉だからな{0000}心配なのはわかるが・・・{0010}ちょっと見てきてくれるか？{0010}",
-   "en": ""
+   "en": "No, he hasn't come to this village.{0010}But lately the folks in the village{0000}have been actin' strange.{0010}They've gone weirdly savage...{0000}Maybe it's on account of{0010}this Mahoroba human.{0010}Gentaro-san's gone{0000}strange, too.{0010}Out of nowhere he said he had to{0000}guard the orb, and he wandered{0010}into the \"Byakko Sanctum\"{0000}and never came out.{0010}The orb in the \"Byakko Sanctum\"{0000}is a spirit orb that puts{0010}a barrier around this village.{0000}So I get why he's worried, but...{0010}Could you go take a look?{0010}"
   },
   {
    "id": "45ACB8",
    "script": "45A7DC",
    "op": "098 00150000",
    "jp": "何？ゲンタロウ！？{0000}よし、行ってみるぜ{0010}",
-   "en": ""
+   "en": "What? Gentaro!?{0000}All right, I'll go check.{0010}"
   },
   {
    "id": "45ACF4",
    "script": "45A7DC",
    "op": "079 01730000",
    "jp": "「白虎のほこら」は{0000}村の門の外だ{0010}たのんだぞ{0000}人間とコゲンタよ{0010}",
-   "en": ""
+   "en": "The \"Byakko Sanctum\" is{0000}outside the village gate.{0010}We're countin' on you,{0000}human, and you, Kogenta.{0010}"
   },
   {
    "id": "45AD94",
    "script": "45A7DC",
    "op": "073 0001",
    "jp": "「白虎のほこら」は{0000}村の門の外だ{0010}たのんだぞ{0000}人間とコゲンタよ{0010}",
-   "en": ""
+   "en": "The \"Byakko Sanctum\" is{0000}outside the village gate.{0010}We're countin' on you,{0000}human, and you, Kogenta.{0010}"
   },
   {
    "id": "45AE24",
    "script": "45A7DC",
    "op": "073 0001",
    "jp": "人間だ、人間が{0000}村にきているぞ{0010}",
-   "en": ""
+   "en": "A human, there's a human{0000}in the village!{0010}"
   },
   {
    "id": "45AE90",
    "script": "45A7DC",
    "op": "073 0001",
    "jp": "この村もすこしは{0000}おだやかになった{0010}",
-   "en": ""
+   "en": "This village has calmed{0000}down a little.{0010}"
   },
   {
    "id": "45AFA0",
    "script": "45AED4",
    "op": "073 0001",
    "jp": "ゲンタロウ！やっぱりオレの{0000}知っているゲンタロウだ！{0010}大丈夫か？{0010}",
-   "en": ""
+   "en": "Gentaro! It really is the{0000}Gentaro I know!{0010}You all right?{0010}"
   },
   {
    "id": "45AFF8",
    "script": "45AED4",
    "op": "098 00630000",
    "jp": "ガルルルルル{0010}",
-   "en": ""
+   "en": "Grrrrrrr...{0010}"
   },
   {
    "id": "45B018",
    "script": "45AED4",
    "op": "098 00150000",
    "jp": "おい！ゲンタロウ！{0000}オレだ！コゲンタだ{0010}",
-   "en": ""
+   "en": "Hey! Gentaro!{0000}It's me! Kogenta!{0010}"
   },
   {
    "id": "45B054",
    "script": "45AED4",
    "op": "098 00630000",
    "jp": "ガルルルルル{0010}",
-   "en": ""
+   "en": "Grrrrrrr...{0010}"
   },
   {
    "id": "45B074",
    "script": "45AED4",
    "op": "098 00150000",
    "jp": "だめだ・・・{0010}",
-   "en": ""
+   "en": "It's no good...{0010}"
   },
   {
    "id": "45B0B4",
    "script": "45AED4",
    "op": "036 00000001",
    "jp": "あのオーブが変な気を{0000}発しているようだ{0010}正気にもどせるかもしれない{0000}闘ってみよう{0010}",
-   "en": ""
+   "en": "That orb seems to be giving{0000}off a strange aura.{0010}We might be able to bring him back{0000}to his senses. Let's fight him.{0010}"
   },
   {
    "id": "45B136",
    "script": "45AED4",
    "op": "098 00150000",
    "jp": "おう{0000}いくぜ！{0010}",
-   "en": ""
+   "en": "Right!{0000}Here we go!{0010}"
   },
   {
    "id": "45B1E6",
    "script": "45AED4",
    "op": "073 0001",
    "jp": "だめだ・・・{0000}つよすぎる{0010}",
-   "en": ""
+   "en": "It's no good...{0000}He's too strong.{0010}"
   },
   {
    "id": "45B214",
    "script": "45AED4",
    "op": "098 00150000",
    "jp": "ちきしょおお{0000}オレには救えないのか！？{0010}ゲンタロウ！{0010}",
-   "en": ""
+   "en": "Dammit!{0000}Can't I save him!?{0010}Gentaro!{0010}"
   },
   {
    "id": "45B260",
    "script": "45AED4",
    "op": "098 00630000",
    "jp": "ガルルルルル{0010}",
-   "en": ""
+   "en": "Grrrrrrr...{0010}"
   },
   {
    "id": "45B2F0",
    "script": "45AED4",
    "op": "073 0001",
    "jp": "うううう・・・{0010}",
-   "en": ""
+   "en": "Uuuugh...{0010}"
   },
   {
    "id": "45B312",
    "script": "45AED4",
    "op": "098 00150000",
    "jp": "ゲンタロウ！大丈夫か？{0010}",
-   "en": ""
+   "en": "Gentaro! You all right?{0010}"
   },
   {
    "id": "45B38C",
    "script": "45AED4",
    "op": "098 00630000",
    "jp": "・・・{0010}おお！おとうと弟子のコゲンタ{0000}じゃないか！久しぶりだな{0010}",
-   "en": ""
+   "en": "...{0010}Oh! If it isn't my little{0000}brother in training, Kogenta!{0010}"
   },
   {
    "id": "45B3E2",
    "script": "45AED4",
    "op": "098 00150000",
    "jp": "大丈夫か？{0010}",
-   "en": ""
+   "en": "You all right?{0010}"
   },
   {
    "id": "45B400",
    "script": "45AED4",
    "op": "098 00630000",
    "jp": "何がだ？{0010}",
-   "en": ""
+   "en": "All right about what?{0010}"
   },
   {
    "id": "45B41C",
    "script": "45AED4",
    "op": "098 00150000",
    "jp": "いや、村でゲンタロウを{0000}見てこいと言われたんだ{0010}",
-   "en": ""
+   "en": "Well, the village told me to{0000}come check on Gentaro.{0010}"
   },
   {
    "id": "45B460",
    "script": "45AED4",
    "op": "098 00630000",
    "jp": "ガハハ{0000}そうか、そうか{0010}その人間は？{0010}",
-   "en": ""
+   "en": "Gahaha!{0000}I see, I see.{0010}And this human?{0010}"
   },
   {
    "id": "45B49C",
    "script": "45AED4",
    "op": "098 00150000",
    "jp": "ああ、{00C8}だ。{0000}今、けいやくをしているんだ{0010}",
-   "en": ""
+   "en": "Oh, that's {00C8}.{0000}We've got a contract right now.{0010}"
   },
   {
    "id": "45B4DC",
    "script": "45AED4",
    "op": "098 00630000",
    "jp": "そうか・・・{00C8}殿に{0000}救われたのだな・・・{0010}かたじけない{0010}マホロバという者が{0000}「伏魔殿」に入ってから{0010}まがまがしい「邪気」が満ち{0000}シェルターの役割をしている{0010}この玉は、その気を吸収し{0010}こんなことになったのだろう{0010}恐るべきはマホロバよ{0010}恐らく他の種族の村にも{0000}影響を与えているであろうよ{0010}",
-   "en": ""
+   "en": "I see... So it was{0000}{00C8}-dono who saved me...{0010}I am in your debt.{0010}Ever since one called Mahoroba{0000}entered \"Fukumaden\",{0010}a sinister \"evil aura\" fills it.{0000}This orb serves as a shelter;{0010}it absorbed that aura,{0010}and that must be what did this.{0010}A fearsome one, this Mahoroba.{0010}He has likely affected the{0000}villages of the other clans too.{0010}"
   },
   {
    "id": "45B62A",
    "script": "45AED4",
    "op": "036 00000001",
    "jp": "やっぱり・・・マホロバは{0000}この近くに来ているんだ{0010}",
-   "en": ""
+   "en": "I knew it... Mahoroba{0000}has come near here.{0010}"
   },
   {
    "id": "45B688",
    "script": "45AED4",
    "op": "098 00630000",
    "jp": "このオーブは村を守る{0000}というだけでなく{0010}他の村への道を開く鍵となる{0000}少し待っておれ{0010}",
-   "en": ""
+   "en": "This orb does not only{0000}protect the village;{0010}it is also the key that opens{0000}the way to other villages. Wait a bit.{0010}"
   },
   {
    "id": "45B7A8",
    "script": "45AED4",
    "op": "073 0001",
    "jp": "これで、オーブに触れれば{0000}隣の村にいくことができる{0010}{00C8}殿よ{0000}どうか他の村を見てきてほしい{0010}白虎村と同じように困っている{0000}種族の村があるであろうからな{0010}式神は、腕力などはつよいが{0000}まがまがしい気には弱いのでな{0010}",
-   "en": ""
+   "en": "Now, if you touch the orb,{0000}you can go to the next village.{0010}{00C8}-dono,{0000}please go look at the other villages.{0010}Surely there are clan villages in{0000}trouble just like Byakko Village.{0010}Shikigami are mighty in body, but{0000}weak against sinister auras.{0010}"
   },
   {
    "id": "45B8A2",
    "script": "45AED4",
    "op": "036 00000001",
    "jp": "うん、行ってみます{0010}マホロバを、たおすヒントが{0000}あるかもしれないし{0010}",
-   "en": ""
+   "en": "Okay, I'll go.{0010}There might be a clue there{0000}for beating Mahoroba.{0010}"
   },
   {
    "id": "45B8FC",
    "script": "45AED4",
    "op": "098 00630000",
    "jp": "たのんだぞ。{00C8}殿よ{0010}",
-   "en": ""
+   "en": "I am counting on you, {00C8}-dono.{0010}"
   },
   {
    "id": "45B9A0",
    "script": "45AED4",
    "op": "073 0001",
    "jp": "ガルルルルル{0010}",
-   "en": ""
+   "en": "Grrrrrrr...{0010}"
   },
   {
    "id": "45B9C0",
    "script": "45AED4",
    "op": "098 00150000",
    "jp": "やっぱつぇえぜ！{0010}",
-   "en": ""
+   "en": "He's still crazy strong!{0010}"
   },
   {
    "id": "45B9EC",
    "script": "45AED4",
    "op": "036 00000001",
    "jp": "正気にもどせるかもしれない{0000}闘ってみよう{0010}",
-   "en": ""
+   "en": "We might be able to bring him back{0000}to his senses. Let's fight him.{0010}"
   },
   {
    "id": "45BA2A",
    "script": "45AED4",
    "op": "098 00150000",
    "jp": "おう{0000}いくぜ！{0010}",
-   "en": ""
+   "en": "Right!{0000}Here we go!{0010}"
   },
   {
    "id": "45BB30",
    "script": "45BB08",
    "op": "073 0001",
    "jp": "このオーブは{0000}力をうしなっているようだ{0010}",
-   "en": ""
+   "en": "This orb seems to have{0000}lost its power.{0010}"
   },
   {
    "id": "45BBD0",
    "script": "45BB70",
    "op": "073 0001",
    "jp": "あわわわ{0010}",
-   "en": ""
+   "en": "Awawawa...{0010}"
   },
   {
    "id": "45BBEC",
    "script": "45BB70",
    "op": "098 00150000",
    "jp": "どうしたんだ？{0010}",
-   "en": ""
+   "en": "What's wrong?{0010}"
   },
   {
    "id": "45BC0E",
    "script": "45BB70",
    "op": "079 01730000",
    "jp": "あ！白虎族の者{0000}助けてくれ{0010}みんな、おかしく{0000}なっちまったあ{0010}長老のラクサイじいさんが{0000}どうにかするって言って{0010}「玄武のほこら」に向かった{0000}だけど、戻ってこねえだあ～{0010}おらあ、どうしたらいいだあ～{0010}",
-   "en": ""
+   "en": "Ah! A Byakko clan fella!{0000}Help us!{0010}Everybody's gone{0000}all funny!{0010}Old Rakusai, our elder,{0000}said he'd do somethin' 'bout it{0010}an' headed for the \"Genbu Sanctum\",{0000}but he ain't come baaack!{0010}Whatever am I gonna dooo!{0010}"
   },
   {
    "id": "45BCF6",
    "script": "45BB70",
    "op": "098 00150000",
    "jp": "安心しろ{0000}オレたちが、ほこらに行って{0010}みてきてやる{0010}",
-   "en": ""
+   "en": "Relax.{0000}We'll go to the sanctum{0010}and have a look for ya.{0010}"
   },
   {
    "id": "45BD48",
    "script": "45BB70",
    "op": "036 00000001",
    "jp": "うん、すぐに行こう{0010}",
-   "en": ""
+   "en": "Yeah, let's go right away.{0010}"
   },
   {
    "id": "45BDB6",
    "script": "45BB70",
    "op": "073 0001",
    "jp": "ほう、人間がこんな村に{0000}あらわれるとは・・・{0010}",
-   "en": ""
+   "en": "Oho, to think a human would{0000}show up in a village like this...{0010}"
   },
   {
    "id": "45BE30",
    "script": "45BB70",
    "op": "073 0001",
    "jp": "この村もだいぶ{0000}おだやかになったのう{0010}",
-   "en": ""
+   "en": "This village has calmed{0000}down a good deal, eh.{0010}"
   },
   {
    "id": "45BF40",
    "script": "45BE74",
    "op": "073 0001",
    "jp": "グアアアアアア{0010}",
-   "en": ""
+   "en": "Gwaaaaaaah!{0010}"
   },
   {
    "id": "45BF62",
    "script": "45BE74",
    "op": "098 00150000",
    "jp": "だめだ・・・{0000}玄武の長老までもが{0010}マホロバの「邪気」に{0000}やられちまってるぜ{0010}あんまり玄武の長老と闘う{0000}こともねぇし、いい機会だ{0010}いっちょう、かたづけてやるか{0010}いくぜ、{00C8}{0010}",
-   "en": ""
+   "en": "No good...{0000}Even the Genbu elder{0010}got taken over by{0000}Mahoroba's \"evil aura\".{0010}Don't often get to fight{0000}the Genbu elder. Good chance.{0010}Let's sort him out!{0010}Let's go, {00C8}!{0010}"
   },
   {
    "id": "45C0B2",
    "script": "45BE74",
    "op": "073 0001",
    "jp": "グアアアアアア{0010}",
-   "en": ""
+   "en": "Gwaaaaaaah!{0010}"
   },
   {
    "id": "45C0DC",
    "script": "45BE74",
    "op": "036 00000001",
    "jp": "だめだ・・・{0000}つよすぎる{0010}",
-   "en": ""
+   "en": "It's no good...{0000}He's too strong.{0010}"
   },
   {
    "id": "45C10A",
    "script": "45BE74",
    "op": "098 00150000",
    "jp": "弱音を吐くんじゃねえ{0000}いくぜ、{00C8}{0010}",
-   "en": ""
+   "en": "Quit your whinin'!{0000}Let's go, {00C8}!{0010}"
   },
   {
    "id": "45C1B2",
    "script": "45BE74",
    "op": "073 0001",
    "jp": "・・・うううう{0010}",
-   "en": ""
+   "en": "...Uuuugh...{0010}"
   },
   {
    "id": "45C1DC",
    "script": "45BE74",
    "op": "036 00000001",
    "jp": "大丈夫？{0010}",
-   "en": ""
+   "en": "Are you okay?{0010}"
   },
   {
    "id": "45C248",
    "script": "45BE74",
    "op": "098 00690000",
    "jp": "ああ{0000}ワシとしたことが・・・{0010}「邪気」にやられるとはのぅ{0010}一時的に邪気が消えたとはいえ{0000}このままでは再び「邪気」が{0010}「伏魔殿」を包むじゃろう{0000}そうなれば、式神は操られ{0010}いつ「人間界」を襲うか{0000}わからん{0010}",
-   "en": ""
+   "en": "Ahh...{0000}How unlike me, eh...{0010}To fall to the \"evil aura\".{0010}The evil aura is gone for now, but{0000}left as is, the \"evil aura\" will{0010}envelop \"Fukumaden\" again, my boy.{0000}Then the shikigami will be controlled,{0010}and who knows when they'll{0000}attack the \"human world\".{0010}"
   },
   {
    "id": "45C33C",
    "script": "45BE74",
    "op": "036 00000001",
    "jp": "マホロバを倒せばいいんだね{0010}",
-   "en": ""
+   "en": "So we just have to beat Mahoroba.{0010}"
   },
   {
    "id": "45C36A",
    "script": "45BE74",
    "op": "098 00690000",
    "jp": "うむ。たしかにそうじゃが{0000}これだけの「邪気」を放つ者{0010}かんたんには、いかんぞ{0000}マホロバという者はおそらく{0010}聖なる式神、キリン族の力を{0000}求めているはずじゃ{0010}キリン族は「式神界」の中心{0000}「聖獣の祭壇」にいる{0010}キリン族は、今の式神界を{0000}統治する者なのじゃ{0010}この道を進み、「青龍の村」{0000}「朱雀の村」の先にある{0010}心して、進むことじゃ{0010}",
-   "en": ""
+   "en": "Hmm. That's so, but{0000}one who gives off this much{0010}\"evil aura\" won't be easy, my boy.{0000}This Mahoroba is most likely{0010}after the power of the holy{0000}shikigami, the Kirin clan.{0010}At the heart of the shikigami realm,{0000}the \"Sacred Beast Altar\", they dwell.{0010}The Kirin clan are the ones who{0000}rule the shikigami realm now.{0010}Follow this road past the \"Seiryu{0000}Village\" and \"Suzaku Village\",{0010}and go with your guard up, eh.{0010}"
   },
   {
    "id": "45C5AC",
    "script": "45BE74",
    "op": "073 0001",
    "jp": "これで、オーブに触れれば{0000}隣の村にいくことができる{0010}",
-   "en": ""
+   "en": "Now, if you touch the orb,{0000}you can go to the next village.{0010}"
   },
   {
    "id": "45C5F4",
    "script": "45BE74",
    "op": "098 00150000",
    "jp": "いくぜ、{00C8}{0010}",
-   "en": ""
+   "en": "Let's go, {00C8}!{0010}"
   },
   {
    "id": "45C690",
    "script": "45BE74",
    "op": "073 0001",
    "jp": "グアアアアアア{0010}",
-   "en": ""
+   "en": "Gwaaaaaaah!{0010}"
   },
   {
    "id": "45C6BA",
    "script": "45BE74",
    "op": "036 00000001",
    "jp": "よし！{0000}今度こそ勝つぞ！{0010}",
-   "en": ""
+   "en": "All right!{0000}This time we'll win!{0010}"
   },
   {
    "id": "45C6E8",
    "script": "45BE74",
    "op": "098 00150000",
    "jp": "おう{0000}いくぜ！{0010}",
-   "en": ""
+   "en": "Right!{0000}Here we go!{0010}"
   }
  ]
 }

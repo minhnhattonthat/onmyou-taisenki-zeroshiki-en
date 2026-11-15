@@ -44,6 +44,22 @@ Translators: read this before a batch so early lines don't contradict or give aw
    heart, past the bamboo grove in West Kyo Town). The Four Kings guard it; Mahoroba wakes anyway, absorbs, beats
    Yuma and the player; the player's mind lands 1000 years in the past (Imperial Court era) near the Kimon Mound.
 
+5. (ev_44C000-ev_45C000) 1000 years ago at the Kimon Mound: a dying Tenryu man revives the player's broken Drive
+   with his life force; the Chiryu of that era left the yokai alive to grab shikigami power. The player meets young
+   **Issei** (Tenryu Head; no children yet, engaged), holds the yokai back, is swept away through the Kimon Mound.
+   Wakes in Hiroko's forest hideout (she is a Tojinshi investigating Mahoroba; she and Masaomi saved him and Yuma).
+   Training cave under the Gosho (Shiran, resolve / ideals / life-and-death / love trainers). Masaomi: Tenryu guard
+   the Kimon, Chiryu wanted it open for something in Fukumaden; Mahoroba is the *former* Chiryu Grand Master and
+   wants to absorb gods and shikigami, return all to nothing and build his own nation; Masaomi lends his shikigami.
+   Hiroko sends him to Taihaku Shrine (legendary Tojinshi who wounded Mahoroba = **Yakumo**, Kogenta's former
+   partner; Hiroko hints "though now..."). Soma lends Fusanoshin; Yuma, torn, fights then lends Rangetsu.
+   Taihaku Shrine: Nazuna (shrine maiden); underground "shadows" release Yakumo's shikigami (Takamaru, Sanemaro,
+   Rikudo, Tankamui, Brune). Yakumo met the player as a baby; sends him through the Kimon Mound into Fukumaden.
+6. Fukumaden: clan villages (Byakko, Genbu, Seiryu, Suzaku) whose orbs (barrier spirit orbs, keys to the next
+   village) soaked up Mahoroba's evil aura; Gentaro (Kogenta's senior), elder Rakusai (Genbu), Kotaro (Seiryu) are
+   freed by battle. **Tsuiga** of the Kirin clan rules from the Sacred Beast Altar after driving off the old ruler
+   **Koryu**; Koryu (hermit, "Fefefe") lets Kogenta use the "Great-Des-cent" once. Guardians on the way to the altar.
+
 ## The world
 - Factions: Tenryu (the player's), Chiryu (rival, modern, relies on shikigami power alone; Chiryu Building),
   Jinryu. Seals (印) = the Tenryu's d-pad battle inputs; red line traced until it glows gold.

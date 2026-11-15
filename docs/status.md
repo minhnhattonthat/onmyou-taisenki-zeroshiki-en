@@ -2,10 +2,10 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 6. Translate in progress: batches b001-b015 of 41 translated (~1,380 of 4,843 entries; ev_41C000 ..
-  ev_448000 merged into `script/`; b015's ev_44C000 part (Mahoroba wakes, 1000 years ago) is in
-  `tl/b015.out.tsv`, held until b016). Last build 2026-11-16 (session 10): `build.py` sha1 6d3af706…, smoke ok,
-  check ok (29 tests, lint 0, batches check 0); ch1_mitsusa shows Misasa's English line (`work/qa/s10/scene.png`).
+- **Phase:** 6. Translate in progress: batches b001-b020 of 41 translated (ev_41C000 .. ev_45C000 merged into
+  `script/`; b020's ev_460000 part (guardians before the Sacred Beast Altar) is in `tl/b020.out.tsv`, held until
+  b021). Last build 2026-11-16 (session 11): `build.py` sha1 179c1c2e…, smoke ok, check ok (29 tests, lint 0,
+  batches check 0).
 - **Done:**
   - Step 0: ROM pinned (`rom.sha1`), MesenCE 2.2.1 + GBA BIOS in `tools/mesen/`, guard hook in `.claude/settings.json`
     (canary blocked), pre-commit runs `tools/check.py` (a failing test was rejected), boot route `tools/routes/boot.txt`
@@ -101,10 +101,15 @@ Updated at the end of every session. Keep it to what the next session needs; his
   - Phase 6 session 10 (2026-11-16): b010-b015 translated and merged (Ryuji, Grandpa's old letter, Misasa,
     Nakamura, Yuma/Soma, the dam-lake base, Chiryu Building, Taiin Shrine and the Four Kings, Mahoroba's awakening);
     glossary "b010-b015" row (Four Kings, -dono, voices), synopsis extended with the cast and plot to ev_44C000.
-- **Next (phase 6, translate; `references/translation.md`):** translate `tl/b016.tsv` onward in order (read each
+  - Phase 6 session 11 (2026-11-16): b016-b020 translated and merged (1000 years ago with young Issei, Hiroko's
+    hideout, Gosho training cave, Masaomi/Soma/Yuma lend shikigami, Taihaku Shrine + Yakumo, Fukumaden clan
+    villages, Koryu's Great-Des-cent, altar guardians); glossary "b016-b020" row, synopsis steps 5-6. Polish
+    candidates: Shiran's 知らん name pun (451DF8..451E56, "Dunno"/"Shiran" kept); the 0x15 portrait is Yakumo under
+    op `036 00150001` but Kogenta under `098 00150000` (036 and 098 use different portrait banks).
+- **Next (phase 6, translate; `references/translation.md`):** translate `tl/b021.tsv` onward in order (read each
   with Read in ~40-line chunks: context-mode cuts larger outputs), write `tl/bNNN.out.tsv`, `batches.py check bNNN`
   to OK, then merge together with the batch that holds the rest of a file (`batches.py merge b009 b010 ...`: a
-  merge of one batch alone holds files split across batches; next merge: `batches.py merge b015 b016 ...`), `tools/check.py`, build, smoke, commit. No translator
+  merge of one batch alone holds files split across batches; next merge: `batches.py merge b020 b021 ...`; the check flags a `{010}` typo as unencodable), `tools/check.py`, build, smoke, commit. No translator
   agent type is installed in this harness and the Orca brief forbids helpers: the worker translates itself,
   ~5 batches per session. Extend `docs/synopsis.md` as story batches are read. Line budget is generous (VWF: ~4 px
   a char, 224 px ≈ 50 chars), so don't over-shorten. After b041: reviewer pass (fresh read-only pass or

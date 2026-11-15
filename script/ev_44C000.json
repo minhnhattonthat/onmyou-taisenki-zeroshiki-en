@@ -6,315 +6,315 @@
    "script": "44C020",
    "op": "073 0001",
    "jp": "オメエ、すぐ倒されて{0000}ここまでこねぇと思ってたが{0010}すげェな！{0010}オレは四転王の一人{0000}シラヌイだっ！{0010}オレは他の四転王と違って{0000}強いやつと闘うことだけが{0010}生きがいだ{0010}めざめたマホロバと闘いてェと{0000}思って、ここに残っていたが{0010}思わぬ「前菜」が{0000}とびこんでくるとはな！{0010}",
-   "en": ""
+   "en": "Figured you'd get beat quick{0000}and never make it this far,{0010}but you're somethin'!{0010}I'm Shiranui, one of the{0000}Four Kings!{0010}Unlike the other Kings, the only{0000}thing I live for is fightin'{0010}strong guys.{0010}I stayed here wantin' to fight{0000}Mahoroba once he's awake,{0010}but who'd have thought an{0000}\"appetizer\" would drop in!{0010}"
   },
   {
    "id": "44C1EE",
    "script": "44C020",
    "op": "098 00150000",
    "jp": "「前菜」だと！？{0010}",
-   "en": ""
+   "en": "\"Appetizer\", ya say!?{0010}"
   },
   {
    "id": "44C21A",
    "script": "44C020",
    "op": "036 00440001",
    "jp": "オレは、つよいやつと闘いてェ{0000}ただ、それだけだ！{0010}オメエなどマホロバに比べれば{0000}大したことねぇ{0010}じっくりいたぶって{0000}たおしてやるぜ{0010}そしておいしい{0000}メインディッシュを{0010}いただくとしよう{0010}",
-   "en": ""
+   "en": "I just wanna fight strong guys.{0000}That's all there is to it!{0010}Next to Mahoroba, you're{0000}nothin' special.{0010}I'll take my time and{0000}rough you up good.{0010}And then I'll move on{0000}to the tasty main course.{0010}Time to dig in!{0010}"
   },
   {
    "id": "44C2F6",
    "script": "44C020",
    "op": "098 00150000",
    "jp": "「前菜」かどうか、よく見ろ！{0000}いくぜっ！{00C8}{0010}",
-   "en": ""
+   "en": "Take a good look and see if I'm{0000}an \"appetizer\"! Let's go! {00C8}!{0010}"
   },
   {
    "id": "44C3B8",
    "script": "44C020",
    "op": "073 0001",
    "jp": "あっけなかったな！{0000}フン！{0010}「前菜」にもならん！{0000}めざめたマホロバを{0010}味わうとするか！{0000}ガハハ{0010}",
-   "en": ""
+   "en": "That was over quick!{0000}Hmph!{0010}Not even an \"appetizer\"!{0000}Time to go taste{0010}an awakened Mahoroba!{0000}Gahaha!{0010}"
   },
   {
    "id": "44C49C",
    "script": "44C020",
    "op": "073 0001",
    "jp": "オレは！{0000}こんなところで{0010}たおれる男じゃ・・・な・・・{0010}",
-   "en": ""
+   "en": "I'm...!{0000}not the kind of man{0010}to fall in a place like... this...{0010}"
   },
   {
    "id": "44C576",
    "script": "44C020",
    "op": "073 0001",
    "jp": "オメエ！{0000}まだ向かってくるのか！{0010}ガハハハ{0000}まだ味わえそうだな！{0010}いくぞ！{0010}",
-   "en": ""
+   "en": "You!{0000}Still comin' at me!?{0010}Gahahaha!{0000}Looks like there's more to taste!{0010}Here I come!{0010}"
   },
   {
    "id": "44C760",
    "script": "44C6B0",
    "op": "073 0001",
    "jp": "フハハハハ{0010}良いぞ！闘神士再生の邪法は{0000}良い！力が、みなぎるわ！{0010}しかし、更なる力が必要だ{0010}この世を無から{0000}作りなおすためにな・・・{0010}",
-   "en": ""
+   "en": "Fuhahahaha!{0010}Excellent! The dark art of Tojinshi{0000}revival is excellent! Power surges!{0010}But I need still more power{0010}to remake this world{0000}from nothingness...{0010}"
   },
   {
    "id": "44C852",
    "script": "44C6B0",
    "op": "073 0001",
    "jp": "ほう！キサマ{0000}「天流」の小僧が何の用だ？{0010}",
-   "en": ""
+   "en": "Oho! And what does a{0000}\"Tenryu\" whelp want here?{0010}"
   },
   {
    "id": "44C8A8",
    "script": "44C6B0",
    "op": "036 00000001",
    "jp": "そんな・・・マホロバが{0000}めざめてしまうなんて・・・{0010}",
-   "en": ""
+   "en": "No... Mahoroba has{0000}actually woken up...{0010}"
   },
   {
    "id": "44C8F8",
    "script": "44C6B0",
    "op": "036 00100001",
    "jp": "準備運動にはちょうど良い{0000}さて・・・{0010}",
-   "en": ""
+   "en": "Just right for a warm-up.{0000}Now then...{0010}"
   },
   {
    "id": "44C94A",
    "script": "44C6B0",
    "op": "073 0001",
    "jp": "マホロバ様！{0010}",
-   "en": ""
+   "en": "Mahoroba-sama!{0010}"
   },
   {
    "id": "44CA12",
    "script": "44C6B0",
    "op": "036 00100001",
    "jp": "何だ？キサマは！{0010}",
-   "en": ""
+   "en": "What? Who are you?{0010}"
   },
   {
    "id": "44CA3E",
    "script": "44C6B0",
    "op": "036 00030001",
    "jp": "「地流」闘神士ユーマです{0000}ランゲツを使っております{0010}",
-   "en": ""
+   "en": "I am Yuma, \"Chiryu\" Tojinshi.{0000}I wield Rangetsu.{0010}"
   },
   {
    "id": "44CA8E",
    "script": "44C6B0",
    "op": "036 00100001",
    "jp": "ほう。ごくろう。ランゲツは{0000}これより我が吸収する{0010}",
-   "en": ""
+   "en": "Oho. Well done. Rangetsu{0000}shall now be absorbed by Us.{0010}"
   },
   {
    "id": "44CAE8",
    "script": "44C6B0",
    "op": "036 00030001",
    "jp": "・・・吸・・・収！{0000}ここは、わたくしめに任せ、{0010}「地流」宗家さまの下へ{0000}お急ぎください{0010}",
-   "en": ""
+   "en": "...Ab...sorbed!{0000}Leave this place to me, sir,{0010}and hurry to the \"Chiryu\"{0000}Grand Master.{0010}"
   },
   {
    "id": "44CB60",
    "script": "44C6B0",
    "op": "036 00100001",
    "jp": "フッ{0000}くだらん・・・{0010}",
-   "en": ""
+   "en": "Heh.{0000}How trivial...{0010}"
   },
   {
    "id": "44CB92",
    "script": "44C6B0",
    "op": "036 00030001",
    "jp": "・・・と、言いますと？{0010}",
-   "en": ""
+   "en": "...Meaning what, sir?{0010}"
   },
   {
    "id": "44CBC4",
    "script": "44C6B0",
    "op": "036 00100001",
    "jp": "もはや「地流」だの{0000}「天流」だの、どうでもよい{0010}もろとも「無」に帰すのだ{0010}",
-   "en": ""
+   "en": "\"Chiryu\", \"Tenryu\"...{0000}None of it matters anymore.{0010}All shall return to \"nothing\".{0010}"
   },
   {
    "id": "44CC2C",
    "script": "44C6B0",
    "op": "036 00030001",
    "jp": "！！{0010}マホロバ様に、うらみはないが{0000}私は「地流」宗家さまに{0010}したがう立場・・・{0010}あなたをめざめさせたのは、{0000}「地流」宗家さまのまちがい{0010}ならば、今ここで！{0010}",
-   "en": ""
+   "en": "!!{0010}I bear you no grudge, Mahoroba-sama,{0000}but I serve the \"Chiryu\"{0010}Grand Master...{0010}Waking you was the \"Chiryu\"{0000}Grand Master's mistake.{0010}So, here and now!{0010}"
   },
   {
    "id": "44CCEE",
    "script": "44C6B0",
    "op": "036 00100001",
    "jp": "「地流」宗家さま・・・か{0000}アヤツも、えらくなったものだ{0010}",
-   "en": ""
+   "en": "The \"Chiryu\" Grand Master, is it?{0000}That one has risen high indeed.{0010}"
   },
   {
    "id": "44CD42",
    "script": "44C6B0",
    "op": "036 00030001",
    "jp": "式・神・降・神　ランゲツ！{0010}",
-   "en": ""
+   "en": "Shiki-gami, des-cend! Rangetsu!{0010}"
   },
   {
    "id": "44CD94",
    "script": "44C6B0",
    "op": "073 0001",
    "jp": "マホロバ様・・・{0000}久しぶりにございます{0010}",
-   "en": ""
+   "en": "Mahoroba-sama...{0000}It has been a long time.{0010}"
   },
   {
    "id": "44CDD8",
    "script": "44C6B0",
    "op": "036 00100001",
    "jp": "ほう{0010}このマホロバが使っていた式神{0000}ランゲツを呼ぶとは・・・{0010}おもしろいものよのう{0000}まずは、ユーマとやら{0010}キサマから血祭りにあげようぞ{0010}",
-   "en": ""
+   "en": "Oho.{0010}To summon Rangetsu, the{0000}shikigami that Mahoroba once used...{0010}How very amusing.{0000}First, you, Yuma, was it?{0010}You shall be the first to die.{0010}"
   },
   {
    "id": "44CE7C",
    "script": "44C6B0",
    "op": "098 00390000",
    "jp": "マホロバ様？{0010}",
-   "en": ""
+   "en": "Mahoroba-sama?{0010}"
   },
   {
    "id": "44CEA4",
    "script": "44C6B0",
    "op": "036 00100001",
    "jp": "かまわん。できるものなら{0000}立ち向かってみるがいい{0010}",
-   "en": ""
+   "en": "Never mind. Stand against{0000}Us if you are able.{0010}"
   },
   {
    "id": "44CEEA",
    "script": "44C6B0",
    "op": "098 00390000",
    "jp": "ハッ{0010}",
-   "en": ""
+   "en": "Yes, sir.{0010}"
   },
   {
    "id": "44CF36",
    "script": "44C6B0",
    "op": "073 0001",
    "jp": "あえてランゲツをユーマに付け{0000}自分をおそわせようとしている{0010}マホロバめ、何を考えてんだ{0010}",
-   "en": ""
+   "en": "He gave Yuma Rangetsu on purpose{0000}and let it attack him.{0010}What's Mahoroba thinkin'!?{0010}"
   },
   {
    "id": "44CFFC",
    "script": "44C6B0",
    "op": "073 0001",
    "jp": "ご免！{0000}マホロバ様、参る！{0010}",
-   "en": ""
+   "en": "Forgive me!{0000}Mahoroba-sama, have at you!{0010}"
   },
   {
    "id": "44D034",
    "script": "44C6B0",
    "op": "036 00100001",
    "jp": "フッ・・・酔狂な・・・{0000}おもしろい！来るがいい！{0010}どれ、我が使いしランゲツの{0000}影でも作り、相手をしてやろう{0010}",
-   "en": ""
+   "en": "Heh... How whimsical...{0000}Amusing! Come, then!{0010}Let Us make a shadow of the{0000}Rangetsu We used, to face you.{0010}"
   },
   {
    "id": "44D218",
    "script": "44C6B0",
    "op": "073 0001",
    "jp": "ぐああああ{0010}",
-   "en": ""
+   "en": "Guaaaaah!{0010}"
   },
   {
    "id": "44D292",
    "script": "44C6B0",
    "op": "036 00000001",
    "jp": "ああ！{0000}ユーマが、はじきとばされた{0010}",
-   "en": ""
+   "en": "Ah!{0000}Yuma was blown away!{0010}"
   },
   {
    "id": "44D2D2",
    "script": "44C6B0",
    "op": "036 00100001",
    "jp": "「心いき」だけは、かおう{0000}しかし、くだらん考えだ・・・{0010}",
-   "en": ""
+   "en": "We commend your \"spirit\", at least.{0000}But your thinking is foolish...{0010}"
   },
   {
    "id": "44D342",
    "script": "44C6B0",
    "op": "073 0001",
    "jp": "くそー{0000}前の大戦では勝てたんだ！{0010}チャンスはあるはずだ！{0000}{00C8}！いくぞ！{0010}",
-   "en": ""
+   "en": "Damn it!{0000}We beat him in the last war!{0010}We've gotta have a chance!{0000}{00C8}! Let's go!{0010}"
   },
   {
    "id": "44D3D8",
    "script": "44C6B0",
    "op": "073 0001",
    "jp": "フッ・・・{0000}酔狂なヤツがおおいな{0010}来るがいい{0010}",
-   "en": ""
+   "en": "Heh...{0000}So many whimsical fools.{0010}Come, then.{0010}"
   },
   {
    "id": "44D4F0",
    "script": "44C6B0",
    "op": "073 0001",
    "jp": "なかなかやるではないか・・・{0000}しかしこれで余興は終わりだ{0010}我は、新しい力を手に入れ{0000}さらにつよくならねばならん{0010}この世を無から{0000}作りなおすためにな・・・{0010}",
-   "en": ""
+   "en": "Not bad at all...{0000}But this diversion ends here.{0010}We must gain new power{0000}and grow stronger still{0010}to remake this world{0000}from nothingness...{0010}"
   },
   {
    "id": "44D5AE",
    "script": "44C6B0",
    "op": "036 00000001",
    "jp": "うああああああああああ{0000}意識が！{0010}",
-   "en": ""
+   "en": "Uwaaaaaaaaaaah!{0000}I'm blacking out!{0010}"
   },
   {
    "id": "44D6D4",
    "script": "44D6A0",
    "op": "073 0001",
    "jp": "よし！心をこめて言ってみよう{0010}式・神・降・神　コゲンタ　！{0010}",
-   "en": ""
+   "en": "Okay! I'll say it from the heart.{0010}Shiki-gami, des-cend! Kogenta!{0010}"
   },
   {
    "id": "44D790",
    "script": "44D6A0",
    "op": "098 00150000",
    "jp": "っつうう！{0010}",
-   "en": ""
+   "en": "Owww!{0010}"
   },
   {
    "id": "44D7B6",
    "script": "44D6A0",
    "op": "036 00000001",
    "jp": "コゲンタ！{0010}",
-   "en": ""
+   "en": "Kogenta!{0010}"
   },
   {
    "id": "44D7D4",
    "script": "44D6A0",
    "op": "098 00150000",
    "jp": "いててて！{0000}マホロバのやつ{0010}あれ以上パワーアップして{0000}どうすんだ・・・{0010}それにしても、ここはどこだ？{0010}",
-   "en": ""
+   "en": "Ow ow ow!{0000}That Mahoroba...{0010}What's he gonna do, powerin'{0000}up even more than that...{0010}And where the heck are we?{0010}"
   },
   {
    "id": "44D85C",
    "script": "44D6A0",
    "op": "036 00000001",
    "jp": "うーん。よくわからないけど{0000}１０００年前らしい・・・{0010}",
-   "en": ""
+   "en": "Hmm. I'm not really sure, but{0000}it seems to be 1000 years ago...{0010}"
   },
   {
    "id": "44D8A6",
    "script": "44D6A0",
    "op": "098 00150000",
    "jp": "あっ！まさかここが{0000}鬼門塚！？{0010}",
-   "en": ""
+   "en": "Ah! Could this be{0000}the Kimon Mound!?{0010}"
   },
   {
    "id": "44D8E2",
    "script": "44D6A0",
    "op": "036 00000001",
    "jp": "もう、ボクには、何がなんだか{0000}分からないよ{0010}",
-   "en": ""
+   "en": "I have no idea what's{0000}going on anymore.{0010}"
   },
   {
    "id": "44D922",
    "script": "44D6A0",
    "op": "098 00150000",
    "jp": "{00C8}、そもそも闘神士は{0000}Р女の力によって{0010}時代や空間を超えることが{0000}できるんだぜ{0010}",
-   "en": "",
+   "en": "{00C8}, Tojinshi can cross{0000}through time and space{0010}with the help of a{0000}shrine maiden's power, y'know.{0010}",
    "notes": "gaiji Р=巫"
   },
   {
@@ -322,665 +322,665 @@
    "script": "44D6A0",
    "op": "036 00000001",
    "jp": "へえー{0000}そうなんだ・・・{0010}",
-   "en": ""
+   "en": "Huh.{0000}Is that so...{0010}"
   },
   {
    "id": "44D9C2",
    "script": "44D6A0",
    "op": "098 00150000",
    "jp": "相変わらず、オマエは{0000}おどろかねぇな{0010}",
-   "en": ""
+   "en": "You never get surprised{0000}by anything, do ya?{0010}"
   },
   {
    "id": "44DA04",
    "script": "44D6A0",
    "op": "036 00000001",
    "jp": "うん{0010}",
-   "en": ""
+   "en": "Nope.{0010}"
   },
   {
    "id": "44DA1C",
    "script": "44D6A0",
    "op": "098 00150000",
    "jp": "しかし、今回は特別だな{0010}何かのはずみで{0000}意識だけ飛んできたのかも{0010}しれねえな{0010}",
-   "en": ""
+   "en": "But this time's special.{0010}Somethin' must've happened{0000}and sent just our minds here.{0010}Maybe.{0010}"
   },
   {
    "id": "44DA8A",
    "script": "44D6A0",
    "op": "036 00000001",
    "jp": "とにかく進まなきゃ{0010}",
-   "en": ""
+   "en": "Anyway, we have to keep going.{0010}"
   },
   {
    "id": "44DAB0",
    "script": "44D6A0",
    "op": "098 00150000",
    "jp": "よし、いくぜ{0010}",
-   "en": ""
+   "en": "All right, let's go.{0010}"
   },
   {
    "id": "44DC18",
    "script": "44DBAC",
    "op": "073 0001",
    "jp": "おくにいってみよう{0010}",
-   "en": ""
+   "en": "Let's try going farther in.{0010}"
   },
   {
    "id": "44DD04",
    "script": "44DC7C",
    "op": "073 0001",
    "jp": "おおーい。どなたかーー{0000}ハーこまった、こまった・・・{0010}おおーい{0010}",
-   "en": ""
+   "en": "Hellooo! Anybody theeere?{0000}Oh, what a fix, what a fix...{0010}Hellooo!{0010}"
   },
   {
    "id": "44DE52",
    "script": "44DC7C",
    "op": "073 0001",
    "jp": "んん？{0000}ここは、どこだろう{0010}",
-   "en": ""
+   "en": "Hmm?{0000}Where is this?{0010}"
   },
   {
    "id": "44DE8A",
    "script": "44DC7C",
    "op": "036 00000001",
    "jp": "神社・・・みたいだ・・・{0000}「地流」の太陰神社か！？{0010}外で、だれかが叫んでいる{0010}",
-   "en": ""
+   "en": "Looks like... a shrine...{0000}The \"Chiryu\" Taiin Shrine!?{0010}Somebody's shouting outside.{0010}"
   },
   {
    "id": "44DF94",
    "script": "44DF00",
    "op": "073 0001",
    "jp": "おお！{0000}まだ闘神士が残っていただ！{0010}",
-   "en": ""
+   "en": "Oh!{0000}There's a Tojinshi left after all!{0010}"
   },
   {
    "id": "44E060",
    "script": "44DF00",
    "op": "073 0001",
    "jp": "それにしても、あんた{0000}おエラいさんかね？{0010}",
-   "en": ""
+   "en": "Say, are you{0000}some kinda bigwig?{0010}"
   },
   {
    "id": "44E0A6",
    "script": "44DF00",
    "op": "036 00000001",
    "jp": "い、いえ！全く・・・{0000}なぜです？{0010}そうか・・・「地流」にも{0000}階級があるんだから「天流」{0010}にもあるのかもしれない{0010}",
-   "en": ""
+   "en": "N-no! Not at all...{0000}Why?{0010}I see... The \"Chiryu\" have ranks,{0000}so maybe the \"Tenryu\"{0010}have them too.{0010}"
   },
   {
    "id": "44E138",
    "script": "44DF00",
    "op": "036 00180001",
    "jp": "なーにブツブツ言ってるだ！{0000}そんな変な服きてるのは{0010}おエラいさんにちげえねえだ{0010}",
-   "en": ""
+   "en": "What're ya mutterin' about!{0000}Anybody dressed that funny{0010}has gotta be a bigwig.{0010}"
   },
   {
    "id": "44E1A6",
    "script": "44DF00",
    "op": "036 00000001",
    "jp": "へんな服？{0010}",
-   "en": ""
+   "en": "Dressed funny?{0010}"
   },
   {
    "id": "44E1CC",
    "script": "44DF00",
    "op": "036 00180001",
    "jp": "ところで！{0000}また「鬼門塚」のほうから{0010}妖怪が出てきたのが見えただ！{0000}なんとかしてくれろ！{0010}これ以上妖怪が、わいてきたら{0000}田んぼが、あれてしまって{0010}今年もネングを、はらえねえだ{0000}ハーこまった、こまった・・・{0010}",
-   "en": ""
+   "en": "Anyhow!{0000}I seen yokai comin' out{0010}from the \"Kimon Mound\" again!{0000}Do somethin', please!{0010}If more yokai keep poppin' up,{0000}they'll ruin the rice paddies{0010}an' I can't pay my rice tax again!{0000}Oh, what a fix, what a fix...{0010}"
   },
   {
    "id": "44E2C2",
    "script": "44DF00",
    "op": "036 00000001",
    "jp": "ネング！？{0010}",
-   "en": ""
+   "en": "Rice tax!?{0010}"
   },
   {
    "id": "44E2E8",
    "script": "44DF00",
    "op": "036 00180001",
    "jp": "んだ、んだ{0010}闘神士様たちには、縁のない話{0000}かもしれんが、{0010}ワシらは、朝廷さまに{0000}ネングをおさめて{0010}生きてかにゃ、ならんで・・・{0000}ハーこまった、こまった・・・{0010}",
-   "en": ""
+   "en": "Yup, yup.{0010}Maybe that's got nothin' to{0000}do with you Tojinshi folk,{0010}but us, we gotta pay our{0000}rice tax to the Imperial Court{0010}to get by...{0000}Oh, what a fix, what a fix...{0010}"
   },
   {
    "id": "44E3AC",
    "script": "44DF00",
    "op": "036 00000001",
    "jp": "？？？{0010}ちょうてい？{0000}ま、まさか・・・{0010}ここは・・・１０００年前{0010}",
-   "en": ""
+   "en": "???{0010}The Imperial Court?{0000}N-no way...{0010}This place is... 1000 years ago.{0010}"
   },
   {
    "id": "44E40E",
    "script": "44DF00",
    "op": "036 00180001",
    "jp": "ブツブツ言ってるヒマは{0000}ねえだよ！{0010}他の闘神士様たちは、向かって{0000}いるようだから{0010}階段を下りて北に向かうと{0000}鬼門塚がある{0010}急いで行ってほしいだ{0000}ハーこまった、こまった・・・{0010}",
-   "en": ""
+   "en": "Ain't no time{0000}for mutterin'!{0010}The other Tojinshi folk seem{0000}to be headin' there,{0010}so go down the stairs an' north{0000}to find the Kimon Mound.{0010}Please hurry on over.{0000}Oh, what a fix, what a fix...{0010}"
   },
   {
    "id": "44E4E4",
    "script": "44DF00",
    "op": "036 00000001",
    "jp": "うん{0000}行ってみるよ{0010}",
-   "en": ""
+   "en": "Okay.{0000}I'll go take a look.{0010}"
   },
   {
    "id": "44E54C",
    "script": "44DF00",
    "op": "073 0001",
    "jp": "まだ行ってねえだか！{0010}階段を下りて北に向かうと{0000}鬼門塚がある{0010}他の闘神士様たちは、向かって{0000}いるようだから{0010}急いで行ってほしいだ{0000}ハーこまった、こまった・・・{0010}",
-   "en": ""
+   "en": "Ya ain't gone yet!?{0010}Go down the stairs an' north{0000}to find the Kimon Mound.{0010}The other Tojinshi folk seem{0000}to be headin' there,{0010}so please hurry on over.{0000}Oh, what a fix, what a fix...{0010}"
   },
   {
    "id": "44E664",
    "script": "44E634",
    "op": "073 0001",
    "jp": "・・・・・{0010}",
-   "en": ""
+   "en": ".....{0010}"
   },
   {
    "id": "44E794",
    "script": "44E6AC",
    "op": "073 0001",
    "jp": "お・・・おぬしは・・・{0000}応援の闘神士たちが来たのか？{0010}",
-   "en": ""
+   "en": "Y-you are...{0000}Have the Tojinshi reinforcements come?{0010}"
   },
   {
    "id": "44E816",
    "script": "44E6AC",
    "op": "036 00000001",
    "jp": "え？あ！{0000}一応闘神士だけど・・・{0010}",
-   "en": ""
+   "en": "Huh? Oh!{0000}I guess I'm a Tojinshi, but...{0010}"
   },
   {
    "id": "44E854",
    "script": "44E6AC",
    "op": "036 00310001",
    "jp": "よかった・・・{0000}！！{0010}おぬしのドライブは・・・{0010}「天流」宗家さまのものに{0000}にておる・・・{0010}",
-   "en": ""
+   "en": "Thank goodness...{0000}!!{0010}Your Drive...{0010}it looks like the one held by the{0000}\"Tenryu\" Head of the Family...{0010}"
   },
   {
    "id": "44E8D0",
    "script": "44E6AC",
    "op": "036 00000001",
    "jp": "え？{0010}",
-   "en": ""
+   "en": "Huh?{0010}"
   },
   {
    "id": "44E8F0",
    "script": "44E6AC",
    "op": "036 00310001",
    "jp": "しかし、そのドライブ・・・{0000}こわれておるな・・・{0010}",
-   "en": ""
+   "en": "But that Drive of yours...{0000}it is broken...{0010}"
   },
   {
    "id": "44E93E",
    "script": "44E6AC",
    "op": "036 00000001",
    "jp": "こわれて・・・{0000}いるの？{0010}",
-   "en": ""
+   "en": "It's...{0000}broken?{0010}"
   },
   {
    "id": "44E974",
    "script": "44E6AC",
    "op": "036 00310001",
    "jp": "わしは、もう動けぬ{0000}わしの生命力を{0010}そのドライブに込めよう{0010}",
-   "en": ""
+   "en": "I can no longer move.{0000}I shall pour my life force{0010}into that Drive.{0010}"
   },
   {
    "id": "44EA26",
    "script": "44E6AC",
    "op": "073 0001",
    "jp": "・・・あれ？{0010}壊れたままだ・・・{0010}",
-   "en": ""
+   "en": "...Huh?{0010}It's still broken...{0010}"
   },
   {
    "id": "44EA80",
    "script": "44E6AC",
    "op": "036 00310001",
    "jp": "いや、そのドライブは、すでに{0000}よみがえっている{0010}あとは、おぬしの心を{0000}開くだけで、使えるようになる{0010}強く念じるのだ！{0000}そして、この先にいる{0010}「天流」宗家イッセイさまに{0000}力を貸してあげてほしいのだ{0010}",
-   "en": ""
+   "en": "No, that Drive has already{0000}been revived.{0010}All that remains is for you to open{0000}your heart, and it will work.{0010}Will it with all your might!{0000}And then, up ahead, I beg you{0010}to aid Issei-sama, the \"Tenryu\"{0000}Head of the Family.{0010}"
   },
   {
    "id": "44EB6C",
    "script": "44E6AC",
    "op": "036 00000001",
    "jp": "一体何があったの？{0010}",
-   "en": ""
+   "en": "What on earth happened?{0010}"
   },
   {
    "id": "44EB9A",
    "script": "44E6AC",
    "op": "036 00310001",
    "jp": "そもそも、「天流」と{0000}「地流」は、妖怪から{0010}この世を守るという目的のもと{0000}役割分担をしておったのだ{0010}鬼門を守る「天流」{0000}妖怪をたおす「地流」{0010}今回も、いつものように{0000}鬼門塚から妖怪が来た{0010}門を守りきることで{0000}妖怪は退治できたかに見えた{0010}しかし・・・{0010}",
-   "en": ""
+   "en": "From the start, the \"Tenryu\" and{0000}the \"Chiryu\" divided their duties{0010}for one purpose: to protect{0000}this world from the yokai.{0010}The \"Tenryu\" guard the Kimon;{0000}the \"Chiryu\" defeat the yokai.{0010}This time, as ever, yokai came{0000}out of the Kimon Mound.{0010}We held the gate, and it seemed{0000}the yokai had been driven off.{0010}But...{0010}"
   },
   {
    "id": "44ECC2",
    "script": "44E6AC",
    "op": "036 00000001",
    "jp": "しかし？{0000}何か起こったの？{0010}",
-   "en": ""
+   "en": "But?{0000}Did something happen?{0010}"
   },
   {
    "id": "44ECFA",
    "script": "44E6AC",
    "op": "036 00310001",
    "jp": "「地流」は妖怪をたおさずに{0000}ここから去っていったのだ{0010}式神の力を手に入れれば{0000}妖怪が出てきても、問題ないと{0010}言ったのだ{0010}",
-   "en": ""
+   "en": "The \"Chiryu\" left this place{0000}without defeating the yokai.{0010}They said that once they had the{0000}power of the shikigami, yokai{0010}would be no problem at all.{0010}"
   },
   {
    "id": "44ED94",
    "script": "44E6AC",
    "op": "036 00000001",
    "jp": "！！{0010}",
-   "en": ""
+   "en": "!!{0010}"
   },
   {
    "id": "44EDB4",
    "script": "44E6AC",
    "op": "036 00310001",
    "jp": "たのむ！仲間たちの後を追い{0000}イッセイさまを助けてくれ{0010}",
-   "en": ""
+   "en": "I beg you! Follow our comrades{0000}and save Issei-sama.{0010}"
   },
   {
    "id": "44EE06",
    "script": "44E6AC",
    "op": "036 00000001",
    "jp": "イッセイ・・・？・・・{0000}どこかで、聞いたような・・・{0010}とにかく、その人のところに{0000}行ってみるよ{0010}",
-   "en": ""
+   "en": "Issei...? ...{0000}I feel like I've heard that name...{0010}Anyway, I'll go and find{0000}this person.{0010}"
   },
   {
    "id": "44EEAE",
    "script": "44E6AC",
    "op": "036 00310001",
    "jp": "たのむ！仲間たちの後を追い{0000}イッセイさまを助けてくれ{0010}",
-   "en": ""
+   "en": "I beg you! Follow our comrades{0000}and save Issei-sama.{0010}"
   },
   {
    "id": "44EF54",
    "script": "44EF24",
    "op": "073 0001",
    "jp": "この奥にイッセイさまがいる{0000}おいかけてくれ{0010}",
-   "en": ""
+   "en": "Issei-sama is further in.{0000}Go after him.{0010}"
   },
   {
    "id": "44EFD0",
    "script": "44EFA0",
    "op": "073 0001",
    "jp": "「地流」は式神の力を利用し{0000}何かをたくらんでいる{0010}",
-   "en": ""
+   "en": "The \"Chiryu\" are using the power{0000}of the shikigami to plot something.{0010}"
   },
   {
    "id": "44F050",
    "script": "44F020",
    "op": "073 0001",
    "jp": "式神は、利用するものではなく{0000}力を分け合い、共に闘う{0010}仲間のはずなのに・・・{0010}",
-   "en": ""
+   "en": "Shikigami aren't tools to be used.{0000}They're partners who share their{0010}strength and fight beside us...{0010}"
   },
   {
    "id": "44F120",
    "script": "44F0C0",
    "op": "073 0001",
    "jp": "おお！{0000}「天流」の闘神士か？{0010}加勢が着いたか！{0010}",
-   "en": ""
+   "en": "Oh!{0000}A \"Tenryu\" Tojinshi?{0010}Have reinforcements arrived?{0010}"
   },
   {
    "id": "44F16E",
    "script": "44F0C0",
    "op": "036 00000001",
    "jp": "い、いえ・・・{0000}ボクだけです{0010}",
-   "en": ""
+   "en": "N-no...{0000}It's just me.{0010}"
   },
   {
    "id": "44F1A8",
    "script": "44F0C0",
    "op": "036 00200001",
    "jp": "そうか・・・しかし{0000}ありがたい{0010}今、わしは仲間割れした者を{0000}追わねばならん{0010}ここでの決着はついたが{0000}まだ近くに、ひそんでいる{0010}ヤツラがおるのでな！{0010}",
-   "en": ""
+   "en": "I see... Still,{0000}I am grateful.{0010}I must now pursue those who{0000}turned on their own comrades.{0010}The battle here is settled, but{0000}there are still some lurking{0010}nearby, the scoundrels!{0010}"
   },
   {
    "id": "44F262",
    "script": "44F0C0",
    "op": "036 00000001",
    "jp": "あ、あなたは・・・{0010}",
-   "en": ""
+   "en": "Y-you're...{0010}"
   },
   {
    "id": "44F290",
    "script": "44F0C0",
    "op": "036 00200001",
    "jp": "ん？{0010}",
-   "en": ""
+   "en": "Hm?{0010}"
   },
   {
    "id": "44F2B0",
    "script": "44F0C0",
    "op": "036 00000001",
    "jp": "もしかして、子供がいますか？{0010}",
-   "en": ""
+   "en": "Do you, um, have a child?{0010}"
   },
   {
    "id": "44F2E8",
    "script": "44F0C0",
    "op": "036 00200001",
    "jp": "このような時に妙な質問じゃな{0010}ワシに子供はおらぬ{0000}結婚をする約束をした{0010}女性はおるがの・・・{0010}",
-   "en": ""
+   "en": "A strange question at a time like this.{0010}I have no children. There is{0000}a woman I have promised{0010}to marry, though...{0010}"
   },
   {
    "id": "44F366",
    "script": "44F0C0",
    "op": "036 00000001",
    "jp": "ということは・・・{0000}夢に見た人とは別なのか{0010}それとも、夢に見る時より{0000}もっと前の事なのか・・・{0010}",
-   "en": ""
+   "en": "So that means...{0000}he's not the man from my dream?{0010}Or is this from even earlier{0000}than what I see in the dream...?{0010}"
   },
   {
    "id": "44F3E6",
    "script": "44F0C0",
    "op": "036 00200001",
    "jp": "何やら、ようわからんが{0000}だいじょうぶか？{0010}",
-   "en": ""
+   "en": "I can't quite follow you,{0000}but are you all right?{0010}"
   },
   {
    "id": "44F42C",
    "script": "44F0C0",
    "op": "036 00000001",
    "jp": "はい。{0000}考えるより、お手伝いが先です{0010}",
-   "en": ""
+   "en": "Yes.{0000}Helping comes before thinking.{0010}"
   },
   {
    "id": "44F46E",
    "script": "44F0C0",
    "op": "036 00200001",
    "jp": "それは、ありがたい{0000}ひとつお願いがある{0010}",
-   "en": ""
+   "en": "That is most welcome.{0000}I have one request.{0010}"
   },
   {
    "id": "44F4B2",
    "script": "44F0C0",
    "op": "036 00000001",
    "jp": "なんです？{0010}",
-   "en": ""
+   "en": "What is it?{0010}"
   },
   {
    "id": "44F4D8",
    "script": "44F0C0",
    "op": "036 00200001",
    "jp": "ココは「伏魔殿」へ通じる{0000}鬼門塚の中じゃ{0010}あと２，３匹は妖怪が出てくる{0000}じゃろう・・・{0010}妖怪を、くいとめておいてくれ{0010}案ずることはない。すでに{0000}つよい妖怪はたおしておいた{0010}つよいやつの後に続くだけの{0000}弱い妖怪しか来ないはずだ{0010}",
-   "en": ""
+   "en": "This is inside the Kimon Mound,{0000}which leads to \"Fukumaden\".{0010}Two or three more yokai will{0000}likely come out...{0010}Hold the yokai back for me.{0010}Fear not. I have already{0000}slain the strong one.{0010}Only weak yokai that trail{0000}after it should be coming.{0010}"
   },
   {
    "id": "44F5E4",
    "script": "44F0C0",
    "op": "036 00000001",
    "jp": "はい、分かりました{0010}",
-   "en": ""
+   "en": "Yes, understood.{0010}"
   },
   {
    "id": "44F612",
    "script": "44F0C0",
    "op": "036 00200001",
    "jp": "うむ{0010}",
-   "en": ""
+   "en": "Good.{0010}"
   },
   {
    "id": "44F632",
    "script": "44F0C0",
    "op": "036 00000001",
    "jp": "「天流」の名にかけて！{0010}",
-   "en": ""
+   "en": "In the name of the \"Tenryu\"!{0010}"
   },
   {
    "id": "44F664",
    "script": "44F0C0",
    "op": "036 00200001",
    "jp": "わしにはまだ身寄りがないが{0000}そなたには、親しみをおぼえる{0010}我ら「天流」が、世の平和を{0000}取り戻した後{0010}ゆっくり語ろうではないか{0010}では、ここはたのむぞ！{0010}",
-   "en": ""
+   "en": "I have no family of my own yet,{0000}but I feel a kinship with you.{0010}Once we \"Tenryu\" have brought{0000}peace back to the world,{0010}let us sit and talk at length.{0010}Now, I leave this place to you!{0010}"
   },
   {
    "id": "44F71E",
    "script": "44F0C0",
    "op": "036 00000001",
    "jp": "はい！{0010}",
-   "en": ""
+   "en": "Right!{0010}"
   },
   {
    "id": "44F770",
    "script": "44F0C0",
    "op": "036 00200001",
    "jp": "あと２，３匹は妖怪が出てくる{0000}はずなので{0010}妖怪を食い止めておいてくれ{0010}",
-   "en": ""
+   "en": "Two or three more yokai{0000}should be coming out,{0010}so hold the yokai back for me.{0010}"
   },
   {
    "id": "44F808",
    "script": "44F7D8",
    "op": "073 0001",
    "jp": "これで妖怪は、いなくなった{0000}あとはイッセイさんを待とう{0010}",
-   "en": ""
+   "en": "That's the last of the yokai.{0000}Now I just wait for Issei-san.{0010}"
   },
   {
    "id": "44F86C",
    "script": "44F7D8",
    "op": "073 0001",
    "jp": "ん？{0000}おかしいぞ{0010}",
-   "en": ""
+   "en": "Hm?{0000}Something's off.{0010}"
   },
   {
    "id": "44F892",
    "script": "44F7D8",
    "op": "098 00150000",
    "jp": "ここは、ドコへでも通じる{0000}鬼門塚。何が{0010}起こっても不思議じゃねえぜ{0010}",
-   "en": ""
+   "en": "This is the Kimon Mound. It leads{0000}anywhere. Nothin' that happens{0010}here should surprise ya.{0010}"
   },
   {
    "id": "44F904",
    "script": "44F7D8",
    "op": "073 0001",
    "jp": "うわああああ！{0010}",
-   "en": ""
+   "en": "Waaaaaah!{0010}"
   },
   {
    "id": "44FB3C",
    "script": "44FA78",
    "op": "073 0001",
    "jp": "これで妖怪は、いなくなった{0000}あとはイッセイさんを待とう{0010}",
-   "en": ""
+   "en": "That's the last of the yokai.{0000}Now I just wait for Issei-san.{0010}"
   },
   {
    "id": "44FBB4",
    "script": "44FA78",
    "op": "073 0001",
    "jp": "ん？{0000}おかしいぞ{0010}",
-   "en": ""
+   "en": "Hm?{0000}Something's off.{0010}"
   },
   {
    "id": "44FBFE",
    "script": "44FA78",
    "op": "073 0001",
    "jp": "ここは、どことも通じる{0000}鬼門塚。何が{0010}起こっても不思議じゃねえぜ{0010}",
-   "en": ""
+   "en": "This is the Kimon Mound. It leads{0000}anywhere. Nothin' that happens{0010}here should surprise ya.{0010}"
   },
   {
    "id": "44FC8A",
    "script": "44FA78",
    "op": "073 0001",
    "jp": "うわああああ！{0010}",
-   "en": ""
+   "en": "Waaaaaah!{0010}"
   },
   {
    "id": "44FD70",
    "script": "44FD14",
    "op": "073 0001",
    "jp": "ここが、御所だね{0010}",
-   "en": ""
+   "en": "So this is the Gosho.{0010}"
   },
   {
    "id": "44FD94",
    "script": "44FD14",
    "op": "098 00150000",
    "jp": "おう！{0000}奥に進んでみるか{0010}",
-   "en": ""
+   "en": "Yeah!{0000}Let's head further in.{0010}"
   },
   {
    "id": "44FE20",
    "script": "44FDCC",
    "op": "073 0001",
    "jp": "おっ！ここに入口があるぜ！{0010}",
-   "en": ""
+   "en": "Oh! There's an entrance here!{0010}"
   },
   {
    "id": "44FE56",
    "script": "44FDCC",
    "op": "036 00000001",
    "jp": "うん。入ってみよう{0010}",
-   "en": ""
+   "en": "Yeah. Let's go in.{0010}"
   },
   {
    "id": "44FE7C",
    "script": "44FDCC",
    "op": "098 00150000",
    "jp": "地下に続いているな・・・{0010}",
-   "en": ""
+   "en": "It goes underground...{0010}"
   },
   {
    "id": "44FF68",
    "script": "44FEB4",
    "op": "073 0001",
    "jp": "{00C8}君！{0000}しっかりして！{0010}{00C8}君！{0010}",
-   "en": ""
+   "en": "{00C8}-kun!{0000}Pull yourself together!{0010}{00C8}-kun!{0010}"
   },
   {
    "id": "450006",
    "script": "44FEB4",
    "op": "073 0001",
    "jp": "んん？{0000}・・・ボクは・・・一体？{0010}",
-   "en": ""
+   "en": "Mmm...?{0000}...Where... am I?{0010}"
   },
   {
    "id": "450044",
    "script": "44FEB4",
    "op": "036 00020001",
    "jp": "ココは、人里はなれた森にある{0000}私の隠れ家よ{0010}あの時マホロバは、あなた達に{0000}トドメはささなかったわ{0010}放っておいても敵には{0000}ならないとはんだんしたの{0010}そして、聖なる式神の力を{0000}てにいれると言って消えたわ{0010}そのすきに、マサオミさんと{0000}私であなた達を連れてきたの{0010}",
-   "en": ""
+   "en": "This is my hideout, in a forest{0000}far from any village.{0010}Back then, Mahoroba didn't{0000}finish you off.{0010}He judged you wouldn't be{0000}a threat even if left alone.{0010}Then he vanished, saying he'd gain{0000}the power of the holy shikigami.{0010}While he was gone, Masaomi-san{0000}and I brought you both here.{0010}"
   },
   {
    "id": "450170",
    "script": "44FEB4",
    "op": "036 00000001",
    "jp": "キミはやっぱり闘神士・・・{0000}だったんだね{0010}",
-   "en": ""
+   "en": "So you really were{0000}a Tojinshi...{0010}"
   },
   {
    "id": "4501B6",
    "script": "44FEB4",
    "op": "036 00020001",
    "jp": "そうよ。くわしくは{0000}話せないけれど{0010}マホロバについて{0000}調査していたところだったの{0010}でもマホロバが、めざめて{0000}調査のいみも、なくなったけど{0010}",
-   "en": ""
+   "en": "That's right. I can't tell{0000}you the details, but{0010}I was investigating{0000}Mahoroba.{0010}Though now that he's awake,{0000}there's no point to it anymore.{0010}"
   },
   {
    "id": "450264",
    "script": "44FEB4",
    "op": "036 00000001",
    "jp": "うん・・・{0010}",
-   "en": ""
+   "en": "Yeah...{0010}"
   },
   {
    "id": "45028A",
    "script": "44FEB4",
    "op": "036 00020001",
    "jp": "もう少し、体を休めていた{0000}ほうがいいわ{0010}",
-   "en": ""
+   "en": "You should rest your body{0000}a little longer.{0010}"
   },
   {
    "id": "4502CE",
    "script": "44FEB4",
    "op": "036 00000001",
    "jp": "うん・・・{0010}",
-   "en": ""
+   "en": "Yeah...{0010}"
   },
   {
    "id": "4502F4",
    "script": "44FEB4",
    "op": "036 00020001",
    "jp": "それと、あなたのドライブが{0000}マホロバに、こわされていたわ{0010}",
-   "en": ""
+   "en": "Also, your Drive was{0000}broken by Mahoroba.{0010}"
   },
   {
    "id": "45034A",
    "script": "44FEB4",
    "op": "036 00000001",
    "jp": "ああ、ドライブなら、大丈夫{0000}・・・ほら{0010}",
-   "en": ""
+   "en": "Oh, my Drive's fine.{0000}...See?{0010}"
   },
   {
    "id": "45038E",
    "script": "44FEB4",
    "op": "036 00020001",
    "jp": "あら・・・{0010}なおせるはずないんだけど{0000}なおってるわ・・・{0010}",
-   "en": ""
+   "en": "Oh my...{0010}It shouldn't be possible to fix,{0000}but it's fixed...{0010}"
   },
   {
    "id": "4503E6",
    "script": "44FEB4",
    "op": "036 00000001",
    "jp": "うん。いろいろあってね・・・{0010}",
-   "en": ""
+   "en": "Yeah. A lot happened...{0010}"
   },
   {
    "id": "45041E",
    "script": "44FEB4",
    "op": "036 00020001",
    "jp": "どうしてなおったのか{0000}分からないけど{0010}とにかく、よかったわ{0010}めざめたマホロバは{0000}こうしている間にも{0010}力をもとめているわ・・・{0010}",
-   "en": ""
+   "en": "I don't know how it{0000}got fixed, but{0010}anyway, I'm glad.{0010}Now that he's awake, Mahoroba{0000}is seeking power{0010}even as we speak...{0010}"
   },
   {
    "id": "4504C0",
    "script": "44FEB4",
    "op": "036 00000001",
    "jp": "行かなきゃ{0010}",
-   "en": ""
+   "en": "I have to go.{0010}"
   },
   {
    "id": "4504E6",
    "script": "44FEB4",
    "op": "036 00020001",
    "jp": "今のあなたじゃ、ムリよ{0000}勝てっこない{0010}",
-   "en": ""
+   "en": "As you are now, you can't.{0000}You'd never win.{0010}"
   },
   {
    "id": "450528",
    "script": "44FEB4",
    "op": "036 00000001",
    "jp": "じゃあ、どうすれば・・・{0010}",
-   "en": ""
+   "en": "Then what should I do...{0010}"
   },
   {
    "id": "45055C",
    "script": "44FEB4",
    "op": "036 00020001",
    "jp": "ココから南に行ったところに{0000}「御所」があるわ{0010}「御所」の地下には{0000}ひみつのどうくつがあるわ{0010}そこで、式神使いたちに{0000}きたえてもらうといいわ{0010}ユーマくんは今まだ寝ているし{0000}私はここに残るけれど{0010}がんばってきてね{0010}私は、私でマホロバの動向を{0000}しらべておくわね{0010}",
-   "en": ""
+   "en": "South of here you'll find{0000}\"the Gosho\".{0010}Beneath \"the Gosho\"{0000}there is a secret cave.{0010}Have the shikigami users{0000}there train you.{0010}Yuma-kun is still sleeping,{0000}and I'll stay here, but{0010}do your best.{0010}I'll look into what Mahoroba{0000}is up to on my own.{0010}"
   },
   {
    "id": "45068A",
    "script": "44FEB4",
    "op": "036 00000001",
    "jp": "うん。いってくるよ{0010}",
-   "en": ""
+   "en": "Okay. I'm off.{0010}"
   },
   {
    "id": "450724",
    "script": "44FEB4",
    "op": "073 0001",
    "jp": "ココから南に行ったところに{0000}「御所」があるわ{0010}「御所」の地下には{0000}ひみつのどうくつがあるわ{0010}そこで、式神使いたちに{0000}きたえてもらうといいわ{0010}ユーマくんは今まだ寝ているし{0000}私はここに残るけれど{0010}がんばってきてね{0010}私は、私でマホロバの動向を{0000}しらべてみるわ{0010}",
-   "en": ""
+   "en": "South of here you'll find{0000}\"the Gosho\".{0010}Beneath \"the Gosho\"{0000}there is a secret cave.{0010}Have the shikigami users{0000}there train you.{0010}Yuma-kun is still sleeping,{0000}and I'll stay here, but{0010}do your best.{0010}I'll try looking into what{0000}Mahoroba is up to on my own.{0010}"
   },
   {
    "id": "450850",
    "script": "44FEB4",
    "op": "036 00000001",
    "jp": "うん。いってくるよ{0010}",
-   "en": ""
+   "en": "Okay. I'm off.{0010}"
   }
  ]
 }

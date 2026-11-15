@@ -6,532 +6,532 @@
    "script": "450880",
    "op": "073 0001",
    "jp": "・・・・{0010}",
-   "en": ""
+   "en": "....{0010}"
   },
   {
    "id": "450968",
    "script": "4508C8",
    "op": "073 0001",
    "jp": "ボクは、特に考えもなく式神を{0000}扱っている{0010}こんなボクでも分かるよ{0000}闘わなきゃなんないんだね{0010}",
-   "en": ""
+   "en": "I handle shikigami without{0000}really thinking about it.{0010}But even I can tell.{0000}We have to fight, don't we?{0010}"
   },
   {
    "id": "4509E4",
    "script": "4508C8",
    "op": "036 00000001",
    "jp": "え・・・{0000}いや、そんな・・・{0010}",
-   "en": ""
+   "en": "Huh...{0000}N-no, that's not...{0010}"
   },
   {
    "id": "450A1E",
    "script": "4508C8",
    "op": "036 00760001",
    "jp": "ボクには分かる{0000}キミは闘いを求めているんだ{0010}",
-   "en": ""
+   "en": "I can tell.{0000}You're looking for a fight.{0010}"
   },
   {
    "id": "450A66",
    "script": "4508C8",
    "op": "036 00000001",
    "jp": "え・・・{0010}",
-   "en": ""
+   "en": "Huh...{0010}"
   },
   {
    "id": "450A8A",
    "script": "4508C8",
    "op": "036 00760001",
    "jp": "そしてボクも闘いを{0000}求めているんだ{0010}そう育てられたから・・・{0000}ボクには闘うしかないんだ{0010}闘うしか・・・{0010}いくよっ！{0010}",
-   "en": ""
+   "en": "And I'm looking for{0000}a fight too.{0010}Because that's how I was raised...{0000}Fighting is all I have.{0010}All I have...{0010}Here I come!{0010}"
   },
   {
    "id": "450B1A",
    "script": "4508C8",
    "op": "098 00150000",
    "jp": "おっしゃあ！{0000}いくぜ！{00C8}{0010}",
-   "en": ""
+   "en": "Hell yeah!{0000}Let's go, {00C8}!{0010}"
   },
   {
    "id": "450BCA",
    "script": "4508C8",
    "op": "073 0001",
    "jp": "闘いに勝つことは{0000}当たり前のこと{0010}ボクをたおせるような{0000}闘神士を探さなきゃ{0010}",
-   "en": ""
+   "en": "Winning a fight is{0000}a matter of course.{0010}I have to find a Tojinshi{0000}who can beat me.{0010}"
   },
   {
    "id": "450C96",
    "script": "4508C8",
    "op": "073 0001",
    "jp": "キミ・・・の・・・名前{0000}{00C8}・・・{0010}あり・・・がとう・・・{0000}わすれない・・・{0010}",
-   "en": ""
+   "en": "Your... name...{0000}{00C8}...{0010}Thank... you...{0000}I won't... forget...{0010}"
   },
   {
    "id": "450D80",
    "script": "4508C8",
    "op": "036 00760001",
    "jp": "また・・・きたんだね{0000}こんどは、きたいしていいかな{0010}いくよっ！{0010}",
-   "en": ""
+   "en": "You came... again.{0000}Can I expect more this time?{0010}Here I come!{0010}"
   },
   {
    "id": "450F48",
    "script": "450EA8",
    "op": "073 0001",
    "jp": "なんだァ？オメエ{0000}ガキのくせして{0010}目がマジだぜ・・・{0010}もっと気楽に{0000}式神使えばいいじゃん{0010}おれっちは、なぜか{0010}闘神士なんてヤクザな商売{0000}してるけどよ{0010}結構不満はねぇんだ{0010}なにせ一般人には式神が{0000}見えねえから{0010}やりたい放題だろ？{0000}闘うのはめんどくせぇが{0010}式神がいれば不自由しねえ{0010}オメエは、式神を利用して{0000}生活をエンジョイしてるぅ？{0010}おーおー{0000}そんなこわい目でみないでよ{0010}まあ、オメエには悪ィが{0010}さっと闘って{0000}さっと勝たせてもらうゼ{0010}いくぜ！{0010}",
-   "en": ""
+   "en": "Whaddaya want? You're just{0000}a brat, but{0010}you got dead serious eyes...{0010}Ya should use shikigami{0000}more laid-back, y'know?{0010}Me, for some reason,{0010}I'm in this shady racket{0000}called bein' a Tojinshi,{0010}and I ain't got many complaints.{0010}Regular folks can't see{0000}shikigami, right?{0010}So I can do whatever I want!{0000}Fightin's a pain, but{0010}with shikigami, I want for nothin'.{0010}You enjoyin' life by usin'{0000}your shikigami, huh?{0010}Whoa, whoa,{0000}don't gimme that scary look.{0010}Well, sorry 'bout this, but{0010}I'm gonna fight quick{0000}and win quick.{0010}Here goes!{0010}"
   },
   {
    "id": "4511BE",
    "script": "450EA8",
    "op": "073 0001",
    "jp": "やれやれ{0000}闘いが終わったか・・・{0010}さーて{0000}町に戻って、式神で{0010}何か悪さでもしてこよっと{0010}",
-   "en": ""
+   "en": "Phew,{0000}fight's over...{0010}Welp,{0000}back to town to go{0010}cause some trouble with my shikigami.{0010}"
   },
   {
    "id": "451298",
    "script": "450EA8",
    "op": "073 0001",
    "jp": "うああああああ{0000}オレは・・・{0010}好き勝手やりたかった{0000}ただそれだけ・・・だ・・・{0010}うああああああ{0010}",
-   "en": ""
+   "en": "Uwaaaaaaah{0000}I...{0010}I just wanted to do whatever{0000}I pleased... that's... all...{0010}Uwaaaaaaah{0010}"
   },
   {
    "id": "451396",
    "script": "450EA8",
    "op": "036 00770001",
    "jp": "オメェ、ガキのくせに{0000}まだ向かってくるのか？{0010}さっき勝てないって{0000}分かっただろう？{0010}おれっち、めんどうだけど{0000}たたきのめしちゃうよ？{0010}",
-   "en": ""
+   "en": "You're just a brat, and{0000}you're still comin' at me?{0010}Didn't ya figure out before{0000}that ya can't win?{0010}It's a pain, but I'm gonna{0000}have to pound ya flat, 'kay?{0010}"
   },
   {
    "id": "4515AC",
    "script": "45150C",
    "op": "073 0001",
    "jp": "はいはいはいはい！{0000}やってきましたねっ{0010}あなたっ{0000}とーうーじーんーしー{0010}ですねっ{0010}",
-   "en": ""
+   "en": "Yes yes yes yes!{0000}Here you are!{0010}You are{0000}a To-jin-shi,{0010}aren't you!{0010}"
   },
   {
    "id": "451618",
    "script": "45150C",
    "op": "098 00150000",
    "jp": "なんだァ？{0010}",
-   "en": ""
+   "en": "Whaddaya want?{0010}"
   },
   {
    "id": "45163E",
    "script": "45150C",
    "op": "036 00780001",
    "jp": "ワタクシねっ{0000}しゅみで闘神士してるのよっ{0010}おかしいでしょーー{0000}シャーっ　シャシャっ{0010}",
-   "en": ""
+   "en": "Me, I'm a Tojinshi{0000}as a hobby!{0010}Funny, isn't it?{0000}Sha! Shasha!{0010}"
   },
   {
    "id": "4516AA",
    "script": "45150C",
    "op": "098 00150000",
    "jp": "調子狂うな・・・{0010}",
-   "en": ""
+   "en": "This guy throws me off...{0010}"
   },
   {
    "id": "4516D6",
    "script": "45150C",
    "op": "036 00780001",
    "jp": "ワタクシが闘わなくても{0000}式神さんが闘ってくれるじゃ{0010}なーい？{0010}だ・か・ら{0000}ワタクシ、その間{0010}ダイエットするの{0000}シャーっ　シャシャっ{0010}いくわよーーーっ{0010}",
-   "en": ""
+   "en": "Even if I don't fight,{0000}my shikigami will fight for me,{0010}riiight?{0010}So-o-o,{0000}in the meantime,{0010}I'll be on my diet!{0000}Sha! Shasha!{0010}Here I gooo!{0010}"
   },
   {
    "id": "45180C",
    "script": "45150C",
    "op": "073 0001",
    "jp": "あなたっ、もう少し{0000}がんばりなさいよっ{0010}そんなに早く負けちゃったら{0000}ダイエットする時間が{0010}ないじゃない！{0000}シャーっ　シャシャっ{0010}",
-   "en": ""
+   "en": "You! Try a little{0000}harder, would you!{0010}If you lose that fast,{0000}I won't have any time{0010}for my diet!{0000}Sha! Shasha!{0010}"
   },
   {
    "id": "451910",
    "script": "45150C",
    "op": "073 0001",
    "jp": "きゃあああああ{0010}負けたときのことなんて{0000}考えてなかったわっ{0010}いやあああああ{0010}",
-   "en": ""
+   "en": "Kyaaaaaah{0010}I never thought about{0000}what happens if I lose!{0010}Noooooo{0010}"
   },
   {
    "id": "451A00",
    "script": "45150C",
    "op": "073 0001",
    "jp": "はいはいはいはい！{0000}やってきましたねっ{0010}あなたっ{0000}まーたーきーまーしーたーねー{0010}今度はもうすこし長い時間{0000}持ちこたえなさいよっ{0010}ワタクシ、その間{0000}ダイエットするの{0010}シャーっ　シャシャっ{0000}いくわよーーーっ{0010}",
-   "en": ""
+   "en": "Yes yes yes yes!{0000}Here you are!{0010}You've{0000}come-back-a-gain!{0010}This time, hold out{0000}a little longer!{0010}In the meantime,{0000}I'll be on my diet!{0010}Sha! Shasha!{0000}Here I gooo!{0010}"
   },
   {
    "id": "451C64",
    "script": "451BC4",
    "op": "073 0001",
    "jp": "少年よ。何者だ？{0010}",
-   "en": ""
+   "en": "Boy. Who are you?{0010}"
   },
   {
    "id": "451C90",
    "script": "451BC4",
    "op": "036 00000001",
    "jp": "闘神士{00C8}です{0010}",
-   "en": ""
+   "en": "I'm {00C8}, a Tojinshi.{0010}"
   },
   {
    "id": "451CBA",
    "script": "451BC4",
    "op": "036 00790001",
    "jp": "知らん・・・{0010}オマエのような少年が闘神士を{0000}しなければならないとは{0010}世も末だな{0010}",
-   "en": ""
+   "en": "Dunno...{0010}That a boy like you must{0000}work as a Tojinshi...{0010}The world's going to the dogs.{0010}"
   },
   {
    "id": "451D2A",
    "script": "451BC4",
    "op": "036 00000001",
    "jp": "あなたは敵？{0010}",
-   "en": ""
+   "en": "Are you an enemy?{0010}"
   },
   {
    "id": "451D52",
    "script": "451BC4",
    "op": "036 00790001",
    "jp": "知らん・・・{0010}",
-   "en": ""
+   "en": "Dunno...{0010}"
   },
   {
    "id": "451D7A",
    "script": "451BC4",
    "op": "036 00000001",
    "jp": "あなたは味方？{0010}",
-   "en": ""
+   "en": "Are you a friend?{0010}"
   },
   {
    "id": "451DA4",
    "script": "451BC4",
    "op": "036 00790001",
    "jp": "知らん・・・{0010}",
-   "en": ""
+   "en": "Dunno...{0010}"
   },
   {
    "id": "451DCC",
    "script": "451BC4",
    "op": "036 00000001",
    "jp": "あなたの名前は？{0010}",
-   "en": ""
+   "en": "What's your name?{0010}"
   },
   {
    "id": "451DF8",
    "script": "451BC4",
    "op": "036 00790001",
    "jp": "シラン・・・{0010}",
-   "en": ""
+   "en": "Shiran...{0010}"
   },
   {
    "id": "451E20",
    "script": "451BC4",
    "op": "036 00000001",
    "jp": "自分の名前を知らないなんて{0010}",
-   "en": ""
+   "en": "\"Shiran\"? You \"dunno\" your own name?{0010}"
   },
   {
    "id": "451E56",
    "script": "451BC4",
    "op": "036 00790001",
    "jp": "うおっほん！{0000}カンチガイするな{0010}名前がシランなのだ{0000}今時の子供は何もわからんのか{0010}世も末だな{0010}このシランが{0000}教育をしてやろう{0010}いくぞっ！{0010}",
-   "en": ""
+   "en": "Ahem!{0000}Do not misunderstand.{0010}My name IS Shiran. Do children{0000}these days know nothing at all?{0010}The world's going to the dogs.{0010}I, Shiran, shall give{0000}you an education.{0010}Here I come!{0010}"
   },
   {
    "id": "451F80",
    "script": "451BC4",
    "op": "073 0001",
    "jp": "少年よ{0000}せっかく教育してあげたのに{0010}その目はいかんぞ{0010}負けてなお、そんな目を{0000}するとは、世も末だな{0010}",
-   "en": ""
+   "en": "Boy,{0000}I took the trouble to educate you,{0010}yet you still have that look.{0010}Still glaring like that, even{0000}in defeat... Going to the dogs.{0010}"
   },
   {
    "id": "452066",
    "script": "451BC4",
    "op": "073 0001",
    "jp": "このシランが・・・{0000}敗北を知らんシランが・・・{0010}うああああああ{0010}",
-   "en": ""
+   "en": "I, Shiran...{0000}Shiran, who never knew defeat...{0010}Uwaaaaaaah{0010}"
   },
   {
    "id": "452140",
    "script": "451BC4",
    "op": "036 00790001",
    "jp": "少年よ{0000}そんな目をするとは{0010}まだ教育が足りないようだな{0000}世も末だな{0010}このシランが再び{0000}教育をしてやろう{0010}いくぞっ！{0010}",
-   "en": ""
+   "en": "Boy,{0000}that look in your eyes{0010}says your education is lacking.{0000}The world's going to the dogs.{0010}I, Shiran, shall educate{0000}you once more.{0010}Here I come!{0010}"
   },
   {
    "id": "452344",
    "script": "4522A4",
    "op": "073 0001",
    "jp": "あなたが、{00C8}様ですね{0000}お待ちしておりました{0010}",
-   "en": ""
+   "en": "You must be {00C8}-sama.{0000}I have been waiting for you.{0010}"
   },
   {
    "id": "45238E",
    "script": "4522A4",
    "op": "036 00800001",
    "jp": "あなたに、私と闘えるだけの{0000}かくごは、ありますか？{0010}",
-   "en": ""
+   "en": "Do you have the resolve{0000}needed to fight me?{0010}"
   },
   {
    "id": "4523DE",
    "script": "4522A4",
    "op": "036 00000001",
    "jp": "かくご？{0010}",
-   "en": ""
+   "en": "Resolve?{0010}"
   },
   {
    "id": "452402",
    "script": "4522A4",
    "op": "036 00800001",
    "jp": "私は今まで、多くの闘神士を{0000}倒してきた{0010}でもそれは私の望んだことでは{0000}なかった{0010}それは、負けていく敵に{0000}かくごがないからだ{0010}どんなにつよがっている{0000}闘神士も負けたときには{0010}悲しい顔をする{0010}助けてくれと言う{0000}かくごなく、闘っているからだ{0010}そんなやつらを倒すとき、{0000}私も悲しくなるのだ・・・{0010}人を倒していくということは{0000}その悲しみをせおっていくこと{0010}せめてかくごのある者と闘い{0000}たおすのが、私の望みだ{0010}",
-   "en": ""
+   "en": "I have defeated many{0000}Tojinshi until now.{0010}But it was never something{0000}I wished for.{0010}That is because the foes who lose{0000}to me have no resolve.{0010}However tough they act, every{0000}Tojinshi, once beaten,{0010}wears a look of sorrow.{0010}They beg for help, because{0000}they fight without resolve.{0010}When I defeat such people,{0000}I grow sad as well...{0010}To defeat others is to carry{0000}that sorrow on your back.{0010}At the least, I wish to fight and{0000}defeat those who have resolve.{0010}"
   },
   {
    "id": "4525C2",
    "script": "4522A4",
    "op": "098 00150000",
    "jp": "ちっ{0000}もう勝った気でいやがる{0010}そういうことは勝ってから言え{0010}いくぞっ！{0010}",
-   "en": ""
+   "en": "Tch.{0000}He already thinks he's won.{0010}Say that after ya win.{0010}Here we go!{0010}"
   },
   {
    "id": "4526A2",
    "script": "4522A4",
    "op": "073 0001",
    "jp": "ほう、その目！{0000}少しはかくごが、あるようだな{0010}しかし、勝てるものではない{0000}諦めなさい{0010}",
-   "en": ""
+   "en": "Oh, those eyes!{0000}It seems you have some resolve.{0010}But it is not enough to win.{0000}Give up.{0010}"
   },
   {
    "id": "452778",
    "script": "4522A4",
    "op": "073 0001",
    "jp": "ぐううう{0000}なるほど{0010}負けるとは、こういうことか{0010}これも、悪くない・・・{0010}",
-   "en": ""
+   "en": "Gwuuuh...{0000}I see.{0010}So this is what it is to lose.{0010}It is... not so bad...{0010}"
   },
   {
    "id": "4528B0",
    "script": "4522A4",
    "op": "073 0001",
    "jp": "どこかで、扉が開いたようだ{0010}",
-   "en": ""
+   "en": "It seems a door opened somewhere.{0010}"
   },
   {
    "id": "452926",
    "script": "4522A4",
    "op": "073 0001",
    "jp": "また来ましたか・・・{0000}闘うかくごは、できていますか？{0010}",
-   "en": ""
+   "en": "You have come again...{0000}Are you resolved to fight?{0010}"
   },
   {
    "id": "452978",
    "script": "4522A4",
    "op": "036 00000001",
    "jp": "うん{0010}",
-   "en": ""
+   "en": "Yes.{0010}"
   },
   {
    "id": "452998",
    "script": "4522A4",
    "op": "036 00800001",
    "jp": "ならば、その思い{0000}心おきなく、ふみつぶそう{0010}いくぞっ！{0010}",
-   "en": ""
+   "en": "Then I shall crush that will{0000}without a shred of regret.{0010}Here I come!{0010}"
   },
   {
    "id": "452B58",
    "script": "452AB8",
    "op": "073 0001",
    "jp": "あなたが、{00C8}様ですね{0000}お待ちしておりました{0010}あなたの考える未来とは{0000}どんな未来か？{0010}",
-   "en": ""
+   "en": "You must be {00C8}-sama.{0000}I have been waiting for you.{0010}What kind of future do{0000}you have in mind?{0010}"
   },
   {
    "id": "452BCE",
    "script": "452AB8",
    "op": "036 00000001",
    "jp": "式神も人間も、フツウに{0000}暮らせればいいんじゃないかな{0010}",
-   "en": ""
+   "en": "I think it'd be nice if shikigami and{0000}people could just live normally.{0010}"
   },
   {
    "id": "452C20",
    "script": "452AB8",
    "op": "036 00810001",
    "jp": "フッ{0000}なるほど、なるほど{0010}若者らしい甘い願望だな{0010}理想と現実は、ちがうものだと{0000}教えてくれよう{0010}いざ！{0010}",
-   "en": ""
+   "en": "Heh.{0000}I see, I see.{0010}A sweet wish, as befits the young.{0010}Let me teach you that ideals{0000}and reality are not the same.{0010}En garde!{0010}"
   },
   {
    "id": "452D24",
    "script": "452AB8",
    "op": "073 0001",
    "jp": "その甘ったるい将来への想い{0000}すべて、すてさり{0010}初心からやり直すのだな{0000}わかったか！{0010}",
-   "en": ""
+   "en": "Throw away all those sugary{0000}hopes for the future{0010}and start over from the{0000}beginning. Do you understand!{0010}"
   },
   {
    "id": "452DF8",
    "script": "452AB8",
    "op": "073 0001",
    "jp": "ぬおお{0000}なるほど{0010}甘い願望を{0000}つらぬきとおす信念は{0010}悪くない・・・{0010}さらばだ・・・{0010}",
-   "en": ""
+   "en": "Nuooh...{0000}I see.{0010}A conviction that holds to{0000}its sweet wish to the end...{0010}is not bad...{0010}Farewell...{0010}"
   },
   {
    "id": "452F40",
    "script": "452AB8",
    "op": "073 0001",
    "jp": "どこかで、扉が開いたようだ{0010}",
-   "en": ""
+   "en": "It seems a door opened somewhere.{0010}"
   },
   {
    "id": "452FB6",
    "script": "452AB8",
    "op": "073 0001",
    "jp": "また来ていただけたのですね{0010}甘い将来への想いをすてて{0000}修羅になることにしましたか？{0010}",
-   "en": ""
+   "en": "So you have come again.{0010}Have you cast off your sweet{0000}hopes and chosen the path of war?{0010}"
   },
   {
    "id": "453028",
    "script": "452AB8",
    "op": "036 00000001",
    "jp": "いや{0000}ボクは何と言われようと{0010}自分の考えを変えるつもりは{0000}ない！{0010}",
-   "en": ""
+   "en": "No.{0000}Whatever anyone says to me,{0010}I'm not going to change{0000}what I believe!{0010}"
   },
   {
    "id": "45308A",
    "script": "452AB8",
    "op": "036 00810001",
    "jp": "なかなか強情ですね{0010}理想と現実は違うものだと、{0000}教えてくれよう{0010}いざ！{0010}",
-   "en": ""
+   "en": "Quite stubborn, aren't you.{0010}Let me teach you that ideals{0000}and reality are not the same.{0010}En garde!{0010}"
   },
   {
    "id": "45325C",
    "script": "4531BC",
    "op": "073 0001",
    "jp": "あなたが、{00C8}様ですね{0000}お待ちしておりました{0010}あなたに問う！{0000}生きたいか？{0010}",
-   "en": ""
+   "en": "You must be {00C8}-sama.{0000}I have been waiting for you.{0010}I ask you this!{0000}Do you wish to live?{0010}"
   },
   {
    "id": "4532C8",
    "script": "4531BC",
    "op": "036 00000001",
    "jp": "うん{0010}",
-   "en": ""
+   "en": "Yes.{0010}"
   },
   {
    "id": "4532E8",
    "script": "4531BC",
    "op": "036 00820001",
    "jp": "ほう。死がこわいか？{0010}",
-   "en": ""
+   "en": "Oh? Do you fear death?{0010}"
   },
   {
    "id": "453318",
    "script": "4531BC",
    "op": "036 00000001",
    "jp": "いや、死はこわいけど{0000}死ぬのは、しかたないかな{0010}",
-   "en": ""
+   "en": "Well, death is scary, but{0000}I guess dying can't be helped.{0010}"
   },
   {
    "id": "453364",
    "script": "4531BC",
    "op": "036 00820001",
    "jp": "ほう{0010}",
-   "en": ""
+   "en": "Oh?{0010}"
   },
   {
    "id": "453384",
    "script": "4531BC",
    "op": "036 00000001",
    "jp": "生きている間にできることを{0000}しておきたいんだ{0010}",
-   "en": ""
+   "en": "I want to do what I can{0000}while I'm alive.{0010}"
   },
   {
    "id": "4533CE",
    "script": "4531BC",
    "op": "036 00820001",
    "jp": "死をうけとめた上で、なお{0000}生きるというのか{0010}いまだかつてきいたことの{0000}ない答えだな・・・{0010}きょくげんのじょうたいで同じ{0000}答えを言いつづけられるかな{0010}しかと確かめよう{0000}その答えが、本当なのか、を{0010}闘いましょう{0010}",
-   "en": ""
+   "en": "You accept death and still{0000}choose to live, then?{0010}That is an answer I have{0000}never once heard...{0010}But can you keep giving that same{0000}answer when pushed to the limit?{0010}I shall see for certain{0000}whether that answer is true.{0010}Let us fight.{0010}"
   },
   {
    "id": "4534C0",
    "script": "4531BC",
    "op": "098 00150000",
    "jp": "おう！望むところだ！{0000}いくぞっ！{00C8}{0010}",
-   "en": ""
+   "en": "Yeah! Bring it on!{0000}Let's go, {00C8}!{0010}"
   },
   {
    "id": "45357A",
    "script": "4531BC",
    "op": "073 0001",
    "jp": "やはり、他のヤツと同じか{0000}勝ち負けにこだわりすぎたな{0010}口だけでなく、心を{0000}たんれんすべし！{0010}みじゅくものめ！{0010}",
-   "en": ""
+   "en": "So you are like the rest after all.{0000}You cared too much about winning.{0010}Train not only your mouth,{0000}but your heart!{0010}Greenhorn!{0010}"
   },
   {
    "id": "45366A",
    "script": "4531BC",
    "op": "073 0001",
    "jp": "あなたは、まだまだつよくなる{0000}死、そして生への考えを{0010}そのままに、がんばりなさい{0000}さらばだ・・・{0010}",
-   "en": ""
+   "en": "You will grow much stronger yet.{0000}Hold on to your thoughts{0010}of death and of life, and{0000}do your best. Farewell...{0010}"
   },
   {
    "id": "4537BC",
    "script": "4531BC",
    "op": "073 0001",
    "jp": "どこかで、扉が開いたようだ{0010}",
-   "en": ""
+   "en": "It seems a door opened somewhere.{0010}"
   },
   {
    "id": "453832",
    "script": "4531BC",
    "op": "073 0001",
    "jp": "また来たのですね{0000}前回の二のまいにならぬよう{0010}心して闘いをするのですよ{0010}では、闘いましょう{0010}",
-   "en": ""
+   "en": "You have come again.{0000}Take care in this fight not{0010}to repeat your last mistake.{0010}Now, let us fight.{0010}"
   },
   {
    "id": "4538A6",
    "script": "4531BC",
    "op": "098 00150000",
    "jp": "おう！望むところだ！{0000}いくぞっ！{00C8}{0010}",
-   "en": ""
+   "en": "Yeah! Bring it on!{0000}Let's go, {00C8}!{0010}"
   },
   {
    "id": "453A54",
    "script": "4539B4",
    "op": "073 0001",
    "jp": "あなたが、{00C8}様ですね{0000}お待ちしておりました{0010}あなたは愛を信じますか{0010}",
-   "en": ""
+   "en": "You must be {00C8}-sama.{0000}I have been waiting for you.{0010}Do you believe in love?{0010}"
   },
   {
    "id": "453AB8",
    "script": "4539B4",
    "op": "036 00000001",
    "jp": "う・・・うん・・・{0010}",
-   "en": ""
+   "en": "Uh... y-yeah...{0010}"
   },
   {
    "id": "453AE6",
    "script": "4539B4",
    "op": "036 00830001",
    "jp": "陰陽は自然を愛し、人間を愛し{0010}そして式神を愛すことから{0000}始まるンです{0010}わかりますか？いえ・・・口で{0000}言ってもわからないものですね{0010}どれほどの愛が必要か{0000}教えて差し上げましょう{0010}では、闘いますよ？{0010}はいっ！{0010}",
-   "en": ""
+   "en": "The Way of Onmyo begins with loving{0010}nature, loving people, and{0000}loving shikigami, it does.{0010}Do you understand? No... it is{0000}not something words can teach.{0010}Allow me to show you how{0000}much love you will need.{0010}Now then, shall we fight?{0010}Hup!{0010}"
   },
   {
    "id": "453C56",
    "script": "4539B4",
    "op": "073 0001",
    "jp": "ほう、愛を少し分かりかけて{0000}いるようですが{0010}ざんねん！{0000}ここまでです{0010}安らかに眠ってください{0010}",
-   "en": ""
+   "en": "Oh, you seem to be starting{0000}to understand love, but{0010}too bad!{0000}This is as far as you go.{0010}Rest in peace.{0010}"
   },
   {
    "id": "453D36",
    "script": "4539B4",
    "op": "073 0001",
    "jp": "なるほど・・・{0000}愛は伝わったようですね・・・{0010}その愛を大切に・・・{0000}前に進んでいってください{0010}さらばです・・・{0010}",
-   "en": ""
+   "en": "I see...{0000}It seems love has reached you...{0010}Cherish that love...{0000}and keep moving forward.{0010}Farewell...{0010}"
   },
   {
    "id": "453E98",
    "script": "4539B4",
    "op": "073 0001",
    "jp": "どこかで、扉が開いたようだ{0010}",
-   "en": ""
+   "en": "It seems a door opened somewhere.{0010}"
   },
   {
    "id": "453F0E",
    "script": "4539B4",
    "op": "073 0001",
    "jp": "いらっしゃい{0000}再び来ると思っていました{0010}愛について闘いで{0000}教えてあげましょう{0010}では、闘いますよ？{0010}はいっ！{0010}",
-   "en": ""
+   "en": "Welcome.{0000}I thought you would return.{0010}Allow me to teach you about{0000}love through battle.{0010}Now then, shall we fight?{0010}Hup!{0010}"
   }
  ]
 }

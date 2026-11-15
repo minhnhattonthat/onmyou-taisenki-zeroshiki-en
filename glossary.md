@@ -158,4 +158,14 @@ Other shikigami and NPC names: Hepburn without macrons, as in `script/str_shikig
   Raiden/Kongo/Rakusai old men ("my boy", "eh"); Itsumu である tic -> "so it is / so I do"; Jaja ぞよ tic -> ", I say";
   Hiyoshino せっちゃ lisp -> "thith one"; Ryukon polite "So sorry"; Kogenta rough ("ya", "trainin'", "the great me").
   Names: カブトオウ Kabuto-O, エレキテル Elekiter, ツイガ黒/赤 Tsuiga Black/Red.
+- b016-b020: 大・降・神 -> "Great-Des-cent" (Koryu's one-time power-up, split like the summon chant); オーブ -> orb,
+  霊玉 -> spirit orb; X のほこら -> "X Sanctum" (Byakko/Genbu/Seiryu/Koryu Sanctum); X の村 -> "X Village";
+  聖獣の祭壇 -> "Sacred Beast Altar" (also the system prompt "Go to the Sacred Beast altar?"); 式神界 -> shikigami
+  realm; 人間界 -> human world; 前「地流」宗家 -> former "Chiryu" Grand Master (Mahoroba); 四聖式神 -> Four Holy
+  Shikigami; 修羅 -> "the path of war" / war demon; 一門のかんばん -> "my school's name"; どこかで、扉が開いたようだ ->
+  "It seems a door opened somewhere."; よくぞ来た -> "So you have come!". Faction names keep their 「」 quotes.
+  Voices: Yakumo friendly mentor (ボク, "Hahaha"); Nazuna cheerful shrine maiden ({00C8}-san, "Here I gooooo!");
+  Gentaro (Kogenta's senior, "little brother in training") gruff-formal, calls the player {00C8}-dono; Koryu old hermit
+  ("Fefefe", "my boy", "eh"); Kotaro solemn; Genbu villager rural ("ain't", "dooo!"); Shiran (シラン = 知らん pun:
+  "Dunno..." / "Shiran", "The world's going to the dogs").
 - Puns: 誇り/埃 (pride/dust) -> "pride" / lion pride; 鯛/恋 quiz kept as "koi"... love (polish candidate).
