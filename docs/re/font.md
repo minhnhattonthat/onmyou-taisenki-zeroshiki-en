@@ -62,9 +62,17 @@ Only three code paths read the 16×16 font:
 | 0x08023621 | strip 0x080235D4(str), 28 cells → [0x0201DE48] (VRAM) | intro scroll | VWF (`STRIP_SRC` strip28), verified |
 | 0x08023E9F | strip 0x08023E3C(str), 30 cells | staff credits | VWF (strip30), verified; only ~240 px of a line shows |
 | 0x0803A1B9 | map line 0x0803A168(x, y, pal, map, [sp] dest, base, str) | name-entry title, name field, kana grid | VWF (mapline: tiles + 2×2 map entries for ceil(w/16) cells), verified |
-| 0x0801417B, 0x080142EB | menus (OBJ tiles 0x06010280) | status / save / shikigami menus | **todo** |
-| 0x08110BF3 | battle results | battle_win, tutorial | **todo** |
-Fixed-cell texts not in this list (status digits, name tags "88"/"B2F4") use other fonts/sprites: still to identify.
+| 0x0801417B | OBJ cells 0x08014098(str, tile index, size 16/8, flag, max): one 16×16 glyph per char into OBJ tiles 0x06010000 + ((index + 4n) & 0x3FF)·32 (1D), ≤ 28 chars; size 8 = small font type 12, 1 tile/char | status / save / shikigami menu labels (~110 callers) | VWF (`STRIP_SRC` menu: size 16 + flag 0 → line plotter over ceil(w/16) cells, returns that count; size 8 / flag ≠ 0 run the original), verified menu_status, menu_shikigami |
+| 0x080142EB | number drawer 0x08014220 (digits) | status numbers | kept: fullwidth digit codes, one per cell |
+| 0x08110BF3 | 0x08110BAC(x, y, pal, map, dest, base, str): twin of the map-line renderer | battle text box (tutorial and every battle message box with 2 rows) | VWF (thunk to `mapline`) |
+| — | caller 0x08110C88 (same args): ≤ 28 bytes → one row, else 28 bytes + rest copied into a 60-byte stack buffer → 2 rows | | replaced (`twoline`): row = up to newline code 0x81AD or 224 px, bounded buffer, row 2 continues, rest dropped. A long English row overran the original's stack buffer and garbled VRAM. Verified tutorial_battle, battle_forest |
+Fixed-cell texts not in this list: status digits (number drawer, above). Battle speaker name tag: drawn through the
+window routine (glyph reads at pcs 0x08002B0A.. with lr 0x08002AC1, `glyphreads.lua` on battle_forest), and it is
+**centred by character count**: with the marker filling the JP's cell width (more characters than the JP), the tag
+starts off the left edge (battle_forest shows "2", tutorial "◯F7"). Next: find the centring code (callers 0x080036D4
+/ 0x08003796 of 0x080029F0, struct 0x02005048) and centre by pixel width.
+Battle wins are RNG-dependent on the marker build (text timing changes the RNG): battle_win lost once and the game
+returned to the title (not a crash).
 The strip/map renderers write VRAM directly: plot by halfword read-modify-write (a byte store lands in both bytes).
 
 - A small 8×8-ish symbol/kana font sits just before the big font (0x1B12D4..0x1B4E74, sweep sheet 283), probably for

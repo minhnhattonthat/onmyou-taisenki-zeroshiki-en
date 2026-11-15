@@ -2,8 +2,9 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 5. Engine spike and marker build, in progress (VWF on 5 of 7 renderers). Last builds 2026-11-16:
-  `build.py` (engine, JP text) sha1 f56ff550…, smoke ok; `build.py --marker` → build/marker.gba sha1 733552a0….
+- **Phase:** 5. Engine spike and marker build, in progress (VWF on all 7 glyph-lookup renderers; width gate next).
+  Last builds 2026-11-16: `build.py` (engine, JP text) sha1 1e81a765…, smoke ok, check ok;
+  `build.py --marker` → build/marker.gba sha1 e537daa1….
 - **Done:**
   - Step 0: ROM pinned (`rom.sha1`), MesenCE 2.2.1 + GBA BIOS in `tools/mesen/`, guard hook in `.claude/settings.json`
     (canary blocked), pre-commit runs `tools/check.py` (a failing test was rejected), boot route `tools/routes/boot.txt`
@@ -47,9 +48,18 @@ Updated at the end of every session. Keep it to what the next session needs; his
     map-line renderer 0x0803A168 (name-entry screen) via one shared `line` plotter (`STRIP_SRC`), all verified in
     shots (`work/qa/wvwf*/c_*.png`). Probes `wincalls.lua` (window calls), `callshot.lua` (shot after a routine
     runs). `vwf._asm` rejects Thumb `adds rd, rn, #imm>7` (keystone mis-encodes it silently).
-- **Next (phase 5):** VWF for the menu renderer 0x0801417B / 0x080142EB (status/save/shikigami, OBJ tiles) and
-  battle results 0x08110BF3; identify the fixed-cell texts outside the lookup list (status digits, name tags
-  "88"/"B2F4" — small font or sprites); then re-tour all 44 scenes on the marker build and measure each variant. (EWRAM 0x0203FF00 checked, 44 scenes, original ROM: never read by
+  - Phase 5 renderers (2026-11-16, third session): VWF on every glyph-lookup caller. OBJ menu cells 0x08014098
+    (`STRIP_SRC` menu, status/shikigami labels verified), battle text 0x08110BAC (→ `mapline`) and its 2-row caller
+    0x08110C88 replaced by `twoline` (split at newline 0x81AD or 224 px; the original's 60-byte stack buffer
+    overflowed on long English). `marker.py`: table strings now fill the JP's cell width (16 px per JP char) with
+    `[id]` + filler, so each field shows its pixel budget (marker ROM grows to 10 MiB: strings relocate).
+    Shots: `work/qa/menu2/`, `work/qa/tb/`; full tour `warp_all.py build/marker.gba --out work/qa/mtour2`:
+    44/44 scenes reached (sheets `work/qa/mtour2/scenes*.png`, not yet reviewed scene by scene).
+- **Next (phase 5):** battle speaker name tag is centred by character count (marker tag starts off-screen:
+  battle_forest, tutorial_battle; `docs/re/font.md`): find the centring (callers 0x080036D4 / 0x08003796 of
+  0x080029F0) and centre by pixel width. Check stray OBJ text over the battle command wheel in battle_forest
+  (`work/qa/tb/z.png`: "quick", "0000" near the wheel; new since the wider markers?). Then measure each variant from
+  `work/qa/mtour2` (EWRAM 0x0203FF00 checked, 44 scenes, original ROM: never read by
   the game, only zero-filled by CpuSet at boot/title (f1, f272, f283, f605); a zeroed VWF state falls back to the
   game's cell position, so it is safe to keep there.) Then:
   check the 0x080144F4 string drawer (battle quotes, `pad` strings, newline 0x81AD) in a battle;
