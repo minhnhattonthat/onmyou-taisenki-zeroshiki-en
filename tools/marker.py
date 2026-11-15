@@ -8,8 +8,8 @@ Rules (build-time only, script/*.json is not touched):
     starts with `[id] `; variable codes ({00C8}...) kept at the end of their line.
   * pad strings (fixed-width lines, the string drawer 0x080144F4): one filled line per JP line, joined by the VWF
     newline code.
-  * other strings: the same number of characters as the JP (other renderers may use fixed cell buffers):
-    `[id]` + filler when the JP has 8+ characters, else the id's last digits.
+  * other strings: filled to the JP's cell width (16 px per JP character; every renderer is VWF): `[id]` + filler
+    when that fits, else the longest tail of the id that fits.
   * SKIP: glyph grids and data-like strings stay Japanese.
 """
 import re
@@ -54,11 +54,12 @@ def string_marker(eid, e):
     if e.get("pad"):
         n = max(1, -(-len(jp) // e["pad"]))
         return "\n".join(fill(f"[{eid}] " if i == 0 else "", LINE_PX) for i in range(n))
-    n = len(jp)
-    if n >= 8:
-        s = f"[{eid}]" + FILLER
-        return s[:n].rstrip() or s[:n]
-    return eid[-n:]
+    px = 16 * len(jp)  # every renderer is VWF now: the field is the JP's cells, 16 px each
+    if enfont.text_width(f"[{eid}]") <= px:
+        return fill(f"[{eid}]", px)
+    for k in range(len(eid), 0, -1):
+        if enfont.text_width(eid[-k:]) <= px or k == 1:
+            return eid[-k:]
 
 
 def markers(files):

@@ -270,6 +270,9 @@ STRIP_ORIG = {  # the glyph-strip line renderers (docs/re/font.md "Renderer cata
     0x0235D4: "f0b581b00549064a89180d68041c0026",  # 0x080235D4(str): 28 cells, intro scroll
     0x023E3C: "f0b581b00649074a89180c68051c0026",  # 0x08023E3C(str): 30 cells, staff credits
     0x03A168: "f0b557464e464546e0b40004060c0904",  # 0x0803A168(x, y, pal, map, dest, base, str): + tile map
+    0x014098: "f0b557464e464546e0b484b0061c0c98",  # 0x08014098(str, tile, size, flag, max): OBJ menu cells
+    0x110BAC: "f0b557464e464546e0b481b000930b9d",  # 0x08110BAC: battle results, same args as 0x0803A168
+    0x110C88: "f0b5474680b492b098461a9c0004050c",  # 0x08110C88: battle text rows, splits at 28 bytes
 }
 
 # Strip renderers copy one whole 16x16 glyph (128 bytes, tiles TL TR BL BR) per character into the buffer
@@ -279,6 +282,8 @@ STRIP_SRC = """
     b strip28
     b strip30
     b mapline
+    b menu
+    b twoline
 strip28:
     movs r2, #28
     b strip
@@ -338,6 +343,142 @@ mdone:
     pop {{r4, r5, r6, r7}}
     pop {{r1}}
     bx r1
+
+@ 0x08014098(str, tile index, size, flag, [sp]=max) -> chars drawn. Size 16 + flag 0 (byte-swapped string): the
+@ game copies one 16x16 glyph per char into OBJ tiles 0x06010000 + ((index + 4n) & 0x3FF) * 32 (1D, TL TR BL BR),
+@ up to 28 chars or n <= max, and returns n. Here only the cells the string's pixel width needs are cleared and
+@ plotted (no more than the JP's n while the English fits n*16 px, the width gate, so neighbouring fields' tiles
+@ stay intact); returns that cell count. The
+@ max argument is not applied: the width lint bounds English. Other modes (8 px font, flag != 0): original code.
+menu:
+    cmp r2, #16
+    bne morig
+    cmp r3, #0
+    bne morig
+    push {{lr}}
+    lsls r1, r1, #22
+    lsrs r1, r1, #17
+    ldr r3, objvram
+    adds r1, r1, r3
+    movs r2, #0
+    bl line
+    adds r0, #15
+    lsrs r0, r0, #4
+    pop {{r1}}
+    bx r1
+morig:
+    push {{r4, r5, r6, r7, lr}}
+    mov r7, sl
+    mov r6, sb
+    mov r5, r8
+    push {{r5, r6, r7}}
+    sub sp, #0x10
+    adds r6, r0, #0
+    ldr r0, [sp, #0x30]
+    push {{r0}}
+    ldr r0, mback
+    mov ip, r0
+    pop {{r0}}
+    bx ip
+
+@ 0x08110C88(x, y, pal, map, [sp]=dest, [sp+4]=base, [sp+8]=str) -> next tile address: battle text box. The game
+@ draws strings of <= 28 bytes on one line, else copies 28 bytes + the rest into a 60-byte stack buffer (a long
+@ English line overran it) and draws them with 0x08110BAC on rows y and y+2. Here each row is the text up to the
+@ newline code or up to 224 px (14 JP cells, so Japanese splits where it did), copied into a bounded buffer, then
+@ drawn by mapline; row 2 continues after the split; anything past row 2 is dropped.
+twoline:
+    push {{r4, r5, r6, r7, lr}}
+    sub sp, #140
+    adds r4, r0, #0
+    adds r5, r1, #0
+    adds r6, r2, #0
+    adds r7, r3, #0
+    ldr r0, [sp, #160]
+    str r0, [sp]
+    ldr r0, [sp, #164]
+    str r0, [sp, #4]
+    add r2, sp, #12
+    str r2, [sp, #8]
+    ldr r1, [sp, #168]
+    bl tl_seg
+    str r0, [sp, #136]
+    adds r0, r4, #0
+    adds r1, r5, #0
+    adds r2, r6, #0
+    adds r3, r7, #0
+    bl mapline
+    ldr r1, [sp, #136]
+    cmp r1, #0
+    beq tl_ret
+    ldrb r2, [r1]
+    cmp r2, #0
+    beq tl_ret
+    str r0, [sp]
+    add r2, sp, #12
+    bl tl_seg
+    adds r0, r4, #0
+    adds r1, r5, #2
+    adds r2, r6, #0
+    adds r3, r7, #0
+    bl mapline
+tl_ret:
+    add sp, #140
+    pop {{r4, r5, r6, r7}}
+    pop {{r1}}
+    bx r1
+
+@ tl_seg(r1 = string, r2 = buffer): copy halfword codes up to NUL, the newline code (skipped) or 224 px into the
+@ buffer (<= 120 bytes + NUL); returns where the next row starts (0 at the end of the string).
+tl_seg:
+    push {{r4, r5, r6}}
+    movs r3, #0
+    movs r6, #0
+ts_loop:
+    ldrb r4, [r1]
+    cmp r4, #0
+    beq ts_end
+    ldrb r5, [r1, #1]
+    lsls r4, r4, #8
+    orrs r4, r5
+    ldr r5, nlcode2
+    cmp r4, r5
+    bne ts_ch
+    adds r1, #2
+    b ts_split
+ts_ch:
+    ldr r5, base
+    subs r4, r4, r5
+    ldr r5, ncodes
+    cmp r4, r5
+    bhs ts_w16
+    ldr r5, widths
+    ldrb r4, [r5, r4]
+    b ts_w
+ts_w16:
+    movs r4, #16
+ts_w:
+    adds r6, r6, r4
+    cmp r6, #224
+    bgt ts_split
+    cmp r3, #120
+    bhs ts_next
+    ldrb r4, [r1]
+    strb r4, [r2, r3]
+    adds r3, #1
+    ldrb r4, [r1, #1]
+    strb r4, [r2, r3]
+    adds r3, #1
+ts_next:
+    adds r1, #2
+    b ts_loop
+ts_end:
+    movs r1, #0
+ts_split:
+    movs r4, #0
+    strb r4, [r2, r3]
+    adds r0, r1, #0
+    pop {{r4, r5, r6}}
+    bx lr
 
 @ line(string, dest, cells): clear `cells` 128-byte cells at dest (0 = as many as the string's width needs), plot
 @ the string across them; returns its width in px.
@@ -529,13 +670,16 @@ k7ec0:  .word 0x7EC0
 k0fff:  .word 0x0FFF
 lookup: .word 0x080059A1
 ftab:   .word 0x084028EC
+nlcode2: .word {nl:#x}
+objvram: .word 0x06010000
+mback:  .word 0x080140A9
 """
 
 
 def strip_code(far, widths_addr):
     addr = 0x08000000 | far
-    src = STRIP_SRC.format(ncodes=NCODES, widths=0x08000000 | widths_addr)
-    return _asm(src, addr), addr, addr + 2, addr + 4
+    src = STRIP_SRC.format(ncodes=NCODES, widths=0x08000000 | widths_addr, nl=enfont.NEWLINE)
+    return _asm(src, addr), addr, addr + 2, addr + 4, addr + 6, addr + 8
 
 
 _IMM3 = re.compile(r"^\s*(adds|subs)\s+(r[0-7]),\s*(r[0-7]),\s*#(0x[0-9a-fA-F]+|\d+)", re.M)
@@ -616,11 +760,14 @@ def install(img, write):
         b = bytes.fromhex(hx)
         assert orig[off:off + len(b)] == b, f"vwf: unexpected bytes at {off:06X}"
     sfar = img.alloc(len(strip_code(0x800000, 0x800000)[0]) + 16)
-    scode, s28, s30, smap = strip_code(sfar, wt_off)
+    scode, s28, s30, smap, smenu, s2line = strip_code(sfar, wt_off)
     write(sfar, scode, "vwf strip code")
     write(0x3A168, thunk(0x3A168, smap), "vwf strip thunk (map line 0x0803A168)")
     write(0x235D4, thunk(0x235D4, s28), "vwf strip thunk (intro scroll)")
     write(0x23E3C, thunk(0x23E3C, s30), "vwf strip thunk (credits)")
+    write(0x14098, thunk(0x14098, smenu), "vwf strip thunk (OBJ menu cells 0x08014098)")
+    write(0x110BAC, thunk(0x110BAC, smap), "vwf strip thunk (battle results 0x08110BAC, map-line twin)")
+    write(0x110C88, thunk(0x110C88, s2line), "vwf strip thunk (battle text rows 0x08110C88)")
     return far
 
 
