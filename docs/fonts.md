@@ -6,3 +6,4 @@ per file; a font with no known licence doesn't go into a release.
 | File | Source (URL, version) | Licence | Redistributable in a patch | Used for | Changes made |
 |---|---|---|---|---|---|
 | tools/enfont.py (`ART`) | drawn for this project (2026-11-16) | same as repo | yes | dialogue VWF, every English glyph in the 16×16 font | outline added by the build |
+| tools/ensmall.py (`ART`) | drawn for this project (2026-11-16) | same as repo | yes | English glyphs in the small 8×8 font (battle name tag VWF, small labels) | drop shadow added by the build |

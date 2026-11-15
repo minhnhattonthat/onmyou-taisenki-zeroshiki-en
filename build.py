@@ -120,11 +120,23 @@ def main():
     ap.add_argument("--relocate-all", action="store_true")
     ap.add_argument("--marker", action="store_true", help="every entry = [id] marker text (tools/marker.py)")
     ap.add_argument("--no-engine", action="store_true", help="leave out the English font + VWF")
+    ap.add_argument("--qa", action="append", default=[], metavar="ID=TEXT",
+                    help="override one entry's en (width-gate stress lines; \\n = newline); output build/qa.gba")
     ap.add_argument("--out", default=None)
     a = ap.parse_args()
     check_rom.check()
     orig = ROM.read_bytes()
     files = marker.markers(textdb.load()) if a.marker else None
+    if a.qa:
+        files = files or textdb.load()
+        qa = dict(q.split("=", 1) for q in a.qa)
+        for entries in files.values():
+            for e in entries:
+                if e["id"] in qa:
+                    e["en"] = qa.pop(e["id"]).replace("\\n", "\n")
+        if qa:
+            raise SystemExit(f"--qa: no entry {', '.join(qa)}")
+        a.out = a.out or str(OUT.with_name("qa.gba"))
     scripts, strings = textdb.overrides(orig, files)
     rom, log = build(orig, relocate=a.relocate_all, scripts=scripts, strings=strings, engine=not a.no_engine)
     a.out = a.out or str(OUT.with_name("marker.gba") if a.marker else OUT)

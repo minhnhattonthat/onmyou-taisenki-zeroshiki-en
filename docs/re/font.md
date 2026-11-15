@@ -66,11 +66,23 @@ Only three code paths read the 16×16 font:
 | 0x080142EB | number drawer 0x08014220 (digits) | status numbers | kept: fullwidth digit codes, one per cell |
 | 0x08110BF3 | 0x08110BAC(x, y, pal, map, dest, base, str): twin of the map-line renderer | battle text box (tutorial and every battle message box with 2 rows) | VWF (thunk to `mapline`) |
 | — | caller 0x08110C88 (same args): ≤ 28 bytes → one row, else 28 bytes + rest copied into a 60-byte stack buffer → 2 rows | | replaced (`twoline`): row = up to newline code 0x81AD or 224 px, bounded buffer, row 2 continues, rest dropped. A long English row overran the original's stack buffer and garbled VRAM. Verified tutorial_battle, battle_forest |
-Fixed-cell texts not in this list: status digits (number drawer, above). Battle speaker name tag: drawn through the
-window routine (glyph reads at pcs 0x08002B0A.. with lr 0x08002AC1, `glyphreads.lua` on battle_forest), and it is
-**centred by character count**: with the marker filling the JP's cell width (more characters than the JP), the tag
-starts off the left edge (battle_forest shows "2", tutorial "◯F7"). Next: find the centring code (callers 0x080036D4
-/ 0x08003796 of 0x080029F0, struct 0x02005048) and centre by pixel width.
+Fixed-cell texts not in this list: status digits (number drawer, above), and the small font (below).
+
+### Small font (resource type 12) and the battle name tag
+Lookup 0x080059A0(12, sjis + 0x7EC0): the resource table 0x08403DA4 (type·8 = index ptr, entries ptr) gives index
+0x3E12FA (0x260 codes, 0x8140..0x839F) and entries 0x3E7ABC; glyph = 32 bytes (one 8x8 4bpp tile, body F, drop
+shadow E right/below) at `[0x084028EC + 0x60]` + entry offset. `vwf.small_glyph_offset`. Users (`tagfind`-style
+probe of every lookup in battle_forest): 0x08110AE8 (BG labels, one tile per char at map column x + i, e.g. the
+hidden "テキをみる" at x 0, y 13 in battle; `linecalls.lua`), 0x08111B50 (name tag), and 0x08014098 size 8.
+**Battle speaker name tag**: 0x0810F984 calls 0x08111B50(tile 0x3DB, str), which writes ≤ 5 glyphs into OBJ tiles
+0x3DB..0x3DF (shown as OBJ 32x8 + 8x8, `tools/debug/oamfind.lua`; tiles 0x3E0+ belong to the next sprite), then
+0x0811B788(str) = byte count n and the tag's x offset = (10 − n)·2 (stored at 0x02013740 with 0x20 + side·0xB0):
+centred by bytes, 8 px a char. Patch (`vwf.py` TAG_SRC, small art `tools/ensmall.py`): 0x08111B50 → `tag`
+(VWF in the small font, clipped to 40 px), 0x0810F98A bl → `tagw` at 0x08111B60 (the dead routine body):
+(pixel width capped at 40, + 2) / 4, so (10 − r)·2 centres by pixels (Japanese: 8 px a char gives the byte count
+back). Verified battle_forest "Kogenta", tutorial_battle "Ryuuko" (`build.py --qa`, `work/qa/tag2/z.png`).
+**Tag budget: 40 px of `ensmall` width.** The window glyph routine 0x080029F0 is NOT the tag (probes
+`winopen.lua` / `wincalls.lua` see only battle messages and the name-entry question there).
 Battle wins are RNG-dependent on the marker build (text timing changes the RNG): battle_win lost once and the game
 returned to the title (not a crash).
 The strip/map renderers write VRAM directly: plot by halfword read-modify-write (a byte store lands in both bytes).

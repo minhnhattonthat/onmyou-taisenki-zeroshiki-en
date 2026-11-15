@@ -22,6 +22,7 @@ import keystone
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import enfont  # noqa: E402
+import ensmall  # noqa: E402
 
 STATE = 0x0203FF00     # 24 bytes of EWRAM: last idx, next x, last buf, x, y, (spare)
 LINE2 = 64             # idx the newline code sets
@@ -676,6 +677,204 @@ mback:  .word 0x080140A9
 """
 
 
+TAG_ORIG = {  # the battle speaker name tag (docs/re/font.md "Battle name tag")
+    0x111B50: "70b581b0051c6801134a85180c1c0026",  # 0x08111B50(tile, str): <= 5 small glyphs into OBJ tiles
+    0x10F98A: "0bf0fdfe",                          # bl 0x0811B788 (byte count) -> tag x offset (10 - n) * 2
+}
+SMALL_N = 0x260   # codes in the small font (0x8140..0x839F)
+
+TAG_SRC = """
+    b tag
+    b tagw
+@ 0x08111B50(r0 = tile index, r1 = str): clear the tag's 5 OBJ tiles (0x06010000 + index * 32, 1D) and plot the
+@ string in the small font (type 12) at variable width (small width table), clipped to 40 px.
+tag:
+    push {{r4, r5, r6, r7, lr}}
+    mov r4, r8
+    mov r5, sb
+    mov r6, sl
+    mov r7, fp
+    push {{r4, r5, r6, r7}}
+    sub sp, #8
+    mov r8, r1
+    lsls r0, r0, #5
+    ldr r1, tobj
+    adds r1, r1, r0
+    mov sb, r1
+    movs r0, #0
+    mov sl, r0
+    str r0, [sp]
+    mov r0, sp
+    ldr r2, tclr
+    svc #0xb
+tloop:
+    mov r0, r8
+    ldrb r4, [r0]
+    cmp r4, #0
+    beq tdone
+    ldrh r4, [r0]
+    adds r0, #2
+    mov r8, r0
+    lsrs r5, r4, #8
+    lsls r4, r4, #24
+    lsrs r4, r4, #16
+    orrs r4, r5
+    ldr r5, tbase
+    subs r5, r4, r5
+    ldr r6, tncodes
+    cmp r5, r6
+    bhs tloop
+    ldr r6, swidths
+    ldrb r6, [r6, r5]
+    cmp r6, #0
+    beq tloop
+    str r6, [sp, #4]
+    ldr r0, tsmalln
+    cmp r5, r0
+    bhs tadv
+    cmp r5, #0
+    beq tadv
+    ldr r1, tk7ec0
+    adds r1, r4, r1
+    lsls r1, r1, #16
+    asrs r1, r1, #16
+    movs r0, #12
+    ldr r3, tlookup
+    bl tcall_r3
+    cmp r0, #0
+    beq tadv
+    ldrh r1, [r0, #8]
+    ldr r2, tk0fff
+    ands r1, r2
+    lsls r1, r1, #16
+    ldrh r2, [r0, #10]
+    adds r1, r1, r2
+    ldr r2, tftab
+    ldr r2, [r2, #0x60]
+    adds r7, r1, r2
+    movs r5, #0
+tyl:
+    movs r6, #0
+tcl:
+    lsrs r0, r6, #1
+    lsls r1, r5, #2
+    adds r0, r0, r1
+    ldrb r2, [r7, r0]
+    movs r1, #1
+    ands r1, r6
+    lsls r1, r1, #2
+    lsrs r2, r1
+    movs r3, #15
+    ands r2, r3
+    beq tnext
+    mov r0, sl
+    adds r0, r0, r6
+    cmp r0, #{tagpx}
+    bge tnext
+    lsrs r4, r0, #3
+    lsls r4, r4, #5
+    lsls r1, r5, #2
+    adds r4, r4, r1
+    movs r1, #7
+    ands r1, r0
+    lsrs r3, r1, #1
+    adds r4, r4, r3
+    add r4, sb
+    movs r3, #1
+    ands r0, r3
+    lsls r0, r0, #2
+    ands r3, r4
+    lsls r3, r3, #3
+    adds r0, r0, r3
+    movs r3, #1
+    bics r4, r3
+    ldrh r3, [r4]
+    lsls r2, r0
+    movs r1, #15
+    lsls r1, r0
+    bics r3, r1
+    orrs r3, r2
+    strh r3, [r4]
+tnext:
+    adds r6, #1
+    cmp r6, #8
+    blt tcl
+    adds r5, #1
+    cmp r5, #8
+    blt tyl
+tadv:
+    ldr r0, [sp, #4]
+    add sl, r0
+    b tloop
+tdone:
+    add sp, #8
+    pop {{r4, r5, r6, r7}}
+    mov r8, r4
+    mov sb, r5
+    mov sl, r6
+    mov fp, r7
+    pop {{r4, r5, r6, r7}}
+    pop {{r0}}
+    bx r0
+tcall_r3:
+    bx r3
+
+@ tagw(r0 = str) -> (small pixel width + 2) / 4, replacing the byte count at 0x0810F98A: the caller puts the tag at
+@ x offset (10 - r0) * 2, so this centres the text by pixels in the 40 px tag (Japanese: 8 px a char = byte count).
+@ Wider text is clipped by `tag`, so the width is capped at 40 px (offset 0).
+tagw:
+    push {{r4, r5, r6}}
+    movs r6, #0
+twl:
+    ldrb r4, [r0]
+    cmp r4, #0
+    beq twe
+    ldrh r4, [r0]
+    adds r0, #2
+    lsrs r5, r4, #8
+    lsls r4, r4, #24
+    lsrs r4, r4, #16
+    orrs r4, r5
+    ldr r5, tbase
+    subs r4, r4, r5
+    ldr r5, tncodes
+    cmp r4, r5
+    bhs twl
+    ldr r5, swidths
+    ldrb r4, [r5, r4]
+    adds r6, r6, r4
+    b twl
+twe:
+    cmp r6, #{tagpx}
+    ble twfit
+    movs r6, #{tagpx}
+twfit:
+    adds r0, r6, #2
+    lsrs r0, r0, #2
+    pop {{r4, r5, r6}}
+    bx lr
+
+    .align 2
+tobj:    .word 0x06010000
+tclr:    .word 0x05000000 | {tagpx}
+tbase:   .word 0x8140
+tncodes: .word {ncodes:#x}
+tsmalln: .word {smalln:#x}
+swidths: .word {swidths:#x}
+tk7ec0:  .word 0x7EC0
+tk0fff:  .word 0x0FFF
+tlookup: .word 0x080059A1
+tftab:   .word 0x084028EC
+"""
+
+
+def tag_code(far, swidths_addr):
+    """Assemble the tag blob at file offset `far`; returns (code, tag entry, tagw entry)."""
+    addr = 0x08000000 | far
+    src = TAG_SRC.format(ncodes=NCODES, smalln=SMALL_N, swidths=0x08000000 | swidths_addr, tagpx=ensmall.TAG_PX)
+    return _asm(src, addr), addr, addr + 2
+
+
 def strip_code(far, widths_addr):
     addr = 0x08000000 | far
     src = STRIP_SRC.format(ncodes=NCODES, widths=0x08000000 | widths_addr, nl=enfont.NEWLINE)
@@ -768,7 +967,36 @@ def install(img, write):
     write(0x14098, thunk(0x14098, smenu), "vwf strip thunk (OBJ menu cells 0x08014098)")
     write(0x110BAC, thunk(0x110BAC, smap), "vwf strip thunk (battle results 0x08110BAC, map-line twin)")
     write(0x110C88, thunk(0x110C88, s2line), "vwf strip thunk (battle text rows 0x08110C88)")
+    for off, hx in TAG_ORIG.items():
+        b = bytes.fromhex(hx)
+        assert orig[off:off + len(b)] == b, f"vwf: unexpected bytes at {off:06X}"
+    for ch, code in enfont.CODES.items():
+        if ch != " ":
+            write(small_glyph_offset(orig, code), ensmall.glyph(ch), f"small font {ch!r}")
+    swt = ensmall.widths(NCODES)
+    swt_off = img.alloc(len(swt))
+    write(swt_off, swt, "vwf small widths")
+    tfar = img.alloc(len(tag_code(0x800000, 0x800000)[0]) + 16)
+    tcode, ttag, ttagw = tag_code(tfar, swt_off)
+    write(tfar, tcode, "vwf tag code")
+    write(0x111B50, thunk(0x111B50, ttag), "vwf tag thunk (name tag 0x08111B50)")
+    write(0x111B60, thunk(0x111B60, ttagw), "vwf tagw thunk (in the replaced routine's body)")
+    write(0x10F98A, bl(0x0810F98A, 0x08111B60), "vwf tag centring: pixel width")
     return far
+
+
+def small_glyph_offset(rom, code):
+    """ROM offset of the small font's (resource type 12) 32-byte glyph for Shift-JIS `code`, or None."""
+    rt = 0x403DA4 + 12 * 8
+    index, entries = (struct.unpack_from("<I", rom, rt + k)[0] & 0x1FFFFFF for k in (0, 4))
+    i = code - 0x8140
+    if not 0 <= i < SMALL_N:
+        return None
+    slot = struct.unpack_from("<h", rom, index + 8 + 2 * i)[0]
+    if slot < 0:
+        return None
+    h8, h10 = struct.unpack_from("<HH", rom, entries + slot * 2 + 8)
+    return (struct.unpack_from("<I", rom, 0x4028EC + 0x60)[0] & 0x1FFFFFF) + ((h8 & 0xFFF) << 16) + h10
 
 
 if __name__ == "__main__":
