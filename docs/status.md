@@ -2,8 +2,8 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 5. Engine spike and marker build (phase 4 extract done 2026-11-16). Last build: from script/*.json with
-  no `en`, sha1 47b04f67… = original, smoke ok.
+- **Phase:** 5. Engine spike and marker build, in progress (dialogue VWF works in-game). Last builds 2026-11-16:
+  `build.py` (engine, JP text) sha1 22cabf13…, smoke ok; `build.py --marker` → build/marker.gba sha1 44e7247e….
 - **Done:**
   - Step 0: ROM pinned (`rom.sha1`), MesenCE 2.2.1 + GBA BIOS in `tools/mesen/`, guard hook in `.claude/settings.json`
     (canary blocked), pre-commit runs `tools/check.py` (a failing test was rejected), boot route `tools/routes/boot.txt`
@@ -29,11 +29,20 @@ Updated at the end of every session. Keep it to what the next session needs; his
     JSON in sync with the ROM, every entry re-encodes to its bytes, ids = every run + string, no uncovered text-like
     run ROM-wide (`textdb.py coverage`), `en`=`jp` rebuilds the original, stale `jp` refused, dump keeps `en`.
     Findings in `docs/re/text.md` "Extracted text" (gaiji map: Cyrillic codes 0x8440.. = level-2 kanji).
-- **Next (phase 5, engine spike + marker build):** font/VWF decision (16 px fixed cells, 14 chars/line, no ASCII:
-  `docs/re/font.md`); an English encoding for `en` (today `en` goes through cp932 like `jp`); widen the 5-cell
-  shikigami-name copy; marker build (`[id] text` in every entry) toured with the warp scenes; find code-built or
-  base+immediate strings (Japanese that stays in the marker build); identify `str_battle_kanji`; English name-entry
-  grid; width gate per box variant (dialogue, battle quotes `pad` 14, help 21, menus).
+  - Phase 5 so far: English font `tools/enfont.py` (93 own glyphs over the fullwidth Shift-JIS codes, encoder
+    `encode_en` used by `textdb.overrides`), dialogue VWF `tools/vwf.py` (keystone; installed by `build.py`, off
+    with `--no-engine` and in the identity tests), marker text `tools/marker.py` (`build.py --marker`). Proven on
+    intro_event: `[4376A8] The quick brown fox…` drawn proportionally, 2 lines, pages. Helpers `tools/font.py`
+    (glyph lookup/show), `tools/litref.py` (who loads a literal). Details: `docs/re/font.md`.
+- **Next (phase 5):** tour the marker build over all 44 warp scenes (`tools/debug/warp_all.py build/marker.gba`)
+  and list each box variant + renderer; renderers still on fixed 16 px cells need VWF/width work: speaker name tag
+  (`4050` shown = a string-table name), intro scroll (vertical), battle/menu text not yet seen; check the
+  0x080144F4 string drawer (battle quotes, `pad` strings, newline 0x81AD) in a battle; verify EWRAM 0x0203FF00 is
+  never used by the game (watch it over the warp tour); widen the 5-cell shikigami-name copy; find code-built
+  or base+immediate strings (Japanese that stays in the marker build; `jp_left.py` on build/marker.gba);
+  identify `str_battle_kanji`; English name-entry grid; width gate per box variant (dialogue measured as
+  x 8..232 = 224 px, last-column check pending; battle quotes, help 21, menus) recorded in a window-data file the
+  lint will read; glyph torture line; add tests for enfont/vwf/marker (encode, widths table, ORIG asserts).
 - **Known limits of the warp:** event scenes run over map 23 (the house) unless the script changes map itself
   (`map=` per scene overrides); which map normally hosts each event is not mapped yet (NPCs come from `/116`
   entries in map scripts 8000+). No GOD/NOENC yet (battles: mash wins; `poke=` for HP).

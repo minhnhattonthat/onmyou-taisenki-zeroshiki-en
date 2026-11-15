@@ -3,7 +3,7 @@
 Skill: translate-retro-game (Claude Code: plugin, enabled in .claude/settings.json; other agents: `<SKILL_DIR>/SKILL.md`). `python tools/skill.py` prints its folder; `"$(python tools/skill.py)"` works in bash and PowerShell; never paste a `plugins/cache/<hash>` path. Read its SKILL.md before ROM, text or QA work.
 
 ## Commands (run from repo root)
-- Build:    `python -X utf8 build.py` -> build/onmyou_zeroshiki_en.gba (checks the dump against `rom.sha1` first; `--relocate-all` = pointer stress build)
+- Build:    `python -X utf8 build.py` -> build/onmyou_zeroshiki_en.gba (checks the dump against `rom.sha1` first; `--relocate-all` = pointer stress build; `--marker` = `[id]` marker text → build/marker.gba; English font + VWF always on unless `--no-engine`)
 - Text:     `python -X utf8 tools/textdb.py dump|stats|coverage` (script/*.json; dump writes missing files only, `--force` keeps `en`)
 - Check:    `python -X utf8 tools/check.py` (tests + lint; the pre-commit hook runs this; needs `pip install pytest`)
 - Smoke:    `python -X utf8 "$(python tools/skill.py)/scripts/emu.py" build/onmyou_zeroshiki_en.gba --out work/qa/smoke --route tools/routes/boot.txt --smoke`

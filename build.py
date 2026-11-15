@@ -21,7 +21,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / "tools"))
 import check_rom  # noqa: E402
+import enfont  # noqa: E402
 import evscript  # noqa: E402
+import font  # noqa: E402
+import marker  # noqa: E402
+import vwf  # noqa: E402
 import strtab  # noqa: E402
 import textdb  # noqa: E402
 
@@ -81,9 +85,20 @@ def place(img, start, data, room, refs, who, relocate, slot_refs=()):
     return new
 
 
-def build(orig, relocate=False, scripts=None, strings=None):
-    """Return (rom bytes, write log). scripts/strings: optional {offset: tokens} / {offset: bytes} overrides."""
+def install_engine(img):
+    """English font glyphs over the fullwidth codes (tools/enfont.py) + the dialogue VWF (tools/vwf.py)."""
+    for ch, code in enfont.CODES.items():
+        if ch != " ":
+            img.write(font.glyph_offset(img.orig, code), font.encode(enfont.glyph(ch)), f"font {ch!r}")
+    vwf.install(img, img.write)
+
+
+def build(orig, relocate=False, scripts=None, strings=None, engine=False):
+    """Return (rom bytes, write log). scripts/strings: optional {offset: tokens} / {offset: bytes} overrides.
+    engine: install the English font + VWF (off for the identity tests)."""
     img = Image(orig)
+    if engine:
+        install_engine(img)
     sc = evscript.Scripts(orig)
     for off, toks in sorted(sc.scripts.items()):
         if off not in sc.refs:
@@ -103,12 +118,16 @@ def build(orig, relocate=False, scripts=None, strings=None):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--relocate-all", action="store_true")
-    ap.add_argument("--out", default=str(OUT))
+    ap.add_argument("--marker", action="store_true", help="every entry = [id] marker text (tools/marker.py)")
+    ap.add_argument("--no-engine", action="store_true", help="leave out the English font + VWF")
+    ap.add_argument("--out", default=None)
     a = ap.parse_args()
     check_rom.check()
     orig = ROM.read_bytes()
-    scripts, strings = textdb.overrides(orig)
-    rom, log = build(orig, relocate=a.relocate_all, scripts=scripts, strings=strings)
+    files = marker.markers(textdb.load()) if a.marker else None
+    scripts, strings = textdb.overrides(orig, files)
+    rom, log = build(orig, relocate=a.relocate_all, scripts=scripts, strings=strings, engine=not a.no_engine)
+    a.out = a.out or str(OUT.with_name("marker.gba") if a.marker else OUT)
     out = Path(a.out)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_bytes(rom)

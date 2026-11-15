@@ -27,6 +27,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import enfont  # noqa: E402
 import evscript  # noqa: E402
 import strtab  # noqa: E402
 
@@ -255,14 +256,14 @@ def overrides(d, files=None):
                 if off not in st.strings or decode_str(st.strings[off]) != e["jp"]:
                     raise ValueError(f"{name} {e['id']}: jp doesn't match the ROM (re-dump?)")
                 if e["en"]:
-                    strings[off] = encode_str(e["en"])
+                    strings[off] = encode_str(enfont.encode_en(e["en"], string_table=True))
             else:
                 if e["id"] not in where or where[e["id"]][2] != e["jp"]:
                     raise ValueError(f"{name} {e['id']}: jp doesn't match the ROM (re-dump?)")
                 if e["en"]:
                     script, i, _ = where[e["id"]]
                     toks = scripts.setdefault(script, list(sc.scripts[script]))
-                    toks[i] = ("text", e["en"])
+                    toks[i] = ("text", enfont.encode_en(e["en"]))
     return scripts, strings
 
 
