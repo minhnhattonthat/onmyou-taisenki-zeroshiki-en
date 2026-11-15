@@ -4,7 +4,7 @@
   {
    "id": "12BDC8",
    "jp": "この私に立ち向かうとは　　　面白い！",
-   "en": "",
+   "en": "You dare stand against me?\nHow amusing!",
    "max": 40,
    "pad": 14,
    "ptrs": 3
@@ -12,7 +12,7 @@
   {
    "id": "12BDF0",
    "jp": "この私に勝てると　　　　　　思っているのか？",
-   "en": "",
+   "en": "You think you can\nbeat me?",
    "max": 48,
    "pad": 14,
    "ptrs": 3
@@ -20,775 +20,775 @@
   {
    "id": "12BE20",
    "jp": "我は負けぬ！",
-   "en": "",
+   "en": "I shall not lose!",
    "max": 16
   },
   {
    "id": "12BE30",
    "jp": "この勝負、誰にもゆずらぬ",
-   "en": "",
+   "en": "I yield this match to no one.",
    "max": 28
   },
   {
    "id": "12BE4C",
    "jp": "勝負は勝たなきゃな",
-   "en": "",
+   "en": "A match is for winnin'!",
    "max": 20
   },
   {
    "id": "12BE60",
    "jp": "さて、どうしてくれようか",
-   "en": "",
+   "en": "Now, what shall I do with you?",
    "max": 28
   },
   {
    "id": "12BE7C",
    "jp": "ファンキーでいきましょう",
-   "en": "",
+   "en": "Let's keep it funky!",
    "max": 28
   },
   {
    "id": "12BE98",
    "jp": "わしゃノリノリですよ",
-   "en": "",
+   "en": "This old-timer's all fired up!",
    "max": 24
   },
   {
    "id": "12BEB0",
    "jp": "ここはオレにまかせてくれ！",
-   "en": "",
+   "en": "Leave this one to me!",
    "max": 28
   },
   {
    "id": "12BECC",
    "jp": "勝負のときが来たか…",
-   "en": "",
+   "en": "So the time for battle has come...",
    "max": 24
   },
   {
    "id": "12BEE4",
    "jp": "明るく行こうぜ",
-   "en": "",
+   "en": "Let's keep it upbeat!",
    "max": 16
   },
   {
    "id": "12BEF4",
    "jp": "おいらの名を覚えさせてやるよ",
-   "en": "",
+   "en": "I'll make ya remember my name!",
    "max": 32
   },
   {
    "id": "12BF14",
    "jp": "我にまかすぞよ",
-   "en": "",
+   "en": "Leave it to me, I say.",
    "max": 16
   },
   {
    "id": "12BF24",
    "jp": "行くぞよ　みなの衆",
-   "en": "",
+   "en": "Onward, everyone, I say!",
    "max": 20
   },
   {
    "id": "12BF38",
    "jp": "すみませんねぇ…　　　　　　０．１秒遅れちゃいました",
-   "en": "",
+   "en": "So sorry...\nI was 0.1 seconds late.",
    "max": 56,
    "pad": 14
   },
   {
    "id": "12BF70",
    "jp": "先手必勝ですよ",
-   "en": "",
+   "en": "Strike first, win first!",
    "max": 16
   },
   {
    "id": "12BF80",
    "jp": "決着をつけましょう",
-   "en": "",
+   "en": "Let's settle this.",
    "max": 20
   },
   {
    "id": "12BF94",
    "jp": "私におまかせあれ！",
-   "en": "",
+   "en": "Leave it to me!",
    "max": 20
   },
   {
    "id": "12BFA8",
    "jp": "さあっ！指示をたのむ",
-   "en": "",
+   "en": "Come on! Give me orders!",
    "max": 24
   },
   {
    "id": "12BFC0",
    "jp": "この時を待っていた",
-   "en": "",
+   "en": "I've been waiting for this.",
    "max": 20
   },
   {
    "id": "12BFD4",
    "jp": "楽しそうですねぇ",
-   "en": "",
+   "en": "This looks like fun.",
    "max": 20
   },
   {
    "id": "12BFE8",
    "jp": "お呼びですか？",
-   "en": "",
+   "en": "You called?",
    "max": 16
   },
   {
    "id": "12BFF8",
    "jp": "よくぞせっちゃを召喚した　　ほめて使わす",
-   "en": "",
+   "en": "Well done thummoning thith one.\nYou have my praise.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12C024",
    "jp": "せっちゃが斬る！　　　　　　ってゆーか刺す！",
-   "en": "",
+   "en": "Thith one shall thlash!\nOr, like, thtab!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12C054",
    "jp": "どんな相手でも全力を尽くす",
-   "en": "",
+   "en": "I give my all, whoever the foe.",
    "max": 28
   },
   {
    "id": "12C070",
    "jp": "楓族の誇りにかけて闘おう",
-   "en": "",
+   "en": "I fight on the pride of the Maple clan.",
    "max": 28
   },
   {
    "id": "12C08C",
    "jp": "気持ちなら誰にも負けないわ",
-   "en": "",
+   "en": "Nobody beats me when it comes to heart!",
    "max": 28
   },
   {
    "id": "12C0A8",
    "jp": "私があなたを守るわ！",
-   "en": "",
+   "en": "I'll protect you!",
    "max": 24
   },
   {
    "id": "12C0C0",
    "jp": "さあっ！いくである！",
-   "en": "",
+   "en": "Come on! Let's go, so I do!",
    "max": 24
   },
   {
    "id": "12C0D8",
    "jp": "わしが白黒つけるである",
-   "en": "",
+   "en": "I'll settle this, so I will.",
    "max": 24
   },
   {
    "id": "12C0F0",
    "jp": "本当の闘いを見せてあげる",
-   "en": "",
+   "en": "I'll show you a real fight.",
    "max": 28
   },
   {
    "id": "12C10C",
    "jp": "さあっ！私についておいで！",
-   "en": "",
+   "en": "Come on! Follow my lead!",
    "max": 28
   },
   {
    "id": "12C128",
    "jp": "おっ！？仕事かい？",
-   "en": "",
+   "en": "Oh!? Got a job for me?",
    "max": 20
   },
   {
    "id": "12C13C",
    "jp": "おいら、しっかり働くぜ！",
-   "en": "",
+   "en": "I'm gonna work real hard!",
    "max": 28
   },
   {
    "id": "12C158",
    "jp": "敵は向こうか…",
-   "en": "",
+   "en": "So the foe's over there...",
    "max": 16
   },
   {
    "id": "12C168",
    "jp": "オレがやる！",
-   "en": "",
+   "en": "I'll do it!",
    "max": 16
   },
   {
    "id": "12C178",
    "jp": "軽くひねってしんぜよう",
-   "en": "",
+   "en": "Allow me to twist them lightly.",
    "max": 24
   },
   {
    "id": "12C190",
    "jp": "さて、どんな闘いになるかな？",
-   "en": "",
+   "en": "Now, what kind of fight will this be?",
    "max": 32
   },
   {
    "id": "12C1B0",
    "jp": "ジャマなヤツはどいつだ？",
-   "en": "",
+   "en": "Who's the one in my way?",
    "max": 28
   },
   {
    "id": "12C1CC",
    "jp": "オレが淘汰してやる！",
-   "en": "",
+   "en": "I'll weed 'em out!",
    "max": 24
   },
   {
    "id": "12C1E4",
    "jp": "さっさと終わらせましょう",
-   "en": "",
+   "en": "Let's wrap this up quickly.",
    "max": 28
   },
   {
    "id": "12C200",
    "jp": "気楽にいきましょう",
-   "en": "",
+   "en": "Let's take it easy.",
    "max": 20
   },
   {
    "id": "12C214",
    "jp": "モタモタすんな！行くぜ！",
-   "en": "",
+   "en": "Quit dawdlin'! Let's go!",
    "max": 28
   },
   {
    "id": "12C230",
    "jp": "オレにまかせろ！",
-   "en": "",
+   "en": "Leave it to me!",
    "max": 20,
    "ptrs": 2
   },
   {
    "id": "12C244",
    "jp": "積年の力を使うときが　　　　来たようじゃ",
-   "en": "",
+   "en": "It seems the time has come\nto use the strength of my years.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12C270",
    "jp": "おまえさんの腕を　　　　　　見せてもらおうかの",
-   "en": "",
+   "en": "Let's see what you're\nmade of, eh?",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12C2A0",
    "jp": "やったろうじゃねぇか",
-   "en": "",
+   "en": "Bring it on, then!",
    "max": 24
   },
   {
    "id": "12C2B8",
    "jp": "めんどうだが、しかたがねぇな",
-   "en": "",
+   "en": "What a pain, but\nI guess I got no choice.",
    "max": 32
   },
   {
    "id": "12C2D8",
    "jp": "ボクを応援してね！",
-   "en": "",
+   "en": "Cheer me on, okay?",
    "max": 20
   },
   {
    "id": "12C2EC",
    "jp": "元気いっぱい、いくよー！",
-   "en": "",
+   "en": "Full of energy, here I go!",
    "max": 28
   },
   {
    "id": "12C308",
    "jp": "わしが極刑を与えてくれるわ！",
-   "en": "",
+   "en": "I shall hand down the ultimate penalty!",
    "max": 32
   },
   {
    "id": "12C328",
    "jp": "汝の罪、わしが裁いてくれよう",
-   "en": "",
+   "en": "Your sins, I shall judge them!",
    "max": 32
   },
   {
    "id": "12C348",
    "jp": "さあっ！私の闘いを　　　　　見てらっしゃい！",
-   "en": "",
+   "en": "Come on!\nWatch me fight!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12C378",
    "jp": "ファンの皆様　　　　　　　　お待たせしました！",
-   "en": "",
+   "en": "To all my fans:\nsorry to keep you waiting!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12C3A8",
    "jp": "年寄りだからって　　　　　　ナメんじゃねぇ",
-   "en": "",
+   "en": "Don't go lookin' down on me\njust 'cause I'm old!",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12C3D4",
    "jp": "ちっ…ヒヨっ子どもが…",
-   "en": "",
+   "en": "Tch... A bunch of greenhorns...",
    "max": 24
   },
   {
    "id": "12C3EC",
    "jp": "戦場で花を開かせてやろう",
-   "en": "",
+   "en": "I'll make flowers bloom on the battlefield.",
    "max": 28
   },
   {
    "id": "12C408",
    "jp": "わしが神風を吹かせてやる",
-   "en": "",
+   "en": "I shall raise a divine wind!",
    "max": 28
   },
   {
    "id": "12C424",
    "jp": "オレが楽しい祭りにしてやるぜ",
-   "en": "",
+   "en": "I'll turn this into a fun festival!",
    "max": 32
   },
   {
    "id": "12C444",
    "jp": "やあっまた会ったな！",
-   "en": "",
+   "en": "Hey! We meet again!",
    "max": 24
   },
   {
    "id": "12C45C",
    "jp": "敵さんもあわれどすなあ…",
-   "en": "",
+   "en": "I do pity our foes, dear...",
    "max": 28
   },
   {
    "id": "12C478",
    "jp": "わらわが勝つよう祈りなはれ",
-   "en": "",
+   "en": "Pray that I win, dear.",
    "max": 28
   },
   {
    "id": "12C494",
    "jp": "ヘイヘイ！　　　　　　　　　オレにまかせなって！",
-   "en": "",
+   "en": "Hey hey!\nJust leave it to me!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12C4C8",
    "jp": "ケンカ上等！",
-   "en": "",
+   "en": "Bring on the brawl!",
    "max": 16
   },
   {
    "id": "12C4D8",
    "jp": "さあっ！おまえの　　　　　　望みに応えようぞ",
-   "en": "",
+   "en": "Come! I shall answer\nyour every wish.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12C508",
    "jp": "わらわが悪夢を　　　　　　　見せてくれようぞ",
-   "en": "",
+   "en": "I shall show them\na nightmare.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12C538",
    "jp": "わしが滅殺してくれようぞ",
-   "en": "",
+   "en": "I'll wipe them out, I will.",
    "max": 28
   },
   {
    "id": "12C554",
    "jp": "ククク…血がたぎるわ…",
-   "en": "",
+   "en": "Hehehe... My blood is boiling...",
    "max": 24
   },
   {
    "id": "12C56C",
    "jp": "あら？お呼びかしら？",
-   "en": "",
+   "en": "Oh? Did you call for me?",
    "max": 24
   },
   {
    "id": "12C584",
    "jp": "うふふ…私は安くないわよ",
-   "en": "",
+   "en": "Ufufu... I don't come cheap.",
    "max": 28
   },
   {
    "id": "12C5A0",
    "jp": "さあっ！ビシッと行くよ！",
-   "en": "",
+   "en": "Come on! Let's go in sharp!",
    "max": 28
   },
   {
    "id": "12C5BC",
    "jp": "あたいにまかせな！",
-   "en": "",
+   "en": "Leave it to me!",
    "max": 20
   },
   {
    "id": "12C5D0",
    "jp": "ボク…がんばるよ",
-   "en": "",
+   "en": "I... I'll do my best.",
    "max": 20
   },
   {
    "id": "12C5E4",
    "jp": "あのね…ヨロシクね",
-   "en": "",
+   "en": "Um... Nice to meet you.",
    "max": 20
   },
   {
    "id": "12C5F8",
    "jp": "ボクの活躍を見ててよ",
-   "en": "",
+   "en": "Watch me do my stuff!",
    "max": 24
   },
   {
    "id": "12C610",
    "jp": "オッケー！ボクの出番だね！",
-   "en": "",
+   "en": "Okay! It's my turn!",
    "max": 28
   },
   {
    "id": "12C62C",
    "jp": "奥歯ガタガタいわしたるわ！",
-   "en": "",
+   "en": "I'll rattle yer back teeth loose!",
    "max": 28
   },
   {
    "id": "12C648",
    "jp": "敵はどこじゃあああ！！",
-   "en": "",
+   "en": "Where's the enemyyyy!!",
    "max": 24
   },
   {
    "id": "12C660",
    "jp": "この私の闘いに　　　　　　　ついてこられるかな？",
-   "en": "",
+   "en": "Can you keep up\nwith the way I fight?",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12C694",
    "jp": "私がお前に勝利を与えてやろう",
-   "en": "",
+   "en": "I shall grant you victory.",
    "max": 32
   },
   {
    "id": "12C6B4",
    "jp": "いっちょ！おいらがもんだるか",
-   "en": "",
+   "en": "All right! Lemme give 'em a go!",
    "max": 32
   },
   {
    "id": "12C6D4",
    "jp": "よっしゃ！やったるでー！",
-   "en": "",
+   "en": "All right! Let's do this!",
    "max": 28
   },
   {
    "id": "12C6F0",
    "jp": "鼓動が聞こえる…　　　　　　敵はあっちだな",
-   "en": "",
+   "en": "I can hear a heartbeat...\nThe foe is that way.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12C71C",
    "jp": "血が…さわぐ…",
-   "en": "",
+   "en": "My blood... is stirring...",
    "max": 16
   },
   {
    "id": "12C72C",
    "jp": "そちゅの能力　　　　　　　　期待してまちゅよ",
-   "en": "",
+   "en": "I'm expecting great thingz\nfrom youz abilitiez.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12C75C",
    "jp": "頭脳戦では負けないでちゅ",
-   "en": "",
+   "en": "I won't lose a battle of wits, it iz.",
    "max": 28
   },
   {
    "id": "12C778",
    "jp": "出番だね！いつでもいいよ！",
-   "en": "",
+   "en": "My turn, huh! Ready when you are!",
    "max": 28
   },
   {
    "id": "12C794",
    "jp": "まあ　ボクにまかせてよ",
-   "en": "",
+   "en": "Well, just leave it to me.",
    "max": 24
   },
   {
    "id": "12C7AC",
    "jp": "精一杯、闘わせて　　　　　　いただきますぞ",
-   "en": "",
+   "en": "Permit me to fight\nwith all my might.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12C7D8",
    "jp": "わたしをお呼びになるとは　　ありがたき幸せ",
-   "en": "",
+   "en": "To be called upon by you\nis my greatest honor.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12C804",
    "jp": "ジブンが闘うであります！",
-   "en": "",
+   "en": "I shall fight, sir!",
    "max": 28
   },
   {
    "id": "12C820",
    "jp": "ご主人！お呼びでしょうか？",
-   "en": "",
+   "en": "Master! Did you call?",
    "max": 28
   },
   {
    "id": "12C83C",
    "jp": "どっこらせっと！　　　　　　空がまぶしいのぅ",
-   "en": "",
+   "en": "Hup, there we go!\nMy, the sky is bright, eh.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12C86C",
    "jp": "どれどれ…　　　　　　　　　敵さんはどちらかな？",
-   "en": "",
+   "en": "Let's see now...\nWhere might the foe be?",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12C8A0",
    "jp": "オレの出番だな！",
-   "en": "",
+   "en": "My turn, huh!",
    "max": 20
   },
   {
    "id": "12C8B4",
    "jp": "この翼にかけて必ず勝つ！",
-   "en": "",
+   "en": "On my wings, I swear I'll win!",
    "max": 28
   },
   {
    "id": "12C8D0",
    "jp": "おらおらー！行くどー！",
-   "en": "",
+   "en": "Hey hey hey! Here I come!",
    "max": 24
   },
   {
    "id": "12C8E8",
    "jp": "おらが蹴散らしてやるっしょ！",
-   "en": "",
+   "en": "I'll scatter 'em, y'know!",
    "max": 32
   },
   {
    "id": "12C908",
    "jp": "情けはいりません　　　　　　一気に倒しましょう",
-   "en": "",
+   "en": "No mercy is needed.\nLet's defeat them in one go.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12C938",
    "jp": "やはり闘わねばならぬのか",
-   "en": "",
+   "en": "So I must fight after all...",
    "max": 28
   },
   {
    "id": "12C954",
    "jp": "この勝負…　　　　　　　　　拙者がもらいうけた！",
-   "en": "",
+   "en": "This match...\nthis one shall claim!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12C988",
    "jp": "いざ尋常に勝負！",
-   "en": "",
+   "en": "Let us fight fair and square!",
    "max": 20
   },
   {
    "id": "12C99C",
    "jp": "よいしょっと！　　　　　　　敵はあっちかい？",
-   "en": "",
+   "en": "Hup-pa!\nIs the foe that way?",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12C9CC",
    "jp": "おいらの出番だいっ！",
-   "en": "",
+   "en": "It's my turn!",
    "max": 24
   },
   {
    "id": "12C9E4",
    "jp": "あっしが仕留めて　　　　　　やりましょう",
-   "en": "",
+   "en": "I'll finish 'em off\nfor ya.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12CA10",
    "jp": "お呼びですかい？だんな",
-   "en": "",
+   "en": "You called, boss?",
    "max": 24
   },
   {
    "id": "12CA28",
    "jp": "どお？このポーズ決まってた？",
-   "en": "",
+   "en": "Well? Did I nail that pose?",
    "max": 32
   },
   {
    "id": "12CA48",
    "jp": "ボクの美しい闘いを　　　　　見せてあげるよ",
-   "en": "",
+   "en": "I'll show you my\nbeautiful way of fighting.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12CA74",
    "jp": "この勝負…先が見えたな",
-   "en": "",
+   "en": "This match... I can see the end.",
    "max": 24
   },
   {
    "id": "12CA8C",
    "jp": "フッ　倒してやるさ！",
-   "en": "",
+   "en": "Heh. I'll take 'em down!",
    "max": 24
   },
   {
    "id": "12CAA4",
    "jp": "Ｈｅｙ！　オレにまかせな！",
-   "en": "",
+   "en": "Hey! Leave it to me!",
    "max": 28
   },
   {
    "id": "12CAC0",
    "jp": "Ｙｏ！　オレを呼んだか？",
-   "en": "",
+   "en": "Yo! You called me?",
    "max": 28
   },
   {
    "id": "12CADC",
    "jp": "あちきがやってやるよ！",
-   "en": "",
+   "en": "I'll handle this!",
    "max": 24
   },
   {
    "id": "12CAF4",
    "jp": "ちっとは　楽しめそうだねぇ",
-   "en": "",
+   "en": "Looks like I might have\na little fun.",
    "max": 28
   },
   {
    "id": "12CB10",
    "jp": "へへ　オレにまかせな！",
-   "en": "",
+   "en": "Heh, leave it to me!",
    "max": 24,
    "ptrs": 2
   },
   {
    "id": "12CB28",
    "jp": "よっしゃあ！オレの出番だぜ！",
-   "en": "",
+   "en": "All right! My turn!",
    "max": 32,
    "ptrs": 2
   },
   {
    "id": "12CB48",
    "jp": "私がコテンパンにしてあげる！",
-   "en": "",
+   "en": "I'll beat them to a pulp!",
    "max": 32
   },
   {
    "id": "12CB68",
    "jp": "わーい！いっしょに闘おうね！",
-   "en": "",
+   "en": "Yay! Let's fight together!",
    "max": 32
   },
   {
    "id": "12CB88",
    "jp": "あら？今度は　　　　　　　　どんな敵を診るのかしら？",
-   "en": "",
+   "en": "Oh? What kind of foe\nwill I examine this time?",
    "max": 56,
    "pad": 14
   },
   {
    "id": "12CBC0",
    "jp": "うふふ…　　　　　　　　　　優しくしてちょうだいね",
-   "en": "",
+   "en": "Ufufu...\nPlease be gentle with me.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12CBF4",
    "jp": "楓族の名にかけて　　　　　　敵を倒しましょう",
-   "en": "",
+   "en": "On the name of the Maple clan,\nlet's defeat the foe.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12CC24",
    "jp": "主君をあだなす　　　　　　　そなたを許しませぬ！",
-   "en": "",
+   "en": "You who would harm my lord,\nI shall not forgive you!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12CC58",
    "jp": "敵の命運もここで尽きましょう",
-   "en": "",
+   "en": "Our foe's luck runs out here.",
    "max": 32
   },
   {
    "id": "12CC78",
    "jp": "お待ち申しておりました",
-   "en": "",
+   "en": "I have been awaiting you.",
    "max": 24
   },
   {
    "id": "12CC90",
    "jp": "おいがたたきつぶすでごわす！",
-   "en": "",
+   "en": "I'll crush 'em flat, lad!",
    "max": 32
   },
   {
    "id": "12CCB0",
    "jp": "おいがごっついのを　　　　　食らわしたる！",
-   "en": "",
+   "en": "I'll give 'em a real\nwallop, I reckon!",
    "max": 44,
    "pad": 14,
    "ptrs": 2
@@ -796,130 +796,130 @@
   {
    "id": "12CCDC",
    "jp": "やっとあたいの　　　　　　　見せ場が来たんだね！",
-   "en": "",
+   "en": "Finally, my chance\nto show off!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12CD10",
    "jp": "やっぱ自由って気持ちいい～！",
-   "en": "",
+   "en": "Freedom sure feels good~!",
    "max": 32
   },
   {
    "id": "12CD30",
    "jp": "おっしゃ！　　　　　　　　　ビュンビュン飛ばしていくぜ",
-   "en": "",
+   "en": "All right!\nLet's go full throttle!",
    "max": 56,
    "pad": 14
   },
   {
    "id": "12CD68",
    "jp": "おいらにまかしときなって！",
-   "en": "",
+   "en": "Just leave it to me!",
    "max": 28
   },
   {
    "id": "12CD84",
    "jp": "わいもひと汗流さなあかんな",
-   "en": "",
+   "en": "Guess I oughta work up a sweat too.",
    "max": 28
   },
   {
    "id": "12CDA0",
    "jp": "きっちりケリを　　　　　　　つけさせてもらいまっせ！",
-   "en": "",
+   "en": "I'll settle this\nproper-like, pal!",
    "max": 56,
    "pad": 14
   },
   {
    "id": "12CDD8",
    "jp": "どうじゃ、マロの出番で　　　相手もビビッておろう",
-   "en": "",
+   "en": "Behold, with Us on the field,\nthe foe must be quaking, ojaru.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12CE0C",
    "jp": "負けないでおじゃるよ…たぶん",
-   "en": "",
+   "en": "We shall not lose, ojaru... probably.",
    "max": 32
   },
   {
    "id": "12CE2C",
    "jp": "ふむ、ちとひと暴れしようかの",
-   "en": "",
+   "en": "Hmm, perhaps I'll cut loose a bit, eh.",
    "max": 32
   },
   {
    "id": "12CE4C",
    "jp": "わしがひねりつぶしてくれるわ",
-   "en": "",
+   "en": "I'll crush them with my bare hands.",
    "max": 32
   },
   {
    "id": "12CE6C",
    "jp": "標的の式神は　　　　　　　　インプットしたでござる",
-   "en": "",
+   "en": "This one has input\nthe target shikigami.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12CEA0",
    "jp": "プロの仕事を見せるでござる",
-   "en": "",
+   "en": "This one shall show you a pro's work.",
    "max": 28
   },
   {
    "id": "12CEBC",
    "jp": "さあっ　　　　　　　　　　　共にやっつけてしまおう！",
-   "en": "",
+   "en": "Come!\nLet's beat them together!",
    "max": 56,
    "pad": 14
   },
   {
    "id": "12CEF4",
    "jp": "おまえに呼ばれたからには　　力の限り闘おう",
-   "en": "",
+   "en": "Since you called on me,\nI'll fight with all I have.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12CF20",
    "jp": "さあっ　私に指示をください",
-   "en": "",
+   "en": "Come, give me your orders.",
    "max": 28
   },
   {
    "id": "12CF3C",
    "jp": "あなたの闘い方を　　　　　　見せてもらいましょう",
-   "en": "",
+   "en": "Let me see how\nyou fight.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12CF70",
    "jp": "私を呼んだことに感謝する",
-   "en": "",
+   "en": "I thank you for calling me.",
    "max": 28
   },
   {
    "id": "12CF8C",
    "jp": "我が種族の名に恥じぬ　　　　闘いをしよう",
-   "en": "",
+   "en": "Let us fight in a way that\ndoes not shame my kind's name.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12CFB8",
    "jp": "オレがぶった斬ってやらぁ！",
-   "en": "",
+   "en": "I'll cut 'em in two!",
    "max": 28
   },
   {
    "id": "12CFD4",
    "jp": "こんなヤツ　　　　　　　　　さっさと片付けちまおうぜ！",
-   "en": "",
+   "en": "Let's hurry up and\nfinish this guy off!",
    "max": 55,
    "pad": 14
   }

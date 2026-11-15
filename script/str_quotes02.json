@@ -4,7 +4,7 @@
   {
    "id": "12D284",
    "jp": "私の本当の力を　　　　　　　見せねばならないようだな",
-   "en": "",
+   "en": "It seems I must show\nmy true power.",
    "max": 56,
    "pad": 14,
    "ptrs": 3
@@ -12,7 +12,7 @@
   {
    "id": "12D2BC",
    "jp": "ハアっハアっ　　　　　　　　私が負けるわけがない",
-   "en": "",
+   "en": "Hah, hah...\nThere's no way I can lose.",
    "max": 52,
    "pad": 14,
    "ptrs": 3
@@ -20,952 +20,952 @@
   {
    "id": "12D2F0",
    "jp": "我は退かぬ、退かぬぞ！",
-   "en": "",
+   "en": "I shall not retreat! I shall not!",
    "max": 24
   },
   {
    "id": "12D308",
    "jp": "このままでは　　　　　　　　我が一門のハジになる",
-   "en": "",
+   "en": "At this rate, I'll bring\nshame on my school.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12D33C",
    "jp": "オレは勝ちてぇんだよ　　　　負けるわけにはいかねぇんだ！",
-   "en": "",
+   "en": "I wanna win!\nI can't afford to lose!",
    "max": 60,
    "pad": 14
   },
   {
    "id": "12D378",
    "jp": "もう一発敵をたたかなくては　気がすまん！",
-   "en": "",
+   "en": "I won't be satisfied till\nI hit the foe once more!",
    "max": 44
   },
   {
    "id": "12D3A4",
    "jp": "交替してほしいのぅ",
-   "en": "",
+   "en": "I'd like to switch out, eh.",
    "max": 20
   },
   {
    "id": "12D3B8",
    "jp": "もっと気楽に　　　　　　　　闘いたかったんですがねぇ",
-   "en": "",
+   "en": "I'd hoped to fight\na bit more leisurely.",
    "max": 56,
    "pad": 14
   },
   {
    "id": "12D3F0",
    "jp": "オレのＨＰなぞ気にするな　　倒れるときは倒れるのだ",
-   "en": "",
+   "en": "Never mind my HP.\nWhen I fall, I fall.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12D424",
    "jp": "ＨＰはあとわずか…　　　　　華々しく散ってくれよう",
-   "en": "",
+   "en": "Only a little HP left...\nI'll go out in a blaze of glory.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12D458",
    "jp": "人生、楽に行かないものだな",
-   "en": "",
+   "en": "Life never goes easy, does it.",
    "max": 28
   },
   {
    "id": "12D474",
    "jp": "命を惜しむくらいなら　　　　おいらは名を惜しむよ",
-   "en": "",
+   "en": "Rather than cling to my life,\nI'll cling to my name.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12D4A8",
    "jp": "まだ我のＨＰがあるうちに　　交替ぞよ",
-   "en": "",
+   "en": "Switch me out while I\nstill have HP, I say.",
    "max": 40,
    "pad": 14
   },
   {
    "id": "12D4D0",
    "jp": "我のＨＰがあぶないぞよ",
-   "en": "",
+   "en": "My HP is in danger, I say.",
    "max": 24
   },
   {
    "id": "12D4E8",
    "jp": "そろそろダッシュで　　　　　逃げたくなりました",
-   "en": "",
+   "en": "I'm starting to want to\nmake a run for it.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12D518",
    "jp": "ＨＰが厳しくなりました",
-   "en": "",
+   "en": "My HP is getting tight.",
    "max": 24
   },
   {
    "id": "12D530",
    "jp": "敵も、なかなかやりますね",
-   "en": "",
+   "en": "The foe's quite good too.",
    "max": 28
   },
   {
    "id": "12D54C",
    "jp": "結局、勝負はどちらかが　　　倒れるまで、です",
-   "en": "",
+   "en": "In the end, a match lasts\nuntil one side falls.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12D57C",
    "jp": "これが現実か…",
-   "en": "",
+   "en": "So this is reality...",
    "max": 16
   },
   {
    "id": "12D58C",
    "jp": "そんな怖い顔すんなって…　　まだ闘えるさ",
-   "en": "",
+   "en": "Don't make such a scary face...\nI can still fight.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12D5B8",
    "jp": "そろそろ私のＨＰが　　　　　ヤバくなってきましたね",
-   "en": "",
+   "en": "My HP is starting\nto get dicey.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12D5EC",
    "jp": "相手は紳士的ではありませんね",
-   "en": "",
+   "en": "Our foe is no gentleman.",
    "max": 32
   },
   {
    "id": "12D60C",
    "jp": "せっちゃを　　　　　　　　　バカにするヤツは許さん！",
-   "en": "",
+   "en": "I won't forgive anyone\nwho mocks thith one!",
    "max": 56,
    "pad": 14
   },
   {
    "id": "12D644",
    "jp": "交替を希望する　　　　　　　せっちゃを助けよ！",
-   "en": "",
+   "en": "Requesting a thwitch!\nThave thith one!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12D674",
    "jp": "オレのＨＰより　　　　　　　敵を倒すことに集中しろ！",
-   "en": "",
+   "en": "Quit worrying about my HP,\nfocus on beating the foe!",
    "max": 56,
    "pad": 14
   },
   {
    "id": "12D6AC",
    "jp": "ＨＰが０になるまでオレは闘う",
-   "en": "",
+   "en": "I'll fight till my HP hits 0.",
    "max": 32
   },
   {
    "id": "12D6CC",
    "jp": "もう私…フラフラよ",
-   "en": "",
+   "en": "I'm so... wobbly...",
    "max": 20
   },
   {
    "id": "12D6E0",
    "jp": "大丈夫よ　　　　　　　　　　お姉さんが守ってあげるわ",
-   "en": "",
+   "en": "It's all right.\nBig Sis will protect you.",
    "max": 56,
    "pad": 14
   },
   {
    "id": "12D718",
    "jp": "今はじっとガマンの時である",
-   "en": "",
+   "en": "Now is the time to endure, so it is.",
    "max": 28
   },
   {
    "id": "12D734",
    "jp": "わしの代わりなど　　　　　　いくらでもいる",
-   "en": "",
+   "en": "There are plenty who\ncould take my place.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12D760",
    "jp": "まだまだ、やれるよ　　　　　指示を出して！",
-   "en": "",
+   "en": "I can still go!\nGive me orders!",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12D78C",
    "jp": "だいぶ、やられちまったねぇ",
-   "en": "",
+   "en": "I've taken quite a beating.",
    "max": 28
   },
   {
    "id": "12D7A8",
    "jp": "子供たちよ…　　　　　　　　先立つパパを許しておくれ",
-   "en": "",
+   "en": "My children...\nforgive your papa for going first.",
    "max": 56,
    "pad": 14
   },
   {
    "id": "12D7E0",
    "jp": "しっかりガードしなきゃ！",
-   "en": "",
+   "en": "I've gotta guard well!",
    "max": 28
   },
   {
    "id": "12D7FC",
    "jp": "このまま最後まで闘わせてくれ",
-   "en": "",
+   "en": "Let me fight on to the end.",
    "max": 32
   },
   {
    "id": "12D81C",
    "jp": "ＨＰが無くなっても　　　　　お前の助けなど要らぬ",
-   "en": "",
+   "en": "Even with no HP left,\nI need no help from you.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12D850",
    "jp": "わしのＨＰをみるかぎり　　　あと一発というところか",
-   "en": "",
+   "en": "Judging by my HP,\nI can take one more hit.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12D884",
    "jp": "ここは交替したほうが　　　　よさそうだな",
-   "en": "",
+   "en": "Looks like I'd better\nswitch out here.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12D8B0",
    "jp": "弱い者が負ける…　　　　　　それが自然のオキテなのだ",
-   "en": "",
+   "en": "The weak lose...\nThat is the law of nature.",
    "max": 56,
    "pad": 14
   },
   {
    "id": "12D8E8",
    "jp": "これも自然のなせる技なのか？",
-   "en": "",
+   "en": "Is this, too, nature's doing?",
    "max": 32
   },
   {
    "id": "12D908",
    "jp": "ＨＰが足りなくなってるよ",
-   "en": "",
+   "en": "I'm running low on HP.",
    "max": 28
   },
   {
    "id": "12D924",
    "jp": "交替するとＨＰが少し　　　　回復するって知ってたかい？",
-   "en": "",
+   "en": "Did ya know switching out\nrestores a little HP?",
    "max": 56,
    "pad": 14
   },
   {
    "id": "12D95C",
    "jp": "お前の攻撃なんか　　　　　　オレには効かない",
-   "en": "",
+   "en": "Your attacks\ndon't work on me.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12D98C",
    "jp": "このままじゃ、やられる！",
-   "en": "",
+   "en": "At this rate, I'm done for!",
    "max": 28
   },
   {
    "id": "12D9A8",
    "jp": "わしのような　　　　　　　　年寄りにはキツイのぅ",
-   "en": "",
+   "en": "This is hard on an\nold-timer like me, eh.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12D9DC",
    "jp": "まともにやったら勝てんのぅ",
-   "en": "",
+   "en": "Can't win if I fight fair, eh.",
    "max": 28
   },
   {
    "id": "12D9F8",
    "jp": "勝負はこれからだぜ",
-   "en": "",
+   "en": "The real fight starts now!",
    "max": 20
   },
   {
    "id": "12DA0C",
    "jp": "けっこうやられちまったぜ！",
-   "en": "",
+   "en": "I took a real beating!",
    "max": 28
   },
   {
    "id": "12DA28",
    "jp": "まだまだやれるよー",
-   "en": "",
+   "en": "I can still keep goin'!",
    "max": 20
   },
   {
    "id": "12DA3C",
    "jp": "元気が出ないよう…",
-   "en": "",
+   "en": "I've got no energy...",
    "max": 20
   },
   {
    "id": "12DA50",
    "jp": "この痛み…数倍にして返そうぞ",
-   "en": "",
+   "en": "This pain... I'll repay it\nmany times over!",
    "max": 32
   },
   {
    "id": "12DA70",
    "jp": "わしが倒れても　　　　　　　汝の罪は消えぬ",
-   "en": "",
+   "en": "Even if I fall,\nyour sins will not vanish.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12DA9C",
    "jp": "おーい！オレって　　　　　　ピンチじゃないのか？",
-   "en": "",
+   "en": "Hey! Aren't I in\na pinch here?",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12DAD0",
    "jp": "さあっこのピンチを　　　　　どう乗り切るのか？",
-   "en": "",
+   "en": "Now, how will you get\nout of this pinch?",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12DB00",
    "jp": "ＨＰが少ないが　　　　　　　ここからが勝負じゃ",
-   "en": "",
+   "en": "My HP is low, but\nthis is where the match begins.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12DB30",
    "jp": "おめぇ、腕が　　　　　　　　なまってんじゃねぇのか？",
-   "en": "",
+   "en": "Hey, ain't your skills\ngettin' a little rusty?",
    "max": 56,
    "pad": 14
   },
   {
    "id": "12DB68",
    "jp": "わしの魂は、くだけないぞ",
-   "en": "",
+   "en": "My soul will not break.",
    "max": 28
   },
   {
    "id": "12DB84",
    "jp": "わしは、そう簡単に　　　　　やられはしない",
-   "en": "",
+   "en": "I won't go down\nso easily.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12DBB0",
    "jp": "まだまだ遊び足りないぜ！",
-   "en": "",
+   "en": "I ain't done playin' yet!",
    "max": 28
   },
   {
    "id": "12DBCC",
    "jp": "ちょっと　　　　　　　　　　はしゃぎすぎたようだな",
-   "en": "",
+   "en": "Seems I got\na little carried away.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12DC00",
    "jp": "あんさんの腕を信じとりやす",
-   "en": "",
+   "en": "I'm trustin' in your skill, dear.",
    "max": 28
   },
   {
    "id": "12DC1C",
    "jp": "ねぇ…ここはどこ…　　　　　私はだあれ？",
-   "en": "",
+   "en": "Hey... Where am I...\nWho am I?",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12DC48",
    "jp": "ヘイ！まだ負けた　　　　　　わけじゃないぜ！",
-   "en": "",
+   "en": "Hey! It ain't over\nyet!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12DC78",
    "jp": "まっ傷は男の勲章って言うしな",
-   "en": "",
+   "en": "Well, they say scars are a man's medals.",
    "max": 32
   },
   {
    "id": "12DC98",
    "jp": "ＨＰを回復したら　　　　　　ムチ打ちの刑にしてやろう",
-   "en": "",
+   "en": "Once my HP is restored,\nyou shall be flogged.",
    "max": 56,
    "pad": 14
   },
   {
    "id": "12DCD0",
    "jp": "わらわに、たてつく事は許さぬ",
-   "en": "",
+   "en": "I'll not allow you to defy me.",
    "max": 32
   },
   {
    "id": "12DCF0",
    "jp": "どんな姿になろうと　　　　　わしは負けぬ",
-   "en": "",
+   "en": "Whatever shape I'm in,\nI won't lose.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12DD1C",
    "jp": "ククク…効かぬ…効かぬわ！",
-   "en": "",
+   "en": "Hehehe... No effect... No effect at all!",
    "max": 28
   },
   {
    "id": "12DD38",
    "jp": "こんな体にしてヒドイ…　　　責任とってもらうわ！",
-   "en": "",
+   "en": "Look what you did to me...\nYou're gonna take responsibility!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12DD6C",
    "jp": "ふう…疲れちゃった　　　　　お休みもらえる？",
-   "en": "",
+   "en": "Phew... I'm tired.\nCan I take a break?",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12DD9C",
    "jp": "次からタダじゃおかないからね",
-   "en": "",
+   "en": "Next time, you won't get off so easy.",
    "max": 32
   },
   {
    "id": "12DDBC",
    "jp": "こんな姿にして…　　　　　　あたいを誰だと思ってるんだい！",
-   "en": "",
+   "en": "Leaving me like this...\nWho do you think I am!?",
    "max": 60,
    "pad": 14
   },
   {
    "id": "12DDF8",
    "jp": "ＨＰ無いけど、ボク　　　　　がんばるよ",
-   "en": "",
+   "en": "I've got no HP, but\nI'll do my best.",
    "max": 40,
    "pad": 14
   },
   {
    "id": "12DE20",
    "jp": "わーん！ボク、ピンチだよー",
-   "en": "",
+   "en": "Waaah! I'm in a pinch!",
    "max": 28
   },
   {
    "id": "12DE3C",
    "jp": "ピンチでもあきらめないで！",
-   "en": "",
+   "en": "Don't give up, even in a pinch!",
    "max": 28
   },
   {
    "id": "12DE58",
    "jp": "最後まで気ィ抜いちゃダメだよ",
-   "en": "",
+   "en": "Don't let your guard down till the end!",
    "max": 32
   },
   {
    "id": "12DE78",
    "jp": "やられた分　　　　　　　　　わしが倍にして返したるわ！",
-   "en": "",
+   "en": "Whatever they dished out,\nI'll pay back double!",
    "max": 56,
    "pad": 14
   },
   {
    "id": "12DEB0",
    "jp": "わしのＨＰをきちっと　　　　チェックせんかああ！！",
-   "en": "",
+   "en": "Keep a proper eye\non my HP, will ya!!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12DEE4",
    "jp": "なかなか味なことをしてくれる",
-   "en": "",
+   "en": "That was a clever trick.",
    "max": 32
   },
   {
    "id": "12DF04",
    "jp": "ＨＰが少ないが、問題ないな",
-   "en": "",
+   "en": "My HP's low, but no problem.",
    "max": 28
   },
   {
    "id": "12DF20",
    "jp": "ここからがガッツやで！",
-   "en": "",
+   "en": "Now's when the guts kick in, pal!",
    "max": 24
   },
   {
    "id": "12DF38",
    "jp": "あんさん！　　　　　　　　　ここからが勝負やで！",
-   "en": "",
+   "en": "Pal!\nThe real match starts now!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12DF6C",
    "jp": "勝負はまだ終わっていない…",
-   "en": "",
+   "en": "The match isn't over yet...",
    "max": 28
   },
   {
    "id": "12DF88",
    "jp": "血が足りぬ…",
-   "en": "",
+   "en": "Not enough blood...",
    "max": 16
   },
   {
    "id": "12DF98",
    "jp": "体中がいたいでちゅ",
-   "en": "",
+   "en": "My whole body hurtz.",
    "max": 20
   },
   {
    "id": "12DFAC",
    "jp": "このままではやられるでちゅよ",
-   "en": "",
+   "en": "At thiz rate we'll be beaten, it iz.",
    "max": 32
   },
   {
    "id": "12DFCC",
    "jp": "あとどれくらい闘えるかなあ",
-   "en": "",
+   "en": "I wonder how much longer I can fight.",
    "max": 28
   },
   {
    "id": "12DFE8",
    "jp": "ＨＰが少ないけど　　　　　　ボクは平気だよ",
-   "en": "",
+   "en": "My HP's low, but\nI'm fine!",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12E014",
    "jp": "ＨＰの回復がほしいのう",
-   "en": "",
+   "en": "I'd like some HP back, eh.",
    "max": 24
   },
   {
    "id": "12E02C",
    "jp": "もっと役に立ちたかったのだが",
-   "en": "",
+   "en": "I wish I could have been more help.",
    "max": 32
   },
   {
    "id": "12E04C",
    "jp": "交替を希望するであります",
-   "en": "",
+   "en": "Requesting a switch, sir!",
    "max": 28
   },
   {
    "id": "12E068",
    "jp": "ジブンはそろそろ　　　　　　限界であります！",
-   "en": "",
+   "en": "I'm nearly at\nmy limit, sir!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12E098",
    "jp": "わしの寿命も　　　　　　　　あとわずかじゃのぅ",
-   "en": "",
+   "en": "My time is nearly\nup, I fear, eh.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12E0C8",
    "jp": "あたたた…体がきしむのぅ",
-   "en": "",
+   "en": "Ow ow ow... My body's creaking, eh.",
    "max": 28
   },
   {
    "id": "12E0E4",
    "jp": "この翼折れるまで　　　　　　オレは負けない！",
-   "en": "",
+   "en": "Until these wings break,\nI won't lose!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12E114",
    "jp": "ここで負けたら　　　　　　　雷火の名がすたる…",
-   "en": "",
+   "en": "If I lose here, the name\nof Thunderfire is ruined...",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12E144",
    "jp": "おら…そろそろ山に帰りてぇだ",
-   "en": "",
+   "en": "I... I wanna go back to the mountains.",
    "max": 32
   },
   {
    "id": "12E164",
    "jp": "おら…だんだん泣けてきただ…",
-   "en": "",
+   "en": "I... I'm startin' to cry...",
    "max": 32
   },
   {
    "id": "12E184",
    "jp": "このままでは　　　　　　　　私が先にやられてしまいそうだ",
-   "en": "",
+   "en": "At this rate,\nI may fall first.",
    "max": 60,
    "pad": 14
   },
   {
    "id": "12E1C0",
    "jp": "私の装甲殻を破るとは…　　　あなどれんな",
-   "en": "",
+   "en": "To pierce my armored shell...\nI mustn't underestimate you.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12E1EC",
    "jp": "拙者の命…　　　　　　　　　そなたにあずけるぞ！",
-   "en": "",
+   "en": "This one's life...\nI entrust to thee!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12E220",
    "jp": "この勝負…　　　　　　　　　拙者が倒れても誉れなり",
-   "en": "",
+   "en": "This match... even should this\none fall, there is honor in it.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12E254",
    "jp": "もしかして、おいら　　　　　もうすぐ負けちゃうのかい？",
-   "en": "",
+   "en": "Hey, am I about to\nlose here?",
    "max": 56,
    "pad": 14
   },
   {
    "id": "12E28C",
    "jp": "おいらまだ闘える　　　　　　ホントだぞ！",
-   "en": "",
+   "en": "I can still fight!\nHonest!",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12E2B8",
    "jp": "この闘い…　　　　　　　　　けっこう厳しいねぇ…",
-   "en": "",
+   "en": "This fight...\nit's pretty rough...",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12E2EC",
    "jp": "この一発の弾丸に　　　　　　すべてを賭けましょう",
-   "en": "",
+   "en": "Let's stake everything\non this one bullet.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12E320",
    "jp": "ずいぶん派手に　　　　　　　やられちゃったよ",
-   "en": "",
+   "en": "I got beaten up\npretty badly.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12E350",
    "jp": "美しいボクが　　　　　　　　ボロボロになるなんて…",
-   "en": "",
+   "en": "Beautiful me,\nall battered and torn...",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12E384",
    "jp": "この闘い…私の　　　　　　　勝機が見えなくなっている",
-   "en": "",
+   "en": "This fight... I can no\nlonger see a way to win.",
    "max": 56,
    "pad": 14
   },
   {
    "id": "12E3BC",
    "jp": "ここは一度　　　　　　　　　身を引いたほうがいいな",
-   "en": "",
+   "en": "I'd better pull back\nfor now.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12E3F0",
    "jp": "今のオレ様ってば　　　　　　Ｐ・Ｉ・Ｎ・Ｃ・Ｈ♪だＹｏ～",
-   "en": "",
+   "en": "The great me is in\na P-I-N-C-H right now, Yo~",
    "max": 60,
    "pad": 14
   },
   {
    "id": "12E42C",
    "jp": "Ｈｅｌｐ　Ｍｅ！　　　　　　オレ様のＨＰヤバイＹｏ！",
-   "en": "",
+   "en": "Help me!\nThe great me's HP is bad, Yo!",
    "max": 56
   },
   {
    "id": "12E464",
    "jp": "このＨＰじゃ　　　　　　　　思い通りに闘えないねェ…",
-   "en": "",
+   "en": "With this HP, I can't\nfight how I want...",
    "max": 56,
    "pad": 14
   },
   {
    "id": "12E49C",
    "jp": "もしかして　　　　　　　　　今、あちきって…ピンチ？",
-   "en": "",
+   "en": "Wait, am I...\nin a pinch right now?",
    "max": 56,
    "pad": 14
   },
   {
    "id": "12E4D4",
    "jp": "そろそろＨＰがヤバイな…",
-   "en": "",
+   "en": "My HP's gettin' dicey...",
    "max": 28,
    "ptrs": 2
   },
   {
    "id": "12E4F0",
    "jp": "オレは負けねェ絶対に負けねェ",
-   "en": "",
+   "en": "I won't lose, I'll never lose!",
    "max": 32,
    "ptrs": 2
   },
   {
    "id": "12E510",
    "jp": "まだまだ元気だよ　　　　　　がんばれるよ！",
-   "en": "",
+   "en": "I've still got energy!\nI can keep going!",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12E53C",
    "jp": "体中が痛いニャ　休みたいニャ",
-   "en": "",
+   "en": "Everything hurts, nya. I wanna rest, nya.",
    "max": 32
   },
   {
    "id": "12E55C",
    "jp": "そろそろ回復が必要ね",
-   "en": "",
+   "en": "I'll need healing soon.",
    "max": 24
   },
   {
    "id": "12E574",
    "jp": "あらあら　　　　　　　　　　心も体も傷だらけよ",
-   "en": "",
+   "en": "Oh my...\nI'm wounded, heart and body.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12E5A4",
    "jp": "この程度の傷など心配無用！",
-   "en": "",
+   "en": "No need to worry over such wounds!",
    "max": 28
   },
   {
    "id": "12E5C0",
    "jp": "我が楓族を　　　　　　　　　みくびってもらっては困る",
-   "en": "",
+   "en": "I'll not have you\nunderestimate our Maple clan.",
    "max": 56,
    "pad": 14
   },
   {
    "id": "12E5F8",
    "jp": "どうやら天はわらわに　　　　味方をせぬようじゃ",
-   "en": "",
+   "en": "It seems heaven does not\nfavor me today.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12E628",
    "jp": "さあっそなたの闘神士としての腕の見せ所ですよ",
-   "en": "",
+   "en": "Now is your chance to show\nyour skill as a Tojinshi.",
    "max": 48
   },
   {
    "id": "12E658",
    "jp": "このままではいかんでごわす",
-   "en": "",
+   "en": "This is no good, lad.",
    "max": 28
   },
   {
    "id": "12E674",
    "jp": "このマズイ状況を　　　　　　変えねばならんでごわす！",
-   "en": "",
+   "en": "I've gotta turn this\nbad situation around, I reckon!",
    "max": 56,
    "pad": 14
   },
   {
    "id": "12E6AC",
    "jp": "あたいはまだまだ　　　　　　闘い続けたいの！",
-   "en": "",
+   "en": "I still wanna\nkeep fighting!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12E6DC",
    "jp": "みじめなところなんて　　　　見せられないわ！",
-   "en": "",
+   "en": "I won't let anyone\nsee me looking pathetic!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12E70C",
    "jp": "いざとなったら　　　　　　　あとはよろしくな！",
-   "en": "",
+   "en": "If it comes to that,\nthe rest is up to you!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12E73C",
    "jp": "あと一発食らったら　　　　　ヤバイかもな",
-   "en": "",
+   "en": "One more hit\nand I might be done.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12E768",
    "jp": "わいがここまで　　　　　　　追いつめられるとは！",
-   "en": "",
+   "en": "To think I'd be\ncornered like this!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12E79C",
    "jp": "わいを苦しめるとは　　　　　このツケは、高くつくぞ！",
-   "en": "",
+   "en": "You'll pay dear\nfor makin' me suffer!",
    "max": 56,
    "pad": 14
   },
   {
    "id": "12E7D4",
    "jp": "帰りたいの～あいや　　　　　別に逃げたりしないでおじゃる",
-   "en": "",
+   "en": "We wish to go home... Ah, nay,\nWe shan't run away, ojaru.",
    "max": 60,
    "pad": 14
   },
   {
    "id": "12E810",
    "jp": "疲れたの～あいや　　　　　　ひとり言でおじゃる！",
-   "en": "",
+   "en": "We are weary... Ah, nay,\nWe merely talk to Ourselves, ojaru!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12E844",
    "jp": "ここから先は　　　　　　　　おぬしの腕しだいじゃ",
-   "en": "",
+   "en": "From here on, it's\nall up to your skill.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12E878",
    "jp": "このままだと、ちとマズイのう",
-   "en": "",
+   "en": "This is getting a bit bad, eh.",
    "max": 32
   },
   {
    "id": "12E898",
    "jp": "今回はハイレベルな　　　　　任務でござるな",
-   "en": "",
+   "en": "This is a high-level\nmission indeed.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12E8C4",
    "jp": "倒れるのは覚悟のうち　　　　攻めるでござる",
-   "en": "",
+   "en": "This one is ready to fall.\nThis one shall attack.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12E8F0",
    "jp": "もう少しおまえと　　　　　　闘いたかったのだがな",
-   "en": "",
+   "en": "I wish I could have fought\nalongside you a little longer.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12E924",
    "jp": "おまえの腕を信用している　　さあ、指示を！",
-   "en": "",
+   "en": "I trust your skill.\nNow, give your orders!",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12E950",
    "jp": "闘いから退くことは　　　　　決して恥ではありませんよ",
-   "en": "",
+   "en": "Withdrawing from battle\nis no disgrace at all.",
    "max": 56,
    "pad": 14
   },
   {
    "id": "12E988",
    "jp": "私が倒れても　　　　　　　　あなたは勝たねばなりません",
-   "en": "",
+   "en": "Even if I fall,\nyou must win.",
    "max": 56,
    "pad": 14
   },
   {
    "id": "12E9C0",
    "jp": "ここで倒れるわけにはいかぬ",
-   "en": "",
+   "en": "I cannot fall here.",
    "max": 28
   },
   {
    "id": "12E9DC",
    "jp": "ＨＰが無くなるまで　　　　　我は闘い続けよう",
-   "en": "",
+   "en": "Until my HP runs out,\nI shall keep fighting.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12EA0C",
    "jp": "こんなとこで　　　　　　　　くたばってたまるか！",
-   "en": "",
+   "en": "No way I'm croakin'\nin a place like this!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12EA40",
    "jp": "だんなぁ！そろそろ休みてぇぜ",
-   "en": "",
+   "en": "Boss! I wanna take a break!",
    "max": 29
   }
  ]

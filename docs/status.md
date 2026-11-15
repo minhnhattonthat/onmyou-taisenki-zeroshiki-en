@@ -2,10 +2,10 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 6. Translate in progress: batches b001-b020 of 41 translated (ev_41C000 .. ev_45C000 merged into
-  `script/`; b020's ev_460000 part (guardians before the Sacred Beast Altar) is in `tl/b020.out.tsv`, held until
-  b021). Last build 2026-11-16 (session 11): `build.py` sha1 179c1c2e…, smoke ok, check ok (29 tests, lint 0,
-  batches check 0).
+- **Phase:** 6. Translate in progress: batches b001-b028 of 41 translated. Merged: all event scripts, str_abilities,
+  str_intro, str_menus, str_menus2, str_name_entry, str_quotes01/02. Written but held: b024/b025 (str_areas,
+  str_battle_msgs, str_char_names, str_credits) fail the check only on 14 speaker-plate names > 40 px (see Next);
+  str_quotes03 waits for b029. Last build 2026-11-16 (session 12): `build.py` sha1 e53aab07…, smoke ok, check ok.
 - **Done:**
   - Step 0: ROM pinned (`rom.sha1`), MesenCE 2.2.1 + GBA BIOS in `tools/mesen/`, guard hook in `.claude/settings.json`
     (canary blocked), pre-commit runs `tools/check.py` (a failing test was rejected), boot route `tools/routes/boot.txt`
@@ -106,10 +106,24 @@ Updated at the end of every session. Keep it to what the next session needs; his
     villages, Koryu's Great-Des-cent, altar guardians); glossary "b016-b020" row, synopsis steps 5-6. Polish
     candidates: Shiran's 知らん name pun (451DF8..451E56, "Dunno"/"Shiran" kept); the 0x15 portrait is Yakumo under
     op `036 00150001` but Kogenta under `098 00150000` (036 and 098 use different portrait banks).
-- **Next (phase 6, translate; `references/translation.md`):** translate `tl/b021.tsv` onward in order (read each
+  - Phase 6 session 12 (2026-11-16): b021-b028 translated (finale + Mahoroba sealed, post-game Hiroko/Jinryu, all
+    town/school/Fukumaden NPCs, abilities, area names, battle messages, NPC names, credits, intro scroll, link
+    menus, Bannai's seal tutorial, name entry, shikigami battle quotes 01/02 + half of 03); glossary "b021-b026"
+    row (stats, conditions, battle fragments), synopsis step 7, `docs/polish.md` started. `oamfind.lua` takes
+    `--var TLO=.. --var THI=..`: the speaker plate's text is OBJ 0/1 (tiles 0x68..0x6C, x 16/48, y 108); its
+    frame is NOT an OBJ (BG layer).
+- **Speaker plate too narrow (blocks merging b024/b025):** str_char_names in the plate (40 px, frame interior
+  x 10..53) overflow: Tereyakko 45, Tsuneyakko 51, Maruyakko 45, Chiyoyakko 47, Matsuyakko 50, Umeyakko 41,
+  Takeyakko 46, Sekiyakko 42, Hamamura 41, Yamamoto 42 (x2), Yamashita 43, Yamaguchi 43 px (b024/b025.out.tsv
+  keep the full names). Per D4 fix by engine: widen the plate to 7 OBJ tiles (56 px) and its BG frame (find the
+  tilemap writer for the frame), then raise `speaker_tag` px in `tbl/windows.json` after a shot, and merge
+  `batches.py merge b023 b024 b025 b026` (str_areas/str_credits are split across them). Do this first next session
+  (it is phase-7 fit work but gates phase 6's merge).
+- **Next (phase 6, translate; `references/translation.md`):** after the plate, translate `tl/b029.tsv` onward in order (read each
   with Read in ~40-line chunks: context-mode cuts larger outputs), write `tl/bNNN.out.tsv`, `batches.py check bNNN`
   to OK, then merge together with the batch that holds the rest of a file (`batches.py merge b009 b010 ...`: a
-  merge of one batch alone holds files split across batches; next merge: `batches.py merge b020 b021 ...`; the check flags a `{010}` typo as unencodable), `tools/check.py`, build, smoke, commit. No translator
+  merge of one batch alone holds files split across batches; next merge: `batches.py merge b028 b029 ...` (str_quotes03); the remaining batches are all table strings
+  (quotes03-09, techniques, skills, weapons, system, shikigami names/kinds: check `tbl/windows.json` px per file); the check flags a `{010}` typo as unencodable), `tools/check.py`, build, smoke, commit. No translator
   agent type is installed in this harness and the Orca brief forbids helpers: the worker translates itself,
   ~5 batches per session. Extend `docs/synopsis.md` as story batches are read. Line budget is generous (VWF: ~4 px
   a char, 224 px ≈ 50 chars), so don't over-shorten. After b041: reviewer pass (fresh read-only pass or
