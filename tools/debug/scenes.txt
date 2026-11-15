@@ -26,6 +26,10 @@ menu_ring      field 23  flags=0,1,2,21,22,23,24,28 press=6:start|500:-         
 menu_status    field 23  flags=0,1,2,21,22,23,24,28 press=6:start|300:-|6:a|200:-                mash=0 hold=1
 menu_save      field 23  flags=0,1,2,21,22,23,24,28 press=6:start|300:-|6:right|30:-|6:a|200:-   mash=0 hold=1
 menu_shikigami field 23  flags=0,1,2,21,22,23,24,28 press=6:start|300:-|6:right|30:-|6:right|30:-|6:a|200:- mash=0 hold=1
+# shikigami menu pages: R / L page through status, weapon + skill (0x08036340), techniques (0x08036500)
+menu_shiki_r1  field 23  flags=0,1,2,21,22,23,24,28 press=6:start|300:-|6:right|30:-|6:right|30:-|6:a|200:-|6:r|120:- mash=0 hold=1
+menu_shiki_r2  field 23  flags=0,1,2,21,22,23,24,28 press=6:start|300:-|6:right|30:-|6:right|30:-|6:a|200:-|6:r|120:-|6:r|120:- mash=0 hold=1
+menu_shiki_l1  field 23  flags=0,1,2,21,22,23,24,28 press=6:start|300:-|6:right|30:-|6:right|30:-|6:a|200:-|6:l|120:- mash=0 hold=1
 menu_map       field 23  flags=0,1,2,21,22,23,24,28 press=6:start|300:-|6:left|30:-|6:a|200:-    mash=0 hold=1
 menu_party     field 23  flags=0,1,2,21,22,23,24,28 press=6:start|300:-|6:left|30:-|6:left|30:-|6:a|200:- mash=0 hold=1
 shikigami_talk field 23  flags=0,1,2,21,22,23,24,28 press=6:l|200:-                             mash=0 hold=1

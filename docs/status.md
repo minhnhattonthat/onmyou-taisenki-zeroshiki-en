@@ -2,9 +2,10 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 5. Engine spike and marker build, in progress (width gate: 5 of 14 variants measured, lint live).
-  Last builds 2026-11-16: `build.py` (engine, JP text) sha1 dbca5fa5…, smoke ok, check ok;
-  `build.py --marker` → build/marker.gba sha1 5f29489b…, smoke ok.
+- **Phase:** 5. Engine spike and marker build, in progress (width gate: 10 of 13 variants measured; left:
+  names_list, name_grid, fixed).
+  Last builds 2026-11-16 (session 6): `build.py` (engine, JP text) sha1 b3ab6b5d…, smoke ok, check ok;
+  `build.py --marker` → build/marker.gba sha1 35f9ed12…, smoke ok.
 - **Done:**
   - Step 0: ROM pinned (`rom.sha1`), MesenCE 2.2.1 + GBA BIOS in `tools/mesen/`, guard hook in `.claude/settings.json`
     (canary blocked), pre-commit runs `tools/check.py` (a failing test was rejected), boot route `tools/routes/boot.txt`
@@ -72,13 +73,19 @@ Updated at the end of every session. Keep it to what the next session needs; his
     `work/qa/dc/drawmap.tsv`). Measured: dialogue 224 / last line 216 (page-wait orb), battle window 220, area name
     28 chars, status labels = JP cells, battle tag 40 px small. Glyph torture line renders right
     (`work/qa/tort/`). Tests `tests/test_windows.py`. Details `docs/re/font.md` "Width gate".
-- **Next (phase 5, still guess in `tbl/windows.json`; `python -X utf8 tools/windows.py show`):** measure
-  `battle_2row` (tutorial_battle; the warp failed once on a `--qa` build at 44001 frames: retry with more frames),
-  `small_label` (10 callers of 0x08110AE8: which ids, budget = next label's tiles), `names_list` (skills, weapons,
-  techniques: find the menus that list them, add scenes), `intro_strip`, `credits`, `fixed` (link-cable menus,
-  battle help, debug menu, `str_battle_kanji` unidentified). The dialogue **speaker plate** (`str_char_names`) still
-  draws fixed 8 px cells, 5 shown: find its routine (unmapped `obj_cells@0802EBCD a=10` / window caller with a RAM
-  string), give it VWF, then measure (`speaker_tag`, now a 40 px guess). Also: 0x08014098 size-8 mode still runs
+  - Phase 5 width gate (2026-11-16, sixth session): measured `battle_2row` (224 + row 2 **208**; new `row_px` key,
+    lint + marker use it), `intro_strip` 224, `credits` 240, `small_label` (JP tiles, all 10 callers read). Dialogue
+    **speaker plate** found (0x0801EC54, own 5-tile loop) and given VWF + pixel centring (`vwf.plate`,
+    `plate_patch`); `speaker_tag` measured 40 px. New scenes `menu_shiki_r1/r2/l1` (they show the same status
+    page: R/L don't change it). `fontcalls.lua` takes `--var FONTTYPE=12`. Details `docs/re/font.md` "Width gate".
+- **Next (phase 5, still guess in `tbl/windows.json`; `python -X utf8 tools/windows.py show`):**
+  `names_list`: reach shikigami-menu pages 1..4 of 0x08035CA4 (weapon/skill page 0x08036340, techniques
+  0x08036500): find where its page argument r1 comes from (callers in docs/re/font.md), poke it in a scene (or
+  find the real button), then stress weapon/skill/technique names (field tiles: weapon 0x82..0xA2, skill
+  0xA2..0xC8). The 3 `menu_shiki_*` scenes can then become the real pages. `fixed` (link-cable menus `str_menus`,
+  battle help `str_battle_help`, debug menu, `str_battle_kanji` unidentified): find each one's renderer
+  (litref on their pointer tables, as done for names_list) and measure or mark unreachable; `name_grid` with the
+  English name-entry grid. Also: 0x08014098 size-8 mode still runs
   the original fixed cells; widen the 5-cell shikigami-name copy; code-built strings (`jp_left.py` on
   build/marker.gba); English name-entry grid; player-name width `vars.00C8` (45 px guess) once the grid sets the
   name length; tests for enfont/vwf (widths table, ORIG asserts).

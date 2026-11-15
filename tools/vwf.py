@@ -681,13 +681,58 @@ TAG_ORIG = {  # the battle speaker name tag (docs/re/font.md "Battle name tag")
     0x111B50: "70b581b0051c6801134a85180c1c0026",  # 0x08111B50(tile, str): <= 5 small glyphs into OBJ tiles
     0x10F98A: "0bf0fdfe",                          # bl 0x0811B788 (byte count) -> tag x offset (10 - n) * 2
     0x110AE8: "f0b557464e464546e0b481b000930b9d",  # 0x08110AE8: small-font BG labels, one tile per char
+    0x01ED64: "0020814600276d461e35381c68300b49",  # 0x0801EC54 dialogue speaker plate: 5-tile loop
 }
+PLATE_END = 0x0801EE2A  # first instruction after the plate's 5-tile loop (0x0801ED64..0x0801EE28)
 SMALL_N = 0x260   # codes in the small font (0x8140..0x839F)
 
 TAG_SRC = """
     b tag
     b tagw
     b smapline
+    b plate
+@ plate(r0 = str) -> small pixel width capped at 40: the dialogue speaker plate (0x0801EC54), OBJ tiles 0x68..0x6C
+@ (0x06010D00). ROM strings are byte-order Shift-JIS; RAM ones (player name 0x020025AE, 0x020027B0 + 16n) hold
+@ native halfwords and are copied byte-swapped (<= 16 codes) first.
+plate:
+    push {{r4, r5, lr}}
+    sub sp, #36
+    adds r4, r0, #0
+    lsrs r1, r0, #27
+    bne pl_rom
+    mov r1, sp
+    movs r2, #0
+pl_cp:
+    ldrh r3, [r4, r2]
+    cmp r3, #0
+    beq pl_end
+    lsrs r5, r3, #8
+    lsls r3, r3, #24
+    lsrs r3, r3, #16
+    orrs r3, r5
+    strh r3, [r1, r2]
+    adds r2, #2
+    cmp r2, #32
+    blt pl_cp
+pl_end:
+    movs r3, #0
+    strh r3, [r1, r2]
+    mov r4, sp
+pl_rom:
+    adds r0, r4, #0
+    ldr r1, plobj
+    movs r2, #5
+    movs r3, #{tagpx}
+    bl splot
+    cmp r0, #{tagpx}
+    ble pl_fit
+    movs r0, #{tagpx}
+pl_fit:
+    add sp, #36
+    pop {{r4, r5}}
+    pop {{r1}}
+    bx r1
+
 @ 0x08111B50(r0 = tile index, r1 = str): the tag's 5 OBJ tiles (0x06010000 + index * 32, 1D) = splot(str, tiles,
 @ 5, 40).
 tag:
@@ -921,6 +966,7 @@ twe:
 
     .align 2
 tobj:    .word 0x06010000
+plobj:   .word 0x06010D00
 tclr:    .word 0x05000000
 tbase:   .word 0x8140
 tncodes: .word {ncodes:#x}
@@ -934,10 +980,36 @@ tftab:   .word 0x084028EC
 
 
 def tag_code(far, swidths_addr):
-    """Assemble the small-font blob at file offset `far`; returns (code, tag, tagw, smapline entries)."""
+    """Assemble the small-font blob at file offset `far`; returns (code, tag, tagw, smapline, plate entries)."""
     addr = 0x08000000 | far
     src = TAG_SRC.format(ncodes=NCODES, smalln=SMALL_N, swidths=0x08000000 | swidths_addr, tagpx=ensmall.TAG_PX)
-    return _asm(src, addr), addr, addr + 2, addr + 4
+    return _asm(src, addr), addr, addr + 2, addr + 4, addr + 6
+
+
+def plate_patch(plate):
+    """Inline code at 0x0801ED64 replacing the speaker plate's 5-tile loop: plot via `plate`, then make the caller's
+    centring step (x += table[n] at [sp + 0x10 + 2n], table (0, 16, 12, 8, 4, 0) = (40 - 8n) / 2) centre by pixels:
+    n = 1 and table[1] = (40 - width) / 2."""
+    src = f"""
+    adds r0, r6, #0
+    ldr r3, paddr
+    bl pcall
+    movs r1, #{ensmall.TAG_PX}
+    subs r1, r1, r0
+    asrs r1, r1, #1
+    add r2, sp, #0x10
+    strh r1, [r2, #2]
+    movs r0, #1
+    mov sb, r0
+    b #{PLATE_END:#x}
+pcall:
+    bx r3
+    .align 2
+paddr: .word {plate | 1:#x}
+"""
+    code = _asm(src, 0x0801ED64)
+    assert 0x0801ED64 + len(code) <= PLATE_END
+    return code
 
 
 def strip_code(far, widths_addr):
@@ -1042,7 +1114,8 @@ def install(img, write):
     swt_off = img.alloc(len(swt))
     write(swt_off, swt, "vwf small widths")
     tfar = img.alloc(len(tag_code(0x800000, 0x800000)[0]) + 16)
-    tcode, ttag, ttagw, tmap = tag_code(tfar, swt_off)
+    tcode, ttag, ttagw, tmap, tplate = tag_code(tfar, swt_off)
+    write(0x01ED64, plate_patch(tplate), "vwf speaker plate (0x0801EC54 loop -> plate, centred by pixels)")
     write(tfar, tcode, "vwf small-font code")
     write(0x110AE8, thunk(0x110AE8, tmap), "vwf smapline thunk (small-font BG labels 0x08110AE8)")
     write(0x111B50, thunk(0x111B50, ttag), "vwf tag thunk (name tag 0x08111B50)")

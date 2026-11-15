@@ -42,8 +42,25 @@
   the JP's 16 px cells (the next label's OBJ tiles follow), battle tag 40 px small font.
 - Glyph torture line (all 93 glyphs + double spaces) renders correctly in the dialogue and battle windows
   (work/qa/tort/z.png, ie2.png).
-- The dialogue **speaker plate** (str_char_names) is not VWF: fixed 8 px cells, 5 shown ("[4140" in the marker
-  build); it is the OBJ-cells size-8 path or its own routine — still to do.
+- Session 6 (2026-11-16): **battle_2row** 0x08110C88 = 224 px row 1 + **208 px row 2** (row 2's tiles follow row
+  1's; 224 + 224 overran into the battle BG tiles, `row_px` in windows.json); **intro strip** 224 px from x 8;
+  **credits** 240 px from x 0; **small labels** = the JP's tiles (all 10 callers of 0x08110AE8 read: dests 0x80
+  apart for 40F718/24/30; 410C0C and 410C80 "もどる" (x 27) share 0x06009800).
+- The dialogue **speaker plate** is its own routine **0x0801EC54**(a0, name index r8, a2) (one caller 0x0802C204):
+  string = 0x0812802C if a2, else table 0x0841392C[index] (str_char_names) if index, else the player name RAM
+  0x020025AE; a0 ≠ 0: 0x020027B0 + 16·index (RAM, shikigami names). RAM strings are native halfwords, ROM ones
+  byte-order. Loop 0x0801ED64..0x0801EE28 put ≤ 5 small-font glyphs (type 12) in OBJ tiles 0x68..0x6C, then
+  x += table 0x08128038 [n] = (0, 16, 12, 8, 4, 0) halfwords, i.e. (40 − 8n)/2. Now `vwf.plate_patch`: the loop
+  calls `plate` (TAG_SRC; RAM strings copied byte-swapped, splot ≤ 40 px) and sets n = 1, table[1] = (40 − w)/2
+  in the caller's stack copy: centred by pixels. Verified 40 px stress name (work/qa/sp2/final.png) and JP names
+  from all three sources (work/qa/sp3/plates.png). `fontcalls.lua --var FONTTYPE=12` found it.
+- **names_list** (skills, weapons, techniques) is drawn by the OBJ-cell renderer 0x08014098 (VWF) from the
+  shikigami menu's page routine **0x08035CA4**(id r0 ≤ 0x4B, page r1 0..4, r2), callers 0x08034EA4/0x08034EDC/
+  0x080354C4/0x080354FE/0x080355D2/0x08035606: weapon (table 0x0812B910) at OBJ tile 0x82, skill (0x0812B4F8) at
+  0xA2, other labels 0x58/0xC8 on that page (0x08036340..); techniques_b (0x0813BD78) at 0xA8 (0x08036528). The
+  tour only reaches page 0 (status); L/R/up/down don't change the page (right moves the bottom selector), so the
+  page comes from somewhere else — find the page argument's source and poke it in a scene. Battle users of the
+  same tables: 0x08106402, 0x0810638E, 0x081096EA.
 - Other renderers seen in the marker build (still fixed 16 px cells, need their own work): see "Renderer
   catalogue" below.
 
