@@ -16,14 +16,33 @@ Translators: read this before a batch so early lines don't contradict or give aw
   "eyes like someone who could use shikigami" (Kogenta reacts "!!"). Likely a Tojinshi herself (not yet confirmed).
 - **Yamase** (ヤマセ, portrait 0007): Chiryu Tojinshi who put Grandpa in hospital; shikigami Tsukumo. Gets "new power"
   from the Chiryu Grand Master that forcibly raises a Tojinshi's level, with painful side effects.
-- Classmate 0013 (rough boy, "what's with the world these days") and a teacher (0016, strict, "Murai-san").
+- **Ryuji** (portrait 0013): rough classmate obsessed with vegetables and nutrition; rivals Momo with lunch boxes.
+  Teacher (0016, female, rowing club adviser, "Murai-san").
+- **Masaomi** (0004, "Masaomi-san"): friendly older Tojinshi; his shikigami (0051) is Kogenta's unsettled rival.
+- **Soma** (0005, ボク, snappy) and his older brother **Yuma** (0003): Chiryu Tojinshi. Their father was wronged by the
+  Chiryu Grand Master; Soma sides with the Tenryu and freeloads at the player's apartment; Fusanoshin (0025, Suzaku)
+  is his shikigami. Yuma serves the Chiryu Grand Master, uses Rangetsu (Mahoroba's old shikigami) and Yamaguchi (0060).
+- **Teru** (0006, "-dono", always starving): Tenryu ally; shikigami Isoroku.
+- **Mahoroba** (0010, royal "We"): Tenryu traitor who sided with the Chiryu in the great war; used the dark art
+  "Sakashiki"; Kogenta beat him; kept asleep by the Chiryu's revival art. Wants the "ultimate power" (absorbing gods
+  and holy shikigami) to remake the world from nothing. His Four Kings: Kagero (0045), Unryu (0046), Nagi (0047, Tosa
+  dialect), Shiranui (0044, battle maniac); right hand Ranmaru (0048, samurai). **Yakumo**: Tenryu Tojinshi of the
+  last war whom the player resembles "as a Tojinshi".
+- Chiryu grunts so far: Misasa (0008), Nakamura (0062), Negishi (0063), Sato (0066), Otsuwa (0068), Ikejiri (0070,
+  Chiryu Industries salesman), Ganzo's master (0075), Ruri's master (0074).
 
 ## Plot so far (ev_434000-ev_438000)
 1. Prologue dream: the Tenryu temple falls to the Chiryu; Issei sends baby {00C8} to another era, fighting a Chiryu
    Tojinshi (0032) with the Tenryu seal attack.
 2. Morning: hospital visit, school, Hiroko transfers in; after school, training at the Tenryu Branch Shrine; the
    pillars carry Tojinshi's feelings; Grandpa's letter; Yamase attacks with his new power and loses.
-3. Next: a classmate was attacked "by a yokai"; kidnapping case to investigate (Momo gives a lunch box).
+3. A classmate was attacked "by a yokai"; kidnapping case (Momo gives a lunch box). Grandpa's old letter found.
+   Misasa and Nakamura (Chiryu) fight; Masaomi explains losing costs spirit and memory; Yuma attacks via Yamaguchi;
+   Soma stops him and moves in. Trainer at the hall (Sotaro's friend, 0087) counts wins.
+4. (ev_43C000-ev_448000) Soma's hints; South Kyo Dam Lake: Chiryu base, kids' souls drained to revive Mahoroba;
+   Hiroko warns about Mahoroba. Chiryu Building (underground, B3F Otsuwa), Masaomi points to Taiin Shrine (old Chiryu
+   heart, past the bamboo grove in West Kyo Town). The Four Kings guard it; Mahoroba wakes anyway, absorbs, beats
+   Yuma and the player; the player's mind lands 1000 years in the past (Imperial Court era) near the Kimon Mound.
 
 ## The world
 - Factions: Tenryu (the player's), Chiryu (rival, modern, relies on shikigami power alone; Chiryu Building),

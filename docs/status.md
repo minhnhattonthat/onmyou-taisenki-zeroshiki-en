@@ -2,10 +2,10 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 6. Translate in progress: batches b001-b009 of 41 translated (~760 of 4,843 entries; ev_41C000 ..
-  ev_434000 merged into `script/`; b009's ev_438000 part (prologue day 1) is in `tl/b009.out.tsv`, held until b010).
-  Last build 2026-11-16 (session 9): `build.py` sha1 631dd0ed…, smoke ok, check ok (29 tests, lint 0, batches
-  check 0); intro_event shows the English prologue (`work/qa/s9/scene.png`). Marker build unchanged.
+- **Phase:** 6. Translate in progress: batches b001-b015 of 41 translated (~1,380 of 4,843 entries; ev_41C000 ..
+  ev_448000 merged into `script/`; b015's ev_44C000 part (Mahoroba wakes, 1000 years ago) is in
+  `tl/b015.out.tsv`, held until b016). Last build 2026-11-16 (session 10): `build.py` sha1 6d3af706…, smoke ok,
+  check ok (29 tests, lint 0, batches check 0); ch1_mitsusa shows Misasa's English line (`work/qa/s10/scene.png`).
 - **Done:**
   - Step 0: ROM pinned (`rom.sha1`), MesenCE 2.2.1 + GBA BIOS in `tools/mesen/`, guard hook in `.claude/settings.json`
     (canary blocked), pre-commit runs `tools/check.py` (a failing test was rejected), boot route `tools/routes/boot.txt`
@@ -98,16 +98,21 @@ Updated at the end of every session. Keep it to what the next session needs; his
   - Phase 6 session 9 (2026-11-16): b005-b009 translated (rest of the contract scenes, prologue dream, school
     morning, Grandpa's letter, Yamase fight); `docs/synopsis.md` started (who is who, plot so far); glossary: Shiki
     Points, Drive, summon chant, item-get/give formats, clan names, voices (glossary "Decisions from earlier batches").
-- **Next (phase 6, translate; `references/translation.md`):** translate `tl/b010.tsv` onward in order (read each
+  - Phase 6 session 10 (2026-11-16): b010-b015 translated and merged (Ryuji, Grandpa's old letter, Misasa,
+    Nakamura, Yuma/Soma, the dam-lake base, Chiryu Building, Taiin Shrine and the Four Kings, Mahoroba's awakening);
+    glossary "b010-b015" row (Four Kings, -dono, voices), synopsis extended with the cast and plot to ev_44C000.
+- **Next (phase 6, translate; `references/translation.md`):** translate `tl/b016.tsv` onward in order (read each
   with Read in ~40-line chunks: context-mode cuts larger outputs), write `tl/bNNN.out.tsv`, `batches.py check bNNN`
   to OK, then merge together with the batch that holds the rest of a file (`batches.py merge b009 b010 ...`: a
-  merge of one batch alone holds files split across batches), `tools/check.py`, build, smoke, commit. No translator
+  merge of one batch alone holds files split across batches; next merge: `batches.py merge b015 b016 ...`), `tools/check.py`, build, smoke, commit. No translator
   agent type is installed in this harness and the Orca brief forbids helpers: the worker translates itself,
   ~5 batches per session. Extend `docs/synopsis.md` as story batches are read. Line budget is generous (VWF: ~4 px
   a char, 224 px ≈ 50 chars), so don't over-shorten. After b041: reviewer pass (fresh read-only pass or
   `codex exec`), polish list `docs/polish.md`. Char/shikigami name tables (`str_char_names`, `str_shikigami_names`)
   are still JP: the speaker plate shows イッセイ etc. until their batch is done.
-  Translator notes to carry into the briefs: str_battle_msgs 40E534 starts with `\n` (code-built weapon/skill
+  Translator notes to carry into the briefs: the check wants the exact `{0000}`/`{0010}` counts of the JP and a
+  glossary term must not be split across a `{0000}` ("Spirit{0000}Stone Mound" fails); gaiji readings are in the
+  entry's `notes` (Р=巫, 巫女 = shrine maiden); str_battle_msgs 40E534 starts with `\n` (code-built weapon/skill
   message); str_abilities rows split with `\n` (224 + 224 px); default name 40C51C ≤ 4 letters; keep_jp files
   (str_battle_kanji, str_debug_menu, str_battle_help, name-entry grid rows) stay empty.
   Engine items still open (needed by phase 7 at the latest): widen the 5-cell shikigami-name RAM copy

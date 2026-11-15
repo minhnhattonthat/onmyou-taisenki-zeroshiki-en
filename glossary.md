@@ -142,6 +142,14 @@ Other shikigami and NPC names: Hepburn without macrons, as in `script/str_shikig
 - b005-b009: item gets 『X』を手に入れた -> "You got{0000}the 'X'!" (capitalised item names: 'Honey', 'Gold Koban',
   'Sake', 'Peacock Fan', 'Fish', 'Earth Scroll', 'Silver Sake Cup', 'Golden Arrow', 'Snake Fang', 'Bamboo Leaves',
   'Seashell', 'Rainbow Stone', 'Momo's Lunch Box'); give prompts 「X」を、わたす？ -> 'Hand over the "X"?'.
+- b010-b015: 四転王 -> "the Four Kings" (Mahoroba's: Kagero, Unryu, Nagi, Shiranui); 地流産業 -> "Chiryu Industries";
+  京南ダム(湖) -> South Kyo Dam (Lake); 巫女 -> shrine maiden; ネング -> rice tax; 朝廷 -> the Imperial Court; ～どの ->
+  "-dono" (Teru, Unryu); 降神 alone -> "descend"; trainer tally 通算で{00CB}勝 {00CC}敗 -> "Total: {00CB} wins,
+  {00CC} losses."; 'Ryuji's Lunch Box'. Mahoroba speaks with the royal "We/Us". Voices: Ryuji rough health nut
+  ("ya", veggies); Misasa rough girl ("Hyahaha"); Nakamura rural ("I am!", "shaddup", だ); Teru polite, always
+  hungry; Otsuwa crone ("thou", "dearie", "Feh feh feh"); kid 0069 creepy ("Kikekekeke"); Ikejiri salaryman
+  (courteous sales talk); 0072 woman "hon"; Ranmaru samurai "this one"/"thou"; Nagi Tosa dialect ("ye", "it were");
+  0018 farmer ("Oh, what a fix, what a fix...").
   Honorific on the player's name is hyphenated ({00C8}-kun, {00C8}-dono): allowed, it is not an ordinal.
   Kinds as clans: 黒鉄族 Black Iron clan, 榎族 Hackberry clan, 柊族 Holly clan, 青錫族 Blue Tin clan, 癒火族 Healing
   Fire clan, 青龍族 Seiryu clan. 村井ヒロコ = Hiroko Murai (Murai-san). ソウタロウおじいちゃん = Grandpa Sotaro.

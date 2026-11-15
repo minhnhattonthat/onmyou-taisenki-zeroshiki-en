@@ -6,868 +6,868 @@
    "script": "43817C",
    "op": "073 0001",
    "jp": "ハァハァハァ…{0000}また　あの夢か……{0010}",
-   "en": ""
+   "en": "Hah... hah... hah...{0000}That dream again...{0010}"
   },
   {
    "id": "4382F4",
    "script": "43817C",
    "op": "073 0001",
    "jp": "もう朝だし、そろそろ{0000}したくしないとな…{0010}",
-   "en": ""
+   "en": "It's already morning. I'd better{0000}get ready soon...{0010}"
   },
   {
    "id": "438362",
    "script": "43817C",
    "op": "073 0001",
    "jp": "あっ！そうだ！ぼんやりしてた{0010}この前「地流」におそわれて{0000}おじいちゃんが入院したんだ{0010}ボクも「天流」の闘神士として{0000}もっと強くならないとな・・・{0010}さてと・・・{0000}はやく病院に行かなきゃ！{0010}おじいちゃんに会いに行く{0000}時間だった{0010}",
-   "en": ""
+   "en": "Oh! That's right! I was spacing out.{0010}The other day the Chiryu attacked,{0000}and Grandpa ended up in the hospital.{0010}As a Tenryu Tojinshi, I need{0000}to get a lot stronger...{0010}Well then...{0000}I'd better hurry to the hospital!{0010}It was time to go{0000}see Grandpa.{0010}"
   },
   {
    "id": "4384C4",
    "script": "43846C",
    "op": "073 0001",
    "jp": "おはよう、おじいちゃん{0010}",
-   "en": ""
+   "en": "Good morning, Grandpa.{0010}"
   },
   {
    "id": "4384F6",
    "script": "43846C",
    "op": "036 00120001",
    "jp": "・・・{0010}",
-   "en": ""
+   "en": "...{0010}"
   },
   {
    "id": "438518",
    "script": "43846C",
    "op": "036 00110001",
    "jp": "まだ、目を覚まさないのかな{0010}",
-   "en": ""
+   "en": "I guess he still hasn't woken up.{0010}"
   },
   {
    "id": "438562",
    "script": "43846C",
    "op": "098 00150000",
    "jp": "「地流」のヤツとの戦いで{0000}気力を使いまくってたからな{0010}",
-   "en": ""
+   "en": "He used up all his spirit{0000}in that fight with the Chiryu guy.{0010}"
   },
   {
    "id": "4385B4",
    "script": "43846C",
    "op": "036 00110001",
    "jp": "うわっ、コゲンタおはよう{0010}",
-   "en": ""
+   "en": "Whoa! Morning, Kogenta.{0010}"
   },
   {
    "id": "4385E0",
    "script": "43846C",
    "op": "098 00150000",
    "jp": "オレ、ずーっといたぜ{0010}ドライブから出入りするだけ{0000}だからな{0010}まあ、体は悪くないから{0010}じいさんの気力が戻るまで{0000}待ちな{0010}",
-   "en": ""
+   "en": "I've been here the whole time.{0010}I just pop in and out{0000}of the Drive, see.{0010}Anyway, his body's fine,{0010}so wait till the old man's{0000}spirit comes back.{0010}"
   },
   {
    "id": "43867A",
    "script": "43846C",
    "op": "036 00110001",
    "jp": "うん。いつぐらいまでだろう？{0010}",
-   "en": ""
+   "en": "Okay. How long will that be?{0010}"
   },
   {
    "id": "4386AA",
    "script": "43846C",
    "op": "098 00150000",
    "jp": "気力が戻るまでだろーがっ！{0000}・・・ったく・・{0010}それより、オマエは一刻も早く{0000}一人前の闘神士になるんだぞ！{0010}知ってると思うが、オマエは{0000}オレのような式神と契約を結び{0010}「闘神士」（とうじんし）{0000}として、式神と一緒に{0010}闘うことができる{0010}「印」（いん）を使って式神に{0000}指示するんだから、もっと{0010}修行して「印」を探してくれ{0010}「闘神士」レベルが高くなれば{0000}同じ式神でも強くなるんだぜ{0010}とにかくオマエのレベルを{0000}あげないと、オレの力は{0010}半分もだせないままだぜ！{0010}何てったってオレ様、白虎の{0000}コゲンタを使うにふさわしい{0010}闘神士になってもらわないとな{0010}",
-   "en": ""
+   "en": "Till his spirit comes back, duh!{0000}...Jeez...{0010}More importantly, you gotta become{0000}a full-fledged Tojinshi, and fast!{0010}You know this already, but you{0000}make contracts with shikigami like me,{0010}and as a \"Tojinshi\"{0000}you can fight together{0010}with your shikigami.{0010}You give shikigami orders with{0000}\"seals,\" so you gotta train{0010}more and go find seals.{0010}The higher your Tojinshi level,{0000}the stronger the same shikigami gets.{0010}Point is, if your level{0000}don't go up, I can't use{0010}even half my power!{0010}After all, you gotta become a Tojinshi{0000}worthy of using the great me,{0010}Kogenta the Byakko!{0010}"
   },
   {
    "id": "438940",
    "script": "43846C",
    "op": "073 0001",
    "jp": "あ！おじいちゃんの枕元に{0000}何か置いてある{0010}",
-   "en": ""
+   "en": "Oh! Something's been left{0000}by Grandpa's pillow.{0010}"
   },
   {
    "id": "4389AA",
    "script": "43846C",
    "op": "073 0001",
    "jp": "おじいちゃんのノートだ{0010}",
-   "en": ""
+   "en": "It's Grandpa's notebook.{0010}"
   },
   {
    "id": "4389EC",
    "script": "43846C",
    "op": "073 0001",
    "jp": "さ、そろそろいくぜ{0010}",
-   "en": ""
+   "en": "Okay, let's get goin'.{0010}"
   },
   {
    "id": "438D9C",
    "script": "438D1C",
    "op": "073 0001",
    "jp": "モモちゃんたちと{0000}話してからいこう{0010}",
-   "en": ""
+   "en": "I'll talk to Momo-chan{0000}and the others before I go.{0010}"
   },
   {
    "id": "438E94",
    "script": "438D1C",
    "op": "073 0001",
    "jp": "正義の味方きどりもいいけどよ{0000}修行するって約束だろ{0010}",
-   "en": ""
+   "en": "Playin' the hero is fine and all,{0000}but you promised to train, right?{0010}"
   },
   {
    "id": "438EE4",
    "script": "438D1C",
    "op": "036 00110001",
    "jp": "あ、そうだったっけ{0010}",
-   "en": ""
+   "en": "Oh, did I?{0010}"
   },
   {
    "id": "438F0A",
    "script": "438D1C",
    "op": "098 00150000",
    "jp": "なんだとーーーっ{0010}とにかく、学校を出てから{0000}下に進んで、天神町との境で{0010}石の階段をのぼった先の{0000}「天流」分社まで戻るぞ{0010}あと、その服は修行に向かねぇ{0000}学校でたら着替えとけよ{0010}",
-   "en": ""
+   "en": "Whaaaaat!?{0010}Anyway, after school, head down,{0000}and at the Tenjin Town border{0010}we go up the stone steps{0000}back to the Tenryu Branch Shrine.{0010}And those clothes are no good for{0000}trainin'. Change after school.{0010}"
   },
   {
    "id": "438FDE",
    "script": "438D1C",
    "op": "036 00110001",
    "jp": "わかったよ{0010}",
-   "en": ""
+   "en": "Okay, okay.{0010}"
   },
   {
    "id": "439110",
    "script": "439020",
    "op": "073 0001",
    "jp": "ったく、おそいぜ！{0000}さっそく、トレーニングだ{0010}",
-   "en": ""
+   "en": "Jeez, you're late!{0000}Let's start trainin' right away.{0010}"
   },
   {
    "id": "43915A",
    "script": "439020",
    "op": "036 00000001",
    "jp": "うん、おじいちゃんの社は{0000}「天流」の分社だったんだね{0010}",
-   "en": ""
+   "en": "Yeah. So Grandpa's shrine was{0000}a Tenryu Branch Shrine.{0010}"
   },
   {
    "id": "4391A4",
    "script": "439020",
    "op": "098 00150000",
    "jp": "何を今さら言ってんだ{0000}あたりまえだろ！{0010}",
-   "en": ""
+   "en": "What're you sayin' that now for?{0000}Of course it is!{0010}"
   },
   {
    "id": "4391E8",
    "script": "439020",
    "op": "036 00000001",
    "jp": "ほら！よく見たら柱に傷が{0000}たくさんある{0010}きっと今まで、いろいろな{0000}闘神士たちの思いを{0010}うけとめてきたんだろうな{0010}",
-   "en": ""
+   "en": "Look! If you look closely, the pillars{0000}have lots of scratches.{0010}I bet they've taken in the feelings{0000}of all kinds of Tojinshi{0010}over the years.{0010}"
   },
   {
    "id": "439272",
    "script": "439020",
    "op": "098 00150000",
    "jp": "お前、ふしぎなこと言うなぁ{0010}",
-   "en": ""
+   "en": "You say the weirdest things.{0010}"
   },
   {
    "id": "4392A8",
    "script": "439020",
    "op": "036 00000001",
    "jp": "そうかなぁ？{0010}この前の闘いで、おじいちゃん{0000}が傷ついてから、ずっと{0010}闘神士って何なんだろうって{0000}考えていたんだ{0010}",
-   "en": ""
+   "en": "Do I?{0010}Ever since Grandpa got hurt{0000}in that fight, I've been{0010}thinking about what being{0000}a Tojinshi really means.{0010}"
   },
   {
    "id": "439332",
    "script": "439020",
    "op": "098 00150000",
    "jp": "ほう{0010}",
-   "en": ""
+   "en": "Huh.{0010}"
   },
   {
    "id": "439352",
    "script": "439020",
    "op": "036 00000001",
    "jp": "まあ、けつろんは出てないんだけどね{0010}",
-   "en": ""
+   "en": "Well, I haven't figured it out yet.{0010}"
   },
   {
    "id": "439388",
    "script": "439020",
    "op": "098 00150000",
    "jp": "やっぱお前、{0000}ふしぎなこと言ってるぞ{0010}",
-   "en": ""
+   "en": "Yep, you're definitely{0000}sayin' weird stuff.{0010}"
   },
   {
    "id": "4393CA",
    "script": "439020",
    "op": "036 00000001",
    "jp": "そうかなぁ？{0010}",
-   "en": ""
+   "en": "Am I?{0010}"
   },
   {
    "id": "439482",
    "script": "439020",
    "op": "073 0001",
    "jp": "あ！{0000}今、何か光ったよ{0010}",
-   "en": ""
+   "en": "Ah!{0000}Something just glowed!{0010}"
   },
   {
    "id": "43954A",
    "script": "439020",
    "op": "073 0001",
    "jp": "これは！{0010}昔、おじいちゃんが書いていた{0000}手紙だ！{0010}",
-   "en": ""
+   "en": "This is...!{0010}It's a letter Grandpa wrote{0000}a long time ago!{0010}"
   },
   {
    "id": "4395B2",
    "script": "439020",
    "op": "073 0001",
    "jp": "もしものことがあった場合の{0000}ことを考え、ここに記す・・・{0010}{00C8}よ。お前は{0000}まだ、言葉もしゃべれない{0010}かわいい赤子だが、いずれ{0000}「天流」の闘神士として{0010}「地流」と闘っていくことに{0000}なるだろう。それは、宿命―{0010}{00C8}の宿命なのだ{0010}お前は、わしの目の前に{0000}ドライブと共に現れた{0010}お前が何者なのか、わしも{0000}よくわからない{0010}しかし、これだけは言える。{0000}わしは、お前のおじいちゃんだ{0010}いつまでもな{0010}式神は、この世の住人ではない{0000}荒ぶる神々なのじゃ{0010}神々をわざわざドライブで{0000}呼び出すのだから、つねに{0010}感謝の気持ちを忘れてはならん{0010}式神には闘神士が「印」を{0000}入力して指示をする{0010}封印されている「印」をみつけ{0000}早く正確に入力することが{0010}闘神士の役割だ{0010}そして修行を積んだ闘神士は{0010}最大３体の式神を同時に{0000}使うことができる{0010}「天流」修練場に行けば{0000}新しい式神に会えるだろう{0010}ただし、会えたからといって、{0000}かならず式神が仲間になって{0010}くれるとは限らん{0010}式神と話すことで{0000}心を通じさせることが大切だ{0010}わしに、もしものことが{0000}あっても気にせず前に進め{0010}立派な「天流」闘神士を{0000}めざすのだぞ{0010}",
-   "en": ""
+   "en": "In case anything should happen,{0000}I write this here...{0010}{00C8}. You are still{0000}a sweet baby who cannot talk,{0010}but one day, as a Tenryu{0000}Tojinshi, you will surely{0010}fight the Chiryu. That is fate:{0000}your fate, {00C8}.{0010}It is your destiny.{0010}You appeared before me{0000}together with a Drive.{0010}Even I do not truly know{0000}who you are.{0010}But this much I can say:{0000}I am your grandpa.{0010}Now and always.{0010}Shikigami are not of this world.{0000}They are wild gods.{0010}Since we go out of our way to call{0000}gods forth with the Drive, you must{0010}never forget to be grateful.{0010}A Tojinshi gives shikigami orders{0000}by entering \"seals.\"{0010}Finding sealed-away seals and{0000}entering them fast and true{0010}is the Tojinshi's role.{0010}And a Tojinshi who has trained{0010}can use up to three shikigami{0000}at the same time.{0010}Go to the Tenryu Training Hall,{0000}and you will meet new shikigami.{0010}But meeting them does not{0000}mean they will always{0010}become your allies.{0010}Talking with shikigami to{0000}reach their hearts is what matters.{0010}Should anything happen to me,{0000}do not mind it; keep moving forward.{0010}Strive to become a fine{0000}Tenryu Tojinshi.{0010}"
   },
   {
    "id": "439A0E",
    "script": "439020",
    "op": "073 0001",
    "jp": "おじいちゃん・・・{0000}わかったよ。ボク、強くなるよ{0010}",
-   "en": ""
+   "en": "Grandpa...{0000}I understand. I'll get stronger.{0010}"
   },
   {
    "id": "439A54",
    "script": "439020",
    "op": "098 00150000",
    "jp": "おい、{00C8}！ボーっと{0000}してないで修行するぜ！{0010}",
-   "en": ""
+   "en": "Hey, {00C8}! Quit spacin'{0000}out and let's train!{0010}"
   },
   {
    "id": "439A9E",
    "script": "439020",
    "op": "036 00000001",
    "jp": "うん{0010}",
-   "en": ""
+   "en": "Okay.{0010}"
   },
   {
    "id": "439AB6",
    "script": "439020",
    "op": "098 00150000",
    "jp": "よし！まずは・・・{0010}",
-   "en": ""
+   "en": "All right! First off...{0010}"
   },
   {
    "id": "439B10",
    "script": "439020",
    "op": "036 00070001",
    "jp": "{00C8}くん・・・{0010}",
-   "en": ""
+   "en": "{00C8}-kun...{0010}"
   },
   {
    "id": "439B82",
    "script": "439020",
    "op": "036 00000001",
    "jp": "え？{0010}",
-   "en": ""
+   "en": "Huh?{0010}"
   },
   {
    "id": "439BA2",
    "script": "439020",
    "op": "036 00070001",
    "jp": "久しぶりだね{0000}会えてうれしいよ{0010}",
-   "en": ""
+   "en": "Long time no see.{0000}I'm so glad to see you.{0010}"
   },
   {
    "id": "439BDE",
    "script": "439020",
    "op": "036 00000001",
    "jp": "お前は！おじいちゃんを{0000}入院させた「地流」闘神士！{0010}",
-   "en": ""
+   "en": "You! You're the Chiryu Tojinshi{0000}who put Grandpa in the hospital!{0010}"
   },
   {
    "id": "439C2E",
    "script": "439020",
    "op": "036 00070001",
    "jp": "あのときは、ぐうぜんお前に{0000}負けたけど、こんどは負けない{0010}「地流」宗家さまに新しい{0000}力をもらったからな{0010}",
-   "en": ""
+   "en": "Last time I lost to you by{0000}sheer luck, but not this time.{0010}The Chiryu Grand Master{0000}gave me new power.{0010}"
   },
   {
    "id": "439CB6",
    "script": "439020",
    "op": "036 00000001",
    "jp": "新しい力！？{0010}",
-   "en": ""
+   "en": "New power!?{0010}"
   },
   {
    "id": "439CD6",
    "script": "439020",
    "op": "098 00150000",
    "jp": "ったく、「地流」ってやつは{0000}どうしてこう、間が悪いんだ{0010}新しい力が何であろうと{0000}オケラ式神に負けるかっての！{0010}",
-   "en": ""
+   "en": "Jeez, why do you Chiryu always{0000}show up at the worst times?{0010}Whatever this new power is, like{0000}I'd lose to a two-bit shikigami!{0010}"
   },
   {
    "id": "439D64",
    "script": "439020",
    "op": "036 00070001",
    "jp": "うるさい！{0000}式・神・降・神！　ツクモ{0010}",
-   "en": ""
+   "en": "Shut up!{0000}Shiki-gami, des-cend! Tsukumo!{0010}"
   },
   {
    "id": "439D9E",
    "script": "439020",
    "op": "098 00150000",
    "jp": "珍しく{00C8}が修行を{0000}するところだったのに！{0010}ちくしょおお！{0000}やってやるぜ！{0010}",
-   "en": ""
+   "en": "And just when {00C8} was{0000}actually about to train, too!{0010}Daaarn it!{0000}Bring it on!{0010}"
   },
   {
    "id": "439EAA",
    "script": "439020",
    "op": "073 0001",
    "jp": "アハハ！やっぱり{0000}ボクはつよかったじゃないか{0010}お前たち、すなおにドライブを{0000}よこせ{0010}",
-   "en": ""
+   "en": "Ahaha! See, I was{0000}stronger after all!{0010}Now be good and hand{0000}over your Drive.{0010}"
   },
   {
    "id": "439FA6",
    "script": "439020",
    "op": "073 0001",
    "jp": "ぎゃあああ{0010}",
-   "en": ""
+   "en": "Gyaaaah!{0010}"
   },
   {
    "id": "43A020",
    "script": "439020",
    "op": "073 0001",
    "jp": "どうやら新しい力ってのは{0000}強制的に、闘神士のレベルを{0010}あげることらしいな。ヤマセは{0000}前よりかなり、つよかったしな{0010}",
-   "en": ""
+   "en": "Looks like this \"new power\"{0000}forcibly raises a Tojinshi's{0010}level. Yamase was a lot{0000}stronger than before.{0010}"
   },
   {
    "id": "43A0B2",
    "script": "439020",
    "op": "036 00000001",
    "jp": "つよくなった割には、負けた時{0000}すごく苦しんでたね{0010}",
-   "en": ""
+   "en": "For someone who got stronger,{0000}he sure suffered a lot when he lost.{0010}"
   },
   {
    "id": "43A0F8",
    "script": "439020",
    "op": "098 00150000",
    "jp": "闘神士をごういんにつよくした{0000}ふくさようだな{0010}",
-   "en": ""
+   "en": "It's a side effect of forcin'{0000}a Tojinshi to get stronger.{0010}"
   },
   {
    "id": "43A142",
    "script": "439020",
    "op": "036 00000001",
    "jp": "「地流」は何を考えて{0000}いるんだろう{0010}",
-   "en": ""
+   "en": "I wonder what the Chiryu{0000}are thinking.{0010}"
   },
   {
    "id": "43A17A",
    "script": "439020",
    "op": "098 00150000",
    "jp": "さあな。オレは、向かってくる{0000}ヤツをたおすだけだ{0010}",
-   "en": ""
+   "en": "Who knows. I just beat{0000}anybody who comes at me.{0010}"
   },
   {
    "id": "43A200",
    "script": "439020",
    "op": "073 0001",
    "jp": "お前たち、さっきの闘いで{0000}わかったろう？{0010}すなおにドライブをよこせ{0010}",
-   "en": ""
+   "en": "You learned in that fight{0000}just now, didn't you?{0010}Be good and hand over your Drive.{0010}"
   },
   {
    "id": "43A262",
    "script": "439020",
    "op": "036 00000001",
    "jp": "いや、まだだ！{0000}行くぞ、コゲンタ{0010}",
-   "en": ""
+   "en": "No, not yet!{0000}Let's go, Kogenta!{0010}"
   },
   {
    "id": "43A298",
    "script": "439020",
    "op": "098 00150000",
    "jp": "おう！{0010}",
-   "en": ""
+   "en": "Yeah!{0010}"
   },
   {
    "id": "43A448",
    "script": "43A3DC",
    "op": "036 00000001",
    "jp": "だれもいないようだ{0010}",
-   "en": ""
+   "en": "Looks like nobody's here.{0010}"
   },
   {
    "id": "43A4C0",
    "script": "43A46C",
    "op": "073 0001",
    "jp": "さあて！{0010}",
-   "en": ""
+   "en": "All right!{0010}"
   },
   {
    "id": "43A660",
    "script": "43A568",
    "op": "073 0001",
    "jp": "ねえ聞いた？クラスの子が{0000}だれかにおそわれたんだって！{0010}それも妖怪におそわれたって{0000}言うじゃない？本当かしら？{0010}",
-   "en": ""
+   "en": "Hey, did you hear? Someone in our{0000}class got attacked by somebody!{0010}And they're saying it was{0000}a yokai! Can that be true?{0010}"
   },
   {
    "id": "43A6F0",
    "script": "43A568",
    "op": "036 00130001",
    "jp": "まったく、どうなってんだ{0000}今の世の中はよ！{0010}",
-   "en": ""
+   "en": "Jeez, what's with the world{0000}these days!{0010}"
   },
   {
    "id": "43A738",
    "script": "43A568",
    "op": "036 00110001",
    "jp": "ぼく、調査してみるよ{0010}",
-   "en": ""
+   "en": "I'll look into it.{0010}"
   },
   {
    "id": "43A768",
    "script": "43A568",
    "op": "036 00140001",
    "jp": "うん。コゲンタも{0000}いるから大丈夫よね{0010}",
-   "en": ""
+   "en": "Okay. You've got Kogenta{0000}with you, so you'll be fine.{0010}"
   },
   {
    "id": "43A7A2",
    "script": "43A568",
    "op": "098 00150000",
    "jp": "へへっ！{0000}まかせろってんだ！{0010}",
-   "en": ""
+   "en": "Heheh!{0000}Leave it to me!{0010}"
   },
   {
    "id": "43A7DC",
    "script": "43A568",
    "op": "036 00140001",
    "jp": "まあ、今までもいろいろな{0000}妖怪・・・じゃなくて式神が{0010}おそってきたもんね{0010}",
-   "en": ""
+   "en": "Well, all sorts of yokai...{0000}I mean, shikigami have{0010}come after you before, right?{0010}"
   },
   {
    "id": "43A844",
    "script": "43A568",
    "op": "036 00110001",
    "jp": "うん{0010}",
-   "en": ""
+   "en": "Yeah.{0010}"
   },
   {
    "id": "43A864",
    "script": "43A568",
    "op": "036 00140001",
    "jp": "あなたたちなら大丈夫{0000}だと思うけど、用心してね{0010}",
-   "en": ""
+   "en": "I'm sure you two will be fine,{0000}but be careful, okay?{0010}"
   },
   {
    "id": "43A990",
    "script": "43A8AC",
    "op": "073 0001",
    "jp": "ゆうかい事件、調べてね{0000}おうえんしてるわ{0010}",
-   "en": ""
+   "en": "Look into the kidnapping case.{0000}I'm rooting for you.{0010}"
   },
   {
    "id": "43AA0E",
    "script": "43A8AC",
    "op": "073 0001",
    "jp": "がんばってね！{0010}",
-   "en": ""
+   "en": "Good luck!{0010}"
   },
   {
    "id": "43AA88",
    "script": "43A8AC",
    "op": "073 0001",
    "jp": "おなかすいてない？{0000}お弁当あげるわ{0010}",
-   "en": ""
+   "en": "Aren't you hungry?{0000}Here, have a lunch box.{0010}"
   },
   {
    "id": "43AAF4",
    "script": "43A8AC",
    "op": "073 0001",
    "jp": "『モモのお弁当』を{0000}手に入れた！{0010}",
-   "en": ""
+   "en": "You got{0000}'Momo's Lunch Box'!{0010}"
   },
   {
    "id": "43AC78",
    "script": "43AB74",
    "op": "073 0001",
    "jp": "おう、元気か？{0000}野菜は、なんか食ってるか？{0010}",
-   "en": ""
+   "en": "Yo, how ya doin'?{0000}Eatin' any veggies?{0010}"
   },
   {
    "id": "43ACF4",
    "script": "43AB74",
    "op": "073 0001",
    "jp": "食えって言ってるだろうが！{0010}",
-   "en": ""
+   "en": "I keep tellin' ya to eat 'em!{0010}"
   },
   {
    "id": "43AD76",
    "script": "43AB74",
    "op": "124 2778",
    "jp": "う、うん。食べるようにするよ{0010}",
-   "en": ""
+   "en": "Y-yeah. I'll try to eat them.{0010}"
   },
   {
    "id": "43ADAE",
    "script": "43AB74",
    "op": "036 00130001",
    "jp": "ったく・・・{0010}",
-   "en": ""
+   "en": "Jeez...{0010}"
   },
   {
    "id": "43AE12",
    "script": "43AB74",
    "op": "073 0001",
    "jp": "ならいいけどよ{0000}倒れないように栄養つけとけよ{0010}",
-   "en": ""
+   "en": "Well, if you say so.{0000}Eat right so ya don't keel over.{0010}"
   },
   {
    "id": "43AE90",
    "script": "43AB74",
    "op": "073 0001",
    "jp": "倒れないように栄養つけとけよ{0010}",
-   "en": ""
+   "en": "Eat right so ya don't keel over.{0010}"
   },
   {
    "id": "43AF20",
    "script": "43AB74",
    "op": "073 0001",
    "jp": "おい！野菜食べてるか？{0000}栄養とれよ！{0010}",
-   "en": ""
+   "en": "Hey! You eatin' your veggies?{0000}Get your nutrients!{0010}"
   },
   {
    "id": "43AF9A",
    "script": "43AB74",
    "op": "073 0001",
    "jp": "にんじんはベータ{0000}カロチンが取れるぞ{0010}",
-   "en": ""
+   "en": "Carrots give ya{0000}beta-carotene, y'know!{0010}"
   },
   {
    "id": "43B02C",
    "script": "43AB74",
    "op": "073 0001",
    "jp": "おれの弁当食え！{0000}うむをいわさず食え{0010}",
-   "en": ""
+   "en": "Eat my lunch! No ifs,{0000}ands or buts. Just eat it!{0010}"
   },
   {
    "id": "43B09A",
    "script": "43AB74",
    "op": "073 0001",
    "jp": "『リュージのお弁当』を{0000}手に入れた！{0010}",
-   "en": ""
+   "en": "You got{0000}'Ryuji's Lunch Box'!{0010}"
   },
   {
    "id": "43B148",
    "script": "43B120",
    "op": "073 0001",
    "jp": "昔、おじいちゃんが書いていた{0000}手紙だ！{0010}",
-   "en": ""
+   "en": "It's a letter Grandpa{0000}wrote a long time ago!{0010}"
   },
   {
    "id": "43B194",
    "script": "43B120",
    "op": "073 0001",
    "jp": "もしものことがあった場合の{0000}ことを考え、ここに記す・・・{0010}{00C8}よ。お前は{0000}まだ、言葉もしゃべれない{0010}かわいい赤子だが、いずれ{0000}「天流」の闘神士として{0010}「地流」と闘っていくことに{0000}なるだろう。それは、宿命―{0010}{00C8}の宿命なのだ{0010}お前は、わしの目の前に{0000}ドライブと共に現れた{0010}お前が何者なのか、わしも{0000}よくわからない{0010}しかし、これだけは言える。{0000}わしは、お前のおじいちゃんだ{0010}いつまでもな{0010}式神は、この世の住人ではない{0000}荒ぶる神々なのじゃ{0010}神々をわざわざドライブで{0000}呼び出すのだから、つねに{0010}感謝の気持ちを忘れてはならん{0010}式神には闘神士が「印」を{0000}入力して指示をする{0010}封印されている「印」をみつけ{0000}早く正確に入力することが{0010}闘神士の役割だ{0010}そして修行を積んだ闘神士は{0010}最大３体の式神を同時に{0000}使うことができる{0010}「天流」修練場に行けば{0000}新しい式神に会えるだろう{0010}ただし、会えたからといって、{0000}かならず式神が仲間になって{0010}くれるとは限らん{0010}式神と話すことで{0000}心を通じさせることが大切だ{0010}わしに、もしものことが{0000}あっても気にせず前に進め{0010}立派な「天流」闘神士を{0000}めざすのだぞ{0010}",
-   "en": ""
+   "en": "I write this here in case{0000}something should happen to me...{0010}{00C8}. You are still a sweet{0000}baby who cannot yet speak,{0010}but one day you will fight{0000}the \"Chiryu\" as a \"Tenryu\"{0010}Tojinshi. That is your{0000}destiny-{0010}the destiny of {00C8}.{0010}You appeared before my{0000}eyes together with a Drive.{0010}Even I do not truly know{0000}who you are.{0010}But this much I can say:{0000}I am your grandpa.{0010}Now and always.{0010}Shikigami are not of this world.{0000}They are wild gods.{0010}Since we go out of our way to{0000}call gods with a Drive, you{0010}must never forget to be grateful.{0010}A Tojinshi directs shikigami{0000}by entering \"seals\".{0010}Finding the sealed \"seals\" and{0000}entering them fast and right{0010}is the Tojinshi's role.{0010}And a Tojinshi who has trained{0010}can use up to three{0000}shikigami at once.{0010}Go to the \"Tenryu\" Training Hall{0000}and you'll meet new shikigami.{0010}But meeting them does not{0000}mean a shikigami will always{0010}agree to join you.{0010}What matters is to talk with{0000}shikigami and reach their hearts.{0010}Should something happen to me,{0000}pay it no mind and press on.{0010}Strive to become a fine{0000}\"Tenryu\" Tojinshi, my boy.{0010}"
   },
   {
    "id": "43B664",
    "script": "43B5C4",
    "op": "073 0001",
    "jp": "私はミササ。オマエをたおす！{0010}",
-   "en": ""
+   "en": "I'm Misasa. I'm gonna beat you!{0010}"
   },
   {
    "id": "43B69C",
    "script": "43B5C4",
    "op": "036 00000001",
    "jp": "なんだって！？{0010}",
-   "en": ""
+   "en": "What!?{0010}"
   },
   {
    "id": "43B6C6",
    "script": "43B5C4",
    "op": "036 00080001",
    "jp": "「天流」の闘神士など{0000}たいしたことないじゃないか{0010}私は「地流」宗家さまに頼んで{0000}式神を手に入れたんだ{0010}早くこの力を試したくて{0000}ウズウズしてんだ！{0010}さあ、式神を「降神」しな！{0010}闘神士の世界はきびしいのさ{0010}かくごのできない坊ちゃんは{0000}ひっこんでな！{0010}",
-   "en": ""
+   "en": "\"Tenryu\" Tojinshi are nothin'{0000}special, are they?{0010}I begged the \"Chiryu\"{0000}Grand Master for a shikigami.{0010}I'm just itchin' to{0000}try out this power!{0010}Come on, make yours \"descend\"!{0010}The world of Tojinshi is tough.{0010}Little rich boys with no{0000}guts should stay outta it!{0010}"
   },
   {
    "id": "43B7E0",
    "script": "43B5C4",
    "op": "098 00150000",
    "jp": "なんだと！いくぞ！{0010}",
-   "en": ""
+   "en": "What'd you say! Let's go!{0010}"
   },
   {
    "id": "43B896",
    "script": "43B5C4",
    "op": "073 0001",
    "jp": "ヒャハハ！{0000}口だけかよ！{0010}もっとつよいやつ連れてこい！{0010}",
-   "en": ""
+   "en": "Hyahaha!{0000}All talk, huh!{0010}Go bring somebody stronger!{0010}"
   },
   {
    "id": "43B94C",
    "script": "43B5C4",
    "op": "073 0001",
    "jp": "ちくしょおおお{0010}",
-   "en": ""
+   "en": "Daaamn it!{0010}"
   },
   {
    "id": "43B9FA",
    "script": "43B5C4",
    "op": "073 0001",
    "jp": "お前、また来たのか？{0010}つよいやつを連れてこいって{0000}言っただろ？{0010}まあ、運動不足だし{0000}闘ってやるか。ヒャハハ！{0010}",
-   "en": ""
+   "en": "You came back?{0010}Didn't I tell ya to bring{0000}somebody stronger?{0010}Eh, I could use the exercise.{0000}I'll fight ya. Hyahaha!{0010}"
   },
   {
    "id": "43BA82",
    "script": "43B5C4",
    "op": "098 00150000",
    "jp": "テメェ！うるせえ！{0010}",
-   "en": ""
+   "en": "You! Shut your trap!{0010}"
   },
   {
    "id": "43BAB0",
    "script": "43B5C4",
    "op": "036 00080001",
    "jp": "いきおいだけは良いじゃないか{0000}来な！{0010}",
-   "en": ""
+   "en": "Well, you've sure got spirit.{0000}Come on!{0010}"
   },
   {
    "id": "43BAEA",
    "script": "43B5C4",
    "op": "098 00150000",
    "jp": "なんだと！？いくぞ！{0010}",
-   "en": ""
+   "en": "What'd you say!? Let's go!{0010}"
   },
   {
    "id": "43BCD8",
    "script": "43BBE4",
    "op": "073 0001",
    "jp": "なんだか、腹が減ってきたな{0000}何か食べ物でも無いか？{0010}",
-   "en": ""
+   "en": "Man, I'm gettin' hungry.{0000}Got anything to eat?{0010}"
   },
   {
    "id": "43BD40",
    "script": "43BBE4",
    "op": "036 00000001",
    "jp": "ないよ、食べ物なんて・・・{0010}",
-   "en": ""
+   "en": "No, I don't have any food...{0010}"
   },
   {
    "id": "43BD86",
    "script": "43BBE4",
    "op": "036 00620001",
    "jp": "待っていたよ{0010}",
-   "en": ""
+   "en": "I've been waitin' for ya.{0010}"
   },
   {
    "id": "43BDB6",
    "script": "43BBE4",
    "op": "098 00150000",
    "jp": "そうか、しかたないな{0000}食べれそうなもの探すか{0010}",
-   "en": ""
+   "en": "Figures. Can't be helped.{0000}Guess I'll find somethin' edible.{0010}"
   },
   {
    "id": "43BE30",
    "script": "43BBE4",
    "op": "036 00620001",
    "jp": "待っていたよ（怒{0010}",
-   "en": ""
+   "en": "I've been waitin' for ya! (Grr){0010}"
   },
   {
    "id": "43BE78",
    "script": "43BBE4",
    "op": "036 00000001",
    "jp": "コゲンタ、だれかいるよ{0010}",
-   "en": ""
+   "en": "Kogenta, there's somebody here.{0010}"
   },
   {
    "id": "43BEA2",
    "script": "43BBE4",
    "op": "098 00150000",
    "jp": "ん？{0010}",
-   "en": ""
+   "en": "Hm?{0010}"
   },
   {
    "id": "43BED2",
    "script": "43BBE4",
    "op": "036 00620001",
    "jp": "おいらをムシするなああ！{0010}",
-   "en": ""
+   "en": "Don't you ignore me-e-e!{0010}"
   },
   {
    "id": "43BF16",
    "script": "43BBE4",
    "op": "036 00000001",
    "jp": "ええ・・{0010}",
-   "en": ""
+   "en": "Umm...{0010}"
   },
   {
    "id": "43BF32",
    "script": "43BBE4",
    "op": "098 00150000",
    "jp": "だれだオメェ？{0010}",
-   "en": ""
+   "en": "Who the heck are you?{0010}"
   },
   {
    "id": "43BF5C",
    "script": "43BBE4",
    "op": "036 00620001",
    "jp": "おいらは「地流」闘神士{0000}ナカムラだあ！{0010}",
-   "en": ""
+   "en": "I'm \"Chiryu\" Tojinshi{0000}Nakamura, I am!{0010}"
   },
   {
    "id": "43BF98",
    "script": "43BBE4",
    "op": "098 00150000",
    "jp": "おおおお{0010}すっごい弱そうだな{0010}",
-   "en": ""
+   "en": "Whoooa...{0010}You look super weak.{0010}"
   },
   {
    "id": "43BFE2",
    "script": "43BBE4",
    "op": "036 00620001",
    "jp": "だまれ、だまれー！{0010}お前がたおしたおいらの弟分の{0000}せいで、おいらの立場がねえだ{0010}",
-   "en": ""
+   "en": "Shaddup, shaddup!{0010}'Cause you beat my little{0000}buddy, I got no standin' now!{0010}"
   },
   {
    "id": "43C050",
    "script": "43BBE4",
    "op": "036 00000001",
    "jp": "カタキうち？{0010}",
-   "en": ""
+   "en": "Revenge?{0010}"
   },
   {
    "id": "43C078",
    "script": "43BBE4",
    "op": "036 00620001",
    "jp": "弟分なんてどうでもいい！{0010}オマエをメッタメタにたおして{0000}おいらの力を「地流」宗家{0010}さまに、みとめてもらうだー！{0010}",
-   "en": ""
+   "en": "Forget my little buddy!{0010}I'll whup ya to pieces and get{0000}the \"Chiryu\" Grand Master{0010}to see how strong I am, I will!{0010}"
   },
   {
    "id": "43C14C",
    "script": "43BBE4",
    "op": "036 00040001",
    "jp": "闘神士は、ドライブを使うのに{0000}ものすごい力を必要とするから{0010}",
-   "en": ""
+   "en": "Tojinshi need tremendous{0000}strength to use a Drive, so{0010}"
   },
   {
    "id": "43C1A8",
    "script": "43BBE4",
    "op": "054 00000001",
    "jp": "負けると、式神も闘神士も{0000}気力と一時的な記憶が{0010}なくなるのさ{0010}",
-   "en": ""
+   "en": "when they lose, shikigami and{0000}Tojinshi both lose their spirit{0010}and some memory, for a while.{0010}"
   },
   {
    "id": "43C204",
    "script": "43BBE4",
    "op": "036 00000001",
    "jp": "あ、マサオミさん！{0010}",
-   "en": ""
+   "en": "Oh, Masaomi-san!{0010}"
   },
   {
    "id": "43C246",
    "script": "43BBE4",
    "op": "098 00510000",
    "jp": "ようコゲンタ{0000}元気にしてるかい？{0010}",
-   "en": ""
+   "en": "Hey, Kogenta.{0000}Been keepin' well?{0010}"
   },
   {
    "id": "43C27C",
    "script": "43BBE4",
    "op": "098 00150000",
    "jp": "そういや、テメェとも勝負が{0000}ついてなかったな{0010}まとめて、たおしてやる{0010}",
-   "en": ""
+   "en": "Come to think of it, you and{0000}me never settled our score.{0010}I'll take you both down at once!{0010}"
   },
   {
    "id": "43C2E0",
    "script": "43BBE4",
    "op": "036 00040001",
    "jp": "まあ、そんなアツく{0000}ならなくてもいいだろう{0010}オレは、用事があるから{0000}行かせてもらうよ{0010}",
-   "en": ""
+   "en": "Now, now, no need to get{0000}so fired up.{0010}I've got business to see to,{0000}so I'll be on my way.{0010}"
   },
   {
    "id": "43C34E",
    "script": "43BBE4",
    "op": "098 00510000",
    "jp": "じゃあ、またな！{0010}",
-   "en": ""
+   "en": "Well, see ya around!{0010}"
   },
   {
    "id": "43C3CA",
    "script": "43BBE4",
    "op": "098 00150000",
    "jp": "ちょ、ちょっと待てよ！{0010}",
-   "en": ""
+   "en": "H-hey, hold on a sec!{0010}"
   },
   {
    "id": "43C3FC",
    "script": "43BBE4",
    "op": "036 00000001",
    "jp": "マサオミさんたちは、{0000}もう行っちゃったよ{0010}",
-   "en": ""
+   "en": "Masaomi-san and his partner{0000}are already gone.{0010}"
   },
   {
    "id": "43C43A",
    "script": "43BBE4",
    "op": "098 00150000",
    "jp": "あいつらー{0010}{00C8}、オレたちは{0000}修行しに行こうぜ{0010}",
-   "en": ""
+   "en": "Those guys...{0010}{00C8}, let's you and me{0000}go do some trainin'.{0010}"
   },
   {
    "id": "43C4C0",
    "script": "43BBE4",
    "op": "036 00620001",
    "jp": "むーしーすーるーなー{0000}ちくそおおお{0010}",
-   "en": ""
+   "en": "Don't. Ig. Nore. Me!{0000}Daaamn it!{0010}"
   },
   {
    "id": "43C52C",
    "script": "43BBE4",
    "op": "098 00150000",
    "jp": "しかたないなあ{0000}いっちょ、かたづけるか{0010}",
-   "en": ""
+   "en": "Can't be helped, I guess.{0000}Let's clean this up real quick.{0010}"
   },
   {
    "id": "43C580",
    "script": "43BBE4",
    "op": "036 00620001",
    "jp": "いくぞおお{0010}",
-   "en": ""
+   "en": "Here I come!{0010}"
   },
   {
    "id": "43C61E",
    "script": "43BBE4",
    "op": "073 0001",
    "jp": "やっぱ弟分は、何かの{0000}まちがいで負けただな！{0010}おらは、つよいだ！{0010}",
-   "en": ""
+   "en": "Knew it! My little buddy just{0000}lost by some fluke!{0010}I'm strong, I am!{0010}"
   },
   {
    "id": "43C676",
    "script": "43BBE4",
    "op": "098 00150000",
    "jp": "ちくしょお{0010}",
-   "en": ""
+   "en": "Damn it!{0010}"
   },
   {
    "id": "43C6FC",
    "script": "43BBE4",
    "op": "073 0001",
    "jp": "ちくそおおお{0000}覚えてろよおお{0010}",
-   "en": ""
+   "en": "Daaamn it!{0000}You'll pay for this!{0010}"
   },
   {
    "id": "43C782",
    "script": "43BBE4",
    "op": "098 00150000",
    "jp": "ケッ。やっぱり{0000}たいしたことないやつだったな{0010}{00C8}、オメエ{0000}もうちょっと印を練習しとけよ{0010}",
-   "en": ""
+   "en": "Tch. Knew he was nothin'{0000}special.{0010}{00C8}, you gotta practice{0000}your seals some more.{0010}"
   },
   {
    "id": "43C834",
    "script": "43BBE4",
    "op": "073 0001",
    "jp": "お！？また来たのか？{0010}お前たち、みのほどを{0000}知ったほうがいいぞお{0010}",
-   "en": ""
+   "en": "Oh!? Back again, are ya?{0010}You lot oughta learn{0000}your place, ya hear?{0010}"
   }
  ]
 }
