@@ -81,7 +81,13 @@ centred by bytes, 8 px a char. Patch (`vwf.py` TAG_SRC, small art `tools/ensmall
 (VWF in the small font, clipped to 40 px), 0x0810F98A bl → `tagw` at 0x08111B60 (the dead routine body):
 (pixel width capped at 40, + 2) / 4, so (10 − r)·2 centres by pixels (Japanese: 8 px a char gives the byte count
 back). Verified battle_forest "Kogenta", tutorial_battle "Ryuuko" (`build.py --qa`, `work/qa/tag2/z.png`).
-**Tag budget: 40 px of `ensmall` width.** The window glyph routine 0x080029F0 is NOT the tag (probes
+**Tag budget: 40 px of `ensmall` width.**
+**0x08110AE8** (BG labels, 10 callers) → `smapline`: n = ceil(small width / 8) tiles at dest, plotted by the shared
+`splot`, map entries for those n tiles, returns dest + 32n. The original wrote one tile per char with no limit, so
+a long string overwrote the BG tiles after dest (the marker build showed "hchc…" and "quick" fragments around the
+battle wheel). Its budget per label = the JP's tile count × 8 px until measured (the tiles after dest belong to the
+next label). Verified: `build.py --qa 410C0C="View foe"` in battle_forest draws clean (`work/qa/tag3/z.png`); the
+marker build still overruns there because its markers fill 16 px per JP char (needs the small-font budget). The window glyph routine 0x080029F0 is NOT the tag (probes
 `winopen.lua` / `wincalls.lua` see only battle messages and the name-entry question there).
 Battle wins are RNG-dependent on the marker build (text timing changes the RNG): battle_win lost once and the game
 returned to the title (not a crash).

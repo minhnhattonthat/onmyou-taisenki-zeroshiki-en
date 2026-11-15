@@ -680,15 +680,71 @@ mback:  .word 0x080140A9
 TAG_ORIG = {  # the battle speaker name tag (docs/re/font.md "Battle name tag")
     0x111B50: "70b581b0051c6801134a85180c1c0026",  # 0x08111B50(tile, str): <= 5 small glyphs into OBJ tiles
     0x10F98A: "0bf0fdfe",                          # bl 0x0811B788 (byte count) -> tag x offset (10 - n) * 2
+    0x110AE8: "f0b557464e464546e0b481b000930b9d",  # 0x08110AE8: small-font BG labels, one tile per char
 }
 SMALL_N = 0x260   # codes in the small font (0x8140..0x839F)
 
 TAG_SRC = """
     b tag
     b tagw
-@ 0x08111B50(r0 = tile index, r1 = str): clear the tag's 5 OBJ tiles (0x06010000 + index * 32, 1D) and plot the
-@ string in the small font (type 12) at variable width (small width table), clipped to 40 px.
+    b smapline
+@ 0x08111B50(r0 = tile index, r1 = str): the tag's 5 OBJ tiles (0x06010000 + index * 32, 1D) = splot(str, tiles,
+@ 5, 40).
 tag:
+    push {{r4, lr}}
+    lsls r4, r0, #5
+    ldr r0, tobj
+    adds r4, r4, r0
+    adds r0, r1, #0
+    adds r1, r4, #0
+    movs r2, #5
+    movs r3, #{tagpx}
+    bl splot
+    pop {{r4}}
+    pop {{r0}}
+    bx r0
+
+@ 0x08110AE8(x, y, pal, map, [sp] dest, [sp+4] base, [sp+8] str) -> next free tile address: BG labels in the small
+@ font. The game puts one tile per char at map (x + i, y), with no limit (a long string overwrote the tiles after
+@ dest). Here: n = ceil(width / 8) tiles at dest = splot(str, dest, n, n * 8), map entries for those n tiles.
+smapline:
+    push {{r4, r5, r6, r7, lr}}
+    lsls r0, r0, #1
+    lsls r1, r1, #6
+    adds r0, r0, r1
+    adds r4, r3, r0
+    lsls r5, r2, #12
+    ldr r0, [sp, #28]
+    bl smeasure
+    adds r0, #7
+    lsrs r6, r0, #3
+    ldr r0, [sp, #28]
+    ldr r1, [sp, #20]
+    adds r2, r6, #0
+    lsls r3, r6, #3
+    bl splot
+    ldr r7, [sp, #20]
+smloop:
+    cmp r6, #0
+    beq smdone
+    ldr r0, [sp, #24]
+    subs r0, r7, r0
+    lsrs r0, r0, #5
+    orrs r0, r5
+    strh r0, [r4]
+    adds r4, #2
+    adds r7, #32
+    subs r6, #1
+    b smloop
+smdone:
+    adds r0, r7, #0
+    pop {{r4, r5, r6, r7}}
+    pop {{r1}}
+    bx r1
+
+@ splot(r0 = str, r1 = dest tiles (8x8 4bpp, consecutive), r2 = tiles to clear, r3 = max px) -> width in px:
+@ plot the string in the small font (type 12) at variable width (small width table), clipped to max px.
+splot:
     push {{r4, r5, r6, r7, lr}}
     mov r4, r8
     mov r5, sb
@@ -696,16 +752,16 @@ tag:
     mov r7, fp
     push {{r4, r5, r6, r7}}
     sub sp, #8
-    mov r8, r1
-    lsls r0, r0, #5
-    ldr r1, tobj
-    adds r1, r1, r0
+    mov r8, r0
     mov sb, r1
+    mov fp, r3
     movs r0, #0
     mov sl, r0
     str r0, [sp]
     mov r0, sp
-    ldr r2, tclr
+    lsls r2, r2, #3
+    ldr r3, tclr
+    orrs r2, r3
     svc #0xb
 tloop:
     mov r0, r8
@@ -769,7 +825,7 @@ tcl:
     beq tnext
     mov r0, sl
     adds r0, r0, r6
-    cmp r0, #{tagpx}
+    cmp r0, fp
     bge tnext
     lsrs r4, r0, #3
     lsls r4, r4, #5
@@ -807,6 +863,7 @@ tadv:
     add sl, r0
     b tloop
 tdone:
+    mov r0, sl
     add sp, #8
     pop {{r4, r5, r6, r7}}
     mov r8, r4
@@ -814,8 +871,8 @@ tdone:
     mov sl, r6
     mov fp, r7
     pop {{r4, r5, r6, r7}}
-    pop {{r0}}
-    bx r0
+    pop {{r1}}
+    bx r1
 tcall_r3:
     bx r3
 
@@ -823,6 +880,19 @@ tcall_r3:
 @ x offset (10 - r0) * 2, so this centres the text by pixels in the 40 px tag (Japanese: 8 px a char = byte count).
 @ Wider text is clipped by `tag`, so the width is capped at 40 px (offset 0).
 tagw:
+    push {{lr}}
+    bl smeasure
+    cmp r0, #{tagpx}
+    ble twfit
+    movs r0, #{tagpx}
+twfit:
+    adds r0, #2
+    lsrs r0, r0, #2
+    pop {{r1}}
+    bx r1
+
+@ smeasure(r0 = str) -> pixel width in the small font (r1-r3 untouched)
+smeasure:
     push {{r4, r5, r6}}
     movs r6, #0
 twl:
@@ -845,18 +915,13 @@ twl:
     adds r6, r6, r4
     b twl
 twe:
-    cmp r6, #{tagpx}
-    ble twfit
-    movs r6, #{tagpx}
-twfit:
-    adds r0, r6, #2
-    lsrs r0, r0, #2
+    adds r0, r6, #0
     pop {{r4, r5, r6}}
     bx lr
 
     .align 2
 tobj:    .word 0x06010000
-tclr:    .word 0x05000000 | {tagpx}
+tclr:    .word 0x05000000
 tbase:   .word 0x8140
 tncodes: .word {ncodes:#x}
 tsmalln: .word {smalln:#x}
@@ -869,10 +934,10 @@ tftab:   .word 0x084028EC
 
 
 def tag_code(far, swidths_addr):
-    """Assemble the tag blob at file offset `far`; returns (code, tag entry, tagw entry)."""
+    """Assemble the small-font blob at file offset `far`; returns (code, tag, tagw, smapline entries)."""
     addr = 0x08000000 | far
     src = TAG_SRC.format(ncodes=NCODES, smalln=SMALL_N, swidths=0x08000000 | swidths_addr, tagpx=ensmall.TAG_PX)
-    return _asm(src, addr), addr, addr + 2
+    return _asm(src, addr), addr, addr + 2, addr + 4
 
 
 def strip_code(far, widths_addr):
@@ -977,8 +1042,9 @@ def install(img, write):
     swt_off = img.alloc(len(swt))
     write(swt_off, swt, "vwf small widths")
     tfar = img.alloc(len(tag_code(0x800000, 0x800000)[0]) + 16)
-    tcode, ttag, ttagw = tag_code(tfar, swt_off)
-    write(tfar, tcode, "vwf tag code")
+    tcode, ttag, ttagw, tmap = tag_code(tfar, swt_off)
+    write(tfar, tcode, "vwf small-font code")
+    write(0x110AE8, thunk(0x110AE8, tmap), "vwf smapline thunk (small-font BG labels 0x08110AE8)")
     write(0x111B50, thunk(0x111B50, ttag), "vwf tag thunk (name tag 0x08111B50)")
     write(0x111B60, thunk(0x111B60, ttagw), "vwf tagw thunk (in the replaced routine's body)")
     write(0x10F98A, bl(0x0810F98A, 0x08111B60), "vwf tag centring: pixel width")
