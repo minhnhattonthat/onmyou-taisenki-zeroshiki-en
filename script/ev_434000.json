@@ -6,609 +6,609 @@
    "script": "434534",
    "op": "073 0001",
    "jp": "魂をこめた弾だったんだが{0000}これで効かないようでは{0010}オレの負けだ…{0010}このオレの命を握っているのは{0000}おまえだ。好きにするがいい{0010}",
-   "en": ""
+   "en": "That shot had my soul in it.{0000}If it didn't work,{0010}then I've lost...{0010}You hold my life in your hands.{0000}Do with it as you like.{0010}"
   },
   {
    "id": "43460A",
    "script": "434534",
    "op": "036 00000001",
    "jp": "ボクの式神になってよ{0010}",
-   "en": ""
+   "en": "Become my shikigami!{0010}"
   },
   {
    "id": "434632",
    "script": "434534",
    "op": "098 00680000",
    "jp": "オレは様々な人間に仕えて、さ{0000}まざまな人間の生死をみてきた{0010}このオレとけいやくすると{0000}いうことは、おまえもオレも{0010}生死をともにするということだ{0000}わかっているのか？{0010}",
-   "en": ""
+   "en": "I've served many humans and{0000}seen many of them live and die.{0010}Making a contract with me{0000}means you and I{0010}share life and death.{0000}Do you understand that?{0010}"
   },
   {
    "id": "434716",
    "script": "434534",
    "op": "073 0001",
    "jp": "式神同士の闘いのまえに、人間{0000}同士の闘いであることを忘れて{0010}はならない。ようするに、式神{0000}が倒れれば、おまえもタダじゃ{0010}すまないってことだ{0010}それを理解しているならば、{0000}けいやくに応じよう{0010}",
-   "en": ""
+   "en": "Before it's a fight between shikigami,{0000}never forget it's a fight between{0010}humans. In short, if your shikigami{0000}falls, you won't get off{0010}lightly either.{0010}If you understand that,{0000}I'll accept the contract.{0010}"
   },
   {
    "id": "434834",
    "script": "434534",
    "op": "073 0001",
    "jp": "クロイチとけいやくした{0010}",
-   "en": ""
+   "en": "You formed a contract with Kuroichi.{0010}"
   },
   {
    "id": "43489A",
    "script": "434534",
    "op": "073 0001",
    "jp": "式神同士の闘いのまえに、人間{0000}同士の闘いであることを忘れて{0010}はならない{0010}オレがたおれれば、おまえも{0000}タダじゃすまないだろう{0010}そのような心構えで闘って{0000}いるならばあらためるがよい{0010}話が長すぎたようだ。{0000}また会おう、ごめん！{0010}",
-   "en": ""
+   "en": "Before it's a fight between shikigami,{0000}never forget it's a fight between{0010}humans.{0010}If I fall, you surely won't{0000}get off lightly either.{0010}If you fight without that resolve,{0000}you had better change.{0010}I seem to have talked too long.{0000}Until we meet again. Farewell!{0010}"
   },
   {
    "id": "434A18",
    "script": "4349E0",
    "op": "073 0001",
    "jp": "いちどならずとも二度までも{0000}邪気にやられてしまうとはのぅ{0010}どうやら、ずいぶん迷惑を{0000}かけてしまったようじゃ{0010}",
-   "en": ""
+   "en": "To be taken by the evil aura not{0000}once, but twice, eh...{0010}It seems I've caused you{0000}quite a lot of trouble.{0010}"
   },
   {
    "id": "434AA4",
    "script": "4349E0",
    "op": "036 00000001",
    "jp": "ボクとけいやくしようよ{0010}",
-   "en": ""
+   "en": "Let's make a contract!{0010}"
   },
   {
    "id": "434ACE",
    "script": "4349E0",
    "op": "098 00690000",
    "jp": "ほう{0010}わしとけいやくしたいとは{0000}ずいぶん変わったお方じゃ{0010}わしなんぞとけいやくしても{0000}必ずしもプラスにはならん{0010}じゃろうに…{0010}こんなわしを拾ってくれるとは{0000}意外と心が大きい者かもしれん{0010}気楽さがとりえのわしじゃが{0000}よろしくたのむよ{0010}",
-   "en": ""
+   "en": "Oho.{0010}Wanting a contract with me?{0000}You're quite an odd one, eh.{0010}A contract with the likes of me{0000}won't necessarily do you{0010}much good, you know...{0010}Taking in an old man like me...{0000}You may have a big heart after all.{0010}Being easygoing is my only strength,{0000}but I'm in your care, my boy.{0010}"
   },
   {
    "id": "434C1E",
    "script": "4349E0",
    "op": "073 0001",
    "jp": "ラクサイとけいやくした{0010}",
-   "en": ""
+   "en": "You formed a contract with Rakusai.{0010}"
   },
   {
    "id": "434CC8",
    "script": "434C90",
    "op": "073 0001",
    "jp": "負けちまったものは仕方がねぇ{0000}オレは何も文句はねぇよ{0010}おまえの望みは何だ？{0010}",
-   "en": ""
+   "en": "Lost is lost, can't be helped.{0000}I got no complaints.{0010}So what do ya want?{0010}"
   },
   {
    "id": "434D32",
    "script": "434C90",
    "op": "036 00000001",
    "jp": "ボクとけいやくしてよ{0010}",
-   "en": ""
+   "en": "Make a contract with me!{0010}"
   },
   {
    "id": "434D5A",
    "script": "434C90",
    "op": "098 00700000",
    "jp": "やなこった！　今回は負けたが{0000}つぎはこうはいかねぇ！{0010}オレはどんなことがあっても、{0000}おまえに勝ちたいのよ{0010}",
-   "en": ""
+   "en": "No way! I lost this time, but{0000}next time won't go like this!{0010}No matter what, I wanna{0000}beat you!{0010}"
   },
   {
    "id": "434DE4",
    "script": "434C90",
    "op": "036 00000001",
    "jp": "じゃあ、バトルではない{0000}ちがうやり方で勝負をしよう{0010}",
-   "en": ""
+   "en": "Then let's have a contest{0000}that isn't a battle.{0010}"
   },
   {
    "id": "434E2C",
    "script": "434C90",
    "op": "098 00700000",
    "jp": "いいぜ！おまえが勝ったら{0000}どんなたのみでも聞いてやる{0010}",
-   "en": ""
+   "en": "Fine by me! If you win,{0000}I'll do whatever you ask.{0010}"
   },
   {
    "id": "434E7E",
    "script": "434C90",
    "op": "036 00000001",
    "jp": "じゃあ、かけっこで勝負だ！{0010}１８秒以内に、ボクが{0000}ゴールしたら仲間になってよ{0010}",
-   "en": ""
+   "en": "Then let's race!{0010}If I reach the goal within{0000}18 seconds, you join my team!{0010}"
   },
   {
    "id": "434EE2",
    "script": "434C90",
    "op": "098 00700000",
    "jp": "それでいいぜ！{0010}",
-   "en": ""
+   "en": "You're on!{0010}"
   },
   {
    "id": "434F68",
    "script": "434C90",
    "op": "073 0001",
    "jp": "くそう！負けちまった！{0010}",
-   "en": ""
+   "en": "Dang it! I lost!{0010}"
   },
   {
    "id": "434F9A",
    "script": "434C90",
    "op": "036 00000001",
    "jp": "約束だよ！ボクの式神になって{0000}もらうよ{0010}",
-   "en": ""
+   "en": "A promise is a promise! You're{0000}gonna be my shikigami!{0010}"
   },
   {
    "id": "434FD6",
    "script": "434C90",
    "op": "098 00700000",
    "jp": "男に二言はねぇ！　わかった！{0000}おまえのいうことを聞くぜ！{0010}",
-   "en": ""
+   "en": "A man never goes back on his word!{0000}All right! I'll do as you say!{0010}"
   },
   {
    "id": "435068",
    "script": "434C90",
    "op": "073 0001",
    "jp": "ココトウとけいやくした{0010}",
-   "en": ""
+   "en": "You formed a contract with Kokoto.{0010}"
   },
   {
    "id": "4350E6",
    "script": "434C90",
    "op": "073 0001",
    "jp": "ヒャッホー！オレの勝ちだ！{0010}やっぱり、勝負の本質は勝ちに{0000}ありだぜ！{0010}おまえにはわるいが{0000}オレとのけいやくは次回に{0010}もちこしだな！　あばよ！{0010}",
-   "en": ""
+   "en": "Woo-hoo! I win!{0010}See, the heart of any contest{0000}is winning!{0010}Sorry for ya, but{0000}our contract's gonna{0010}have to wait! So long!{0010}"
   },
   {
    "id": "435210",
    "script": "4351D8",
    "op": "073 0001",
    "jp": "みとめたくはないが、これも{0000}勝負である。われの負けである{0010}わが一門にかけて、そなたを{0000}守ってみせよう{0010}",
-   "en": ""
+   "en": "I do not wish to admit it, but{0000}a contest is a contest. I am beaten.{0010}On the honor of my house,{0000}I shall protect thee.{0010}"
   },
   {
    "id": "4352D2",
    "script": "4351D8",
    "op": "073 0001",
    "jp": "カブトオウとけいやくした{0010}",
-   "en": ""
+   "en": "You formed a contract with Kabuto-O.{0010}"
   },
   {
    "id": "4353B0",
    "script": "435344",
    "op": "073 0001",
    "jp": "ツイガ黒とけいやくした{0010}",
-   "en": ""
+   "en": "You formed a contract with Tsuiga Black.{0010}"
   },
   {
    "id": "435474",
    "script": "435408",
    "op": "073 0001",
    "jp": "ツイガ赤とけいやくした{0010}",
-   "en": ""
+   "en": "You formed a contract with Tsuiga Red.{0010}"
   },
   {
    "id": "435538",
    "script": "4354CC",
    "op": "073 0001",
    "jp": "コゲンタ２とけいやくした{0010}",
-   "en": ""
+   "en": "You formed a contract with Kogenta 2.{0010}"
   },
   {
    "id": "435618",
    "script": "435594",
    "op": "073 0001",
    "jp": "あ、そうだ！ドライブを持って{0000}行かなきゃ！{0010}",
-   "en": ""
+   "en": "Oh, right! I have to{0000}take the Drive with me!{0010}"
   },
   {
    "id": "43567C",
    "script": "435594",
    "op": "073 0001",
    "jp": "ドライブが光っている{0010}",
-   "en": ""
+   "en": "The Drive is glowing.{0010}"
   },
   {
    "id": "4356EC",
    "script": "4356A4",
    "op": "073 0001",
    "jp": "『ドライブ』を{0000}手に入れた！{0010}",
-   "en": ""
+   "en": "You got{0000}the 'Drive'!{0010}"
   },
   {
    "id": "4358B4",
    "script": "435844",
    "op": "073 0001",
    "jp": "まず病院にいかなきゃ{0010}",
-   "en": ""
+   "en": "I have to go to the hospital first.{0010}"
   },
   {
    "id": "435A34",
    "script": "4358E0",
    "op": "073 0001",
    "jp": "うわっ　イテテ・・・{0010}キミ　だいじょうぶ？{0010}",
-   "en": ""
+   "en": "Whoa! Ow ow ow...{0010}Hey, are you okay?{0010}"
   },
   {
    "id": "435AA4",
    "script": "4358E0",
    "op": "036 00020001",
    "jp": "・・・へいきよ{0000}急いでるの。じゃあね！{0010}",
-   "en": ""
+   "en": "...I'm fine.{0000}I'm in a hurry. Bye!{0010}"
   },
   {
    "id": "435B74",
    "script": "4358E0",
    "op": "073 0001",
    "jp": "なんか、悪いことしちゃったな{0010}",
-   "en": ""
+   "en": "I feel kinda bad about that.{0010}"
   },
   {
    "id": "435BC0",
    "script": "4358E0",
    "op": "098 00150000",
    "jp": "まあ、気にすんなよ{0010}",
-   "en": ""
+   "en": "Eh, don't sweat it.{0010}"
   },
   {
    "id": "435C0A",
    "script": "4358E0",
    "op": "036 00110001",
    "jp": "あっ　もうこんな時間だ！{0010}",
-   "en": ""
+   "en": "Ah! Look at the time!{0010}"
   },
   {
    "id": "435C36",
    "script": "4358E0",
    "op": "098 00150000",
    "jp": "お！修行するか？{0010}",
-   "en": ""
+   "en": "Oh! Trainin' time?{0010}"
   },
   {
    "id": "435C62",
    "script": "4358E0",
    "op": "036 00110001",
    "jp": "いや、学校だよ{0010}",
-   "en": ""
+   "en": "No, school.{0010}"
   },
   {
    "id": "435C84",
    "script": "4358E0",
    "op": "098 00150000",
    "jp": "じゃ、学校のあと修行だぜ{0000}約束だからな{0010}",
-   "en": ""
+   "en": "Then trainin' after school.{0000}It's a promise, got it?{0010}"
   },
   {
    "id": "435D3C",
    "script": "435CD4",
    "op": "073 0001",
    "jp": "ちょっとまった！{0000}寝ぼけてるかもしれねェから{0010}「印」についてだけは{0000}確認しとくぜ！{0010}",
-   "en": ""
+   "en": "Hold it!{0000}You might still be half asleep,{0010}so let's just go over{0000}\"seals\" real quick!{0010}"
   },
   {
    "id": "435DA0",
    "script": "435CD4",
    "op": "124 0010",
    "jp": "敵と闘うときは、式神に{0000}「印」で指示するんだ{0010}十字ボタンで「赤」の線を{0000}続けて入力すれば{0010}金色に光り「印」が完成する{0000}「印」が必殺技にもなるんだぜ{0010}ＨＰの下に式点が表示される{0000}「印」は式点がないと使えない{0010}まず式点をためてから{0000}「印」を完成させようぜ！{0010}まあ、なんだかんだあるが{0000}１つだけ、忘れるんじゃねェぞ{0010}金色に光るまで、「赤」の線を{0000}続けて入力すると「印」になる{0010}「赤」だぞ！「赤」を「金」に{0000}するんだ{0010}わかったか？{0010}",
-   "en": ""
+   "en": "When ya fight enemies, ya give{0000}your shikigami orders with \"seals.\"{0010}Trace the \"red\" line with{0000}the +Control Pad without stoppin',{0010}and it glows gold: the seal's done.{0000}Seals can be special moves too!{0010}Your Shiki Points show under HP.{0000}No Shiki Points, no seals.{0010}So build up Shiki Points first,{0000}then finish a seal!{0010}There's a lot to it, but{0000}don't you forget one thing:{0010}Keep tracin' the \"red\" line till{0000}it glows gold, and you get a seal.{0010}Red! Ya turn the \"red\"{0000}into \"gold\"!{0010}Got it?{0010}"
   },
   {
    "id": "436028",
    "script": "435FA8",
    "op": "073 0001",
    "jp": "あ！こっちよ。{00C8}{0010}おさななじみだからって、{0000}待てないわ{0010}先行ってるわね{0010}学校までまっすぐだから{0000}迷わずに来るのよ{0010}{00C8}も、急がないと{0000}遅刻しちゃうわよ{0010}",
-   "en": ""
+   "en": "Ah! Over here, {00C8}!{0010}Childhood friend or not,{0000}I can't wait for you.{0010}I'm going on ahead.{0010}It's straight to school,{0000}so don't get lost.{0010}You'd better hurry too, {00C8},{0000}or you'll be late.{0010}"
   },
   {
    "id": "436228",
    "script": "436110",
    "op": "073 0001",
    "jp": "ふう　間にあった{0010}",
-   "en": ""
+   "en": "Phew, made it.{0010}"
   },
   {
    "id": "4362CC",
    "script": "436110",
    "op": "073 0001",
    "jp": "間に合ってないわ。１０分前に{0000}来てないとダメでしょう？{0010}",
-   "en": ""
+   "en": "You did not make it. You should{0000}be here ten minutes early, yes?{0010}"
   },
   {
    "id": "436350",
    "script": "436110",
    "op": "036 00110001",
    "jp": "すみません・・・{0010}",
-   "en": ""
+   "en": "I'm sorry...{0010}"
   },
   {
    "id": "4363C4",
    "script": "436110",
    "op": "036 00140001",
    "jp": "先生！{00C8}くんは、毎朝{0000}病院に通ってから来てるんです{0010}ソウタロウおじいちゃんの{0000}お世話をしているんです{0010}",
-   "en": ""
+   "en": "Sensei! {00C8}-kun goes to the{0000}hospital every morning first.{0010}He's looking after his{0000}grandpa Sotaro.{0010}"
   },
   {
    "id": "436474",
    "script": "436110",
    "op": "036 00160001",
    "jp": "そういう理由があるなら大目に{0000}みます。席につきなさい{0010}",
-   "en": ""
+   "en": "If there's a reason like that, I'll{0000}let it slide. Take your seat.{0010}"
   },
   {
    "id": "436550",
    "script": "4364F8",
    "op": "073 0001",
    "jp": "はやく席につきなさい{0010}",
-   "en": ""
+   "en": "Hurry and take your seat.{0010}"
   },
   {
    "id": "43669C",
    "script": "43661C",
    "op": "073 0001",
    "jp": "おはようございます。とつぜん{0000}ですが転校生を紹介します{0010}村井さんどうぞ{0010}",
-   "en": ""
+   "en": "Good morning. This is sudden, but{0000}I'd like to introduce a new student.{0010}Murai-san, please come in.{0010}"
   },
   {
    "id": "43678A",
    "script": "43661C",
    "op": "073 0001",
    "jp": "そうねえ、席は{00C8}{0000}くんのとなりにしましょう{0010}じゃ、自己紹介おねがいね{0010}",
-   "en": ""
+   "en": "Let's see, your seat will be next{0000}to {00C8}-kun.{0010}Now, introduce yourself, please.{0010}"
   },
   {
    "id": "4367F8",
    "script": "43661C",
    "op": "036 00020001",
    "jp": "村井ヒロコです{0000}よろしくおねがいします{0010}",
-   "en": ""
+   "en": "I'm Hiroko Murai.{0000}Nice to meet you all.{0010}"
   },
   {
    "id": "436868",
    "script": "43661C",
    "op": "036 00110001",
    "jp": "あれっ　あの女の子は{0000}今朝の！？{0010}",
-   "en": ""
+   "en": "Huh? That girl is the one{0000}from this morning!?{0010}"
   },
   {
    "id": "436A5E",
    "script": "43661C",
    "op": "073 0001",
    "jp": "見た感じ弱そうだけど、あなた{0010}式神でも使えそうな強い目を{0000}しているわね。よろしく{0010}",
-   "en": ""
+   "en": "You look weak, but you{0010}have strong eyes, like someone{0000}who could use shikigami. Hello.{0010}"
   },
   {
    "id": "436AC6",
    "script": "43661C",
    "op": "098 00150000",
    "jp": "！！{0010}",
-   "en": ""
+   "en": "!!{0010}"
   },
   {
    "id": "436C3A",
    "script": "43661C",
    "op": "073 0001",
    "jp": "朝のホームルーム終わります{0010}",
-   "en": ""
+   "en": "That's the end of morning homeroom.{0010}"
   },
   {
    "id": "436DD8",
    "script": "436D6C",
    "op": "073 0001",
    "jp": "はやく学校にいかなきゃ{0010}",
-   "en": ""
+   "en": "I'd better hurry to school.{0010}"
   },
   {
    "id": "436E6C",
    "script": "436E00",
    "op": "073 0001",
    "jp": "はやく学校にいかなきゃ{0010}",
-   "en": ""
+   "en": "I'd better hurry to school.{0010}"
   },
   {
    "id": "436EDC",
    "script": "436E94",
    "op": "073 0001",
    "jp": "『はちみつ』を{0000}手に入れた！{0010}",
-   "en": ""
+   "en": "You got{0000}the 'Honey'!{0010}"
   },
   {
    "id": "436F78",
    "script": "436F30",
    "op": "073 0001",
    "jp": "『金の小判』を{0000}手に入れた！{0010}",
-   "en": ""
+   "en": "You got{0000}the 'Gold Koban'!{0010}"
   },
   {
    "id": "437014",
    "script": "436FCC",
    "op": "073 0001",
    "jp": "『酒』を{0000}手に入れた！{0010}",
-   "en": ""
+   "en": "You got{0000}the 'Sake'!{0010}"
   },
   {
    "id": "4370AC",
    "script": "437064",
    "op": "073 0001",
    "jp": "『孔雀の扇』を{0000}手に入れた！{0010}",
-   "en": ""
+   "en": "You got{0000}the 'Peacock Fan'!{0010}"
   },
   {
    "id": "437148",
    "script": "437100",
    "op": "073 0001",
    "jp": "『魚』を{0000}手に入れた！{0010}",
-   "en": ""
+   "en": "You got{0000}the 'Fish'!{0010}"
   },
   {
    "id": "4371E0",
    "script": "437198",
    "op": "073 0001",
    "jp": "『地の巻物』を{0000}手に入れた！{0010}",
-   "en": ""
+   "en": "You got{0000}the 'Earth Scroll'!{0010}"
   },
   {
    "id": "43727C",
    "script": "437234",
    "op": "073 0001",
    "jp": "『銀のオチョコ』を{0000}手に入れた！{0010}",
-   "en": ""
+   "en": "You got{0000}the 'Silver Sake Cup'!{0010}"
   },
   {
    "id": "43731C",
    "script": "4372D4",
    "op": "073 0001",
    "jp": "『金の矢』を{0000}手に入れた！{0010}",
-   "en": ""
+   "en": "You got{0000}the 'Golden Arrow'!{0010}"
   },
   {
    "id": "4373B8",
    "script": "437370",
    "op": "073 0001",
    "jp": "『ヘビのキバ』を{0000}手に入れた！{0010}",
-   "en": ""
+   "en": "You got{0000}the 'Snake Fang'!{0010}"
   },
   {
    "id": "437458",
    "script": "437410",
    "op": "073 0001",
    "jp": "『笹』を{0000}手に入れた！{0010}",
-   "en": ""
+   "en": "You got{0000}the 'Bamboo Leaves'!{0010}"
   },
   {
    "id": "4374F0",
    "script": "4374A8",
    "op": "073 0001",
    "jp": "『貝がら』を{0000}手に入れた！{0010}",
-   "en": ""
+   "en": "You got{0000}the 'Seashell'!{0010}"
   },
   {
    "id": "43758C",
    "script": "437544",
    "op": "073 0001",
    "jp": "『虹色の石』を{0000}手に入れた！{0010}",
-   "en": ""
+   "en": "You got{0000}the 'Rainbow Stone'!{0010}"
   },
   {
    "id": "4376A8",
    "script": "4375E0",
    "op": "073 0001",
    "jp": "ダメだ！天流の神殿も地流の{0000}手に落ちた{0010}見つかるのも時間の問題だ。{0000}もはや、これまでか！{0010}",
-   "en": ""
+   "en": "It's no use! The Tenryu temple{0000}has fallen to the Chiryu too.{0010}It's only a matter of time before{0000}they find us. Is this the end!?{0010}"
   },
   {
    "id": "437716",
    "script": "4375E0",
    "op": "054 00010001",
    "jp": "せめて、{00C8}だけでも、{0000}別の時代に逃がさなければ{0010}",
-   "en": ""
+   "en": "At the very least, {00C8}{0000}must escape to another era.{0010}"
   },
   {
    "id": "437764",
    "script": "4375E0",
    "op": "036 00190001",
    "jp": "アーン　アーン…{0010}",
-   "en": ""
+   "en": "Waaah... waaah...{0010}"
   },
   {
    "id": "437790",
    "script": "4375E0",
    "op": "036 00200001",
    "jp": "{00C8}、ゆるしておくれ…{0010}だが、おまえは「天流」宗家{0000}イッセイの息子{0010}このドライブで式神を仲間にし{0000}いつの日か、「天流」を再び{0010}そして平和な世を、再び・・・{0010}",
-   "en": ""
+   "en": "{00C8}, forgive me...{0010}But you are the son of Issei,{0000}Head of the Family of the Tenryu.{0010}With this Drive, gather shikigami,{0000}and one day bring back the Tenryu,{0010}and bring back a world at peace...{0010}"
   },
   {
    "id": "4378DC",
    "script": "4375E0",
    "op": "073 0001",
    "jp": "アーン　アーン…{0010}",
-   "en": ""
+   "en": "Waaah... waaah...{0010}"
   },
   {
    "id": "437A94",
    "script": "4375E0",
    "op": "073 0001",
    "jp": "あの赤子は！次元転送前の光！{0000}しかもドライブを持っている！{0010}別の時代に送ろうというのかっ{0010}",
-   "en": ""
+   "en": "That baby! That light comes before{0000}a dimension transfer! And he has a Drive!{0010}They mean to send him to another era!{0010}"
   },
   {
    "id": "437B04",
    "script": "4375E0",
    "op": "083 000100200003",
    "jp": "行かすものか！「天流」は{0000}だれだろうと逃がしはしない！{0010}",
-   "en": ""
+   "en": "You won't get away! Not one{0000}of the Tenryu escapes, whoever it is!{0010}"
   },
   {
    "id": "437B98",
    "script": "4375E0",
    "op": "036 00200001",
    "jp": "ここは通さん！{0010}式神をドライブからよびだせる{0000}ようになってから百年あまり{0010}",
-   "en": ""
+   "en": "You shall not pass!{0010}It has been a century or more since{0000}shikigami could be called from Drives.{0010}"
   },
   {
    "id": "437C00",
    "script": "4375E0",
    "op": "036 00320001",
    "jp": "それがどうした？{0010}",
-   "en": ""
+   "en": "So what?{0010}"
   },
   {
    "id": "437C2C",
    "script": "4375E0",
    "op": "036 00200001",
    "jp": "式神に、かんたんな指示をする{0000}というだけなら{0010}「天流」より「地流」の{0000}ほうが能力はすぐれている{0010}",
-   "en": ""
+   "en": "If it's only a matter of giving{0000}shikigami simple orders,{0010}then the Chiryu are indeed{0000}more skilled than the Tenryu.{0010}"
   },
   {
    "id": "437CAC",
    "script": "4375E0",
    "op": "036 00320001",
    "jp": "だから今、「天流」は{0000}消えてなくなるんだろ？{0010}",
-   "en": ""
+   "en": "That's why the Tenryu{0000}are about to vanish, right?{0010}"
   },
   {
    "id": "437CF6",
    "script": "4375E0",
    "op": "036 00200001",
    "jp": "しかし！我々「天流」は{0000}式神の力だけにたよる{0010}「地流」とちがい、{0010}式神と人間が力をあわせる{0000}「印」こうげきを、あみだした{0010}封じられた「印」をみつけ{0000}式神の力を何倍にもするのだ{0010}",
-   "en": ""
+   "en": "But! Unlike the Chiryu, who rely{0000}on shikigami power alone,{0010}we of the Tenryu{0010}devised the \"seal\" attack, where{0000}shikigami and human join forces.{0010}By finding the sealed-away seals, we{0000}multiply our shikigami's power!{0010}"
   },
   {
    "id": "437DCC",
    "script": "4375E0",
    "op": "036 00320001",
    "jp": "なんだと！？{0010}",
-   "en": ""
+   "en": "What!?{0010}"
   },
   {
    "id": "437DF4",
    "script": "4375E0",
    "op": "036 00200001",
    "jp": "「印」は、ただの技だけでなく{0000}必殺技にもなるのだ{0010}",
-   "en": ""
+   "en": "A \"seal\" is not just a technique;{0000}it can become a special move too.{0010}"
   },
   {
    "id": "437E42",
    "script": "4375E0",
    "op": "036 00320001",
    "jp": "ふっ、それがどうした？{0000}何ができたって、この数の差{0010}「天流」は終わりじゃねえか{0010}",
-   "en": ""
+   "en": "Heh, so what?{0000}Whatever you can do, look at our numbers.{0010}The Tenryu are finished, ain't they?{0010}"
   },
   {
    "id": "437EB0",
    "script": "4375E0",
    "op": "036 00200001",
    "jp": "今はこの子を転送できればいい{0000}「天流」は、よみがえるのだ{0010}「天流」宗家の「印」{0000}とくと見よ！いくぞっ！{0010}",
-   "en": ""
+   "en": "For now, it is enough to send this child.{0000}The Tenryu will rise again!{0010}Behold the seal of the Tenryu's{0000}Head Family! Here I come!{0010}"
   },
   {
    "id": "4380AC",
    "script": "4375E0",
    "op": "073 0001",
    "jp": "アーン　アーン…{0010}",
-   "en": ""
+   "en": "Waaah... waaah...{0010}"
   },
   {
    "id": "4380D8",
    "script": "4375E0",
    "op": "036 00320001",
    "jp": "しまった！転送が始まった！{0010}",
-   "en": ""
+   "en": "Damn it! The transfer's begun!{0010}"
   }
  ]
 }

@@ -121,6 +121,9 @@ Other shikigami and NPC names: Hepburn without macrons, as in `script/str_shikig
 | 楓族 | Maple clan | | kind (族) names: English meaning + "clan" | |
 | 消雪族 | Snowmelt clan | | | |
 | 雷火 | Thunderfire | | kind; "Fusanoshin of Thunderfire" | |
+| 式点 | Shiki Points | | the seal gauge shown under HP | |
+| ドライブ | Drive | | the device that holds shikigami | |
+| 式・神・降・神 | Shiki-gami, des-cend! | | summon chant, syllables split as in JP | |
 
 ## Decisions from earlier batches
 - b001-b004 (contract scenes): けいやくした -> "You formed a contract with X."; けいやく -> contract; だんな -> "boss";
@@ -136,4 +139,15 @@ Other shikigami and NPC names: Hepburn without macrons, as in `script/str_shikig
   榎 Hackberry, 消雪 Snowmelt, 青錫 Blue Tin, 芽吹 Sprout, 雷火 Thunderfire, 椿 Camellia, 凝寂 Stillness, 黒鉄 Black
   Iron; 麒麟/白虎/朱雀/青龍/玄武 keep their names (Kirin, Byakko, Suzaku, Seiryu, Genbu). The 32 px menu cells need
   engine work (phase 7) for these.
+- b005-b009: item gets 『X』を手に入れた -> "You got{0000}the 'X'!" (capitalised item names: 'Honey', 'Gold Koban',
+  'Sake', 'Peacock Fan', 'Fish', 'Earth Scroll', 'Silver Sake Cup', 'Golden Arrow', 'Snake Fang', 'Bamboo Leaves',
+  'Seashell', 'Rainbow Stone', 'Momo's Lunch Box'); give prompts 「X」を、わたす？ -> 'Hand over the "X"?'.
+  Honorific on the player's name is hyphenated ({00C8}-kun, {00C8}-dono): allowed, it is not an ordinal.
+  Kinds as clans: 黒鉄族 Black Iron clan, 榎族 Hackberry clan, 柊族 Holly clan, 青錫族 Blue Tin clan, 癒火族 Healing
+  Fire clan, 青龍族 Seiryu clan. 村井ヒロコ = Hiroko Murai (Murai-san). ソウタロウおじいちゃん = Grandpa Sotaro.
+  Voices: Tsuruyakko brassy princess ("kiddo", "ya"); Ruri sultry ("little boy"); Izayoi/Kaniemon/Kabuto-O archaic
+  "thou/thee"; Elekiter/Mingobee/Kofuku party guys ("man", dropped g's); Horin Kyoto sharp tongue ("ya", "dear");
+  Raiden/Kongo/Rakusai old men ("my boy", "eh"); Itsumu である tic -> "so it is / so I do"; Jaja ぞよ tic -> ", I say";
+  Hiyoshino せっちゃ lisp -> "thith one"; Ryukon polite "So sorry"; Kogenta rough ("ya", "trainin'", "the great me").
+  Names: カブトオウ Kabuto-O, エレキテル Elekiter, ツイガ黒/赤 Tsuiga Black/Red.
 - Puns: 誇り/埃 (pride/dust) -> "pride" / lion pride; 鯛/恋 quiz kept as "koi"... love (polish candidate).

@@ -6,763 +6,763 @@
    "script": "42C5A8",
    "op": "073 0001",
    "jp": "フッ！だれかと思えば、あの小{0000}生意気なガキか…おぬしが{0010}わしを扱えると思ったか？{0010}",
-   "en": ""
+   "en": "Hmph! I wondered who it was. That{0000}cheeky little brat... You think{0010}you can handle the likes of me?{0010}"
   },
   {
    "id": "42C650",
    "script": "42C5A8",
    "op": "036 00000001",
    "jp": "さあ…でも{0000}やってみなきゃ、わからないよ{0010}",
-   "en": ""
+   "en": "Who knows... But I won't{0000}know unless I try.{0010}"
   },
   {
    "id": "42C68E",
    "script": "42C5A8",
    "op": "098 00390000",
    "jp": "フッいいよる。闘いのさいには{0000}わしを呼ぶがいい。おぬしの腕{0010}を見せてもらうわ！{0010}",
-   "en": ""
+   "en": "Heh, big words. When you fight,{0000}call on me. Let's see what{0010}you're made of!{0010}"
   },
   {
    "id": "42C730",
    "script": "42C5A8",
    "op": "036 00000001",
    "jp": "ランゲツとけいやくした{0010}",
-   "en": ""
+   "en": "You formed a contract with Rangetsu.{0010}"
   },
   {
    "id": "42C7D8",
    "script": "42C7A0",
    "op": "073 0001",
    "jp": "弱き者が強き者に従うは、当燃{0000}だが、わらわは先ほどの勝負、{0010}なっとくしておらぬ…{0010}これから申す、わらわの問いに{0000}答えてもらうぞ{0010}そなたにとって「強さ」とは{0000}相手をくじくことなのかえ？{0010}",
-   "en": ""
+   "en": "That the weak obey the strong is{0000}only natural, yet I am not{0010}content with that bout...{0010}Thou shalt answer the question{0000}I am about to put to thee.{0010}To thee, is \"strength\" a matter{0000}of crushing one's foe?{0010}"
   },
   {
    "id": "42C8DA",
    "script": "42C7A0",
    "op": "073 0001",
    "jp": "強いにこしたことは{0000}ないと思うよ{0010}",
-   "en": ""
+   "en": "You can never be too{0000}strong, I think.{0010}"
   },
   {
    "id": "42C910",
    "script": "42C7A0",
    "op": "098 00400000",
    "jp": "わらわにとってはうれしい{0000}答えじゃ！{0010}だが、その強さは{0000}本物ではあるまい{0010}なぜなら、相手の強さを考え{0000}ながら闘うことになるからじゃ{0010}もしも、自分よりも強い敵が{0000}現れたら、かなわぬじゃろう{0010}わらわはこれから負け苦しむ{0000}そなたの後についていく{0010}わけにはいかぬ{0010}",
-   "en": ""
+   "en": "To me, that is a pleasing{0000}answer!{0010}Yet such strength cannot{0000}be the genuine article.{0010}For thou wouldst fight ever{0000}weighing thy foe's strength.{0010}Should a foe stronger than thee{0000}appear, thou wouldst be no match.{0010}I cannot follow after one{0000}who is bound to suffer{0010}defeat upon defeat.{0010}"
   },
   {
    "id": "42CA7A",
    "script": "42C7A0",
    "op": "073 0001",
    "jp": "自分に負けないことだと思うよ{0010}",
-   "en": ""
+   "en": "I think it's not losing to yourself.{0010}"
   },
   {
    "id": "42CAAA",
    "script": "42C7A0",
    "op": "098 00400000",
    "jp": "ほう、自分に負けぬことか…{0000}わらわにとっては{0010}つまらぬ答えじゃ{0000}だが、そなたの力量を{0010}知ることは、負けぬ闘いが{0000}できるということじゃ{0010}そなたはこれからも成長して{0000}いくはずじゃ{0010}わらわもそなたの力となり、{0000}甘き夢を見させてやろうぞ{0010}",
-   "en": ""
+   "en": "Oh? Not losing to oneself...{0000}To me, that is{0010}a dull answer.{0000}Yet knowing thine own measure{0010}means fighting battles thou{0000}canst not lose.{0010}Thou art sure to keep growing{0000}from here on.{0010}I too shall lend thee my power,{0000}and show thee sweet dreams.{0010}"
   },
   {
    "id": "42CBF0",
    "script": "42C7A0",
    "op": "036 00000001",
    "jp": "イザヨイとけいやくした{0010}",
-   "en": ""
+   "en": "You formed a contract with Izayoi.{0010}"
   },
   {
    "id": "42CC98",
    "script": "42CC60",
    "op": "073 0001",
    "jp": "ヘイヘイ！そこのあんた！{0000}強いじゃんか！やるじゃんか！{0010}だがよ！あんた、さっきの闘い{0000}本気でしてたか？マジだったか{0010}あんたは本気をだしちゃいねぇ{0000}そんな態度に{0010}オレはがっくりだぜ！{0010}ここはオレと再び勝負だっ{0000}こんなバトルってどうかな？{0010}オレがいるゴールまで{0000}２０秒以内で来てみな！{0010}いっとくけど{0000}逃げられないぜ！いくぞ！{0010}",
-   "en": ""
+   "en": "Hey hey! You there!{0000}You're strong! You're good!{0010}But hey! In that fight just now,{0000}were you serious? For real?{0010}You weren't givin' it your all.{0000}That attitude{0010}really bums me out!{0010}So it's a rematch with me!{0000}How 'bout a battle like this?{0010}Get to the goal where I'm at{0000}within 20 seconds!{0010}Just so ya know,{0000}there's no runnin'! Here we go!{0010}"
   },
   {
    "id": "42CE54",
    "script": "42CC60",
    "op": "073 0001",
    "jp": "あれ？あれれ？オレが勝つ{0000}ことになってたんだが…{0010}",
-   "en": ""
+   "en": "Huh? Huh-huh? I was supposed{0000}to win this one...{0010}"
   },
   {
    "id": "42CEA2",
    "script": "42CC60",
    "op": "036 00000001",
    "jp": "どうしたの？{0010}",
-   "en": ""
+   "en": "What's wrong?{0010}"
   },
   {
    "id": "42CEC2",
    "script": "42CC60",
    "op": "098 00410000",
    "jp": "いや！なんでもないぜ！{0010}いやーあんたビッグだぜ！{0010}こんどからアニキと{0000}呼ばせてもらうぜ！{0010}",
-   "en": ""
+   "en": "Nah! Nothin' at all!{0010}Man, you're BIG time!{0010}From now on, I'm gonna{0000}call you Big Bro!{0010}"
   },
   {
    "id": "42CF70",
    "script": "42CC60",
    "op": "036 00000001",
    "jp": "エレキテルとけいやくした{0010}",
-   "en": ""
+   "en": "You formed a contract with Elekiter.{0010}"
   },
   {
    "id": "42CFF8",
    "script": "42CC60",
    "op": "073 0001",
    "jp": "（何か仕掛けていたな…）{0010}",
-   "en": ""
+   "en": "(He had something rigged...){0010}"
   },
   {
    "id": "42D024",
    "script": "42CC60",
    "op": "098 00410000",
    "jp": "ヘイヘイ！どうやらオレの勝ち{0000}だったようだな！{0010}いつでも、かかってきやがれ！{0010}",
-   "en": ""
+   "en": "Hey hey! Looks like I{0000}won this one!{0010}Come at me anytime!{0010}"
   },
   {
    "id": "42D108",
    "script": "42D0D0",
    "op": "073 0001",
    "jp": "おんや？ここはどこや？{0000}あんたは、だれどすか？{0010}",
-   "en": ""
+   "en": "Well now? Where's this?{0000}And who might ya be?{0010}"
   },
   {
    "id": "42D154",
    "script": "42D0D0",
    "op": "036 00000001",
    "jp": "ボクは{00C8}だよ{0000}キミは闘いに負けたんだけど…{0010}",
-   "en": ""
+   "en": "I'm {00C8}.{0000}You lost the fight, though...{0010}"
   },
   {
    "id": "42D196",
    "script": "42D0D0",
    "op": "098 00420000",
    "jp": "そやっ思いだしたわ！あんさん{0000}どうしてくれんのや！{0010}あんさんに勝ったら{0000}ナヅナはんから和菓子を{0010}もらえる約束やったのに…{0010}わらわの好きなユズ屋の羊かん{0000}食べそこねてしもたわ！{0010}",
-   "en": ""
+   "en": "Right, now I remember! You!{0000}How're ya gonna make this up?{0010}If I'd beaten ya, Nazuna-han{0000}was gonna give me sweets.{0010}That was the deal...{0010}Now I've missed out on my favorite{0000}yokan from the Yuzu shop!{0010}"
   },
   {
    "id": "42D26C",
    "script": "42D0D0",
    "op": "036 00000001",
    "jp": "そんなこと言われても…{0010}",
-   "en": ""
+   "en": "Don't blame me for that...{0010}"
   },
   {
    "id": "42D296",
    "script": "42D0D0",
    "op": "098 00420000",
    "jp": "食べ物のうらみはコワイでえ…{0010}",
-   "en": ""
+   "en": "A grudge over food runs deep, ya know...{0010}"
   },
   {
    "id": "42D2CE",
    "script": "42D0D0",
    "op": "036 00000001",
    "jp": "ボクとけいやくできる？{0010}",
-   "en": ""
+   "en": "Will you make a contract with me?{0010}"
   },
   {
    "id": "42D2F8",
    "script": "42D0D0",
    "op": "098 00420000",
    "jp": "祈りなはれ。祈ればあんさんの{0000}願いは天に通じるさかい{0010}",
-   "en": ""
+   "en": "Pray, dear. If ya pray, your{0000}wish'll reach the heavens.{0010}"
   },
   {
    "id": "42D34A",
    "script": "42D0D0",
    "op": "036 00000001",
    "jp": "祈らなくちゃいけないの？{0010}",
-   "en": ""
+   "en": "I have to pray?{0010}"
   },
   {
    "id": "42D376",
    "script": "42D0D0",
    "op": "098 00420000",
    "jp": "あんさんはその前に、わらわの{0000}許しをこうほうが先じゃ{0010}",
-   "en": ""
+   "en": "Before that, ya oughta be{0000}beggin' my forgiveness.{0010}"
   },
   {
    "id": "42D3C8",
    "script": "42D0D0",
    "op": "036 00000001",
    "jp": "ごめん、ボクが悪かった！{0010}",
-   "en": ""
+   "en": "Sorry, it was my fault!{0010}"
   },
   {
    "id": "42D3F4",
    "script": "42D0D0",
    "op": "098 00420000",
    "jp": "そやな、まあええやろ。許す。{0000}わらわとけいやくできるもんは{0010}そうはいないでえ。あんさん、{0000}ちとマヌケそうじゃが{0010}よろしゅう、たのむわ{0010}",
-   "en": ""
+   "en": "Well, fine, I s'pose. Ya're forgiven.{0000}Not many folks get to make{0010}a contract with me, ya know.{0000}You look a bit dim, but...{0010}I'm in your hands. Be good to me.{0010}"
   },
   {
    "id": "42D49C",
    "script": "42D0D0",
    "op": "036 00000001",
    "jp": "（…この式神、かわいい顔して{0000}すごい毒舌だ…）{0010}",
-   "en": ""
+   "en": "(...Such a cute face for a shikigami,{0000}but what a sharp tongue...){0010}"
   },
   {
    "id": "42D51C",
    "script": "42D0D0",
    "op": "036 00000001",
    "jp": "ホリンとけいやくした{0010}",
-   "en": ""
+   "en": "You formed a contract with Horin.{0010}"
   },
   {
    "id": "42D5C4",
    "script": "42D58C",
    "op": "073 0001",
    "jp": "今日はハッピーだぜ！あんたの{0000}ような強いヤツに出会えた事に{0010}感謝しなくっちゃな！{0010}こんな日は、やっぱり派手に{0000}おどるしかないぜ！{0010}あんたもつき合え！{0000}やりかたはカンタンだ！{0010}２０秒以内にゴール目指して{0000}おどりまくりゃオーケーさ！{0010}",
-   "en": ""
+   "en": "I'm happy today, man! Gotta give{0000}thanks for meetin' a tough{0010}guy like you!{0010}On a day like this, there's nothin'{0000}to do but dance up a storm!{0010}You're joinin' me!{0000}It's real easy!{0010}Just dance your way to the goal{0000}within 20 seconds and you're set!{0010}"
   },
   {
    "id": "42D6D4",
    "script": "42D58C",
    "op": "036 00000001",
    "jp": "え？おどりじゃなくて{0000}走るってことじゃないの？{0010}",
-   "en": ""
+   "en": "Huh? Don't you mean{0000}run, not dance?{0010}"
   },
   {
    "id": "42D718",
    "script": "42D58C",
    "op": "098 00430000",
    "jp": "いいから、おどれっ！{0010}いくぜっ！スタートだ！{0010}",
-   "en": ""
+   "en": "Never mind, just dance!{0010}Let's go! Start!{0010}"
   },
   {
    "id": "42D7AE",
    "script": "42D58C",
    "op": "073 0001",
    "jp": "今日は最高の日だったぜ！{0000}こんな日はなかなかねぇ！{0010}オレはあんたとけいやくした{0000}くなったぜ！式神の中にも{0010}こんな祭り好きのヤローが{0000}一匹いてもかまわないだろ？{0010}",
-   "en": ""
+   "en": "Today was the best day ever!{0000}Days like this don't come often!{0010}Now I wanna make a contract{0000}with ya! Ain't no harm in{0010}havin' one party-lovin' guy{0000}among your shikigami, right?{0010}"
   },
   {
    "id": "42D8AE",
    "script": "42D58C",
    "op": "073 0001",
    "jp": "ミンゴベエとけいやくした{0010}",
-   "en": ""
+   "en": "You formed a contract with Mingobee.{0010}"
   },
   {
    "id": "42D92E",
    "script": "42D58C",
    "op": "073 0001",
    "jp": "おしかったな！残念だよ{0000}また、チャンスがあったらオレ{0010}に声かけてくれ！じゃあな！{0010}",
-   "en": ""
+   "en": "Too bad! So close!{0000}If you get another chance, give{0010}me a holler! See ya!{0010}"
   },
   {
    "id": "42DA14",
    "script": "42D9DC",
    "op": "073 0001",
    "jp": "くっ、一生の不覚をとったわ！{0010}わしは燃えつきた。真っ白に{0000}燃えつきたわい…{0010}",
-   "en": ""
+   "en": "Ngh, the blunder of a lifetime!{0010}I'm burned out. Burned out{0000}to pure white ash...{0010}"
   },
   {
    "id": "42DA7E",
    "script": "42D9DC",
    "op": "036 00000001",
    "jp": "そんな、大げさな{0010}",
-   "en": ""
+   "en": "Come on, don't be so dramatic.{0010}"
   },
   {
    "id": "42DAA2",
    "script": "42D9DC",
    "op": "098 00440000",
    "jp": "なんじゃい、ヒヨっ子が…{0000}わしには、勝っても負けても{0010}美学というもんがあるんじゃ{0010}おぬしにはわからんのか！？{0010}",
-   "en": ""
+   "en": "What's that, ya fledgling...?{0000}Win or lose, a man like me{0010}has his own sense of beauty!{0010}Can't you understand that!?{0010}"
   },
   {
    "id": "42DB54",
    "script": "42D9DC",
    "op": "073 0001",
    "jp": "わかるよ！あんな負けっぷりを{0000}あそこまで表現できるのは、{0010}ライデンしかいないよ！　{0010}",
-   "en": ""
+   "en": "I understand! Nobody but you,{0000}Raiden, could act out a loss{0010}that grandly!{0010}"
   },
   {
    "id": "42DBBE",
    "script": "42D9DC",
    "op": "098 00440000",
    "jp": "………わしゃ帰る！{0010}",
-   "en": ""
+   "en": "......I'm going home!{0010}"
   },
   {
    "id": "42DC20",
    "script": "42D9DC",
    "op": "073 0001",
    "jp": "ふん！ヒヨっ子にはわからんわ{0000}闘いとは魂と魂のぶつかり合い{0010}生きるか死ぬかなんじゃ{0010}わしはどんな目にあっても{0000}おぬしに、くっしはしないぞ{0010}",
-   "en": ""
+   "en": "Hmph! A fledgling wouldn't get it.{0000}A battle is soul clashing with soul.{0010}It's life or death, I tell you!{0010}Whatever happens to me,{0000}I'll never bow to you!{0010}"
   },
   {
    "id": "42DCCC",
    "script": "42D9DC",
    "op": "036 00000001",
    "jp": "そう…じゃ、ボクはいくよ{0010}",
-   "en": ""
+   "en": "Okay... then I'll be going.{0010}"
   },
   {
    "id": "42DCF8",
    "script": "42D9DC",
    "op": "098 00440000",
    "jp": "まて！わしをこのまま{0000}放っておく気か？{0010}おぬしには、武士道を{0000}愛するきもちはないのか？{0010}わしはこの先{0000}どうすればいいんじゃ{0010}果たして生きて{0000}いけるんじゃろうか…{0010}",
-   "en": ""
+   "en": "Wait! You're just going to{0000}leave me like this?{0010}Have you no love at all{0000}for the way of the warrior?{0010}What am I to do{0000}from here on?{0010}Can I even go on{0000}living like this...?{0010}"
   },
   {
    "id": "42DDC2",
    "script": "42D9DC",
    "op": "036 00000001",
    "jp": "わかったよ。けいやくしよう{0010}",
-   "en": ""
+   "en": "Okay, okay. Let's make a contract.{0010}"
   },
   {
    "id": "42DDF0",
    "script": "42D9DC",
    "op": "098 00440000",
    "jp": "そうか、そこまでいうなら{0000}けいやくしてやってもいいぞ！{0010}",
-   "en": ""
+   "en": "Well, if you insist that much,{0000}I suppose I could contract with you!{0010}"
   },
   {
    "id": "42DE44",
    "script": "42D9DC",
    "op": "036 00000001",
    "jp": "（…素直じゃないなあ…）{0010}",
-   "en": ""
+   "en": "(...He just can't be honest, huh...){0010}"
   },
   {
    "id": "42DEB4",
    "script": "42D9DC",
    "op": "073 0001",
    "jp": "ライデンとけいやくした{0010}",
-   "en": ""
+   "en": "You formed a contract with Raiden.{0010}"
   },
   {
    "id": "42DF74",
    "script": "42DF24",
    "op": "073 0001",
    "jp": "ケッ！こんなガキと{0000}けいやくするなんざ、{0010}オレもヤキが回ったな！{0010}",
-   "en": ""
+   "en": "Tch! Makin' a contract with{0000}a brat like you...{0010}I must be losin' my touch!{0010}"
   },
   {
    "id": "42DFD4",
    "script": "42DF24",
    "op": "036 00000001",
    "jp": "ボクはガキなんかじゃない！{0010}",
-   "en": ""
+   "en": "I'm not a brat!{0010}"
   },
   {
    "id": "42E002",
    "script": "42DF24",
    "op": "098 00450000",
    "jp": "おめぇみたいな青くさい闘い方{0000}するヤツなんか、みんなガキ{0010}みてぇなもんだ{0010}",
-   "en": ""
+   "en": "Anybody who fights as green{0000}as you is nothin' but{0010}a brat, far as I'm concerned.{0010}"
   },
   {
    "id": "42E06A",
    "script": "42DF24",
    "op": "036 00000001",
    "jp": "ボクはこれでも強くなるために{0000}努力してるつもりだよ{0010}",
-   "en": ""
+   "en": "I'm working hard to{0000}get stronger, you know.{0010}"
   },
   {
    "id": "42E0B2",
    "script": "42DF24",
    "op": "098 00450000",
    "jp": "ほーそうかい、そうかい{0010}じゃあ、努力ついでに、ひとつ{0000}たのまれてもらおうじゃねぇか{0010}オレの背中にいるヘビはスズネ{0000}といってな、どうやらキバ{0010}を折ってなくしたらしいんだ{0010}そのキバを{0000}さがしだしてくれるか？{0010}",
-   "en": ""
+   "en": "Oh, is that so, is that so.{0010}Then while you're workin' hard,{0000}how 'bout doin' me a favor?{0010}The snake on my back here's{0000}called Suzune. Seems she broke{0010}one of her fangs and lost it.{0010}Could you go{0000}find that fang for me?{0010}"
   },
   {
    "id": "42E1A6",
    "script": "42DF24",
    "op": "036 00000001",
    "jp": "うん、まあ、さがしてみるよ{0010}",
-   "en": ""
+   "en": "Um, sure, I'll look for it.{0010}"
   },
   {
    "id": "42E1D4",
    "script": "42DF24",
    "op": "098 00450000",
    "jp": "そうか、じゃあ見つけたら{0000}また会おうじゃねぇか{0010}",
-   "en": ""
+   "en": "Good. Then come see me{0000}again when ya find it.{0010}"
   },
   {
    "id": "42E258",
    "script": "42DF24",
    "op": "073 0001",
    "jp": "おめぇの持ってるのは、{0000}ヘビのキバじゃねえか！{0010}オレの背中にいるヘビはスズネ{0000}といってな、オマエとの闘いで{0010}歯が消し飛んじまったんだ{0000}オレにそのキバをくれねえか？{0010}",
-   "en": ""
+   "en": "Hey, what you've got there's{0000}a snake fang, ain't it!{0010}The snake on my back here's Suzune,{0000}and in our fight with you{0010}her tooth got knocked clean off.{0000}Will ya give me that fang?{0010}"
   },
   {
    "id": "42E320",
    "script": "42DF24",
    "op": "036 00000001",
    "jp": "「ヘビのキバ」を、わたす？{0010}",
-   "en": ""
+   "en": "Hand over the \"Snake Fang\"?{0010}"
   },
   {
    "id": "42E372",
    "script": "42DF24",
    "op": "073 0001",
    "jp": "気がつかなかったのか？{0010}ヘビのキバは折れても{0000}また生えてくる{0010}だから見つけても仕方が{0000}ねぇんだ。ガハハ{0010}いででで！{0000}ヘビのスズネがオレをかんだ！{0010}仕方ねえ、ヘビのスズネが{0000}オマエを気に入っているなら{0010}けいやくをしてやろう{0000}よろしくたのむぜ{0010}",
-   "en": ""
+   "en": "Didn't ya notice?{0010}A snake's fangs grow back{0000}even when they break.{0010}So there was no point in{0000}findin' it. Gahaha!{0010}Owowow!{0000}Suzune bit me!{0010}Fine, if Suzune's{0000}taken a likin' to you,{0010}I'll make a contract with ya.{0000}Glad to have ya, kid.{0010}"
   },
   {
    "id": "42E4CC",
    "script": "42DF24",
    "op": "073 0001",
    "jp": "ガンゾウとけいやくした{0010}",
-   "en": ""
+   "en": "You formed a contract with Ganzo.{0010}"
   },
   {
    "id": "42E532",
    "script": "42DF24",
    "op": "073 0001",
    "jp": "なんだとお？{0000}俺さまの本気をみたいのか！{0010}あ！いてててて{0000}ヘビのスズネが、オレの首を{0010}しめつけるっ{0000}これじゃあ闘いにならねえ{0010}次は覚えていろよ！{0010}",
-   "en": ""
+   "en": "Whaddaya say?{0000}Ya wanna see me get serious!?{0010}Ah! Owowowow!{0000}Suzune's squeezin'{0010}my neck!{0000}I can't fight like this!{0010}I'll get you next time!{0010}"
   },
   {
    "id": "42E678",
    "script": "42E628",
    "op": "073 0001",
    "jp": "ガーーン！！まさか、この私が{0000}負けることになろうとは…{0010}今日の闘いは私が勝って{0000}ファンにエールを送られて{0010}モテモテになるシナリオ{0000}だったのにィ…{0010}",
-   "en": ""
+   "en": "Nooo!! To think that I,{0000}of all people, would lose...{0010}Today's script had me winning,{0000}my fans cheering me on,{0010}and everyone falling{0000}head over heels for me...{0010}"
   },
   {
    "id": "42E726",
    "script": "42E628",
    "op": "098 00220001",
    "jp": "あいかわらず、くだらんな{0010}",
-   "en": ""
+   "en": "Frivolous as ever, I see.{0010}"
   },
   {
    "id": "42E752",
    "script": "42E628",
    "op": "098 00460000",
    "jp": "だれです！私のささやかな夢を{0000}バカにする者はー！！{0010}あいや、私が{0000}バカでありました。フジどの{0010}",
-   "en": ""
+   "en": "Who goes there!? Who dares mock{0000}my humble little dream!?{0010}Ah! Er, it is I who{0000}was the fool, Fuji-dono.{0010}"
   },
   {
    "id": "42E7F4",
    "script": "42E628",
    "op": "098 00220000",
    "jp": "もう逃げられんぞ！{0000}この一族のハジさらしが！{0010}",
-   "en": ""
+   "en": "You shall not escape now!{0000}You disgrace to our clan!{0010}"
   },
   {
    "id": "42E836",
    "script": "42E628",
    "op": "098 00460000",
    "jp": "あわわ…おゆるしを…{0010}あのときの試合は、{0000}大きくふりかぶったんです{0010}そのとき、剣が木の枝に{0000}当たって、その枝がフジどのに{0010}直撃しただけですよ{0010}わざとじゃないんです{0010}",
-   "en": ""
+   "en": "Eep... forgive me...{0010}In that match, you see,{0000}I swung back really big,{0010}and my sword hit a tree branch,{0000}and the branch just happened{0010}to smack Fuji-dono square on!{0010}It wasn't on purpose!{0010}"
   },
   {
    "id": "42E8F8",
    "script": "42E628",
    "op": "098 00220000",
    "jp": "まだいうか！{0010}",
-   "en": ""
+   "en": "Still you persist!?{0010}"
   },
   {
    "id": "42E918",
    "script": "42E628",
    "op": "098 00460000",
    "jp": "ホントだってばー！{0010}",
-   "en": ""
+   "en": "But it's true, I swear!{0010}"
   },
   {
    "id": "42E93E",
    "script": "42E628",
    "op": "098 00220000",
    "jp": "ふう…もう良い！{0000}{00C8}どの、いきましょう{0010}",
-   "en": ""
+   "en": "Sigh... Enough!{0000}{00C8}-dono, let us be off.{0010}"
   },
   {
    "id": "42E9A8",
    "script": "42E628",
    "op": "098 00460000",
    "jp": "うおお！まってくれぇ！！{0010}",
-   "en": ""
+   "en": "Waaah! Wait for meee!!{0010}"
   },
   {
    "id": "42EA18",
    "script": "42E628",
    "op": "073 0001",
    "jp": "リクドウとけいやくした{0010}",
-   "en": ""
+   "en": "You formed a contract with Rikudo.{0010}"
   },
   {
    "id": "42EA82",
    "script": "42E628",
    "op": "073 0001",
    "jp": "ガーーン！！まさか、この私が{0000}負けることになろうとは…{0010}今日の闘いは私が勝って{0000}ファンにエールを送られて{0010}モテモテになるシナリオ{0000}だったのにィ…{0010}このリクドウは黒鉄族の中で{0000}一番強いんだぞ！{0010}フジなんぞ、私が一撃のもとに{0000}やっつけたんだぞ！{0010}おおっあっちのほうから私の{0000}ファンの声が聞こえる{0010}では、さいならー！{0010}",
-   "en": ""
+   "en": "Nooo!! To think that I,{0000}of all people, would lose...{0010}Today's script had me winning,{0000}my fans cheering me on,{0010}and everyone falling{0000}head over heels for me...{0010}I, Rikudo, am the strongest{0000}of the Black Iron clan!{0010}Why, I beat Fuji{0000}with a single blow!{0010}Oh! I hear my fans{0000}calling from over there!{0010}Well then, toodle-ooo!{0010}"
   },
   {
    "id": "42EBEC",
    "script": "42E628",
    "op": "036 00000001",
    "jp": "（…どうもウソっぽいなあ…{0000}これはフジをつれてこないと）{0010}",
-   "en": ""
+   "en": "(...Sounds like a lie to me...{0000}I'd better bring Fuji along.){0010}"
   },
   {
    "id": "42ECB8",
    "script": "42EC80",
    "op": "073 0001",
    "jp": "えん魔式神の異名をもった{0000}わしを負かすとは{0010}なんと罪深い者よ。さらに{0000}わしとけいやくを結びたいとは{0010}おそれを知らぬ者がいたもんだ{0010}ならば、なんじに問う{0000}なんじに罪はあるか？{0010}",
-   "en": ""
+   "en": "To defeat me, known as{0000}the Shikigami of Enma...{0010}What a sinful one thou art! And{0000}thou seekest a contract with me?{0010}Here is one who knows no fear!{0010}Then I ask thee:{0000}Hast thou any sin?{0010}"
   },
   {
    "id": "42EDA8",
    "script": "42EC80",
    "op": "073 0001",
    "jp": "ほう…罪はないと申すか{0010}人は何らかの罪を背負いながら{0000}生きているという{0010}わしにウソをつくことは{0000}最大の罪じゃぞ！{0010}では、なんじに問う。先ほどの{0000}闘いで、わしをたおしたことは{0010}罪ではないのか？{0010}天が許してもわしは許さぬぞ{0010}判決を申し渡す。なんじの罪{0000}ゆるしがたし。よって死刑！{0010}（…むちゃくちゃだ。ここは{0000}逃げよう）{0010}",
-   "en": ""
+   "en": "Oho... Thou sayest thou hast no sin?{0010}It is said all people live{0000}bearing some sin or other.{0010}And lying to me is{0000}the greatest sin of all!{0010}Then I ask thee: in our battle{0000}just now, was defeating me{0010}not a sin?{0010}Heaven may pardon thee; I shall not!{0010}I pronounce my verdict: thy sin{0000}is unforgivable. Thus, death!{0010}(...This is insane.{0000}I'd better run.){0010}"
   },
   {
    "id": "42EF4A",
    "script": "42EC80",
    "op": "073 0001",
    "jp": "人はいくつもの罪を背負って{0000}生きておる{0010}なんじの胸に聞いてみよ{0000}思い当たることがあろう{0010}さあっざんげしたまえ！{0000}なんじの罪は許されるだろう{0010}世の中には、まだ罪深い者が{0000}おる。そのような者を断罪し、{0010}つぐなわせねばならん{0010}",
-   "en": ""
+   "en": "All people live bearing{0000}many a sin.{0010}Search thy heart, and surely{0000}something will come to mind.{0010}Now, confess! And thy sins{0000}shall be forgiven.{0010}The world is still full of{0000}sinners. Such ones must be judged{0010}and made to atone!{0010}"
   },
   {
    "id": "42F088",
    "script": "42EC80",
    "op": "073 0001",
    "jp": "カニエモンとけいやくした{0010}",
-   "en": ""
+   "en": "You formed a contract with Kaniemon.{0010}"
   },
   {
    "id": "42F14C",
    "script": "42F0FC",
    "op": "073 0001",
    "jp": "あっボクの大好きな笹だ！{0010}ボクは笹を食べると元気に{0000}なるんだ{0010}ほしいなあ～！ほしいなあ～{0010}",
-   "en": ""
+   "en": "Ah, bamboo leaves! My favorite!{0010}Eating bamboo makes me{0000}feel all peppy!{0010}I want some~! I want some~!{0010}"
   },
   {
    "id": "42F1C6",
    "script": "42F0FC",
    "op": "036 00000001",
    "jp": "「笹」を、わたす？{0010}",
-   "en": ""
+   "en": "Hand over the \"Bamboo Leaves\"?{0010}"
   },
   {
    "id": "42F210",
    "script": "42F0FC",
    "op": "073 0001",
    "jp": "うわあっ！ありがとう！{0000}ぱくぱく、ごっくん！{0010}なんだかねむくなって{0000}きちゃったな。うとうと・・・{0010}",
-   "en": ""
+   "en": "Wow! Thank you!{0000}Munch munch, gulp!{0010}Somehow I'm getting{0000}sleepy... zzz...{0010}"
   },
   {
    "id": "42F292",
    "script": "42F0FC",
    "op": "036 00000001",
    "jp": "ねぇ！ボクの式神になってくれ{0000}ないかい？{0010}",
-   "en": ""
+   "en": "Hey! Won't you become{0000}my shikigami?{0010}"
   },
   {
    "id": "42F2D0",
    "script": "42F0FC",
    "op": "098 00480000",
    "jp": "うーん、どうしようかなあ？{0000}どうしよっかなあ～？{0010}",
-   "en": ""
+   "en": "Hmm, what should I do?{0000}What should I do~?{0010}"
   },
   {
    "id": "42F31E",
    "script": "42F0FC",
    "op": "036 00000001",
    "jp": "（…か、かわいい）{0010}",
-   "en": ""
+   "en": "(...S-so cute.){0010}"
   },
   {
    "id": "42F344",
    "script": "42F0FC",
    "op": "098 00480000",
    "jp": "ボクに笹をくれたし{0000}いい人かな？うーん、いいよ！{0010}このオノで、ザックザク敵を{0000}切ってあげるね！あははは{0010}",
-   "en": ""
+   "en": "You gave me bamboo, so{0000}you must be nice! Hmm, okay!{0010}With this axe, I'll chop{0000}up your enemies! Ahahaha!{0010}"
   },
   {
    "id": "42F3CC",
    "script": "42F0FC",
    "op": "036 00000001",
    "jp": "（…やっぱり怖いかも…）{0010}",
-   "en": ""
+   "en": "(...Maybe it's scary after all...){0010}"
   },
   {
    "id": "42F434",
    "script": "42F0FC",
    "op": "036 00000001",
    "jp": "ホウシュンとけいやくした{0010}",
-   "en": ""
+   "en": "You formed a contract with Hoshun.{0010}"
   },
   {
    "id": "42F49C",
    "script": "42F0FC",
    "op": "073 0001",
    "jp": "えー！ケチー！プンプンの{0000}プーンだ！{0010}",
-   "en": ""
+   "en": "Aww! Meanie! Hmph,{0000}hmph, hmmmph!{0010}"
   },
   {
    "id": "42F4DE",
    "script": "42F0FC",
    "op": "036 00000001",
    "jp": "（…怒ってもかわいいなあ）{0010}",
-   "en": ""
+   "en": "(...Even angry, it's cute...){0010}"
   },
   {
    "id": "42F50C",
    "script": "42F0FC",
    "op": "098 00480000",
    "jp": "ボク、おなか空いちゃったから{0000}もういくね。バイバイ！{0010}",
-   "en": ""
+   "en": "I'm hungry, so{0000}I'm gonna go now. Bye-bye!{0010}"
   },
   {
    "id": "42F596",
    "script": "42F0FC",
    "op": "073 0001",
    "jp": "あ～あ、負けちゃった！{0000}ボク、ざんねんだなあ！{0010}",
-   "en": ""
+   "en": "Aww, I lost!{0000}That's too bad!{0010}"
   },
   {
    "id": "42F5E2",
    "script": "42F0FC",
    "op": "036 00000001",
    "jp": "ねぇ！ボクの式神になってくれ{0000}ないかい？{0010}",
-   "en": ""
+   "en": "Hey! Won't you become{0000}my shikigami?{0010}"
   },
   {
    "id": "42F620",
    "script": "42F0FC",
    "op": "098 00480000",
    "jp": "うーん、どうしようかなあ？{0000}どうしよっかなあ～？{0010}",
-   "en": ""
+   "en": "Hmm, what should I do?{0000}What should I do~?{0010}"
   },
   {
    "id": "42F66E",
    "script": "42F0FC",
    "op": "036 00000001",
    "jp": "（…か、かわいい…）{0010}",
-   "en": ""
+   "en": "(...S-so cute...){0010}"
   },
   {
    "id": "42F696",
    "script": "42F0FC",
    "op": "098 00480000",
    "jp": "それじゃあね。ボクの好きな{0000}食べ物をもってきてくれたら{0010}けいやくしてあげるよ{0010}ボクが好きな食べ物って{0000}言わなくてもわかるよね！{0010}じゃあ、まってるよ{0010}",
-   "en": ""
+   "en": "Okay then. If you bring me{0000}my favorite food,{0010}I'll make a contract with you.{0010}You know what my favorite{0000}food is without me saying, right?{0010}I'll be waiting!{0010}"
   },
   {
    "id": "42F74E",
    "script": "42F0FC",
    "op": "036 00000001",
    "jp": "（つまり「笹」のことかな？）{0010}",
-   "en": ""
+   "en": "(I guess that means bamboo leaves?){0010}"
   },
   {
    "id": "42F7FC",
    "script": "42F7C4",
    "op": "073 0001",
    "jp": "オレの行く道をじゃまするとは{0000}なにものだっ{0010}",
-   "en": ""
+   "en": "Who are you, blockin'{0000}my path?{0010}"
   },
   {
    "id": "42F844",
    "script": "42F7C4",
    "op": "036 00000001",
    "jp": "ボクとけいやくしないか？{0010}",
-   "en": ""
+   "en": "Won't you make a contract with me?{0010}"
   },
   {
    "id": "42F870",
    "script": "42F7C4",
    "op": "098 00490000",
    "jp": "ざんねんだが、オレはオレの{0000}道を進むつもりだ！{0010}おまえならわかるだろ？{0010}",
-   "en": ""
+   "en": "Sorry, but I'm walkin'{0000}my own road!{0010}You get that, don't ya?{0010}"
   },
   {
    "id": "42F8F2",
    "script": "42F7C4",
    "op": "073 0001",
    "jp": "わかってくれて、オレは{0000}うれしいぜ！{0010}明日なんざ、どうなるか{0000}わからねぇが、運がよければ{0010}また会えるさ！　あばよ！{0010}",
-   "en": ""
+   "en": "Glad you understand.{0000}Makes me happy!{0010}Who knows what tomorrow{0000}brings, but if luck's on our side{0010}we'll meet again! So long!{0010}"
   },
   {
    "id": "42F9C4",
    "script": "42F7C4",
    "op": "073 0001",
    "jp": "ボクはジャマはしないよ。ただ{0010}少しのあいだ、いっしょに{0000}歩いてほしいだけなんだ{0010}",
-   "en": ""
+   "en": "I won't get in your way.{0010}I just want you to walk{0000}with me for a little while.{0010}"
   },
   {
    "id": "42FA2A",
    "script": "42F7C4",
    "op": "098 00490000",
    "jp": "オレの流儀をけなさず、あんた{0000}の考えをつらぬくとはな…{0010}あんたとなら、すこしは面白い{0000}旅になるかもしれねぇな！{0010}わかった。すこしのあいだ、{0000}あんたの目的とやらに{0010}つきあってもいいぜ！{0010}",
-   "en": ""
+   "en": "Not knockin' my ways, but stickin'{0000}to your own... Huh.{0010}Travelin' with you might be{0000}kinda interesting!{0010}All right. For a little while,{0000}I'll tag along with{0010}this goal of yours!{0010}"
   },
   {
    "id": "42FB44",
    "script": "42F7C4",
    "op": "073 0001",
    "jp": "ジョニザとけいやくした{0010}",
-   "en": ""
+   "en": "You formed a contract with Joniza.{0010}"
   },
   {
    "id": "42FBEC",
    "script": "42FBB4",
    "op": "073 0001",
    "jp": "わしの奇策をやぶるとは、おぬし、ただ者じゃないのう！",
-   "en": ""
+   "en": "Foiling my ruse? You're no mere boy!"
   },
   {
    "id": "42FC54",
    "script": "42FBB4",
    "op": "073 0001",
    "jp": "ふうむ、自分でただ者だという{0000}者も、ふつうじゃないのぅ…{0010}おぬし何か隠しておるじゃろ？{0000}まあよい。奇を好むわしに{0010}とっては、おぬしは意外と{0000}おもしろい存在かもしれぬ{0010}おぬしをじっくり観察して{0000}みたくなったわい{0010}",
-   "en": ""
+   "en": "Hmm, one who calls himself ordinary{0000}is anything but, eh...{0010}You're hiding something, aren't you?{0000}Well, no matter. To me, who loves{0010}the unusual, you may turn out{0000}to be quite interesting.{0010}I find I'd like to observe{0000}you closely, my boy.{0010}"
   },
   {
    "id": "42FD82",
    "script": "42FBB4",
    "op": "036 00000001",
    "jp": "フウライとけいやくした{0010}",
-   "en": ""
+   "en": "You formed a contract with Furai.{0010}"
   },
   {
    "id": "42FDE8",
    "script": "42FBB4",
    "op": "073 0001",
    "jp": "ん、何じゃ？　おぬしは遠い{0000}空からやってきたヒーローか？{0010}文学としてはおもしろいかも{0000}しれん！　じゃが…{0010}現実にそんな者はおらん！{0010}わしはこれから歴史の文献を{0000}調べなきゃいかん。ジャマ{0010}じゃから、あっちに行け！{0000}シッ！シッ！{0010}",
-   "en": ""
+   "en": "Hm, what's that? You're a hero{0000}who came from a faraway sky?{0010}As literature, that might be{0000}interesting! But...{0010}no such person exists in reality!{0010}Now I have historical records{0000}to look through. You're in{0010}my way, so off with you!{0000}Shoo! Shoo!{0010}"
   },
   {
    "id": "42FF6C",
    "script": "42FF34",
    "op": "073 0001",
    "jp": "改めて自己紹介しよう{0000}オレは青龍族のキバチヨだ！{0010}よろしくたのむ！{0010}おまえはマサオミとの闘いに{0000}勝った！　オレは約束どおり{0010}おまえとけいやくをする！{0010}",
-   "en": ""
+   "en": "Let me introduce myself properly.{0000}I'm Kibachiyo of the Seiryu clan!{0010}Pleased to meet you!{0010}You won the fight against{0000}Masaomi! As promised,{0010}I'll make a contract with you!{0010}"
   },
   {
    "id": "430026",
    "script": "42FF34",
    "op": "036 00000001",
    "jp": "ありがとう！{0010}",
-   "en": ""
+   "en": "Thank you!{0010}"
   },
   {
    "id": "430046",
    "script": "42FF34",
    "op": "098 00510000",
    "jp": "オレはおまえがどんなことに{0000}なってもついていく！　それが{0010}青龍族のオキテだからだ！{0010}",
-   "en": ""
+   "en": "No matter what happens to you,{0000}I'll follow you! That is{0010}the code of the Seiryu clan!{0010}"
   },
   {
    "id": "4300F0",
    "script": "42FF34",
    "op": "073 0001",
    "jp": "キバチヨとけいやくした{0010}",
-   "en": ""
+   "en": "You formed a contract with Kibachiyo.{0010}"
   }
  ]
 }

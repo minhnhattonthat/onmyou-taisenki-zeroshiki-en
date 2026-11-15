@@ -6,539 +6,539 @@
    "script": "428380",
    "op": "073 0001",
    "jp": "この気配は・・・{0000}やはりそうですか{0010}あなたは、生まれ持っての{0000}闘神士の素質を持っています{0010}わたしにはわかるのです{0010}今まで私が契約した闘神士は{0000}全員がわたしを、虫けらの{0010}ように見て、そして扱った{0010}あなたは、わたしを一体の{0000}式神としてみてくれている{0010}そうですね？{0010}",
-   "en": ""
+   "en": "This presence...{0000}So it is as I thought.{0010}You have the makings of a{0000}Tojinshi, born to it.{0010}I can tell.{0010}Every Tojinshi I contracted with{0000}before saw me, and treated me,{0010}as nothing more than a bug.{0010}But you see me as{0000}a shikigami.{0010}Isn't that right?{0010}"
   },
   {
    "id": "4284EA",
    "script": "428380",
    "op": "036 00000001",
    "jp": "ツクモを式神として見ている？",
-   "en": ""
+   "en": "See Tsukumo as a shikigami?"
   },
   {
    "id": "42853A",
    "script": "428380",
    "op": "073 0001",
    "jp": "そうか・・・{0010}結局、わたしは虫なのだな・・{0010}",
-   "en": ""
+   "en": "I see...{0010}In the end, I am just a bug...{0010}"
   },
   {
    "id": "4285B6",
    "script": "428380",
    "op": "073 0001",
    "jp": "こんなわたしでも{0010}役に立つのであれば{0000}微力ながら協力しましょう{0010}",
-   "en": ""
+   "en": "If even one like me{0010}can be of use, I shall{0000}lend you what little I can.{0010}"
   },
   {
    "id": "428648",
    "script": "428380",
    "op": "036 00000001",
    "jp": "ツクモとけいやくした{0010}",
-   "en": ""
+   "en": "You formed a contract with Tsukumo.{0010}"
   },
   {
    "id": "4286F0",
    "script": "4286B8",
    "op": "073 0001",
    "jp": "へぇ、キミって強いんだね。{0000}ちょっと見直しちゃったよ！{0010}ボクの名前はタンカムイって{0000}いうんだ。よろしくね{0010}ところでさー、ボクの名前の{0000}タンカムイって、ちょっとした{0010}意味があるんだ。アイヌ語で{0000}何ていうかしってる？{0010}",
-   "en": ""
+   "en": "Wow, you're strong, huh?{0000}Guess I was wrong about you!{0010}My name's Tankamui.{0000}Nice to meet you!{0010}So hey, my name, Tankamui,{0000}has a little bit of a{0010}meaning. Do you know what{0000}it means in the Ainu language?{0010}"
   },
   {
    "id": "4287EE",
    "script": "4286B8",
    "op": "036 00000001",
    "jp": "「イルカの神」かなあ？{0010}",
-   "en": ""
+   "en": "\"Dolphin god,\" maybe?{0010}"
   },
   {
    "id": "42883C",
    "script": "4286B8",
    "op": "073 0001",
    "jp": "正解！　消雪族の長である{0000}クジラベエが名付け親だよ！{0010}ちょっとカンタンすぎたかな？{0010}突然、クイズみたいに{0000}なっちゃってごめんね。でも、{0010}それはキミにボクのことを{0000}しってもらいたかったからさ！{0010}それじゃ、あらためて{0000}よろしくね{0010}",
-   "en": ""
+   "en": "Correct! Kujirabee, the head of{0000}the Snowmelt clan, named me!{0010}Was that a little too easy?{0010}Sorry for springing a quiz{0000}on you all of a sudden. But{0010}it's because I wanted you{0000}to get to know me!{0010}So, once more,{0000}nice to meet you!{0010}"
   },
   {
    "id": "42897C",
    "script": "4286B8",
    "op": "036 00000001",
    "jp": "タンカムイとけいやくした{0010}",
-   "en": ""
+   "en": "You formed a contract with Tankamui.{0010}"
   },
   {
    "id": "4289E4",
    "script": "4286B8",
    "op": "073 0001",
    "jp": "残念！本当はイルカの神で{0000}良かったんだ。そのまま{0010}みたままだけどね{0010}ボクとけいやくするには、{0000}もうすこし勉強するといいよ{0010}またどこかで会えるといいね{0000}じゃあね、バーイ！{0010}",
-   "en": ""
+   "en": "Too bad! It really was \"dolphin{0000}god.\" Just what it looks like,{0010}though!{0010}If you want a contract with me,{0000}you'd better study a bit more.{0010}Hope we meet again somewhere.{0000}See ya, bye!{0010}"
   },
   {
    "id": "428B2C",
    "script": "428AF4",
    "op": "073 0001",
    "jp": "わらわが負けるとは…どうやら{0000}そちゅの知能指数を{0010}みくびっていたようでちゅね{0010}",
-   "en": ""
+   "en": "For me to lose... It seemz I{0000}underestimated your{0010}IQ, I doez.{0010}"
   },
   {
    "id": "428B98",
    "script": "428AF4",
    "op": "036 00000001",
    "jp": "その才能をボクの仲間として{0000}いかしてみないか？{0010}",
-   "en": ""
+   "en": "Why not put that talent to use{0000}as one of my partners?{0010}"
   },
   {
    "id": "428BDC",
    "script": "428AF4",
    "op": "098 00300000",
    "jp": "うーむ、わるくない話でちゅね{0010}でも、つぎの問題に{0000}答えられたらの話でちゅよ{0010}三角形の面積の公式は？{0000}（底辺÷高さ）×２である{0010}",
-   "en": ""
+   "en": "Hmm, not a bad offer, it iz.{0010}But only if you can answer{0000}this next question, it iz.{0010}Area of a triangle formula?{0000}Is it (base / height) x 2?{0010}"
   },
   {
    "id": "428C98",
    "script": "428AF4",
    "op": "073 0001",
    "jp": "小学生で習う問題でちゅよ{0000}こんな問題ができないようじゃ{0010}なかまになる価値がない{0000}でちゅね。さよならでちゅ{0010}",
-   "en": ""
+   "en": "That'z a question for grade{0000}schoolers! If you can't do this,{0010}you're not worth having az{0000}a partner. Bye-bye, it iz.{0010}"
   },
   {
    "id": "428D56",
    "script": "428AF4",
    "op": "073 0001",
    "jp": "そうでちゅ。（底辺×高さ）{0000}÷２が正解でちゅ。ではつぎの{0010}問題にいきまちゅよ！{0010}「鯛」この漢字の読みは？{0000}「こい」である{0010}",
-   "en": ""
+   "en": "Correct. (base x height) / 2{0000}iz right. Now for the next{0010}question!{0010}The sea bream in Japanese iz{0000}called...? Is it \"koi\"?{0010}"
   },
   {
    "id": "428E0E",
    "script": "428AF4",
    "op": "073 0001",
    "jp": "どうやらあなたの頭の中は{0000}恋ばかりのようでちゅ{0010}答えは「たい」でちゅよ{0010}どちらにしても、このような{0000}問題ができないようでは、{0010}ついていけないでちゅね！{0010}さよならでちゅ{0010}",
-   "en": ""
+   "en": "Seemz your head iz full of{0000}nothing but \"koi\"... love!{0010}The answer iz \"tai.\"{0010}Either way, if you can't{0000}answer a question like this,{0010}I can't follow you!{0010}Bye-bye, it iz.{0010}"
   },
   {
    "id": "428F10",
    "script": "428AF4",
    "op": "073 0001",
    "jp": "正解は「たい」でちゅ。まあ{0000}問題を、やさしくしたでちゅし{0010}こんなもんでちゅね{0010}",
-   "en": ""
+   "en": "The right answer iz \"tai.\" Well,{0000}I made the questionz easy,{0010}so that'z to be expected.{0010}"
   },
   {
    "id": "428FB0",
    "script": "428AF4",
    "op": "036 00000001",
    "jp": "オトチカとけいやくした{0010}",
-   "en": ""
+   "en": "You formed a contract with Otochika.{0010}"
   },
   {
    "id": "429058",
    "script": "429020",
    "op": "073 0001",
    "jp": "強いな…私の聴力をもってして{0000}も勝つことはできなかった…{0010}だが、この勝利はおまえよりも{0000}式神の力によるところが大きい{0010}今一度、おまえ自身の力を{0000}見せてみるがいい{0010}私が提示する２５秒よりも{0000}早く目的地まで走るのだ{0010}",
-   "en": ""
+   "en": "Strong... Even with my keen ears,{0000}I could not win...{0010}But this victory owes more to{0000}your shikigami than to you.{0010}Show me your own strength{0000}once more.{0010}Run to the goal in less than{0000}the 25 seconds I set.{0010}"
   },
   {
    "id": "429154",
    "script": "429020",
    "op": "036 00000001",
    "jp": "え！？走れってこと？{0010}",
-   "en": ""
+   "en": "Huh!? You want me to run?{0010}"
   },
   {
    "id": "42917C",
    "script": "429020",
    "op": "098 00310000",
    "jp": "そうだ{0010}",
-   "en": ""
+   "en": "Yes.{0010}"
   },
   {
    "id": "42919E",
    "script": "429020",
    "op": "036 00000001",
    "jp": "ちょ、ちょっとまって{0000}まだ、心の準備がっ…{0010}",
-   "en": ""
+   "en": "W-wait a minute.{0000}I'm not ready yet...{0010}"
   },
   {
    "id": "4291DE",
    "script": "429020",
    "op": "098 00310000",
    "jp": "どんな状況でも力をはっき{0000}できないときは、即、負けだ！{0010}では、いくぞ！{0010}",
-   "en": ""
+   "en": "Fail to show your strength in{0000}any situation, and you lose!{0010}Now, go!{0010}"
   },
   {
    "id": "429290",
    "script": "429020",
    "op": "073 0001",
    "jp": "ほう、よく走ったな。その速さ{0000}には私も感服した{0010}式神たちがおまえのために{0000}必死に闘うのもうなずける{0010}さっきは、すまなかった{0010}おまえも十分つよい人間で{0000}あることがわかった{0010}",
-   "en": ""
+   "en": "Oho, you ran well. Even I{0000}am impressed by that speed.{0010}No wonder your shikigami fight{0000}so desperately for you.{0010}Forgive me for earlier.{0010}I see now that you, too, are{0000}a strong person.{0010}"
   },
   {
    "id": "429394",
    "script": "429020",
    "op": "036 00000001",
    "jp": "ムミョウとけいやくした{0010}",
-   "en": ""
+   "en": "You formed a contract with Mumyo.{0010}"
   },
   {
    "id": "42941A",
    "script": "429020",
    "op": "073 0001",
    "jp": "うーん…つかれて眠い…{0010}",
-   "en": ""
+   "en": "Mmm... I'm tired and sleepy...{0010}"
   },
   {
    "id": "429444",
    "script": "429020",
    "op": "098 00310000",
    "jp": "やれやれ、寝てしまったか…{0010}すまぬが寝ているあいだに{0000}いかせてもらおう。さらば！{0010}",
-   "en": ""
+   "en": "Good grief, he fell asleep...{0010}Forgive me, but I'll take my leave{0000}while he sleeps. Farewell!{0010}"
   },
   {
    "id": "42952C",
    "script": "4294F4",
    "op": "073 0001",
    "jp": "まいった！　あんさん、{0000}やりまんな！{0010}ところで、つよーいあんさんに{0000}ひとつたのまれて欲しいんや！{0010}あんさんだけにはいうけどな、{0000}じつはおいらの巻き物が{0010}なくなってしもうたんや！{0010}あの巻き物はおいらの{0000}命のつぎに大事なんや！{0010}あれがないと、おいら生きて{0000}けないんや！な、たのむわ！{0010}",
-   "en": ""
+   "en": "Ya got me! You're somethin'{0000}else, pal!{0010}Say, I got a favor to ask{0000}a real strong guy like you!{0010}I'm only tellin' you this, but{0000}the truth is, my scroll{0010}has gone missin'!{0010}That scroll means more to me{0000}than anythin' but my life!{0010}I can't live without it!{0000}C'mon, I'm beggin' ya!{0010}"
   },
   {
    "id": "42968E",
    "script": "4294F4",
    "op": "073 0001",
    "jp": "巻き物にはな、「地」という{0000}目印があるんや。{0010}ほな、あんさん、たのむで！{0010}",
-   "en": ""
+   "en": "The scroll's got a mark on it{0000}that says \"Earth\".{0010}Alright, pal, I'm countin' on ya!{0010}"
   },
   {
    "id": "429762",
    "script": "4294F4",
    "op": "073 0001",
    "jp": "なんだか、様子がおかしいなあ{0000}もういちど、もどってみよう{0010}",
-   "en": ""
+   "en": "Something seems fishy here.{0000}Let's go back once more.{0010}"
   },
   {
    "id": "429814",
    "script": "4294F4",
    "op": "073 0001",
    "jp": "おっ！早いやん！{0000}で？巻き物はどこや？{0010}",
-   "en": ""
+   "en": "Oh! That was quick!{0000}So? Where's the scroll?{0010}"
   },
   {
    "id": "429858",
    "script": "4294F4",
    "op": "036 00000001",
    "jp": "いや…本当にあるのかなあと…{0010}",
-   "en": ""
+   "en": "Well... I wondered if it really exists...{0010}"
   },
   {
    "id": "429888",
    "script": "4294F4",
    "op": "098 00320000",
    "jp": "おいらがウソついてる{0000}っちゅーんか？{0010}そんなんじゃ…おっと！{0010}",
-   "en": ""
+   "en": "You sayin' I'm a liar{0000}or somethin'?{0010}I'd never... whoops!{0010}"
   },
   {
    "id": "4298E4",
    "script": "4294F4",
    "op": "036 00000001",
    "jp": "あれ、今落ちた巻き物に「地」{0000}という文字があったけど…{0010}",
-   "en": ""
+   "en": "Hey, that scroll you just dropped{0000}has the word \"Earth\" on it...{0010}"
   },
   {
    "id": "429930",
    "script": "4294F4",
    "op": "098 00320000",
    "jp": "あちゃー！…バレてもうた！{0000}あんさん、堪忍や！{0010}ちと負けてくやしかったんや！{0000}悪気なかったんや！{0010}まあ、冗談はこれくらいにして{0000}あんさん人が良すぎるわ！{0010}そんなんじゃ{0000}ダマされっぱなしやで！{0010}ここはおいらがついていって{0000}やるで！　まかしとき！{0010}",
-   "en": ""
+   "en": "Aw, shoot!... Busted!{0000}Forgive me, pal!{0010}I was just sore about losin'!{0000}I didn't mean no harm!{0010}Anyway, jokin' aside, you're{0000}way too nice for your own good!{0010}At this rate, you'll get{0000}fooled all day long!{0010}So I'll tag along to look{0000}out for ya! Leave it to me!{0010}"
   },
   {
    "id": "429A8C",
    "script": "4294F4",
    "op": "073 0001",
    "jp": "マスラオとけいやくした{0010}",
-   "en": ""
+   "en": "You formed a contract with Masurao.{0010}"
   },
   {
    "id": "429AD6",
    "script": "4294F4",
    "op": "036 00000001",
    "jp": "（けっきょくダマしたのか…）{0010}",
-   "en": ""
+   "en": "(So he tricked me after all...){0010}"
   },
   {
    "id": "429B32",
    "script": "4294F4",
    "op": "073 0001",
    "jp": "こんなにたのんでいるの{0000}にあんまりやで！{0010}あんさん、人でなしや！{0010}あとな、夜道は{0000}気ィつけたほうがええで！{0010}",
-   "en": ""
+   "en": "After all my beggin',{0000}that's just cold!{0010}You're heartless, pal!{0010}Oh, and ya better watch your{0000}back on dark roads at night!{0010}"
   },
   {
    "id": "429BC0",
    "script": "4294F4",
    "op": "036 00000001",
    "jp": "（おどされてしまった…）{0010}",
-   "en": ""
+   "en": "(I just got threatened...){0010}"
   },
   {
    "id": "429C84",
    "script": "429C34",
    "op": "073 0001",
    "jp": "どうやら、おまえのみる世界の{0000}ほうが上だったってことか…{0010}なかなか良い闘いだったぜ！{0010}",
-   "en": ""
+   "en": "Seems your view of the world{0000}is the bigger one after all...{0010}That was a pretty good fight!{0010}"
   },
   {
    "id": "429CF8",
    "script": "429C34",
    "op": "036 00000001",
    "jp": "けいやくしてくれないか？{0010}",
-   "en": ""
+   "en": "Will you form a contract with me?{0010}"
   },
   {
    "id": "429D24",
    "script": "429C34",
    "op": "098 00330000",
    "jp": "残念だが、オレは縛られるのが{0000}あまり好きじゃないんだ{0010}というより、同族でオレに熱烈{0000}な追っかけがいて、それから逃{0010}げていることもあるんだがな{0000}じゃあな！{0010}",
-   "en": ""
+   "en": "Sorry, but I'm not one{0000}for being tied down.{0010}Truth is, I've got a die-hard{0000}fan of my own kind on my tail,{0010}and I'm kinda running from her.{0000}See ya!{0010}"
   },
   {
    "id": "429DE2",
    "script": "429C34",
    "op": "036 00000001",
    "jp": "（同族の式神…まさかコマチの{0000}ことじゃないだろうか…）{0010}",
-   "en": ""
+   "en": "(A shikigami of his kind... It{0000}couldn't be Komachi, could it...){0010}"
   },
   {
    "id": "429E6E",
    "script": "429C34",
    "op": "073 0001",
    "jp": "どうやら、おまえのみる世界の{0000}ほうが上だったってことか…{0010}なかなか良い闘いだったぜ{0010}",
-   "en": ""
+   "en": "Seems your view of the world{0000}is the bigger one after all...{0010}That was a pretty good fight.{0010}"
   },
   {
    "id": "429ED8",
    "script": "429C34",
    "op": "098 00090001",
    "jp": "バラワカ様ぁ～{0010}",
-   "en": ""
+   "en": "Barawaka-samaaa~{0010}"
   },
   {
    "id": "429EFA",
    "script": "429C34",
    "op": "098 00330000",
    "jp": "この声は…まさか…{0010}",
-   "en": ""
+   "en": "That voice... it can't be...{0010}"
   },
   {
    "id": "429F20",
    "script": "429C34",
    "op": "098 00090001",
    "jp": "バラワカ様ぁ～まってぇ～{0010}",
-   "en": ""
+   "en": "Barawaka-samaaa~ Waaait~{0010}"
   },
   {
    "id": "429F4C",
    "script": "429C34",
    "op": "098 00330000",
    "jp": "…というわけで、急用ができて{0000}しまったようだ！それじゃ！{0010}",
-   "en": ""
+   "en": "...So, uh, something urgent{0000}just came up! See ya!{0010}"
   },
   {
    "id": "429FC6",
    "script": "429C34",
    "op": "098 00090000",
    "jp": "うふふ…つかまえたぁ～{0010}コマチ…ずっとさがして{0000}たんだからあ～！{0010}",
-   "en": ""
+   "en": "Ufufu... Gotcha~{0010}Komachi's been looking{0000}for you foreverrr~!{0010}"
   },
   {
    "id": "42A01E",
    "script": "429C34",
    "op": "098 00330000",
    "jp": "や、やあ、コマチ！元気だった{0000}ようだね！{0010}",
-   "en": ""
+   "en": "H-hey there, Komachi! Looks{0000}like you've been well!{0010}"
   },
   {
    "id": "42A05C",
    "script": "429C34",
    "op": "098 00090000",
    "jp": "あたい、もう逃がさないよー{0010}",
-   "en": ""
+   "en": "I'm never letting you get away again~{0010}"
   },
   {
    "id": "42A08A",
    "script": "429C34",
    "op": "098 00330000",
    "jp": "た、たのむから引っ付かないで{0000}くれたまえ！{0010}",
-   "en": ""
+   "en": "P-please, I beg you,{0000}stop clinging to me!{0010}"
   },
   {
    "id": "42A0CA",
    "script": "429C34",
    "op": "098 00090000",
    "jp": "うふふ…だーめー{0010}",
-   "en": ""
+   "en": "Ufufu... Nooope~{0010}"
   },
   {
    "id": "42A11A",
    "script": "429C34",
    "op": "098 00330000",
    "jp": "この状況はいったいどうすれば{0000}解決するのだ？{0010}",
-   "en": ""
+   "en": "How on earth do I get out{0000}of this situation?{0010}"
   },
   {
    "id": "42A15C",
    "script": "429C34",
    "op": "098 00090000",
    "jp": "それはね～、この人の式神と{0000}なって、あたいといっしょに{0010}闘うことだよー！{0010}いやだなんて{0000}いわせないんだから！{0010}",
-   "en": ""
+   "en": "Easy~ You become this guy's{0000}shikigami, and fight{0010}together with me!{0010}And I won't let you{0000}say no!{0010}"
   },
   {
    "id": "42A1E4",
    "script": "429C34",
    "op": "098 00330000",
    "jp": "わかった！何でもいうことを{0000}聞くから、何とかしてくれ！{0010}",
-   "en": ""
+   "en": "Fine! I'll do whatever you say,{0000}just do something about this!{0010}"
   },
   {
    "id": "42A230",
    "script": "429C34",
    "op": "098 00090000",
    "jp": "わーい！{0010}",
-   "en": ""
+   "en": "Yaaay!{0010}"
   },
   {
    "id": "42A290",
    "script": "429C34",
    "op": "073 0001",
    "jp": "バラワカとけいやくした{0010}",
-   "en": ""
+   "en": "You formed a contract with Barawaka.{0010}"
   },
   {
    "id": "42A2DA",
    "script": "429C34",
    "op": "036 00000001",
    "jp": "（…す…すごい…）{0010}",
-   "en": ""
+   "en": "(...W...wow...){0010}"
   },
   {
    "id": "42A388",
    "script": "42A338",
    "op": "073 0001",
    "jp": "んん？お前いいモンもってん{0000}じゃねぇか！かせ！いいから{0010}かせ！いいからかせ！{0000}…かせっつんじゃあ！！{0010}",
-   "en": ""
+   "en": "Hmm? Ya got somethin' nice there!{0000}Gimme! Just gimme it!{0010}Gimme! Just gimme it!{0000}...I said GIMME!!{0010}"
   },
   {
    "id": "42A40E",
    "script": "42A338",
    "op": "036 00000001",
    "jp": "「銀のオチョコ」をとられた{0010}",
-   "en": ""
+   "en": "The \"Silver Sake Cup\" was taken.{0010}"
   },
   {
    "id": "42A43C",
    "script": "42A338",
    "op": "098 00340000",
    "jp": "こりゃあな、酒を{0000}飲むときに使う{0010}「銀のオチョコ」というんじゃ{0010}これで酒をくみ交わした者同士{0000}は兄弟になるんじゃ！{0010}おまえはわしに勝った！{0010}おまえはわしと酒をくみ交わす{0000}資格があるということじゃ{0010}",
-   "en": ""
+   "en": "This here's what ya use{0000}when ya drink sake.{0010}It's called a \"Silver Sake Cup\".{0010}Men who share sake from this{0000}become sworn brothers!{0010}You beat me!{0010}That means ya got the right{0000}to share sake with me!{0010}"
   },
   {
    "id": "42A528",
    "script": "42A338",
    "op": "036 00000001",
    "jp": "いや、でもボク中学生だし…{0010}",
-   "en": ""
+   "en": "Um, but I'm in middle school...{0010}"
   },
   {
    "id": "42A556",
    "script": "42A338",
    "op": "098 00340000",
    "jp": "ならば、泉の水で{0000}ガマンしたるわ{0010}それでええじゃろ？{0010}",
-   "en": ""
+   "en": "Then I'll settle for{0000}water from the spring.{0010}That oughta do, eh?{0010}"
   },
   {
    "id": "42A5AA",
    "script": "42A338",
    "op": "036 00000001",
    "jp": "兄弟になるか…{0010}",
-   "en": ""
+   "en": "Become sworn brothers?{0010}"
   },
   {
    "id": "42A5F0",
    "script": "42A338",
    "op": "073 0001",
    "jp": "ガッハハハハ！これでわしらは{0000}兄弟じゃ！何かあったら{0010}いつでもわしを呼べ！{0000}ボコボコにしたるわ！！{0010}",
-   "en": ""
+   "en": "Gwahahaha! Now we're brothers!{0000}If anythin' ever happens,{0010}call me anytime!{0000}I'll beat 'em to a pulp!!{0010}"
   },
   {
    "id": "42A6B0",
    "script": "42A338",
    "op": "073 0001",
    "jp": "ミソヒトとけいやくした{0010}",
-   "en": ""
+   "en": "You formed a contract with Misohito.{0010}"
   },
   {
    "id": "42A71A",
    "script": "42A338",
    "op": "073 0001",
    "jp": "おまえの強さは本物じゃあ！{0000}今ここに「銀のオチョコ」が{0010}あれば、兄弟になれたところ{0000}じゃったんだがな{0010}おまえ！「銀のオチョコ」を{0000}もってこい！　そうすれば{0010}けいやくしてやってもいいぞ{0010}",
-   "en": ""
+   "en": "Yer strength is the real deal!{0000}If only I had a \"Silver Sake Cup\"{0010}right now, we coulda become{0000}sworn brothers.{0010}You! Bring me a \"Silver Sake{0000}Cup\"! Do that, and{0010}maybe I'll make a contract with ya.{0010}"
   },
   {
    "id": "42A7F8",
    "script": "42A338",
    "op": "036 00000001",
    "jp": "（…そのまえの兄弟になると{0000}いう話が気になるんだけど…）{0010}",
-   "en": ""
+   "en": "(...I'm more worried about that{0000}\"sworn brothers\" thing...){0010}"
   },
   {
    "id": "42A882",
    "script": "42A338",
    "op": "073 0001",
    "jp": "逃げんのかあああああ！！！{0010}わしの杯を受けんときは{0000}どうなるかしっとるな？{0010}",
-   "en": ""
+   "en": "Yer runnin' awaaaaay!?!{0010}Ya know what happens when{0000}ya refuse my cup, don't ya?{0010}"
   },
   {
    "id": "42A8EC",
    "script": "42A338",
    "op": "036 00000001",
    "jp": "ごういんにのまされた{0010}",
-   "en": ""
+   "en": "You were made to drink by force.{0010}"
   },
   {
    "id": "42A914",
    "script": "42A338",
    "op": "098 00340000",
    "jp": "ガッハハハハ！これでわしらは{0000}兄弟じゃ！何かあったら{0010}いつでもわしを呼べ！{0000}ボコボコにしたるわ！！{0010}",
-   "en": ""
+   "en": "Gwahahaha! Now we're brothers!{0000}If anythin' ever happens,{0010}call me anytime!{0000}I'll beat 'em to a pulp!!{0010}"
   },
   {
    "id": "42A9D4",
    "script": "42A338",
    "op": "073 0001",
    "jp": "ミソヒトとけいやくした{0010}",
-   "en": ""
+   "en": "You formed a contract with Misohito.{0010}"
   },
   {
    "id": "42AA7C",
    "script": "42AA44",
    "op": "073 0001",
    "jp": "へえっキミって強いね！{0010}それにカッコイイし、{0000}ボクのタイプだよ！{0010}それにね！ボクって男の子っ{0000}ぽいじゃん！{0010}だから最近の女の子の{0000}流行に興味があるんだ！{0010}",
-   "en": ""
+   "en": "Whoa, you're strong, huh!{0010}And cool, too.{0000}You're my type!{0010}And y'know! I'm kinda boyish,{0000}right?{0010}So lately I've gotten into{0000}what's trendy with girls!{0010}"
   },
   {
    "id": "42AB34",
    "script": "42AA44",
    "op": "098 00350000",
    "jp": "ほらほら！左右ふぞろいの{0000}ファッションってあるじゃん！{0010}アシンメトリーって{0000}いうんだよね{0010}",
-   "en": ""
+   "en": "Like, like! You know that fashion{0000}where the left and right don't match?{0010}It's called{0000}asymmetry, right?{0010}"
   },
   {
    "id": "42ABCA",
    "script": "42AA44",
    "op": "073 0001",
    "jp": "あれっていいよね～{0000}毎回、デザインを変えることも{0010}できるし、ボクも着てみたい{0000}ファッションのひとつなんだ！{0010}それと、細いネックで、{0000}しげきてきなワンピースを{0010}キャミソールっていうんでしょ{0010}",
-   "en": ""
+   "en": "It's so cute, right~?{0000}You can switch up the design{0010}every time, and it's one of the{0000}looks I really wanna try!{0010}And then there's that daring{0000}dress with the thin straps,{0010}that's called a camisole, right?{0010}"
   },
   {
    "id": "42ACC8",
    "script": "42AA44",
    "op": "073 0001",
    "jp": "今はР女さんの格好を{0000}してるけど、キャミソールを{0010}２枚重ね着してメイドさん風に{0000}アレンジすることが夢なんだ！{0010}これでボクもすこしは女の子っ{0000}ぽいっていうことがわかった？{0010}ボクねぇ、本当は守るより、{0000}守って欲しいタイプなんだよ{0010}でも、ちゃんと守ってあげる{0000}から、けいやくしてね！{0010}",
-   "en": "",
+   "en": "Right now I'm dressed like a{0000}shrine maiden, but my dream{0010}is to layer two camisoles and{0000}make it a maid-style outfit!{0010}So now do you get that I'm{0000}a little bit girly too?{0010}Y'know, deep down I'm more the type{0000}who wants protecting than protects.{0010}But I'll protect you properly,{0000}so make a contract with me!{0010}",
    "notes": "gaiji Р=巫"
   },
   {
@@ -546,322 +546,322 @@
    "script": "42AA44",
    "op": "073 0001",
    "jp": "コマキとけいやくした{0010}",
-   "en": ""
+   "en": "You formed a contract with Komaki.{0010}"
   },
   {
    "id": "42AE96",
    "script": "42AA44",
    "op": "073 0001",
    "jp": "（…何だか強引に押し通された{0000}気がする…）{0010}",
-   "en": ""
+   "en": "(...I feel like she just{0000}steamrolled right over me...){0010}"
   },
   {
    "id": "42AF0A",
    "script": "42AA44",
    "op": "073 0001",
    "jp": "アイロンがけだよね{0010}",
-   "en": ""
+   "en": "You mean ironing, right?{0010}"
   },
   {
    "id": "42AF30",
    "script": "42AA44",
    "op": "098 00350000",
    "jp": "そう、服のしわをキレイにとる{0000}便利な道具といえばアイロンだ{0010}よねってちがうもん！ボクが{0000}言いたかったのは、{0010}アイロンじゃないもん！{0010}ボクをバカにすると後がこわい{0000}んだからあ！！ばーーーか！{0010}",
-   "en": ""
+   "en": "Right, if we're talking handy tools{0000}for getting wrinkles out, an iron's{0010}the one... wait, no! What I{0000}was trying to say{0010}is NOT an iron!{0010}Make fun of me and you'll be{0000}sorry!! Stuuupid!{0010}"
   },
   {
    "id": "42B050",
    "script": "42AA44",
    "op": "073 0001",
    "jp": "ばんそうこうだっけ？{0010}",
-   "en": ""
+   "en": "A band-aid, was it?{0010}"
   },
   {
    "id": "42B078",
    "script": "42AA44",
    "op": "098 00350000",
    "jp": "そうそう、傷口にぺタッと！{0000}最近は水にも強いんだよねー！{0010}……って違うもん！{0000}ボクが言いたかったのは、{0010}ばんそうこうじゃないもん！{0010}ボクをバカにすると後がこわい{0000}んだからあ！！ばーーーか！{0010}",
-   "en": ""
+   "en": "Yeah, yeah, slap it on a cut!{0000}They're even waterproof now!{0010}......No, that's wrong! What I{0000}was trying to say{0010}is NOT a band-aid!{0010}Make fun of me and you'll be{0000}sorry!! Stuuupid!{0010}"
   },
   {
    "id": "42B1EC",
    "script": "42B19C",
    "op": "073 0001",
    "jp": "ふぇーん！もうイジメないでー{0010}",
-   "en": ""
+   "en": "Waaah! Stop picking on meee!{0010}"
   },
   {
    "id": "42B224",
    "script": "42B19C",
    "op": "036 00000001",
    "jp": "もう、闘いは終わったよ！{0010}",
-   "en": ""
+   "en": "Come on, the fight's over!{0010}"
   },
   {
    "id": "42B250",
    "script": "42B19C",
    "op": "098 00360000",
    "jp": "ホ、ホント？{0010}",
-   "en": ""
+   "en": "R-really?{0010}"
   },
   {
    "id": "42B278",
    "script": "42B19C",
    "op": "036 00000001",
    "jp": "本当だよ{0010}",
-   "en": ""
+   "en": "Really.{0010}"
   },
   {
    "id": "42B294",
    "script": "42B19C",
    "op": "098 00360000",
    "jp": "良かったあ！　ホントはね、{0000}ボク、怖かったんだよ！{0010}",
-   "en": ""
+   "en": "Phew! To tell the truth,{0000}I was scared!{0010}"
   },
   {
    "id": "42B2E4",
    "script": "42B19C",
    "op": "036 00000001",
    "jp": "おいおい…{0010}",
-   "en": ""
+   "en": "Come on now...{0010}"
   },
   {
    "id": "42B302",
    "script": "42B19C",
    "op": "098 00360000",
    "jp": "ボク困っちゃったなあ{0010}さっきの闘いで金の矢を{0000}使いきっちゃったんだ{0010}新しい矢を、さがさなきゃ{0000}お母さんにおこられちゃうよ{0010}",
-   "en": ""
+   "en": "Oh, I'm in trouble now.{0010}I used up all my golden arrows{0000}in that fight just now.{0010}If I don't find new ones,{0000}Mom's gonna be mad at me!{0010}"
   },
   {
    "id": "42B39E",
    "script": "42B19C",
    "op": "036 00000001",
    "jp": "さがしてみようかな{0010}",
-   "en": ""
+   "en": "Maybe I'll look for them.{0010}"
   },
   {
    "id": "42B3C4",
    "script": "42B19C",
    "op": "098 00360000",
    "jp": "ホントに！うれしいな！{0010}じゃあ、ボクがカミサマに{0000}お願いしてあげる。すぐに{0010}見つかりますようにって！{0010}",
-   "en": ""
+   "en": "Really!? Yay!{0010}Then I'll pray to the gods{0000}for you, so you can find{0010}them really fast!{0010}"
   },
   {
    "id": "42B482",
    "script": "42B19C",
    "op": "073 0001",
    "jp": "あれー？もしかして、それは！{0000}金の矢じゃない？{0010}さっきの闘いで、金の矢を{0000}使いきっちゃったんだ{0010}新しい矢を、さがさなきゃ{0000}お母さんにおこられちゃうよ{0010}その金の矢、ちょうだい{0010}",
-   "en": ""
+   "en": "Huh? Is that...!?{0000}Isn't that a golden arrow?{0010}I used up all my golden arrows{0000}in that fight earlier.{0010}If I don't find new ones,{0000}Mom's gonna be mad at me!{0010}Please give me that golden arrow.{0010}"
   },
   {
    "id": "42B556",
    "script": "42B19C",
    "op": "036 00000001",
    "jp": "「金の矢」をわたす？{0010}",
-   "en": ""
+   "en": "Give him the \"Golden Arrow\"?{0010}"
   },
   {
    "id": "42B5A2",
    "script": "42B19C",
    "op": "073 0001",
    "jp": "わー、ありがとう！{0000}金の矢だあ！{0010}あの…あの…ヨロシクね{0010}ボク、いっしょうけんめいに{0000}闘うからね{0010}",
-   "en": ""
+   "en": "Wow, thank you!{0000}A golden arrow!{0010}Um... um... nice to meet you.{0010}I'll fight as hard{0000}as I can!{0010}"
   },
   {
    "id": "42B65A",
    "script": "42B19C",
    "op": "036 00000001",
    "jp": "ベニマルとけいやくした{0010}",
-   "en": ""
+   "en": "You formed a contract with Benimaru.{0010}"
   },
   {
    "id": "42B6C0",
    "script": "42B19C",
    "op": "073 0001",
    "jp": "うーん、困っちゃったな{0000}金の矢がなくちゃ{0010}お母さんにおこられちゃうよ{0000}うわあああん{0010}",
-   "en": ""
+   "en": "Aww, I'm in trouble.{0000}Without golden arrows,{0010}Mom's gonna be mad at me!{0000}Waaaaah!{0010}"
   },
   {
    "id": "42B7C4",
    "script": "42B774",
    "op": "073 0001",
    "jp": "まったく、なんだい！　こんな{0000}子供にやられるなんざ、だらし{0010}ないったらありゃしない！{0010}…で、あたいに何か用かい？{0010}いっとくけど、{0000}あたいに手をだしてみな！{0010}タダじゃすまさないよ！{0010}",
-   "en": ""
+   "en": "Honestly, what is this! Losing to{0000}a mere child... how utterly{0010}pathetic of me!{0010}...So, what do you want with me?{0010}Just so you know,{0000}lay one finger on me{0010}and you'll pay dearly for it!{0010}"
   },
   {
    "id": "42B896",
    "script": "42B774",
    "op": "098 00130000",
    "jp": "…それでも連れて帰ってみせる{0000}わよ。ツルヤッコ…いえ、姫様{0010}",
-   "en": ""
+   "en": "...Even so, I'll take you home.{0000}Tsuruyakko... no, Princess.{0010}"
   },
   {
    "id": "42B8E6",
    "script": "42B774",
    "op": "098 00370000",
    "jp": "あんたはシラトリ…{0010}",
-   "en": ""
+   "en": "You're Shiratori...{0010}"
   },
   {
    "id": "42B90C",
    "script": "42B774",
    "op": "098 00130000",
    "jp": "ずいぶんさがしたわ！もう十分{0000}羽伸ばしたはずよ！　族長様も{0010}心配してるわ。帰りましょう！{0010}",
-   "en": ""
+   "en": "I've looked all over for you! You've{0000}spread your wings long enough!{0010}The chieftain is worried too. Let's go home!{0010}"
   },
   {
    "id": "42B97C",
    "script": "42B774",
    "op": "098 00370000",
    "jp": "シラトリ…親友であるお前だっ{0000}たらわかってくれると{0010}思っていたのにねぇ{0010}",
-   "en": ""
+   "en": "Shiratori... You're my best friend.{0000}I thought you of all people{0010}would understand me...{0010}"
   },
   {
    "id": "42B9DA",
    "script": "42B774",
    "op": "098 00130000",
    "jp": "もうダメよ。お遊びはおしまい{0000}さあっ帰りましょう！{0010}",
-   "en": ""
+   "en": "No more. Playtime is over.{0000}Come on, let's go home!{0010}"
   },
   {
    "id": "42BA22",
    "script": "42B774",
    "op": "098 00370000",
    "jp": "ねぇシラトリ…また、あたいを{0000}あのせまいところに{0010}戻すつもりなのかい？{0010}",
-   "en": ""
+   "en": "Say, Shiratori... You gonna stick{0000}me back in that cramped{0010}little place again?{0010}"
   },
   {
    "id": "42BA80",
    "script": "42B774",
    "op": "098 00130000",
    "jp": "あなたの気もちはわかるわ{0000}でもあなたはお姫様なのよ{0010}",
-   "en": ""
+   "en": "I know how you feel.{0000}But you are a princess.{0010}"
   },
   {
    "id": "42BAC8",
    "script": "42B774",
    "op": "098 00370000",
    "jp": "お姫様だったら自由になんない{0000}のかい？{0010}",
-   "en": ""
+   "en": "So bein' a princess means{0000}I don't get to be free?{0010}"
   },
   {
    "id": "42BB0C",
    "script": "42B774",
    "op": "036 00000001",
    "jp": "ねぇシラトリ、いっしょに{0000}行動すれば、いいんじゃない？{0010}",
-   "en": ""
+   "en": "Hey, Shiratori, why don't you{0000}two just travel together?{0010}"
   },
   {
    "id": "42BB58",
    "script": "42B774",
    "op": "098 00130000",
    "jp": "でも…{0010}",
-   "en": ""
+   "en": "But...{0010}"
   },
   {
    "id": "42BB7A",
    "script": "42B774",
    "op": "036 00000001",
    "jp": "じゃあ、ボクの式神になりなよ{0000}そうすればシラトリの目の届く{0010}ところにいるわけだしね{0010}",
-   "en": ""
+   "en": "Then why not be my shikigami?{0000}That way you'd stay where{0010}Shiratori can keep an eye on you.{0010}"
   },
   {
    "id": "42BBE4",
    "script": "42B774",
    "op": "098 00370000",
    "jp": "そうしておくれ！{0010}",
-   "en": ""
+   "en": "Ooh, let's do that!{0010}"
   },
   {
    "id": "42BC08",
    "script": "42B774",
    "op": "098 00130000",
    "jp": "わかったわ！どうせ帰る気は{0000}さらさらないみたいだしね{0010}",
-   "en": ""
+   "en": "All right! Looks like you've got{0000}no intention of going home anyway.{0010}"
   },
   {
    "id": "42BC52",
    "script": "42B774",
    "op": "098 00370000",
    "jp": "ありがとうよ！シラトリ！{0000}ぼうやも気に入ったよ{0010}ぼうやこそ男の中の男だねぇ{0010}",
-   "en": ""
+   "en": "Thanks a bunch, Shiratori!{0000}And I like you too, kiddo.{0010}Now you're a man among men!{0010}"
   },
   {
    "id": "42BCF8",
    "script": "42B774",
    "op": "073 0001",
    "jp": "ツルヤッコとけいやくした{0010}",
-   "en": ""
+   "en": "You formed a contract with Tsuruyakko.{0010}"
   },
   {
    "id": "42BD4C",
    "script": "42B774",
    "op": "073 0001",
    "jp": "あれで良かったのかな？{0010}",
-   "en": ""
+   "en": "I wonder if that was all right?{0010}"
   },
   {
    "id": "42BD76",
    "script": "42B774",
    "op": "098 00130000",
    "jp": "ありがとう、あれでいいのよ{0010}ワガママだし、そう簡単には{0000}折れないってことは{0010}わかってたわ{0010}ただ、超がつく世間知らず{0000}だから、ほっとけなかったのよ{0010}",
-   "en": ""
+   "en": "Thank you. That was for the best.{0010}She's spoiled, and I knew{0000}she'd never give in{0010}that easily.{0010}It's just that she's hopelessly{0000}naive. I couldn't leave her alone.{0010}"
   },
   {
    "id": "42BE54",
    "script": "42B774",
    "op": "073 0001",
    "jp": "まったく、なんだい！　こんな{0000}子供にやられるなんざ、だらし{0010}ないったらありゃしない！{0010}フンッ！交渉したかったら{0000}シラトリを連れておいで！{0010}他のヤツの言うことなんか{0000}これっぽっちも聞きやしないよ{0010}",
-   "en": ""
+   "en": "Honestly, what is this! Losing to{0000}a mere child... how utterly{0010}pathetic of me!{0010}Hmph! If you want to bargain,{0000}bring Shiratori here!{0010}I won't listen to a single word{0000}from anybody else!{0010}"
   },
   {
    "id": "42BF3C",
    "script": "42B774",
    "op": "036 00000001",
    "jp": "（シラトリがいないと、聞いて{0000}もらえそうにないなあ）{0010}",
-   "en": ""
+   "en": "(Without Shiratori, I don't think{0000}she's going to listen to me.){0010}"
   },
   {
    "id": "42C004",
    "script": "42BFCC",
    "op": "073 0001",
    "jp": "ふう…体が痛いわ。ねえ{0000}ぼうや、このあたりを{0010}さすってくれないかしら？{0010}あら、赤くなっちゃって、{0000}ウフフ…意外とかわいいのね{0010}ねえ、あたしとけいやくしたい{0010}",
-   "en": ""
+   "en": "Phew... my body aches. Say,{0000}little boy, would you rub{0010}right around here for me?{0010}Oh my, you're blushing!{0000}Ufufu... you're cuter than I thought.{0010}Say... want a contract with me?{0010}"
   },
   {
    "id": "42C0E0",
    "script": "42BFCC",
    "op": "073 0001",
    "jp": "ふーん、どうしようかな？{0010}ぼうや、かわいいから{0000}優しくしてあげようかな？{0010}ねえ、ぼうや、もし、私が協力{0000}したら、ぼうやは私に何か{0010}してくれるのかしら？{0010}",
-   "en": ""
+   "en": "Hmm, what should I do?{0010}You're cute, little boy, so{0000}maybe I'll go easy on you?{0010}Say, little boy, if I help{0000}you out, will you do something{0010}for me in return?{0010}"
   },
   {
    "id": "42C1B8",
    "script": "42BFCC",
    "op": "073 0001",
    "jp": "ふーん、そう？　何もして{0000}くれないんだ…正直なのね{0010}でも、人の価値ってモノ{0000}じゃないこともあるのよ{0010}そうねぇ…じゃあ、私に夢を見{0000}させるってどう？{0010}ぼうやがめざしている{0000}ものに興味があるわ{0010}ぼうやなら楽しい夢をみさせて{0000}くれそうだしね{0010}でも、世の中の基本は{0000}ギブ＆テイク{0010}ぼうやがおとなになったとき{0000}私を喜ばせてちょうだいね{0010}",
-   "en": ""
+   "en": "Hmm, is that so? You won't do{0000}anything for me... How honest.{0010}But a person's worth isn't always{0000}measured in things, you know.{0010}Let's see... Then how about you{0000}let me dream a little?{0010}I'm curious about what{0000}you're aiming for, little boy.{0010}I bet you could show me{0000}a fun dream or two.{0010}But the basic rule of the world{0000}is give and take.{0010}So when you're all grown up,{0000}be sure to make me happy.{0010}"
   },
   {
    "id": "42C366",
    "script": "42BFCC",
    "op": "036 00000001",
    "jp": "ルリとけいやくした{0010}",
-   "en": ""
+   "en": "You formed a contract with Ruri.{0010}"
   },
   {
    "id": "42C3C8",
    "script": "42BFCC",
    "op": "073 0001",
    "jp": "あら、かわいくないのね！{0010}それじゃ、好きな女の子にも{0000}逃げられちゃうわよ{0010}それじゃ、ごめんあそばせ！{0010}",
-   "en": ""
+   "en": "My, how unsweet of you!{0010}Keep that up and the girl you{0000}like will run away from you too.{0010}Well then, ta-ta for now!{0010}"
   },
   {
    "id": "42C482",
    "script": "42BFCC",
    "op": "073 0001",
    "jp": "あら、何かしてくれるって何？{0000}お金？宝石？それとも家？{0010}女ってね、そんなところに男の{0000}価値を求めてんじゃないのよ{0010}クスクス…ちょっと子供相手に{0000}からかい過ぎたかしら？{0010}また、お会いしましょうね{0010}",
-   "en": ""
+   "en": "Oh? Do something for me, like what?{0000}Money? Jewels? A house, perhaps?{0010}A woman doesn't judge a man's{0000}worth by things like that.{0010}Hee hee... Did I tease a child{0000}a little too much?{0010}Let's meet again sometime.{0010}"
   }
  ]
 }
