@@ -2,10 +2,13 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 9. Release next (phase 8 done session 30: text-coverage gate `cover.py report` exits 0, 4811 shown /
-  374 waived / 0 failing; visual-QA gate, graphics rows, inkbox done session 29; smoke ok on build 024ba050).
-  String layout still identical to 8a6054e7 (build/strings.tsv = work/strings_8a6054e7.tsv): any rebuild that moves
-  strings means re-running the coverage runners (Next 2 recipe) before the release gate.
+- **Phase:** 9. Release in progress (session 31: polish list all ticked, story pass 11/11 chapters ok/fixed,
+  `tools/release.py` + README written; final text build 17d8c04e = work/strings_17d8c04e.tsv; 4,690 strings moved,
+  so every coverage runner and the visual tour must be re-run on it: work/qa/cover/ (old logs work/qa/cover_s30/,
+  old visual manifest + verdicts work/qa/old30/). Done on 17d8c04e: **tour15** (work/qa/cover/tour15, 56/56, states
+  tour15/st, textcover probe). Stopped: the chain was killed by Claude Code for low system memory during `cover.py
+  run` (7 Mesen at ~600 MB each; orphans killed). Resume from `cover.py run` (Next 0), with `--jobs 2` if memory is
+  short.
 - **Done:**
   - Step 0: ROM pinned (`rom.sha1`), MesenCE 2.2.1 + GBA BIOS in `tools/mesen/`, guard hook in `.claude/settings.json`
     (canary blocked), pre-commit runs `tools/check.py` (a failing test was rejected), boot route `tools/routes/boot.txt`
@@ -281,7 +284,38 @@ Updated at the end of every session. Keep it to what the next session needs; his
     `cover.py report > work/qa/cover/report.txt` before each: labeljobs 142/142 (306 → 164), talkjobs 55/55 (→ 109),
     msgjobs 50 messages (→ 58), `quotejobs.py --missing --jobs 4` 58 quotes (→ 0). Waived 413FD0 しきがみ (plate
     indices 50..53 occur only on op 098 = a0=1 path, like 41401C). Final report copy work/qa/cover/report30.txt.
+  - Session 31 (phase 9): **polish pass**: 114 reviewer minors applied as `tl/b044` (merged with `batches.py merge
+    --overwrite`), the rest fixed or waived with reasons; docs/polish.md has no unticked line. **Engine fixes** found
+    while checking the code-built battle messages in a shot: the number writer 0x0811B670 was called with dest =
+    buffer + the JP name's byte length at 5 sites, so English showed "Atta21down!" / "Bo16 damage!" / a level number
+    inside "Now at level" (`vwf.num_patch`: number goes at the NUL; stat names end with a space, suffixes start with
+    one); shikigami pages drew kind / clan / "-" / name in separate 16 px cells ("Silver  clan"): `vwf.join_patch`
+    draws each group as one line. Both in the dead body of 0x08110BAC (0x08110BBC..), tests/test_numfix.py, notes
+    docs/re/font.md "Number at a fixed offset", "Joined OBJ strings"; shots work/qa/frag2, frag3, join. Gotcha: the
+    Write tool strips trailing spaces, so a TSV batch can't carry "Attack "; edit the JSON value instead.
+    **Story pass**: `tools/pairs.py --chapters` (11 chapters, speaker names from the plate tables: 036 NN =
+    0x0841392C[NN], 098 NN = 0x0812AEE0[NN], NN decimal), `tools/story.py review|summary|verdicts` (codex exec,
+    brief docs/story-reviewer-brief.md), manifest work/qa/story/manifest.tsv. Rounds: 1 (b046: 1 Important, 15
+    minors), 2 (b047: 2 Important, 13 minors), 3 (b048: Shiran's pun set up; minors waived to end the loop), ch05
+    round 4 ok. Reports per round in work/qa/story/reports/roundN/. `tools/release.py` (gate → BPS → re-apply →
+    zip; zip README template docs/release-readme.txt), README filled (base ROM hashes, status table). Coverage +
+    tour chain: scratch script = tour15 (warp_all --probe textcover --seq 90 --hold 1500 --jobs 4 into
+    work/qa/cover/tour15), `cover.py scenes` + `run`, shikijobs ± --unlock, areajobs, quotejobs, `cover_extra.py
+    --states work/qa/cover/tour15/st`, then labeljobs, talkjobs, msgjobs, `quotejobs --missing`, each after a
+    `cover.py report > work/qa/cover/report.txt`.
 - **Next (phase 9: Release; done-when in the skill's table):**
+  00. Session-31 resume list (build 17d8c04e; rebuild first and confirm the same sha1, text is final):
+     a. coverage: `cover.py run --jobs 2`, shikijobs ± --unlock, areajobs, quotejobs, `cover_extra.py --states
+        work/qa/cover/tour15/st`, then labeljobs, talkjobs, msgjobs, `quotejobs --missing` with `cover.py report >
+        work/qa/cover/report.txt` before each; `cover.py report` must end at 0 failing.
+     b. visual QA: re-shoot s27d from work/qa/cover/tour15/st/battle_forest.mss (route work/qa/s27d/route.txt, shots
+        940,1200,1460,1720,1980, sheet.py → work/qa/s27d/sheet.png); fresh `qa_gate.py init work/qa/manifest.tsv
+        work/qa/cover/tour15 work/qa/s27d work/qa/s26i work/qa/g11 work/qa/g5 work/qa/join work/qa/frag2 --glob
+        "*sheet*.png" --build build/onmyou_zeroshiki_en.gba`, `todo --size 8 --out-dir work/qa/chunks31`, `tools/vqa.py
+        work/qa/chunks31/chunk_*.txt --jp work/qa/tour_jp --jobs 2`, fix issues, `check` exit 0. Review the battle
+        message frames closely: "Atta21down!" passed two earlier vqa rounds.
+     c. `python -X utf8 tools/release.py` (v1.0) → release/Onmyou_Taisenki_Zeroshiki_EN_v1.0.zip. Never `gh release
+        create`.
   0. Phase-9 items: story-pass verdict per chapter (`qa_gate.py check work/qa/story/manifest.tsv ...`,
      `references/translation.md` §Review), `docs/polish.md` all ticked, `tools/release.py` runs every manifest's
      `qa_gate.py check` + text coverage (`cover.py report` exit 0), `jp_left.py --known tbl/jp_known.txt` clean,
@@ -342,4 +376,7 @@ Updated at the end of every session. Keep it to what the next session needs; his
   Cosmetic: field ring side labels are alpha-blended by the game, so the thin English strokes read fainter than
   the kanji did (a bolder 2-px font would help); shikigami-page cell gaps (docs/polish.md). (battle_win's scene
   shot is black in both tours: a fade frame, not a crash.)
-- **Waiting on the user:** nothing. (Title logo kept Japanese per D5: no official English logo exists.)
+- **Waiting on the user:** non-blocking: the session-31 coverage chain was stopped by Claude Code's low-memory
+  reaper (it kills idle background shells under memory pressure); the next run should use `--jobs 2`, or Claude Code
+  can be started with CLAUDE_CODE_DISABLE_BG_SHELL_PRESSURE_REAP=1. (Title logo kept Japanese per D5: no official
+  English logo exists.)
