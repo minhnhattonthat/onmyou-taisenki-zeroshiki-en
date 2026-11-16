@@ -88,3 +88,11 @@
 384A8C-384E8B   # gfx: guard emblem 防 (2 raw 32x32 animation frames)
 22D8B4-22E8B3   # gfx: battle win banner 勝 利 (2 raw 64x64 sprites, "YOU" / "WIN!")
 403CCC-403CCF   # gfx: pointer to the party card LZ77 block 0x3B577C (moved to free space: grew past its room)
+# Town shop signs (G11, tools/signs.py): town tileset LZ77 blocks recompressed in place (LZ start .. next header),
+# and the tileset pointer table 0x58D190 entries 0..19 for a block that grew and moved to free space
+58D190-58D1DF   # signs: town tileset pointer table, entries 0..19
+59C504-59E9F7   # signs: tileset 8 (map 21)
+5A0B84-5A2D23   # signs: tileset 11 (maps 29, 31)
+5A7810-5A9C1F   # signs: tileset 14 (maps 60, 62)
+5A9C24-5ABD1F   # signs: tileset 15 (maps 65, 66)
+5ABD24-5ADF03   # signs: tileset 16 (maps 67, 68)

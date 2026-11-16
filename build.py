@@ -25,6 +25,7 @@ import enfont  # noqa: E402
 import evscript  # noqa: E402
 import font  # noqa: E402
 import gfx  # noqa: E402
+import signs  # noqa: E402
 import marker  # noqa: E402
 import vwf  # noqa: E402
 import strtab  # noqa: E402
@@ -162,6 +163,9 @@ def build(orig, relocate=False, scripts=None, strings=None, engine=False, layout
         raw = (strings or {}).get(off, raw)
         img.layout.append((off, place(img, off, raw + b"\0", st.room[off], st.refs[off], f"string {off:06X}",
                                       relocate)))
+    if engine:
+        # last, so a tileset that has to move takes free space after every string (string addresses stay put)
+        signs.install(img, img.write)
     if len(img.buf) > len(orig):  # grow to a whole MiB, 0xFF filled
         img.buf += b"\xff" * ((-len(img.buf)) % 0x100000)
     return bytes(img.buf), img.log
