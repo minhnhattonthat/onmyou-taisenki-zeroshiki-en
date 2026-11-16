@@ -4,14 +4,14 @@
   {
    "id": "12ECD8",
    "jp": "ギャオオオッーー！！",
-   "en": "",
+   "en": "Gyaooooh!!",
    "max": 24,
    "ptrs": 2
   },
   {
    "id": "12ECF0",
    "jp": "この技を見せた時　　　　　　キサマらに勝ち目は無い",
-   "en": "",
+   "en": "When I show this move,\nyou have no chance of winning.",
    "max": 52,
    "pad": 14,
    "ptrs": 3
@@ -19,7 +19,7 @@
   {
    "id": "12ED24",
    "jp": "ハーハハハッ　　　　　　　　最強の力、見るがいい！",
-   "en": "",
+   "en": "Ha ha ha ha!\nBehold the ultimate power!",
    "max": 52,
    "pad": 14,
    "ptrs": 3
@@ -27,658 +27,658 @@
   {
    "id": "12ED58",
    "jp": "この武器を持ったかぎり　　　負けはせぬ！",
-   "en": "",
+   "en": "While I hold this weapon,\nI shall not lose!",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12ED84",
    "jp": "もぐらのように　　　　　　　たたき伏せてやろう",
-   "en": "",
+   "en": "I'll whack you down\nlike a mole!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12EDB4",
    "jp": "オレの動きが見えるかな？",
-   "en": "",
+   "en": "Can you see my moves?",
    "max": 28
   },
   {
    "id": "12EDD0",
    "jp": "オレの二刀流の剣を見よ！",
-   "en": "",
+   "en": "Behold my twin swords!",
    "max": 28
   },
   {
    "id": "12EDEC",
    "jp": "今日のわしのЕは、ちと熱いぞ",
-   "en": "",
+   "en": "My hatchet's a bit hot today.",
    "max": 32,
    "notes": "gaiji Е=鉈"
   },
   {
    "id": "12EE0C",
    "jp": "高熱の炎に焼かれるがよいわ",
-   "en": "",
+   "en": "Be burned in searing flames.",
    "max": 28
   },
   {
    "id": "12EE28",
    "jp": "この一発で決めてやろう",
-   "en": "",
+   "en": "I'll settle it with this one shot.",
    "max": 24
   },
   {
    "id": "12EE40",
    "jp": "オレのライフルで　　　　　　風穴開けてやるぜ",
-   "en": "",
+   "en": "I'll blow a hole in ya\nwith my rifle.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12EE70",
    "jp": "風で飛んでいっちゃえ！",
-   "en": "",
+   "en": "Get blown away by the wind!",
    "max": 24
   },
   {
    "id": "12EE88",
    "jp": "風よ舞い上がれ！",
-   "en": "",
+   "en": "Wind, rise up!",
    "max": 20
   },
   {
    "id": "12EE9C",
    "jp": "当たると痛いぞよ",
-   "en": "",
+   "en": "It hurts if it hits, I say.",
    "max": 20
   },
   {
    "id": "12EEB0",
    "jp": "悪のエネルギーを　　　　　　受けるぞよ",
-   "en": "",
+   "en": "Take this evil\nenergy, I say.",
    "max": 40,
    "pad": 14
   },
   {
    "id": "12EED8",
    "jp": "私の攻撃は　　　　　　　　　意外とすばやいんです",
-   "en": "",
+   "en": "My attacks are\nsurprisingly fast.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12EF0C",
    "jp": "痛みは一瞬ですよ",
-   "en": "",
+   "en": "The pain lasts but a moment.",
    "max": 20
   },
   {
    "id": "12EF20",
    "jp": "不幸の武器を授けましょう",
-   "en": "",
+   "en": "I bestow on you a weapon of misfortune.",
    "max": 28
   },
   {
    "id": "12EF3C",
    "jp": "苦しみは一瞬です",
-   "en": "",
+   "en": "The suffering lasts but a moment.",
    "max": 20
   },
   {
    "id": "12EF50",
    "jp": "この剣で光を見せてやろう",
-   "en": "",
+   "en": "I'll show you the light with this sword.",
    "max": 28
   },
   {
    "id": "12EF6C",
    "jp": "さあ来い！北斗渡よ",
-   "en": "",
+   "en": "Come forth! Hokuto Watari!",
    "max": 20
   },
   {
    "id": "12EF80",
    "jp": "お前を捕まえてやるぞ　　　　この鎖で！！",
-   "en": "",
+   "en": "I'll catch you\nwith this chain!!",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12EFAC",
    "jp": "伸びろ！鎖よ！",
-   "en": "",
+   "en": "Stretch! Chain!",
    "max": 16
   },
   {
    "id": "12EFBC",
    "jp": "この痛天角が目に入らぬか！",
-   "en": "",
+   "en": "Do you not see this Tsutenkaku!?",
    "max": 28
   },
   {
    "id": "12EFD8",
    "jp": "せっちゃの武器がまいる　　　控えい！控えおろう！",
-   "en": "",
+   "en": "Thith one's weapon comes!\nBow down! Bow down, I thay!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12F00C",
    "jp": "この矢はすべてをつらぬく！！",
-   "en": "",
+   "en": "This arrow pierces all!!",
    "max": 32
   },
   {
    "id": "12F02C",
    "jp": "我が弓矢の威力をとくと味わえ",
-   "en": "",
+   "en": "Taste the might of my bow.",
    "max": 32
   },
   {
    "id": "12F04C",
    "jp": "痛い目に遭うがいいわ",
-   "en": "",
+   "en": "You'll get what's coming to you.",
    "max": 24
   },
   {
    "id": "12F064",
    "jp": "行くよ！",
-   "en": "",
+   "en": "Here I go!",
    "max": 12
   },
   {
    "id": "12F070",
    "jp": "わしが二倍の苦痛を　　　　　与えてやろう",
-   "en": "",
+   "en": "I shall give you\ndouble the pain.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12F09C",
    "jp": "この鉄球で飛ばしてやるぞ",
-   "en": "",
+   "en": "I'll send you flying with this iron ball.",
    "max": 28
   },
   {
    "id": "12F0B8",
    "jp": "その体に手裏剣の味を　　　　教えてあげるわ",
-   "en": "",
+   "en": "I'll teach your body\nthe taste of shuriken.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12F0E4",
    "jp": "私の烈火Нよ！突き刺され！！",
-   "en": "",
+   "en": "My Rekkasho! Pierce them!!",
    "max": 32,
    "notes": "gaiji Н=翔"
   },
   {
    "id": "12F104",
    "jp": "そーら、敵に向かって　　　　飛んでけー！",
-   "en": "",
+   "en": "There ya go!\nFly at the enemy!",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12F130",
    "jp": "さーて今日は　　　　　　　　どの道具でいこうかな",
-   "en": "",
+   "en": "Now then, which tool\nshould I use today?",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12F164",
    "jp": "黒き影がお前を　　　　　　　おおいつくすだろう",
-   "en": "",
+   "en": "A black shadow\nwill engulf you.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12F194",
    "jp": "我が手裏剣、影となって　　　お前をつらぬく！",
-   "en": "",
+   "en": "My shuriken become shadow\nand pierce you!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12F1C4",
    "jp": "わしの槍はしつこいぞ！",
-   "en": "",
+   "en": "My spear is relentless!",
    "max": 24
   },
   {
    "id": "12F1DC",
    "jp": "逃がしはしないぞ",
-   "en": "",
+   "en": "I won't let you escape.",
    "max": 20
   },
   {
    "id": "12F1F0",
    "jp": "自然の力を思い知るがよい",
-   "en": "",
+   "en": "Know the power of nature.",
    "max": 28
   },
   {
    "id": "12F20C",
    "jp": "この武器に、たたられるがよい",
-   "en": "",
+   "en": "May this weapon curse you.",
    "max": 32
   },
   {
    "id": "12F22C",
    "jp": "この矢のエジキとなれ！",
-   "en": "",
+   "en": "Fall prey to this arrow!",
    "max": 24
   },
   {
    "id": "12F244",
    "jp": "狙うはおまえの急所だよ！",
-   "en": "",
+   "en": "I'm aiming for your weak spot!",
    "max": 28
   },
   {
    "id": "12F260",
    "jp": "行けぇーーーーーー！！！",
-   "en": "",
+   "en": "Gooooooo!!!",
    "max": 28
   },
   {
    "id": "12F27C",
    "jp": "おいで！オレの逆鱗牙！！",
-   "en": "",
+   "en": "Come! My Gekirin Fang!!",
    "max": 28
   },
   {
    "id": "12F298",
    "jp": "わしの電波よ…とどけ！",
-   "en": "",
+   "en": "My radio waves... reach them!",
    "max": 24
   },
   {
    "id": "12F2B0",
    "jp": "インスピレーションは　　　　バッチリじゃ！",
-   "en": "",
+   "en": "My inspiration is\nspot on, eh!",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12F2DC",
    "jp": "オレの武器は暴れん坊だぜ",
-   "en": "",
+   "en": "My weapon's a wild one!",
    "max": 28
   },
   {
    "id": "12F2F8",
    "jp": "このオレがシビレさせてやるぜ",
-   "en": "",
+   "en": "I'll give ya a real shock!",
    "max": 32
   },
   {
    "id": "12F318",
    "jp": "ボクの攻撃を見ててよ",
-   "en": "",
+   "en": "Watch my attack!",
    "max": 24
   },
   {
    "id": "12F330",
    "jp": "チャチャっといくよ",
-   "en": "",
+   "en": "I'll make it quick!",
    "max": 20
   },
   {
    "id": "12F344",
    "jp": "汝の罪は重いぞ",
-   "en": "",
+   "en": "Heavy are your sins.",
    "max": 16
   },
   {
    "id": "12F354",
    "jp": "この私に屈服させてやろう",
-   "en": "",
+   "en": "I shall make you submit to me.",
    "max": 28
   },
   {
    "id": "12F370",
    "jp": "さあ寄ってらっしゃい！　　　見てらっしゃい！",
-   "en": "",
+   "en": "Step right up!\nCome and see!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12F3A0",
    "jp": "来たー！ここぞ私の見せ場！",
-   "en": "",
+   "en": "Here it is! My time to shine!",
    "max": 28
   },
   {
    "id": "12F3BC",
    "jp": "おめぇにこのナタの　　　　　切れ味を教えてやろう",
-   "en": "",
+   "en": "I'll teach ya how sharp\nthis hatchet is.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12F3F0",
    "jp": "これで真っぷたつにしてやる！",
-   "en": "",
+   "en": "I'll cut you clean in half!",
    "max": 32
   },
   {
    "id": "12F410",
    "jp": "狙うは今だ！",
-   "en": "",
+   "en": "Now's the time to aim!",
    "max": 16
   },
   {
    "id": "12F420",
    "jp": "たのむ！当たってくれ！",
-   "en": "",
+   "en": "Please! Hit!",
    "max": 24
   },
   {
    "id": "12F438",
    "jp": "この扇子を飛ばすと　　　　　こうなるんだぜ！",
-   "en": "",
+   "en": "This is what happens\nwhen I throw this fan!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12F468",
    "jp": "自慢の大扇子の登場だぜ",
-   "en": "",
+   "en": "Here comes my prized giant fan!",
    "max": 24
   },
   {
    "id": "12F480",
    "jp": "この技、食らうがいいどすえ！",
-   "en": "",
+   "en": "Take this move, dear!",
    "max": 32
   },
   {
    "id": "12F4A0",
    "jp": "わらわの祈りは天に通じたどす",
-   "en": "",
+   "en": "My prayers have reached heaven, dear.",
    "max": 32
   },
   {
    "id": "12F4C0",
    "jp": "ヘイ！いっちょ　　　　　　　オレがもんでやるぜ！",
-   "en": "",
+   "en": "Hey! Lemme give\nya a good workout!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12F4F4",
    "jp": "オレを怒らすとコワイぜー！",
-   "en": "",
+   "en": "I'm scary when I'm mad!",
    "max": 28
   },
   {
    "id": "12F510",
    "jp": "その首もらい受けるぞよ",
-   "en": "",
+   "en": "Your head is mine, I say.",
    "max": 24
   },
   {
    "id": "12F528",
    "jp": "我が武器の別名は死神ぞよ",
-   "en": "",
+   "en": "My weapon's other name is Death, I say.",
    "max": 28
   },
   {
    "id": "12F544",
    "jp": "我が剣のエジキとなるがよい",
-   "en": "",
+   "en": "Fall prey to my sword.",
    "max": 28
   },
   {
    "id": "12F560",
    "jp": "……散れ！",
-   "en": "",
+   "en": "...Scatter!",
    "max": 12
   },
   {
    "id": "12F56C",
    "jp": "私の自慢の武器を　　　　　　見せてあげるわ",
-   "en": "",
+   "en": "Let me show you\nmy prized weapon.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12F598",
    "jp": "ごめんあそばせ",
-   "en": "",
+   "en": "Do excuse me, darling.",
    "max": 16
   },
   {
    "id": "12F5A8",
    "jp": "あたいの針は　　　　　　　　タダの針じゃないよ！",
-   "en": "",
+   "en": "My needles ain't\njust any old needles!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12F5DC",
    "jp": "食らいな！",
-   "en": "",
+   "en": "Eat this!",
    "max": 12
   },
   {
    "id": "12F5E8",
    "jp": "お花さんにしてあげるね",
-   "en": "",
+   "en": "I'll turn you into a pretty flower!",
    "max": 24
   },
   {
    "id": "12F600",
    "jp": "風がボクを呼んでる",
-   "en": "",
+   "en": "The wind is calling me.",
    "max": 20
   },
   {
    "id": "12F614",
    "jp": "クスッ…悪夢を見せてあげる！",
-   "en": "",
+   "en": "Heh... Let me show you a nightmare!",
    "max": 32
   },
   {
    "id": "12F634",
    "jp": "ボクは怒るとコワイんだから",
-   "en": "",
+   "en": "I'm scary when I get mad, you know!",
    "max": 28
   },
   {
    "id": "12F650",
    "jp": "ぶっ壊してやるわあああ！",
-   "en": "",
+   "en": "I'll smash you to piiieces!",
    "max": 28
   },
   {
    "id": "12F66C",
    "jp": "破壊じゃあああ！！！",
-   "en": "",
+   "en": "DESTRUCTIOOON!!!",
    "max": 24
   },
   {
    "id": "12F684",
    "jp": "芸術的な技を見せてやろう",
-   "en": "",
+   "en": "Behold a move of pure artistry.",
    "max": 28
   },
   {
    "id": "12F6A0",
    "jp": "この手裏剣…　　　　　　　　おまえには、もったいないな",
-   "en": "",
+   "en": "This shuriken...\nis wasted on the likes of you.",
    "max": 56,
    "pad": 14
   },
   {
    "id": "12F6D8",
    "jp": "あんさん覚悟しいや！",
-   "en": "",
+   "en": "Brace yerself, pal!",
    "max": 24
   },
   {
    "id": "12F6F0",
    "jp": "何が出てくるか楽しみやで！",
-   "en": "",
+   "en": "Can't wait to see what pops out, pal!",
    "max": 28
   },
   {
    "id": "12F70C",
    "jp": "武器とともに吹っ飛ぶがよい",
-   "en": "",
+   "en": "Be blown away along with your weapon.",
    "max": 28
   },
   {
    "id": "12F728",
    "jp": "おまえを粉々にしてくれよう",
-   "en": "",
+   "en": "I shall smash you to pieces.",
    "max": 28
   },
   {
    "id": "12F744",
    "jp": "わらわの槍は　　　　　　　　生きてるでちゅよ",
-   "en": "",
+   "en": "My spear iz alive,\nya know!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12F774",
    "jp": "そちゅの脳天に落とすでちゅ",
-   "en": "",
+   "en": "Itz gonna drop wight\non thy noggin!",
    "max": 28
   },
   {
    "id": "12F790",
    "jp": "もう逃げられないよ",
-   "en": "",
+   "en": "You can't run anymore!",
    "max": 20,
    "ptrs": 2
   },
   {
    "id": "12F7A4",
    "jp": "これがボクの武器さ",
-   "en": "",
+   "en": "This is my weapon.",
    "max": 20
   },
   {
    "id": "12F7B8",
    "jp": "おぬしの周りを　　　　　　　炎で囲んであげまする",
-   "en": "",
+   "en": "I shall surround thee\nwith flames, I shall.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12F7EC",
    "jp": "この矢はすべてを貫く！",
-   "en": "",
+   "en": "This arrow pierces all!",
    "max": 24
   },
   {
    "id": "12F804",
    "jp": "行くぞ！ラ・マルセイエーズよ",
-   "en": "",
+   "en": "Here we go!\nLa Marseillaise!",
    "max": 32
   },
   {
    "id": "12F824",
    "jp": "私がやるであります！",
-   "en": "",
+   "en": "I'll handle this, sir!",
    "max": 24
   },
   {
    "id": "12F83C",
    "jp": "わしの念技はしつこいぞ",
-   "en": "",
+   "en": "My psychic arts don't let go, my boy!",
    "max": 24
   },
   {
    "id": "12F854",
    "jp": "どれワシの実験に　　　　　　付き合ってもらおうかのぅ",
-   "en": "",
+   "en": "Now then, let's have you help\nwith my little experiment, eh?",
    "max": 56,
    "pad": 14
   },
   {
    "id": "12F88C",
    "jp": "すべてを燃やしてやる！",
-   "en": "",
+   "en": "I'll burn it all!",
    "max": 24
   },
   {
    "id": "12F8A4",
    "jp": "貫け！オレの雷鳴王！",
-   "en": "",
+   "en": "Pierce 'em!\nMy Thunder King!",
    "max": 24
   },
   {
    "id": "12F8BC",
    "jp": "おらの武器で　　　　　　　　真っ二つにするっしょ！",
-   "en": "",
+   "en": "I'll split ya in two\nwith my weapon, y'know!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12F8F0",
    "jp": "おらの腕の見せどころっしょ！",
-   "en": "",
+   "en": "Time to show what I can do, y'know!",
    "max": 32
   },
   {
    "id": "12F910",
    "jp": "この武器で　　　　　　　　　敵を黙らせてあげましょう",
-   "en": "",
+   "en": "Allow me to silence\nthe enemy with this weapon.",
    "max": 56,
    "pad": 14
   },
   {
    "id": "12F948",
    "jp": "少し荒っぽくなりますが　　　仕方がありませんね",
-   "en": "",
+   "en": "It may get a little rough,\nbut it can't be helped.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12F978",
    "jp": "電光石火の一撃　　　　　　　お見舞いしてやろう",
-   "en": "",
+   "en": "I'll treat you to a strike\nfaster than lightning!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12F9A8",
    "jp": "拙者の武器の　　　　　　　　エジキとなってもらおう",
-   "en": "",
+   "en": "This one shall make you\nprey for this one's weapon.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12F9DC",
    "jp": "これで鬼に金棒だよ",
-   "en": "",
+   "en": "Now I'm an oni with an iron club!",
    "max": 20
   },
   {
    "id": "12F9F0",
    "jp": "この武器で斬りまくるぞ！",
-   "en": "",
+   "en": "I'll slash away with this weapon!",
    "max": 28
   },
   {
    "id": "12FA0C",
    "jp": "風穴はいくつ必要ですかい？",
-   "en": "",
+   "en": "How many air holes would ya like?",
    "max": 28,
    "ptrs": 2
   },
   {
    "id": "12FA28",
    "jp": "あっしがひとつ芸を　　　　　見せてやりやしょう",
-   "en": "",
+   "en": "Lemme show ya\na little trick o' mine.",
    "max": 48,
    "pad": 14,
    "ptrs": 2
@@ -686,253 +686,253 @@
   {
    "id": "12FA58",
    "jp": "派手に行くよー！",
-   "en": "",
+   "en": "Let's go out with a bang!",
    "max": 20
   },
   {
    "id": "12FA6C",
    "jp": "ボクの扇子は　　　　　　　　とっても派手だよ",
-   "en": "",
+   "en": "My fan is\nsuper flashy!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12FA9C",
    "jp": "おまえの動きを　　　　　　　封じさせてもらうぞ",
-   "en": "",
+   "en": "I'll be sealing\nyour movements now.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12FACC",
    "jp": "この念珠からは逃れられぬぞ",
-   "en": "",
+   "en": "None escape these prayer beads.",
    "max": 28
   },
   {
    "id": "12FAE8",
    "jp": "Ｙｏ！オレのパフォーマンスを見せてやるぜ",
-   "en": "",
+   "en": "Yo! Check out\nthe great me's performance!",
    "max": 44
   },
   {
    "id": "12FB14",
    "jp": "Ｈｅｙ！カモーン！　　　　　オレのサ・ス・マ・タ♪",
-   "en": "",
+   "en": "Hey! C'mon!\nMy sa-su-ma-ta!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12FB48",
    "jp": "その体切り刻んでやるよ",
-   "en": "",
+   "en": "I'll carve you to bits!",
    "max": 24
   },
   {
    "id": "12FB60",
    "jp": "あちきの鎌は　　　　　　　　切れ味、ばつぐんだよ",
-   "en": "",
+   "en": "My sickle's edge\nis second to none, hon.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12FB94",
    "jp": "これでテメエも終わりだ！",
-   "en": "",
+   "en": "You're finished now, punk!",
    "max": 28
   },
   {
    "id": "12FBB0",
    "jp": "来た来た来たぁ！　　　　　　オレの西海道虎鉄！！",
-   "en": "",
+   "en": "Here it comes, here it comes!\nMy Saikaido Kotetsu!!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12FBE4",
    "jp": "じゃーん！　行っくよー！",
-   "en": "",
+   "en": "Ta-daa! Here I goooo!",
    "max": 28
   },
   {
    "id": "12FC00",
    "jp": "それっ！飛んでけー！！",
-   "en": "",
+   "en": "Hup! Fly awaaay!!",
    "max": 24
   },
   {
    "id": "12FC18",
    "jp": "少しお仕置きが必要ね",
-   "en": "",
+   "en": "Looks like you need a little punishment.",
    "max": 24
   },
   {
    "id": "12FC30",
    "jp": "うふふ…お注射は嫌いかしら？",
-   "en": "",
+   "en": "Ufufu... Don't you like shots?",
    "max": 32
   },
   {
    "id": "12FC50",
    "jp": "私の紅星の威力を　　　　　　思い知るがよい！",
-   "en": "",
+   "en": "Feel the might\nof my Crimson Star!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12FC80",
    "jp": "その脳天を射抜いてくれるわ！",
-   "en": "",
+   "en": "I'll shoot right through your skull!",
    "max": 32
   },
   {
    "id": "12FCA0",
    "jp": "天よ、わらわに力を！",
-   "en": "",
+   "en": "Heavens, grant me power!",
    "max": 24
   },
   {
    "id": "12FCB8",
    "jp": "この錫杖で　　　　　　　　　邪気を、はらいましょう",
-   "en": "",
+   "en": "With this monk's staff,\nI shall purge the evil aura.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12FCEC",
    "jp": "おいの鉄球で　　　　　　　　吹き飛ばすでごわす！",
-   "en": "",
+   "en": "I'll blow ya away\nwith my iron ball, I will!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12FD20",
    "jp": "あたいに似て美しい武器でしょ",
-   "en": "",
+   "en": "Pretty weapon, huh? Just like me!",
    "max": 32
   },
   {
    "id": "12FD40",
    "jp": "当たれ！　あたいの瑠璃蓮華！",
-   "en": "",
+   "en": "Hit 'em! My Lapis Lotus!",
    "max": 32
   },
   {
    "id": "12FD60",
    "jp": "コレは、ただの巻物じゃねえぞ",
-   "en": "",
+   "en": "This ain't just any old scroll!",
    "max": 32
   },
   {
    "id": "12FD80",
    "jp": "さあ来い！おいらの虎の巻！",
-   "en": "",
+   "en": "Come on! My Tiger Scroll!",
    "max": 28
   },
   {
    "id": "12FD9C",
    "jp": "ワイの武器は　　　　　　　　こんな使い方ができるんや",
-   "en": "",
+   "en": "My weapon can be\nused like this, pal!",
    "max": 56,
    "pad": 14
   },
   {
    "id": "12FDD4",
    "jp": "わいの商売道具は　　　　　　めっちゃ痛いでぇ～！",
-   "en": "",
+   "en": "The tools of my trade\nhurt like crazy, pal!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12FE08",
    "jp": "この武器さえあれば　　　　　マロは無敵でおじゃる",
-   "en": "",
+   "en": "With this weapon in hand,\nWe are invincible, ojaru.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12FE3C",
    "jp": "マロの武器は　　　　　　　　伸縮自在でおじゃるよ",
-   "en": "",
+   "en": "Our weapon stretches\nas We please, ojaru.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12FE70",
    "jp": "見るがよい、わが魂の一撃",
-   "en": "",
+   "en": "Behold, a strike of my very soul!",
    "max": 28
   },
   {
    "id": "12FE8C",
    "jp": "この一撃で楽にしてやろうかの",
-   "en": "",
+   "en": "Shall I put you out of\nyour misery with this blow, eh?",
    "max": 32
   },
   {
    "id": "12FEAC",
    "jp": "ターゲット発見！",
-   "en": "",
+   "en": "Target found!",
    "max": 20
   },
   {
    "id": "12FEC0",
    "jp": "それがしの矢は　　　　　　　百発百中でござる",
-   "en": "",
+   "en": "This one's arrows\nnever miss, indeed.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12FEF0",
    "jp": "妖力に満ちた我が武器　　　　受けるがよい",
-   "en": "",
+   "en": "Take my weapon,\nbrimming with power!",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12FF1C",
    "jp": "私の武器…我妻誉は　　　　　ただの矛ではないぞ",
-   "en": "",
+   "en": "My weapon... Agatsuma Homare\nis no mere halberd!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12FF4C",
    "jp": "私が少し痛い目に　　　　　　あわせましょう",
-   "en": "",
+   "en": "Allow me to\nhurt you a little.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "12FF78",
    "jp": "この鞭で少し　　　　　　　　お仕置きしましょう",
-   "en": "",
+   "en": "A little punishment\nwith this whip, then.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "12FFA8",
    "jp": "稲妻王の力、とくと見よ！",
-   "en": "",
+   "en": "Behold the power\nof the Lightning King!",
    "max": 28
   },
   {
    "id": "12FFC4",
    "jp": "我が手槍、稲妻王よ　　　　　敵を貫け！",
-   "en": "",
+   "en": "My hand spear, Lightning King,\npierce the foe!",
    "max": 40,
    "pad": 14
   },
   {
    "id": "12FFEC",
    "jp": "テメェをナマスにしてやらぁ！",
-   "en": "",
+   "en": "I'll chop ya into mincemeat!",
    "max": 32
   },
   {
    "id": "13000C",
    "jp": "オレの斧の斬れ味を　　　　　とくと見せてやらぁ！",
-   "en": "",
+   "en": "I'll show ya just how\nsharp my axe is!",
    "max": 49,
    "pad": 14
   }

@@ -4,7 +4,7 @@
   {
    "id": "131E48",
    "jp": "みのほどを知っただろう　　　ひれ伏すがいい！",
-   "en": "",
+   "en": "Now you know your place.\nBow down!",
    "max": 48,
    "pad": 14,
    "ptrs": 3
@@ -12,7 +12,7 @@
   {
    "id": "131E78",
    "jp": "ハーハハハッ　　　　　　　　そのていどか！",
-   "en": "",
+   "en": "Hahahaha!\nIs that all you've got?",
    "max": 44,
    "pad": 14,
    "ptrs": 3
@@ -20,761 +20,761 @@
   {
    "id": "131EA4",
    "jp": "我が一門の誇りが守られたわ",
-   "en": "",
+   "en": "My school's pride is upheld!",
    "max": 28
   },
   {
    "id": "131EC0",
    "jp": "勝ってかぶとの緒を　　　　　しめよ…それが大事だ",
-   "en": "",
+   "en": "After a win, tighten your helmet...\nthat's what matters.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "131EF4",
    "jp": "勝ちゃあいいんだよ！　　　　勝ちゃあ！",
-   "en": "",
+   "en": "Winnin's all that counts!\nWinnin'!",
    "max": 40,
    "pad": 14
   },
   {
    "id": "131F1C",
    "jp": "勝てば正義　　　　　　　　　負ければ悪だぜ",
-   "en": "",
+   "en": "Win and you're right,\nlose and you're wrong.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "131F48",
    "jp": "楽勝じゃったのー！",
-   "en": "",
+   "en": "That was a cinch, eh!",
    "max": 20
   },
   {
    "id": "131F5C",
    "jp": "イェーイ！",
-   "en": "",
+   "en": "Yeah!",
    "max": 12
   },
   {
    "id": "131F68",
    "jp": "終わった…何もかも！",
-   "en": "",
+   "en": "It's over... all of it!",
    "max": 24
   },
   {
    "id": "131F80",
    "jp": "いつでも勝利は　　　　　　　いいもんだな！",
-   "en": "",
+   "en": "Winning always\nfeels good!",
    "max": 44,
    "pad": 14
   },
   {
    "id": "131FAC",
    "jp": "生きてて良かったー！",
-   "en": "",
+   "en": "So glad to be alive!",
    "max": 24
   },
   {
    "id": "131FC4",
    "jp": "この勝利は　　　　　　　　　夢じゃないよね？",
-   "en": "",
+   "en": "This win isn't\na dream, right?",
    "max": 48,
    "pad": 14
   },
   {
    "id": "131FF4",
    "jp": "勝って当たり前ぞよ",
-   "en": "",
+   "en": "Of course we won, I say.",
    "max": 20
   },
   {
    "id": "132008",
    "jp": "我をたたえるぞよ　　　　　　みなの衆",
-   "en": "",
+   "en": "Sing my praises,\none and all, I say!",
    "max": 40,
    "pad": 14
   },
   {
    "id": "132030",
    "jp": "こういう勝ち方も　　　　　　いいもんですね",
-   "en": "",
+   "en": "Winning like this\nisn't bad either.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "13205C",
    "jp": "また勝っちゃって　　　　　　すみませんねぇ",
-   "en": "",
+   "en": "Sorry for winning\nagain, heh.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "132088",
    "jp": "敵はいったいどこへ　　　　　いくのでしょうかね？",
-   "en": "",
+   "en": "Where do you suppose\nthe foes go, I wonder?",
    "max": 52,
    "pad": 14
   },
   {
    "id": "1320BC",
    "jp": "闘いでしか決着をつけられないなんて悲しむべきです",
-   "en": "",
+   "en": "It's sad that only battle\ncan settle things.",
    "max": 52
   },
   {
    "id": "1320F0",
    "jp": "この勝負…勝つことは　　　　分かっていたよ",
-   "en": "",
+   "en": "I knew we'd win\nthis fight.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "13211C",
    "jp": "いつでもオレに　　　　　　　挑んでくるがいい",
-   "en": "",
+   "en": "Challenge me\nanytime you like.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "13214C",
    "jp": "礼はいらない　　　　　　　　当然なことをしたまでさ",
-   "en": "",
+   "en": "No thanks needed.\nI just did what was right.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "132180",
    "jp": "悲しいけどこれ　　　　　　　勝負なんだよね",
-   "en": "",
+   "en": "It's sad, but this\nis a fight, after all.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "1321AC",
    "jp": "うむうむ、苦しゅうないぞ",
-   "en": "",
+   "en": "Mm, mm. We are pleased.",
    "max": 28
   },
   {
    "id": "1321C8",
    "jp": "せっちゃをバカにすると　　　こうなることを覚えとれ！",
-   "en": "",
+   "en": "Remember: thith ith what happenth\nwhen you mock thith one!",
    "max": 56,
    "pad": 14
   },
   {
    "id": "132200",
    "jp": "残念ながらオレには　　　　　敗北という文字は無い",
-   "en": "",
+   "en": "Sorry, but the word \"defeat\"\nisn't in my dictionary.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "132234",
    "jp": "オレの勝ちだ！",
-   "en": "",
+   "en": "I win!",
    "max": 16
   },
   {
    "id": "132244",
    "jp": "勝利におぼれちゃダメよ",
-   "en": "",
+   "en": "Don't get drunk on victory.",
    "max": 24
   },
   {
    "id": "13225C",
    "jp": "あなたを守れて　　　　　　　良かったわ！",
-   "en": "",
+   "en": "I'm glad I could\nprotect you!",
    "max": 44,
    "pad": 14
   },
   {
    "id": "132288",
    "jp": "敵の悲鳴が　　　　　　　　　いまだに聞こえるである",
-   "en": "",
+   "en": "I can still hear the foe's\nscreams, so I can.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "1322BC",
    "jp": "さあっ！次に行くである",
-   "en": "",
+   "en": "Now! On to the next one, so it is!",
    "max": 24
   },
   {
    "id": "1322D4",
    "jp": "フッまだまだだね♪アンタ",
-   "en": "",
+   "en": "Heh. You've still\ngot a ways to go, pal.",
    "max": 28
   },
   {
    "id": "1322F0",
    "jp": "フッまた相手を　　　　　　　してあげるよ",
-   "en": "",
+   "en": "Heh. I'll take you on\nagain sometime.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "13231C",
    "jp": "痛い目にあったのは　　　　　あっちだったようだな",
-   "en": "",
+   "en": "Looks like they're the ones\nwho got hurt.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "132350",
    "jp": "楽勝だぜ！",
-   "en": "",
+   "en": "Too easy!",
    "max": 12
   },
   {
    "id": "13235C",
    "jp": "力の差は歴然だな",
-   "en": "",
+   "en": "The gap in power is obvious.",
    "max": 20
   },
   {
    "id": "132370",
    "jp": "その程度の力で　　　　　　　挑むとはあわれなり…",
-   "en": "",
+   "en": "To challenge me with so little\npower... how pitiful.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "1323A4",
    "jp": "いい闘いじゃった！",
-   "en": "",
+   "en": "That was a fine fight, eh!",
    "max": 20
   },
   {
    "id": "1323B8",
    "jp": "知恵さえあれば　　　　　　　勝てるのだよ",
-   "en": "",
+   "en": "With enough wits,\nyou can win.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "1323E4",
    "jp": "しょせん、世界は　　　　　　弱肉強食なのだよ",
-   "en": "",
+   "en": "In the end, the world is\nsurvival of the fittest.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "132414",
    "jp": "ケッ何度やっても　　　　　　結果は同じだ！",
-   "en": "",
+   "en": "Tch! No matter how many times,\nit ends the same!",
    "max": 44,
    "pad": 14
   },
   {
    "id": "132440",
    "jp": "これでまた一歩　　　　　　　前に進むことができました",
-   "en": "",
+   "en": "With this, we've taken\nanother step forward.",
    "max": 56,
    "pad": 14
   },
   {
    "id": "132478",
    "jp": "勝利にこだわりは　　　　　　ありませんからね",
-   "en": "",
+   "en": "Not that I'm hung up\non winning, mind you.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "1324A8",
    "jp": "本気になったオレを　　　　　なめんなよ！",
-   "en": "",
+   "en": "Don't mess with me\nwhen I'm serious!",
    "max": 44,
    "pad": 14
   },
   {
    "id": "1324D4",
    "jp": "お前の敗因は　　　　　　　　オレを怒らせたことだ",
-   "en": "",
+   "en": "Your mistake was\nmaking me mad.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "132508",
    "jp": "おおっ良かった良かった",
-   "en": "",
+   "en": "Oh, good, good.",
    "max": 24
   },
   {
    "id": "132520",
    "jp": "新たな歴史を刻めたのう",
-   "en": "",
+   "en": "We've carved a new page\nof history, eh.",
    "max": 24
   },
   {
    "id": "132538",
    "jp": "やれやれだぜ",
-   "en": "",
+   "en": "Good grief.",
    "max": 16
   },
   {
    "id": "132548",
    "jp": "敵は見かけ倒し　　　　　　　だったようだな",
-   "en": "",
+   "en": "Looks like the foe\nwas all bark, no bite.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "132574",
    "jp": "どお？元気になった？",
-   "en": "",
+   "en": "Well? Feeling better?",
    "max": 24
   },
   {
    "id": "13258C",
    "jp": "わーい！勝ったよ！",
-   "en": "",
+   "en": "Yay! We won!",
    "max": 20
   },
   {
    "id": "1325A0",
    "jp": "汝の魂に安らぎを…",
-   "en": "",
+   "en": "May thy soul find peace...",
    "max": 20
   },
   {
    "id": "1325B4",
    "jp": "これにて一件落着",
-   "en": "",
+   "en": "And so, case closed.",
    "max": 20
   },
   {
    "id": "1325C8",
    "jp": "いよ！オレってば　　　　　　最高ォォォー！",
-   "en": "",
+   "en": "Woo! I'm the\ngreeeatest!",
    "max": 44,
    "pad": 14
   },
   {
    "id": "1325F4",
    "jp": "さァ！みなさん　　　　　　　ここで拍手ですよー！",
-   "en": "",
+   "en": "Now, everyone!\nA big round of applause!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "132628",
    "jp": "オレが本気になりゃあ　　　　こんなもんさ",
-   "en": "",
+   "en": "This is what happens\nwhen I get serious.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "132654",
    "jp": "へっどうやら　　　　　　　　勝ったようだな",
-   "en": "",
+   "en": "Heh. Looks like\nwe won.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "132680",
    "jp": "安らかに眠ってくれ！",
-   "en": "",
+   "en": "Rest in peace!",
    "max": 24
   },
   {
    "id": "132698",
    "jp": "おまえとの勝負…　　　　　　忘れはしないぞ",
-   "en": "",
+   "en": "I won't forget\nour fight...",
    "max": 44,
    "pad": 14
   },
   {
    "id": "1326C4",
    "jp": "今日の勝利は　　　　　　　　一味違うな",
-   "en": "",
+   "en": "Today's win\ntastes a little different.",
    "max": 40,
    "pad": 14
   },
   {
    "id": "1326EC",
    "jp": "今度はもっと　　　　　　　　楽しませてやるぜ",
-   "en": "",
+   "en": "Next time I'll\nshow ya more fun!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "13271C",
    "jp": "おあとが　　　　　　　　　　よろしいようで",
-   "en": "",
+   "en": "And on that note,\nI'll take my leave.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "132748",
    "jp": "さあっわらわを　　　　　　　たたえたまえ",
-   "en": "",
+   "en": "Come, sing\nmy praises!",
    "max": 44,
    "pad": 14
   },
   {
    "id": "132774",
    "jp": "ヘイ！ケンカなら　　　　　　いつでも買うぜ！",
-   "en": "",
+   "en": "Hey! Wanna brawl?\nI'm always game!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "1327A4",
    "jp": "オレにケンカを　　　　　　　売るには１０年早かったな",
-   "en": "",
+   "en": "You're 10 years too early\nto pick a fight with me!",
    "max": 56,
    "pad": 14
   },
   {
    "id": "1327DC",
    "jp": "ホホホ…　　　　　　　　　　当然の結果じゃ",
-   "en": "",
+   "en": "Hohoho...\nThe natural outcome.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "132808",
    "jp": "わらわに逆らうと　　　　　　こうなるのじゃ",
-   "en": "",
+   "en": "This is what comes\nof defying me.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "132834",
    "jp": "わしにかなう敵など　　　　　どこにもおらぬ",
-   "en": "",
+   "en": "There's no foe anywhere\nwho can match me.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "132860",
    "jp": "弱い！弱すぎるわ！",
-   "en": "",
+   "en": "Weak! Way too weak!",
    "max": 20
   },
   {
    "id": "132874",
    "jp": "あら残念　　　　　　　　　　もう終わりなの？",
-   "en": "",
+   "en": "Oh, too bad.\nOver already?",
    "max": 48,
    "pad": 14
   },
   {
    "id": "1328A4",
    "jp": "フフフ…この勝利　　　　　　ツケにしといてあげる",
-   "en": "",
+   "en": "Fufufu... I'll put\nthis win on your tab.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "1328D8",
    "jp": "見せかけばかりで　　　　　　中身がないんだよ！中身が！",
-   "en": "",
+   "en": "All show and\nno substance! None!",
    "max": 56,
    "pad": 14
   },
   {
    "id": "132910",
    "jp": "ったく！　　　　　　　　　　だらしないねぇ！",
-   "en": "",
+   "en": "Honestly!\nHow pathetic!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "132940",
    "jp": "あのね、自然たちが　　　　　ありがとうだって！",
-   "en": "",
+   "en": "Y'know what? Nature\nsays thank you!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "132970",
    "jp": "もっと自然を　　　　　　　　大切にしなきゃダメだよ",
-   "en": "",
+   "en": "You've gotta take\nbetter care of nature!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "1329A4",
    "jp": "ボクだってやる時は　　　　　やるよ！",
-   "en": "",
+   "en": "Even I can do it\nwhen it counts!",
    "max": 40,
    "pad": 14
   },
   {
    "id": "1329CC",
    "jp": "こんなの　　　　　　　　　　チョチョイのチョイってね！",
-   "en": "",
+   "en": "This? Easy-peasy,\nlemon squeezy!",
    "max": 56,
    "pad": 14
   },
   {
    "id": "132A04",
    "jp": "酒じゃあ！　　　　　　　　　酒をもってこいやあ！！",
-   "en": "",
+   "en": "Sake! Bring\nme sake!!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "132A38",
    "jp": "出直してこいやあ！！",
-   "en": "",
+   "en": "Go home and try again!!",
    "max": 24
   },
   {
    "id": "132A50",
    "jp": "やはり勝利の味は　　　　　　格別なものだな",
-   "en": "",
+   "en": "Victory sure tastes\nlike nothing else.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "132A7C",
    "jp": "私はもっと強いヤツと　　　　闘いたかったんだがな",
-   "en": "",
+   "en": "I was hoping to fight\nsomeone stronger.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "132AB0",
    "jp": "へっ…これくらい　　　　　　朝飯前や！",
-   "en": "",
+   "en": "Heh... That was\na piece of cake, pal!",
    "max": 40,
    "pad": 14
   },
   {
    "id": "132AD8",
    "jp": "やったでー！勝利や！",
-   "en": "",
+   "en": "We did it, pal! Victory!",
    "max": 24
   },
   {
    "id": "132AF0",
    "jp": "これで少しは静かに　　　　　なったようだ",
-   "en": "",
+   "en": "Seems it's a little\nquieter now.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "132B1C",
    "jp": "しょせん、お前は私に　　　　負ける運命だったのだ",
-   "en": "",
+   "en": "You were fated to lose\nto me all along.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "132B50",
    "jp": "腕っぷちだけでは　　　　　　勝てないでちゅよ",
-   "en": "",
+   "en": "Brawn alone\niz not enough to win!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "132B80",
    "jp": "敵も大したこと　　　　　　　ないでちゅね",
-   "en": "",
+   "en": "The foe wazn't\nmuch, waz it?",
    "max": 44,
    "pad": 14
   },
   {
    "id": "132BAC",
    "jp": "また一歩成長したね！　　　　お互いに",
-   "en": "",
+   "en": "We both grew\na little more!",
    "max": 40,
    "pad": 14
   },
   {
    "id": "132BD4",
    "jp": "やっぱり勝利って　　　　　　気持ちいいよね",
-   "en": "",
+   "en": "Winning sure\nfeels great, huh?",
    "max": 44,
    "pad": 14
   },
   {
    "id": "132C00",
    "jp": "ほめ言葉なんぞ　　　　　　　いらんよ",
-   "en": "",
+   "en": "I've no need\nfor praise.",
    "max": 40,
    "pad": 14
   },
   {
    "id": "132C28",
    "jp": "なかなかの強者　　　　　　　でしたな",
-   "en": "",
+   "en": "Quite a strong foe,\nthat one.",
    "max": 40,
    "pad": 14
   },
   {
    "id": "132C50",
    "jp": "アナタを守れて　　　　　　　良かったであります",
-   "en": "",
+   "en": "Glad I could\nprotect you, sir!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "132C80",
    "jp": "この勝利はアナタの　　　　　ものであります",
-   "en": "",
+   "en": "This victory\nis yours, sir!",
    "max": 44,
    "pad": 14
   },
   {
    "id": "132CAC",
    "jp": "やれやれ…　　　　　　　　　ホネが折れたわい",
-   "en": "",
+   "en": "Phew...\nThat was hard work, heh.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "132CDC",
    "jp": "陰陽道とは奥が　　　　　　　深いのぅ…",
-   "en": "",
+   "en": "The Way of Onmyo\nruns deep, eh...",
    "max": 40,
    "pad": 14
   },
   {
    "id": "132D04",
    "jp": "この勝負…　　　　　　　　　オレの勝ちだ！",
-   "en": "",
+   "en": "This fight...\nis mine!",
    "max": 44,
    "pad": 14
   },
   {
    "id": "132D30",
    "jp": "勝ち続けること…　　　　　　それがオレの存在理由さ",
-   "en": "",
+   "en": "Winning, again and again...\nthat's why I exist.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "132D64",
    "jp": "都会モンには　　　　　　　　負けないっしょ！",
-   "en": "",
+   "en": "I ain't losin'\nto city folk, y'know!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "132D94",
    "jp": "おっかぁ！　　　　　　　　　おらやったど！",
-   "en": "",
+   "en": "Ma!\nI did it!",
    "max": 44,
    "pad": 14
   },
   {
    "id": "132DC0",
    "jp": "私と闘ったのが　　　　　　　運の尽きです",
-   "en": "",
+   "en": "Your luck ran out\nwhen you fought me.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "132DEC",
    "jp": "勝負はつねに紙一重で　　　　ありますな",
-   "en": "",
+   "en": "Battles are always\nwon by a hair, sir.",
    "max": 40,
    "pad": 14
   },
   {
    "id": "132E14",
    "jp": "またいつでも拙者が　　　　　相手になろうぞ！",
-   "en": "",
+   "en": "This one will face\nyou again anytime!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "132E44",
    "jp": "敵ながらアッパレ！",
-   "en": "",
+   "en": "Well fought, for a foe!",
    "max": 20
   },
   {
    "id": "132E58",
    "jp": "おいら…おめぇと　　　　　　いっしょなら負けねぇ！",
-   "en": "",
+   "en": "With you by my side...\nI can't lose!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "132E8C",
    "jp": "やったー！勝ったぞ！",
-   "en": "",
+   "en": "Yahoo! We won!",
    "max": 24
   },
   {
    "id": "132EA4",
    "jp": "なかなか味のある　　　　　　闘いでしたな",
-   "en": "",
+   "en": "That was quite\na tasteful fight.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "132ED0",
    "jp": "あっしに掛かりゃ　　　　　　こんなもんでさ",
-   "en": "",
+   "en": "Leave it to me,\nthat's how it goes.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "132EFC",
    "jp": "勝利のポーズ！",
-   "en": "",
+   "en": "Victory pose!",
    "max": 16
   },
   {
    "id": "132F0C",
    "jp": "どお？ボクの闘い　　　　　　派手だったでしょ？",
-   "en": "",
+   "en": "Well? Wasn't my\nfighting flashy?",
    "max": 48,
    "pad": 14
   },
   {
    "id": "132F3C",
    "jp": "この私が闘いに参加したことを後悔するんだな",
-   "en": "",
+   "en": "You'll regret that I\njoined this fight.",
    "max": 44
   },
   {
    "id": "132F68",
    "jp": "これで私もおまえも　　　　　一歩成長したってことだ",
-   "en": "",
+   "en": "This means we've both\ngrown a step.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "132F9C",
    "jp": "Ｈｅｙ！今日も　　　　　　　ノリノリだったぜ！",
-   "en": "",
+   "en": "Hey! We were\ngroovin' today!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "132FCC",
    "jp": "Ｈｅｙ！オレ様の　　　　　　根性の方が上だったな！",
-   "en": "",
+   "en": "Hey! The great me\nhad more guts!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "133000",
    "jp": "あちきに、たてつこうなど　　１０年早いんだよ",
-   "en": "",
+   "en": "You're 10 years too early\nto defy me, hon.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "133030",
    "jp": "ちょっと物足り　　　　　　　なかったかねぇ",
-   "en": "",
+   "en": "That was a bit\nunsatisfying, hon.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "13305C",
    "jp": "誰にもオレを　　　　　　　　止められねェぜ！",
-   "en": "",
+   "en": "Nobody can\nstop me!",
    "max": 48,
    "pad": 14,
    "ptrs": 2
@@ -782,210 +782,210 @@
   {
    "id": "13308C",
    "jp": "へっ思い知ったか！",
-   "en": "",
+   "en": "Heh, learned your lesson?",
    "max": 20,
    "ptrs": 2
   },
   {
    "id": "1330A0",
    "jp": "ふーんだ！　私を　　　　　　怒らせるとコワイんだから！",
-   "en": "",
+   "en": "Hmph! I'm scary\nwhen you make me mad!",
    "max": 56
   },
   {
    "id": "1330D8",
    "jp": "わーい！やったね♪",
-   "en": "",
+   "en": "Yay! We did it!",
    "max": 20
   },
   {
    "id": "1330EC",
    "jp": "ふふふ…ゆっくりと　　　　　お・や・す・み♪",
-   "en": "",
+   "en": "Fufufu... Sweet\nd-r-e-a-m-s.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "13311C",
    "jp": "ふふふ…まだまだ　　　　　　相手も子供ね",
-   "en": "",
+   "en": "Fufufu... They're\nstill just children.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "133148",
    "jp": "悪が栄えたためしなしッ！",
-   "en": "",
+   "en": "Evil never prospers!",
    "max": 28
   },
   {
    "id": "133164",
    "jp": "この私がいる限り　　　　　　主君を傷つける者は許さぬ",
-   "en": "",
+   "en": "As long as I stand, none\nshall harm my lord!",
    "max": 56,
    "pad": 14
   },
   {
    "id": "13319C",
    "jp": "わらわが天に　　　　　　　　代わって、そちを守りまする",
-   "en": "",
+   "en": "In heaven's stead,\nI shall protect thee.",
    "max": 56,
    "pad": 14
   },
   {
    "id": "1331D4",
    "jp": "すべては天の加護に　　　　　よるものです",
-   "en": "",
+   "en": "All thanks to\nheaven's protection.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "133200",
    "jp": "おいを見た目で　　　　　　　判断すんなや",
-   "en": "",
+   "en": "Don't judge me\nby my looks, lad!",
    "max": 44,
    "pad": 14
   },
   {
    "id": "13322C",
    "jp": "ジャマするモンは　　　　　　おいが、けちらすでごわす！",
-   "en": "",
+   "en": "Anyone in my way,\nI'll scatter, I will!",
    "max": 56,
    "pad": 14
   },
   {
    "id": "133264",
    "jp": "もう終わりなのぉ～　　　　　つまんない",
-   "en": "",
+   "en": "Is it over already?\nBoring!",
    "max": 40,
    "pad": 14
   },
   {
    "id": "13328C",
    "jp": "あ～楽しかった！",
-   "en": "",
+   "en": "Aah, that was fun!",
    "max": 20
   },
   {
    "id": "1332A0",
    "jp": "おいらがいつでも　　　　　　相手になってやるぜ！",
-   "en": "",
+   "en": "I'll take ya on\nanytime!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "1332D4",
    "jp": "おいらをナメんなよ",
-   "en": "",
+   "en": "Don't underestimate me!",
    "max": 20
   },
   {
    "id": "1332E8",
    "jp": "商人をナメたら　　　　　　　あかんでぇ！",
-   "en": "",
+   "en": "Never underestimate\na merchant, pal!",
    "max": 44,
    "pad": 14
   },
   {
    "id": "133314",
    "jp": "これで少しは　　　　　　　　こりたやろ",
-   "en": "",
+   "en": "That oughta teach\nya a lesson, pal.",
    "max": 40,
    "pad": 14
   },
   {
    "id": "13333C",
    "jp": "まだまだ闘えるで　　　　　　おじゃるよ…たぶん…",
-   "en": "",
+   "en": "We can still fight,\nojaru... probably...",
    "max": 52,
    "pad": 14
   },
   {
    "id": "133370",
    "jp": "マロのおかげで　　　　　　　おじゃるな",
-   "en": "",
+   "en": "All thanks\nto Us, ojaru.",
    "max": 40,
    "pad": 14
   },
   {
    "id": "133398",
    "jp": "まだまだ若いモンには　　　　負けんわい",
-   "en": "",
+   "en": "I won't lose to\nyoungsters just yet, heh.",
    "max": 40,
    "pad": 14
   },
   {
    "id": "1333C0",
    "jp": "ま、こんなもんじゃろ",
-   "en": "",
+   "en": "Well, that's about it, eh.",
    "max": 24
   },
   {
    "id": "1333D8",
    "jp": "すべて作戦通りで　　　　　　ござる",
-   "en": "",
+   "en": "All according\nto plan, indeed.",
    "max": 36,
    "pad": 14
   },
   {
    "id": "1333FC",
    "jp": "任務完了でござる",
-   "en": "",
+   "en": "Mission complete, indeed.",
    "max": 20
   },
   {
    "id": "133410",
    "jp": "なかなか良い　　　　　　　　闘いだったな",
-   "en": "",
+   "en": "That was\na pretty good fight.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "13343C",
    "jp": "この勝負でおまえも　　　　　また一歩成長したな",
-   "en": "",
+   "en": "You've grown another\nstep with this fight.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "13346C",
    "jp": "この闘いの経験を　　　　　　次に活かしましょう",
-   "en": "",
+   "en": "Let's put this battle's\nlessons to use next time.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "13349C",
    "jp": "いかがでしたかな？　　　　　私の闘いぶりは",
-   "en": "",
+   "en": "How did you find\nmy fighting style?",
    "max": 44,
    "pad": 14
   },
   {
    "id": "1334C8",
    "jp": "我がいるかぎり　　　　　　　負けはせぬ",
-   "en": "",
+   "en": "So long as I am here,\nwe shall not lose.",
    "max": 40,
    "pad": 14
   },
   {
    "id": "1334F0",
    "jp": "少しは役にたった　　　　　　ようだな",
-   "en": "",
+   "en": "Looks like I was\nof some use.",
    "max": 40,
    "pad": 14
   },
   {
    "id": "133518",
    "jp": "もっとホネのあるヤツと　　　闘いたかったぜ！",
-   "en": "",
+   "en": "I wanted to fight\nsomeone with more backbone!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "133548",
    "jp": "話になんねぇな！",
-   "en": "",
+   "en": "That wasn't even close!",
    "max": 17
   }
  ]

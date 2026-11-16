@@ -4,13 +4,13 @@
   {
    "id": "1302B8",
    "jp": "オレを信じろ！おまえの印が　オレを解放するんだ！",
-   "en": "",
+   "en": "Trust me! Your seal\nwill set me free!",
    "max": 52
   },
   {
    "id": "1302EC",
    "jp": "なんだ！？その技は！　　　　いたくもかゆくもないぞ",
-   "en": "",
+   "en": "What!? That move?\nIt didn't even tickle!",
    "max": 52,
    "pad": 14,
    "ptrs": 3
@@ -18,7 +18,7 @@
   {
    "id": "130320",
    "jp": "私に、はむかうとは　　　　　おろかものめ！",
-   "en": "",
+   "en": "Defying me?\nYou fool!",
    "max": 44,
    "pad": 14,
    "ptrs": 3
@@ -26,953 +26,953 @@
   {
    "id": "13034C",
    "jp": "我が一門の看板に　　　　　　傷ひとつつけぬわ！",
-   "en": "",
+   "en": "I won't let a single scratch\nmar my school's name!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "13037C",
    "jp": "我が信条は弱きを助け　　　　強きをくじくことだ",
-   "en": "",
+   "en": "My creed: help the weak\nand humble the strong.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "1303AC",
    "jp": "負ければそこで終わり　　　　それが勝負の本質さ",
-   "en": "",
+   "en": "Lose and it's over.\nThat's what a fight really is.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "1303DC",
    "jp": "どんな手段を使ってでも　　　オレは勝ってやるよ",
-   "en": "",
+   "en": "I'll win,\nwhatever it takes.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "13040C",
    "jp": "ここはノリノリで行きましょう",
-   "en": "",
+   "en": "Let's get groovy here!",
    "max": 32
   },
   {
    "id": "13042C",
    "jp": "みなさん調子はどうですか～！",
-   "en": "",
+   "en": "How's everybody doin'~!",
    "max": 32
   },
   {
    "id": "13044C",
    "jp": "勝負は逃げてはいけない",
-   "en": "",
+   "en": "Never run from a fight.",
    "max": 24
   },
   {
    "id": "130464",
    "jp": "ここからの勝負は　　　　　　一手一手が重要になってくる",
-   "en": "",
+   "en": "From here on,\nevery move counts.",
    "max": 56,
    "pad": 14
   },
   {
    "id": "13049C",
    "jp": "別に倒れることなんて　　　　気にしないよ",
-   "en": "",
+   "en": "I don't really mind\ngoing down.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "1304C8",
    "jp": "状況はつねに変わるものさ",
-   "en": "",
+   "en": "The situation's always changing.",
    "max": 28
   },
   {
    "id": "1304E4",
    "jp": "敵はふてぶてしいぞよ",
-   "en": "",
+   "en": "The foe is brazen, I say.",
    "max": 24
   },
   {
    "id": "1304FC",
    "jp": "我を傷つける者は　　　　　　許さないぞよ！",
-   "en": "",
+   "en": "None who wound me\nshall be forgiven, I say!",
    "max": 44,
    "pad": 14
   },
   {
    "id": "130528",
    "jp": "攻撃はスピードが命です",
-   "en": "",
+   "en": "Speed is the soul of an attack.",
    "max": 24
   },
   {
    "id": "130540",
    "jp": "こうみえても　　　　　　　　意外とすばやいんです",
-   "en": "",
+   "en": "I may not look it,\nbut I'm surprisingly quick.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "130574",
    "jp": "敵は式神ではなく、それを操る闘神士であることをお忘れなく",
-   "en": "",
+   "en": "Never forget: the foe is not the shikigami,\nbut the Tojinshi who commands it.",
    "max": 60
   },
   {
    "id": "1305B0",
    "jp": "早くこのような闘いが　　　　終わるといいですね",
-   "en": "",
+   "en": "I hope fights like this\nend soon.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "1305E0",
    "jp": "お前とオレがひとつになれば　怖いモンなんてないさ",
-   "en": "",
+   "en": "When you and me are one,\nthere's nothin' to fear.",
    "max": 52
   },
   {
    "id": "130614",
    "jp": "もっと気楽に　　　　　　　　闘いたかったんだがな",
-   "en": "",
+   "en": "I was hopin' for a more\nlaid-back fight.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "130648",
    "jp": "女性ならばそれなりに　　　　礼を尽くすんですけどね",
-   "en": "",
+   "en": "If it were a lady,\nI'd show proper courtesy.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "13067C",
    "jp": "相手が女性であれば　　　　　デートを申しこむ所だけどね",
-   "en": "",
+   "en": "If my opponent were a lady,\nI'd ask her on a date.",
    "max": 56,
    "pad": 14
   },
   {
    "id": "1306B4",
    "jp": "敵は頭が高いわ！",
-   "en": "",
+   "en": "The foe forgets its place!",
    "max": 20
   },
   {
    "id": "1306C8",
    "jp": "せっちゃは誇り高き　　　　　騎士なのであーる！",
-   "en": "",
+   "en": "Thith one ith a proud\nknight, so it ith!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "1306F8",
    "jp": "闘う勇気があれば　　　　　　何でもできる！",
-   "en": "",
+   "en": "With the courage to fight,\nyou can do anything!",
    "max": 44,
    "pad": 14
   },
   {
    "id": "130724",
    "jp": "己の力を信じよ！　　　　　　御身にみなぎる力は無限なり",
-   "en": "",
+   "en": "Believe in thyself!\nThe power in thee is boundless.",
    "max": 56,
    "pad": 14
   },
   {
    "id": "13075C",
    "jp": "守るものがあるからこそ　　　人は強くなれるのよ",
-   "en": "",
+   "en": "It's having something to protect\nthat makes people strong.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "13078C",
    "jp": "目には目を　　　　　　　　　攻撃には攻撃を、よ！",
-   "en": "",
+   "en": "An eye for an eye,\nand an attack for an attack!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "1307C0",
    "jp": "わしとお前の呼吸が大事である",
-   "en": "",
+   "en": "Our timing together\nis what matters, so it is.",
    "max": 32
   },
   {
    "id": "1307E0",
    "jp": "言葉は無くても　　　　　　　分かり合えるである",
-   "en": "",
+   "en": "We understand each other\nwithout words, so we do.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "130810",
    "jp": "倒れることを恐れちゃ　　　　何もできないよ",
-   "en": "",
+   "en": "If you fear falling,\nyou can't do a thing.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "13083C",
    "jp": "何度でも立ち上がること　　　それが本当の再生なのさ",
-   "en": "",
+   "en": "Getting up again and again:\nthat's true rebirth.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "130870",
    "jp": "やっぱり世の中、勉強だよな",
-   "en": "",
+   "en": "The world's one big lesson, huh?",
    "max": 28
   },
   {
    "id": "13088C",
    "jp": "しっかり防御しとけばさ　　　相手が痛がるって寸法さ",
-   "en": "",
+   "en": "Keep your guard up tight,\nand they're the ones who hurt.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "1308C0",
    "jp": "オレは闇の中で生き　　　　　闇の中で死ぬだけだ",
-   "en": "",
+   "en": "I live in darkness,\nand in darkness I'll die.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "1308F0",
    "jp": "オレは一人で闘いたい…　　　印など要らぬ",
-   "en": "",
+   "en": "I'd rather fight alone...\nI need no seals.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "13091C",
    "jp": "術は先にしかけたほうが　　　勝ちじゃ",
-   "en": "",
+   "en": "With arts, whoever strikes\nfirst wins, my boy.",
    "max": 40,
    "pad": 14
   },
   {
    "id": "130944",
    "jp": "敵はわしの策略に　　　　　　はまっておるわ",
-   "en": "",
+   "en": "The foe has fallen\nright into my scheme, heh.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "130970",
    "jp": "敵に情をかければ　　　　　　オレもお前も終わりだぞ！",
-   "en": "",
+   "en": "Show the enemy mercy\nand we're both finished!",
    "max": 56,
    "pad": 14
   },
   {
    "id": "1309A8",
    "jp": "手加減はしない　　　　　　　それが相手への礼儀だ",
-   "en": "",
+   "en": "I won't hold back.\nThat's how you respect a foe.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "1309DC",
    "jp": "結局、最後は勝てばいいんだよ",
-   "en": "",
+   "en": "In the end, all that matters is winning.",
    "max": 32
   },
   {
    "id": "1309FC",
    "jp": "式神同士の闘いなんて　　　　むなしいもんさ",
-   "en": "",
+   "en": "Shikigami fighting shikigami...\nit's an empty thing.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "130A28",
    "jp": "まだまだ、オレは　　　　　　本気じゃないぞ！",
-   "en": "",
+   "en": "I'm not even\ntrying yet!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "130A58",
    "jp": "オレを信じろ！　　　　　　　そうすれば必ず勝つ！",
-   "en": "",
+   "en": "Trust me!\nDo that and we'll win for sure!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "130A8C",
    "jp": "闘神士もたいへんじゃのう",
-   "en": "",
+   "en": "Bein' a Tojinshi is hard work, eh?",
    "max": 28
   },
   {
    "id": "130AA8",
    "jp": "たまには奇策も必要じゃて",
-   "en": "",
+   "en": "A surprise trick now and then\nis needed, my boy.",
    "max": 28
   },
   {
    "id": "130AC4",
    "jp": "勝つ自信はあるかい？",
-   "en": "",
+   "en": "Think you can win?",
    "max": 24
   },
   {
    "id": "130ADC",
    "jp": "オレはオレの道を行くだけさ",
-   "en": "",
+   "en": "I just walk my own path.",
    "max": 28
   },
   {
    "id": "130AF8",
    "jp": "もっと元気を出して！",
-   "en": "",
+   "en": "Cheer up a little more!",
    "max": 24
   },
   {
    "id": "130B10",
    "jp": "ボクの元気を　　　　　　　　キミに与えてあげるよ",
-   "en": "",
+   "en": "I'll share\nmy energy with you!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "130B44",
    "jp": "悪が栄えたためしは無い",
-   "en": "",
+   "en": "Evil has never prospered.",
    "max": 24
   },
   {
    "id": "130B5C",
    "jp": "つねに天はおぬしを見ているぞ",
-   "en": "",
+   "en": "Heaven is always\nwatching over thee.",
    "max": 32
   },
   {
    "id": "130B7C",
    "jp": "次は華麗なステップを　　　　ごらんいれましょう！",
-   "en": "",
+   "en": "Next, allow me to show you\nsome dazzling footwork!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "130BB0",
    "jp": "見てくだされ！私の立ち回り",
-   "en": "",
+   "en": "Behold my moves in action!",
    "max": 28
   },
   {
    "id": "130BCC",
    "jp": "勝つ気持ちがありゃあ　　　　勝てるもんさ",
-   "en": "",
+   "en": "If ya got the will to win,\nya can win.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "130BF8",
    "jp": "闘いは遊びじゃねぇんだ",
-   "en": "",
+   "en": "Fightin' ain't a game.",
    "max": 24
   },
   {
    "id": "130C10",
    "jp": "最後に勝つのは　　　　　　　あきらめないヤツさ",
-   "en": "",
+   "en": "The one who wins in the end\nis the one who never gives up.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "130C40",
    "jp": "分かってくれ！　　　　　　　闘いは甘くはないのだよ",
-   "en": "",
+   "en": "Understand this!\nBattle is no easy thing.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "130C74",
    "jp": "闘いは祭りみたいなもんさ",
-   "en": "",
+   "en": "A fight's like a festival!",
    "max": 28
   },
   {
    "id": "130C90",
    "jp": "お前との出会いを記念して　　派手に行くぜ",
-   "en": "",
+   "en": "To celebrate meetin' you,\nlet's go big!",
    "max": 44,
    "pad": 14
   },
   {
    "id": "130CBC",
    "jp": "祈れば力は何倍にもなるんどす",
-   "en": "",
+   "en": "Pray, and your power\nmultiplies, dear.",
    "max": 32
   },
   {
    "id": "130CDC",
    "jp": "世間はせまいのう…",
-   "en": "",
+   "en": "Small world, eh...",
    "max": 20
   },
   {
    "id": "130CF0",
    "jp": "相手をビビらせてやろうぜ！",
-   "en": "",
+   "en": "Let's scare the pants off 'em!",
    "max": 28
   },
   {
    "id": "130D0C",
    "jp": "ヘイ！ケンカは先手必勝だぜ！",
-   "en": "",
+   "en": "Hey! In a brawl,\nfirst strike wins!",
    "max": 32
   },
   {
    "id": "130D2C",
    "jp": "さあ…どんな悪夢を　　　　　見せてやろうか",
-   "en": "",
+   "en": "Now... what nightmare\nshall I show them?",
    "max": 44,
    "pad": 14
   },
   {
    "id": "130D58",
    "jp": "どんな手を使ってでも　　　　敵を、ひれ伏させよう",
-   "en": "",
+   "en": "By any means,\nI'll bring the foe to its knees.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "130D8C",
    "jp": "ククク…やはり闘いはいい…",
-   "en": "",
+   "en": "Kukuku... Nothing beats a good fight...",
    "max": 28
   },
   {
    "id": "130DA8",
    "jp": "わしは強い…なぜなら闘いに　ためらいが無いからな",
-   "en": "",
+   "en": "I am strong... because\nI never hesitate in battle.",
    "max": 52
   },
   {
    "id": "130DDC",
    "jp": "西洋の言葉でギブ＆テイク　　これ基本だから覚えといて",
-   "en": "",
+   "en": "Westerners call it give and take.\nIt's the basics, so remember it.",
    "max": 56,
    "pad": 14
   },
   {
    "id": "130E14",
    "jp": "闘いはエレガントに　　　　　いかなきゃね！",
-   "en": "",
+   "en": "A fight must be\nelegant, darling!",
    "max": 44,
    "pad": 14
   },
   {
    "id": "130E40",
    "jp": "ったく！うっとーしいったら　ありゃしない",
-   "en": "",
+   "en": "Ugh! Talk about\nannoying!",
    "max": 44
   },
   {
    "id": "130E6C",
    "jp": "あんたなんか　　　　　　　　タダじゃ済まさないよ",
-   "en": "",
+   "en": "You won't get off\nlightly, you hear!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "130EA0",
    "jp": "技はタイミングが大事だよって風さんが言ってるよ",
-   "en": "",
+   "en": "Mister Wind says timing\nis what matters for moves!",
    "max": 48
   },
   {
    "id": "130ED0",
    "jp": "あのね、自然ってね　　　　　ボクの味方なんだよ",
-   "en": "",
+   "en": "Y'know what? Nature\nis on my side!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "130F00",
    "jp": "子供だからってバカにしないで",
-   "en": "",
+   "en": "Don't look down on me just 'cause I'm a kid!",
    "max": 32
   },
   {
    "id": "130F20",
    "jp": "ボクが守るから安心して！",
-   "en": "",
+   "en": "Don't worry, I'll protect you!",
    "max": 28
   },
   {
    "id": "130F3C",
    "jp": "わしに近づくヤツは　　　　　ぶっ飛ばしたるわ！",
-   "en": "",
+   "en": "Anyone who comes near me\ngets blasted!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "130F6C",
    "jp": "もっとデカイ技は　　　　　　出せんのかあああ！",
-   "en": "",
+   "en": "Ain't there a\nBIGGER move?!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "130F9C",
    "jp": "私にふさわしい闘いを　　　　見せてやろう",
-   "en": "",
+   "en": "I'll show you a battle\nworthy of me.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "130FC8",
    "jp": "しょせん、敵も私から見れば　低級そのものさ",
-   "en": "",
+   "en": "In my eyes, the foe is\nlowly through and through.",
    "max": 44
   },
   {
    "id": "130FF4",
    "jp": "安心しろ！絶対勝てるって！",
-   "en": "",
+   "en": "Relax! We're gonna win for sure!",
    "max": 28
   },
   {
    "id": "131010",
    "jp": "おまえも、どーんと行ったれ！",
-   "en": "",
+   "en": "You go in big too, pal!",
    "max": 32
   },
   {
    "id": "131030",
    "jp": "ここで気を抜いてはいけない",
-   "en": "",
+   "en": "Don't let your guard down here.",
    "max": 28
   },
   {
    "id": "13104C",
    "jp": "私は目が見えないが　　　　　心の目がある",
-   "en": "",
+   "en": "I cannot see,\nbut I have my mind's eye.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "131078",
    "jp": "敵の知能指数は　　　　　　　あまり高くないようでちゅね",
-   "en": "",
+   "en": "The foe'z IQ doesn't\nseem very high, iz it?",
    "max": 56,
    "pad": 14
   },
   {
    "id": "1310B0",
    "jp": "闘いは今までの知識が　　　　重要でちゅよ",
-   "en": "",
+   "en": "In battle, what you've\nlearned iz what countz!",
    "max": 44,
    "pad": 14
   },
   {
    "id": "1310DC",
    "jp": "式神同士の闘いって　　　　　むなしいものがあるよね",
-   "en": "",
+   "en": "Shikigami fighting shikigami\nfeels kinda empty, huh?",
    "max": 52,
    "pad": 14
   },
   {
    "id": "131110",
    "jp": "今、闘ってる相手って　　　　悪いヤツなのかなあ？",
-   "en": "",
+   "en": "I wonder if the one\nwe're fighting is really bad?",
    "max": 52,
    "pad": 14
   },
   {
    "id": "131144",
    "jp": "最後はあなた自身の腕に　　　かかっておりますぞ",
-   "en": "",
+   "en": "In the end, it all rests\non your own skill.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "131174",
    "jp": "わたしら式神は　　　　　　　敵を倒してナンボですぞ",
-   "en": "",
+   "en": "We shikigami are only worth\nthe foes we beat.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "1311A8",
    "jp": "今のところ問題ないであります",
-   "en": "",
+   "en": "No problems so far, sir!",
    "max": 32
   },
   {
    "id": "1311C8",
    "jp": "ジブンは命に代えても　　　　アナタを守るであります",
-   "en": "",
+   "en": "I will protect you\nwith my life, sir!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "1311FC",
    "jp": "今日も新しい　　　　　　　　発見がありそうじゃのぅ",
-   "en": "",
+   "en": "Looks like another day\nof discoveries, eh?",
    "max": 52,
    "pad": 14
   },
   {
    "id": "131230",
    "jp": "次はどんな実験をしようかのぅ",
-   "en": "",
+   "en": "Now, what experiment shall I try next, eh?",
    "max": 32
   },
   {
    "id": "131250",
    "jp": "スピードは誰にも負けないぞ！",
-   "en": "",
+   "en": "Nobody beats me for speed!",
    "max": 32
   },
   {
    "id": "131270",
    "jp": "誰に言われようが　　　　　　この勝負…勝つ！",
-   "en": "",
+   "en": "Whatever anyone says,\nI'm winning this fight!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "1312A0",
    "jp": "雨風で鍛えたおらのパワー　　見せてやるっしょ！",
-   "en": "",
+   "en": "I'll show ya power built\nby wind an' rain, y'know!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "1312D0",
    "jp": "まだまだ、おらの本気は　　　こんなもんでないっしょ！",
-   "en": "",
+   "en": "This ain't all I got,\nnot by a long shot, y'know!",
    "max": 56,
    "pad": 14
   },
   {
    "id": "131308",
    "jp": "闘いを長引かせてはなりませぬ",
-   "en": "",
+   "en": "We must not drag out this battle.",
    "max": 32
   },
   {
    "id": "131328",
    "jp": "もっと一撃一撃を　　　　　　大事にするのですよ",
-   "en": "",
+   "en": "Make each and every blow\ncount, now.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "131358",
    "jp": "たとえ火の中水の中…　　　　拙者は逃げも隠れもせぬ",
-   "en": "",
+   "en": "Through fire and flood...\nthis one shall neither run nor hide.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "13138C",
    "jp": "はむかう敵は、ようしゃせぬ",
-   "en": "",
+   "en": "No mercy for foes who defy me.",
    "max": 28
   },
   {
    "id": "1313A8",
    "jp": "おいらもおめぇも　　　　　　もっと強くなれるよ",
-   "en": "",
+   "en": "You an' me can both\nget a lot stronger!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "1313D8",
    "jp": "転ばないように　　　　　　　気をつけなきゃ",
-   "en": "",
+   "en": "Gotta be careful\nnot to trip.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "131404",
    "jp": "どうやら穏便にというわけにはいきそうもありませんな",
-   "en": "",
+   "en": "It seems this won't be\nsettled peacefully.",
    "max": 52
   },
   {
    "id": "131438",
    "jp": "この勝負はおまえさんの　　　腕ひとつですぜ",
-   "en": "",
+   "en": "This fight's all down\nto your skill, boss.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "131464",
    "jp": "ボクの踊りは天下一品だよ！",
-   "en": "",
+   "en": "My dancing is the best there is!",
    "max": 28
   },
   {
    "id": "131480",
    "jp": "闘いは、やっぱり　　　　　　華麗で美しくなきゃ！",
-   "en": "",
+   "en": "A fight just has to be\ngraceful and beautiful!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "1314B4",
    "jp": "さあっ！攻めなければ　　　　やられるだけだぞ",
-   "en": "",
+   "en": "Come on! If we don't attack,\nwe'll just get beaten!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "1314E4",
    "jp": "果たしてこの勝負の行方は　　吉とでるか凶とでるか…",
-   "en": "",
+   "en": "Will fortune smile\nor frown on this battle...?",
    "max": 52,
    "pad": 14
   },
   {
    "id": "131518",
    "jp": "Ｈｅｙ！今日もノドの調子は　バッチリだぜ！",
-   "en": "",
+   "en": "Hey! My pipes are\nin perfect shape today!",
    "max": 44
   },
   {
    "id": "131544",
    "jp": "Ｙｏ！　こっちも　　　　　　全開モードでいこうぜ",
-   "en": "",
+   "en": "Yo! Let's go\nfull throttle too!",
    "max": 52
   },
   {
    "id": "131578",
    "jp": "さぁ、あちきを　　　　　　　本気にしておくれよ",
-   "en": "",
+   "en": "Come now, get me\nfired up for real, hon.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "1315A8",
    "jp": "あちきを本気にさせてくれる　お方はいないもんかねぇ",
-   "en": "",
+   "en": "Ain't there anyone who\ncan get me serious, hon?",
    "max": 52
   },
   {
    "id": "1315DC",
    "jp": "オレを信じろ！おまえの印が　オレの力を解放するんだ！",
-   "en": "",
+   "en": "Trust me! Your seal\nwill unleash my power!",
    "max": 56
   },
   {
    "id": "131614",
    "jp": "そろそろこっちも本気出すぜ",
-   "en": "",
+   "en": "Time I got serious too!",
    "max": 28,
    "ptrs": 2
   },
   {
    "id": "131630",
    "jp": "スカートが風でめくれちゃう　…って見ちゃだめニャ！",
-   "en": "",
+   "en": "The wind's liftin' my skirt...\nhey, don't look, nya!",
    "max": 52
   },
   {
    "id": "131664",
    "jp": "私がちゃんと　　　　　　　　守ってあげるから安心して！",
-   "en": "",
+   "en": "Don't worry,\nI'll protect you properly!",
    "max": 56,
    "pad": 14
   },
   {
    "id": "13169C",
    "jp": "どの式神も優しく　　　　　　扱ってあげてね",
-   "en": "",
+   "en": "Be gentle with\nevery shikigami, okay?",
    "max": 44,
    "pad": 14
   },
   {
    "id": "1316C8",
    "jp": "ふふ…悩みがあるなら　　　　相談にのるわよ",
-   "en": "",
+   "en": "Hehe... If something's\nbothering you, I'll listen.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "1316F4",
    "jp": "さあっ！私の力を　　　　　　もっと引き出すのです",
-   "en": "",
+   "en": "Come! Draw out\nmore of my power!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "131728",
    "jp": "敵に情けをかけては　　　　　いけませんぞ！",
-   "en": "",
+   "en": "You must show the foe\nno mercy!",
    "max": 44,
    "pad": 14
   },
   {
    "id": "131754",
    "jp": "この勝負…天は、わらわ達に　味方しておりまする",
-   "en": "",
+   "en": "In this battle...\nheaven stands with us.",
    "max": 48
   },
   {
    "id": "131784",
    "jp": "そなた自身を信じるのです　　そうすれば道は開きましょう",
-   "en": "",
+   "en": "Believe in yourself,\nand the way shall open.",
    "max": 56,
    "pad": 14
   },
   {
    "id": "1317BC",
    "jp": "おいの力は天下一品でごわす",
-   "en": "",
+   "en": "My strength's second to none, I reckon!",
    "max": 28
   },
   {
    "id": "1317D8",
    "jp": "おいのパワーで　　　　　　　ひねりつぶすでごわす",
-   "en": "",
+   "en": "I'll crush 'em flat\nwith my power, I will!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "13180C",
    "jp": "いろいろ技を使ってみて！　　あたいはもっと動きたいの！",
-   "en": "",
+   "en": "Try all kinds of moves!\nI wanna move more!",
    "max": 56,
    "pad": 14
   },
   {
    "id": "131844",
    "jp": "もっとあたいを　　　　　　　自由に使いこなして！",
-   "en": "",
+   "en": "Use me more freely,\nwill ya!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "131878",
    "jp": "おいらこれでも　　　　　　　勝つ自信はあんだぜ！",
-   "en": "",
+   "en": "Don't let my looks fool ya,\nI know I can win!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "1318AC",
    "jp": "「窮鼠猫をかむ」って言葉　　知ってっか？",
-   "en": "",
+   "en": "Ever heard \"a cornered\nrat will bite the cat\"?",
    "max": 44,
    "pad": 14
   },
   {
    "id": "1318D8",
    "jp": "わいの商魂っちゅうもんを　　見せたるわい",
-   "en": "",
+   "en": "I'll show ya what\na real hustler's made of!",
    "max": 44,
    "pad": 14
   },
   {
    "id": "131904",
    "jp": "ヤツを倒すには　　　　　　　まだまだ攻撃が足らんわ",
-   "en": "",
+   "en": "We still need a lot more\nattacks to bring it down.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "131938",
    "jp": "今のところ　　　　　　　　　調子は良いでおじゃるよ",
-   "en": "",
+   "en": "So far, all goes\nwell, ojaru.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "13196C",
    "jp": "マロがいれば　　　　　　　　大丈夫でおじゃるよ…たぶん",
-   "en": "",
+   "en": "With Us here, all is well,\nojaru... probably.",
    "max": 56,
    "pad": 14
   },
   {
    "id": "1319A4",
    "jp": "やれやれ年寄りは　　　　　　いたわるもんじゃて",
-   "en": "",
+   "en": "Good grief, be kind\nto your elders, my boy.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "1319D4",
    "jp": "ここが、ふんばりどころじゃな",
-   "en": "",
+   "en": "This is where we hang tough, eh.",
    "max": 32
   },
   {
    "id": "1319F4",
    "jp": "闘いの手引きその１　　　　　標的は弱者から消すべし",
-   "en": "",
+   "en": "Battle manual, rule 1:\nwipe out the weakest first.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "131A28",
    "jp": "闘いは敵の弱点をつくことが　大事でござる",
-   "en": "",
+   "en": "In battle, striking the foe's\nweak point is key, indeed.",
    "max": 44
   },
   {
    "id": "131A54",
    "jp": "さあっ！行こう！私はおまえの言うことなら何でも聞く",
-   "en": "",
+   "en": "Come! Let's go!\nI'll do anything you say.",
    "max": 52
   },
   {
    "id": "131A88",
    "jp": "おまえの未来は　　　　　　　おまえ自身で切り開くのだ",
-   "en": "",
+   "en": "Carve out your future\nwith your own hands.",
    "max": 56,
    "pad": 14
   },
   {
    "id": "131AC0",
    "jp": "少ない被害で勝つこと　　　　これこそ兵法の極意です",
-   "en": "",
+   "en": "Winning with little loss:\nthat is the heart of strategy.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "131AF4",
    "jp": "さあっ！ここからが勝負の　　分かれ目ですよ",
-   "en": "",
+   "en": "Now! This is where\nthe battle is decided.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "131B20",
    "jp": "我が力はあなた様のもの　　　いかようにも使いくだされ",
-   "en": "",
+   "en": "My power is yours, my lord.\nUse it as you will.",
    "max": 56,
    "pad": 14
   },
   {
    "id": "131B58",
    "jp": "この翼折れるまで闘い続けよう",
-   "en": "",
+   "en": "I'll keep fighting till these wings break.",
    "max": 32
   },
   {
    "id": "131B78",
    "jp": "力なら、ありあまってんぜ！",
-   "en": "",
+   "en": "I got power to spare!",
    "max": 28
   },
   {
    "id": "131B94",
    "jp": "ハチミツでもありゃあ　　　　ちっとは元気になるんだがなぁ",
-   "en": "",
+   "en": "If I had some honey,\nI'd perk right up, boss...",
    "max": 57,
    "pad": 14
   }
