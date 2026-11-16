@@ -26,6 +26,7 @@ import evscript  # noqa: E402
 import font  # noqa: E402
 import gfx  # noqa: E402
 import signs  # noqa: E402
+import cutin  # noqa: E402
 import marker  # noqa: E402
 import vwf  # noqa: E402
 import strtab  # noqa: E402
@@ -99,10 +100,9 @@ def install_engine(img):
 
 # Pointer tables whose strings are used as data by some reader: that reader gets a copy of the table + the original
 # JP strings, so translating the table leaves it working. (table offset, literal-pool words of that reader, why)
-JP_COPIES = [
-    (0x13BD78, [0x10971C], "techniques_b for the battle super-move cut-in: 0x08109614 maps each kanji to a graphic "
-                           "by matching it against the one-kanji keys at 0x0840E56C (str_battle_kanji)"),
-]
+# (The battle super-move cut-in used to get a JP copy of techniques_b here; tools/cutin.py now gives it a table of
+# cell codes in the same place and size, and draws the names in English.)
+JP_COPIES = []
 
 
 def keep_jp_tables(img):
@@ -150,6 +150,7 @@ def build(orig, relocate=False, scripts=None, strings=None, engine=False, layout
     if engine:
         install_engine(img)
         keep_jp_tables(img)
+        cutin.install_names(img, img.write)
     sc =evscript.Scripts(orig)
     for off, toks in sorted(sc.scripts.items()):
         if off not in sc.refs:
@@ -166,6 +167,7 @@ def build(orig, relocate=False, scripts=None, strings=None, engine=False, layout
     if engine:
         # last, so a tileset that has to move takes free space after every string (string addresses stay put)
         signs.install(img, img.write)
+        cutin.install(img, img.write)
     if len(img.buf) > len(orig):  # grow to a whole MiB, 0xFF filled
         img.buf += b"\xff" * ((-len(img.buf)) % 0x100000)
     return bytes(img.buf), img.log

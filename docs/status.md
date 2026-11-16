@@ -2,9 +2,9 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator in progress (session 27 ended at the context limit: build is now **8a6054e7**
-  (smoke ok) after the help-row fix and two page-break fixes; the visual-QA gate and text coverage must be re-run on
-  it: Next 1-2).
+- **Phase:** 8. QA in the emulator in progress (session 28 ended at the context limit after the G11 town signs and
+  the G5 cut-in/banners; string layout is still identical to 8a6054e7 (build/strings.tsv = work/strings_8a6054e7.tsv),
+  so this session's coverage logs count; the visual-QA tour must be re-run on the new build: Next 1-2).
 - **Done:**
   - Step 0: ROM pinned (`rom.sha1`), MesenCE 2.2.1 + GBA BIOS in `tools/mesen/`, guard hook in `.claude/settings.json`
     (canary blocked), pre-commit runs `tools/check.py` (a failing test was rejected), boot route `tools/routes/boot.txt`
@@ -253,23 +253,41 @@ Updated at the end of every session. Keep it to what the next session needs; his
     **Gotcha**: `qa_gate init` on an existing manifest keeps the old ids' paths (tour10) and reported "0 changed"
     although 66/77 tour12 sheets differ in pixels: always init a fresh manifest (move the old one aside).
     Old manifests: work/qa/manifest_s26b.tsv (+ verdicts_s26/), manifest_s26.tsv.
+  - Session 28 (phase 8): old coverage logs moved to work/qa/cover_old/ (they were from 606f/beecd4dd/8a6054e7
+    mixes). Ran on the current layout: tour13 (work/qa/cover/tour13, 56/56, states tour13/st; on 8a6054e7, before
+    the graphics changes: re-tour for visual QA), `cover.py run` (all script scenes), shikijobs ± --unlock (76/76
+    each), areajobs (4/4 AC_DONE). **G11 town signs DONE** (`tools/signs.py`, tests/test_signs.py; 14 signs on maps
+    21/29/31/60/62/65/66/67/68, shots work/qa/g11/signs_after_*.png). **G5 mapped and DONE**: resource types 35..38
+    = battle banners 敗北 開始 先制 終 (gfx.LABELS lose_*/start_*/first_*/end), type 39 = super-move cut-in names
+    (`tools/cutin.py`: rotated English per name, own cells; shot work/qa/g5/seal_en2/f004780.png). Gotchas in
+    docs/re/font.md (cut-in attribute list) and docs/re/graphics.md (G5, G11 rows). Signs and cut-in install
+    after the strings (cutin.install_names takes the old JP copy's slot, same size): string addresses unchanged.
 - **Next (phase 8: QA in the emulator; done-when in the skill's table):**
-  1. **Visual-QA gate on build 8a6054e7**: tour13 = `warp_all.py build/onmyou_zeroshiki_en.gba --out
-     work/qa/cover/tour13 --states work/qa/cover/tour13/st --probe <skill>/scripts/lua/probes/textcover.lua --var
+  0. Session 28 leftovers: G8 brush lettering (raw 0x310000.., sheets 291-292: low confidence, check with
+     `tools/debug/gfxreads.lua --var LO=0x08310000 --var HI=0x08318400` in a battle with a special/Drive) and G7
+     (lz 0x6884F8 outlined hiragana strip): find a reader or record them as unused. The battle banners 35..38 had
+     no reader in story battles: try a random encounter (field_walk + walking) for 先制, else note link-only.
+     Coverage runners still to re-run on the current layout (cover.py run, shiki, areas are done this session):
+     labeljobs, talkjobs, msgjobs, quotejobs, credits, key items, cover_misc.txt, seal2, wheelhelp, viewfoe_0x4C/0x4B
+     (recipes in the session-26 entry), then `cover.py report` exit 0.
+  1. **Visual-QA gate on the current build**: tour14 (tour13 ran before the sign/cut-in changes) =
+     `warp_all.py build/onmyou_zeroshiki_en.gba --out
+     work/qa/cover/tour14 --states work/qa/cover/tour14/st --probe <skill>/scripts/lua/probes/textcover.lua --var
      "RANGES='<cover.py ranges>'" --seq 90 --hold 1500 --jobs 4` (background, ~1 h). Then move work/qa/manifest.tsv +
      work/qa/verdicts aside (they hold tour12/beecd4dd verdicts: 75 ok, 4 issue all handled) and init FRESH:
-     `qa_gate.py init work/qa/manifest.tsv work/qa/cover/tour13 work/qa/s27d work/qa/s26i --build
-     build/onmyou_zeroshiki_en.gba` (re-shoot s27d first on the new build: emu.py from tour13/st/battle_forest.mss,
+     `qa_gate.py init work/qa/manifest.tsv work/qa/cover/tour14 work/qa/s27d work/qa/s26i work/qa/g11 work/qa/g5
+     --glob "*sheet*.png" --build build/onmyou_zeroshiki_en.gba` (add sheets for the sign shots
+     work/qa/g11/signs_after_*.png and the cut-in work/qa/g5/seal_en2_sheet.png; re-shoot s27d first on the new
+     build: emu.py from tour14/st/battle_forest.mss,
      route in the session-27 entry's dir work/qa/s27d/_run.lua or: 6×"6 a;60 -", "300 -", 5×"10 right;250 -",
      --shots 940,1200,1460,1720,1980, then sheet.py those 5 --out work/qa/s27d/sheet.png), `todo --size 8
      --out-dir work/qa/chunks28`, `tools/vqa.py work/qa/chunks28/chunk_*.txt --jp work/qa/tour_jp --jobs 3`
      (background), fix issues, `check work/qa/manifest.tsv work/qa/verdicts --build build/onmyou_zeroshiki_en.gba`
      exit 0.
-  2. **Text coverage on 8a6054e7**: the page-break fixes re-laid the event scripts (3148 addresses differ), so old
-     logs no longer count reliably (a string moved by a few bytes can be "seen" through a neighbour's reads: check
-     moved ids against logs from runs on the current build). Re-run everything: `cover.py run` (all, --jobs 4), the
-     runners below (labeljobs, talkjobs, msgjobs, quotejobs, shikijobs ± --unlock, areajobs, credits, key items,
-     cover_misc.txt, seal2, wheelhelp, viewfoe_0x4C/0x4B), tour13, then `cover.py report` exit 0. Keep a copy of
+  2. **Text coverage on the 8a6054e7 layout** (unchanged since): done this session: `cover.py run`, shikijobs ±
+     --unlock, areajobs, tour13 (all in work/qa/cover). Still to run: labeljobs, talkjobs, msgjobs, quotejobs,
+     credits, key items, cover_misc.txt, seal2, wheelhelp, viewfoe_0x4C/0x4B, then `cover.py report` exit 0
+     (str_battle_kanji is already waived as data keys). Keep a copy of
      build/strings.tsv per build (work/strings_<sha8>.tsv) for `moved_scenes.py` after the next rebuild.
      Session-24 runners, all under work/qa/cover/ so the report counts
      them (re-run them after any rebuild, since strings.tsv addresses change):
@@ -280,10 +298,8 @@ Updated at the end of every session. Keep it to what the next session needs; his
      SCRIPT LABEL` jump to the label before each unseen script line; 271/273 reached, lab_1162_10 and lab_1712_1 not).
      Session 25 runners: `talkjobs.py`, `msgjobs.py [--ids ..] [--tag t]`, key items. Session 26: cover_misc.txt,
      the seal / wheelhelp / viewfoe emu.py runs (see Done).
-  3. The rest of the done-when: graphics rows left (docs/re/graphics.md): G3, G6, G12 checked (session 26);
-  still open: G11 town signs (BG tilesets lz 0x58E3DC.. ; no warp scene reaches a town map yet: try `field N` for
-  map ids until the shops show, then redraw the readable signs per D5), G8 brush lettering (likely battle effect
-  text = D12 SFX kana), G5 framed labels per screen. Chapter openings show area names as font text (no card art
+  3. The rest of the done-when: graphics rows left (docs/re/graphics.md): G3, G6, G12 checked (session 26); G5, G11
+  done (session 28); still open: G8 brush lettering, G7 hiragana strip (Next 0). Chapter openings show area names as font text (no card art
   found); credits are font text (credits sheet ok). **inkbox.py**: only the Yes/No buttons were checked (session
   20); run `<skill>/scripts/inkbox.py` on every choice box and centred menu box in tour11's shots (Yes/No, title
   menu, Save/Load headers, ring labels, speaker plate, battle tag) and record the results.

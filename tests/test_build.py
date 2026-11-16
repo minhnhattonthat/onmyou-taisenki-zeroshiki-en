@@ -10,6 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "tools"))
 import build  # noqa: E402
+import cutin  # noqa: E402
 import evscript  # noqa: E402
 import strtab  # noqa: E402
 
@@ -109,19 +110,28 @@ def test_overflow_moves_only_the_grown_script(orig):
     assert all(rom[r:r + 4] == orig[r:r + 4] for o in others for r in sc.refs[o])
 
 
-def test_cutin_keeps_japanese_keys(orig):
-    """build.JP_COPIES: the battle super-move cut-in (0x08109614) still reads the JP techniques_b names after the
-    table is translated; the shikigami page (literal 0x08036548) reads the English."""
+def test_cutin_names_select_their_own_cells(orig):
+    """tools/cutin.py: the battle super-move cut-in (0x08109614) reads its own table of cell codes, each code matches
+    exactly one key (the matcher's first hit = that cell), every name's cells are its own, and they hold its English
+    art; the shikigami page (literal 0x08036548) still reads the translated techniques_b."""
     first = struct.unpack_from("<I", orig, 0x13BD78 + 4)[0] - 0x08000000
     en = b"\x82\x60\x82\x61\0"  # "ＡＢ" (English font codes)
     rom, _ = build.build(orig, strings={first: en}, engine=True)
     r32 = lambda b, o: struct.unpack_from("<I", b, o)[0] - 0x08000000  # noqa: E731
-    menu, cutin = r32(rom, 0x36548), r32(rom, 0x10971C)
-    assert menu == 0x13BD78 and cutin >= build.FREE[0]
-    p_en, p_jp = r32(rom, menu + 4), r32(rom, cutin + 4)
+    menu, table = r32(rom, 0x36548), r32(rom, cutin.LIT)
+    assert menu == 0x13BD78 and table >= build.FREE[0]
+    p_en = r32(rom, menu + 4)
     assert rom[p_en:p_en + len(en)] == en
-    jp = orig[first:orig.index(b"\0", first) + 1]
-    assert rom[p_jp:p_jp + len(jp)] == jp
-    for k in range(76):  # every entry of the copy = the original string
-        a, b = r32(orig, 0x13BD78 + 4 * k), r32(rom, cutin + 4 * k)
-        assert rom[b:rom.index(b"\0", b)] == orig[a:orig.index(b"\0", a)], k
+    keys = [rom[r32(rom, cutin.KEYS + 4 * k):][:2] for k in range(cutin.NKEYS)]
+    base = r32(rom, cutin.RES_BASE + 8 * cutin.TYPE)
+    names, _ = cutin.plan(orig)
+    owner = {}
+    for sid in range(cutin.IDS):
+        s = r32(rom, table + 4 * sid)
+        for j in range(cutin.ncells(sid)):
+            k = keys.index(rom[s + 2 * j:s + 2 * j + 2])     # what the matcher returns
+            assert owner.setdefault(k, s) == s, f"id {sid}: cell {k} shared with another name"
+    for sid, p, text, k0, n in names:
+        px = cutin.column(text, n)
+        for j in range(n):
+            assert rom[base + (k0 + j) * 0x200:][:0x200] == cutin.encode_cell(px, j), (sid, j)

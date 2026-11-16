@@ -86,8 +86,14 @@
   2-byte char of the name against the 380-entry table 0x0840E56C of one-kanji strings (**str_battle_kanji**, 257
   strings, only reader) to get a graphic index per kanji. So str_battle_kanji is data (variant `data_keys`,
   keep_jp), and `build.py` JP_COPIES gives that reader its own copy of the JP table + strings (literal
-  0x0810971C), while the shikigami page (literal 0x08036548) reads the translated table
-  (tests/test_build.py::test_cutin_keeps_japanese_keys).
+  0x0810971C), while the shikigami page (literal 0x08036548) reads the translated table.
+  **Session 28: the cut-in is English now** (`tools/cutin.py`, graphics row G5; JP_COPIES is empty): the matcher's
+  index k is the graphic index of resource type 0x27 (`0x0800509C(0x27, k, dst)` → `0x08005848`: index array +
+  12-byte descriptors via table 0x08403DA4, art base/size via table 0x084028EC). Each name gets its own cells with
+  its English drawn rotated; the cut-in's name table holds 2-byte cell codes (same size as the old JP copy, so no
+  string moves), and key pointers 0..374 point at those codes. Gotcha: the index array is followed by an attribute
+  list (count 1, entry 39) that `0x0800B310` reads at array + 2·count + 10; leave it out and the cells turn
+  256-colour (tests/test_build.py::test_cutin_names_select_their_own_cells).
 
 ## Name entry (2026-11-16)
 - Renderers (`tools/debug/mapcalls.lua`, original ROM): title 40C524 = 0x0803A168 (lr 0x0803AD6F) at tiles
