@@ -43,7 +43,9 @@ Plain ASCII bytecode with inline Shift-JIS text, in **0x41FE58..0x46B000** (~300
 - **Slots:** every script but the tutorial ones has a u32 right before it pointing at it; tables point at slots
   (two slots, 0x4267D8 / 0x446C54, point at another script). The only pointers to script starts are those slot /
   tutorial-table words (722 in all), so a script moves by rewriting its slot(s); tables never move.
-  Empty table entries hold 0x0200A000 (EWRAM) or the bare `/999` at 0x41FE5C. A bare `/999` at 0x41F840 has no
+  Empty table entries hold 0x0200A000 (EWRAM) or the bare `/999` at 0x41FE5C; the 700..999 table has holes of
+  0x0200A000 between used ids (711..736, 742, 760.., 780.., 800, 820.., 840.., 880..), so `tools/script_index.py`
+  skips them rather than stopping (it stopped at 705 until session 25 and missed 78 scripts). A bare `/999` at 0x41F840 has no
   pointer (dead). A tiny no-text script sits in the string area at 0x129560 (slot 0x12955C); left alone.
 - **Pinned script:** 0x6918F4 must sit right after its slot 0x6918F0: code 0x0801DC90 loads [0x6918E8] (= the
   slot) and scans forward to the first `/`, while 0x08027FB8 dereferences the same word twice. `evscript.PINNED`;
@@ -97,7 +99,17 @@ battle, the battle wheel + L seal panel, or a battle with every unlock bit set (
 describe technique effects ("Weapon summon!", "Shift the field to raise our Attack"), so they likely belong to a
 technique/seal menu not reached yet. The only code literals near it are 0x0840A748 and 0x0840A844 (u16 pair tables
 next to the map menu's area lookup 0x080163E6: area = u16 [r8 + 4 * [r7]]; which table is r8 is unchecked), not
-the quote tables.
+the quote tables. Session 25: the per-shikigami table is 74 words (0x40A620..0x40A747; 0x40A748 starts the map
+menu's u16 pairs). No ROM word points at 0x0840A620 (aligned or unaligned), no code literal lies in
+0x08408000..0x0840A800 except 0x0840A748, and none of the 1,823 LZ77 blocks (work/lz) holds one: the tables are
+dead data. All 258 tech quotes are waived in docs/text_unshown.tsv for that reason.
+**Battle messages** (str_battle_msgs): each code site stores its string at [0x02010000 + 0x9BE0 + 4*idx] (idx =
+s16 0x02019AA0; + 0x9BE8 = a name to put in front). The drawer 0x08102E76 loads it at 0x08102E88 and calls
+0x0810F928 (with name) or 0x0810F9E0 (plain, r2 = message), then clears the field. `tools/debug/msgcycle.lua`
+substitutes each unseen message there (r3 at 0x08102E8A, r0 = 0 at 0x08102E96), runner `msgjobs.py`.
+**Scripts without a StartScript id:** Kogenta's L-button talk (pinned 0x6918F4) branches on story flags to ~50
+hint lines; the tutorial-battle scripts hang off table 0x693080. `tools/debug/talkjobs.py` writes build/talk.gba (id
+slots 705..710 pointed at their slots, nothing else changed) and jumps to each label.
 **Area names** (str_areas): the map menu draws the current area's name once per opening, `bl 0x080144F4` at
 0x080163F6 with r0 = word [0x0840B334 + 4 * area]; `tools/debug/areacycle.lua` substitutes each name there.
 

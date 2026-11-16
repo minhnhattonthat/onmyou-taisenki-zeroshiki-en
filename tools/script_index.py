@@ -19,6 +19,7 @@ TABLES = [  # (first id, last id, table offset)
     (1000, 2999, 0x41FE64),
     (8000, 8999, 0x41F2D8),
 ]
+EMPTY = 0x0200A000  # unused slot marker inside a table (StartScript would read RAM there)
 
 
 def u32(d, o):
@@ -47,6 +48,8 @@ def scripts(d):
     for lo, hi, base in TABLES:
         for sid in range(lo, hi + 1):
             e = base + (sid - lo) * 4
+            if u32(d, e) == EMPTY:
+                continue  # a hole in the table (700..999 has many), not its end
             p = ptr(d, u32(d, e))
             if p is None:
                 break  # past the end of this table

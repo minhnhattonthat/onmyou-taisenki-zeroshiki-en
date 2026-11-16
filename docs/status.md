@@ -2,8 +2,8 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator in progress (session 24: text coverage 2342 → 4604/5185 shown + 97 waived,
-  484 failing; no rebuild, the visual-QA gate still holds). Last build 2026-11-16 (session 23):
+- **Phase:** 8. QA in the emulator in progress (session 25: text coverage 4785/5185 shown + 355 waived,
+  **45 failing** (was 484); no rebuild, the visual-QA gate still holds). Last build 2026-11-16 (session 23):
   build/onmyou_zeroshiki_en.gba = 606f89ee… (tour10 `work/qa/cover/tour10` ran on it; manifest
   work/qa/manifest.tsv records it).
 - **Done:**
@@ -213,25 +213,45 @@ Updated at the end of every session. Keep it to what the next session needs; his
   - Session 24 (phase 8): text-coverage runners (Next 2) and RAM finds in docs/re/debug.md: enemy HP 0x02019944,
     party shikigami id 0x020025B8, unlock bits 0x02002DC2/0x02002DCC; area drawer + tech-quote table notes in
     docs/re/text.md.
+  - Session 25 (phase 8): text coverage 484 → 45 failing. `tools/script_index.py` stopped at the first empty slot
+    (0x0200A000) of the 700..999 table and missed 78 scripts (711..884): fixed, `cover.py run` over the 30 new ones.
+    New runners (all log under work/qa/cover/, counted by `cover.py report`): `talkjobs.py` (Kogenta's L-button
+    talk 0x6918F4 + tutorial-battle scripts: coverage-only build/talk.gba points empty ids 705..710 at them, then a
+    label jump per line: 55/55), `msgjobs.py` + `msgcycle.lua` (every battle message forced through the real drawer
+    at 0x08102E88, shot work/qa/bm/pilot_z.png: "Couldn't escape!"), key items (work/qa/cover/keyitems/scenes.txt:
+    menu_keyitem with one flag 51..64 each). Tech quotes (258) proven dead data and waived (docs/re/text.md).
 - **Next (phase 8: QA in the emulator; done-when in the skill's table):**
   1. Visual-QA gate **passes** on build 606f89ee (`qa_gate.py check work/qa/manifest.tsv work/qa/verdicts` exit 0):
      codex 75/77 ok; the 2 issues re-checked as false positives (work/qa/verdicts/recheck_s23.tsv: tutorial Drive
      stripes = the game's scanline mask, credits ghosting = a mid-scroll fade the original shows too). Any rebuild
      needs a new tour + manifest + verdicts.
-  2. **Text coverage** (`python -X utf8 tools/debug/cover.py report > work/qa/cover/report.txt`; session 24:
-     4604/5185 shown, 97 waived, **484 failing**). Session-24 runners, all under work/qa/cover/ so the report counts
+  2. **Text coverage** (`python -X utf8 tools/debug/cover.py report > work/qa/cover/report.txt`; session 25:
+     4785/5185 shown, 355 waived, **45 failing**). Session-24 runners, all under work/qa/cover/ so the report counts
      them (re-run them after any rebuild, since strings.tsv addresses change):
      `tools/debug/quotejobs.py` (16 battles × ~99 quotes, HP held by `quotecycle.lua KEEP=`; `--missing` re-forces
      unseen ones twice: all battle quotes now seen), `shikijobs.py` + `shikijobs.py --unlock` (status pages p1-p4
      for ids 0..75; unlock bits show techniques_b), `areajobs.py` + `areacycle.lua` (every area name through the map
      menu), credits with hold 30000 (work/qa/cover/credits), `labeljobs.py` (273 raw scenes `/123 0004 0000 0000
      SCRIPT LABEL` jump to the label before each unseen script line; 271/273 reached, lab_1162_10 and lab_1712_1 not).
-     Left (count): tech quotes 258 (str_tech_quotes1-5: reader still unknown, see docs/re/text.md: no read in any
-     battle tried; next try the Drive events 700-704, the seal/technique screens, a debugger read-watch over a whole
-     tour), tutorial 55 + tutorial_help 11 (play the tutorial battle further), battle_msgs 47, script runs ~88
-     (ev_434000 28, ev_44C000 22, ev_438000 11, ev_440000 6, ...: lines after a choice/battle result in mid-script,
-     `labeljobs.py --list` after a fresh report), system 20, menus2 12, shikigami_names 6, save 3, char_names 3,
-     abilities 1 (13AF88). Waive only what is shown unreachable, with the reason.
+     Session 25 runners: `talkjobs.py`, `msgjobs.py [--ids ..] [--tag t]`, key items (see Done). Left (45), with
+     where each is read (code literal → string):
+     - str_menus2 40F77C..40F960 (12): the seal-tracing lesson ("Keep tracing the red line..."), literals at
+       0x0810E52C..0x0810E984: find what runs that code (the Drive event 700-704 or the tutorial battle's seal step).
+     - str_tutorial_help 410AE4..410B94 (help panel rows, pointed at from a table at 0x410AE0) and 410C64..410C7C
+       (【妖怪 白虎】 fragments, literals 0x08118108/0x0811810C/0x0811AAE0): tutorial battle help screens.
+     - str_system 128F64/128F74 (Saving... / Save complete., literal 0x080249A0): confirm a save in menu_save;
+       128F88 Save failed, 128F9C over 20 link sessions, 128FB8 Izayoi (link reward, 0x08024B80): likely waive
+       (EEPROM failure / link cable, same as the link screens already waived); 129150 Status / 12916C Info (column
+       table 0x129180); 129270 Ryuji's Lunch Box (code 0x0802FDD0: a separate key-item check).
+     - str_save 1279A4 Loading... / 1279C8 Save failed / 1279DC No save data (literals 0x080137B4, 0x08013A8C,
+       0x08013AF8): title Load with and without a save.
+     - str_shikigami_names 12B3C4..12B3D8 (? and the 5 elements, table 0x12B3AC..0x12B3C0): find the reader.
+     - str_char_names 41401C Girl, 414028 Lady, 4140F8 Riku (speaker table words 0x4139C4, 0x4139BC, 0x41392C..):
+       find which script lines use those speaker ids.
+     - str_abilities 13AF88 (row pointer 0x13ABA0): ability list entry, a shikigami that has it.
+     - ev_44C000 44D4F0 44D5AE (lab_1162_10 never reached: label scene times out) and 44DA8A 44DAB0 (script 782
+       after its battle, no label before them).
+     Waive only what is shown unreachable, with the reason.
   3. The rest of the done-when: graphics rows left
   (docs/re/graphics.md): G3 name-entry header/`けってい` (header already English as font text: check), G5 framed
   labels per screen (the Drive labels are done), G6 battle win/lose banners, G8, G11 town signs (low), G12 map
