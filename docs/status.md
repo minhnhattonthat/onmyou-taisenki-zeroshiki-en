@@ -211,8 +211,10 @@ Updated at the end of every session. Keep it to what the next session needs; his
     (str_tech_quotes, 0x408258..) hang off a per-shikigami table at 0x40A620 (85 words; reader not found yet: no
     literal load, find it with a read watch on 0x0840A620.. in battle).
 - **Next (phase 8: QA in the emulator; done-when in the skill's table):**
-  1. Read the session-23 vqa verdicts (work/qa/verdicts/chunk_*.tsv, log work/qa/vqa10.log); fix issues, re-verdict
-     fixed sheets; `qa_gate.py check work/qa/manifest.tsv work/qa/verdicts` must exit 0.
+  1. Visual-QA gate **passes** on build 606f89ee (`qa_gate.py check work/qa/manifest.tsv work/qa/verdicts` exit 0):
+     codex 75/77 ok; the 2 issues re-checked as false positives (work/qa/verdicts/recheck_s23.tsv: tutorial Drive
+     stripes = the game's scanline mask, credits ghosting = a mid-scroll fade the original shows too). Any rebuild
+     needs a new tour + manifest + verdicts.
   2. **Text coverage** (`cover.py report` → work/qa/cover/report.txt; now 2342/5185 shown, 97 waived, 2746 failing):
      - quotes 1408: run quotecycle.lua in parallel battles (`START=t*1000+i`, ~50 quotes per job, a long hold, keep
        the battle alive: poke the enemy HP each frame, find its address with valwatch), output under
