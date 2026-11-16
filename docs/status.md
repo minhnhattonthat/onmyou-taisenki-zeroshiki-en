@@ -2,8 +2,8 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator in progress (session 23: Drive screen fixed, full tour10 with the text probe,
-  manifest re-made, vqa run; text coverage 2342/5185 shown + 97 waived). Last build 2026-11-16 (session 23):
+- **Phase:** 8. QA in the emulator in progress (session 24: text coverage 2342 → 4604/5185 shown + 97 waived,
+  484 failing; no rebuild, the visual-QA gate still holds). Last build 2026-11-16 (session 23):
   build/onmyou_zeroshiki_en.gba = 606f89ee… (tour10 `work/qa/cover/tour10` ran on it; manifest
   work/qa/manifest.tsv records it).
 - **Done:**
@@ -210,22 +210,28 @@ Updated at the end of every session. Keep it to what the next session needs; his
     overrides it with each quote in turn (tested: work/qa/qc, one quote per ~800 battle frames). Tech-quote tables
     (str_tech_quotes, 0x408258..) hang off a per-shikigami table at 0x40A620 (85 words; reader not found yet: no
     literal load, find it with a read watch on 0x0840A620.. in battle).
+  - Session 24 (phase 8): text-coverage runners (Next 2) and RAM finds in docs/re/debug.md: enemy HP 0x02019944,
+    party shikigami id 0x020025B8, unlock bits 0x02002DC2/0x02002DCC; area drawer + tech-quote table notes in
+    docs/re/text.md.
 - **Next (phase 8: QA in the emulator; done-when in the skill's table):**
   1. Visual-QA gate **passes** on build 606f89ee (`qa_gate.py check work/qa/manifest.tsv work/qa/verdicts` exit 0):
      codex 75/77 ok; the 2 issues re-checked as false positives (work/qa/verdicts/recheck_s23.tsv: tutorial Drive
      stripes = the game's scanline mask, credits ghosting = a mid-scroll fade the original shows too). Any rebuild
      needs a new tour + manifest + verdicts.
-  2. **Text coverage** (`cover.py report` → work/qa/cover/report.txt; now 2342/5185 shown, 97 waived, 2746 failing):
-     - quotes 1408: run quotecycle.lua in parallel battles (`START=t*1000+i`, ~50 quotes per job, a long hold, keep
-       the battle alive: poke the enemy HP each frame, find its address with valwatch), output under
-       work/qa/cover/ so the report counts it, plus the textcover probe.
-     - tech quotes 258: find the reader of table 0x0840A620 and do the same.
-     - techniques a/b 151, skills 53, weapons 10, abilities 31, kinds 22: shikigami pages for every shikigami
-       (find the page's shikigami-id RAM byte, poke it per run; menu_shiki_p1..p4 scenes).
-     - areas 103: map-menu area name per map (poke the map id), credits 38 (credits scene hold too short: scroll to
-       the end), battle_msgs 58, system 23, tutorial 57 + tutorial_help 11 (play the tutorial battle further),
-       save 6, menus2 12, script runs 551 (branches/NPC talk: per-script scenes with flags set).
-     Waive only what is shown unreachable, with the reason.
+  2. **Text coverage** (`python -X utf8 tools/debug/cover.py report > work/qa/cover/report.txt`; session 24:
+     4604/5185 shown, 97 waived, **484 failing**). Session-24 runners, all under work/qa/cover/ so the report counts
+     them (re-run them after any rebuild, since strings.tsv addresses change):
+     `tools/debug/quotejobs.py` (16 battles × ~99 quotes, HP held by `quotecycle.lua KEEP=`; `--missing` re-forces
+     unseen ones twice: all battle quotes now seen), `shikijobs.py` + `shikijobs.py --unlock` (status pages p1-p4
+     for ids 0..75; unlock bits show techniques_b), `areajobs.py` + `areacycle.lua` (every area name through the map
+     menu), credits with hold 30000 (work/qa/cover/credits), `labeljobs.py` (273 raw scenes `/123 0004 0000 0000
+     SCRIPT LABEL` jump to the label before each unseen script line; 271/273 reached, lab_1162_10 and lab_1712_1 not).
+     Left (count): tech quotes 258 (str_tech_quotes1-5: reader still unknown, see docs/re/text.md: no read in any
+     battle tried; next try the Drive events 700-704, the seal/technique screens, a debugger read-watch over a whole
+     tour), tutorial 55 + tutorial_help 11 (play the tutorial battle further), battle_msgs 47, script runs ~88
+     (ev_434000 28, ev_44C000 22, ev_438000 11, ev_440000 6, ...: lines after a choice/battle result in mid-script,
+     `labeljobs.py --list` after a fresh report), system 20, menus2 12, shikigami_names 6, save 3, char_names 3,
+     abilities 1 (13AF88). Waive only what is shown unreachable, with the reason.
   3. The rest of the done-when: graphics rows left
   (docs/re/graphics.md): G3 name-entry header/`けってい` (header already English as font text: check), G5 framed
   labels per screen (the Drive labels are done), G6 battle win/lose banners, G8, G11 town signs (low), G12 map

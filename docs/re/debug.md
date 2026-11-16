@@ -33,6 +33,10 @@ Scene list and syntax: `tools/debug/scenes.txt`. Script ids: `tools/script_index
 | 0x02002DDC (u32) | current script pointer; 0x02002DD6 = call depth | verified |
 | 0x02002E84 (u32) | interpreter "waiting" flag; the field leaves it 1 and a kicked script then stalls at `/230` (mode 34) — warp.lua clears it | verified |
 | 0x02019938 (u16) | battle: player shikigami current HP (290 for Kogenta at start); poke 1 → knocked out on the next hit (battle_lose) | verified |
+| 0x02019944 (u16) | battle: enemy shikigami current HP (208 in the battle_forest fight); re-poked every frame by `quotecycle.lua KEEP=` so the battle never ends | verified (session 24) |
+| 0x020025B8 (u8) | party shikigami id shown by the status pages (Kogenta = 15; name table 0x0812AEE0[id], routine 0x08035BF0); poke it before opening the menu (`tools/debug/shikijobs.py`) | verified (session 24) |
+| 0x02002DC2, 0x02002DCC (10 B each) | per-shikigami unlock bits (id = bit), read by 0x080026A0 / 0x0800270C; the status page shows the second technique name (str_techniques_b, table 0x0813BD78) only when the 0x2DCC bit is set | verified (session 24) |
+| 0x0200273C (u8 list, 0xFF end), 0x02007BDC (count) | owned (reserve) shikigami ids: the party Swap list | verified (session 19) |
 | 0x0802A39C | StartScript(id): 0..699 → table 0x41A058, 700..999 → 0x41F848, 1000..2999 → 0x41FE64, 8000+ → 0x41F2D8; double indirection | verified |
 | 0x08018B84 | load map (r0 = map id) | verified (callers) |
 

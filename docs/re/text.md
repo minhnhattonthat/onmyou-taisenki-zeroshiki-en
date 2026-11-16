@@ -90,7 +90,16 @@ from code (0..0x120000) or those areas reaches: 2,994 strings, 3,899 pointer wor
 **Quote picker** 0x08104E70: table r5 (0..9, the 10 battle-quote tables above, literals 0x08104EDC..0x08104F34),
 entry r3 + 2*r4, string pointer in r0 at 0x08104F3A (r5 > 9 → 0). `tools/debug/quotecycle.lua` hooks it for text
 coverage. The tech-quote tables 0x408258.. are reached through a per-shikigami table at 0x40A620 (85 u32: mostly
-0x08408B74), whose reader is not found yet (no literal load).
+0x08408B74), whose reader is not found yet (no literal load). Session 24: indexed by shikigami id (entry 15 =
+Kogenta → 0x409C20, 14 → 0x4093B0, 1 → 0x408258, 73 → 0x40A518, the rest → the default 0x408B74); each sub-table
+holds ~84 string pointers. A read watch over 0x08408258..0x0840A76F saw **no** read in battle_win, the tutorial
+battle, the battle wheel + L seal panel, or a battle with every unlock bit set (work/qa/tqw, work/qa/tq). The lines
+describe technique effects ("Weapon summon!", "Shift the field to raise our Attack"), so they likely belong to a
+technique/seal menu not reached yet. The only code literals near it are 0x0840A748 and 0x0840A844 (u16 pair tables
+next to the map menu's area lookup 0x080163E6: area = u16 [r8 + 4 * [r7]]; which table is r8 is unchecked), not
+the quote tables.
+**Area names** (str_areas): the map menu draws the current area's name once per opening, `bl 0x080144F4` at
+0x080163F6 with r0 = word [0x0840B334 + 4 * area]; `tools/debug/areacycle.lua` substitutes each name there.
 
 **Not text:** 0x128F50..0x128F64 is a u16 LE table of fullwidth digit codes ０..９ (number drawing) that scans as text.
 Code literal-pool pointers are plain u32 words: repoint them by exact location, never by a ROM-wide value match.
