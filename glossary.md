@@ -175,4 +175,11 @@ Other shikigami and NPC names: Hepburn without macrons, as in `script/str_shikig
   row 2 (`\n`); 地下ＮＦ -> (BNF); かみかくし -> spirited away; マホロバ封印 -> "Mahoroba... SEAL!"; Kyoto maiko
   (～やっこ, どす) -> polite "dear"; ヒロシです -> "It's Hiroshi..." (comedian gag); おねえさん tag -> "Lady".
   Hiroko reveals she belongs to a third power (neither Tenryu nor Chiryu: the Jinryu).
+- b029-b033 (shikigami battle quotes 03-08): named weapons/skills (str_skills, b037 must match): ラ・マルセイエーズ
+  La Marseillaise, 雷鳴王 Thunder King, 稲妻王 Lightning King, 西海道虎鉄 Saikaido Kotetsu, 紅星 Crimson Star, 瑠璃蓮華
+  Lapis Lotus, 我妻誉 Agatsuma Homare, 虎の巻 Tiger Scroll; 錫杖 monk's staff, 念珠 prayer beads, 小槌 little mallet,
+  鎌 sickle, ボーガン crossbow. Voices: でちゅ baby-talk genius = z for s ("iz", "brainz"); せっちゃ knight = th-lisp
+  ("thith one", "ith"); あちき = "hon"; Yo!/Hey! DJ = "the great me"; あっし = "boss"/"ya"; のぅ old man = "eh";
+  どす = "dear"; っしょ = "y'know"; ごわす = "lad", "I will"; ぞよ = ", I say"; である = "so it is"; であります
+  soldier = "sir!". ♪ and ～ dropped.
 - Puns: 誇り/埃 (pride/dust) -> "pride" / lion pride; 鯛/恋 quiz kept as "koi"... love (polish candidate).

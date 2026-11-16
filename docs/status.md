@@ -2,9 +2,10 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 6. Translate in progress: batches b001-b028 of 41 translated. Merged: all event scripts, str_abilities,
-  str_intro, str_menus, str_menus2, str_name_entry, str_quotes01/02, str_areas, str_battle_msgs, str_char_names,
-  str_credits. str_quotes03 waits for b029. Last build 2026-11-16 (session 12): `build.py` sha1 e53aab07…, smoke ok, check ok.
+- **Phase:** 6. Translate in progress: batches b001-b033 of 41 translated. Merged: all event scripts, str_abilities,
+  str_intro, str_menus, str_menus2, str_name_entry, str_quotes01-07, str_areas, str_battle_msgs, str_char_names,
+  str_credits. str_quotes08 waits for b034. Last build 2026-11-16 (session 13): `build.py` sha1 ef660eb1…, smoke ok,
+  check ok.
 - **Done:**
   - Step 0: ROM pinned (`rom.sha1`), MesenCE 2.2.1 + GBA BIOS in `tools/mesen/`, guard hook in `.claude/settings.json`
     (canary blocked), pre-commit runs `tools/check.py` (a failing test was rejected), boot route `tools/routes/boot.txt`
@@ -114,12 +115,13 @@ Updated at the end of every session. Keep it to what the next session needs; his
   - Phase 6 session 13 (2026-11-16): speaker plate widened by engine (`vwf.plate_frame`: BG frame 6 → 8 columns
     with a banded fill, text OBJ 40 → 64 px, cap 56 px, centred on x 40; docs/re/font.md "Speaker plate widened",
     shots work/qa/plt/plates.png); b023-b026 merged (all of str_areas, str_battle_msgs, str_char_names,
-    str_credits).
-- **Next (phase 6, translate; `references/translation.md`):** after the plate, translate `tl/b029.tsv` onward in order (read each
+    str_credits). b029-b033 translated (shikigami battle quotes 03-08; weapon/skill names and quote voices in
+    glossary "b029-b033"); quotes03-07 merged. New probes `tools/debug/bgdump.lua`, `valwatch.lua`.
+- **Next (phase 6, translate; `references/translation.md`):** translate `tl/b034.tsv` onward in order (read each
   with Read in ~40-line chunks: context-mode cuts larger outputs), write `tl/bNNN.out.tsv`, `batches.py check bNNN`
   to OK, then merge together with the batch that holds the rest of a file (`batches.py merge b009 b010 ...`: a
-  merge of one batch alone holds files split across batches; next merge: `batches.py merge b028 b029 ...` (str_quotes03); the remaining batches are all table strings
-  (quotes03-09, techniques, skills, weapons, system, shikigami names/kinds: check `tbl/windows.json` px per file); the check flags a `{010}` typo as unencodable), `tools/check.py`, build, smoke, commit. No translator
+  merge of one batch alone holds files split across batches; next merge: `batches.py merge b033 b034 ...` (str_quotes08); the remaining batches are all table strings
+  (quotes08-09, techniques, skills (b037: use the glossary "b029-b033" weapon names), skills, weapons, system, shikigami names/kinds: check `tbl/windows.json` px per file); the check flags a `{010}` typo as unencodable), `tools/check.py`, build, smoke, commit. No translator
   agent type is installed in this harness and the Orca brief forbids helpers: the worker translates itself,
   ~5 batches per session. Extend `docs/synopsis.md` as story batches are read. Line budget is generous (VWF: ~4 px
   a char, 224 px ≈ 50 chars), so don't over-shorten. After b041: reviewer pass (fresh read-only pass or
