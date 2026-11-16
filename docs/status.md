@@ -2,9 +2,9 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator in progress (session 28 ended at the context limit after the G11 town signs and
-  the G5 cut-in/banners; string layout is still identical to 8a6054e7 (build/strings.tsv = work/strings_8a6054e7.tsv),
-  so this session's coverage logs count; the visual-QA tour must be re-run on the new build: Next 1-2).
+- **Phase:** 8. QA in the emulator in progress (session 29: visual-QA gate, inkbox and graphics rows done; only the
+  text-coverage gate is left (306 failing): Next 0. String layout still identical to 8a6054e7 (build/strings.tsv =
+  work/strings_8a6054e7.tsv), so every coverage log under work/qa/cover counts).
 - **Done:**
   - Step 0: ROM pinned (`rom.sha1`), MesenCE 2.2.1 + GBA BIOS in `tools/mesen/`, guard hook in `.claude/settings.json`
     (canary blocked), pre-commit runs `tools/check.py` (a failing test was rejected), boot route `tools/routes/boot.txt`
@@ -262,15 +262,28 @@ Updated at the end of every session. Keep it to what the next session needs; his
     (`tools/cutin.py`: rotated English per name, own cells; shot work/qa/g5/seal_en2/f004780.png). Gotchas in
     docs/re/font.md (cut-in attribute list) and docs/re/graphics.md (G5, G11 rows). Signs and cut-in install
     after the strings (cutin.install_names takes the old JP copy's slot, same size): string addresses unchanged.
+  - Session 29 (phase 8): **visual-QA gate passes** on build 024ba050: tour14 (work/qa/cover/tour14, 56/56, states
+    tour14/st, with the textcover probe) + s28d (battle help rows re-shot), s26i, g11s (signs), g5s (cut-in): fresh
+    manifest work/qa/manifest.tsv (old: work/qa/old28/), codex vqa 79 ok / 2 issue → fixed or judged: the florist sign
+    花 "FLOW/ERS" split is now a **tulip pictogram** (`signs.flower`, verified in VRAM after a cold warp to map 65,
+    work/qa/g11c); "special," alone = mid-typing frame (verdict written in the main thread, chunk_r1.tsv); DVD/VEG
+    added to docs/visual-qa-brief.md non-bugs. `qa_gate.py check` → 81 sheets, 0 not ok. **G7** = English link debug
+    screen "Ms.RecvSuccessFlags", **G8** = effect animation + HUD digits (no text); **banners 35..38** not read in
+    9,600 frames of walking on 4 maps (no random encounters: link-only, static renders): docs/re/graphics.md.
+    **Centring** (new `tools/debug/inkspan.py`, for boxes on striped art where inkbox's background guess fails):
+    title menu 6/7, 8/9, 18/18 (JP 7/7, 7/7, 11/10); Save header 49/51, Load 51/50 (JP 33/38); dialogue speaker plate
+    15/16; battle tag "Kogenta" 11/14 = the original's placement ((10 − r)·2 formula gives コゲンタ the same x);
+    Yes/No checked session 20; field ring labels are alpha-blended on striped art (vqa ok). New
+    `tools/debug/cover_extra.py` re-runs credits, key items, misc, seal2, wheelhelp, viewfoe_0x4C/0x4B (all done
+    this session from tour13/st states). quotejobs done (8 jobs, all ok).
 - **Next (phase 8: QA in the emulator; done-when in the skill's table):**
-  0. Session 28 leftovers: G8 brush lettering (raw 0x310000.., sheets 291-292: low confidence, check with
-     `tools/debug/gfxreads.lua --var LO=0x08310000 --var HI=0x08318400` in a battle with a special/Drive) and G7
-     (lz 0x6884F8 outlined hiragana strip): find a reader or record them as unused. The battle banners 35..38 had
-     no reader in story battles: try a random encounter (field_walk + walking) for 先制, else note link-only.
-     Coverage runners still to re-run on the current layout (cover.py run, shiki, areas are done this session):
-     labeljobs, talkjobs, msgjobs, quotejobs, credits, key items, cover_misc.txt, seal2, wheelhelp, viewfoe_0x4C/0x4B
-     (recipes in the session-26 entry), then `cover.py report` exit 0.
-  1. **Visual-QA gate on the current build**: tour14 (tour13 ran before the sign/cut-in changes) =
+  0. **Text coverage gate (the last phase-8 item)**: `cover.py report` = 306 failing. labeljobs was stopped
+     part-way (Claude Code killed the run for low system memory: use `--jobs 4`, not 10, and don't run tours beside
+     it); talkjobs and msgjobs never ran. The runners read **work/qa/cover/report.txt**, which `cover.py report`
+     does NOT write itself: run `python -X utf8 tools/debug/cover.py report > work/qa/cover/report.txt` before each
+     of `labeljobs.py --jobs 4`, `talkjobs.py --jobs 4`, `msgjobs.py --jobs 4`, then the report once more: exit 0 →
+     phase 8 done (set Phase to 9).
+  1. (done session 29, kept for the recipe) **Visual-QA gate on the current build**: tour14 =
      `warp_all.py build/onmyou_zeroshiki_en.gba --out
      work/qa/cover/tour14 --states work/qa/cover/tour14/st --probe <skill>/scripts/lua/probes/textcover.lua --var
      "RANGES='<cover.py ranges>'" --seq 90 --hold 1500 --jobs 4` (background, ~1 h). Then move work/qa/manifest.tsv +
@@ -284,10 +297,9 @@ Updated at the end of every session. Keep it to what the next session needs; his
      --out-dir work/qa/chunks28`, `tools/vqa.py work/qa/chunks28/chunk_*.txt --jp work/qa/tour_jp --jobs 3`
      (background), fix issues, `check work/qa/manifest.tsv work/qa/verdicts --build build/onmyou_zeroshiki_en.gba`
      exit 0.
-  2. **Text coverage on the 8a6054e7 layout** (unchanged since): done this session: `cover.py run`, shikijobs ±
-     --unlock, areajobs, tour13 (all in work/qa/cover). Still to run: labeljobs, talkjobs, msgjobs, quotejobs,
-     credits, key items, cover_misc.txt, seal2, wheelhelp, viewfoe_0x4C/0x4B, then `cover.py report` exit 0
-     (str_battle_kanji is already waived as data keys). Keep a copy of
+  2. **Text coverage on the 8a6054e7 layout** (unchanged since): done: `cover.py run`, shikijobs ± --unlock,
+     areajobs, tour13 + tour14, quotejobs, cover_extra.py (credits, key items, misc, seal2, wheelhelp, viewfoe).
+     Left: Next 0 (str_battle_kanji is already waived as data keys). Keep a copy of
      build/strings.tsv per build (work/strings_<sha8>.tsv) for `moved_scenes.py` after the next rebuild.
      Session-24 runners, all under work/qa/cover/ so the report counts
      them (re-run them after any rebuild, since strings.tsv addresses change):
@@ -298,8 +310,8 @@ Updated at the end of every session. Keep it to what the next session needs; his
      SCRIPT LABEL` jump to the label before each unseen script line; 271/273 reached, lab_1162_10 and lab_1712_1 not).
      Session 25 runners: `talkjobs.py`, `msgjobs.py [--ids ..] [--tag t]`, key items. Session 26: cover_misc.txt,
      the seal / wheelhelp / viewfoe emu.py runs (see Done).
-  3. The rest of the done-when: graphics rows left (docs/re/graphics.md): G3, G6, G12 checked (session 26); G5, G11
-  done (session 28); still open: G8 brush lettering, G7 hiragana strip (Next 0). Chapter openings show area names as font text (no card art
+  3. The rest of the done-when: graphics rows all closed (G3, G6, G12 session 26; G5, G11 session 28; G7, G8
+  session 29). inkbox: done session 29 (see Done); the rest of this item is older notes. Chapter openings show area names as font text (no card art
   found); credits are font text (credits sheet ok). **inkbox.py**: only the Yes/No buttons were checked (session
   20); run `<skill>/scripts/inkbox.py` on every choice box and centred menu box in tour11's shots (Yes/No, title
   menu, Save/Load headers, ring labels, speaker plate, battle tag) and record the results.
