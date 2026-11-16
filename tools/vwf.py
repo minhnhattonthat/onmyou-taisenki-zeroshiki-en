@@ -1323,7 +1323,24 @@ def install(img, write):
     write(0x10F98A, bl(0x0810F98A, 0x08111B60), "vwf tag centring: pixel width")
     write(0x111B70, thunk(0x111B70, tfill), "vwf fill7 thunk (in the replaced routine's body)")
     tag_tiles(orig, write, tfill)
+    save_headers(orig, write)
     return far
+
+
+# Save / Load screen headers (str_save 127968 記録, 127970 読込み): one 16x16 OBJ per JP char, spaced 36 px apart
+# (x = base + i*9*4), so a VWF line running across the cells showed as "Loa   d". Step 16 px instead (x = base +
+# i*4*4), re-centred on the same middle. (offset of `lsls r0, r7, #3; adds r0, r0, r7`, offset of `movs rX, #base*2`,
+# its original halfword, new base*2)
+HEADERS = [(0x130EE, 0x130F4, 0x23C8, 0xDC, "Save header (2 cells, x 92/128 -> 102/118)"),
+           (0x13176, 0x1317C, 0x21A8, 0xD0, "Load header (3 cells, x 76/112/148 -> 96/112/128)")]
+
+
+def save_headers(orig, write):
+    for mul, base, hw, new, why in HEADERS:
+        assert orig[mul:mul + 4] == bytes.fromhex("f800c019"), f"vwf: header x step moved at {mul:06X}"
+        assert struct.unpack_from("<H", orig, base)[0] == hw, f"vwf: header base moved at {base:06X}"
+        write(mul, bytes.fromhex("b800001c"), f"vwf {why}: x step 36 -> 16")  # lsls r0, r7, #2; adds r0, r0, #0
+        write(base, struct.pack("<H", (hw & 0xFF00) | new), f"vwf {why}: base x")
 
 
 def small_glyph_offset(rom, code):

@@ -7,6 +7,7 @@ local M = emu.memType.gbaMemory
 local TILE = tonumber(rawget(_G, "TILE") or 0x3DB)
 local N = tonumber(rawget(_G, "N") or 3)
 local DELAY = tonumber(rawget(_G, "DELAY") or 120)
+local AT = tonumber(rawget(_G, "AT") or nil)  -- --var AT=1400: dump from that frame on, whatever tiles are shown
 local DIMS = { [0] = { {8, 8}, {16, 16}, {32, 32}, {64, 64} }, { {16, 8}, {32, 8}, {32, 16}, {64, 32} },
   { {8, 16}, {8, 32}, {16, 32}, {32, 64} } }
 local done, last = 0, -100000
@@ -14,7 +15,7 @@ local frame = 0
 L.on_frame(function()
   frame = frame + 1
   if done >= N or frame - last < DELAY then return end
-  local hit = false
+  local hit = AT ~= nil and frame >= AT
   for i = 0, 127 do
     local a = 0x07000000 + i * 8
     if (emu.read16(a, M) & 0x300) ~= 0x200 and (emu.read16(a + 4, M) & 0x3FF) == TILE then hit = true end

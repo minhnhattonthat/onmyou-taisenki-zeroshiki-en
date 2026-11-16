@@ -27,6 +27,10 @@
 01ED64-01ED83   # code: speaker plate loop 0x0801EC54 -> plate (pixel centring); dead=01ED64-01EE29 (the replaced 5-tile loop: its back-edge 0x0801EE28) dead=01ECE6-01ECFF (literal pool after `b 0x0801EE74`, decodes as a branch)
 0235D4-0235E3   # code: strip thunk: intro scroll
 023E3C-023E4B   # code: strip thunk: credits
+0130EE-0130F1   # Save header OBJ x step 36 -> 16 (vwf.save_headers)
+0130F4-0130F5   # Save header base x
+013176-013179   # Load header OBJ x step 36 -> 16
+01317C-01317D   # Load header base x
 02DD36-02DD37   # newline index
 03A0A4-03A0B3   # code: smapline thunk: name-entry small label
 03A168-03A187   # code: map-line 0x0803A168 strip thunk + gridline thunk in its body
