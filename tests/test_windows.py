@@ -67,6 +67,12 @@ def test_lint_catches_dropped_blanks():
     assert lint.lint({"str_credits": [t]})
 
 
+def test_bracketed_word_is_text_not_a_code():
+    # "[Weak]" was taken for a [XXXX] token and written as raw ASCII (the affinity page showed nothing)
+    assert enfont.encode_en("[Weak]") == enfont.encode_en("[") + enfont.encode_en("Weak") + enfont.encode_en("]")
+    assert enfont.encode_en("{0010}[81AD]") == "{0010}[81AD]"
+
+
 def test_fill_exact():
     for px in (40, 160, 220, 224):
         assert enfont.text_width(windows.fill_exact(px, "big", "[A]")) == px

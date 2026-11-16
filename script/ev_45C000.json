@@ -13,7 +13,7 @@
    "script": "45C830",
    "op": "073 0001",
    "jp": "くそおお{0000}さっきまで、苦しんでいた{0010}仲間たちが、石のように{0000}なってしまった{0010}もう、この村はおしまいだ！{0010}",
-   "en": "Damn it!{0000}My friends who were suffering{0010}just a moment ago have{0000}turned to stone!{0010}This village is finished!{0010}"
+   "en": "Damn it!{0000}A moment ago my friends were suffering...{0010}and now they've all{0000}turned to stone!{0010}This village is finished!{0010}"
   },
   {
    "id": "45C912",

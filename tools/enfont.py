@@ -158,7 +158,9 @@ def encode_en(s, string_table=False):
     control codes kept. "\\n" = `{0000}` in scripts, the VWF newline code in string tables."""
     out, i = [], 0
     while i < len(s):
-        if s[i] in "{[" and i + 5 < len(s) and s[i + 5] == "}]"["{[".index(s[i])]:
+        # a token is exactly {XXXX} / [XXXX] with uppercase hex: "[Weak]" is text (it was sent as raw ASCII)
+        if (s[i] in "{[" and i + 5 < len(s) and s[i + 5] == "}]"["{[".index(s[i])]
+                and all(c in "0123456789ABCDEF" for c in s[i + 1:i + 5])):
             out.append(s[i:i + 6])
             i += 6
             continue

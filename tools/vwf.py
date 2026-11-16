@@ -460,8 +460,17 @@ mr_end:
     ldr r3, objvram
     adds r1, r1, r3
     adds r4, r1, #0
+@ centred in its cells (the game centres the label by cell count: "Riku" sat 6 px left in the name plate)
+    bl measure
+    adds r3, r0, #0
+    adds r3, #15
+    lsrs r3, r3, #4
+    lsls r3, r3, #4
+    subs r3, r3, r0
+    lsrs r3, r3, #1
+    mov r0, sp
     movs r2, #0
-    bl line
+    bl linex
     adds r0, #15
     lsrs r0, r0, #4
     adds r5, r0, #0
@@ -1605,16 +1614,26 @@ def plate_names(orig, write):
 # (x = base + i*9*4), so a VWF line running across the cells showed as "Loa   d". Step 16 px instead (x = base +
 # i*4*4), re-centred on the same middle. (offset of `lsls r0, r7, #3; adds r0, r0, r7`, offset of `movs rX, #base*2`,
 # its original halfword, new base*2)
-HEADERS = [(0x130EE, 0x130F4, 0x23C8, 0xDC, "Save header (2 cells, x 92/128 -> 102/118)"),
-           (0x13176, 0x1317C, 0x21A8, 0xD0, "Load header (3 cells, x 76/112/148 -> 96/112/128)")]
+# (x-step multiply, base `movs`, its original halfword, JP header centre x, string id, what). The new base x puts
+# the English word's centre on the JP header's centre (Save: cells 92/128 -> 92..144 = 118; Load: cells 76/112/148
+# -> 76..164 = 120); the old fixed bases (102 / 96) left both words left of centre.
+HEADERS = [(0x130EE, 0x130F4, 0x23C8, 118, "127968", "Save header (2 cells)"),
+           (0x13176, 0x1317C, 0x21A8, 120, "127970", "Load header (3 cells)")]
 
 
 def save_headers(orig, write):
-    for mul, base, hw, new, why in HEADERS:
+    import json
+    entries = json.loads((Path(__file__).resolve().parent.parent / "script" / "str_save.json")
+                         .read_text(encoding="utf-8"))["entries"]
+    en = {e["id"]: e.get("en") or "" for e in entries}
+    for mul, base, hw, centre, sid, why in HEADERS:
         assert orig[mul:mul + 4] == bytes.fromhex("f800c019"), f"vwf: header x step moved at {mul:06X}"
         assert struct.unpack_from("<H", orig, base)[0] == hw, f"vwf: header base moved at {base:06X}"
+        x = centre - enfont.text_width(en[sid]) // 2
+        new = 2 * (x + 8)     # the immediate is 2 * (x + 8): 0xD0 drew the first cell at x 96, 0xDC at 102
+        assert 0 <= new <= 0xFF, f"vwf: {why} base x {x}"
         write(mul, bytes.fromhex("b800001c"), f"vwf {why}: x step 36 -> 16")  # lsls r0, r7, #2; adds r0, r0, #0
-        write(base, struct.pack("<H", (hw & 0xFF00) | new), f"vwf {why}: base x")
+        write(base, struct.pack("<H", (hw & 0xFF00) | new), f"vwf {why}: base x {x}")
 
 
 def small_glyph_offset(rom, code):
