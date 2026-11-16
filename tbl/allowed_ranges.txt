@@ -77,3 +77,7 @@
 110C88-110C97   # code: strip thunk: battle text rows 0x08110C88
 111B50-111BCF   # code: tag thunk 0x08111B50 + tagw + fill7 + pname + ctile + o8 thunks + Swap list tile fn (0x08111BB0) in the replaced body; dead=111B50-111C07 (the replaced routine's own loop)
 120A80-120A83   # battle name tag tile literal (last of the 6)
+224874-224A33   # gfx: title menu button New Game (14 raw tiles, tools/gfx.py)
+224A34-224BF3   # gfx: title menu button Continue
+224BF4-224DB3   # gfx: title menu button Link
+3B4D40-3B520B   # gfx: Yes/No buttons, two LZ77 blocks (No / Yes selected) rewritten in place (tools/gfx.py)

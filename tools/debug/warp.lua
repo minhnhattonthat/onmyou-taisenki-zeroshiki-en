@@ -174,8 +174,10 @@ if TRACE then  -- --var TRACE=1: log every change of top state, mode, opcode and
   end)
 end
 
+local seq = tonumber(SEQ or 0)  -- --var SEQ=N: a shot every N frames from SCENE_OK to the end (QA contact sheets)
 L.on_frame(function(f)
   if finished then return end
+  if seq > 0 and reached_at and (f - reached_at) % seq == 0 then L.shot(string.format("seq_%06d.png", f)) end
   if not reached_at and f > (tonumber(S.opt.deadline) or DEADLINE) then
     L.shot("final.png")
     L.fail("scene " .. S.name .. " not reached by frame " .. f)

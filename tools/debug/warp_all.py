@@ -20,6 +20,12 @@ from skill import SKILL  # noqa: E402
 
 ROM = ROOT / "rom" / "Onmyou Taisenki Zeroshiki (Japan).gba"
 PROBES = []  # extra --script probes (--probe)
+SEQ = [0, 0]  # --seq N, --hold H
+KINDS = {}    # scene name -> kind (script scenes hold 45 frames by default)
+
+
+def kind_of(name):
+    return KINDS.get(name, "")
 
 
 def scenes(path):
@@ -47,9 +53,20 @@ def run(rom, name, opt, out, states):
     mash = opt.get("mash", "40")
     if mash != "0":
         cmd += ["--mash", mash]
+    if SEQ[0]:
+        # longer hold so the sequence covers the scene; the scene's own hold wins when it is longer
+        hold = max(int(opt.get("hold", "600" if kind_of(name) != "script" else "45")), SEQ[1])
+        cmd += ["--var", f"SEQ={SEQ[0]}", "--var", f"HOLD={hold}",
+                "--frames", str(int(opt.get("frames", "20000")) + hold)]
     r = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace")
     log = (d / "log.txt").read_text(encoding="utf-8", errors="replace") if (d / "log.txt").exists() else ""
     ok = r.returncode == 0 and "SCENE_OK" in log and (d / "scene.png").exists()
+    if ok and SEQ[0]:
+        seqs = sorted(str(p) for p in d.glob("seq_*.png"))
+        if seqs:
+            subprocess.run([sys.executable, "-X", "utf8", str(Path(SKILL) / "scripts" / "sheet.py"), *seqs,
+                            "--changed", "0.02", "--div", "1", "--cols", "3", "--out", str(d / "sheet.png")],
+                           check=False, capture_output=True)
     line = next((l for l in log.splitlines() if l.startswith("SCENE_OK")), (r.stdout + r.stderr).strip()[-200:])
     return name, ok, line
 
@@ -62,8 +79,13 @@ def main():
     ap.add_argument("--out", default=str(ROOT / "work" / "qa" / "warp"))
     ap.add_argument("--states", default=str(ROOT / "work" / "states"))
     ap.add_argument("--probe", action="append", default=[], help="extra Lua probe run beside warp.lua (repeatable)")
+    ap.add_argument("--seq", type=int, default=0, help="QA: a shot every N frames after the scene is reached, "
+                    "and <out>/<scene>/sheet.png from them (--changed 0.02)")
+    ap.add_argument("--hold", type=int, default=1500, help="with --seq: frames to keep running after the scene")
     a = ap.parse_args()
     PROBES[:] = a.probe
+    SEQ[:] = [a.seq, a.hold]
+    KINDS.update({n: k for n, k, _ in scenes(ROOT / "tools" / "debug" / "scenes.txt")})
     out, states = Path(a.out), Path(a.states)
     states.mkdir(parents=True, exist_ok=True)
     todo = scenes(ROOT / "tools" / "debug" / "scenes.txt")
