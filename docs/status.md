@@ -2,20 +2,19 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 9. Release in progress (session 32). Build now **3dd8d287** = 17d8c04e + the battle stat-change icons
-  運 妖 攻 防 早 護 redrawn as LUK POW ATK DEF SPD GRD plates (`gfx.stat_icon`, 505 bytes at 0x256A34..0x256EA9,
-  build/strings.tsv byte-identical, so string addresses and every coverage log stay valid; shot
-  work/qa/icon_en/cmp.png). Session 32 done on this text layout: `cover.py run` 315/317 scenes ok, `shikijobs`
-  ok, `shikijobs --unlock` only 54/76 (re-run). Chain script `work/qa/cover/chain32.sh` (J=3 jobs; edit it to start
-  at areajobs: the steps above it are done). It was killed again by Claude Code's low-memory reaper at areajobs
-  (20:38); the session-31 chain had NOT died: its `cover_all.sh` and 2 shikijobs were still running alongside and
-  were killed this session. Another project's emulator runs share this machine's memory. Visual QA: fresh
-  manifest work/qa/manifest.tsv + codex verdicts work/qa/verdicts (chunks31): 90 ok / 12 issue. The 5 frag2
-  issues = the stat icons (fixed above, re-shoot frag2 lab_1068_60 and lab_1360_40 on 3dd8d287). The 7 g11/g5
-  issues are pre-fix investigation sheets that the `*sheet*` glob pulled in: re-init the manifest with work/qa/g11s
-  (signs) and work/qa/g5s (cut-in; re-shot on the new build in work/qa/g5s/run, needs `sheet.py`) instead of
-  work/qa/g11 and work/qa/g5, as session 29 did. Old session-30 manifest moved to work/archive/qa_old30 (release.py
-  globs work/qa/**/manifest.tsv, so a stale one there fails the release).
+- **Phase:** 9. Release done (session 33): v1.0 built and verified by `tools/release.py` on build **3dd8d287**
+  (every gate passed: build, check, smoke, jp_left, both qa_gate manifests, coverage, polish, README, no debug code,
+  patch re-applied) → `release/Onmyou_Taisenki_Zeroshiki_EN_v1.0.zip` (230,218 bytes: the .bps, sha1 8949813d…,
+  + README.txt with the hashes). Publishing (`gh release create`) is the owner's call; nothing is left before it.
+  Session 33: coverage chain `work/qa/cover/chain33.sh` (J=2, log chain33.log) ran shikijobs --unlock (76/76),
+  areajobs, quotejobs, cover_extra, labeljobs (273/274; lab_1712_1 never reached, as before), talkjobs (55/55),
+  msgjobs, quotejobs --missing → `cover.py report` 4562/5185 shown, 623 waived, **0 failing**. Gotcha: quotejobs
+  `--jobs N` is also the split, so `--jobs 2` gives 790 quotes per job and both hit the 3000 s timeout at ~750;
+  the `--missing` pass picked up the 118 left. Visual QA: frag2 re-shot on 3dd8d287 (ATK/DEF plates visible),
+  manifest re-inited with g11s/g5s (+ g5s/run sheet) instead of g11/g5 (old manifest:
+  work/archive/manifest_s32.tsv), codex vqa: 97/97 ok. Fixed `tools/vqa.py`: verdict files are now
+  `<chunk dir>_<chunk>.tsv`; before, a new todo round's chunk_000.. overwrote the older round's verdicts.
+  The stat-icon build (3dd8d287): 運 妖 攻 防 早 護 drawn as LUK POW ATK DEF SPD GRD plates (`gfx.stat_icon`).
 - **Done:**
   - Step 0: ROM pinned (`rom.sha1`), MesenCE 2.2.1 + GBA BIOS in `tools/mesen/`, guard hook in `.claude/settings.json`
     (canary blocked), pre-commit runs `tools/check.py` (a failing test was rejected), boot route `tools/routes/boot.txt`
@@ -310,8 +309,10 @@ Updated at the end of every session. Keep it to what the next session needs; his
     work/qa/cover/tour15), `cover.py scenes` + `run`, shikijobs ± --unlock, areajobs, quotejobs, `cover_extra.py
     --states work/qa/cover/tour15/st`, then labeljobs, talkjobs, msgjobs, `quotejobs --missing`, each after a
     `cover.py report > work/qa/cover/report.txt`.
-- **Next (phase 9: Release; done-when in the skill's table):**
-  00. Session-31 resume list (build 17d8c04e; rebuild first and confirm the same sha1, text is final):
+- **Next:** nothing before publishing; the owner decides on `gh release create` (zip in release/, gitignored).
+  After any later text or engine change, rebuild and redo the recipe below, then `tools/release.py --force`.
+  Older notes (all done, kept for the recipe):
+  00. Session-31 resume list (done session 33):
      a. coverage: `cover.py run --jobs 2`, shikijobs ± --unlock, areajobs, quotejobs, `cover_extra.py --states
         work/qa/cover/tour15/st`, then labeljobs, talkjobs, msgjobs, `quotejobs --missing` with `cover.py report >
         work/qa/cover/report.txt` before each; `cover.py report` must end at 0 failing.
