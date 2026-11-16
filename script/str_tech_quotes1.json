@@ -4,420 +4,420 @@
   {
    "id": "4083A8",
    "jp": "この技が戦況を優位にするぞ",
-   "en": "",
+   "en": "This move will turn the\nbattle in our favor!",
    "max": 28,
    "ptrs": 2
   },
   {
    "id": "4083C4",
    "jp": "技発動！戦況が有利なるぞ！",
-   "en": "",
+   "en": "Move activated! The tide\nturns our way!",
    "max": 28,
    "ptrs": 2
   },
   {
    "id": "4083E0",
    "jp": "今こそ敵全体に連携攻撃だ！",
-   "en": "",
+   "en": "Now, a combo attack\non all enemies!",
    "max": 28,
    "ptrs": 2
   },
   {
    "id": "4083FC",
    "jp": "連携攻撃で、敵全体に攻撃だ",
-   "en": "",
+   "en": "A combo attack on\nall the enemies!",
    "max": 28,
    "ptrs": 2
   },
   {
    "id": "408418",
    "jp": "武器に込めた怒り、味わえ！",
-   "en": "",
+   "en": "Taste the wrath\nI've poured into my weapon!",
    "max": 28,
    "ptrs": 2
   },
   {
    "id": "408434",
    "jp": "武器召喚！この攻撃を食らえ！",
-   "en": "",
+   "en": "Weapon summon!\nTake this attack!",
    "max": 32,
    "ptrs": 2
   },
   {
    "id": "408454",
    "jp": "われと控えの式神と交代せよ！",
-   "en": "",
+   "en": "Swap me with a\nreserve shikigami!",
    "max": 32,
    "ptrs": 3
   },
   {
    "id": "408474",
    "jp": "われと控えの式神を交代せよ！",
-   "en": "",
+   "en": "Swap me out for a\nreserve shikigami!",
    "max": 32
   },
   {
    "id": "408494",
    "jp": "空間変化で攻撃力上昇を狙え",
-   "en": "",
+   "en": "Shift the field to\nraise our Attack!",
    "max": 28,
    "ptrs": 4
   },
   {
    "id": "4084B0",
    "jp": "苦しいが、弱音ははけぬ",
-   "en": "",
+   "en": "It's hard, but\nI won't complain.",
    "max": 24
   },
   {
    "id": "4084C8",
    "jp": "敵と刺し違えても負けぬ！",
-   "en": "",
+   "en": "Even if I fall with the foe,\nI won't lose!",
    "max": 28
   },
   {
    "id": "4084E4",
    "jp": "体力の限界まで戦ってやろう",
-   "en": "",
+   "en": "I shall fight to the limit\nof my strength.",
    "max": 28
   },
   {
    "id": "408500",
    "jp": "われは最後まであきらめないぞ",
-   "en": "",
+   "en": "I shall never give up,\nnot until the very end.",
    "max": 32
   },
   {
    "id": "408520",
    "jp": "指示の適確さが勝敗に関わるぞ",
-   "en": "",
+   "en": "Precise orders decide\nwhether we win or lose.",
    "max": 32
   },
   {
    "id": "408540",
    "jp": "体力が少ない。慎重に動こう",
-   "en": "",
+   "en": "My HP is low.\nLet us move with care.",
    "max": 28
   },
   {
    "id": "40855C",
    "jp": "体力は少ないが、大丈夫だ",
-   "en": "",
+   "en": "My HP is low, but I am fine.",
    "max": 28
   },
   {
    "id": "408578",
    "jp": "体力は減ったが、まだ戦える",
-   "en": "",
+   "en": "My HP has dropped,\nbut I can still fight.",
    "max": 28
   },
   {
    "id": "408594",
    "jp": "体力はある！指示を出すのだ",
-   "en": "",
+   "en": "I have HP to spare!\nGive your orders!",
    "max": 28
   },
   {
    "id": "4085B0",
    "jp": "体力はある。今は攻めるのみ！",
-   "en": "",
+   "en": "I have HP to spare.\nNow we attack, nothing else!",
    "max": 32
   },
   {
    "id": "4085D0",
    "jp": "体力はまだある。ＳＰを溜めよ",
-   "en": "",
+   "en": "I still have HP.\nBuild up your SP.",
    "max": 32
   },
   {
    "id": "4085F0",
    "jp": "体力のことなら心配無用だ",
-   "en": "",
+   "en": "Have no fear for my HP.",
    "max": 28
   },
   {
    "id": "40860C",
    "jp": "敵の力が上昇している",
-   "en": "",
+   "en": "The enemy's power is rising.",
    "max": 24
   },
   {
    "id": "408624",
    "jp": "わが属性は火！変えてほしい",
-   "en": "",
+   "en": "My element is Fire!\nI would have it changed.",
    "max": 28
   },
   {
    "id": "408640",
    "jp": "空間が敵が有利だ。対応たのむ",
-   "en": "",
+   "en": "The field favors the enemy.\nDeal with it, I ask you.",
    "max": 32,
    "ptrs": 2
   },
   {
    "id": "408660",
    "jp": "空間を別の属性に変えるのだ！",
-   "en": "",
+   "en": "Change the field to\nanother element!",
    "max": 32
   },
   {
    "id": "408680",
    "jp": "上昇した雷火の力を見よ！",
-   "en": "",
+   "en": "Behold my risen\npower of Thunderfire!",
    "max": 28
   },
   {
    "id": "40869C",
    "jp": "上昇した我が力、無敵なり",
-   "en": "",
+   "en": "My risen power is invincible.",
    "max": 28
   },
   {
    "id": "4086B8",
    "jp": "この火こそわが力の源",
-   "en": "",
+   "en": "This fire is the source\nof my power.",
    "max": 24
   },
   {
    "id": "4086D0",
    "jp": "よし！火の力はわれに有利だ",
-   "en": "",
+   "en": "Good! The power of Fire\nis in my favor!",
    "max": 28
   },
   {
    "id": "4086EC",
    "jp": "雷火の名に恥じぬ戦いをしよう",
-   "en": "",
+   "en": "Let us fight in a manner worthy\nof the name Thunderfire.",
    "max": 32
   },
   {
    "id": "40870C",
    "jp": "われは決してあきらめぬ",
-   "en": "",
+   "en": "I shall never give up.",
    "max": 24
   },
   {
    "id": "408724",
    "jp": "あきらめるな！希望はまだある",
-   "en": "",
+   "en": "Do not give up!\nThere is still hope!",
    "max": 32
   },
   {
    "id": "408744",
    "jp": "この翼折れるまで戦ってみせる",
-   "en": "",
+   "en": "I shall fight until\nthese wings break.",
    "max": 32
   },
   {
    "id": "408764",
    "jp": "控えと交替することはできるか",
-   "en": "",
+   "en": "Can I swap with\nmy reserve?",
    "max": 32
   },
   {
    "id": "408784",
    "jp": "入れ替えで翼を休ませたい",
-   "en": "",
+   "en": "I wish to swap out\nand rest my wings.",
    "max": 28
   },
   {
    "id": "4087A0",
    "jp": "入れ替えで体力の回復が必要だ",
-   "en": "",
+   "en": "I need to swap out\nand recover my HP.",
    "max": 32
   },
   {
    "id": "4087C0",
    "jp": "ここは一度退いたほうがいいな",
-   "en": "",
+   "en": "Best to fall back\nfor now, I think.",
    "max": 32
   },
   {
    "id": "4087E0",
    "jp": "さあっ今こそ指示を頼む！",
-   "en": "",
+   "en": "Now, give me\nyour orders!",
    "max": 28
   },
   {
    "id": "4087FC",
    "jp": "今だ！連携攻撃でとどめを指せ",
-   "en": "",
+   "en": "Now! Finish them\nwith a combo attack!",
    "max": 32
   },
   {
    "id": "40881C",
    "jp": "今だ！この機を逃すな！",
-   "en": "",
+   "en": "Now! Do not let\nthis chance slip!",
    "max": 24
   },
   {
    "id": "408834",
    "jp": "今だ！わが技でとどめを指せ！",
-   "en": "",
+   "en": "Now! Finish them\nwith my move!",
    "max": 32
   },
   {
    "id": "408854",
    "jp": "１分たった！本気を出すぞ！",
-   "en": "",
+   "en": "One minute is up!\nI fight in earnest now!",
    "max": 28
   },
   {
    "id": "408870",
    "jp": "１分たった！火の属性にせよ！",
-   "en": "",
+   "en": "One minute is up!\nMake the field Fire!",
    "max": 32
   },
   {
    "id": "408890",
    "jp": "１分たった！連携攻撃を狙え！",
-   "en": "",
+   "en": "One minute is up!\nGo for a combo attack!",
    "max": 32
   },
   {
    "id": "4088B0",
    "jp": "１分たった！決着をつけよう！",
-   "en": "",
+   "en": "One minute is up!\nLet us settle this!",
    "max": 32
   },
   {
    "id": "4088D0",
    "jp": "連携攻撃で敵を追いつめるのだ",
-   "en": "",
+   "en": "Corner the enemy\nwith a combo attack.",
    "max": 32
   },
   {
    "id": "4088F0",
    "jp": "わが武器は手槍で攻撃する",
-   "en": "",
+   "en": "My weapon is a hand spear.",
    "max": 28
   },
   {
    "id": "40890C",
    "jp": "わが技は敵に雷を落とす！",
-   "en": "",
+   "en": "My move calls lightning\ndown upon the foe!",
    "max": 28
   },
   {
    "id": "408928",
    "jp": "火の属性で攻撃力が上がるぞ",
-   "en": "",
+   "en": "A Fire field raises\nmy Attack!",
    "max": 28
   },
   {
    "id": "408944",
    "jp": "相殺で行動を封じられたぞ",
-   "en": "",
+   "en": "The clash has sealed\nmy action!",
    "max": 28,
    "ptrs": 4
   },
   {
    "id": "408960",
    "jp": "相殺で敵の攻撃を封じたぞ",
-   "en": "",
+   "en": "The clash has sealed\nthe enemy's attack!",
    "max": 28
   },
   {
    "id": "40897C",
    "jp": "相殺で敵の行動を封じたぞ",
-   "en": "",
+   "en": "The clash has sealed\nthe enemy's action!",
    "max": 28,
    "ptrs": 3
   },
   {
    "id": "408998",
    "jp": "われにお任せあれ！",
-   "en": "",
+   "en": "Leave it to me!",
    "max": 20
   },
   {
    "id": "4089AC",
    "jp": "わが力を使う時がやってきたか",
-   "en": "",
+   "en": "Has the time come to\nuse my power?",
    "max": 32
   },
   {
    "id": "4089CC",
    "jp": "この戦いで勝利をもたらせよう",
-   "en": "",
+   "en": "I shall bring victory\nin this battle.",
    "max": 32
   },
   {
    "id": "4089EC",
    "jp": "ついにわが出番がやってきたか",
-   "en": "",
+   "en": "At last, my turn has come.",
    "max": 32
   },
   {
    "id": "408A0C",
    "jp": "われを召喚したことに感謝する",
-   "en": "",
+   "en": "I am grateful that\nyou summoned me.",
    "max": 32
   },
   {
    "id": "408A2C",
    "jp": "この翼折れるまで戦ってやろう",
-   "en": "",
+   "en": "I shall fight until\nthese wings break.",
    "max": 32
   },
   {
    "id": "408A4C",
    "jp": "われは天の雷火　いざ勝負",
-   "en": "",
+   "en": "I am the Thunderfire of Heaven.\nHave at thee!",
    "max": 28
   },
   {
    "id": "408A68",
    "jp": "召喚されたからには　必ず勝つ",
-   "en": "",
+   "en": "Now that I am summoned,\nI will surely win.",
    "max": 32
   },
   {
    "id": "408A88",
    "jp": "われらの連携　驚いたか？",
-   "en": "",
+   "en": "Did our combo attack\nsurprise you?",
    "max": 28
   },
   {
    "id": "408AA4",
    "jp": "われらの連携にひるんだか？",
-   "en": "",
+   "en": "Did our combo attack\nmake you flinch?",
    "max": 28
   },
   {
    "id": "408AC0",
    "jp": "われらの連携は無敵なり！！",
-   "en": "",
+   "en": "Our combo attack\nis invincible!!",
    "max": 28
   },
   {
    "id": "408ADC",
    "jp": "われらの連携　思い知ったか！",
-   "en": "",
+   "en": "Now you know the power\nof our combo attack!",
    "max": 32
   },
   {
    "id": "408AFC",
    "jp": "わが技で地獄に落ちよ！",
-   "en": "",
+   "en": "Fall to Hell by my move!",
    "max": 24
   },
   {
    "id": "408B14",
    "jp": "天地の怒り　その身に受けよ！",
-   "en": "",
+   "en": "Receive the wrath of\nHeaven and Earth!",
    "max": 32
   },
   {
    "id": "408B34",
    "jp": "わが雷火の技にひれ伏すがよい",
-   "en": "",
+   "en": "Bow down before my\nThunderfire move!",
    "max": 32
   },
   {
    "id": "408B54",
    "jp": "わが雷火の技　とくと味わえ！",
-   "en": "",
+   "en": "Savor my Thunderfire move!",
    "max": 29
   }
  ]

@@ -12,442 +12,442 @@
   {
    "id": "12B648",
    "jp": "二握槌",
-   "en": "",
+   "en": "Twin-Grip Hammer",
    "max": 8
   },
   {
    "id": "12B650",
    "jp": "天斬と地斬",
-   "en": "",
+   "en": "Heaven Cleaver & Earth Cleaver",
    "max": 12
   },
   {
    "id": "12B65C",
    "jp": "九品断",
-   "en": "",
+   "en": "Ninefold Cleaver",
    "max": 8
   },
   {
    "id": "12B664",
    "jp": "物部",
-   "en": "",
+   "en": "Mononobe",
    "max": 8
   },
   {
    "id": "12B66C",
    "jp": "万春楽",
-   "en": "",
+   "en": "Ten Thousand Springs",
    "max": 8
   },
   {
    "id": "12B674",
    "jp": "大喰",
-   "en": "",
+   "en": "Great Devourer",
    "max": 8
   },
   {
    "id": "12B67C",
    "jp": "百代貴",
-   "en": "",
+   "en": "Noble of a Hundred Ages",
    "max": 8
   },
   {
    "id": "12B684",
    "jp": "涙乾",
-   "en": "",
+   "en": "Tear Dryer",
    "max": 8
   },
   {
    "id": "12B68C",
    "jp": "北斗渡",
-   "en": "",
+   "en": "Big Dipper Crossing",
    "max": 8
   },
   {
    "id": "12B694",
    "jp": "破羅夷狙",
-   "en": "",
+   "en": "Paraiso",
    "max": 12
   },
   {
    "id": "12B6A0",
    "jp": "痛点角",
-   "en": "",
+   "en": "Pressure-Point Horn",
    "max": 8
   },
   {
    "id": "12B6A8",
    "jp": "締張弦",
-   "en": "",
+   "en": "Taut Bowstring",
    "max": 8
   },
   {
    "id": "12B6B0",
    "jp": "霊葛",
-   "en": "",
+   "en": "Spirit Kudzu",
    "max": 8
   },
   {
    "id": "12B6B8",
    "jp": "射干玉",
-   "en": "",
+   "en": "Nubatama",
    "max": 8
   },
   {
    "id": "12B6C0",
    "jp": "烈火Н",
-   "en": "",
+   "en": "Blazing Flight",
    "max": 8,
    "notes": "gaiji Н=翔"
   },
   {
    "id": "12B6C8",
    "jp": "鉄壁大全",
-   "en": "",
+   "en": "Iron Wall Compendium",
    "max": 12
   },
   {
    "id": "12B6D4",
    "jp": "問答無用盤",
-   "en": "",
+   "en": "No-Arguments Board",
    "max": 12
   },
   {
    "id": "12B6E0",
    "jp": "無双樹",
-   "en": "",
+   "en": "Peerless Tree",
    "max": 8
   },
   {
    "id": "12B6E8",
    "jp": "四生崇",
-   "en": "",
+   "en": "Four Births Veneration",
    "max": 8
   },
   {
    "id": "12B6F0",
    "jp": "三З杖",
-   "en": "",
+   "en": "Sagicho Mallet",
    "max": 8,
    "notes": "gaiji З=毬"
   },
   {
    "id": "12B6F8",
    "jp": "逆鱗牙",
-   "en": "",
+   "en": "Dragon Wrath Fang",
    "max": 8
   },
   {
    "id": "12B700",
    "jp": "И抜刀鐸灯",
-   "en": "",
+   "en": "Staff-Blade Bell Lantern",
    "max": 12,
    "notes": "gaiji И=棍"
   },
   {
    "id": "12B70C",
    "jp": "暴浪丸",
-   "en": "",
+   "en": "Rough Wave",
    "max": 8
   },
   {
    "id": "12B714",
    "jp": "茶子菜々",
-   "en": "",
+   "en": "Chako Nana",
    "max": 12
   },
   {
    "id": "12B720",
    "jp": "大弾正",
-   "en": "",
+   "en": "Great Danjo",
    "max": 8
   },
   {
    "id": "12B728",
    "jp": "太郎兵衛と二郎兵衛",
-   "en": "",
+   "en": "Tarobee & Jirobee",
    "max": 20
   },
   {
    "id": "12B73C",
    "jp": "無銘巌砕",
-   "en": "",
+   "en": "Nameless Rock Crusher",
    "max": 12
   },
   {
    "id": "12B748",
    "jp": "士魂六十糎",
-   "en": "",
+   "en": "Samurai Soul 60 cm",
    "max": 12
   },
   {
    "id": "12B754",
    "jp": "扇動騒動扇",
-   "en": "",
+   "en": "Riot-Rousing Fan",
    "max": 12
   },
   {
    "id": "12B760",
    "jp": "嬰児",
-   "en": "",
+   "en": "Newborn",
    "max": 8
   },
   {
    "id": "12B768",
    "jp": "匹夫屠",
-   "en": "",
+   "en": "Rabble Slayer",
    "max": 8
   },
   {
    "id": "12B770",
    "jp": "漫路Ж",
-   "en": "",
+   "en": "Roaming Bite",
    "max": 8,
    "notes": "gaiji Ж=咬"
   },
   {
    "id": "12B778",
    "jp": "В珠沙華",
-   "en": "",
+   "en": "Red Spider Lily",
    "max": 12,
    "notes": "gaiji В=曼"
   },
   {
    "id": "12B784",
    "jp": "瑠璃",
-   "en": "",
+   "en": "Lapis",
    "max": 8
   },
   {
    "id": "12B78C",
    "jp": "裁縫浄土針",
-   "en": "",
+   "en": "Pure Land Sewing Needle",
    "max": 12
   },
   {
    "id": "12B798",
    "jp": "救羊Й",
-   "en": "",
+   "en": "Lamb-Saving Bow",
    "max": 8,
    "notes": "gaiji Й=穹?"
   },
   {
    "id": "12B7A0",
    "jp": "喰々",
-   "en": "",
+   "en": "Munch-Munch",
    "max": 8
   },
   {
    "id": "12B7A8",
    "jp": "花形見",
-   "en": "",
+   "en": "Flower Keepsake",
    "max": 8
   },
   {
    "id": "12B7B0",
    "jp": "白蓮刃",
-   "en": "",
+   "en": "White Lotus Blade",
    "max": 8
   },
   {
    "id": "12B7B8",
    "jp": "金言全集",
-   "en": "",
+   "en": "Complete Golden Maxims",
    "max": 12
   },
   {
    "id": "12B7C4",
    "jp": "長老板",
-   "en": "",
+   "en": "Elder's Board",
    "max": 8
   },
   {
    "id": "12B7CC",
    "jp": "天竺渡",
-   "en": "",
+   "en": "Tenjiku Crossing",
    "max": 8
   },
   {
    "id": "12B7D4",
    "jp": "大志",
-   "en": "",
+   "en": "Great Ambition",
    "max": 8
   },
   {
    "id": "12B7DC",
    "jp": "細蟹",
-   "en": "",
+   "en": "Sasagani",
    "max": 8
   },
   {
    "id": "12B7E4",
    "jp": "Цマルセイエーズ",
-   "en": "",
+   "en": "La Marseillaise",
    "max": 20,
    "notes": "gaiji Ц=ラ・"
   },
   {
    "id": "12B7F8",
    "jp": "黒枝一号鞭",
-   "en": "",
+   "en": "Black Branch No. 1 Whip",
    "max": 12
   },
   {
    "id": "12B804",
    "jp": "雷鳴王",
-   "en": "",
+   "en": "Thunder King",
    "max": 8
   },
   {
    "id": "12B80C",
    "jp": "Ё驚",
-   "en": "",
+   "en": "Mullet Shock",
    "max": 8,
    "notes": "gaiji Ё=鯔"
   },
   {
    "id": "12B814",
    "jp": "荒樫鼓",
-   "en": "",
+   "en": "Wild Oak Drum",
    "max": 8
   },
   {
    "id": "12B81C",
    "jp": "右兵衛と左兵衛",
-   "en": "",
+   "en": "Uhyoe & Sahyoe",
    "max": 16
   },
   {
    "id": "12B82C",
    "jp": "六根斬",
-   "en": "",
+   "en": "Six Senses Slash",
    "max": 8
   },
   {
    "id": "12B834",
    "jp": "回天三八式改",
-   "en": "",
+   "en": "Kaiten Type 38 Mod.",
    "max": 16
   },
   {
    "id": "12B844",
    "jp": "生殺風牙扇",
-   "en": "",
+   "en": "Life-or-Death Wind Fang Fan",
    "max": 12
   },
   {
    "id": "12B850",
    "jp": "森羅",
-   "en": "",
+   "en": "All Creation",
    "max": 8
   },
   {
    "id": "12B858",
    "jp": "三番掻",
-   "en": "",
+   "en": "Third Rake",
    "max": 8
   },
   {
    "id": "12B860",
    "jp": "今狙刈",
-   "en": "",
+   "en": "Snap-Shot Sickle",
    "max": 8
   },
   {
    "id": "12B868",
    "jp": "西海道虎鉄",
-   "en": "",
+   "en": "Saikaido Kotetsu",
    "max": 12
   },
   {
    "id": "12B874",
    "jp": "文殊陀数寄",
-   "en": "",
+   "en": "Monju Prayer Beads",
    "max": 12
   },
   {
    "id": "12B880",
    "jp": "名針百選",
-   "en": "",
+   "en": "Hundred Famous Needles",
    "max": 12
   },
   {
    "id": "12B88C",
    "jp": "紅星",
-   "en": "",
+   "en": "Crimson Star",
    "max": 8
   },
   {
    "id": "12B894",
    "jp": "Г々",
-   "en": "",
+   "en": "Purifier",
    "max": 8,
    "notes": "gaiji Г=祓"
   },
   {
    "id": "12B89C",
    "jp": "朝洞塊",
-   "en": "",
+   "en": "Dawn Cave Boulder",
    "max": 8
   },
   {
    "id": "12B8A4",
    "jp": "瑠璃蓮華",
-   "en": "",
+   "en": "Lapis Lotus",
    "max": 12
   },
   {
    "id": "12B8B0",
    "jp": "吉凶具現絵巻",
-   "en": "",
+   "en": "Fortune Scroll",
    "max": 16
   },
   {
    "id": "12B8C0",
    "jp": "大賢人",
-   "en": "",
+   "en": "Great Sage",
    "max": 8
   },
   {
    "id": "12B8C8",
    "jp": "如意真槍",
-   "en": "",
+   "en": "Wish-Granting Spear",
    "max": 12
   },
   {
    "id": "12B8D4",
    "jp": "一切空",
-   "en": "",
+   "en": "All Is Void",
    "max": 8
   },
   {
    "id": "12B8DC",
    "jp": "黄昏",
-   "en": "",
+   "en": "Twilight",
    "max": 8
   },
   {
    "id": "12B8E4",
    "jp": "我妻誉",
-   "en": "",
+   "en": "Agatsuma Homare",
    "max": 8
   },
   {
    "id": "12B8EC",
    "jp": "金枝四号鞭",
-   "en": "",
+   "en": "Gold Branch No. 4 Whip",
    "max": 12
   },
   {
    "id": "12B8F8",
    "jp": "稲妻王",
-   "en": "",
+   "en": "Lightning King",
    "max": 8
   },
   {
    "id": "12B900",
    "jp": "月輪刃と日輪刃",
-   "en": "",
+   "en": "Moon Blade & Sun Blade",
    "max": 15
   }
  ]

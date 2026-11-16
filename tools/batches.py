@@ -2,7 +2,8 @@
 
     python -X utf8 tools/batches.py split [--size 3500]   work/tl/bNNN.tsv and build/terms_bNNN.txt for untranslated JP
     python -X utf8 tools/batches.py check [bNNN ...]      a batch's .out.tsv; with no batch, all shipped English (for check.py)
-    python -X utf8 tools/batches.py merge bNNN ... [--overwrite]   check, then write the English into script/
+    python -X utf8 tools/batches.py merge bNNN ... [--overwrite] [--partial]   check, then write the English into script/
+        (--partial: merge anyway, holding back every file that has a problem)
 
 Copied from the skill's assets/batches.py. Fit the ADAPTER section to this game's text format; the rest is shared.
 Batch TSV: id, speaker, form, limit, JP. Output: work/tl/bNNN.out.tsv, id<TAB>English, every id once, same order.
@@ -259,7 +260,8 @@ def main(argv):
     if cmd == "split":
         return split(int(args[args.index("--size") + 1]) if "--size" in args else 3500)
     overwrite = "--overwrite" in args
-    names = [a for a in args if a != "--overwrite"]
+    partial = "--partial" in args
+    names = [a for a in args if a not in ("--overwrite", "--partial")]
     entries, terms = index(), glossary()
     if cmd == "check" and not names:
         bad = [f"{i}: {p}: {e['en']!r}" for i, e in entries.items() if e.get("en") for p in problems(e, e["en"], terms)]
@@ -268,7 +270,7 @@ def main(argv):
         return 1 if bad else 0
     if cmd not in ("check", "merge") or not names:
         sys.exit(__doc__)
-    new, failed = {}, 0
+    new, failed, bad_files = {}, 0, set()
     for batch in names:
         bad, rows = check_batch(batch, entries, terms)
         new.update(rows)
@@ -276,7 +278,13 @@ def main(argv):
         print(f"{batch}: " + ("OK" if not bad else f"{len(bad)} problems"))
         for line in bad:
             print("  " + line)
-    if failed:
+            eid = line.split(":", 1)[0]
+            bad_files.add(entries[eid]["_file"] if eid in entries else None)
+    if failed and cmd == "merge" and partial and None not in bad_files:
+        # --partial: files with a problem stay out whole (e.g. fixed cells waiting for phase-7 fit work)
+        new = {i: en for i, en in new.items() if entries[i]["_file"] not in bad_files}
+        print(f"partial: holding {', '.join(sorted(bad_files))} (problems above)")
+    elif failed:
         return 1
     if cmd == "merge":
         merge(new, overwrite)

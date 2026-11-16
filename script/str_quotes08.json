@@ -4,14 +4,14 @@
   {
    "id": "13644C",
    "jp": "ギャオオオッ！！",
-   "en": "",
+   "en": "GYAOOOH!!",
    "max": 20,
    "ptrs": 2
   },
   {
    "id": "136460",
    "jp": "この苦しみから抜けるには　　負けるしかないのだ！",
-   "en": "",
+   "en": "The only escape\nfrom this pain is defeat!",
    "max": 52,
    "pad": 14,
    "ptrs": 3
@@ -19,7 +19,7 @@
   {
    "id": "136494",
    "jp": "見たかっ！　　　　　　　　　この世の恐怖というものを！",
-   "en": "",
+   "en": "Did you see?\nThat is the terror of this world!",
    "max": 56,
    "pad": 14,
    "ptrs": 3
@@ -27,890 +27,890 @@
   {
    "id": "1364CC",
    "jp": "この技、誰にも止められぬ",
-   "en": "",
+   "en": "No one can stop this move.",
    "max": 28
   },
   {
    "id": "1364E8",
    "jp": "つぶされた気分はどうだ？",
-   "en": "",
+   "en": "How does it feel to be crushed?",
    "max": 28
   },
   {
    "id": "136504",
    "jp": "これでオレの勝利が見えたな！",
-   "en": "",
+   "en": "Now my victory's in sight!",
    "max": 32
   },
   {
    "id": "136524",
    "jp": "これぞ目にも止まらぬ　　　　早業ってところよ！",
-   "en": "",
+   "en": "That's what ya call\ntoo fast for the eye!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "136554",
    "jp": "今日のわしはイケイケじゃ！",
-   "en": "",
+   "en": "I'm on a roll today, my boy!",
    "max": 28
   },
   {
    "id": "136570",
    "jp": "今日もノリノリですよー！",
-   "en": "",
+   "en": "Groovin' again today!",
    "max": 28
   },
   {
    "id": "13658C",
    "jp": "散ったか…",
-   "en": "",
+   "en": "Scattered, have they...",
    "max": 12
   },
   {
    "id": "136598",
    "jp": "これがオレの入魂の技だ",
-   "en": "",
+   "en": "That's a move with my soul in it.",
    "max": 24
   },
   {
    "id": "1365B0",
    "jp": "決まったね♪",
-   "en": "",
+   "en": "Nailed it!",
    "max": 16
   },
   {
    "id": "1365C0",
    "jp": "極楽は見えたかい？",
-   "en": "",
+   "en": "Did you see paradise?",
    "max": 20
   },
   {
    "id": "1365D4",
    "jp": "勝利はもらったぞよ",
-   "en": "",
+   "en": "Victory is mine, I say.",
    "max": 20
   },
   {
    "id": "1365E8",
    "jp": "もう降参するがいいぞよ！　　おぬしの負けぞよ",
-   "en": "",
+   "en": "Surrender now, I say!\nYou've lost, I say.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "136618",
    "jp": "いい気味ですねー！",
-   "en": "",
+   "en": "Serves you right!",
    "max": 20
   },
   {
    "id": "13662C",
    "jp": "痛かったですか？　　　　　　そりゃすみませんねぇ",
-   "en": "",
+   "en": "Did that hurt?\nWell, so sorry about that.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "136660",
    "jp": "まだ闘う気ですか？",
-   "en": "",
+   "en": "Still want to fight?",
    "max": 20
   },
   {
    "id": "136674",
    "jp": "その姿…泣きっ面にハチですね",
-   "en": "",
+   "en": "Look at you...\nwhen it rains, it pours.",
    "max": 32
   },
   {
    "id": "136694",
    "jp": "我が剣の前で眠るがよい",
-   "en": "",
+   "en": "Sleep before my sword.",
    "max": 24
   },
   {
    "id": "1366AC",
    "jp": "誰にもこの技を　　　　　　　防ぐことはできん！",
-   "en": "",
+   "en": "No one can\nblock this move!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "1366DC",
    "jp": "これで終わりかい？",
-   "en": "",
+   "en": "Is that the end?",
    "max": 20
   },
   {
    "id": "1366F0",
    "jp": "勝利の女神は　　　　　　　　私にほほえんだようだ",
-   "en": "",
+   "en": "It seems Lady Luck\nhas smiled on me.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "136724",
    "jp": "天が許しても　　　　　　　　せっちゃが許さぬ！",
-   "en": "",
+   "en": "Even if heaven forgiveth,\nthith one will not!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "136754",
    "jp": "見よ！せっちゃの剣は正義なり",
-   "en": "",
+   "en": "Behold! Thith one'th\nthword ith justice!",
    "max": 32
   },
   {
    "id": "136774",
    "jp": "悪は滅せよ！",
-   "en": "",
+   "en": "Evil, be destroyed!",
    "max": 16
   },
   {
    "id": "136784",
    "jp": "見たか！我が熱き技を！",
-   "en": "",
+   "en": "Did you see my blazing move?!",
    "max": 24
   },
   {
    "id": "13679C",
    "jp": "ちょっとやりすぎたかしら？",
-   "en": "",
+   "en": "Did I overdo it a little?",
    "max": 28
   },
   {
    "id": "1367B8",
    "jp": "今のあなたには　　　　　　　子守唄がぴったりだわ",
-   "en": "",
+   "en": "A lullaby would\nsuit you right now.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "1367EC",
    "jp": "どんなもんじゃい！",
-   "en": "",
+   "en": "How about that!",
    "max": 20
   },
   {
    "id": "136800",
    "jp": "わしが本気になれば　　　　　こうなるのである",
-   "en": "",
+   "en": "This is what happens when\nI get serious, so it is.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "136830",
    "jp": "ふふ…燃えたわ",
-   "en": "",
+   "en": "Hehe... That fired me up.",
    "max": 16
   },
   {
    "id": "136840",
    "jp": "大人げなかったかしら？",
-   "en": "",
+   "en": "Was that a bit childish of me?",
    "max": 24
   },
   {
    "id": "136858",
    "jp": "へへっ！痛かったろ？",
-   "en": "",
+   "en": "Heheh! That hurt, didn't it?",
    "max": 24
   },
   {
    "id": "136870",
    "jp": "因果応報ってやつだな！",
-   "en": "",
+   "en": "What goes around comes around!",
    "max": 24
   },
   {
    "id": "136888",
    "jp": "声も出ないようだな…",
-   "en": "",
+   "en": "Speechless, are we...",
    "max": 24
   },
   {
    "id": "1368A0",
    "jp": "そのまま眠っているがいい",
-   "en": "",
+   "en": "Just stay asleep.",
    "max": 28
   },
   {
    "id": "1368BC",
    "jp": "これが我が知の力じゃ",
-   "en": "",
+   "en": "This is the power of my wisdom.",
    "max": 24
   },
   {
    "id": "1368D4",
    "jp": "この技を見た者の負けは　　　必至じゃ！",
-   "en": "",
+   "en": "Whoever sees this move\nis sure to lose!",
    "max": 40,
    "pad": 14
   },
   {
    "id": "1368FC",
    "jp": "この武器で倒れぬ者はおらん！",
-   "en": "",
+   "en": "None can stand against this weapon!",
    "max": 32
   },
   {
    "id": "13691C",
    "jp": "お前、ずいぶん矢に　　　　　刺さったろ！",
-   "en": "",
+   "en": "You sure took\na lot of arrows!",
    "max": 44,
    "pad": 14
   },
   {
    "id": "136948",
    "jp": "矢の雨も粋なもんだろ？",
-   "en": "",
+   "en": "A rain of arrows is pretty stylish, eh?",
    "max": 24
   },
   {
    "id": "136960",
    "jp": "思い知ったか！",
-   "en": "",
+   "en": "Learned your lesson?!",
    "max": 16,
    "ptrs": 2
   },
   {
    "id": "136970",
    "jp": "さっきまでの勢いはどうした！",
-   "en": "",
+   "en": "Where'd all that spirit go?!",
    "max": 32
   },
   {
    "id": "136990",
    "jp": "これでも一応神じゃからのぅ",
-   "en": "",
+   "en": "I'm a god of sorts, after all, eh.",
    "max": 28
   },
   {
    "id": "1369AC",
    "jp": "ここで一句がほしいところじゃ",
-   "en": "",
+   "en": "A haiku would be nice about now.",
    "max": 32
   },
   {
    "id": "1369CC",
    "jp": "まさに電光石火だぜ！",
-   "en": "",
+   "en": "Quick as lightning!",
    "max": 24
   },
   {
    "id": "1369E4",
    "jp": "少しムキになりすぎたようだ",
-   "en": "",
+   "en": "Seems I got a bit carried away.",
    "max": 28
   },
   {
    "id": "136A00",
    "jp": "だいぶ遠くへ飛んだね！",
-   "en": "",
+   "en": "That one flew pretty far!",
    "max": 24
   },
   {
    "id": "136A18",
    "jp": "そのダメージの大きさは　　　汝の罪の重さだ",
-   "en": "",
+   "en": "The weight of that damage\nis the weight of thy sins.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "136A44",
    "jp": "これで少しは更生しただろう",
-   "en": "",
+   "en": "That should reform you a bit.",
    "max": 28
   },
   {
    "id": "136A60",
    "jp": "見てくれました？私の晴れ姿",
-   "en": "",
+   "en": "Did you see me shine?",
    "max": 28
   },
   {
    "id": "136A7C",
    "jp": "決まった！",
-   "en": "",
+   "en": "Nailed it!",
    "max": 12
   },
   {
    "id": "136A88",
    "jp": "まだまだ　こんなもんじゃねぇ",
-   "en": "",
+   "en": "This ain't all I got!",
    "max": 32
   },
   {
    "id": "136AA8",
    "jp": "小細工無しの技ほど　　　　　強力なもんはねえ",
-   "en": "",
+   "en": "Nothin's stronger\nthan a move with no tricks.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "136AD8",
    "jp": "どうじゃ、やったか？",
-   "en": "",
+   "en": "Well? Did we get 'em?",
    "max": 24
   },
   {
    "id": "136AF0",
    "jp": "これがわしの熱き魂じゃ！",
-   "en": "",
+   "en": "That's my blazin' soul, ye!",
    "max": 28
   },
   {
    "id": "136B0C",
    "jp": "いい踊りっぷりだったぜ",
-   "en": "",
+   "en": "Nice dancin' there!",
    "max": 24
   },
   {
    "id": "136B24",
    "jp": "祭りにはやっぱり　　　　　　打ち上げ花火だぜ！",
-   "en": "",
+   "en": "No festival's complete\nwithout fireworks!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "136B54",
    "jp": "女の子を甘くみるとコワイでえ",
-   "en": "",
+   "en": "Underestimate a girl and\nyou'll be sorry, pal.",
    "max": 32
   },
   {
    "id": "136B74",
    "jp": "シャレのつもりだったのに　　ひっかかってしもたわ",
-   "en": "",
+   "en": "It was just a joke,\nbut ya fell for it!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "136BA8",
    "jp": "まだ立ち上がってくるってか？",
-   "en": "",
+   "en": "You're still gettin' up?",
    "max": 32
   },
   {
    "id": "136BC8",
    "jp": "いわゆるケンカ殺法って　　　いうヤツだぜ",
-   "en": "",
+   "en": "That's what they call\nstreet fightin'!",
    "max": 44,
    "pad": 14
   },
   {
    "id": "136BF4",
    "jp": "そなたの地に這う姿…　　　　燃えるわ",
-   "en": "",
+   "en": "The sight of thee crawling...\nhow thrilling.",
    "max": 40,
    "pad": 14
   },
   {
    "id": "136C1C",
    "jp": "永遠の眠りにつくがよい",
-   "en": "",
+   "en": "Sleep forever.",
    "max": 24
   },
   {
    "id": "136C34",
    "jp": "…相手にならんな",
-   "en": "",
+   "en": "...Not even a challenge.",
    "max": 20
   },
   {
    "id": "136C48",
    "jp": "…ザコが！！",
-   "en": "",
+   "en": "...Small fry!!",
    "max": 16
   },
   {
    "id": "136C58",
    "jp": "フフフ…惚れた？",
-   "en": "",
+   "en": "Fufufu... Fallen for me?",
    "max": 20
   },
   {
    "id": "136C6C",
    "jp": "お楽しみはまだこれからよ♪",
-   "en": "",
+   "en": "The fun's only just begun!",
    "max": 28
   },
   {
    "id": "136C88",
    "jp": "少しはマトモになりな！",
-   "en": "",
+   "en": "Shape up a little!",
    "max": 24
   },
   {
    "id": "136CA0",
    "jp": "わめくんじゃないよ！",
-   "en": "",
+   "en": "Quit your whining!",
    "max": 24
   },
   {
    "id": "136CB8",
    "jp": "ボクの技どうだった？",
-   "en": "",
+   "en": "How was my move?",
    "max": 24,
    "ptrs": 2
   },
   {
    "id": "136CD0",
    "jp": "ボクの魅力もアップだね",
-   "en": "",
+   "en": "That makes me even more charming!",
    "max": 24
   },
   {
    "id": "136CE8",
    "jp": "どお？　　　　　　　　　　　もう降参する気になった？",
-   "en": "",
+   "en": "Well?\nReady to give up yet?",
    "max": 56,
    "pad": 14
   },
   {
    "id": "136D20",
    "jp": "もう起き上がってこないでね",
-   "en": "",
+   "en": "Don't get up again, okay?",
    "max": 28
   },
   {
    "id": "136D3C",
    "jp": "かかってこいやあああ！！",
-   "en": "",
+   "en": "Bring it ooon!!",
    "max": 28
   },
   {
    "id": "136D58",
    "jp": "物足りないわあああ！！",
-   "en": "",
+   "en": "Not enough for meeee!!",
    "max": 24
   },
   {
    "id": "136D70",
    "jp": "また一段と高みにいったな",
-   "en": "",
+   "en": "I've reached another level.",
    "max": 28
   },
   {
    "id": "136D8C",
    "jp": "エレガントに決まったろ？",
-   "en": "",
+   "en": "That was elegant, wasn't it?",
    "max": 28
   },
   {
    "id": "136DA8",
    "jp": "今日も絶好調や！",
-   "en": "",
+   "en": "In top form today, pal!",
    "max": 20
   },
   {
    "id": "136DBC",
    "jp": "針が効けば、一石二鳥や！",
-   "en": "",
+   "en": "If the needles work,\nthat's two birds with one stone!",
    "max": 28
   },
   {
    "id": "136DD8",
    "jp": "…さらばだ",
-   "en": "",
+   "en": "...Farewell.",
    "max": 12
   },
   {
    "id": "136DE4",
    "jp": "悪く思うな",
-   "en": "",
+   "en": "Nothing personal.",
    "max": 12
   },
   {
    "id": "136DF0",
    "jp": "いい気味でちゅ",
-   "en": "",
+   "en": "Serves ya right-z.",
    "max": 16
   },
   {
    "id": "136E00",
    "jp": "頭がすっきりしたでちゅか？",
-   "en": "",
+   "en": "Iz your head clearer now?",
    "max": 28
   },
   {
    "id": "136E1C",
    "jp": "すごかったでしょ？",
-   "en": "",
+   "en": "Wasn't that amazing?",
    "max": 20
   },
   {
    "id": "136E30",
    "jp": "大自然のおしおきだよ",
-   "en": "",
+   "en": "That's Mother Nature's punishment!",
    "max": 24
   },
   {
    "id": "136E48",
    "jp": "まだ攻撃の手を　　　　　　　ゆるめてはいけません",
-   "en": "",
+   "en": "We mustn't let up\non the attack yet.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "136E7C",
    "jp": "技は、使ってなんぼですからな",
-   "en": "",
+   "en": "Moves are only worth\nsomething if you use them.",
    "max": 32
   },
   {
    "id": "136E9C",
    "jp": "調子は上々であります",
-   "en": "",
+   "en": "All systems go, sir!",
    "max": 24
   },
   {
    "id": "136EB4",
    "jp": "敵は大ダメージであります",
-   "en": "",
+   "en": "Heavy damage to the enemy, sir!",
    "max": 28
   },
   {
    "id": "136ED0",
    "jp": "ふむ…ムチも使いようじゃな",
-   "en": "",
+   "en": "Hmm... even a whip has\nits uses, eh.",
    "max": 28
   },
   {
    "id": "136EEC",
    "jp": "おおっホームランだったのぅ",
-   "en": "",
+   "en": "Ooh, that was a home run, eh!",
    "max": 28
   },
   {
    "id": "136F08",
    "jp": "フッしびれたろ？",
-   "en": "",
+   "en": "Heh. Shocking, wasn't it?",
    "max": 20
   },
   {
    "id": "136F1C",
    "jp": "これで勝ちが見えた",
-   "en": "",
+   "en": "Now victory is in sight.",
    "max": 20
   },
   {
    "id": "136F30",
    "jp": "バッチリっしょ！",
-   "en": "",
+   "en": "Nailed it, y'know!",
    "max": 20
   },
   {
    "id": "136F44",
    "jp": "決まったっしょ！",
-   "en": "",
+   "en": "That one landed, y'know!",
    "max": 20
   },
   {
    "id": "136F58",
    "jp": "これで敵の戦意は　　　　　　ほとんど無いでしょう",
-   "en": "",
+   "en": "The enemy has hardly\nany fight left now.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "136F8C",
    "jp": "これでもまだ　　　　　　　　闘うというのですか？",
-   "en": "",
+   "en": "Do you still mean to fight\nafter that?",
    "max": 52,
    "pad": 14
   },
   {
    "id": "136FC0",
    "jp": "ゆるせ…これも闘いなのだよ",
-   "en": "",
+   "en": "Forgive me... this too is battle.",
    "max": 28
   },
   {
    "id": "136FDC",
    "jp": "フッまたつまらんものを　　　斬ってしまった…",
-   "en": "",
+   "en": "Heh. Once again I have cut\nsomething worthless...",
    "max": 48,
    "pad": 14
   },
   {
    "id": "13700C",
    "jp": "どんなもんだい！",
-   "en": "",
+   "en": "How do you like that!",
    "max": 20
   },
   {
    "id": "137020",
    "jp": "ふう…ちょっと　目が回ったよ",
-   "en": "",
+   "en": "Phew... I got a little dizzy.",
    "max": 32
   },
   {
    "id": "137040",
    "jp": "死神に微笑まれる気分は　　　どうですかい？",
-   "en": "",
+   "en": "How's it feel to have\nDeath smilin' at ya?",
    "max": 44,
    "pad": 14
   },
   {
    "id": "13706C",
    "jp": "皮肉だねぇ…　　　　　　　　悪党のほうがキレイな花が咲く",
-   "en": "",
+   "en": "Ironic, ain't it...\nVillains bloom the prettiest flowers.",
    "max": 60,
    "pad": 14
   },
   {
    "id": "1370A8",
    "jp": "やっぱり技は派手でなくっちゃ",
-   "en": "",
+   "en": "A move's gotta be flashy!",
    "max": 32
   },
   {
    "id": "1370C8",
    "jp": "また目立っちゃったよ",
-   "en": "",
+   "en": "Stole the spotlight again!",
    "max": 24
   },
   {
    "id": "1370E0",
    "jp": "私の技は　決して容赦はしない",
-   "en": "",
+   "en": "My techniques show no mercy.",
    "max": 32
   },
   {
    "id": "137100",
    "jp": "この勝負…もらったな！",
-   "en": "",
+   "en": "This match... is mine!",
    "max": 24
   },
   {
    "id": "137118",
    "jp": "歌はいいぜ！　　　　　　　　歌は心を癒してくれるＹｏ！",
-   "en": "",
+   "en": "Songs are great!\nSongs heal the heart, Yo!",
    "max": 56,
    "pad": 14
   },
   {
    "id": "137150",
    "jp": "Ｈｅｙ！アンコールいるかい？",
-   "en": "",
+   "en": "Hey! Want an encore?",
    "max": 32
   },
   {
    "id": "137170",
    "jp": "ちょっと本気に　　　　　　　なっちまったかねぇ",
-   "en": "",
+   "en": "Guess I got a little\nserious there, huh.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "1371A0",
    "jp": "おやおや痛々しい姿だねぇ",
-   "en": "",
+   "en": "My, my, what a painful sight.",
    "max": 28
   },
   {
    "id": "1371BC",
    "jp": "へっ！ざまあみろってんだ！",
-   "en": "",
+   "en": "Heh! Serves you right!",
    "max": 28
   },
   {
    "id": "1371D8",
    "jp": "今のがオレの技だ！覚えとけ！",
-   "en": "",
+   "en": "That was my move! Remember it!",
    "max": 32
   },
   {
    "id": "1371F8",
    "jp": "どお？効いたでしょ？",
-   "en": "",
+   "en": "Well? Did that hurt?",
    "max": 24
   },
   {
    "id": "137210",
    "jp": "そのまま寝ててね♪",
-   "en": "",
+   "en": "Just stay asleep, okay?",
    "max": 20
   },
   {
    "id": "137224",
    "jp": "ちょっと…やり過ぎたかしら？",
-   "en": "",
+   "en": "Oops... did I overdo it?",
    "max": 32
   },
   {
    "id": "137244",
    "jp": "おとなしく…寝ててちょうだい",
-   "en": "",
+   "en": "Be good... and stay asleep.",
    "max": 32
   },
   {
    "id": "137264",
    "jp": "次に、そなたの目が開いたとき地獄を見るだろう",
-   "en": "",
+   "en": "When next thine eyes open,\nthou shalt see Hell.",
    "max": 48
   },
   {
    "id": "137294",
    "jp": "そのまま地に、ひれ伏すがよい",
-   "en": "",
+   "en": "Now lie prostrate upon the earth.",
    "max": 32
   },
   {
    "id": "1372B4",
    "jp": "そなたの煩悩…　　　　　　　これにて滅するであろう",
-   "en": "",
+   "en": "Thy worldly desires...\nare hereby destroyed.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "1372E8",
    "jp": "汝の魂…天に召すがよい",
-   "en": "",
+   "en": "May thy soul ascend to Heaven.",
    "max": 24
   },
   {
    "id": "137300",
    "jp": "おいの技　効いたじゃろ",
-   "en": "",
+   "en": "My move hit hard, eh, lad?",
    "max": 24
   },
   {
    "id": "137318",
    "jp": "敵はつぶれたか？",
-   "en": "",
+   "en": "Is the enemy crushed?",
    "max": 20
   },
   {
    "id": "13732C",
    "jp": "うふふ…　気持ちいいわぁ～",
-   "en": "",
+   "en": "Ufufu... that felt goood.",
    "max": 28
   },
   {
    "id": "137348",
    "jp": "クスッ…燃えた？",
-   "en": "",
+   "en": "Tee-hee... Did that burn?",
    "max": 20
   },
   {
    "id": "13735C",
    "jp": "いっちょ上がりィ～！",
-   "en": "",
+   "en": "And that's one done!",
    "max": 24
   },
   {
    "id": "137374",
    "jp": "やっぱ、もつべきものは　　　仲間だぜ！",
-   "en": "",
+   "en": "See? Nothin' beats\nhavin' friends!",
    "max": 40,
    "pad": 14
   },
   {
    "id": "13739C",
    "jp": "わいをナメると　　　　　　　こうなるんやさかい",
-   "en": "",
+   "en": "This is what happens\nwhen ya mess with me!",
    "max": 48,
    "pad": 14
   },
   {
    "id": "1373CC",
    "jp": "出血大サービスでっせ！",
-   "en": "",
+   "en": "Bloodbath clearance sale!",
    "max": 24
   },
   {
    "id": "1373E4",
    "jp": "今日も絶好調でおじゃる",
-   "en": "",
+   "en": "In fine form again today,\nI daresay.",
    "max": 24
   },
   {
    "id": "1373FC",
    "jp": "だいぶ遠くへ飛んだじゃろ？",
-   "en": "",
+   "en": "That sent ya flyin' pretty far, eh?",
    "max": 28
   },
   {
    "id": "137418",
    "jp": "おぬしの魂…　　　　　　　　貫かせてもらったぞ！",
-   "en": "",
+   "en": "Thy soul...\nI have pierced it through!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "13744C",
    "jp": "おぬしに、この技は　　　　　もったいなかったかの",
-   "en": "",
+   "en": "Was this technique wasted\non the likes of thee?",
    "max": 52,
    "pad": 14
   },
   {
    "id": "137480",
    "jp": "たった今標的を　　　　　　　粉砕したでござる",
-   "en": "",
+   "en": "This one has just\npulverized the target.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "1374B0",
    "jp": "標的は大ダメージでござる！",
-   "en": "",
+   "en": "The target took heavy damage!",
    "max": 28
   },
   {
    "id": "1374CC",
    "jp": "いやされぬ十字の傷を　　　　背負い続けるがよい",
-   "en": "",
+   "en": "Bear this cross-shaped wound\nthat shall never heal.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "1374FC",
    "jp": "その十字の傷　　　　　　　　決して消えはせぬ…",
-   "en": "",
+   "en": "That cross-shaped scar\nwill never fade...",
    "max": 48,
    "pad": 14
   },
   {
    "id": "13752C",
    "jp": "これで少しは、こりたでしょう",
-   "en": "",
+   "en": "Surely that taught you a lesson.",
    "max": 32
   },
   {
    "id": "13754C",
    "jp": "いかがでしたかな　　　　　　これが自然の力です",
-   "en": "",
+   "en": "How was that?\nThis is the power of nature.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "13757C",
    "jp": "天の裁きに、ひれ伏すがよい",
-   "en": "",
+   "en": "Bow before the judgment of Heaven.",
    "max": 28
   },
   {
    "id": "137598",
    "jp": "これぞ我が雷火の極意である！",
-   "en": "",
+   "en": "This is the secret of my\nThunderfire, so it is!",
    "max": 32
   },
   {
    "id": "1375B8",
    "jp": "へっ！これで少しは　　　　　この辺りもキレイにならぁ！",
-   "en": "",
+   "en": "Heh! That oughta clean up\nthis place a little!",
    "max": 56,
    "pad": 14
   },
   {
    "id": "1375F0",
    "jp": "へっ！竜巻に舞った　　　　　感想は、どうだ？",
-   "en": "",
+   "en": "Heh! So how'd ya like\ndancin' in my tornado?",
    "max": 45,
    "pad": 14
   }
