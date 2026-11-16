@@ -86,4 +86,5 @@
 22C434-22CE33   # gfx: battle command wheel 攻 防 逃 覧 替 (5 raw 32x32 sprites)
 3858CC-3862CB   # gfx: field ring menu 能 図 替 覧 記 (5 raw 32x32 sprites)
 384A8C-384E8B   # gfx: guard emblem 防 (2 raw 32x32 animation frames)
+22D8B4-22E8B3   # gfx: battle win banner 勝 利 (2 raw 64x64 sprites, "YOU" / "WIN!")
 403CCC-403CCF   # gfx: pointer to the party card LZ77 block 0x3B577C (moved to free space: grew past its room)

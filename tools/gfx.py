@@ -241,6 +241,49 @@ def attack_plate(text, x1=70):
     return draw
 
 
+# 7-row bold capitals for the win banner (2-unit stems)
+BANNER_FONT = {
+    "Y": ["##...##", "##...##", ".##.##.", "..###..", "...#...", "..###..", "..###.."],
+    "O": [".#####.", "###.###", "##...##", "##...##", "##...##", "###.###", ".#####."],
+    "U": ["##...##", "##...##", "##...##", "##...##", "##...##", "###.###", ".#####."],
+    "W": ["##.....##", "##.....##", "##..#..##", "##.###.##", "#########", "###...###", "##.....##"],
+    "I": ["######", "..##..", "..##..", "..##..", "..##..", "..##..", "######"],
+    "N": ["##...##", "###..##", "####.##", "##.####", "##..###", "##...##", "##...##"],
+    "!": ["##", "##", "##", "##", "##", "..", "##"],
+}
+
+
+def banner(text, sx=2, sy=5):
+    """Battle win banner (two 64x64 OBJs, pal 9, raw 0x22D8B4 勝 at screen (6,16) and 0x22E0B4 利 at (106,48), a
+    diagonal pair): each kanji has a white outline F, a dark drop shadow E down-right and a fill graded by row from
+    D (top) to 1 (bottom). English "YOU" / "WIN!" on the same diagonal: BANNER_FONT scaled sx by sy, 1 px outline,
+    2 px shadow, the same gradient."""
+    def draw(px):
+        for row in px:
+            row[:] = [0] * len(row)
+        w = (sum(len(BANNER_FONT[c][0]) + 1 for c in text) - 1) * sx
+        x = (64 - w) // 2
+        top = (64 - 7 * sy) // 2 - 1
+        body = set()
+        for ch in text:
+            for dy, row in enumerate(BANNER_FONT[ch]):
+                for dx, c in enumerate(row):
+                    if c == "#":
+                        body |= {(x + dx * sx + i, top + dy * sy + j) for i in range(sx) for j in range(sy)}
+            x += (len(BANNER_FONT[ch][0]) + 1) * sx
+        assert min(p[0] for p in body) >= 1 and max(p[0] for p in body) <= 60, f"gfx banner {text!r} too wide"
+        ring = {(bx + ox, by + oy) for bx, by in body for ox in (-1, 0, 1) for oy in (-1, 0, 1)} - body
+        shadow = {(x + dx, y + dy) for x, y in body | ring for dx, dy in ((1, 1), (2, 2), (1, 2), (2, 1))}
+        for x, y in shadow - body - ring:
+            px[y][x] = 0xE
+        for x, y in ring:
+            px[y][x] = 0xF
+        span = 7 * sy
+        for x, y in body:
+            px[y][x] = max(1, 13 - (y - top) * 13 // span)
+    return draw
+
+
 LABELS = {
     # name: (where, offset, parts, draw)   where = "raw" (ROM offset) or "lz" (LZ77 block offset, tile offset in it)
     "title_new": ("raw", 0x224874, BUTTON, title_button("New Game")),
@@ -273,6 +316,9 @@ LABELS = {
     "plate_bonus": ("raw", 0x3856CC, [(0, 0, 4, 2), (32, 0, 4, 2)], attack_plate("Attack Bonus", 62)),
     "guard_emblem": ("raw", 0x384A8C, SPR32, guard_emblem),
     "guard_emblem_b": ("raw", 0x384C8C, SPR32, guard_emblem),
+    # battle win banner 勝利 (G6), two 64x64 OBJs on a diagonal
+    "win_1": ("raw", 0x22D8B4, [(0, 0, 8, 8)], banner("YOU")),
+    "win_2": ("raw", 0x22E0B4, [(0, 0, 8, 8)], banner("WIN!")),
 }
 
 

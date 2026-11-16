@@ -2,10 +2,10 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator in progress (session 25: text coverage 4785/5185 shown + 355 waived,
-  **45 failing** (was 484); no rebuild, the visual-QA gate still holds). Last build 2026-11-16 (session 23):
-  build/onmyou_zeroshiki_en.gba = 606f89ee… (tour10 `work/qa/cover/tour10` ran on it; manifest
-  work/qa/manifest.tsv records it).
+- **Phase:** 8. QA in the emulator in progress (session 26: text coverage reached **0 failing** on build 606f89ee
+  (4812 shown + 373 waived), then two fixes rebuilt the ROM: build/onmyou_zeroshiki_en.gba = **1fff4d9d…**. The
+  visual-QA manifest still records 606f89ee, and 129 relocated strings moved by 4 bytes, so a new tour + coverage
+  re-run is needed: Next 1-2).
 - **Done:**
   - Step 0: ROM pinned (`rom.sha1`), MesenCE 2.2.1 + GBA BIOS in `tools/mesen/`, guard hook in `.claude/settings.json`
     (canary blocked), pre-commit runs `tools/check.py` (a failing test was rejected), boot route `tools/routes/boot.txt`
@@ -220,42 +220,57 @@ Updated at the end of every session. Keep it to what the next session needs; his
     label jump per line: 55/55), `msgjobs.py` + `msgcycle.lua` (every battle message forced through the real drawer
     at 0x08102E88, shot work/qa/bm/pilot_z.png: "Couldn't escape!"), key items (`tools/debug/cover_keyitems.txt`, run with
     `warp_all.py --scenes` into work/qa/cover/keyitems + the textcover probe: menu_keyitem with one flag 51..64 each). Tech quotes (258) proven dead data and waived (docs/re/text.md).
+  - Session 26 (phase 8): text coverage 45 → **0 failing** on build 606f89ee. Covered: save/load (title Load
+    `load_empty`), Ryuji's Lunch Box (`key_lunch`: key-item entry 12 with flag 0x7B), lab_1162_10 and script 782
+    (longer holds) — all in `tools/debug/cover_misc.txt` → work/qa/cover/misc; the seal-tracing lesson (tutorial
+    battle state + Up, A.., Left, A..: work/qa/cover/seal, seal2); battle help rows (command ring rotates with
+    **Left/Right**: work/qa/cover/wheelhelp); View foe headers (L on the ring; `tools/debug/foepoke.lua FOE=0x4C|0x4B`
+    for 妖怪 / 白虎: work/qa/cover/viewfoe*). 18 waivers with evidence in docs/text_unshown.tsv (post-link-session
+    record routine 0x08024850, dead stack table 0x08129180, element table with no pointer, ability 5 owned by no
+    shikigami, speaker names only reachable on other plate paths, EEPROM failure). Fixes: **View foe yokai header**
+    read "[YokaiKoropokkur]" → 410C68 "Yokai " (trailing space); **battle win banner 勝利** (raw 0x22D8B4 /
+    0x22E0B4, two 64x64 OBJs) redrawn "YOU" / "WIN!" (`gfx.banner`, shot work/qa/s26i/f000600.png). Checked: G3 name
+    entry (D9 tabs), G6 = copyright art (D12), G12 map has no graphic labels, a lost battle fades to black (no
+    banner). New probes `tools/debug/poke.lua` (u16 poke from a state; CAP=1 caps a value), `foepoke.lua`.
+    Speaker plate facts: 0x0801EC54(a0, idx, a2) has one caller; op 094/098 lines pass a0=1 (RAM names); Riku's
+    portraits (idx 0/11/19) show the player's name.
+    Re-run recipes (each `emu.py build/onmyou_zeroshiki_en.gba --script <skill>/scripts/lua/probes/textcover.lua
+    --var "RANGES='<cover.py ranges>'"` plus): seal = `--out work/qa/cover/seal2 --state-in
+    work/states/tutorial_battle.mss --route-str "6 up;120 -;(6 a;90 -)x6;6 left;120 -;(6 a;90 -)x60"`; wheelhelp =
+    `--state-in work/states/battle_forest.mss --route-str "(6 a;60 -)x6;300 -;(10 right;120 -)x5;(10 left;120 -)x2"`;
+    viewfoe_0x4C / 0x4B = `--state-in work/states/battle_forest.mss --route-str "(6 a;60 -)x6;300 -;10 l;300 -;10
+    b;200 -" --script tools/debug/foepoke.lua --var FOE=0x4C` (expand the `(..)xN` by hand).
 - **Next (phase 8: QA in the emulator; done-when in the skill's table):**
-  1. Visual-QA gate **passes** on build 606f89ee (`qa_gate.py check work/qa/manifest.tsv work/qa/verdicts` exit 0):
-     codex 75/77 ok; the 2 issues re-checked as false positives (work/qa/verdicts/recheck_s23.tsv: tutorial Drive
-     stripes = the game's scanline mask, credits ghosting = a mid-scroll fade the original shows too). Any rebuild
-     needs a new tour + manifest + verdicts.
-  2. **Text coverage** (`python -X utf8 tools/debug/cover.py report > work/qa/cover/report.txt`; session 25:
-     4785/5185 shown, 355 waived, **45 failing**). Session-24 runners, all under work/qa/cover/ so the report counts
+  1. **Visual-QA gate needs a new tour** on build 1fff4d9d (the gate passed on 606f89ee: 75 ok + 2 rechecked). Run
+     `warp_all.py build/onmyou_zeroshiki_en.gba --out work/qa/cover/tour11 --states work/qa/cover/tour11/st --probe
+     <skill>/scripts/lua/probes/textcover.lua --var "RANGES='<cover.py ranges>'" --seq 90 --hold 1500 --jobs 4`
+     (same flags as tour10), then `qa_gate.py init work/qa/manifest.tsv work/qa/cover/tour11 --build
+     build/onmyou_zeroshiki_en.gba` (sheets with unchanged pixels keep their verdicts; the fixes touch no tour scene,
+     so most should carry), `todo` → chunks → `tools/vqa.py` for the rest, `check` exit 0. Add the win banner
+     (work/qa/s26i) to what a reviewer sees if no tour scene reaches it.
+  2. **Text coverage re-run after the rebuild**: `cover.py report` now fails the 129 strings whose built address moved
+     (410C70..4140F8: str_tutorial_help tail + str_char_names; work/strings_606f.tsv is the old layout). The scenes
+     that showed them on 606f89ee: `python -X utf8 tools/debug/moved_scenes.py work/strings_606f.tsv` (greedy cover,
+     ~120 dirs: mostly `cover.py run --only cov_...`, plus labels/lab_1712_1 + lab_1062_60 (warp_all --scenes
+     work/qa/cover/labels/scenes.txt), msgs/t00 (`msgjobs.py --ids`), seal2 / viewfoe_0x4B (emu.py commands in the
+     session-26 Done entry), misc/lab_1162_10 (cover_misc.txt), tour10/ch1_mitsusa (tour11 covers it)). 4140F8 is
+     waived. Run tour11 first, then `cover.py report` and re-run only what still fails. Goal `cover.py report` exit 0.
+     Session-24 runners, all under work/qa/cover/ so the report counts
      them (re-run them after any rebuild, since strings.tsv addresses change):
      `tools/debug/quotejobs.py` (16 battles × ~99 quotes, HP held by `quotecycle.lua KEEP=`; `--missing` re-forces
      unseen ones twice: all battle quotes now seen), `shikijobs.py` + `shikijobs.py --unlock` (status pages p1-p4
      for ids 0..75; unlock bits show techniques_b), `areajobs.py` + `areacycle.lua` (every area name through the map
      menu), credits with hold 30000 (work/qa/cover/credits), `labeljobs.py` (273 raw scenes `/123 0004 0000 0000
      SCRIPT LABEL` jump to the label before each unseen script line; 271/273 reached, lab_1162_10 and lab_1712_1 not).
-     Session 25 runners: `talkjobs.py`, `msgjobs.py [--ids ..] [--tag t]`, key items (see Done). Left (45), with
-     where each is read (code literal → string):
-     - str_menus2 40F77C..40F960 (12): the seal-tracing lesson ("Keep tracing the red line..."), literals at
-       0x0810E52C..0x0810E984: find what runs that code (the Drive event 700-704 or the tutorial battle's seal step).
-     - str_tutorial_help 410AE4..410B94 (help panel rows, pointed at from a table at 0x410AE0) and 410C64..410C7C
-       (【妖怪 白虎】 fragments, literals 0x08118108/0x0811810C/0x0811AAE0): tutorial battle help screens.
-     - str_system 128F64/128F74 (Saving... / Save complete., literal 0x080249A0): confirm a save in menu_save;
-       128F88 Save failed, 128F9C over 20 link sessions, 128FB8 Izayoi (link reward, 0x08024B80): likely waive
-       (EEPROM failure / link cable, same as the link screens already waived); 129150 Status / 12916C Info (column
-       table 0x129180); 129270 Ryuji's Lunch Box (code 0x0802FDD0: a separate key-item check).
-     - str_save 1279A4 Loading... / 1279C8 Save failed / 1279DC No save data (literals 0x080137B4, 0x08013A8C,
-       0x08013AF8): title Load with and without a save.
-     - str_shikigami_names 12B3C4..12B3D8 (? and the 5 elements, table 0x12B3AC..0x12B3C0): find the reader.
-     - str_char_names 41401C Girl, 414028 Lady, 4140F8 Riku (speaker table words 0x4139C4, 0x4139BC, 0x41392C..):
-       find which script lines use those speaker ids.
-     - str_abilities 13AF88 (row pointer 0x13ABA0): ability list entry, a shikigami that has it.
-     - ev_44C000 44D4F0 44D5AE (lab_1162_10 never reached: label scene times out) and 44DA8A 44DAB0 (script 782
-       after its battle, no label before them).
-     Waive only what is shown unreachable, with the reason.
-  3. The rest of the done-when: graphics rows left
-  (docs/re/graphics.md): G3 name-entry header/`けってい` (header already English as font text: check), G5 framed
-  labels per screen (the Drive labels are done), G6 battle win/lose banners, G8, G11 town signs (low), G12 map
-  labels, chapter cards / game over / credits: confirm each in tour sheets.
+     Session 25 runners: `talkjobs.py`, `msgjobs.py [--ids ..] [--tag t]`, key items. Session 26: cover_misc.txt,
+     the seal / wheelhelp / viewfoe emu.py runs (see Done).
+  3. The rest of the done-when: graphics rows left (docs/re/graphics.md): G3, G6, G12 checked (session 26);
+  still open: G11 town signs (BG tilesets lz 0x58E3DC.. ; no warp scene reaches a town map yet: try `field N` for
+  map ids until the shops show, then redraw the readable signs per D5), G8 brush lettering (likely battle effect
+  text = D12 SFX kana), G5 framed labels per screen. Chapter openings show area names as font text (no card art
+  found); credits are font text (credits sheet ok). **inkbox.py**: only the Yes/No buttons were checked (session
+  20); run `<skill>/scripts/inkbox.py` on every choice box and centred menu box in tour11's shots (Yes/No, title
+  menu, Save/Load headers, ring labels, speaker plate, battle tag) and record the results.
   Still unseen in a shot (add scenes): the party Swap label 1292CC, the
   non-battle right speaker plate (map 0x19E0BC: an event with a right-hand speaker), the 129064 column header
   row, the centred tutorial-help headers 410AE4.. (session 19 changed them; find when the battle shows them).

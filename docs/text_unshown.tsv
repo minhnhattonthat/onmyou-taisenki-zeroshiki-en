@@ -617,3 +617,21 @@
 40A5C0	unused (no reader): tech-quote tables hang off per-shikigami table 0x0840A620, which no ROM word, code literal (aligned or not) or LZ77 block points at; read watch saw no read in any battle (docs/re/text.md)
 40A5E0	unused (no reader): tech-quote tables hang off per-shikigami table 0x0840A620, which no ROM word, code literal (aligned or not) or LZ77 block points at; read watch saw no read in any battle (docs/re/text.md)
 40A600	unused (no reader): tech-quote tables hang off per-shikigami table 0x0840A620, which no ROM word, code literal (aligned or not) or LZ77 block points at; read watch saw no read in any battle (docs/re/text.md)
+1279C8	failure branch: title Load shows it only when the EEPROM read fails (0x08013A70); the Load screen with and without a save reads 1279A4/1279DC instead (work/qa/cover/misc/load_empty)
+128F64	link_window: post-link-session record routine 0x08024850 (states at 0x02005124; same routine as the 20-link-sessions / Izayoi reward lines 128F9C/128FB8; entered from 0x0800A138/0x0800A5A4); the menu save never calls it (save + reload run, session 26)
+128F74	link_window: post-link-session record routine 0x08024850 (see 128F64)
+128F88	link_window: post-link-session record routine 0x08024850, failure branch (see 128F64)
+128F9C	link_window: post-link-session reward check in 0x08024850 (more than 20 link sessions), needs a second GBA
+128FB8	link_window: link reward (Izayoi) after 20 link sessions, routine 0x08024850, needs a second GBA
+129150	unused (no reader): only in table 0x08129180, which 0x0802EA0C copies to its stack (sp+0x48) and never reads; the status page draws its other three column labels from their own literals
+12916C	unused (no reader): only in table 0x08129180, copied to the stack by 0x0802EA0C and never read (see 129150)
+12B3C4	unused (no reader): element-name table 0x0812B3AC is pointed at by no ROM word or code literal (every halfword-aligned word searched); not read on any status page of the 76 shikigami (shikijobs)
+12B3C8	unused (no reader): element-name table 0x0812B3AC, no pointer to it (see 12B3C4)
+12B3CC	unused (no reader): element-name table 0x0812B3AC, no pointer to it (see 12B3C4)
+12B3D0	unused (no reader): element-name table 0x0812B3AC, no pointer to it (see 12B3C4)
+12B3D4	unused (no reader): element-name table 0x0812B3AC, no pointer to it (see 12B3C4)
+12B3D8	unused (no reader): element-name table 0x0812B3AC, no pointer to it (see 12B3C4)
+13AF88	unused: ability 5 (row 4 of table 0x0813AB90, only reader 0x08036330) belongs to no shikigami: the per-shikigami ability table 0x0813B04E (76 ids) never holds 5
+41401C	unused: speaker-plate index 38 occurs only on op 094/098 lines, which call the plate 0x0801EC54 with a0=1 (shikigami-name path); the ROM name table 0x0841392C (only reader 0x0801ED44) is read only on the a0=0 path (probe: script 1756 logs a0=1 r1=0x24)
+414028	unused: speaker-plate index 36 occurs only on op 094/098 lines (a0=1 path), never with the ROM name table (see 41401C)
+4140F8	player name: table entries 0/11/19 (Riku's portraits) show the player's chosen name from RAM 0x020025AE instead (op 036 xxxx0001 lines in script 703 call the plate with index 0)

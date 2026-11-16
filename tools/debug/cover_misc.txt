@@ -1,0 +1,14 @@
+# Text-coverage scenes for the last gaps (session 26). Run with the textcover probe into work/qa/cover/misc:
+#   python -X utf8 tools/debug/warp_all.py build/onmyou_zeroshiki_en.gba --scenes tools/debug/cover_misc.txt \
+#     --out work/qa/cover/misc --states work/qa/cover/states --probe <skill>/scripts/lua/probes/textcover.lua \
+#     --var "RANGES='<cover.py ranges>'" --jobs 4
+# Battle-only screens (help rows, View foe headers, seal lesson) run from savestates with emu.py: docs/status.md.
+#
+# Title Load with no save: slot 1 -> "Loading..." then "No save data" (str_save 1279A4, 1279DC).
+load_empty   boot  press=600:-|6:start|150:-|6:start|200:-|6:down|30:-|6:down|30:-|6:a|400:-|6:a|200:-|6:a|200:-  mash=0 hold=600
+# Key-item list: entry 12 (flag 62) reads Ryuji's Lunch Box (129270) instead when flag 0x7B is set (0x0802FDBE).
+key_lunch    field 23  flags=0,1,2,21,22,23,24,28,62,123 press=6:start|300:-|6:a|200:- mash=0 hold=60
+# Script 1162 from label 10 (lab_1162_10 timed out at hold 2400): the fight after 44D3D8 then 44D4F0, 44D5AE.
+lab_1162_10  raw   /12300040000000011620010  hold=12000 frames=40000 deadline=39000
+# Script 782: its battle, then 44DA8A, 44DAB0.
+cov_782      script 782  hold=12000 frames=40000 deadline=39000
