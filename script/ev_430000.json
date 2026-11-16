@@ -440,7 +440,7 @@
    "script": "432750",
    "op": "098 00380000",
    "jp": "ふうん、ちょっと気分がいいわ{0010}そのまま、すこしまってて{0000}もらえる？{00C8}{0010}あのアンジって式神{0000}どうやら女性に弱いみたいよ{0010}私のカンはするどいのよ{0000}ここは私にまかせてね{0010}おまたせ、アンジさん{0000}お願いがあるんだけど…{0010}",
-   "en": "Hmm, that does feel rather nice.{0010}Could you wait right there{0000}for me, {00C8}?{0010}That Anji shikigami seems{0000}to have a weakness for women.{0010}My intuition is sharp, you know.{0000}Leave this one to me.{0010}Sorry to keep you, Anji-san.{0000}I have a little favor to ask...{0010}"
+   "en": "Hmm, that does feel rather nice.{0010}Wait right there a moment,{0000}will you? Now, {00C8}...{0010}That Anji shikigami seems{0000}to have a weakness for women.{0010}My intuition is sharp, you know.{0000}Leave this one to me.{0010}Sorry to keep you, Anji-san.{0000}I have a little favor to ask...{0010}"
   },
   {
    "id": "4329E0",
@@ -755,7 +755,7 @@
    "script": "433FA0",
    "op": "073 0001",
    "jp": "オレは、はずかしい闘いを{0000}しちまったようだな！ちぇ！{0010}まあ、おまえと正々堂々と闘っ{0000}たから、負けても気分がいいや{0010}",
-   "en": "Looks like I fought{0000}an embarrassin' fight! Shoot!{0010}Well, I fought you fair and square,{0000}so I feel good even if I lost.{0010}"
+   "en": "Looks like I made{0000}a fool of myself out there! Shoot!{0010}Well, I fought you fair and square,{0000}so I feel good even if I lost.{0010}"
   },
   {
    "id": "434092",
@@ -818,7 +818,7 @@
    "script": "433FA0",
    "op": "073 0001",
    "jp": "ちぇ！恥ずかしい闘いをしちま{0000}ったのは、おいらのほうだな！{0010}まあ、おまえと正々堂々と闘っ{0000}たから、負けても気分がいいや{0010}ところで…ジャクヤと{0000}ミンゴベエは連れてないのか？{0010}久しぶりに遊びたかったのにな{0010}",
-   "en": "Shoot! Guess I'm the one who{0000}fought the embarrassin' fight!{0010}Well, I fought you fair and square,{0000}so I feel good even if I lost.{0010}By the way... Ain't ya got Jakuya{0000}and Mingobee with ya?{0010}I wanted to play with 'em again.{0010}"
+   "en": "Shoot! Guess I'm the one who{0000}made a fool of himself!{0010}Well, I fought you fair and square,{0000}so I feel good even if I lost.{0010}By the way... Ain't ya got Jakuya{0000}and Mingobee with ya?{0010}I wanted to play with 'em again.{0010}"
   },
   {
    "id": "434458",

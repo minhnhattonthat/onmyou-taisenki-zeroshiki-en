@@ -216,7 +216,7 @@
    "script": "451BC4",
    "op": "036 00790001",
    "jp": "シラン・・・{0010}",
-   "en": "Shiran...{0010}"
+   "en": "Shiran... Call me \"Dunno\"...{0010}"
   },
   {
    "id": "451E20",
@@ -244,7 +244,7 @@
    "script": "451BC4",
    "op": "073 0001",
    "jp": "このシランが・・・{0000}敗北を知らんシランが・・・{0010}うああああああ{0010}",
-   "en": "I, Shiran...{0000}Shiran, who never knew defeat...{0010}Uwaaaaaaah{0010}"
+   "en": "I, Shiran...{0000}Defeat? I... I dunno defeat...{0010}Uwaaaaaaah!{0010}"
   },
   {
    "id": "452140",

@@ -125,7 +125,7 @@
    "script": "4491C0",
    "op": "036 00730001",
    "jp": "そうか・・・{0010}どうしても去らないというなら{0000}死んでもらうしかないね{0010}その正義感のために、私は{0000}何人もまわりから人間を{0010}うばわれていった・・・{0000}そして、私の子供さえ・・・{0010}だから正義のみかたきどりは{0000}きらいなんだよっ！！{0010}消えろおおお！！{0010}",
-   "en": "I see...{0010}If you won't leave no matter{0000}what, then you'll have to die.{0010}Because of that sense of justice,{0000}one person after another{0010}was taken from me...{0000}Even my own child...{0010}That's why I hate people{0000}who play the hero!!{0010}Disappeeear!!{0010}"
+   "en": "I see...{0010}If you won't leave no matter{0000}what, then you'll have to die.{0010}Because of that sense of justice,{0000}one person after another{0010}was taken from me...{0000}Even my own child...{0010}That's why I hate people{0000}who play the hero!!{0010}Get out of my sight!!{0010}"
   },
   {
    "id": "449434",
@@ -153,7 +153,7 @@
    "script": "4491C0",
    "op": "073 0001",
    "jp": "ま、まだ・・{0000}わからなかったのかっ！{0010}正義のみかたきどりのガキめ{0000}きらいなんだよっ！{0010}消えろおおお！！{0010}",
-   "en": "Y-you still...{0000}don't get it!?{0010}You brat, playing the hero!{0000}I hate you!{0010}Disappeeear!!{0010}"
+   "en": "Y-you still...{0000}don't get it!?{0010}You brat, playing the hero!{0000}I hate you!{0010}Get out of my sight!!{0010}"
   },
   {
    "id": "449716",

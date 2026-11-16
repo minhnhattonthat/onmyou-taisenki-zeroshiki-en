@@ -272,7 +272,7 @@
    "script": "45D650",
    "op": "036 00000001",
    "jp": "コゲンタ、待って{0000}今、「聖獣の祭壇」に行っても{0010}絶対に勝てそうにないよ{0010}だったら、急がば回れ{0000}行ってみようよ{0010}",
-   "en": "Kogenta, wait.{0000}If we go to the \"Sacred Beast Altar\"{0010}now, there's no way we'll win.{0010}So, more haste, less speed.{0000}Let's go see him.{0010}"
+   "en": "Kogenta, wait.{0000}If we go to the \"Sacred Beast Altar\"{0010}now, there's no way we'll win.{0010}Let's take the long way around.{0000}Let's go see him.{0010}"
   },
   {
    "id": "45DB9C",

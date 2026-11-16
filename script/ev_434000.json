@@ -328,7 +328,7 @@
    "script": "436110",
    "op": "036 00160001",
    "jp": "そういう理由があるなら大目に{0000}みます。席につきなさい{0010}",
-   "en": "If there's a reason like that, I'll{0000}let it slide. Take your seat.{0010}"
+   "en": "In that case, I'll let it slide.{0000}Take your seat.{0010}"
   },
   {
    "id": "436550",
