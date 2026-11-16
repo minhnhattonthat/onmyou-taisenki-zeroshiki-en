@@ -202,7 +202,7 @@
    "script": "454FA0",
    "op": "073 0001",
    "jp": "{00C8}さん{0010}これから「太白神社」に{0000}行くんだね{0010}ボクのフサノシンを{0000}一時的に使ってほしい{0010}ただし、闘ってフサノシンが{0000}なっとくしたら、だけどね{0010}用意はいい？{0010}",
-   "en": "{00C8}-san,{0010}you're heading to{0000}\"Taihaku Shrine\" now, right?{0010}I want you to use my Fusanoshin{0000}for a while.{0010}But only if Fusanoshin's{0000}convinced after we fight.{0010}Ready?{0010}"
+   "en": "{00C8}-san!{0010}So you're heading to{0000}\"Taihaku Shrine\" now, right?{0010}I want you to use my Fusanoshin{0000}for a while.{0010}But only if Fusanoshin's{0000}convinced after we fight.{0010}Ready?{0010}"
   },
   {
    "id": "455114",

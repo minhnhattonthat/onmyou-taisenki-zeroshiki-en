@@ -29,6 +29,8 @@ Standing non-bugs, `ok`:
 - "Shiki Pts" on the status page and "Healfire" are deliberate abbreviations (D10).
 - two kinds of art stay Japanese (D12): the title screen's copyright notice (©海童博行・富沢義彦／集英社… 2004) and
   the kana sound-effect sprites over battle hits (ドォォン, バシッ and the like). Any other Japanese is an issue.
+- the battle command ring / Drive panel: its green-and-pink striped backdrop and the half-hidden side labels are the
+  original's art (scanline mask); English labels drawn over those stripes are fine if the middle label reads.
 
 ## Verdicts
 One line per sheet id, nothing else:
