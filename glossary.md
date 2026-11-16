@@ -182,4 +182,13 @@ Other shikigami and NPC names: Hepburn without macrons, as in `script/str_shikig
   ("thith one", "ith"); あちき = "hon"; Yo!/Hey! DJ = "the great me"; あっし = "boss"/"ya"; のぅ old man = "eh";
   どす = "dear"; っしょ = "y'know"; ごわす = "lad", "I will"; ぞよ = ", I say"; である = "so it is"; であります
   soldier = "sir!". ♪ and ～ dropped.
+- b034-b041 (quotes 08-10, tech quotes, techniques, skills, weapons, system, tutorial): 相性 always "affinity"
+  (lint wants the word; "affinities" fails); 属性 element (Fire/Water/Earth/Wood/Metal); 空間 the field ("Make the
+  field Fire"); 相殺 clash ("The clash has sealed my action"); 控え reserve; 入れ替え/交替 swap (out); ＳＰ kept "SP";
+  技 move; X の術 -> "X Art" (Bind Art, Power Up Art); 陰陽X weapons -> "Onmyo X"; 経験値 EXP; tutorial help menu
+  【交替】【一覧】【逃げる】【防御】【攻撃】 -> [Swap] [List] [Run] [Guard] [Attack] (Drive actions, also in Bannai's
+  lecture); kinds/names as in the tables (drafts in tl/b036/b037.out.tsv until the cells are widened).
+  Voices: たい/ごわす Kyushu -> "lad"; ニャ cat girl -> "meow"; ネネ = Nene (third person); マロ+ござる -> "Maro ... it
+  shall"; でっせ/やさかい Kansai -> "pal"/"ya". Polish candidates: 羅知鱈喪来 kept as "Rachi Tara Morai"; 鯔驚 "Mullet
+  Shock"; 茶子菜々 "Chako Nana" (readings unsure).
 - Puns: 誇り/埃 (pride/dust) -> "pride" / lion pride; 鯛/恋 quiz kept as "koi"... love (polish candidate).

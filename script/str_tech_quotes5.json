@@ -4,42 +4,42 @@
   {
    "id": "40A568",
    "jp": "お前の技が戦況を優位にする",
-   "en": "",
+   "en": "Your move will turn\nthe battle our way.",
    "max": 28,
    "ptrs": 2
   },
   {
    "id": "40A584",
    "jp": "技発動！戦況を優位にするぞ",
-   "en": "",
+   "en": "Move activated!\nThe battle turns our way.",
    "max": 28,
    "ptrs": 2
   },
   {
    "id": "40A5A0",
    "jp": "お前の武器で敵の体力を奪え！",
-   "en": "",
+   "en": "Drain the foe's HP\nwith your weapon!",
    "max": 32,
    "ptrs": 2
   },
   {
    "id": "40A5C0",
    "jp": "武器召喚！強力な攻撃を繰出せ",
-   "en": "",
+   "en": "Weapon summon!\nUnleash a mighty attack!",
    "max": 32,
    "ptrs": 2
   },
   {
    "id": "40A5E0",
    "jp": "場の式神を控えの式神と交替だ",
-   "en": "",
+   "en": "Swap the shikigami on the\nfield with a reserve.",
    "max": 32,
    "ptrs": 4
   },
   {
    "id": "40A600",
    "jp": "空間変化で攻撃力上昇を狙うぞ",
-   "en": "",
+   "en": "Shift the field to\nraise our Attack.",
    "max": 29,
    "ptrs": 4
   }

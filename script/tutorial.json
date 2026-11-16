@@ -7,413 +7,413 @@
    "script": "6918F4",
    "op": "123 00000023000199990020",
    "jp": "ＺＺＺ・・・{0000}ムニャムニャ・・・{0010}",
-   "en": ""
+   "en": "ZZZ...{0000}Mumble mumble...{0010}"
   },
   {
    "id": "691B1E",
    "script": "6918F4",
    "op": "124 0020",
    "jp": "学校に行くんだろ？{0000}学校の後は、修行だからな！{0010}",
-   "en": ""
+   "en": "You're goin' to school, right?{0000}After school, it's trainin' time!{0010}"
   },
   {
    "id": "691B8A",
    "script": "6918F4",
    "op": "123 00000026000199990040",
    "jp": "急げ！{0000}教室は３階だぞ{0010}",
-   "en": ""
+   "en": "Hurry up!{0000}The classroom's on the 3rd floor.{0010}"
   },
   {
    "id": "691BC6",
    "script": "6918F4",
    "op": "124 0040",
    "jp": "学校の後は、修行だからな！{0010}",
-   "en": ""
+   "en": "After school, it's trainin' time!{0010}"
   },
   {
    "id": "691C94",
    "script": "6918F4",
    "op": "123 00000081000199990120",
    "jp": "さあ！修行するぞ{0000}やる気だせっ{0010}",
-   "en": ""
+   "en": "Come on! Trainin' time!{0000}Put some fire in it!{0010}"
   },
   {
    "id": "691CF0",
    "script": "6918F4",
    "op": "123 00100023000199990180",
    "jp": "こんなところにまで{0000}「地流」が来てるとはな{0010}",
-   "en": ""
+   "en": "Can't believe \"Chiryu\"{0000}made it all the way out here...{0010}"
   },
   {
    "id": "691D40",
    "script": "6918F4",
    "op": "124 0130",
    "jp": "ちくしょう！{0000}入れないぜ{0010}",
-   "en": ""
+   "en": "Dammit!{0000}We can't get in!{0010}"
   },
   {
    "id": "691D7E",
    "script": "6918F4",
    "op": "124 0150",
    "jp": "よっしゃあ！{0000}やってやるぜ！{0010}",
-   "en": ""
+   "en": "All right!{0000}Let's do this!{0010}"
   },
   {
    "id": "691E08",
    "script": "6918F4",
    "op": "123 00100002000199990170",
    "jp": "京南のダム湖に行くぞ{0000}学校の北だぞ{0010}",
-   "en": ""
+   "en": "We're goin' to the dam lake in South Kyo.{0000}It's north of the school.{0010}"
   },
   {
    "id": "691E50",
    "script": "6918F4",
    "op": "124 0170",
    "jp": "この奥だな{0000}進んでみようぜ{0010}",
-   "en": ""
+   "en": "It's further in here.{0000}Let's keep goin'.{0010}"
   },
   {
    "id": "691E90",
    "script": "6918F4",
    "op": "124 0180",
    "jp": "よっしゃあ！{0000}やってやるぜ！{0010}",
-   "en": ""
+   "en": "All right!{0000}Let's do this!{0010}"
   },
   {
    "id": "691F6A",
    "script": "6918F4",
    "op": "123 00100005000199990220",
    "jp": "学校に行きゃ、誰か弁当{0000}持ってるだろ{0010}",
-   "en": ""
+   "en": "If we go to school, somebody's{0000}gotta have a lunch.{0010}"
   },
   {
    "id": "691FB4",
    "script": "6918F4",
    "op": "124 0220",
    "jp": "オレも腹へってきたぞ{0000}まあ、いいけどよ{0010}",
-   "en": ""
+   "en": "I'm gettin' hungry too.{0000}Eh, whatever.{0010}"
   },
   {
    "id": "692018",
    "script": "6918F4",
    "op": "123 00100005000199990240",
    "jp": "そんな少ない弁当で{0000}よく我慢できるな、人間は{0010}",
-   "en": ""
+   "en": "Lunches that small...{0000}How do you humans stand it?{0010}"
   },
   {
    "id": "69206A",
    "script": "6918F4",
    "op": "124 0240",
    "jp": "さて！京南町に{0000}むかうぜ！{0010}",
-   "en": ""
+   "en": "Right! Let's head for{0000}South Kyo Town!{0010}"
   },
   {
    "id": "6920C2",
    "script": "6918F4",
    "op": "123 00100006000199990260",
    "jp": "よっしゃあ！{0000}やってやるぜ！{0010}",
-   "en": ""
+   "en": "All right!{0000}Let's do this!{0010}"
   },
   {
    "id": "692104",
    "script": "6918F4",
    "op": "124 0260",
    "jp": "さあ！地流ビルに急ぐぞ！{0000}もっと急げっ！{0010}",
-   "en": ""
+   "en": "Come on! Hurry to the Chiryu Building!{0000}Faster!{0010}"
   },
   {
    "id": "69216A",
    "script": "6918F4",
    "op": "123 00000141000199990310",
    "jp": "いよいよ地流ビルだな{0000}気合入れていくぜ！{0010}",
-   "en": ""
+   "en": "The Chiryu Building at last.{0000}Let's give it everything!{0010}"
   },
   {
    "id": "6921B8",
    "script": "6918F4",
    "op": "124 0310",
    "jp": "ザコはやっつけて{0000}さっさとすすむぜ！{0010}",
-   "en": ""
+   "en": "We'll take out the small fry{0000}and keep movin'!{0010}"
   },
   {
    "id": "692232",
    "script": "6918F4",
    "op": "123 00100008000199990350",
    "jp": "太陰神社に急ぐぜ！{0000}京西町の西だぜ！急げ！{0010}",
-   "en": ""
+   "en": "Hurry to Taiin Shrine!{0000}It's west of West Kyo Town! Move it!{0010}"
   },
   {
    "id": "692282",
    "script": "6918F4",
    "op": "124 0330",
    "jp": "竹ってどれも{0000}いっしょに見えるよな{0010}",
-   "en": ""
+   "en": "Bamboo all looks{0000}the same, doesn't it?{0010}"
   },
   {
    "id": "6922CA",
    "script": "6918F4",
    "op": "124 0350",
    "jp": "よっしゃあ！{0000}やってやるぜ！{0010}",
-   "en": ""
+   "en": "All right!{0000}Let's do this!{0010}"
   },
   {
    "id": "69230C",
    "script": "6918F4",
    "op": "124 0904",
    "jp": "よっしゃあ！{0000}やってやるぜ！{0010}",
-   "en": ""
+   "en": "All right!{0000}Let's do this!{0010}"
   },
   {
    "id": "6923B6",
    "script": "6918F4",
    "op": "124 0520",
    "jp": "ごしょ？京北にあるって{0000}言ってたろ？行くぜ！{0010}",
-   "en": ""
+   "en": "The Gosho? Didn't they say{0000}it's in North Kyo? Let's go!{0010}"
   },
   {
    "id": "692408",
    "script": "6918F4",
    "op": "124 0530",
    "jp": "御所は、ここから{0000}南に進むんだぜ{0010}",
-   "en": ""
+   "en": "To get to the Gosho,{0000}head south from here.{0010}"
   },
   {
    "id": "692466",
    "script": "6918F4",
    "op": "123 00000280000199990540",
    "jp": "御所は、いるだけでも{0000}霊気を感じるぜ{0010}",
-   "en": ""
+   "en": "Just bein' in the Gosho,{0000}ya can feel the spiritual power.{0010}"
   },
   {
    "id": "6924B0",
    "script": "6918F4",
    "op": "124 0540",
    "jp": "さァ！白虎のコゲンタの{0000}実力をみせてやるぜ！{0010}",
-   "en": ""
+   "en": "Now! I'll show ya what Kogenta{0000}of the Byakko can do!{0010}"
   },
   {
    "id": "692502",
    "script": "6918F4",
    "op": "124 0550",
    "jp": "あたらしい町か{0000}腹へったな{0010}",
-   "en": ""
+   "en": "A new town, huh?{0000}I'm hungry.{0010}"
   },
   {
    "id": "69255A",
    "script": "6918F4",
    "op": "123 00000321000199990640",
    "jp": "よしっ！{0000}京北町にいくぞ！{0010}",
-   "en": ""
+   "en": "Right!{0000}To North Kyo Town!{0010}"
   },
   {
    "id": "6925FA",
    "script": "6918F4",
    "op": "123 00100016000199990660",
    "jp": "太白神社は京東町の東だぜ{0000}いくぞ！{0010}",
-   "en": ""
+   "en": "Taihaku Shrine is east of East Kyo Town.{0000}Let's go!{0010}"
   },
   {
    "id": "692642",
    "script": "6918F4",
    "op": "124 0650",
    "jp": "あたらしい町か{0000}腹へったな{0010}",
-   "en": ""
+   "en": "A new town, huh?{0000}I'm hungry.{0010}"
   },
   {
    "id": "692682",
    "script": "6918F4",
    "op": "124 0660",
    "jp": "なつかしいなぁ{0000}しっかしぼろぼろだな{0010}",
-   "en": ""
+   "en": "Brings back memories...{0000}But man, it's a wreck.{0010}"
   },
   {
    "id": "692794",
    "script": "6918F4",
    "op": "124 0721",
    "jp": "太白神社は京東町の東だぜ{0000}いくぞ！{0010}",
-   "en": ""
+   "en": "Taihaku Shrine is east of East Kyo Town.{0000}Let's go!{0010}"
   },
   {
    "id": "692874",
    "script": "6918F4",
    "op": "124 0725",
    "jp": "なつかしいなぁ{0000}しっかしぼろぼろだな{0010}",
-   "en": ""
+   "en": "Brings back memories...{0000}But man, it's a wreck.{0010}"
   },
   {
    "id": "692956",
    "script": "6918F4",
    "op": "124 0722",
    "jp": "さあて！いっちょ{0000}暴れまわるぜ！{0010}",
-   "en": ""
+   "en": "All right!{0000}Time to cut loose!{0010}"
   },
   {
    "id": "6929B4",
    "script": "6918F4",
    "op": "123 00000390000199990750",
    "jp": "よっしゃ！{0000}かるいもんだぜ{0010}",
-   "en": ""
+   "en": "All right!{0000}Piece of cake.{0010}"
   },
   {
    "id": "692A2C",
    "script": "6918F4",
    "op": "124 0755",
    "jp": "ヤクモ、見た目は変わったが{0000}部屋は変わってないな・・・{0010}",
-   "en": ""
+   "en": "Yakumo, you look different,{0000}but your room hasn't changed...{0010}"
   },
   {
    "id": "692A88",
    "script": "6918F4",
    "op": "124 0760",
    "jp": "さァ！白虎のコゲンタの{0000}実力をみせてやるぜ！{0010}",
-   "en": ""
+   "en": "Now! I'll show ya what Kogenta{0000}of the Byakko can do!{0010}"
   },
   {
    "id": "692AF2",
    "script": "6918F4",
    "op": "123 00100024000199990820",
    "jp": "鬼門塚へ急げ！{0000}太白神社の北だぜ！{0010}",
-   "en": ""
+   "en": "Hurry to Kimon Mound!{0000}It's north of Taihaku Shrine!{0010}"
   },
   {
    "id": "692B3A",
    "script": "6918F4",
    "op": "124 0820",
    "jp": "さァ！白虎のコゲンタの{0000}実力をみせてやるぜ！{0010}",
-   "en": ""
+   "en": "Now! I'll show ya what Kogenta{0000}of the Byakko can do!{0010}"
   },
   {
    "id": "692BA4",
    "script": "6918F4",
    "op": "123 00100017000199990920",
    "jp": "さァ！白虎のコゲンタの{0000}実力をみせてやるぜ！{0010}",
-   "en": ""
+   "en": "Now! I'll show ya what Kogenta{0000}of the Byakko can do!{0010}"
   },
   {
    "id": "692BF6",
    "script": "6918F4",
    "op": "124 0920",
    "jp": "ここは、ふるさとに{0000}にたニオイがするぜ{0010}",
-   "en": ""
+   "en": "This place smells{0000}kinda like home.{0010}"
   },
   {
    "id": "692C5A",
    "script": "6918F4",
    "op": "123 00100018000199991020",
    "jp": "さァ！白虎のコゲンタの{0000}実力をみせてやるぜ！{0010}",
-   "en": ""
+   "en": "Now! I'll show ya what Kogenta{0000}of the Byakko can do!{0010}"
   },
   {
    "id": "692CAC",
    "script": "6918F4",
    "op": "124 1020",
    "jp": "ここは、ふるさとに{0000}にたニオイがするぜ{0010}",
-   "en": ""
+   "en": "This place smells{0000}kinda like home.{0010}"
   },
   {
    "id": "692D10",
    "script": "6918F4",
    "op": "123 00100019000199991120",
    "jp": "さァ！白虎のコゲンタの{0000}実力をみせてやるぜ！{0010}",
-   "en": ""
+   "en": "Now! I'll show ya what Kogenta{0000}of the Byakko can do!{0010}"
   },
   {
    "id": "692D62",
    "script": "6918F4",
    "op": "124 1120",
    "jp": "ここは、ふるさとに{0000}にたニオイがするぜ{0010}",
-   "en": ""
+   "en": "This place smells{0000}kinda like home.{0010}"
   },
   {
    "id": "692DC6",
    "script": "6918F4",
    "op": "123 00100020000199991220",
    "jp": "さァ！白虎のコゲンタの{0000}実力をみせてやるぜ！{0010}",
-   "en": ""
+   "en": "Now! I'll show ya what Kogenta{0000}of the Byakko can do!{0010}"
   },
   {
    "id": "692E18",
    "script": "6918F4",
    "op": "124 1220",
    "jp": "ここは、ふるさとに{0000}にたニオイがするぜ{0010}",
-   "en": ""
+   "en": "This place smells{0000}kinda like home.{0010}"
   },
   {
    "id": "692E7C",
    "script": "6918F4",
    "op": "123 00000671000199991320",
    "jp": "ちきしょう！{0000}もっと力がほしい！{0010}",
-   "en": ""
+   "en": "Dammit!{0000}I want more power!{0010}"
   },
   {
    "id": "692EC2",
    "script": "6918F4",
    "op": "124 1320",
    "jp": "大・降・神が使えれば{0000}こわいものなしだぜ！{0010}",
-   "en": ""
+   "en": "If I could use the Great-Des-cent,{0000}I wouldn't fear a thing!{0010}"
   },
   {
    "id": "692F42",
    "script": "6918F4",
    "op": "123 00100021000199991420",
    "jp": "聖獣の祭壇か・・・{0000}いくぜっ！{0010}",
-   "en": ""
+   "en": "The Sacred Beast Altar...{0000}Here we go!{0010}"
   },
   {
    "id": "692F86",
    "script": "6918F4",
    "op": "124 1420",
    "jp": "さァ！白虎のコゲンタの{0000}実力をみせてやるぜ！{0010}",
-   "en": ""
+   "en": "Now! I'll show ya what Kogenta{0000}of the Byakko can do!{0010}"
   },
   {
    "id": "692FD8",
    "script": "6918F4",
    "op": "124 1430",
    "jp": "オレたちの力{0000}みせてやるぜ！！！{0010}",
-   "en": ""
+   "en": "We'll show 'em{0000}what we've got!!!{0010}"
   },
   {
    "id": "69301E",
    "script": "6918F4",
    "op": "124 0915",
    "jp": "オマエも、やっと{0000}一人前に見えてきたな！{0010}",
-   "en": ""
+   "en": "You're finally startin' to look{0000}like the real deal!{0010}"
   },
   {
    "id": "6930D0",
    "script": "6930A4",
    "op": "073 0001",
    "jp": "式神のバトルは、自分の式神が{0000}全てＨＰ０になれば負ける{0010}そこで死ぬことはないが{0000}連戦の時にも困らないように{0010}ＨＰは常に気をつけるんじゃ{0010}回復ポイントなどのＨＰ回復{0000}手段もあるが油断は禁物{0010}なるべく多くの式神を入手して{0000}長い戦いに備えるべきなのじゃ{0010}",
-   "en": ""
+   "en": "In shikigami battles, you lose{0000}when all your shikigami hit 0 HP.{0010}You won't die from it, but{0000}so you're not stuck in a long fight,{0010}always keep an eye on your HP.{0010}There are ways to recover HP, such{0000}as recovery points, but stay alert.{0010}Gather as many shikigami as you can{0000}and prepare for long battles.{0010}"
   },
   {
    "id": "693210",
    "script": "6931E4",
    "op": "073 0001",
    "jp": "闘神士は、式神に指示をする{0000}必要がある。{0010}指示の方法が「印」と呼ばれる{0000}線の組み合わせなのじゃ{0010}「ドライブ」で「攻」を選ぶと{0000}印入力画面になるのじゃ{0010}印を十字ボタンで入力すれば{0000}正解なら赤、失敗なら青になる{0010}赤を続けていけば{0000}「印」は金色に光る{0010}「印」が完成した証拠じゃ{0010}完成した「印」は式神に伝わり{0000}必殺技となるのじゃ{0010}重要な点として、「印」は{0000}むやみに作れないのじゃ{0010}バトル時、ＨＰの下にある{0000}式点というバーを消費して{0010}「印」は完成するのじゃ{0010}じゃからして{0000}こまめに小さい技を出したり{0010}まとめて大技を出したりと{0000}状況に応じて使い分けられれば{0010}一人前の闘神士となるのじゃ{0010}",
-   "en": ""
+   "en": "A Tojinshi must give orders{0000}to their shikigami.{0010}Those orders are made with lines{0000}combined into what we call \"seals.\"{0010}Choose \"Attack\" in the \"Drive\"{0000}to open the seal input screen.{0010}Enter the seal with the + Pad: right{0000}strokes turn red, wrong ones blue.{0010}Keep the reds coming and{0000}the \"seal\" glows gold.{0010}That's the proof the \"seal\" is done.{0010}A finished \"seal\" reaches your{0000}shikigami as a special move.{0010}Mind this well: you can't make{0000}\"seals\" whenever you please.{0010}In battle, a seal uses up the bar{0000}under your HP, the Shiki Points,{0010}to complete the \"seal.\"{0010}And so, use small moves often,{0000}or save up for one big move.{0010}Switch between them to suit the{0000}situation, and you'll be{0010}a full-fledged Tojinshi.{0010}"
   },
   {
    "id": "6934B4",
    "script": "693488",
    "op": "073 0001",
    "jp": "闘神士は、最大３体の式神に{0000}指示して闘いを行う{0010}つまり、３式神ＶＳ３式神{0000}ということになる{0010}指示は必ず「ドライブ」を{0000}通して行われるのじゃ{0010}闘神士は「ドライブ」により{0000}５つの行動を取ることができる{0010}１に「攻撃」。敵を攻撃する{0000}基本じゃ。必殺技も複数あるぞ{0010}２に「防御」。敵からうける{0000}ダメージを減らすことができる{0010}３に「逃げる」。逃げられない{0000}場合もあるので注意が必要じゃ{0010}４に「一覧」。式神たちの{0000}細かいデータを分析できる{0010}５に「交替」。戦闘中の式神と{0000}控えの式神を入れかえることで{0010}戦局を有利にすることができる{0010}",
-   "en": ""
+   "en": "A Tojinshi gives orders to up to{0000}three shikigami in battle.{0010}In other words, it's{0000}3 shikigami vs. 3 shikigami.{0010}Orders are always given{0000}through the \"Drive.\"{0010}With the \"Drive,\" a Tojinshi{0000}can take five actions.{0010}One: \"Attack.\" The basics of{0000}fighting. There are special moves too.{0010}Two: \"Guard.\" It reduces the{0000}damage the enemy deals you.{0010}Three: \"Run.\" Mind that sometimes{0000}you can't get away.{0010}Four: \"List.\" Analyze your{0000}shikigami's detailed data.{0010}Five: \"Swap.\" Switch the shikigami{0000}in battle with one in reserve{0010}to turn the battle your way.{0010}"
   },
   {
    "id": "693714",
    "script": "6936E8",
    "op": "073 0001",
    "jp": "闘神士は、この世を悪から{0000}守るためにいるのじゃ{0010}「ドライブ」を用いて{0000}荒ぶる「式神」の力をかりる{0010}まずは式神と話をして{0000}仲間にするのじゃ{0010}仲間式神をセットすることで{0000}バトル参加が可能になる{0010}最大３体までバトルの前に{0000}セットしておくのじゃ{0010}セットは「ドライブメニュー」{0000}を開き「替」を選べばよい{0010}バトルが始まったら、その３体{0000}以外は参加することができん{0010}式神には、天敵となる式神が{0000}必ずいるものじゃ{0010}闘う順番、交替のチャンスを{0000}体で覚えれば、強くなれるぞ{0010}",
-   "en": ""
+   "en": "Tojinshi exist to protect{0000}this world from evil.{0010}With the \"Drive,\" they borrow{0000}the power of wild \"shikigami.\"{0010}First, talk to a shikigami{0000}and make it your ally.{0010}Set ally shikigami and{0000}they can join battles.{0010}Set up to three of them{0000}before a battle.{0010}To set them, open the \"Drive menu\"{0000}and choose \"Swap.\"{0010}Once a battle starts, only those{0000}three can take part.{0010}Every shikigami has another{0000}shikigami that's its natural enemy.{0010}Learn the battle order and when to{0000}swap by heart, and you'll grow strong.{0010}"
   },
   {
    "id": "69392C",
    "script": "693908",
    "op": "073 0001",
    "jp": "式神と共に闘う法をここに記す{0000}どれについて勉強するかな？{0010}",
-   "en": ""
+   "en": "Here I record how to fight{0000}alongside shikigami. Which will you study?{0010}"
   }
  ]
 }

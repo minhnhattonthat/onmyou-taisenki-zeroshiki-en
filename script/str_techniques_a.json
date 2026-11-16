@@ -4,527 +4,527 @@
   {
    "id": "13B854",
    "jp": "暫磁爆流",
-   "en": "",
+   "en": "Magnetic Burst Stream",
    "max": 12
   },
   {
    "id": "13B860",
    "jp": "醒冶転生",
-   "en": "",
+   "en": "Forge Rebirth",
    "max": 12
   },
   {
    "id": "13B86C",
    "jp": "魔砕踏",
-   "en": "",
+   "en": "Demon-Crush Stomp",
    "max": 8
   },
   {
    "id": "13B874",
    "jp": "ＨＰ回復",
-   "en": "",
+   "en": "HP Recovery",
    "max": 12
   },
   {
    "id": "13B880",
    "jp": "タックル＆掌打",
-   "en": "",
+   "en": "Tackle & Palm Strike",
    "max": 16
   },
   {
    "id": "13B890",
    "jp": "突き",
-   "en": "",
+   "en": "Thrust",
    "max": 8
   },
   {
    "id": "13B898",
    "jp": "水球",
-   "en": "",
+   "en": "Water Ball",
    "max": 8
   },
   {
    "id": "13B8A0",
    "jp": "パンチ＆キック",
-   "en": "",
+   "en": "Punch & Kick",
    "max": 16
   },
   {
    "id": "13B8B0",
    "jp": "高速跳びひっかき",
-   "en": "",
+   "en": "Rapid Leap Scratch",
    "max": 20
   },
   {
    "id": "13B8C4",
    "jp": "跳びひっかき",
-   "en": "",
+   "en": "Leap Scratch",
    "max": 16
   },
   {
    "id": "13B8D4",
    "jp": "酸弾",
-   "en": "",
+   "en": "Acid Shot",
    "max": 8
   },
   {
    "id": "13B8DC",
    "jp": "土偶怪鳥",
-   "en": "",
+   "en": "Clay Doll Bird",
    "max": 12
   },
   {
    "id": "13B8E8",
    "jp": "連続タックル",
-   "en": "",
+   "en": "Tackle Barrage",
    "max": 16,
    "ptrs": 5
   },
   {
    "id": "13B8F8",
    "jp": "なぐる",
-   "en": "",
+   "en": "Smack",
    "max": 8,
    "ptrs": 2
   },
   {
    "id": "13B900",
    "jp": "ハサミ突き",
-   "en": "",
+   "en": "Pincer Thrust",
    "max": 12
   },
   {
    "id": "13B90C",
    "jp": "連続パンチ",
-   "en": "",
+   "en": "Punch Barrage",
    "max": 12,
    "ptrs": 2
   },
   {
    "id": "13B918",
    "jp": "四股",
-   "en": "",
+   "en": "Sumo Stomp",
    "max": 8
   },
   {
    "id": "13B920",
    "jp": "急降下蹴り",
-   "en": "",
+   "en": "Dive Kick",
    "max": 12,
    "ptrs": 2
   },
   {
    "id": "13B92C",
    "jp": "殴り",
-   "en": "",
+   "en": "Pummel",
    "max": 8
   },
   {
    "id": "13B934",
    "jp": "氷塊の術",
-   "en": "",
+   "en": "Ice Block Art",
    "max": 12,
    "ptrs": 3
   },
   {
    "id": "13B940",
    "jp": "呪縛の術",
-   "en": "",
+   "en": "Bind Art",
    "max": 12,
    "ptrs": 2
   },
   {
    "id": "13B94C",
    "jp": "放電球",
-   "en": "",
+   "en": "Spark Ball",
    "max": 8
   },
   {
    "id": "13B954",
    "jp": "吠え＆殴る",
-   "en": "",
+   "en": "Roar & Pummel",
    "max": 12,
    "ptrs": 2
   },
   {
    "id": "13B960",
    "jp": "投げキスひっかき",
-   "en": "",
+   "en": "Blown-Kiss Scratch",
    "max": 20
   },
   {
    "id": "13B974",
    "jp": "噴火の術",
-   "en": "",
+   "en": "Eruption Art",
    "max": 12,
    "ptrs": 3
   },
   {
    "id": "13B980",
    "jp": "連続蹴り",
-   "en": "",
+   "en": "Kick Barrage",
    "max": 12
   },
   {
    "id": "13B98C",
    "jp": "後ろ足蹴り",
-   "en": "",
+   "en": "Back Kick",
    "max": 12
   },
   {
    "id": "13B998",
    "jp": "突き飛ばし",
-   "en": "",
+   "en": "Shove",
    "max": 12,
    "ptrs": 2
   },
   {
    "id": "13B9A4",
    "jp": "ぶちかまし",
-   "en": "",
+   "en": "Body Slam",
    "max": 12,
    "ptrs": 2
   },
   {
    "id": "13B9B0",
    "jp": "タックル＆キック",
-   "en": "",
+   "en": "Tackle & Kick",
    "max": 20
   },
   {
    "id": "13B9C4",
    "jp": "かみつき",
-   "en": "",
+   "en": "Bite",
    "max": 12
   },
   {
    "id": "13B9D0",
    "jp": "抱擁",
-   "en": "",
+   "en": "Embrace",
    "max": 8
   },
   {
    "id": "13B9D8",
    "jp": "急降下",
-   "en": "",
+   "en": "Dive",
    "max": 8,
    "ptrs": 3
   },
   {
    "id": "13B9E0",
    "jp": "妖力アップの術",
-   "en": "",
+   "en": "Power Up Art",
    "max": 16,
    "ptrs": 2
   },
   {
    "id": "13B9F0",
    "jp": "薬品大量落とし",
-   "en": "",
+   "en": "Potion Shower",
    "max": 16
   },
   {
    "id": "13BA00",
    "jp": "薬品ビン投げ",
-   "en": "",
+   "en": "Potion Toss",
    "max": 16
   },
   {
    "id": "13BA10",
    "jp": "パンチ＆落下",
-   "en": "",
+   "en": "Punch & Drop",
    "max": 16
   },
   {
    "id": "13BA20",
    "jp": "念飛ばし",
-   "en": "",
+   "en": "Mind Blast",
    "max": 12
   },
   {
    "id": "13BA2C",
    "jp": "斬り上げ",
-   "en": "",
+   "en": "Rising Slash",
    "max": 12
   },
   {
    "id": "13BA38",
    "jp": "投げ飛ばし",
-   "en": "",
+   "en": "Hurl",
    "max": 12
   },
   {
    "id": "13BA44",
    "jp": "一撃死",
-   "en": "",
+   "en": "Instant Death",
    "max": 8,
    "ptrs": 3
   },
   {
    "id": "13BA4C",
    "jp": "パンチ＆触手突き",
-   "en": "",
+   "en": "Punch & Tentacle",
    "max": 20
   },
   {
    "id": "13BA60",
    "jp": "触手突き",
-   "en": "",
+   "en": "Tentacle Jab",
    "max": 12
   },
   {
    "id": "13BA6C",
    "jp": "幻影の術",
-   "en": "",
+   "en": "Phantom Art",
    "max": 12,
    "ptrs": 3
   },
   {
    "id": "13BA78",
    "jp": "跳ね飛ばし",
-   "en": "",
+   "en": "Knock Away",
    "max": 12,
    "ptrs": 3
   },
   {
    "id": "13BA84",
    "jp": "ヘビパンチ",
-   "en": "",
+   "en": "Snake Punch",
    "max": 12,
    "ptrs": 2
   },
   {
    "id": "13BA90",
    "jp": "スライディング？",
-   "en": "",
+   "en": "Sliding?",
    "max": 20
   },
   {
    "id": "13BAA4",
    "jp": "妖力ダウンの術",
-   "en": "",
+   "en": "Power Down Art",
    "max": 16,
    "ptrs": 4
   },
   {
    "id": "13BAB4",
    "jp": "キック＆銃",
-   "en": "",
+   "en": "Kick & Gun",
    "max": 12
   },
   {
    "id": "13BAC0",
    "jp": "キック",
-   "en": "",
+   "en": "Kick",
    "max": 8,
    "ptrs": 3
   },
   {
    "id": "13BAC8",
    "jp": "石化の術",
-   "en": "",
+   "en": "Petrify Art",
    "max": 12,
    "ptrs": 3
   },
   {
    "id": "13BAD4",
    "jp": "火球",
-   "en": "",
+   "en": "Fireball",
    "max": 8,
    "ptrs": 2
   },
   {
    "id": "13BADC",
    "jp": "呪縛の歌",
-   "en": "",
+   "en": "Bind Song",
    "max": 12
   },
   {
    "id": "13BAE8",
    "jp": "殴り＆頭突き",
-   "en": "",
+   "en": "Pummel & Headbutt",
    "max": 16
   },
   {
    "id": "13BAF8",
    "jp": "毒の術",
-   "en": "",
+   "en": "Poison Art",
    "max": 8,
    "ptrs": 3
   },
   {
    "id": "13BB00",
    "jp": "キック斬",
-   "en": "",
+   "en": "Kick Slash",
    "max": 12
   },
   {
    "id": "13BB0C",
    "jp": "攻撃力アップの術",
-   "en": "",
+   "en": "Attack Up Art",
    "max": 20,
    "ptrs": 6
   },
   {
    "id": "13BB20",
    "jp": "スライディング",
-   "en": "",
+   "en": "Sliding",
    "max": 16,
    "ptrs": 5
   },
   {
    "id": "13BB30",
    "jp": "魅了の術",
-   "en": "",
+   "en": "Charm Art",
    "max": 12,
    "ptrs": 3
   },
   {
    "id": "13BB3C",
    "jp": "ひっかき",
-   "en": "",
+   "en": "Scratch",
    "max": 12,
    "ptrs": 6
   },
   {
    "id": "13BB48",
    "jp": "癒しの舞",
-   "en": "",
+   "en": "Healing Dance",
    "max": 12,
    "ptrs": 3
   },
   {
    "id": "13BB54",
    "jp": "ダブルタックル",
-   "en": "",
+   "en": "Double Tackle",
    "max": 16,
    "ptrs": 3
   },
   {
    "id": "13BB64",
    "jp": "加護力アップの術",
-   "en": "",
+   "en": "Guard Up Art",
    "max": 20,
    "ptrs": 3
   },
   {
    "id": "13BB78",
    "jp": "空中蹴り",
-   "en": "",
+   "en": "Air Kick",
    "max": 12,
    "ptrs": 2
   },
   {
    "id": "13BB84",
    "jp": "噴水の術",
-   "en": "",
+   "en": "Fountain Art",
    "max": 12,
    "ptrs": 10
   },
   {
    "id": "13BB90",
    "jp": "睡眠の術",
-   "en": "",
+   "en": "Sleep Art",
    "max": 12,
    "ptrs": 4
   },
   {
    "id": "13BB9C",
    "jp": "空中連続蹴り",
-   "en": "",
+   "en": "Air Kick Barrage",
    "max": 16
   },
   {
    "id": "13BBAC",
    "jp": "触手蹴り",
-   "en": "",
+   "en": "Tentacle Kick",
    "max": 12
   },
   {
    "id": "13BBB8",
    "jp": "攻撃力ダウンの術",
-   "en": "",
+   "en": "Attack Down Art",
    "max": 20,
    "ptrs": 4
   },
   {
    "id": "13BBCC",
    "jp": "地震",
-   "en": "",
+   "en": "Earthquake",
    "max": 8,
    "ptrs": 2
   },
   {
    "id": "13BBD4",
    "jp": "浄化の舞",
-   "en": "",
+   "en": "Purifying Dance",
    "max": 12,
    "ptrs": 3
   },
   {
    "id": "13BBE0",
    "jp": "落下＆蹴り",
-   "en": "",
+   "en": "Drop & Kick",
    "max": 12
   },
   {
    "id": "13BBEC",
    "jp": "かじりつき",
-   "en": "",
+   "en": "Gnaw",
    "max": 12
   },
   {
    "id": "13BBF8",
    "jp": "パンチ",
-   "en": "",
+   "en": "Punch",
    "max": 8,
    "ptrs": 4
   },
   {
    "id": "13BC00",
    "jp": "ＨＰ吸収",
-   "en": "",
+   "en": "HP Drain",
    "max": 12,
    "ptrs": 3
   },
   {
    "id": "13BC0C",
    "jp": "キック＆落下",
-   "en": "",
+   "en": "Kick & Drop",
    "max": 16,
    "ptrs": 2
   },
   {
    "id": "13BC1C",
    "jp": "滑空蹴り",
-   "en": "",
+   "en": "Gliding Kick",
    "max": 12
   },
   {
    "id": "13BC28",
    "jp": "カマイタチの術",
-   "en": "",
+   "en": "Kamaitachi Art",
    "max": 16,
    "ptrs": 7
   },
   {
    "id": "13BC38",
    "jp": "カウンター",
-   "en": "",
+   "en": "Counter",
    "max": 12,
    "ptrs": 3
   },
   {
    "id": "13BC44",
    "jp": "高跳び蹴り",
-   "en": "",
+   "en": "High Jump Kick",
    "max": 12,
    "ptrs": 3
   },
   {
    "id": "13BC50",
    "jp": "А石の術",
-   "en": "",
+   "en": "Meteor Art",
    "max": 12,
    "ptrs": 6,
    "notes": "gaiji А=隕"
@@ -532,144 +532,144 @@
   {
    "id": "13BC5C",
    "jp": "頭突き",
-   "en": "",
+   "en": "Headbutt",
    "max": 8,
    "ptrs": 3
   },
   {
    "id": "13BC64",
    "jp": "体当たり",
-   "en": "",
+   "en": "Body Blow",
    "max": 12,
    "ptrs": 6
   },
   {
    "id": "13BC70",
    "jp": "落雷の術",
-   "en": "",
+   "en": "Lightning Art",
    "max": 12,
    "ptrs": 7
   },
   {
    "id": "13BC7C",
    "jp": "加護力ダウンの術",
-   "en": "",
+   "en": "Guard Down Art",
    "max": 20,
    "ptrs": 3
   },
   {
    "id": "13BC90",
    "jp": "チョップ",
-   "en": "",
+   "en": "Chop",
    "max": 12
   },
   {
    "id": "13BC9C",
    "jp": "獣爪の術",
-   "en": "",
+   "en": "Beast Claw Art",
    "max": 12,
    "ptrs": 14
   },
   {
    "id": "13BCA8",
    "jp": "素早さアップの術",
-   "en": "",
+   "en": "Speed Up Art",
    "max": 20,
    "ptrs": 6
   },
   {
    "id": "13BCBC",
    "jp": "３連蹴り",
-   "en": "",
+   "en": "Triple Kick",
    "max": 12,
    "ptrs": 2
   },
   {
    "id": "13BCC8",
    "jp": "跳び蹴り",
-   "en": "",
+   "en": "Jump Kick",
    "max": 12,
    "ptrs": 7
   },
   {
    "id": "13BCD4",
    "jp": "呪いの術",
-   "en": "",
+   "en": "Curse Art",
    "max": 12,
    "ptrs": 4
   },
   {
    "id": "13BCE0",
    "jp": "獣牙の術",
-   "en": "",
+   "en": "Beast Fang Art",
    "max": 12,
    "ptrs": 11
   },
   {
    "id": "13BCEC",
    "jp": "ビンタ＆蹴り",
-   "en": "",
+   "en": "Slap & Kick",
    "max": 16
   },
   {
    "id": "13BCFC",
    "jp": "ビンタ",
-   "en": "",
+   "en": "Slap",
    "max": 8,
    "ptrs": 5
   },
   {
    "id": "13BD04",
    "jp": "紅蓮の術",
-   "en": "",
+   "en": "Crimson Lotus Art",
    "max": 12,
    "ptrs": 11
   },
   {
    "id": "13BD10",
    "jp": "防御力ダウンの術",
-   "en": "",
+   "en": "Defense Down Art",
    "max": 20,
    "ptrs": 7
   },
   {
    "id": "13BD24",
    "jp": "投げ落とし",
-   "en": "",
+   "en": "Drop Throw",
    "max": 12,
    "ptrs": 2
   },
   {
    "id": "13BD30",
    "jp": "蹴り",
-   "en": "",
+   "en": "Kick",
    "max": 8,
    "ptrs": 6
   },
   {
    "id": "13BD38",
    "jp": "竜巻の術",
-   "en": "",
+   "en": "Tornado Art",
    "max": 12,
    "ptrs": 6
   },
   {
    "id": "13BD44",
    "jp": "防御力アップの術",
-   "en": "",
+   "en": "Defense Up Art",
    "max": 20,
    "ptrs": 9
   },
   {
    "id": "13BD58",
    "jp": "パンチ＆タックル",
-   "en": "",
+   "en": "Punch & Tackle",
    "max": 20
   },
   {
    "id": "13BD6C",
    "jp": "タックル",
-   "en": "",
+   "en": "Tackle",
    "max": 9,
    "ptrs": 29
   }

@@ -4,458 +4,458 @@
   {
    "id": "13BEA8",
    "jp": "神破狩",
-   "en": "",
+   "en": "Godbreaker Hunt",
    "max": 8
   },
   {
    "id": "13BEB0",
    "jp": "斬ВХ羅",
-   "en": "",
+   "en": "Mandala Slash",
    "max": 12,
    "notes": "gaiji В=曼 Х=荼"
   },
   {
    "id": "13BEBC",
    "jp": "不動神楽",
-   "en": "",
+   "en": "Immovable Kagura",
    "max": 12
   },
   {
    "id": "13BEC8",
    "jp": "猛蟹甲破掌",
-   "en": "",
+   "en": "Crab Shellbreak Palm",
    "max": 12
   },
   {
    "id": "13BED4",
    "jp": "天地動乱斬",
-   "en": "",
+   "en": "Heaven-Earth Upheaval",
    "max": 12
   },
   {
    "id": "13BEE0",
    "jp": "破歪庵超斧",
-   "en": "",
+   "en": "Hawaiian Super Axe",
    "max": 12
   },
   {
    "id": "13BEEC",
    "jp": "戦手桂馬撃",
-   "en": "",
+   "en": "Knight's Leap Strike",
    "max": 12
   },
   {
    "id": "13BEF8",
    "jp": "竜級火徳拳",
-   "en": "",
+   "en": "Dragon-Class Fire Fist",
    "max": 12
   },
   {
    "id": "13BF04",
    "jp": "六根К之Л",
-   "en": "",
+   "en": "Six Senses Thorn Shrine",
    "max": 12,
    "notes": "gaiji К=棘 Л=龕"
   },
   {
    "id": "13BF10",
    "jp": "竜宮須羅撞",
-   "en": "",
+   "en": "Dragon Palace Ram",
    "max": 12
   },
   {
    "id": "13BF1C",
    "jp": "大慈悲封殺",
-   "en": "",
+   "en": "Great Mercy Shutout",
    "max": 12
   },
   {
    "id": "13BF28",
    "jp": "七星斬魂剣",
-   "en": "",
+   "en": "Seven Stars Soul Sword",
    "max": 12
   },
   {
    "id": "13BF34",
    "jp": "堕天使之宴",
-   "en": "",
+   "en": "Fallen Angels' Feast",
    "max": 12
   },
   {
    "id": "13BF40",
    "jp": "針剣千本突",
-   "en": "",
+   "en": "Thousand Needle Thrust",
    "max": 12
   },
   {
    "id": "13BF4C",
    "jp": "豪腕弦風車",
-   "en": "",
+   "en": "Mighty String Pinwheel",
    "max": 12
   },
   {
    "id": "13BF58",
    "jp": "浪流輪酸雫",
-   "en": "",
+   "en": "Wave Wheel Acid Drop",
    "max": 12
   },
   {
    "id": "13BF64",
    "jp": "最古祈念呪",
-   "en": "",
+   "en": "Eldest Prayer Curse",
    "max": 12
   },
   {
    "id": "13BF70",
    "jp": "御舞狼怒詠",
-   "en": "",
+   "en": "Wolf Rage Dance Chant",
    "max": 12
   },
   {
    "id": "13BF7C",
    "jp": "専守防衛書",
-   "en": "",
+   "en": "Defense-Only Manual",
    "max": 12
   },
   {
    "id": "13BF88",
    "jp": "羽黒手裏珠",
-   "en": "",
+   "en": "Black Wing Shuriken Orbs",
    "max": 12
   },
   {
    "id": "13BF94",
    "jp": "葉隠不死計",
-   "en": "",
+   "en": "Hagakure Undying Plan",
    "max": 12
   },
   {
    "id": "13BFA0",
    "jp": "獄門犯禁句",
-   "en": "",
+   "en": "Gallows Taboo Words",
    "max": 12
   },
   {
    "id": "13BFAC",
    "jp": "死線上鞠矢",
-   "en": "",
+   "en": "Deathline Ball Arrows",
    "max": 12
   },
   {
    "id": "13BFB8",
    "jp": "疾風矛爪断",
-   "en": "",
+   "en": "Gale Spear-Claw Cleave",
    "max": 12
   },
   {
    "id": "13BFC4",
    "jp": "戦闘奇影術",
-   "en": "",
+   "en": "Weird Shadow Battle Art",
    "max": 12
   },
   {
    "id": "13BFD0",
    "jp": "暴狼丸雷刀",
-   "en": "",
+   "en": "Wild Wolf Thunder Blade",
    "max": 12
   },
   {
    "id": "13BFDC",
    "jp": "菜々微塵斬",
-   "en": "",
+   "en": "Smithereen Greens Slash",
    "max": 12
   },
   {
    "id": "13BFE8",
    "jp": "判決水泡刑",
-   "en": "",
+   "en": "Bubble Sentence Verdict",
    "max": 12
   },
   {
    "id": "13BFF4",
    "jp": "寝床大喜利",
-   "en": "",
+   "en": "Bedside Comedy Hour",
    "max": 12
   },
   {
    "id": "13C000",
    "jp": "片手大鎧割",
-   "en": "",
+   "en": "One-Hand Armor Splitter",
    "max": 12
   },
   {
    "id": "13C00C",
    "jp": "逆天砲武嵐",
-   "en": "",
+   "en": "Heaven-Defying Cannon",
    "max": 12
   },
   {
    "id": "13C018",
    "jp": "火徳炎球祭",
-   "en": "",
+   "en": "Fireball Festival",
    "max": 12
   },
   {
    "id": "13C024",
    "jp": "浄化之産声",
-   "en": "",
+   "en": "Purifying First Cry",
    "max": 12
   },
   {
    "id": "13C030",
    "jp": "暴流登衝撃",
-   "en": "",
+   "en": "Torrent Climb Impact",
    "max": 12
   },
   {
    "id": "13C03C",
    "jp": "鱗粉旋風斬",
-   "en": "",
+   "en": "Scale Dust Whirlwind Slash",
    "max": 12
   },
   {
    "id": "13C048",
    "jp": "裂紙大逆剣",
-   "en": "",
+   "en": "Paper-Rend Treason Sword",
    "max": 12
   },
   {
    "id": "13C054",
    "jp": "武闘鎖人舞",
-   "en": "",
+   "en": "Martial Chain Dance",
    "max": 12
   },
   {
    "id": "13C060",
    "jp": "転成影狩縫",
-   "en": "",
+   "en": "Reborn Shadow-Hunt Stitch",
    "max": 12
   },
   {
    "id": "13C06C",
    "jp": "栗З吃驚矢",
-   "en": "",
+   "en": "Chestnut Burr Surprise",
    "max": 12,
    "notes": "gaiji З=毬"
   },
   {
    "id": "13C078",
    "jp": "魂喰幻惑光",
-   "en": "",
+   "en": "Soul-Eating Dazzle Light",
    "max": 12
   },
   {
    "id": "13C084",
    "jp": "月見一杯М",
-   "en": "",
+   "en": "Moonlit Pebble Toast",
    "max": 12,
    "notes": "gaiji М=礫"
   },
   {
    "id": "13C090",
    "jp": "美瞬繰呪名",
-   "en": "",
+   "en": "Fleeting Beauty Curse",
    "max": 12
   },
   {
    "id": "13C09C",
    "jp": "一石ニ鳥巻",
-   "en": "",
+   "en": "Two Birds, One Stone Scroll",
    "max": 12
   },
   {
    "id": "13C0A8",
    "jp": "必殺霊流銃",
-   "en": "",
+   "en": "Lethal Spirit-Stream Gun",
    "max": 12
   },
   {
    "id": "13C0B4",
    "jp": "揺基自在槍",
-   "en": "",
+   "en": "Free-Swing Spear",
    "max": 12
   },
   {
    "id": "13C0C0",
    "jp": "羅知鱈喪来",
-   "en": "",
+   "en": "Rachi Tara Morai",
    "max": 12
   },
   {
    "id": "13C0CC",
    "jp": "陀多之運命",
-   "en": "",
+   "en": "Kandata's Fate",
    "max": 12
   },
   {
    "id": "13C0D8",
    "jp": "凱旋門之風",
-   "en": "",
+   "en": "Wind of the Triumphal Arch",
    "max": 12
   },
   {
    "id": "13C0E4",
    "jp": "痛点見切Г",
-   "en": "",
+   "en": "Pressure-Point Purge",
    "max": 12,
    "notes": "gaiji Г=祓"
   },
   {
    "id": "13C0F0",
    "jp": "電光雷火撃",
-   "en": "",
+   "en": "Lightning Thunderfire Strike",
    "max": 12
   },
   {
    "id": "13C0FC",
    "jp": "本家白吹雪",
-   "en": "",
+   "en": "True White Blizzard",
    "max": 12
   },
   {
    "id": "13C108",
    "jp": "調伏御霊落",
-   "en": "",
+   "en": "Subjugating Spirit Drop",
    "max": 12
   },
   {
    "id": "13C114",
    "jp": "逆手下克上",
-   "en": "",
+   "en": "Reverse-Grip Upset",
    "max": 12
   },
   {
    "id": "13C120",
    "jp": "亀甲重砕破",
-   "en": "",
+   "en": "Tortoise Shell Crusher",
    "max": 12
   },
   {
    "id": "13C12C",
    "jp": "義志爆裂弾",
-   "en": "",
+   "en": "Righteous Burst Shell",
    "max": 12
   },
   {
    "id": "13C138",
    "jp": "火徳地熱祭",
-   "en": "",
+   "en": "Geothermal Festival",
    "max": 12
   },
   {
    "id": "13C144",
    "jp": "御霧氷結晶",
-   "en": "",
+   "en": "Mist Ice Crystal",
    "max": 12
   },
   {
    "id": "13C150",
    "jp": "鳴動震Д波",
-   "en": "",
+   "en": "Rumbling Quake Wave",
    "max": 12,
    "notes": "gaiji Д=撼"
   },
   {
    "id": "13C15C",
    "jp": "天道断罪斬",
-   "en": "",
+   "en": "Heaven's Judgment Slash",
    "max": 12
   },
   {
    "id": "13C168",
    "jp": "怒涛疾風牙",
-   "en": "",
+   "en": "Surging Gale Fang",
    "max": 12,
    "ptrs": 2
   },
   {
    "id": "13C174",
    "jp": "霊縛大鎖陣",
-   "en": "",
+   "en": "Spirit-Bind Chain Array",
    "max": 12
   },
   {
    "id": "13C180",
    "jp": "護摩絶命針",
-   "en": "",
+   "en": "Goma Death Needle",
    "max": 12
   },
   {
    "id": "13C18C",
    "jp": "破魔流星雨",
-   "en": "",
+   "en": "Demonbane Meteor Shower",
    "max": 12
   },
   {
    "id": "13C198",
    "jp": "煩悩滅却打",
-   "en": "",
+   "en": "Desire-Banishing Blow",
    "max": 12
   },
   {
    "id": "13C1A4",
    "jp": "金剛力弾球",
-   "en": "",
+   "en": "Diamond Might Ball",
    "max": 12
   },
   {
    "id": "13C1B0",
    "jp": "炎舞暗剣殺",
-   "en": "",
+   "en": "Flame Dance Dark Sword",
    "max": 12
   },
   {
    "id": "13C1BC",
    "jp": "伏魔鼠雪崩",
-   "en": "",
+   "en": "Demon Mouse Avalanche",
    "max": 12
   },
   {
    "id": "13C1C8",
    "jp": "不動大炎舞",
-   "en": "",
+   "en": "Immovable Flame Dance",
    "max": 12
   },
   {
    "id": "13C1D4",
    "jp": "真槍三禁突",
-   "en": "",
+   "en": "True Spear Triple Thrust",
    "max": 12
   },
   {
    "id": "13C1E0",
    "jp": "瞬殺異界送",
-   "en": "",
+   "en": "Instant Netherworld Send",
    "max": 12
   },
   {
    "id": "13C1EC",
    "jp": "十方暮鋼崩",
-   "en": "",
+   "en": "Ten-Way Steel Collapse",
    "max": 12
   },
   {
    "id": "13C1F8",
    "jp": "左道十字斬",
-   "en": "",
+   "en": "Heretic Cross Slash",
    "max": 12
   },
   {
    "id": "13C204",
    "jp": "九字印奈落",
-   "en": "",
+   "en": "Nine-Seal Abyss",
    "max": 12
   },
   {
    "id": "13C210",
    "jp": "天魔焼尽撃",
-   "en": "",
+   "en": "Heaven-Demon Inferno",
    "max": 12
   },
   {
    "id": "13C21C",
    "jp": "秘伝黒旋風",
-   "en": "",
+   "en": "Secret Black Whirlwind",
    "max": 11
   }
  ]

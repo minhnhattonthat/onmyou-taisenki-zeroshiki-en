@@ -4,397 +4,397 @@
   {
    "id": "409500",
    "jp": "この技で戦況を優位にできるよ",
-   "en": "",
+   "en": "This move can turn\nthe battle our way!",
    "max": 32,
    "ptrs": 2
   },
   {
    "id": "409520",
    "jp": "私の技で戦況を有利にしよう！",
-   "en": "",
+   "en": "Let's turn the battle our\nway with my move!",
    "max": 32,
    "ptrs": 2
   },
   {
    "id": "409540",
    "jp": "敵全体に連携攻撃は今よ！！",
-   "en": "",
+   "en": "Now's the time for a combo\nattack on all the foes!!",
    "max": 28,
    "ptrs": 2
   },
   {
    "id": "40955C",
    "jp": "連携攻撃で、敵をやっつけよう",
-   "en": "",
+   "en": "Let's beat the enemy\nwith a combo attack!",
    "max": 32,
    "ptrs": 2
   },
   {
    "id": "40957C",
    "jp": "私の武器でコテンパンよ！",
-   "en": "",
+   "en": "My weapon will\nbeat them silly!",
    "max": 28,
    "ptrs": 2
   },
   {
    "id": "409598",
    "jp": "武器召喚！もう逃げられないよ",
-   "en": "",
+   "en": "Weapon summon!\nNo escape now!",
    "max": 32,
    "ptrs": 2
   },
   {
    "id": "4095B8",
    "jp": "私と交代で控えの式神が登場よ",
-   "en": "",
+   "en": "I swap out and a\nreserve shikigami comes in!",
    "max": 32,
    "ptrs": 4
   },
   {
    "id": "4095D8",
    "jp": "空間変化で攻撃力上昇よ",
-   "en": "",
+   "en": "Shift the field to\nraise my Attack!",
    "max": 24,
    "ptrs": 4
   },
   {
    "id": "4095F0",
    "jp": "苦しいけど私がんばるから！",
-   "en": "",
+   "en": "It's tough, but I'll\ndo my best!",
    "max": 28
   },
   {
    "id": "40960C",
    "jp": "ボロボロになっても戦うよ",
-   "en": "",
+   "en": "I'll fight even if\nI'm torn to pieces!",
    "max": 28
   },
   {
    "id": "409628",
    "jp": "私、やられちゃうかも",
-   "en": "",
+   "en": "I might be done for...",
    "max": 24
   },
   {
    "id": "409640",
    "jp": "私もうヘトヘト",
-   "en": "",
+   "en": "I'm all worn out...",
    "max": 16
   },
   {
    "id": "409650",
    "jp": "私ならまだまだ戦えるよ",
-   "en": "",
+   "en": "I can still fight plenty!",
    "max": 24
   },
   {
    "id": "409668",
    "jp": "私の体力のほうも気にしてね",
-   "en": "",
+   "en": "Keep an eye on my HP, too.",
    "max": 28
   },
   {
    "id": "409684",
    "jp": "そろそろ体力がヤバイかも",
-   "en": "",
+   "en": "My HP might be getting\ndangerous...",
    "max": 28
   },
   {
    "id": "4096A0",
    "jp": "ちょっと疲れてきたニャ",
-   "en": "",
+   "en": "I'm getting a little\ntired, meow.",
    "max": 24
   },
   {
    "id": "4096B8",
    "jp": "今の私なら敵はイチコロよ",
-   "en": "",
+   "en": "The way I am now, the\nenemy's a pushover!",
    "max": 28
   },
   {
    "id": "4096D4",
    "jp": "今のうちに攻めに攻めよう！",
-   "en": "",
+   "en": "Let's attack and attack\nwhile we can!",
    "max": 28
   },
   {
    "id": "4096F0",
    "jp": "体力のことなら気にしないで",
-   "en": "",
+   "en": "Don't worry about my HP.",
    "max": 28
   },
   {
    "id": "40970C",
    "jp": "ちゃっちゃっとやっつけようね",
-   "en": "",
+   "en": "Let's beat them nice\nand quick, okay?",
    "max": 32
   },
   {
    "id": "40972C",
    "jp": "今、敵の攻撃力が高いよ",
-   "en": "",
+   "en": "The enemy's Attack\nis high right now!",
    "max": 24
   },
   {
    "id": "409744",
    "jp": "私は土属性だけど分かってる？",
-   "en": "",
+   "en": "I'm Earth element,\nyou know that, right?",
    "max": 32
   },
   {
    "id": "409764",
    "jp": "別の空間にしないとヤバイよ",
-   "en": "",
+   "en": "We'd better change the\nfield, or we're in trouble!",
    "max": 28
   },
   {
    "id": "409780",
    "jp": "私に不利な空間になってるよ！",
-   "en": "",
+   "en": "The field is against me!",
    "max": 32
   },
   {
    "id": "4097A0",
    "jp": "土の属性で攻撃力上昇よ！",
-   "en": "",
+   "en": "Earth element raises\nmy Attack!",
    "max": 28,
    "ptrs": 2
   },
   {
    "id": "4097BC",
    "jp": "やったー！土の力だ！",
-   "en": "",
+   "en": "Yay! The power of Earth!",
    "max": 24,
    "ptrs": 2
   },
   {
    "id": "4097D4",
    "jp": "ここからが腕の見せどころよ！",
-   "en": "",
+   "en": "Now's my time to shine!",
    "max": 32
   },
   {
    "id": "4097F4",
    "jp": "まだ負けたわけじゃないよ",
-   "en": "",
+   "en": "We haven't lost yet!",
    "max": 28
   },
   {
    "id": "409810",
    "jp": "私は平気だからあきらめないで",
-   "en": "",
+   "en": "I'm fine, so don't give up!",
    "max": 32
   },
   {
    "id": "409830",
    "jp": "私ひとりでもがんばるよ",
-   "en": "",
+   "en": "I'll keep going,\neven on my own!",
    "max": 24
   },
   {
    "id": "409848",
    "jp": "ねえ！控えと交替できる？",
-   "en": "",
+   "en": "Hey! Can I swap\nwith my reserve?",
    "max": 28
   },
   {
    "id": "409864",
    "jp": "私、休まないとピンチかも",
-   "en": "",
+   "en": "If I don't rest,\nI might be in trouble.",
    "max": 28
   },
   {
    "id": "409880",
    "jp": "お願い、バトンタッチさせて！",
-   "en": "",
+   "en": "Please, let me\ntag out!",
    "max": 32
   },
   {
    "id": "4098A0",
    "jp": "そろそろ入れ替えてほしいニャ",
-   "en": "",
+   "en": "I'd like to swap out\nsoon, meow.",
    "max": 32
   },
   {
    "id": "4098C0",
    "jp": "あと数発でフィニッシュよ！",
-   "en": "",
+   "en": "A few more hits\nand we're done!",
    "max": 28
   },
   {
    "id": "4098DC",
    "jp": "チャンスよ！連携攻撃だせる？",
-   "en": "",
+   "en": "A chance! Can you\nuse a combo attack?",
    "max": 32
   },
   {
    "id": "4098FC",
    "jp": "チャンスよ！指示をお願い！",
-   "en": "",
+   "en": "A chance!\nGive me your orders!",
    "max": 28
   },
   {
    "id": "409918",
    "jp": "チャンスよ！ネネが決めるね！",
-   "en": "",
+   "en": "A chance!\nNene'll finish this!",
    "max": 32
   },
   {
    "id": "409938",
    "jp": "どんどん私に指示を出して！",
-   "en": "",
+   "en": "Keep the orders coming!",
    "max": 28
   },
   {
    "id": "409954",
    "jp": "１分経過よ！土の空間にしよう",
-   "en": "",
+   "en": "One minute's gone!\nLet's make the field Earth!",
    "max": 32
   },
   {
    "id": "409974",
    "jp": "１分経過よ！連携攻撃できる？",
-   "en": "",
+   "en": "One minute's gone!\nCan we do a combo attack?",
    "max": 32
   },
   {
    "id": "409994",
    "jp": "そろそろ、技でガツンと行こう",
-   "en": "",
+   "en": "Time to hit 'em hard\nwith a move!",
    "max": 32
   },
   {
    "id": "4099B4",
    "jp": "連携攻撃で一気に決めちゃおう",
-   "en": "",
+   "en": "Let's finish it in one go\nwith a combo attack!",
    "max": 32
   },
   {
    "id": "4099D4",
    "jp": "私の武器は鎖でからめるよ",
-   "en": "",
+   "en": "My weapon tangles\nthem up in chains!",
    "max": 28
   },
   {
    "id": "4099F0",
    "jp": "私の技はスゴイんだから！",
-   "en": "",
+   "en": "My move is amazing,\nyou know!",
    "max": 28
   },
   {
    "id": "409A0C",
    "jp": "私は土属性で攻撃力上昇だよ",
-   "en": "",
+   "en": "Earth element raises\nmy Attack!",
    "max": 28
   },
   {
    "id": "409A28",
    "jp": "相殺で行動を封じられたよ！",
-   "en": "",
+   "en": "The clash has sealed\nmy action!",
    "max": 28,
    "ptrs": 4
   },
   {
    "id": "409A44",
    "jp": "相殺で相手の行動を封じたよ！",
-   "en": "",
+   "en": "The clash has sealed\nthe foe's action!",
    "max": 32,
    "ptrs": 4
   },
   {
    "id": "409A64",
    "jp": "いっくよーー！！",
-   "en": "",
+   "en": "Here I goooo!!",
    "max": 20
   },
   {
    "id": "409A78",
    "jp": "私の出番！張り切るよ！",
-   "en": "",
+   "en": "My turn!\nI'm all fired up!",
    "max": 24
   },
   {
    "id": "409A90",
    "jp": "私の出番！がんばるニャ！",
-   "en": "",
+   "en": "My turn!\nI'll do my best, meow!",
    "max": 28
   },
   {
    "id": "409AAC",
    "jp": "あとは私にまかせて！",
-   "en": "",
+   "en": "Leave the rest to me!",
    "max": 24
   },
   {
    "id": "409AC4",
    "jp": "私がコテンパンにしてあげる",
-   "en": "",
+   "en": "I'll beat them silly!",
    "max": 28
   },
   {
    "id": "409AE0",
    "jp": "やったー！いっしょに戦おうね",
-   "en": "",
+   "en": "Yay! Let's fight together!",
    "max": 32
   },
   {
    "id": "409B00",
    "jp": "私がやっつけてあげるね！",
-   "en": "",
+   "en": "I'll beat them for you!",
    "max": 28
   },
   {
    "id": "409B1C",
    "jp": "私がきっと倒してあげる！",
-   "en": "",
+   "en": "I'll take them down for sure!",
    "max": 28
   },
   {
    "id": "409B38",
    "jp": "どお？少しは目が覚めた？",
-   "en": "",
+   "en": "Well?\nAre you awake now?",
    "max": 28
   },
   {
    "id": "409B54",
    "jp": "見た見た？私たちの連携！",
-   "en": "",
+   "en": "Did you see?\nOur combo attack!",
    "max": 28
   },
   {
    "id": "409B70",
    "jp": "その顔、またひっかかれたい？",
-   "en": "",
+   "en": "Want that face\nscratched again?",
    "max": 32
   },
   {
    "id": "409B90",
    "jp": "私たちの連携、すごいでしょ",
-   "en": "",
+   "en": "Our combo attack\nis amazing, right?",
    "max": 28
   },
   {
    "id": "409BAC",
    "jp": "ちょっとやりすぎたかニャ？",
-   "en": "",
+   "en": "Did I overdo it\na little, meow?",
    "max": 28
   },
   {
    "id": "409BC8",
    "jp": "また悪さすると懲らしめるよ",
-   "en": "",
+   "en": "Make trouble again\nand I'll punish you!",
    "max": 28
   },
   {
    "id": "409BE4",
    "jp": "どお？もう降参する気になった",
-   "en": "",
+   "en": "Well?\nReady to give up yet?",
    "max": 32
   },
   {
    "id": "409C04",
    "jp": "もう起き上がってこないでね",
-   "en": "",
+   "en": "Please don't get\nback up again.",
    "max": 27
   }
  ]

@@ -4,20 +4,20 @@
   {
    "id": "12BA4C",
    "jp": "陰陽大砲",
-   "en": "",
+   "en": "Onmyo Cannon",
    "max": 12
   },
   {
    "id": "12BA58",
    "jp": "陰陽小槌",
-   "en": "",
+   "en": "Onmyo Mallet",
    "max": 12,
    "ptrs": 3
   },
   {
    "id": "12BA64",
    "jp": "陰陽Е",
-   "en": "",
+   "en": "Onmyo Hatchet",
    "max": 8,
    "ptrs": 3,
    "notes": "gaiji Е=鉈"
@@ -25,112 +25,112 @@
   {
    "id": "12BA6C",
    "jp": "陰陽銃",
-   "en": "",
+   "en": "Onmyo Gun",
    "max": 8,
    "ptrs": 2
   },
   {
    "id": "12BA74",
    "jp": "陰陽扇子",
-   "en": "",
+   "en": "Onmyo Fan",
    "max": 12,
    "ptrs": 3
   },
   {
    "id": "12BA80",
    "jp": "陰陽数珠",
-   "en": "",
+   "en": "Onmyo Prayer Beads",
    "max": 12,
    "ptrs": 3
   },
   {
    "id": "12BA8C",
    "jp": "陰陽サスマタ",
-   "en": "",
+   "en": "Onmyo Sasumata",
    "max": 16,
    "ptrs": 3
   },
   {
    "id": "12BA9C",
    "jp": "陰陽大鎌",
-   "en": "",
+   "en": "Onmyo Scythe",
    "max": 12,
    "ptrs": 3
   },
   {
    "id": "12BAA8",
    "jp": "陰陽剣",
-   "en": "",
+   "en": "Onmyo Sword",
    "max": 8,
    "ptrs": 6
   },
   {
    "id": "12BAB0",
    "jp": "陰陽鎖",
-   "en": "",
+   "en": "Onmyo Chain",
    "max": 8,
    "ptrs": 3
   },
   {
    "id": "12BAB8",
    "jp": "陰陽針",
-   "en": "",
+   "en": "Onmyo Needles",
    "max": 8,
    "ptrs": 3
   },
   {
    "id": "12BAC0",
    "jp": "陰陽大弓",
-   "en": "",
+   "en": "Onmyo Longbow",
    "max": 12,
    "ptrs": 3
   },
   {
    "id": "12BACC",
    "jp": "陰陽錫杖",
-   "en": "",
+   "en": "Onmyo Monk's Staff",
    "max": 12,
    "ptrs": 3
   },
   {
    "id": "12BAD8",
    "jp": "陰陽鉄球",
-   "en": "",
+   "en": "Onmyo Iron Ball",
    "max": 12,
    "ptrs": 3
   },
   {
    "id": "12BAE4",
    "jp": "陰陽手裏剣",
-   "en": "",
+   "en": "Onmyo Shuriken",
    "max": 12,
    "ptrs": 3
   },
   {
    "id": "12BAF0",
    "jp": "陰陽巻物",
-   "en": "",
+   "en": "Onmyo Scroll",
    "max": 12,
    "ptrs": 3
   },
   {
    "id": "12BAFC",
    "jp": "陰陽算盤",
-   "en": "",
+   "en": "Onmyo Abacus",
    "max": 12,
    "ptrs": 3
   },
   {
    "id": "12BB08",
    "jp": "陰陽長槍",
-   "en": "",
+   "en": "Onmyo Long Spear",
    "max": 12,
    "ptrs": 3
   },
   {
    "id": "12BB14",
    "jp": "陰陽Б",
-   "en": "",
+   "en": "Onmyo Harpoon",
    "max": 8,
    "ptrs": 3,
    "notes": "gaiji Б=銛"
@@ -138,35 +138,35 @@
   {
    "id": "12BB1C",
    "jp": "陰陽ボーガン",
-   "en": "",
+   "en": "Onmyo Crossbow",
    "max": 16,
    "ptrs": 3
   },
   {
    "id": "12BB2C",
    "jp": "陰陽矛",
-   "en": "",
+   "en": "Onmyo Halberd",
    "max": 8,
    "ptrs": 3
   },
   {
    "id": "12BB34",
    "jp": "陰陽鞭",
-   "en": "",
+   "en": "Onmyo Whip",
    "max": 8,
    "ptrs": 3
   },
   {
    "id": "12BB3C",
    "jp": "陰陽手槍",
-   "en": "",
+   "en": "Onmyo Hand Spear",
    "max": 12,
    "ptrs": 3
   },
   {
    "id": "12BB48",
    "jp": "陰陽斧",
-   "en": "",
+   "en": "Onmyo Axe",
    "max": 7,
    "ptrs": 3
   }
