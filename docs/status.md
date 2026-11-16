@@ -2,9 +2,9 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 6. Translate in progress: all 41 batches translated; everything merged except 3 fixed-cell files held
-  for width (str_shikigami_names, str_shikigami_kinds, str_system: 165 entries, drafts in `tl/b036.out.tsv` /
-  `tl/b037.out.tsv`); reviewer pass not done yet. Last build 2026-11-16 (session 14): `build.py` sha1 a22d1a9b…, smoke ok,
+- **Phase:** 6. Translate in progress: all 41 batches translated and merged (batch check 0 errors); only the
+  reviewer pass is left. Last build 2026-11-16 (session 15): `build.py` sha1 d8260680…, smoke ok, check ok.
+  (Session 14 build: sha1 a22d1a9b…, smoke ok,
   check ok.
 - **Done:**
   - Step 0: ROM pinned (`rom.sha1`), MesenCE 2.2.1 + GBA BIOS in `tools/mesen/`, guard hook in `.claude/settings.json`
@@ -123,17 +123,17 @@ Updated at the end of every session. Keep it to what the next session needs; his
     while holding back every file with a problem. Glossary "b034-b041" row (affinity, element, field, clash, Art).
     Gotcha: the Write/Edit tools strip trailing spaces, so a TSV row that must end in a space ("Now at level ",
     410C78 ": ") was fixed with a scratchpad script; check `cat -A` on such rows.
+  - Phase 6 session 15 (2026-11-16): the 3 held files fitted and merged (b036/b037). Battle name tag moved to free
+    OBJ tiles 0x3D3..0x3DA (`vwf.tag_tiles`: 6 literals 0x3DB of sprite 0x2F + the 4 resource-2 fill calls -> `fill7`;
+    `tools/debug/vramfree.lua` proved the tiles unused in 5 battles), 56 px, centred on x 40 on the widened plate
+    (stress "Tsuiga White": work/qa/tagq/z.png). windows.json: new variants `obj_flow` (kind + clan + page header
+    flow by returned cells), `obj_room` (shikigami page labels, 96 px), `status_label` (48 px), `padded` (key items,
+    0x080144F4). D10: "Shiki Pts", "Healfire", header の = "-". New probes `oamall.lua` (whole OAM + used tile
+    ranges), `vramfree.lua`.
 - **Next (phase 6):**
-  1. **Fit the 3 held files**, then `batches.py merge b036 b037` (drafts are in the .out files; re-run `batches.py
-     check b036 b037` for the list). Over budget: battle tag `small_tag` 40 px — Kamaitachi 43, Koropokkur 48,
-     Torabushin 47, Tsuiga Red/Black/White 46/52/53, Magahoshi 43, Tsuruyakko 50, Fusanoshin 47, Namazubo 41,
-     Chiyorozu 41, Takamaru 41 (the tag is OBJ 32x8 + 8x8 at tiles 0x3DB..0x3DF, tiles 0x3E0+ are the next sprite:
-     widen to 64 px needs free OBJ tiles, font.md "Small font"); kinds `obj_cells` 32/16 px (Stillness, Black Iron,
-     Frost Flower, Holly, Autumn Water, Harvest, Healing Fire, Maple, Overgrowth, Hackberry, Snowmelt, Blue Tin,
-     Thunderfire, Camellia); str_system: Shiki Points (32), Sake/Fish/Bamboo Leaf (16), Affinity (32 px, 34),
-     " clan" (16), Special move 1/2 (64). Engine first (renderer 0x08014098 cells; find each screen's free room with
-     the marker build), shorter English only where the room really can't grow; record the choice in
-     docs/decisions.md. Also check the guesses: 12933C の -> "of" and 129064 column header row (positions).
+  1. **Enemy-side battle tag** (docs/polish.md): side 1 sits 8 px right of its 6-column right-hand plate and clips
+     past ~40 px (Komaki, battle_win f3603). Widen that plate's BG map leftwards and centre per side (tagw only
+     sees the string; the side is r4 at 0x0810F9A0). Also still unverified: 129064 column header row (positions).
   2. **Reviewer pass** (fresh read-only pass or `codex exec`) over all English, findings -> `docs/polish.md`; then
      phase 6 is done (done-when: batch check 0 errors, glossary updated, no Critical/Important review issues).
   Translator notes to carry into the briefs: the check wants the exact `{0000}`/`{0010}` counts of the JP and a

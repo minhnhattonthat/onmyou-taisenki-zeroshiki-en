@@ -4,350 +4,350 @@
   {
    "id": "128F64",
    "jp": "記録中・・・",
-   "en": "",
+   "en": "Saving...",
    "max": 16,
    "ptrs": 2
   },
   {
    "id": "128F74",
    "jp": "記録終了しました",
-   "en": "",
+   "en": "Save complete.",
    "max": 20,
    "ptrs": 2
   },
   {
    "id": "128F88",
    "jp": "記録失敗しました",
-   "en": "",
+   "en": "Save failed.",
    "max": 20,
    "ptrs": 2
   },
   {
    "id": "128F9C",
    "jp": "通信回数２０を超えました",
-   "en": "",
+   "en": "Over 20 link sessions.",
    "max": 28,
    "ptrs": 2
   },
   {
    "id": "128FB8",
    "jp": "式神イザヨイを取得しました",
-   "en": "",
+   "en": "Got the shikigami Izayoi.",
    "max": 27,
    "ptrs": 2
   },
   {
    "id": "129064",
    "jp": "式神　闘い方印入力勝敗　",
-   "en": "",
+   "en": "Shikigami Style  Seals  W/L",
    "max": 25
   },
   {
    "id": "129150",
    "jp": "ステータス",
-   "en": "",
+   "en": "Status",
    "max": 12
   },
   {
    "id": "12915C",
    "jp": "レベル",
-   "en": "",
+   "en": "Level",
    "max": 8,
    "ptrs": 2
   },
   {
    "id": "129164",
    "jp": "経験値",
-   "en": "",
+   "en": "EXP",
    "max": 8,
    "ptrs": 2
   },
   {
    "id": "12916C",
    "jp": "せつめい",
-   "en": "",
+   "en": "Info",
    "max": 12
   },
   {
    "id": "129178",
    "jp": "式点",
-   "en": "",
+   "en": "Shiki Pts",
    "max": 5,
    "ptrs": 2
   },
   {
    "id": "1291FC",
    "jp": "はちみつ",
-   "en": "",
+   "en": "Honey",
    "max": 12
   },
   {
    "id": "129208",
    "jp": "金の小判",
-   "en": "",
+   "en": "Gold Koban",
    "max": 12
   },
   {
    "id": "129214",
    "jp": "酒",
-   "en": "",
+   "en": "Sake",
    "max": 4
   },
   {
    "id": "129218",
    "jp": "孔雀の扇",
-   "en": "",
+   "en": "Peacock Fan",
    "max": 12
   },
   {
    "id": "129224",
    "jp": "魚",
-   "en": "",
+   "en": "Fish",
    "max": 4
   },
   {
    "id": "129228",
    "jp": "地の巻物",
-   "en": "",
+   "en": "Earth Scroll",
    "max": 12
   },
   {
    "id": "129234",
    "jp": "銀のオチョコ",
-   "en": "",
+   "en": "Silver Sake Cup",
    "max": 16
   },
   {
    "id": "129244",
    "jp": "金の矢",
-   "en": "",
+   "en": "Gold Arrow",
    "max": 8
   },
   {
    "id": "12924C",
    "jp": "ヘビのキバ",
-   "en": "",
+   "en": "Snake Fang",
    "max": 12
   },
   {
    "id": "129258",
    "jp": "笹",
-   "en": "",
+   "en": "Bamboo Leaf",
    "max": 4
   },
   {
    "id": "12925C",
    "jp": "貝がら",
-   "en": "",
+   "en": "Seashell",
    "max": 8
   },
   {
    "id": "129264",
    "jp": "虹色の石",
-   "en": "",
+   "en": "Rainbow Stone",
    "max": 12
   },
   {
    "id": "129270",
    "jp": "リュージのお弁当",
-   "en": "",
+   "en": "Ryuji's Lunch",
    "max": 20,
    "ptrs": 2
   },
   {
    "id": "129284",
    "jp": "モモのお弁当",
-   "en": "",
+   "en": "Momo's Lunch",
    "max": 13,
    "ptrs": 2
   },
   {
    "id": "1292CC",
    "jp": "いれかえ",
-   "en": "",
+   "en": "Swap",
    "max": 12
   },
   {
    "id": "1292D8",
    "jp": "しきがみせんたく",
-   "en": "",
+   "en": "Choose shikigami",
    "max": 17
   },
   {
    "id": "1292F4",
    "jp": "ステータス",
-   "en": "",
+   "en": "Status",
    "max": 12
   },
   {
    "id": "129300",
    "jp": "あいしょう",
-   "en": "",
+   "en": "Affinity",
    "max": 12
   },
   {
    "id": "12930C",
    "jp": "とくしゅ",
-   "en": "",
+   "en": "Special",
    "max": 12
   },
   {
    "id": "129318",
    "jp": "わざ",
-   "en": "",
+   "en": "Moves",
    "max": 8
   },
   {
    "id": "129320",
    "jp": "いん",
-   "en": "",
+   "en": "Seals",
    "max": 5
   },
   {
    "id": "12933C",
    "jp": "の",
-   "en": "",
+   "en": "-",
    "max": 4
   },
   {
    "id": "129340",
    "jp": "Ｈ　Ｐ",
-   "en": "",
+   "en": "HP",
    "max": 8
   },
   {
    "id": "129348",
    "jp": "／",
-   "en": "",
+   "en": "/",
    "max": 4
   },
   {
    "id": "12934C",
    "jp": "攻撃力",
-   "en": "",
+   "en": "Attack",
    "max": 8
   },
   {
    "id": "129354",
    "jp": "＋",
-   "en": "",
+   "en": "+",
    "max": 4,
    "ptrs": 5
   },
   {
    "id": "129358",
    "jp": "防御力",
-   "en": "",
+   "en": "Defense",
    "max": 8
   },
   {
    "id": "129360",
    "jp": "妖力",
-   "en": "",
+   "en": "Power",
    "max": 8
   },
   {
    "id": "129368",
    "jp": "加護力",
-   "en": "",
+   "en": "Guard",
    "max": 8
   },
   {
    "id": "129370",
    "jp": "素早さ",
-   "en": "",
+   "en": "Speed",
    "max": 8
   },
   {
    "id": "129378",
    "jp": "相性",
-   "en": "",
+   "en": "Affinity",
    "max": 8
   },
   {
    "id": "129380",
    "jp": "【有利】",
-   "en": "",
+   "en": "[Strong]",
    "max": 12
   },
   {
    "id": "12938C",
    "jp": "族",
-   "en": "",
+   "en": " clan",
    "max": 4,
    "ptrs": 3
   },
   {
    "id": "129390",
    "jp": "【不利】",
-   "en": "",
+   "en": "[Weak]",
    "max": 12
   },
   {
    "id": "12939C",
    "jp": "特殊能力",
-   "en": "",
+   "en": "Ability",
    "max": 12
   },
   {
    "id": "1293A8",
    "jp": "武器",
-   "en": "",
+   "en": "Weapon",
    "max": 8
   },
   {
    "id": "1293B0",
    "jp": "攻撃１",
-   "en": "",
+   "en": "Attack 1",
    "max": 8,
    "ptrs": 2
   },
   {
    "id": "1293B8",
    "jp": "攻撃２",
-   "en": "",
+   "en": "Attack 2",
    "max": 8,
    "ptrs": 2
   },
   {
    "id": "1293C0",
    "jp": "必殺技１",
-   "en": "",
+   "en": "Special move 1",
    "max": 12,
    "ptrs": 2
   },
   {
    "id": "1293CC",
    "jp": "必殺技２",
-   "en": "",
+   "en": "Special move 2",
    "max": 12,
    "ptrs": 2
   },
   {
    "id": "1293D8",
    "jp": "超必殺技",
-   "en": "",
+   "en": "Super special",
    "max": 12,
    "ptrs": 2
   },
   {
    "id": "1293E4",
    "jp": "太郎兵ЧШ郎兵衛",
-   "en": "",
+   "en": "Tarobee & Jirobee",
    "max": 20,
    "notes": "gaiji Ч=衛・(left) Ш=・二(right)"
   },
   {
    "id": "1293F8",
    "jp": "－－－－－",
-   "en": "",
+   "en": "-----",
    "max": 12,
    "ptrs": 2
   },
   {
    "id": "129404",
    "jp": "超絶必殺技",
-   "en": "",
+   "en": "Ultimate special",
    "max": 11,
    "ptrs": 2
   }

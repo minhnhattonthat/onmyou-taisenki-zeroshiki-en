@@ -15,7 +15,7 @@ import sys
 import enfont
 
 SPACE_W = 3
-TAG_PX = 40   # the battle name tag: OBJ 32x8 + 8x8 at tiles 0x3DB..0x3DF (tools/debug/oamfind.lua)
+TAG_PX = 56   # the battle name tag: OBJ 32x8 + 32x8 at tiles 0x3D3..0x3DA (vwf.tag_tiles), centred on x 40
 
 ART = {
     "A": ".##. #..# #..# #### #..# #..#",

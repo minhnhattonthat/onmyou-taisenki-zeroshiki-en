@@ -11,3 +11,6 @@ Minor items deferred to one polish pass (translation.md §Review). Tick each `[x
 - [ ] 40D7B4/40D7BC, 40D964/40D970/40DC30, 40E3B4 - code-built battle message fragments ("The foe calls on" + name +
       " to descend!", "Attack " + "up!", "Both sides"): confirm assembly order and spacing in a battle shot.
 - [ ] 40C600/40C63C, str_menus link-cable texts - layout unverified (needs a link partner).
+- [ ] 129178 "Shiki Pts" (D10): widen the status-screen label OBJ (lr 0x0802EFFD, shows 48 px) and restore "Shiki Points" (50 px).
+- [ ] 12B494 "Healfire" (D10): fine as a coined compound; revisit only if the shikigami header gets more cells.
+- [ ] Battle name tag on the ENEMY side (side 1, e.g. Komaki in battle_win f3603, work/qa/tagq/battle_win/callshot_f3623): the right-hand plate is still 6 columns and tagw centres on x 40 for side 0, so side-1 text sits 8 px right of the plate centre and names over ~40 px clip at the screen edge. Widen the right plate (BG map) leftwards and centre per side.

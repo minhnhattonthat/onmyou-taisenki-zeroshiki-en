@@ -790,12 +790,37 @@ PLATE_MAPS = (0x19DE66, 0x19E1EA)  # raw 30-wide window maps: the plate's top ro
 PLATE_CELL_PART2 = 0x3E7998       # sprite cell 2 frame 0 part 2 (x 12, y -4, attr, tile byte offset 0x80)
 PLATE_BANDS = {0: (6, 7, 7, 8, 8), 1: (9, 9, 10, 10, 11)}  # fill colour per pixel row: top tiles rows 3..7, bottom 0..4
 SMALL_N = 0x260   # codes in the small font (0x8140..0x839F)
+# Battle name tag (sprite 0x2F, cell 2 = the speaker plate's 32x8 + 32x8): 8 free OBJ tiles, see tag_tiles.
+TAG_TILE = 0x3D3
+TAG_TILES = 8
+TAG_LITERALS = (0x10F9DC, 0x120A80, 0x115754, 0x1157DC, 0x115E50, 0x1162F4)  # words 0x3DB loaded as the tile
+TAG_FILL_CALLS = (0x1156EA, 0x115772, 0x115DE6, 0x116296)  # bl 0x08005354(2, tile): the 5-tile plain fill
 
 TAG_SRC = """
     b tag
     b tagw
     b smapline
     b plate
+    b fill7
+@ fill7(r0 = resource type, r1 = tile): the battle tag's plain fill (resource 2 = 5 tiles of colour 1) loaded by
+@ 0x08005354 at tile and tile + 2, so it covers 7 tiles (56 px, the widened tag; tile + 7 is left as the tag
+@ code cleared it). Called from the four fill paths 0x081156EA/0x08115772/0x08115DE6/0x08116296.
+fill7:
+    push {{r4, r5, lr}}
+    adds r4, r0, #0
+    adds r5, r1, #0
+    bl f7load
+    adds r0, r4, #0
+    adds r1, r5, #2
+    bl f7load
+    pop {{r4, r5}}
+    pop {{r1}}
+    bx r1
+f7load:
+    ldr r3, f7addr
+    bx r3
+    .align 2
+f7addr: .word 0x08005355
 @ plate(r0 = str) -> small pixel width capped at PLATE_PX: the dialogue speaker plate (0x0801EC54), OBJ tiles
 @ 0x68..0x6F (0x06010D00; widened from 5 tiles, see plate_frame). ROM strings are byte-order Shift-JIS; RAM ones (player name 0x020025AE, 0x020027B0 + 16n) hold
 @ native halfwords and are copied byte-swapped (<= 16 codes) first.
@@ -838,8 +863,8 @@ pl_fit:
     pop {{r1}}
     bx r1
 
-@ 0x08111B50(r0 = tile index, r1 = str): the tag's 5 OBJ tiles (0x06010000 + index * 32, 1D) = splot(str, tiles,
-@ 5, 40).
+@ 0x08111B50(r0 = tile index, r1 = str): the tag's OBJ tiles (0x06010000 + index * 32, 1D) = splot(str, tiles,
+@ TAG_TILES, TAG_PX). The index is TAG_TILE (moved from 0x3DB: see tag_tiles in install).
 tag:
     push {{r4, lr}}
     lsls r4, r0, #5
@@ -847,7 +872,7 @@ tag:
     adds r4, r4, r0
     adds r0, r1, #0
     adds r1, r4, #0
-    movs r2, #5
+    movs r2, #{tagtiles}
     movs r3, #{tagpx}
     bl splot
     pop {{r4}}
@@ -1026,9 +1051,9 @@ tdone:
 tcall_r3:
     bx r3
 
-@ tagw(r0 = str) -> (small pixel width + 2) / 4, replacing the byte count at 0x0810F98A: the caller puts the tag at
-@ x offset (10 - r0) * 2, so this centres the text by pixels in the 40 px tag (Japanese: 8 px a char = byte count).
-@ Wider text is clipped by `tag`, so the width is capped at 40 px (offset 0).
+@ tagw(r0 = str) -> (small pixel width + 2) / 4 - 4 (signed), replacing the byte count at 0x0810F98A: the caller puts
+@ the tag's OBJ at base x 12 + (10 - r0) * 2 = 40 - width / 2, so the text is centred on x 40 like the widened
+@ speaker plate (same BG frame, interior x 10..69). Width capped at TAG_PX (what `tag` draws).
 tagw:
     push {{lr}}
     bl smeasure
@@ -1038,6 +1063,7 @@ tagw:
 twfit:
     adds r0, #2
     lsrs r0, r0, #2
+    subs r0, #4
     pop {{r1}}
     bx r1
 
@@ -1088,8 +1114,21 @@ def tag_code(far, swidths_addr):
     """Assemble the small-font blob at file offset `far`; returns (code, tag, tagw, smapline, plate entries)."""
     addr = 0x08000000 | far
     src = TAG_SRC.format(ncodes=NCODES, smalln=SMALL_N, swidths=0x08000000 | swidths_addr, tagpx=ensmall.TAG_PX,
-                         platepx=PLATE_PX, platetiles=PLATE_TILES)
-    return _asm(src, addr), addr, addr + 2, addr + 4, addr + 6
+                         tagtiles=TAG_TILES, platepx=PLATE_PX, platetiles=PLATE_TILES)
+    return _asm(src, addr), addr, addr + 2, addr + 4, addr + 6, addr + 8
+
+
+def tag_tiles(orig, write, fill7):
+    """Move the battle name tag's OBJ tiles from 0x3DB (5 tiles; the shared sprite cell 2 is 64 px wide since
+    plate_frame, so its right part showed the ground-shadow sprite's tiles 0x3E0..0x3E2) to TAG_TILE..+7, which no
+    toured battle uses (tools/debug/vramfree.lua). Every literal 0x3DB belongs to sprite 0x2F (cell 2, palette 13):
+    the tag's draw call and the sprite creations; the fill paths load resource 2 there through fill7."""
+    for lit in TAG_LITERALS:
+        assert orig[lit:lit + 4] == struct.pack("<I", 0x3DB), f"tag tile literal {lit:06X} moved"
+        write(lit, struct.pack("<I", TAG_TILE), f"battle name tag tile 0x3DB -> {TAG_TILE:#x} (literal {lit:06X})")
+    for site in TAG_FILL_CALLS:
+        assert orig[site:site + 4] == bl(0x08000000 | site, 0x08005354), f"tag fill call {site:06X} moved"
+        write(site, bl(0x08000000 | site, 0x08111B70), f"tag fill {site:06X}: resource 2 -> fill7 (7 tiles)")
 
 
 def plate_patch(plate):
@@ -1268,7 +1307,7 @@ def install(img, write):
     swt_off = img.alloc(len(swt))
     write(swt_off, swt, "vwf small widths")
     tfar = img.alloc(len(tag_code(0x800000, 0x800000)[0]) + 16)
-    tcode, ttag, ttagw, tmap, tplate = tag_code(tfar, swt_off)
+    tcode, ttag, ttagw, tmap, tplate, tfill = tag_code(tfar, swt_off)
     write(0x01ED64, plate_patch(tplate), "vwf speaker plate (0x0801EC54 loop -> plate, centred by pixels)")
     plate_frame(orig, write)
     write(tfar, tcode, "vwf small-font code")
@@ -1282,6 +1321,8 @@ def install(img, write):
     write(0x111B50, thunk(0x111B50, ttag), "vwf tag thunk (name tag 0x08111B50)")
     write(0x111B60, thunk(0x111B60, ttagw), "vwf tagw thunk (in the replaced routine's body)")
     write(0x10F98A, bl(0x0810F98A, 0x08111B60), "vwf tag centring: pixel width")
+    write(0x111B70, thunk(0x111B70, tfill), "vwf fill7 thunk (in the replaced routine's body)")
+    tag_tiles(orig, write, tfill)
     return far
 
 

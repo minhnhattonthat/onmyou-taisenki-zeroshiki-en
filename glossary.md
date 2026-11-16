@@ -121,7 +121,7 @@ Other shikigami and NPC names: Hepburn without macrons, as in `script/str_shikig
 | 楓族 | Maple clan | | kind (族) names: English meaning + "clan" | |
 | 消雪族 | Snowmelt clan | | | |
 | 雷火 | Thunderfire | | kind; "Fusanoshin of Thunderfire" | |
-| 式点 | Shiki Points | | the seal gauge shown under HP | |
+| 式点 | Shiki Points / Shiki Pts | | the seal gauge shown under HP; "Shiki Pts" only on the status-screen label 129178 (48 px OBJ, flagged D10) | |
 | ドライブ | Drive | | the device that holds shikigami | |
 | 式・神・降・神 | Shiki-gami, des-cend! | | summon chant, syllables split as in JP | |
 
@@ -135,7 +135,7 @@ Other shikigami and NPC names: Hepburn without macrons, as in `script/str_shikig
   Kantaro country boy ("y'know!" for っしょ); Brune soldier ("sir!"); Otochika baby-talk genius ("it iz", z for s);
   Komachi/Komaki/Jakuya bratty ("Stuuupid!").
 - Shikigami kinds (str_shikigami_kinds) get English meanings: 霜花 Frost Flower, 埋火 Embers, 柊 Holly, 秋水 Autumn
-  Water, 白銀 Silver, 豊穣 Harvest, 癒火 Healing Fire, 楓 Maple, 甘露 Nectar, 赤銅 Copper, 繁茂 Overgrowth, 大火 Blaze,
+  Water, 白銀 Silver, 豊穣 Harvest, 癒火 Healfire (one word like Thunderfire: the shikigami page header needs it in 3 cells), 楓 Maple, 甘露 Nectar, 赤銅 Copper, 繁茂 Overgrowth, 大火 Blaze,
   榎 Hackberry, 消雪 Snowmelt, 青錫 Blue Tin, 芽吹 Sprout, 雷火 Thunderfire, 椿 Camellia, 凝寂 Stillness, 黒鉄 Black
   Iron; 麒麟/白虎/朱雀/青龍/玄武 keep their names (Kirin, Byakko, Suzaku, Seiryu, Genbu). The 32 px menu cells need
   engine work (phase 7) for these.
