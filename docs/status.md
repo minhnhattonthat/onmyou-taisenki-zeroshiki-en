@@ -218,8 +218,8 @@ Updated at the end of every session. Keep it to what the next session needs; his
     New runners (all log under work/qa/cover/, counted by `cover.py report`): `talkjobs.py` (Kogenta's L-button
     talk 0x6918F4 + tutorial-battle scripts: coverage-only build/talk.gba points empty ids 705..710 at them, then a
     label jump per line: 55/55), `msgjobs.py` + `msgcycle.lua` (every battle message forced through the real drawer
-    at 0x08102E88, shot work/qa/bm/pilot_z.png: "Couldn't escape!"), key items (work/qa/cover/keyitems/scenes.txt:
-    menu_keyitem with one flag 51..64 each). Tech quotes (258) proven dead data and waived (docs/re/text.md).
+    at 0x08102E88, shot work/qa/bm/pilot_z.png: "Couldn't escape!"), key items (`tools/debug/cover_keyitems.txt`, run with
+    `warp_all.py --scenes` into work/qa/cover/keyitems + the textcover probe: menu_keyitem with one flag 51..64 each). Tech quotes (258) proven dead data and waived (docs/re/text.md).
 - **Next (phase 8: QA in the emulator; done-when in the skill's table):**
   1. Visual-QA gate **passes** on build 606f89ee (`qa_gate.py check work/qa/manifest.tsv work/qa/verdicts` exit 0):
      codex 75/77 ok; the 2 issues re-checked as false positives (work/qa/verdicts/recheck_s23.tsv: tutorial Drive
