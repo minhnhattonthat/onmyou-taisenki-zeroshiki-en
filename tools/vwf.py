@@ -1505,6 +1505,7 @@ def install(img, write):
     obj8_patch(orig, write)
     save_headers(orig, write)
     plate_names(orig, write)
+    swap_list(img, write)
     return far
 
 
@@ -1512,7 +1513,8 @@ def install(img, write):
 # cap tiles, what). The label OBJs are fixed 8x8 cells, one per JP char of the longest string they show.
 O8_CALLS = [(0x35214, 0x35216, 8, "shikigami page header 1292D8 (8 OBJs x 92..155)"),
             (0x35B24, 0x35B26, 5, "shikigami page labels table 0x08129328 (5 OBJs x 112..151)"),
-            (0x30C7A, 0x30C7C, 4, "party Swap label 1292CC")]
+            (0x30C7A, 0x30C7C, 4, "party Swap label 1292CC"),
+            (0x33312, 0x33314, 7, "party Swap list names (vwf.swap_list: 8 tiles a row, 7 centred on the button)")]
 
 
 def obj8_patch(orig, write):
@@ -1542,48 +1544,48 @@ def obj8_patch(orig, write):
         write(call, bl(0x08000000 | call, O8_THUNK), f"obj8 {why} -> o8 (small VWF, centred)")
 
 
-CELL_TABLE, CELL_N = 0x403DA4, 994        # sprite cell / resource table: id*8 -> (anim index, frame data)
-CELL_TABLE_REFS = (0x59D0, 0x5A54, 0x5A7C, 0x5AAC, 0x5AC8, 0x5B04, 0xB34C)  # every literal 0x08403DA4 in the ROM
-LIST_CELL_THUNK = 0x08111BB0               # in the dead body of 0x08111B50, after the o8 thunk
+LIST_TILE_FN = 0x08111BB0                  # in the dead body of 0x08111B50, after the o8 thunk
+LIST_HI_TILE = 0x3E0                       # rows 8, 9: free outside battles (vramfree.lua), above the card names
 
 
 def swap_list(img, write):
     """Party Swap list (10 rows of owned shikigami at x 176, sprite create 0x08030AEC, names 0x08033314). Its rows
-    use sprite cell 2, which plate_frame widened to 64 px, but each row owned only 5 OBJ tiles (0x21C + 5k), so a
-    row showed 3 tiles of the next one ("GorozTak", work/qa/p8sw). The rows get their own cell CELL_N (a copy of
-    cell 2 with part 2 = 16x8: 48 px, the button's inner width), 6 tiles each (0x21C + 6k, to 0x257; 0x262 is the
-    scroll thumb), and the names go through o8 (small VWF, centred in 6 tiles). The cell table is full (994
-    entries, data follows), so it moves to free space with one entry appended."""
+    use sprite cell 2, which plate_frame widened to 64 px (8 tiles), but each row owned only 5 OBJ tiles
+    (0x21C + 5k), so a row showed 3 tiles of the next one ("GorozTak", work/qa/p8sw). A new cell id can't help:
+    ids above 662 (bound literal 0x02960000, 6 sites) are another resource type. So each row gets 8 tiles of its
+    own: rows 0..7 at 0x21C + 8k (to 0x25B; 0x262 is the scroll thumb), rows 8, 9 at 0x3E0 + 8(k-8). Names go
+    through o8 capped at 7 tiles (56 px; "Tsuiga White" is 53) with the row moved 4 px left so the window is
+    centred on the button (inner x 176..224); tile 7 stays blank over the scroll bar (x 228..236)."""
     orig = img.orig
-    assert all(struct.unpack_from("<I", orig, r)[0] == 0x08000000 | CELL_TABLE for r in CELL_TABLE_REFS)
-    anim, frame = struct.unpack_from("<II", orig, CELL_TABLE + 2 * 8)
-    assert orig[frame & 0x1FFFFFF:(frame & 0x1FFFFFF) + 20] == bytes.fromhex(
-        "0200a000ecfffcff005000000c00fcff00008000"), "swap list: cell 2 frame moved"
-    new_frame = bytes.fromhex("0200a000ecfffcff005000000c00fcff00408000")  # part 2 attr 0x4000 = 16x8
-    table = orig[CELL_TABLE:CELL_TABLE + CELL_N * 8]
-    off = img.alloc(len(table) + 8 + len(new_frame))
-    fr = off + len(table) + 8
-    write(off, table + struct.pack("<II", anim, 0x08000000 | fr) + new_frame,
-          f"sprite cell table copy + cell {CELL_N} (swap list rows, 48 px)")
-    for r in CELL_TABLE_REFS:
-        write(r, struct.pack("<I", 0x08000000 | off), "sprite cell table literal -> the copy")
-    # sprite create: r1 = cell id 2 -> CELL_N (a thunk sets r1 and tail-calls 0x08002254)
-    assert orig[0x30AE6:0x30AE8] == b"\x02\x21" and orig[0x30AEC:0x30AF0] == bl(0x08030AEC, 0x08002254)
-    t = LIST_CELL_THUNK & 0xFFFFFF
-    code = _asm(f"movs r1, #{CELL_N >> 2}; lsls r1, r1, #2; adds r1, #{CELL_N & 3}; mov r8, r8", LIST_CELL_THUNK)
-    write(t, code + thunk(t + len(code), 0x08002254), f"swap list rows: cell {CELL_N} then 0x08002254")
-    write(0x30AEC, bl(0x08030AEC, LIST_CELL_THUNK), "swap list row sprite create -> cell thunk")
-    # tile = 0x21C + 6k (was 5k) in the sprite create (r6 = k) and in the name draw (r5 = k, result r6)
+    t = LIST_TILE_FN & 0xFFFFFF
+    hi = LIST_HI_TILE - 64                 # 8k + hi for k >= 8
+    lo = 0x21C
+    code = _asm("cmp r0, #8; bge hirow; lsls r0, r0, #3;"
+                + "".join(f"adds r0, #{v};" for v in _split(lo)) + "bx lr;"
+                + "hirow: lsls r0, r0, #3;" + "".join(f"adds r0, #{v};" for v in _split(hi)) + "bx lr", LIST_TILE_FN)
+    assert t + len(code) <= 0x111C08
+    write(t, code, "swap list row tile: k < 8 -> 0x21C + 8k, else 0x3E0 + 8(k-8)")
+    # sprite create (r6 = k; r0 = tile, r1 is reloaded at 0x08030AE6)
     assert orig[0x30AC6:0x30AD0] == bytes.fromhex("b0008019872189004018"), "swap list: sprite tile code moved"
-    write(0x30AC6, _asm("adds r0, r6, r6; adds r0, r0, r6; adds r0, #0x87; adds r0, #0x87; lsls r0, r0, #1",
-                        0x08030AC6), "swap list row sprite tile 0x21C + 6k")
+    write(0x30AC6, b"\x30\x1c" + bl(0x08030AC8, LIST_TILE_FN) + b"\xc0\x46\xc0\x46",
+          "swap list row sprite tile (adds r0, r6, #0; bl tile fn)")
+    # x 196 -> 192 (OBJ x 172): the 7-tile name window 172..228 is centred on the button (x 176..224)
+    assert orig[0x30AD6:0x30AD8] == b"\xc4\x20", "swap list: row x moved"
+    write(0x30AD6, b"\xc0\x20", "swap list row x 196 -> 192")
+    # name draw (r5 = k, result r6; r0 and r1 are reloaded at 0x080332D2/0x080332D8)
     assert orig[0x332C8:0x332D2] == bytes.fromhex("a8004019872189004618"), "swap list: name tile code moved"
-    write(0x332C8, _asm("adds r0, r5, r5; adds r0, r0, r5; adds r0, #0x87; adds r0, #0x87; lsls r6, r0, #1",
-                        0x080332C8), "swap list name tile 0x21C + 6k")
+    write(0x332C8, b"\x28\x1c" + bl(0x080332CA, LIST_TILE_FN) + b"\x06\x1c\xc0\x46",
+          "swap list name tile (adds r0, r5, #0; bl tile fn; adds r6, r0, #0)")
     assert struct.unpack_from("<I", orig, 0x33368)[0] == 0x01000050  # only 0x080332DA loads it
-    write(0x33368, struct.pack("<I", 0x01000060), "swap list row clear: 6 tiles (was 5)")
-    # NOT INSTALLED: with this patch the rows don't show at all (OAM has no row sprites): a cell id past the
-    # original 994 is refused somewhere (see docs/status.md, open bugs). install() doesn't call swap_list.
+    write(0x33368, struct.pack("<I", 0x01000080), "swap list row clear: 8 tiles (was 5)")
+
+
+def _split(v):
+    out = []
+    while v > 0:
+        out.append(min(v, 255))
+        v -= out[-1]
+    return out
 
 
 def plate_names(orig, write):

@@ -55,6 +55,11 @@
 035214-035219   # shikigami page header: movs r3, #8 + bl o8
 035B24-035B29   # shikigami page labels: movs r3, #5 + bl o8
 030C7A-030C7F   # party Swap label: movs r3, #4 + bl o8
+033312-033317   # party Swap list names: movs r3, #7 + bl o8
+030AC6-030ACF   # Swap list row sprite tile -> vwf.swap_list tile fn (8 tiles a row)
+030AD6-030AD7   # Swap list row x 196 -> 192
+0332C8-0332D1   # Swap list name tile -> tile fn
+033368-03336B   # Swap list row clear literal: 8 tiles
 03AEB2-03AEB5   # name-entry grid rows -> gridline
 10971C-10971F   # literal: techniques_b reader -> JP copy (build.py JP_COPIES)
 10F98A-10F98D   # tag centring by pixel width
@@ -70,5 +75,5 @@
 110AE8-110AF7   # code: smapline thunk: small-font BG labels 0x08110AE8
 110BAC-110BBB   # code: strip thunk: battle results 0x08110BAC
 110C88-110C97   # code: strip thunk: battle text rows 0x08110C88
-111B50-111BAF   # code: tag thunk 0x08111B50 + tagw + fill7 + pname + ctile + o8 thunks in the replaced body; dead=111B50-111C07 (the replaced routine's own loop)
+111B50-111BCF   # code: tag thunk 0x08111B50 + tagw + fill7 + pname + ctile + o8 thunks + Swap list tile fn (0x08111BB0) in the replaced body; dead=111B50-111C07 (the replaced routine's own loop)
 120A80-120A83   # battle name tag tile literal (last of the 6)
