@@ -587,7 +587,7 @@
    "script": "43B5C4",
    "op": "036 00080001",
    "jp": "「天流」の闘神士など{0000}たいしたことないじゃないか{0010}私は「地流」宗家さまに頼んで{0000}式神を手に入れたんだ{0010}早くこの力を試したくて{0000}ウズウズしてんだ！{0010}さあ、式神を「降神」しな！{0010}闘神士の世界はきびしいのさ{0010}かくごのできない坊ちゃんは{0000}ひっこんでな！{0010}",
-   "en": "\"Tenryu\" Tojinshi are nothin'{0000}special, are they?{0010}I begged the \"Chiryu\"{0000}Grand Master for a shikigami.{0010}I'm just itchin' to{0000}try out this power!{0010}Come on, make yours \"descend\"!{0010}The world of Tojinshi is tough.{0010}Little rich boys with no{0000}guts should stay outta it!{0010}"
+   "en": "\"Tenryu\" Tojinshi are nothin'{0000}special, are they?{0010}I begged the \"Chiryu\"{0000}Grand Master-sama for a shikigami.{0010}I'm just itchin' to{0000}try out this power!{0010}Come on, make yours \"descend\"!{0010}The world of Tojinshi is tough.{0010}Little rich boys with no{0000}guts should stay outta it!{0010}"
   },
   {
    "id": "43B7E0",
@@ -741,7 +741,7 @@
    "script": "43BBE4",
    "op": "036 00620001",
    "jp": "弟分なんてどうでもいい！{0010}オマエをメッタメタにたおして{0000}おいらの力を「地流」宗家{0010}さまに、みとめてもらうだー！{0010}",
-   "en": "Forget my little buddy!{0010}I'll whup ya to pieces and get{0000}the \"Chiryu\" Grand Master{0010}to see how strong I am, I will!{0010}"
+   "en": "Forget my little buddy!{0010}I'll whup ya to pieces and get{0000}the \"Chiryu\" Grand Master-sama{0010}to see how strong I am, I will!{0010}"
   },
   {
    "id": "43C14C",

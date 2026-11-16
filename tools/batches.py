@@ -110,7 +110,10 @@ def kind(char):
 
 
 def has_term(jp, term):
-    """term occurs as a whole kana or kanji run: ミン isn't in タイミング, くも isn't in ぼくも."""
+    """term occurs as a whole kana or kanji run: ミン isn't in タイミング, くも isn't in ぼくも.
+    A mixed term (宗家さま: kanji + kana) is already specific: it matches anywhere (宗家さまに)."""
+    if len({kind(c) for c in term}) > 1:
+        return term in jp
     for m in re.finditer(re.escape(term), jp):
         a, b = m.start(), m.end()
         if (a == 0 or kind(jp[a - 1]) != kind(term[0])) and (b == len(jp) or kind(jp[b]) != kind(term[-1])):

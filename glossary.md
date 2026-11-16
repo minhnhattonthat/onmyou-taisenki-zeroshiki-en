@@ -100,6 +100,9 @@ Other shikigami and NPC names: Hepburn without macrons, as in `script/str_shikig
 | 神流 | Jinryu | | faction | |
 | 陰陽師 | onmyoji | | | |
 | 宗家 | head family / Head of the Family / Grand Master | | head of a school | |
+| 宗家さま / 宗家様 | Grand Master-sama / Head of the Family-sama | | D11: the title keeps its honorific | |
+| 闘神士様 / 闘神士さま | Tojinshi-sama | | D11 (villagers' 闘神士様たち -> "you Tojinshi-sama") | Tojinshi folk |
+| 闘神士さん | Tojinshi-san | | D11 | |
 | 妖怪 | yokai | | | youkai |
 | 邪気 | evil aura | | | |
 | 聖獣 | Sacred Beast | | | |
@@ -124,6 +127,85 @@ Other shikigami and NPC names: Hepburn without macrons, as in `script/str_shikig
 | 式点 | Shiki Points / Shiki Pts | | the seal gauge shown under HP; "Shiki Pts" only on the status-screen label 129178 (48 px OBJ, flagged D10) | |
 | ドライブ | Drive | | the device that holds shikigami | |
 | 式・神・降・神 | Shiki-gami, des-cend! | | summon chant, syllables split as in JP | |
+
+## Shikigami names
+From `script/str_shikigami_names.json` (names already listed under Characters are not repeated). D2 Hepburn without
+macrons drops long-vowel ウ/オ (Tobee, Kofuku, Juzo); the comic suffix ベエ is kept as "-bee" (Tobee, Kujirabee,
+Mingobee, Tarobee/Jirobee), not "-be", so it reads as the old "-bei/-bee" nickname rather than the English word "be".
+
+| JP | EN | max | notes | Avoid |
+|---|---|---|---|---|
+| ワニュウドウ | Wanyudo | | | Wanyuudou |
+| カマイタチ | Kamaitachi | | | |
+| コロポックル | Koropokkur | | | |
+| トラブシン | Torabushin | | | |
+| ツイガあか | Tsuiga Red | | | |
+| ツイガくろ | Tsuiga Black | | | |
+| ツイガしろ | Tsuiga White | | | |
+| カブトオウ | Kabuto-O | | | |
+| ココトウ | Kokoto | | | |
+| ラクサイ | Rakusai | | | |
+| クロイチ | Kuroichi | | | |
+| コウフク | Kofuku | | | Koufuku |
+| ジャジャ | Jaja | | | |
+| リュウコン | Ryukon | | | Ryuukon |
+| ヒフミヨ | Hifumiyo | | | |
+| アンジ | Anji | | | |
+| ヒヨシノ | Hiyoshino | | | |
+| ダイカク | Daikaku | | | |
+| ミユキ | Miyuki | | | |
+| イツム | Itsumu | | | |
+| ライザ | Raiza | | | |
+| ニンクロウ | Ninkuro | | | Ninkurou |
+| ヤタロウ | Yataro | | | Yatarou |
+| コンゴウ | Kongo | | | Kongou |
+| マガホシ | Magahoshi | | | |
+| ナナヤ | Nanaya | | | |
+| キバチヨ | Kibachiyo | | | |
+| フウライ | Furai | | | Fuurai |
+| ジョニザ | Joniza | | | |
+| ホウシュン | Hoshun | | | Houshun |
+| カニエモン | Kaniemon | | | |
+| ガンゾウ | Ganzo | | | Ganzou |
+| ライデン | Raiden | | | |
+| ミンゴベエ | Mingobee | | | |
+| ホリン | Horin | | | |
+| エレキテル | Elekiter | | | |
+| イザヨイ | Izayoi | | | |
+| ルリ | Ruri | | | |
+| ツルヤッコ | Tsuruyakko | | | |
+| ベニマル | Benimaru | | | |
+| コマキ | Komaki | | | |
+| ミソヒト | Misohito | | | |
+| バラワカ | Barawaka | | | |
+| マスラオ | Masurao | | | |
+| ムミョウ | Mumyo | | | Mumyou |
+| オトチカ | Otochika | | | |
+| タンカムイ | Tankamui | | | |
+| ツクモ | Tsukumo | | | |
+| ゲンパク | Genpaku | | | |
+| カンタロウ | Kantaro | | | Kantarou |
+| エビヒコ | Ebihiko | | | |
+| フジ | Fuji | | | |
+| コロク | Koroku | | | |
+| ジャクヤ | Jakuya | | | |
+| トウベエ | Tobee | | | Toubee |
+| ナマズボウ | Namazubo | | | Namazubou |
+| チヨロズ | Chiyorozu | | | |
+| ネネ | Nene | | | |
+| シラトリ | Shiratori | | | |
+| クレナイ | Kurenai | | | |
+| クラダユウ | Kuradayu | | | Kuradayuu |
+| イソロク | Isoroku | | | |
+| コマチ | Komachi | | | |
+| チュウキチ | Chukichi | | | Chuukichi |
+| ズクマル | Zukumaru | | | |
+| サネマロ | Sanemaro | | | |
+| クジラベエ | Kujirabee | | | |
+| ジュウゾウ | Juzo | | | Juuzou |
+| コタロウ | Kotaro | | | Kotarou |
+| タカマル | Takamaru | | | |
+| ゴローザ | Goroza | | | |
 
 ## Decisions from earlier batches
 - b001-b004 (contract scenes): けいやくした -> "You formed a contract with X."; けいやく -> contract; だんな -> "boss";
@@ -187,7 +269,7 @@ Other shikigami and NPC names: Hepburn without macrons, as in `script/str_shikig
   field Fire"); 相殺 clash ("The clash has sealed my action"); 控え reserve; 入れ替え/交替 swap (out); ＳＰ kept "SP";
   技 move; X の術 -> "X Art" (Bind Art, Power Up Art); 陰陽X weapons -> "Onmyo X"; 経験値 EXP; tutorial help menu
   【交替】【一覧】【逃げる】【防御】【攻撃】 -> [Swap] [List] [Run] [Guard] [Attack] (Drive actions, also in Bannai's
-  lecture); kinds/names as in the tables (drafts in tl/b036/b037.out.tsv until the cells are widened).
+  lecture); kinds/names as in `script/str_shikigami_kinds.json` / `str_shikigami_names.json` (names table below).
   Voices: たい/ごわす Kyushu -> "lad"; ニャ cat girl -> "meow"; ネネ = Nene (third person); マロ+ござる -> "Maro ... it
   shall"; でっせ/やさかい Kansai -> "pal"/"ya". Polish candidates: 羅知鱈喪来 kept as "Rachi Tara Morai"; 鯔驚 "Mullet
   Shock"; 茶子菜々 "Chako Nana" (readings unsure).
