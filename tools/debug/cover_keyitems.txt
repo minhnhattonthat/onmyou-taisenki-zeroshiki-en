@@ -1,0 +1,15 @@
+# key items: one held flag each (table 0x08129194)
+key_51 field 23 flags=0,1,2,21,22,23,24,28,51 press=6:start|300:-|6:a|200:- mash=0 hold=60
+key_52 field 23 flags=0,1,2,21,22,23,24,28,52 press=6:start|300:-|6:a|200:- mash=0 hold=60
+key_53 field 23 flags=0,1,2,21,22,23,24,28,53 press=6:start|300:-|6:a|200:- mash=0 hold=60
+key_54 field 23 flags=0,1,2,21,22,23,24,28,54 press=6:start|300:-|6:a|200:- mash=0 hold=60
+key_55 field 23 flags=0,1,2,21,22,23,24,28,55 press=6:start|300:-|6:a|200:- mash=0 hold=60
+key_56 field 23 flags=0,1,2,21,22,23,24,28,56 press=6:start|300:-|6:a|200:- mash=0 hold=60
+key_57 field 23 flags=0,1,2,21,22,23,24,28,57 press=6:start|300:-|6:a|200:- mash=0 hold=60
+key_58 field 23 flags=0,1,2,21,22,23,24,28,58 press=6:start|300:-|6:a|200:- mash=0 hold=60
+key_59 field 23 flags=0,1,2,21,22,23,24,28,59 press=6:start|300:-|6:a|200:- mash=0 hold=60
+key_60 field 23 flags=0,1,2,21,22,23,24,28,60 press=6:start|300:-|6:a|200:- mash=0 hold=60
+key_61 field 23 flags=0,1,2,21,22,23,24,28,61 press=6:start|300:-|6:a|200:- mash=0 hold=60
+key_62 field 23 flags=0,1,2,21,22,23,24,28,62 press=6:start|300:-|6:a|200:- mash=0 hold=60
+key_63 field 23 flags=0,1,2,21,22,23,24,28,63 press=6:start|300:-|6:a|200:- mash=0 hold=60
+key_64 field 23 flags=0,1,2,21,22,23,24,28,64 press=6:start|300:-|6:a|200:- mash=0 hold=60
