@@ -937,14 +937,14 @@
    "script": "43FAD0",
    "op": "036 00020001",
    "jp": "私がだれであろうと、あなたは{0000}前に進まなきゃならないのよ{0010}マホロバがめざめたら、今の{0000}あなたなんて、全く{0010}歯が立たないわ{0010}そしてあなたの使う式神が{0000}白虎族だから、勝てる可能性が{0010}数パーセントは残っているの{0000}可能性をムダにしないことね{0010}",
-   "en": "Whoever I may be, you have to{0000}keep moving forward.{0010}If Mahoroba wakes, you as you{0000}are now won't stand{0010}a chance against him.{0010}And because your shikigami is{0000}of the Byakko clan, a chance of{0010}a few percent remains.{0000}Don't waste that chance.{0010}"
+   "en": "Whoever I am, you have to{0000}keep moving forward.{0010}If Mahoroba wakes now,{0000}you aren't strong enough{0010}to stand a chance against him.{0010}But your shikigami belongs{0000}to the Byakko clan, so you still{0010}have a slim chance of winning.{0000}Don't waste that chance.{0010}"
   },
   {
    "id": "440704",
    "script": "43FAD0",
    "op": "098 00150000",
    "jp": "たしかにその女の言う通りだ{0010}裏切り者マホロバのヤロウは{0000}ランゲツ使いだったんだ{0010}だからこそ、このオレ{0000}白虎のコゲンタが必要とされた{0010}しかし今はあまりにも闘神士{0000}としてのオマエの力が低すぎる{0010}",
-   "en": "The girl's right.{0010}That traitor Mahoroba was{0000}a Rangetsu user.{0010}That's exactly why they needed{0000}the great me, Byakko Kogenta.{0010}But right now your power as a{0000}Tojinshi is way too low.{0010}"
+   "en": "The girl's right.{0010}That traitor Mahoroba used{0000}to fight with Rangetsu.{0010}That's exactly why they needed{0000}the great me, Byakko Kogenta.{0010}But right now your power as a{0000}Tojinshi is way too low.{0010}"
   },
   {
    "id": "4407E8",

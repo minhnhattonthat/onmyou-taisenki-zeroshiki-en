@@ -208,3 +208,25 @@ The strip/map renderers write VRAM directly: plot by halfword read-modify-write 
 
 - A small 8×8-ish symbol/kana font sits just before the big font (0x1B12D4..0x1B4E74, sweep sheet 283), probably for
   status numbers; confirm in phase 5.
+
+## Number at a fixed offset (session 31)
+
+Battle messages built as name + number + suffix use strcpy 0x0811B800, the number writer 0x0811B670(value, digits,
+dest) and strcat 0x0811B7AC. Most callers get dest from strlen 0x0811B788, but five pass dest = buffer + the JP
+name's byte length: stat up/down 0x080F8B56, 0x0810098C, 0x08100D70 (buffer RAM base + 0xA704; dest +8 for the
+4-char stats, +6 for 妖力が), "Both sides" 0x0810423E (dest +4) and the level-up 0x0811F910 (dest +0x22 after
+レベルアーップ！！…レベル). English names overran and were cut: "Atta21down!", "Bo16 damage!". `vwf.num_patch`
+sends those bls to a scanner in the dead body of 0x08110BAC (0x08110BBC) that steps back 6/4/0x22 bytes to the
+buffer start, walks to the NUL and tail-calls the writer. The spaces live in the text: stat names end with a
+space, suffixes start with one (tests/test_numfix.py). Shots: work/qa/frag2 ("Attack 21 down!", "Both sides take 16
+damage!"), work/qa/frag3/lv2 ("Now at level 2!!"), work/qa/frag3/ds ("The foe calls on Isoroku to descend!").
+
+## Joined OBJ strings (session 31)
+
+The shikigami pages draw kind, then 族 (12938C " clan") as two 0x08014098 calls at 0x080361E4/0x080361FC,
+0x08036240/58, 0x0803628A/A0, 0x080362E0/F6 (the second at tile = first + 4·cells), and the header kind, の
+(12933C "-"), name at 0x08035C60/74/8C (name = table 0x0812AEE0[r6]). Each string starts at a fresh 16 px cell, so
+English had a 2..15 px gap ("Silver  clan", "Byakko-  Kogenta"). `vwf.join_patch`: the first call goes to `join`
+(after the number fix, 0x08110BEC), which copies the strings into one stack line and draws it; the later calls are
+`movs r0, #0; nop`. Strings are read through the game's own literal words (0x08036210, 0x08035C9C, 0x08035CA0), so
+relocation still works. Shot: work/qa/join/sheet.png.

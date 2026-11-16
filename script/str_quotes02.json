@@ -79,7 +79,7 @@
   {
    "id": "12D474",
    "jp": "命を惜しむくらいなら　　　　おいらは名を惜しむよ",
-   "en": "Rather than cling to my life,\nI'll cling to my name.",
+   "en": "I'd sooner lose my life\nthan my good name.",
    "max": 52,
    "pad": 14
   },
@@ -106,7 +106,7 @@
   {
    "id": "12D518",
    "jp": "ＨＰが厳しくなりました",
-   "en": "My HP is getting tight.",
+   "en": "My HP is getting low.",
    "max": 24
   },
   {
@@ -561,7 +561,7 @@
   {
    "id": "12DFAC",
    "jp": "このままではやられるでちゅよ",
-   "en": "At thiz rate we'll be beaten, it iz.",
+   "en": "At thiz rate, we'll be beaten!",
    "max": 32
   },
   {
@@ -735,7 +735,7 @@
   {
    "id": "12E42C",
    "jp": "Ｈｅｌｐ　Ｍｅ！　　　　　　オレ様のＨＰヤバイＹｏ！",
-   "en": "Help me!\nThe great me's HP is bad, Yo!",
+   "en": "Help me!\nThe great me's HP is low, Yo!",
    "max": 56
   },
   {

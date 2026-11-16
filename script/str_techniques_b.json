@@ -102,7 +102,7 @@
   {
    "id": "13BF64",
    "jp": "最古祈念呪",
-   "en": "Eldest Prayer Curse",
+   "en": "Ancient Prayer Curse",
    "max": 12
   },
   {
@@ -234,7 +234,7 @@
   {
    "id": "13C06C",
    "jp": "栗З吃驚矢",
-   "en": "Chestnut Burr Surprise",
+   "en": "Chestnut Burr Shock Arrow",
    "max": 12,
    "notes": "gaiji З=毬"
   },
@@ -425,7 +425,7 @@
   {
    "id": "13C1E0",
    "jp": "瞬殺異界送",
-   "en": "Instant Netherworld Send",
+   "en": "Instant Netherworld Exile",
    "max": 12
   },
   {

@@ -76,7 +76,7 @@
    "script": "42CC60",
    "op": "073 0001",
    "jp": "ヘイヘイ！そこのあんた！{0000}強いじゃんか！やるじゃんか！{0010}だがよ！あんた、さっきの闘い{0000}本気でしてたか？マジだったか{0010}あんたは本気をだしちゃいねぇ{0000}そんな態度に{0010}オレはがっくりだぜ！{0010}ここはオレと再び勝負だっ{0000}こんなバトルってどうかな？{0010}オレがいるゴールまで{0000}２０秒以内で来てみな！{0010}いっとくけど{0000}逃げられないぜ！いくぞ！{0010}",
-   "en": "Hey hey! You there!{0000}You're strong! You're good!{0010}But hey! In that fight just now,{0000}were you serious? For real?{0010}You weren't givin' it your all.{0000}That attitude{0010}really bums me out!{0010}So it's a rematch with me!{0000}How 'bout a battle like this?{0010}Get to the goal where I'm at{0000}within 20 seconds!{0010}Just so ya know,{0000}there's no runnin'! Here we go!{0010}"
+   "en": "Hey hey! You there!{0000}You're strong! You're good!{0010}But hey! In that fight just now,{0000}were you serious? For real?{0010}You weren't givin' it your all.{0000}That attitude{0010}really bums me out!{0010}So it's a rematch with me!{0000}How 'bout a battle like this?{0010}Get to the goal where I'm at{0000}within 20 seconds!{0010}Just so ya know,{0000}there's no backin' out! Here we go!{0010}"
   },
   {
    "id": "42CE54",
@@ -97,7 +97,7 @@
    "script": "42CC60",
    "op": "098 00410000",
    "jp": "いや！なんでもないぜ！{0010}いやーあんたビッグだぜ！{0010}こんどからアニキと{0000}呼ばせてもらうぜ！{0010}",
-   "en": "Nah! Nothin' at all!{0010}Man, you're BIG time!{0010}From now on, I'm gonna{0000}call you Big Bro!{0010}"
+   "en": "Nah! Nothin' at all!{0010}Man, you're somethin' else!{0010}From now on, I'm gonna{0000}call you Big Bro!{0010}"
   },
   {
    "id": "42CF70",
@@ -202,7 +202,7 @@
    "script": "42D0D0",
    "op": "036 00000001",
    "jp": "（…この式神、かわいい顔して{0000}すごい毒舌だ…）{0010}",
-   "en": "(...Such a cute face for a shikigami,{0000}but what a sharp tongue...){0010}"
+   "en": "(...This shikigami looks so cute,{0000}but what a sharp tongue...){0010}"
   },
   {
    "id": "42D51C",
@@ -321,7 +321,7 @@
    "script": "42D9DC",
    "op": "098 00440000",
    "jp": "そうか、そこまでいうなら{0000}けいやくしてやってもいいぞ！{0010}",
-   "en": "Well, if you insist that much,{0000}I suppose I could contract with you!{0010}"
+   "en": "Well, since you insist, my boy,{0000}I suppose I'll make a contract!{0010}"
   },
   {
    "id": "42DE44",
@@ -356,7 +356,7 @@
    "script": "42DF24",
    "op": "098 00450000",
    "jp": "おめぇみたいな青くさい闘い方{0000}するヤツなんか、みんなガキ{0010}みてぇなもんだ{0010}",
-   "en": "Anybody who fights as green{0000}as you is nothin' but{0010}a brat, far as I'm concerned.{0010}"
+   "en": "Anyone who fights like{0000}a rookie like you is just{0010}a brat, far as I'm concerned.{0010}"
   },
   {
    "id": "42E06A",
@@ -699,7 +699,7 @@
    "script": "42F7C4",
    "op": "098 00490000",
    "jp": "オレの流儀をけなさず、あんた{0000}の考えをつらぬくとはな…{0010}あんたとなら、すこしは面白い{0000}旅になるかもしれねぇな！{0010}わかった。すこしのあいだ、{0000}あんたの目的とやらに{0010}つきあってもいいぜ！{0010}",
-   "en": "Not knockin' my ways, but stickin'{0000}to your own... Huh.{0010}Travelin' with you might be{0000}kinda interesting!{0010}All right. For a little while,{0000}I'll tag along with{0010}this goal of yours!{0010}"
+   "en": "Not knockin' my ways, but stickin'{0000}to your own... Huh.{0010}Travelin' with you might be{0000}kinda interesting!{0010}All right. For a little while,{0000}I'll help ya pursue{0010}this goal of yours!{0010}"
   },
   {
    "id": "42FB44",

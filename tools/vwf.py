@@ -1515,6 +1515,8 @@ def install(img, write):
     save_headers(orig, write)
     plate_names(orig, write)
     swap_list(img, write)
+    num_patch(orig, write)
+    join_patch(orig, write)
     return far
 
 
@@ -1634,6 +1636,122 @@ def save_headers(orig, write):
         assert 0 <= new <= 0xFF, f"vwf: {why} base x {x}"
         write(mul, bytes.fromhex("b800001c"), f"vwf {why}: x step 36 -> 16")  # lsls r0, r7, #2; adds r0, r0, #0
         write(base, struct.pack("<H", (hw & 0xFF00) | new), f"vwf {why}: base x {x}")
+
+
+# Battle messages built as name + number + suffix (docs/re/font.md "Number at a fixed offset"): these callers of
+# the number writer 0x0811B670(value, digits, dest) pass dest = buffer + the JP name's byte length, so a longer
+# English name was cut ("Atta21down!", "Bo16 damage!"). Each bl goes to an entry that steps back to the buffer start
+# and moves dest to the string's NUL. (bl offset, bytes back to the buffer start, what)
+NUM_CALLS = [(0x0F8B56, 6, "stat up: dest = buf+8 (4-char stat) or buf+6 (妖力)"),
+             (0x10098C, 6, "stat down (r8 base): buf+8"),
+             (0x100D70, 6, "stat down (sb base): buf+8 or buf+6"),
+             (0x10423E, 4, "Both sides + damage: buf+4"),
+             (0x11F910, 0x22, "level up: buf+34")]
+NUM_FN = 0x08110BBC  # in the dead body of 0x08110BAC, after its strip thunk
+NUM_WRITER = 0x0811B670
+NUM_SRC = """
+back6:  subs r2, #6
+        b scan
+back4:  subs r2, #4
+        b scan
+back34: subs r2, #0x22
+scan:   ldrb r3, [r2]
+        cmp r3, #0
+        beq go
+        adds r2, #1
+        b scan
+go:     ldr r3, writer
+        bx r3
+        .align 2
+writer: .word {writer:#x}
+"""
+
+
+def num_patch(orig, write):
+    code = _asm(NUM_SRC.format(writer=NUM_WRITER | 1), NUM_FN)
+    assert len(code) <= JOIN_FN - NUM_FN, "vwf: number fix overruns into the join routine"
+    write(NUM_FN & 0xFFFFFF, code, "vwf number-at-NUL entries (dead body of 0x08110BAC)")
+    entry = {6: NUM_FN, 4: NUM_FN + 4, 0x22: NUM_FN + 8}
+    for off, back, why in NUM_CALLS:
+        assert orig[off:off + 4] == bl(0x08000000 | off, NUM_WRITER), f"vwf: number call moved at {off:06X}"
+        write(off, bl(0x08000000 | off, entry[back]), f"vwf number at NUL: {why}")
+
+
+# Shikigami pages (docs/re/font.md "Joined OBJ strings"): the game draws kind, then 族 / の (+ name) as separate
+# 0x08014098 calls, each starting at the next 16 px OBJ cell, so English showed "Silver  clan" / "Byakko-  Kogenta"
+# (a 2..15 px gap plus the space). The first call of each group goes to `join`, which draws the strings as one
+# line; the later calls become `movs r0, #0; nop`. Strings come through the same ROM literals the game uses (the
+# build repoints them), the name through the shikigami name table, index r6 as at 0x08035C7A.
+JOIN_FN = NUM_FN + 0x30
+CLAN_LIT, NO_LIT, NAMES_LIT = 0x08036210, 0x08035C9C, 0x08035CA0  # literal words: 0812938C 族, 0812933C の, 0812AEE0
+JOIN_CALLS = [(0x0361E4, (0x0361FC,), "clan", "page 1 kind + clan (Tsuiga)"),
+              (0x036240, (0x036258,), "clan", "page 1 kind + clan"),
+              (0x03628A, (0x0362A0,), "clan", "page 1 kind + clan, second slot (Tsuiga)"),
+              (0x0362E0, (0x0362F6,), "clan", "page 1 kind + clan, second slot"),
+              (0x035C60, (0x035C74, 0x035C8C), "head", "page header kind + - + name")]
+JOIN_SRC = """
+clan:   push {{r4, r5, r6, r7, lr}}
+        ldr r5, clanlit
+        ldr r5, [r5]
+        movs r6, #0
+        b join
+head:   push {{r4, r5, r6, r7, lr}}
+        lsls r7, r6, #2
+        ldr r6, nameslit
+        ldr r6, [r6]
+        ldr r6, [r6, r7]
+        ldr r5, nolit
+        ldr r5, [r5]
+join:   sub sp, #84
+        add r4, sp, #4
+        adds r2, r4, #0
+        bl cpy
+        adds r0, r5, #0
+        bl cpy
+        cmp r6, #0
+        beq jend
+        adds r0, r6, #0
+        bl cpy
+jend:   movs r3, #0
+        strb r3, [r2]
+        str r3, [sp]
+        adds r0, r4, #0
+        movs r2, #16
+        bl {menu:#x}
+        add sp, #84
+        pop {{r4, r5, r6, r7}}
+        pop {{r1}}
+        bx r1
+cpy:    ldrb r3, [r0]
+        cmp r3, #0
+        beq cpy_e
+        strb r3, [r2]
+        adds r0, #1
+        adds r2, #1
+        b cpy
+cpy_e:  bx lr
+        .align 2
+clanlit:  .word {clan:#x}
+nolit:    .word {no:#x}
+nameslit: .word {names:#x}
+"""
+
+
+def join_patch(orig, write):
+    src = JOIN_SRC.format(menu=0x08014098, clan=CLAN_LIT, no=NO_LIT, names=NAMES_LIT)
+    code = _asm(src, JOIN_FN)
+    assert JOIN_FN + len(code) <= 0x08110C88, "vwf: join routine overruns the dead body"
+    write(JOIN_FN & 0xFFFFFF, code, "vwf join (shikigami page kind + clan / header in one line)")
+    entry = {"clan": JOIN_FN, "head": JOIN_FN + 10}
+    assert _asm(src, JOIN_FN)[10:12] == _asm("push {r4, r5, r6, r7, lr}", 0)  # `head` entry offset
+    for lit, want in ((CLAN_LIT, 0x0812938C), (NO_LIT, 0x0812933C), (NAMES_LIT, 0x0812AEE0)):
+        assert struct.unpack_from("<I", orig, lit & 0xFFFFFF)[0] == want, f"vwf: join literal moved at {lit:08X}"
+    for first, later, kind, why in JOIN_CALLS:
+        assert orig[first:first + 4] == bl(0x08000000 | first, 0x08014098), f"vwf: join call moved at {first:06X}"
+        write(first, bl(0x08000000 | first, entry[kind]), f"vwf join: {why}")
+        for off in later:
+            assert orig[off:off + 4] == bl(0x08000000 | off, 0x08014098), f"vwf: join call moved at {off:06X}"
+            write(off, b"\x00\x20\xc0\x46", f"vwf join: {why} (drawn by join)")
 
 
 def small_glyph_offset(rom, code):

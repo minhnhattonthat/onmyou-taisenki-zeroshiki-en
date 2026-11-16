@@ -143,7 +143,7 @@
   {
    "id": "135098",
    "jp": "私の技で苦しむがいい",
-   "en": "Suffer by my move!",
+   "en": "Feel the pain of my move!",
    "max": 24
   },
   {
@@ -469,7 +469,7 @@
   {
    "id": "135748",
    "jp": "勇気を出していくよー！",
-   "en": "Here I go, be brave!",
+   "en": "Be brave... Here I go!",
    "max": 24
   },
   {
@@ -543,7 +543,7 @@
   {
    "id": "1358A0",
    "jp": "行くでちゅよ！",
-   "en": "Here I go-z!",
+   "en": "Here goez!",
    "max": 16
   },
   {
@@ -911,7 +911,7 @@
   {
    "id": "136134",
    "jp": "我がこん身の一撃！　　　　　その目に焼きつけよ！",
-   "en": "My strongest blow!\nBurn it into your eyes!",
+   "en": "My strongest blow!\nTake a good look and never forget!",
    "max": 52,
    "pad": 14
   },

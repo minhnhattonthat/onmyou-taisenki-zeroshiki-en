@@ -686,7 +686,7 @@
    "script": "44F0C0",
    "op": "036 00000001",
    "jp": "はい。{0000}考えるより、お手伝いが先です{0010}",
-   "en": "Yes.{0000}Helping comes before thinking.{0010}"
+   "en": "Yes.{0000}I should help first, then figure this out.{0010}"
   },
   {
    "id": "44F46E",
@@ -756,7 +756,7 @@
    "script": "44F7D8",
    "op": "073 0001",
    "jp": "これで妖怪は、いなくなった{0000}あとはイッセイさんを待とう{0010}",
-   "en": "That's the last of the yokai.{0000}Now I just wait for Issei-san.{0010}"
+   "en": "That's the last of the yokai.{0000}Now I'll wait for Issei-san.{0010}"
   },
   {
    "id": "44F86C",
@@ -784,7 +784,7 @@
    "script": "44FA78",
    "op": "073 0001",
    "jp": "これで妖怪は、いなくなった{0000}あとはイッセイさんを待とう{0010}",
-   "en": "That's the last of the yokai.{0000}Now I just wait for Issei-san.{0010}"
+   "en": "That's the last of the yokai.{0000}Now I'll wait for Issei-san.{0010}"
   },
   {
    "id": "44FBB4",
@@ -847,7 +847,7 @@
    "script": "44FEB4",
    "op": "073 0001",
    "jp": "{00C8}君！{0000}しっかりして！{0010}{00C8}君！{0010}",
-   "en": "{00C8}-kun!{0000}Pull yourself together!{0010}{00C8}-kun!{0010}"
+   "en": "{00C8}-kun!{0000}Come on, wake up!{0010}{00C8}-kun!{0010}"
   },
   {
    "id": "450006",

@@ -20,7 +20,7 @@
    "script": "43817C",
    "op": "073 0001",
    "jp": "あっ！そうだ！ぼんやりしてた{0010}この前「地流」におそわれて{0000}おじいちゃんが入院したんだ{0010}ボクも「天流」の闘神士として{0000}もっと強くならないとな・・・{0010}さてと・・・{0000}はやく病院に行かなきゃ！{0010}おじいちゃんに会いに行く{0000}時間だった{0010}",
-   "en": "Oh! That's right! I was spacing out.{0010}The other day the Chiryu attacked,{0000}and Grandpa ended up in the hospital.{0010}As a Tenryu Tojinshi, I need{0000}to get a lot stronger...{0010}Well then...{0000}I'd better hurry to the hospital!{0010}It was time to go{0000}see Grandpa.{0010}"
+   "en": "Oh! That's right! I was spacing out.{0010}The other day the Chiryu attacked,{0000}and Grandpa ended up in the hospital.{0010}As a Tenryu Tojinshi, I need{0000}to get a lot stronger...{0010}Well then...{0000}I'd better hurry to the hospital!{0010}It's time to go{0000}see Grandpa.{0010}"
   },
   {
    "id": "4384C4",
@@ -125,7 +125,7 @@
    "script": "438D1C",
    "op": "098 00150000",
    "jp": "なんだとーーーっ{0010}とにかく、学校を出てから{0000}下に進んで、天神町との境で{0010}石の階段をのぼった先の{0000}「天流」分社まで戻るぞ{0010}あと、その服は修行に向かねぇ{0000}学校でたら着替えとけよ{0010}",
-   "en": "Whaaaaat!?{0010}Anyway, after school, head down,{0000}and at the Tenjin Town border{0010}we go up the stone steps{0000}back to the Tenryu Branch Shrine.{0010}And those clothes are no good for{0000}trainin'. Change after school.{0010}"
+   "en": "Whaaaaat!?{0010}Anyway, leave school and head down{0000}to the Tenjin Town border.{0010}Then climb the stone steps{0000}back to the Tenryu Branch Shrine.{0010}Those clothes ain't good for trainin'.{0000}Change once you're outside school.{0010}"
   },
   {
    "id": "438FDE",
@@ -153,7 +153,7 @@
    "script": "439020",
    "op": "098 00150000",
    "jp": "何を今さら言ってんだ{0000}あたりまえだろ！{0010}",
-   "en": "What're you sayin' that now for?{0000}Of course it is!{0010}"
+   "en": "You're only just realizin' that?{0000}Of course it is!{0010}"
   },
   {
    "id": "4391E8",
@@ -223,7 +223,7 @@
    "script": "439020",
    "op": "073 0001",
    "jp": "もしものことがあった場合の{0000}ことを考え、ここに記す・・・{0010}{00C8}よ。お前は{0000}まだ、言葉もしゃべれない{0010}かわいい赤子だが、いずれ{0000}「天流」の闘神士として{0010}「地流」と闘っていくことに{0000}なるだろう。それは、宿命―{0010}{00C8}の宿命なのだ{0010}お前は、わしの目の前に{0000}ドライブと共に現れた{0010}お前が何者なのか、わしも{0000}よくわからない{0010}しかし、これだけは言える。{0000}わしは、お前のおじいちゃんだ{0010}いつまでもな{0010}式神は、この世の住人ではない{0000}荒ぶる神々なのじゃ{0010}神々をわざわざドライブで{0000}呼び出すのだから、つねに{0010}感謝の気持ちを忘れてはならん{0010}式神には闘神士が「印」を{0000}入力して指示をする{0010}封印されている「印」をみつけ{0000}早く正確に入力することが{0010}闘神士の役割だ{0010}そして修行を積んだ闘神士は{0010}最大３体の式神を同時に{0000}使うことができる{0010}「天流」修練場に行けば{0000}新しい式神に会えるだろう{0010}ただし、会えたからといって、{0000}かならず式神が仲間になって{0010}くれるとは限らん{0010}式神と話すことで{0000}心を通じさせることが大切だ{0010}わしに、もしものことが{0000}あっても気にせず前に進め{0010}立派な「天流」闘神士を{0000}めざすのだぞ{0010}",
-   "en": "In case anything should happen,{0000}I write this here...{0010}{00C8}. You are still{0000}a sweet baby who cannot talk,{0010}but one day, as a Tenryu{0000}Tojinshi, you will surely{0010}fight the Chiryu. That is fate:{0000}your fate, {00C8}.{0010}It is your destiny.{0010}You appeared before me{0000}together with a Drive.{0010}Even I do not truly know{0000}who you are.{0010}But this much I can say:{0000}I am your grandpa.{0010}Now and always.{0010}Shikigami are not of this world.{0000}They are wild gods.{0010}Since we summon the gods themselves{0000}through the Drive, you must{0010}never forget to be grateful.{0010}A Tojinshi gives shikigami orders{0000}by entering \"seals.\"{0010}Finding sealed-away seals and{0000}entering them fast and true{0010}is the Tojinshi's role.{0010}And a Tojinshi who has trained{0010}can use up to three shikigami{0000}at the same time.{0010}Go to the Tenryu Training Hall,{0000}and you will meet new shikigami.{0010}But meeting them does not{0000}mean they will always{0010}become your allies.{0010}Talking with shikigami to{0000}reach their hearts is what matters.{0010}Should anything happen to me,{0000}do not mind it; keep moving forward.{0010}Strive to become a fine{0000}Tenryu Tojinshi.{0010}"
+   "en": "In case anything should happen,{0000}I write this here...{0010}{00C8}. You are still{0000}a sweet baby who cannot talk,{0010}but one day, as a Tenryu{0000}Tojinshi, you will surely{0010}fight the Chiryu. That is fate:{0000}your fate, {00C8}.{0010}It is your destiny.{0010}You appeared before me{0000}together with a Drive.{0010}Even I do not truly know{0000}who you are.{0010}But this much I can say:{0000}I am your grandpa.{0010}Now and always.{0010}Shikigami are not of this world.{0000}They are wild gods.{0010}Since we summon the gods themselves{0000}through the Drive, you must{0010}never forget to be grateful.{0010}A Tojinshi gives shikigami orders{0000}by entering \"seals.\"{0010}Finding sealed-away seals and{0000}entering them fast and true{0010}is the Tojinshi's role.{0010}And a Tojinshi who has trained{0010}can use up to three shikigami{0000}at the same time.{0010}Go to the Tenryu Training Hall,{0000}and you will meet new shikigami.{0010}But meeting them does not{0000}mean they will always{0010}become your allies.{0010}Talking with shikigami to{0000}reach their hearts is what matters.{0010}Should anything happen to me,{0000}don't let it stop you. Keep going.{0010}Strive to become a fine{0000}Tenryu Tojinshi.{0010}"
   },
   {
    "id": "439A0E",

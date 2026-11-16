@@ -251,7 +251,7 @@
    "script": "431864",
    "op": "073 0001",
    "jp": "おぬしが言わなくてもわかるの{0000}である。わしとけいやく{0010}したいのであろう？{0000}これでも以心伝心の種族{0010}おぬしの言いたいことはわかる{0000}のである{0010}わしの同族に、イソロクと{0000}ミソヒトがいる{0010}彼らもわしとおなじ{0000}以心伝心をつかさどっている{0010}彼らもいっしょならば{0000}おぬしの腕もわかるのである{0010}わしもおぬしについていく{0000}よろしくである{0010}",
-   "en": "You need not say it. I know,{0000}so I do. You wish to form{0010}a contract with me, yes?{0000}My kind reads minds, you see.{0010}I know what you want to say,{0000}so I do.{0010}Among my kind are Isoroku{0000}and Misohito.{0010}Like me, they too hold{0000}the power of unspoken minds.{0010}If they are with you too,{0000}your skill is plain, so it is.{0010}I shall follow you as well.{0000}Pleased to meet you, so I am.{0010}"
+   "en": "You need not say it. I know,{0000}so I do. You wish to form{0010}a contract with me, yes?{0000}My kind reads minds, you see.{0010}I know what you want to say,{0000}so I do.{0010}Among my kind are Isoroku{0000}and Misohito.{0010}Like me, they too can{0000}communicate without words.{0010}If they are with you too,{0000}your skill is plain, so it is.{0010}I shall follow you as well.{0000}Pleased to meet you, so I am.{0010}"
   },
   {
    "id": "431A7C",
@@ -272,7 +272,7 @@
    "script": "431864",
    "op": "036 00000001",
    "jp": "（…もしかして、イソロク、{0000}ミソヒトとけいやくするのか{0010}…こりゃ、やっかいだ…）{0010}",
-   "en": "(...Does that mean I need Isoroku{0000}and Misohito in my contract...?{0010}...This is gonna be a pain...){0010}"
+   "en": "(...Do I need to form contracts{0000}with Isoroku and Misohito...?{0010}...This is gonna be a pain...){0010}"
   },
   {
    "id": "431D18",
@@ -349,7 +349,7 @@
    "script": "43223C",
    "op": "098 00600000",
    "jp": "わしはそなたの足手まといに{0000}なりはしまいか？{0010}わしなどの力を、本当に{0000}必要としておるのか？{0010}",
-   "en": "Would I not be a burden{0000}to you?{0010}Do you truly have need{0000}of the likes of my power?{0010}"
+   "en": "Would I not be a burden{0000}to you?{0010}Do you truly need{0000}this old man's humble strength?{0010}"
   },
   {
    "id": "432388",
@@ -440,7 +440,7 @@
    "script": "432750",
    "op": "098 00380000",
    "jp": "ふうん、ちょっと気分がいいわ{0010}そのまま、すこしまってて{0000}もらえる？{00C8}{0010}あのアンジって式神{0000}どうやら女性に弱いみたいよ{0010}私のカンはするどいのよ{0000}ここは私にまかせてね{0010}おまたせ、アンジさん{0000}お願いがあるんだけど…{0010}",
-   "en": "Hmm, that does feel rather nice.{0010}Could you stay there a moment?{0000}Now, {00C8}...{0010}That Anji shikigami seems{0000}to have a weakness for women.{0010}My intuition is sharp, you know.{0000}Leave this one to me.{0010}Sorry to keep you, Anji-san.{0000}I have a little favor to ask...{0010}"
+   "en": "Hmm, that does feel rather nice.{0010}Could you wait right there{0000}for me, {00C8}?{0010}That Anji shikigami seems{0000}to have a weakness for women.{0010}My intuition is sharp, you know.{0000}Leave this one to me.{0010}Sorry to keep you, Anji-san.{0000}I have a little favor to ask...{0010}"
   },
   {
    "id": "4329E0",
@@ -454,14 +454,14 @@
    "script": "432750",
    "op": "098 00380000",
    "jp": "この方とけいやくして、一緒に{0000}甘い時を過ごさない？{0010}",
-   "en": "Won't you form a contract with him{0000}and spend some sweet time with me?{0010}"
+   "en": "Won't you form a contract with him{0000}and share some sweet moments with me?{0010}"
   },
   {
    "id": "432A58",
    "script": "432750",
    "op": "098 00620000",
    "jp": "あなたのような方と{0000}甘い時を過ごせるなら喜んで{0010}",
-   "en": "If it means sweet time with{0000}someone like you, gladly.{0010}"
+   "en": "To share sweet moments with{0000}someone like you? Gladly.{0010}"
   },
   {
    "id": "432AD8",
@@ -622,7 +622,7 @@
    "script": "4337E0",
    "op": "073 0001",
    "jp": "ははは！{0000}わしの力は数万倍に・・・{0010}・・・{0010}",
-   "en": "Hahaha!{0000}My power grows tens of thousands...{0010}...{0010}"
+   "en": "Hahaha!{0000}My power grows ten-thousandfold...{0010}...{0010}"
   },
   {
    "id": "4339DC",
@@ -664,7 +664,7 @@
    "script": "4337E0",
    "op": "098 00660000",
    "jp": "まっ・・・まったあ！{0010}けいやくしてやろうじゃないか{0000}な？な？いいであろう？{0010}",
-   "en": "W-w-wait!{0010}I'll make a contract with you,{0000}see? See? That's fine, I say?{0010}"
+   "en": "W-w-wait!{0010}I'll make a contract with you!{0000}Please? Please? We have a deal?{0010}"
   },
   {
    "id": "433B7C",
@@ -692,7 +692,7 @@
    "script": "4337E0",
    "op": "036 00000001",
    "jp": "また、負け惜しみを…{0010}",
-   "en": "Sore loser again...{0010}"
+   "en": "Making excuses again...{0010}"
   },
   {
    "id": "433D26",

@@ -75,6 +75,25 @@
 110AE8-110AF7   # code: smapline thunk: small-font BG labels 0x08110AE8
 110BAC-110BBB   # code: strip thunk: battle results 0x08110BAC
 110C88-110C97   # code: strip thunk: battle text rows 0x08110C88
+110BBC-110C87   # code: number-at-NUL + join routines (vwf.num_patch, vwf.join_patch) in the replaced body of 0x08110BAC; dead=110BAC-110C87 (that routine's own branches and literals)
+# Number at the string's end, not the JP name's byte length (vwf.NUM_CALLS): bl 0x0811B670 -> number-at-NUL entries
+0F8B56-0F8B59   # stat up number
+10098C-10098F   # stat down number (r8 base)
+100D70-100D73   # stat down number (sb base)
+10423E-104241   # Both sides + damage number
+11F910-11F913   # level-up number
+# Shikigami pages: kind + clan / header in one line (vwf.JOIN_CALLS): first bl -> join, later bls -> movs r0, #0; nop
+0361E4-0361E7   # join: kind + clan (Tsuiga)
+0361FC-0361FF   # join: clan call off
+036240-036243   # join: kind + clan
+036258-03625B   # join: clan call off
+03628A-03628D   # join: kind + clan, second slot (Tsuiga)
+0362A0-0362A3   # join: clan call off
+0362E0-0362E3   # join: kind + clan, second slot
+0362F6-0362F9   # join: clan call off
+035C60-035C63   # join: header kind + - + name
+035C74-035C77   # join: header - call off
+035C8C-035C8F   # join: header name call off
 111B50-111BCF   # code: tag thunk 0x08111B50 + tagw + fill7 + pname + ctile + o8 thunks + Swap list tile fn (0x08111BB0) in the replaced body; dead=111B50-111C07 (the replaced routine's own loop)
 120A80-120A83   # battle name tag tile literal (last of the 6)
 224874-224A33   # gfx: title menu button New Game (14 raw tiles, tools/gfx.py)

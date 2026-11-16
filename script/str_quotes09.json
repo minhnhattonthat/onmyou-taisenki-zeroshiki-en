@@ -30,7 +30,7 @@
   {
    "id": "137948",
    "jp": "わしと相性がよい敵じゃ　　　倒しやすいですぞ",
-   "en": "A foe with good affinity for me.\nEasy to beat, my boy.",
+   "en": "My affinity gives me the edge.\nAn easy win, my boy.",
    "max": 48,
    "pad": 14
   },
@@ -96,7 +96,7 @@
   {
    "id": "137AD8",
    "jp": "この相手なら有利な　　　　　闘いができそうです",
-   "en": "Against this foe, I think I can\nfight with the advantage.",
+   "en": "Against this foe, I believe\nI'll have the upper hand.",
    "max": 48,
    "pad": 14
   },
@@ -691,7 +691,7 @@
   {
    "id": "1389F8",
    "jp": "あんたとなら有利な闘いが　　できそうだねぇ",
-   "en": "With you, hon, I think I can\nfight with the advantage.",
+   "en": "Against you, hon, I reckon\nI'll have the upper hand.",
    "max": 44,
    "pad": 14
   },
@@ -891,7 +891,7 @@
   {
    "id": "138F04",
    "jp": "この闘い、相性で有利に　　　運べそうですよ",
-   "en": "Our affinity should let us\ncarry this fight our way.",
+   "en": "Our affinity should give us\nthe upper hand in this fight.",
    "max": 44,
    "pad": 14
   },

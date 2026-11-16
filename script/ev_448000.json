@@ -83,7 +83,7 @@
    "script": "4488D4",
    "op": "073 0001",
    "jp": "ぎゃああああああ{0000}身が焼けるっ！！{0010}ぎゃああああああ{0010}",
-   "en": "Gyaaaaaaah!{0000}I burn!!{0010}Gyaaaaaaah!{0010}"
+   "en": "Gyaaaaaaah!{0000}I'm burning!!{0010}Gyaaaaaaah!{0010}"
   },
   {
    "id": "449042",
@@ -202,7 +202,7 @@
    "script": "449810",
    "op": "036 00000001",
    "jp": "ボクにも、大切なものがあるよ{0010}",
-   "en": "I have precious things too.{0010}"
+   "en": "There are things I care about too.{0010}"
   },
   {
    "id": "449A68",
@@ -503,7 +503,7 @@
    "script": "44A91C",
    "op": "073 0001",
    "jp": "こぞう！{0010}その弱い力で、また我に{0000}立ち向かうというのか{0010}なんど向かってきても同じだ！{0010}",
-   "en": "Boy!{0010}You'd face me again with{0000}that feeble power?{0010}However often you come, it's the same!{0010}"
+   "en": "Boy!{0010}You'd face me again with{0000}that feeble power?{0010}Come at me all you like! Nothing changes!{0010}"
   },
   {
    "id": "44B056",

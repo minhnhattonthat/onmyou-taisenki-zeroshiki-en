@@ -34,14 +34,14 @@
    "script": "468188",
    "op": "124 0008",
    "jp": "おいらは八百屋になるために{0000}お手伝いをしてるんだ{0010}",
-   "en": "I'm helping out so I can{0000}run a greengrocer someday.{0010}"
+   "en": "I'm helping out so I can{0000}run a vegetable shop someday.{0010}"
   },
   {
    "id": "46826A",
    "script": "468188",
    "op": "124 0015",
    "jp": "将来はこの八百屋の店主に{0000}なるんだ{0010}",
-   "en": "Someday I'm gonna be the owner{0000}of this greengrocer.{0010}"
+   "en": "Someday I'm gonna be the owner{0000}of this vegetable shop.{0010}"
   },
   {
    "id": "4682F8",
@@ -307,7 +307,7 @@
    "script": "468F18",
    "op": "124 0015",
    "jp": "あっ！まりあちゃん{0000}あっちにいた！{0010}",
-   "en": "Oh! Maria-chan{0000}was over there!{0010}"
+   "en": "Oh! Maria-chan's{0000}over there!{0010}"
   },
   {
    "id": "469084",
@@ -405,7 +405,7 @@
    "script": "469484",
    "op": "124 0008",
    "jp": "うふふ・・・{0000}お花にお水をあげなきゃ{0010}",
-   "en": "Ufufu...{0000}I have to water the flowers.{0010}"
+   "en": "Hee hee...{0000}I have to water the flowers.{0010}"
   },
   {
    "id": "469554",

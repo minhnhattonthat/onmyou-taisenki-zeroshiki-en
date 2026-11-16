@@ -139,7 +139,7 @@
    "script": "424A0C",
    "op": "098 00140000",
    "jp": "ネネのお弁当を食べて{0000}くれるなんてはじめてだよ！{0010}ルリお姉ちゃんなんて、私の{0000}料理をみただけで、真っ青に{0010}なって逃げてくんだよ！{0010}",
-   "en": "You're the first one who ever{0000}ate Nene's lunch!{0010}Big Sister Ruri just looks at my{0000}cooking and turns all blue{0010}and runs away!{0010}"
+   "en": "You're the first one who ever{0000}ate Nene's lunch!{0010}Big Sister Ruri just looks at my{0000}cooking and goes pale,{0010}then runs away!{0010}"
   },
   {
    "id": "424D10",
@@ -153,7 +153,7 @@
    "script": "424A0C",
    "op": "098 00140000",
    "jp": "ネネはね…私のお弁当を食べて{0000}くれた人に、ついていくって{0010}決めてたんだ。よろしくね！{0010}",
-   "en": "Nene decided she'd go with{0000}whoever ate her lunch, see?{0010}So, nice to meet you!{0010}"
+   "en": "Nene decided she'd go with{0000}whoever ate her lunch, see?{0010}Let's be friends!{0010}"
   },
   {
    "id": "424DF0",
@@ -804,7 +804,7 @@
    "script": "427F84",
    "op": "098 00270000",
    "jp": "たしかに「誇り」は{0000}だれの胸にもあり{0010}つねに失わない人こそが{0000}誇り高き存在であります{0010}このブリュネ！今後はアナタを{0000}誇りとして闘うであります{0010}",
-   "en": "Indeed, \"pride\" lives{0000}in every heart, sir!{0010}And only those who never lose it{0000}are truly proud beings!{0010}I, Brune, shall fight with you{0000}as my pride from now on, sir!{0010}"
+   "en": "Indeed, \"pride\" lives{0000}in every heart, sir!{0010}Those who never lose it{0000}are truly worthy of pride!{0010}I, Brune, shall henceforth{0000}take pride in fighting for you, sir!{0010}"
   },
   {
    "id": "428310",

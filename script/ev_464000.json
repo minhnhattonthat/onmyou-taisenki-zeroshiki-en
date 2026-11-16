@@ -153,7 +153,7 @@
    "script": "464890",
    "op": "124 0000",
    "jp": "私は、この朝の時間が一番{0000}好きなの{0010}",
-   "en": "This morning time is my{0000}favorite part of the day.{0010}"
+   "en": "This time of morning is my{0000}favorite part of the day.{0010}"
   },
   {
    "id": "464930",
@@ -272,7 +272,7 @@
    "script": "464E08",
    "op": "124 0015",
    "jp": "まあ、にきびも{0000}青春のあかしってやつね{0010}",
-   "en": "Oh well, pimples are what{0000}they call proof of youth.{0010}"
+   "en": "Oh well, pimples are just{0000}part of being young.{0010}"
   },
   {
    "id": "464F98",
@@ -405,7 +405,7 @@
    "script": "46512C",
    "op": "124 0015",
    "jp": "ねえ、ボクたちはもっと{0000}青春するべきだと思う{0010}",
-   "en": "Hey, I think we oughta{0000}live our youth more fully.{0010}"
+   "en": "Hey, I think we oughta have{0000}more fun while we're young.{0010}"
   },
   {
    "id": "46574C",
@@ -685,7 +685,7 @@
    "script": "465FB0",
    "op": "124 0013",
    "jp": "よーく、あて名をみてごらん{0000}べつの人の名前よ、きっと{0010}",
-   "en": "Take a good look at the address.{0000}I bet it's someone else's name.{0010}"
+   "en": "Look closely at who it's addressed to.{0000}I bet that's someone else's name.{0010}"
   },
   {
    "id": "466422",
@@ -699,7 +699,7 @@
    "script": "465FB0",
    "op": "124 0015",
    "jp": "そりゃあ、先生のことを{0000}「オバサン」って言えばねぇ{0010}",
-   "en": "Well, sure, if you go calling{0000}the teacher \"Granny\"...{0010}"
+   "en": "Well, you did call{0000}the teacher an \"old lady\"...{0010}"
   },
   {
    "id": "4664D4",
@@ -1210,7 +1210,7 @@
    "script": "467E00",
    "op": "124 0015",
    "jp": "今日も無遅刻、無欠勤！{0000}がんばるぞー！{0010}",
-   "en": "Never late, never absent,{0000}again today! Let's do this!{0010}"
+   "en": "On time again! Perfect attendance!{0000}Let's keep it up!{0010}"
   },
   {
    "id": "467F74",

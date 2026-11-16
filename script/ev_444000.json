@@ -34,7 +34,7 @@
    "script": "444384",
    "op": "036 00670001",
    "jp": "前の大戦での{0000}「天流」闘神士ヤクモにだ{0010}",
-   "en": "Him: Yakumo, the \"Tenryu\"{0000}Tojinshi of the last war.{0010}"
+   "en": "Yakumo, the \"Tenryu\"{0000}Tojinshi from the last war.{0010}"
   },
   {
    "id": "444562",
@@ -342,7 +342,7 @@
    "script": "4453F8",
    "op": "073 0001",
    "jp": "フェフェフェ{0010}また、かかってくると{0000}いうのか{0010}わかいしょうこじゃぞェ{0000}フェフェフェ{0010}",
-   "en": "Feh feh feh.{0010}So thou'd come at me{0000}again, would thou?{0010}That's youth for thee, dearie.{0000}Feh feh feh.{0010}"
+   "en": "Feh feh feh.{0010}So thou wouldst challenge{0000}me again?{0010}That's youth for thee, dearie.{0000}Feh feh feh.{0010}"
   },
   {
    "id": "445A00",
@@ -839,7 +839,7 @@
    "script": "4478A8",
    "op": "073 0001",
    "jp": "ぐううううう{0000}これが・・・{0010}これが答えだというのかあああ{0010}",
-   "en": "Guuuuugh...{0000}Is this...{0010}Is this the answer...!?{0010}"
+   "en": "Guuuugh...{0000}Is this...{0010}Is THIS supposed to be the answer!?{0010}"
   },
   {
    "id": "447E46",

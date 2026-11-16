@@ -223,7 +223,7 @@
   {
    "id": "139820",
    "jp": "相手が悪い…",
-   "en": "Bad opponent...",
+   "en": "This foe is trouble...",
    "max": 16
   },
   {
@@ -446,7 +446,7 @@
   {
    "id": "139E1C",
    "jp": "あら、ざんねん！　　　　　　この闘い私のほうが不利だわ",
-   "en": "Oh, what a shame!\nThe edge is against me here.",
+   "en": "Oh, what a shame!\nThe enemy has the edge here.",
    "max": 56,
    "pad": 14
   },
@@ -465,7 +465,7 @@
   {
    "id": "139EA8",
    "jp": "チィ！相手が悪いようだね！",
-   "en": "Tch! Bad opponent, it seems!",
+   "en": "Tch! Looks like this foe's\nbad news!",
    "max": 28
   },
   {
@@ -546,7 +546,7 @@
   {
    "id": "13A0BC",
    "jp": "相手が悪いな…　　　　　　　気をつけたほうがいい…",
-   "en": "Bad opponent...\nBetter be careful...",
+   "en": "This foe is trouble...\nBetter be careful...",
    "max": 52,
    "pad": 14
   },
@@ -714,7 +714,7 @@
   {
    "id": "13A51C",
    "jp": "この敵が相手では　　　　　　私の分が悪い",
-   "en": "Against this enemy,\nthe odds are against me.",
+   "en": "Facing this enemy,\nthe odds are not in my favor.",
    "max": 44,
    "pad": 14
   },
@@ -846,7 +846,7 @@
   {
    "id": "13A854",
    "jp": "まずいぜ！　この闘い　　　　おいらのほうが不利だぜ！",
-   "en": "Not good! I've got the\nworse end of this fight!",
+   "en": "Not good! This foe's got\nthe edge on me!",
    "max": 56
   },
   {
@@ -858,7 +858,7 @@
   {
    "id": "13A8A8",
    "jp": "あんさん！こりゃあ　　　　　わいが不利でっせ！",
-   "en": "Pal! I've got the worse\nend of this one!",
+   "en": "Pal! This foe's got\nthe edge on me!",
    "max": 48,
    "pad": 14
   },
@@ -879,7 +879,7 @@
   {
    "id": "13A93C",
    "jp": "敵との相性は悪いのじゃが　　闘うでおじゃるか？",
-   "en": "Our affinity with the foe is poor.\nShall we fight still, I daresay?",
+   "en": "Our affinity with the foe is poor.\nWilt thou fight on, ojaru?",
    "max": 48,
    "pad": 14
   },

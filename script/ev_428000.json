@@ -41,7 +41,7 @@
    "script": "4286B8",
    "op": "073 0001",
    "jp": "へぇ、キミって強いんだね。{0000}ちょっと見直しちゃったよ！{0010}ボクの名前はタンカムイって{0000}いうんだ。よろしくね{0010}ところでさー、ボクの名前の{0000}タンカムイって、ちょっとした{0010}意味があるんだ。アイヌ語で{0000}何ていうかしってる？{0010}",
-   "en": "Wow, you're strong, huh?{0000}Guess I was wrong about you!{0010}My name's Tankamui.{0000}Nice to meet you!{0010}So hey, my name, Tankamui,{0000}has a little bit of a{0010}meaning. Do you know what{0000}it means in the Ainu language?{0010}"
+   "en": "Wow, you're strong, huh?{0000}Guess I was wrong about you!{0010}My name's Tankamui.{0000}Nice to meet you!{0010}So hey, there's a meaning{0000}behind my name, Tankamui.{0010}Do you know what it means{0000}in the Ainu language?{0010}"
   },
   {
    "id": "4287EE",
@@ -76,7 +76,7 @@
    "script": "428AF4",
    "op": "073 0001",
    "jp": "わらわが負けるとは…どうやら{0000}そちゅの知能指数を{0010}みくびっていたようでちゅね{0010}",
-   "en": "For me to lose... It seemz I{0000}underestimated your{0010}IQ, I doez.{0010}"
+   "en": "For me to lose... It seemz I{0000}underestimated your{0010}intelligence.{0010}"
   },
   {
    "id": "428B98",
@@ -538,7 +538,7 @@
    "script": "42AA44",
    "op": "073 0001",
    "jp": "今はР女さんの格好を{0000}してるけど、キャミソールを{0010}２枚重ね着してメイドさん風に{0000}アレンジすることが夢なんだ！{0010}これでボクもすこしは女の子っ{0000}ぽいっていうことがわかった？{0010}ボクねぇ、本当は守るより、{0000}守って欲しいタイプなんだよ{0010}でも、ちゃんと守ってあげる{0000}から、けいやくしてね！{0010}",
-   "en": "Right now I'm dressed like a{0000}shrine maiden, but my dream{0010}is to layer two camisoles and{0000}make it a maid-style outfit!{0010}So now do you get that I'm{0000}a little bit girly too?{0010}Y'know, deep down I'm more the type{0000}who wants protecting than protects.{0010}But I'll protect you properly,{0000}so make a contract with me!{0010}",
+   "en": "Right now I'm dressed like a{0000}shrine maiden, but my dream{0010}is to layer two camisoles and{0000}make it a maid-style outfit!{0010}So now do you get that I'm{0000}a little bit girly too?{0010}Y'know, I'd rather be protected{0000}than protect someone else.{0010}But I'll protect you properly,{0000}so make a contract with me!{0010}",
    "notes": "gaiji Р=巫"
   },
   {
@@ -665,7 +665,7 @@
    "script": "42B19C",
    "op": "073 0001",
    "jp": "わー、ありがとう！{0000}金の矢だあ！{0010}あの…あの…ヨロシクね{0010}ボク、いっしょうけんめいに{0000}闘うからね{0010}",
-   "en": "Wow, thank you!{0000}A golden arrow!{0010}Um... um... nice to meet you.{0010}I'll fight as hard{0000}as I can!{0010}"
+   "en": "Wow, thank you!{0000}A golden arrow!{0010}Um... um... let's be friends.{0010}I'll fight as hard{0000}as I can!{0010}"
   },
   {
    "id": "42B65A",
@@ -854,7 +854,7 @@
    "script": "42BFCC",
    "op": "073 0001",
    "jp": "あら、かわいくないのね！{0010}それじゃ、好きな女の子にも{0000}逃げられちゃうわよ{0010}それじゃ、ごめんあそばせ！{0010}",
-   "en": "My, how unsweet of you!{0010}Keep that up and the girl you{0000}like will run away from you too.{0010}Well then, ta-ta for now!{0010}"
+   "en": "My, you're no fun!{0010}Keep that up and the girl you{0000}like will run away from you too.{0010}Well then, ta-ta for now!{0010}"
   },
   {
    "id": "42C482",

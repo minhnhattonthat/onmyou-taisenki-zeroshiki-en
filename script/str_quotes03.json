@@ -204,7 +204,7 @@
   {
    "id": "12F0B8",
    "jp": "その体に手裏剣の味を　　　　教えてあげるわ",
-   "en": "I'll teach your body\nthe taste of shuriken.",
+   "en": "I'll give you a taste\nof my shuriken!",
    "max": 44,
    "pad": 14
   },
@@ -652,14 +652,14 @@
   {
    "id": "12F9A8",
    "jp": "拙者の武器の　　　　　　　　エジキとなってもらおう",
-   "en": "This one shall make you\nprey for this one's weapon.",
+   "en": "This one's weapon\nshall make prey of you.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12F9DC",
    "jp": "これで鬼に金棒だよ",
-   "en": "Now I'm an oni with an iron club!",
+   "en": "Now I'm stronger than ever!",
    "max": 20
   },
   {

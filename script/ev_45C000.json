@@ -153,7 +153,7 @@
    "script": "45CB94",
    "op": "098 00030000",
    "jp": "ツイガとマホロバが組めば{0000}「伏魔殿」、もろともこの世は{0010}ほろびるのを待つのみ{0010}「聖獣の祭壇」に行く前に{0000}何か絶大な力を手にしないと{0010}マホロバに勝つのはむずかしい{0010}心して行けよ{0010}",
-   "en": "If Tsuiga and Mahoroba join hands,{0000}\"Fukumaden\" and this world with it{0010}can only await their ruin.{0010}Unless you gain some immense power{0000}before the \"Sacred Beast Altar\",{0010}beating Mahoroba will be hard.{0010}Go with your guard up.{0010}"
+   "en": "If Tsuiga and Mahoroba join hands,{0000}\"Fukumaden\" and this world with it{0010}can only await their ruin.{0010}Unless you gain some immense power{0000}before reaching the \"Sacred Beast Altar\",{0010}beating Mahoroba will be hard.{0010}Go with your guard up.{0010}"
   },
   {
    "id": "45D3BE",
@@ -440,7 +440,7 @@
    "script": "45E8F8",
    "op": "073 0001",
    "jp": "おっ{0000}まさか客が来るとは・・・{0010}気でもおかしくなったか？{0010}キミたち、絶対勝てないじゃん{0000}まあいいや{0010}はずかしい闘いかたするなよっ{0000}命おしむな、名をおしめってね{0010}いくぜ？{0010}",
-   "en": "Oh!{0000}Didn't expect visitors...{0010}You lost your minds or somethin'?{0010}No way you guys can win.{0000}Ah, whatever.{0010}Don't fight like a disgrace, 'kay?{0000}Spare your name, not your life.{0010}Ready?{0010}"
+   "en": "Oh!{0000}Didn't expect visitors...{0010}You lost your minds or somethin'?{0010}No way you guys can win.{0000}Ah, whatever.{0010}Don't fight like a disgrace, 'kay?{0000}Guard your honor, not your life.{0010}Ready?{0010}"
   },
   {
    "id": "45EA52",
@@ -496,7 +496,7 @@
    "script": "45EDF0",
    "op": "073 0001",
    "jp": "あなたが守りたいものって{0000}そのていど？{0010}そのていどなら{0000}ここにくることないのに{0010}さっさとココを{0000}去るがいいわ{0010}",
-   "en": "Is that all the thing you{0000}want to protect is worth?{0010}If that's all,{0000}you needn't have come here.{0010}Leave this place,{0000}and be quick about it.{0010}"
+   "en": "Is what you want to protect{0000}really worth so little?{0010}If that's all,{0000}you needn't have come here.{0010}Leave this place,{0000}and be quick about it.{0010}"
   },
   {
    "id": "45F086",
@@ -510,7 +510,7 @@
    "script": "45EDF0",
    "op": "073 0001",
    "jp": "あなた、分かってる？{0000}勝負は、つよさだけじゃない{0010}守るっていう気持ちが{0000}大きく勝敗を左右するのよ{0010}分かった上でくるなら、{0000}勝負するわ{0010}いくわよ！{0010}",
-   "en": "Do you understand?{0000}A fight isn't only about strength.{0010}The will to protect{0000}decides much of who wins.{0010}If you come understanding that,{0000}I'll fight you.{0010}Here I come!{0010}"
+   "en": "Do you understand?{0000}A fight isn't only about strength.{0010}The will to protect{0000}can make all the difference.{0010}If you understand that,{0000}I'll fight you.{0010}Here I come!{0010}"
   },
   {
    "id": "45F238",

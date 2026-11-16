@@ -268,7 +268,7 @@
    "script": "45A7DC",
    "op": "079 01730000",
    "jp": "オマエは、白虎族か？{0010}",
-   "en": "Are you Byakko clan?{0010}"
+   "en": "Are you from the Byakko clan?{0010}"
   },
   {
    "id": "45A928",
@@ -443,7 +443,7 @@
    "script": "45AED4",
    "op": "098 00630000",
    "jp": "・・・{0010}おお！おとうと弟子のコゲンタ{0000}じゃないか！久しぶりだな{0010}",
-   "en": "...{0010}Oh! If it isn't my little{0000}brother in training, Kogenta!{0010}"
+   "en": "...{0010}Oh! Kogenta, my little brother{0000}in training! It's been a while!{0010}"
   },
   {
    "id": "45B3E2",
@@ -464,7 +464,7 @@
    "script": "45AED4",
    "op": "098 00150000",
    "jp": "いや、村でゲンタロウを{0000}見てこいと言われたんだ{0010}",
-   "en": "Well, the village told me to{0000}come check on Gentaro.{0010}"
+   "en": "Nah, the villagers asked me{0000}to come check on you, Gentaro.{0010}"
   },
   {
    "id": "45B460",
@@ -618,7 +618,7 @@
    "script": "45BE74",
    "op": "098 00150000",
    "jp": "だめだ・・・{0000}玄武の長老までもが{0010}マホロバの「邪気」に{0000}やられちまってるぜ{0010}あんまり玄武の長老と闘う{0000}こともねぇし、いい機会だ{0010}いっちょう、かたづけてやるか{0010}いくぜ、{00C8}{0010}",
-   "en": "No good...{0000}Even the Genbu elder{0010}got taken over by{0000}Mahoroba's \"evil aura\".{0010}Don't often get to fight{0000}the Genbu elder. Good chance.{0010}Let's sort him out!{0010}Let's go, {00C8}!{0010}"
+   "en": "No good...{0000}Even the Genbu elder{0010}got taken over by{0000}Mahoroba's \"evil aura\".{0010}I don't often get to fight him!{0000}Here's my chance!{0010}Let's sort him out!{0010}Let's go, {00C8}!{0010}"
   },
   {
    "id": "45C0B2",
@@ -674,7 +674,7 @@
    "script": "45BE74",
    "op": "098 00690000",
    "jp": "うむ。たしかにそうじゃが{0000}これだけの「邪気」を放つ者{0010}かんたんには、いかんぞ{0000}マホロバという者はおそらく{0010}聖なる式神、キリン族の力を{0000}求めているはずじゃ{0010}キリン族は「式神界」の中心{0000}「聖獣の祭壇」にいる{0010}キリン族は、今の式神界を{0000}統治する者なのじゃ{0010}この道を進み、「青龍の村」{0000}「朱雀の村」の先にある{0010}心して、進むことじゃ{0010}",
-   "en": "Hmm. That's so, but{0000}one who gives off this much{0010}\"evil aura\" won't be easy, my boy.{0000}This Mahoroba is most likely{0010}after the power of the holy{0000}shikigami, the Kirin clan.{0010}At the heart of the shikigami realm,{0000}the \"Sacred Beast Altar\", they dwell.{0010}The Kirin clan are the ones who{0000}rule the shikigami realm now.{0010}Follow this road past the \"Seiryu{0000}Village\" and \"Suzaku Village\",{0010}and go with your guard up, eh.{0010}"
+   "en": "Hmm. That's so, but{0000}one who gives off this much{0010}\"evil aura\" won't be easy, my boy.{0000}This Mahoroba is most likely{0010}after the power of the holy{0000}shikigami, the Kirin clan.{0010}The Kirin clan dwell at the very{0000}heart of the shikigami realm,{0010}the \"Sacred Beast Altar\". They{0000}are the ones who rule it now.{0010}Follow this road past the \"Seiryu{0000}Village\" and \"Suzaku Village\",{0010}and go with your guard up, eh.{0010}"
   },
   {
    "id": "45C5AC",

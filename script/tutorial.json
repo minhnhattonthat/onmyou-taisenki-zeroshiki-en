@@ -84,7 +84,7 @@
    "script": "6918F4",
    "op": "123 00100005000199990220",
    "jp": "学校に行きゃ、誰か弁当{0000}持ってるだろ{0010}",
-   "en": "If we go to school, somebody's{0000}gotta have a lunch.{0010}"
+   "en": "If we go to school, somebody's{0000}gotta have a lunch box.{0010}"
   },
   {
    "id": "691FB4",
@@ -392,7 +392,7 @@
    "script": "6931E4",
    "op": "073 0001",
    "jp": "闘神士は、式神に指示をする{0000}必要がある。{0010}指示の方法が「印」と呼ばれる{0000}線の組み合わせなのじゃ{0010}「ドライブ」で「攻」を選ぶと{0000}印入力画面になるのじゃ{0010}印を十字ボタンで入力すれば{0000}正解なら赤、失敗なら青になる{0010}赤を続けていけば{0000}「印」は金色に光る{0010}「印」が完成した証拠じゃ{0010}完成した「印」は式神に伝わり{0000}必殺技となるのじゃ{0010}重要な点として、「印」は{0000}むやみに作れないのじゃ{0010}バトル時、ＨＰの下にある{0000}式点というバーを消費して{0010}「印」は完成するのじゃ{0010}じゃからして{0000}こまめに小さい技を出したり{0010}まとめて大技を出したりと{0000}状況に応じて使い分けられれば{0010}一人前の闘神士となるのじゃ{0010}",
-   "en": "A Tojinshi must give orders{0000}to their shikigami.{0010}We give orders through patterns{0000}of lines called \"seals,\" my boy.{0010}Choose \"Attack\" in the \"Drive\"{0000}to open the seal input screen.{0010}Enter the seal with the + Pad: right{0000}strokes turn red, wrong ones blue.{0010}Keep the reds coming and{0000}the \"seal\" glows gold.{0010}That's the proof the \"seal\" is done.{0010}A finished \"seal\" reaches your{0000}shikigami as a special move.{0010}Mind this well: you can't make{0000}\"seals\" whenever you please.{0010}In battle, a seal uses up the bar{0000}under your HP, the Shiki Points,{0010}to complete the \"seal.\"{0010}And so, use small moves often,{0000}or save up for one big move.{0010}Switch between them to suit the{0000}situation, and you'll be{0010}a full-fledged Tojinshi.{0010}"
+   "en": "A Tojinshi must give orders{0000}to their shikigami.{0010}We give orders through patterns{0000}of lines called \"seals,\" my boy.{0010}Choose \"Attack\" in the \"Drive\"{0000}to open the seal input screen.{0010}Enter the seal with the + Pad: right{0000}strokes turn red, wrong ones blue.{0010}Keep the reds coming and{0000}the \"seal\" glows gold.{0010}That's the proof the \"seal\" is done.{0010}A finished \"seal\" reaches your{0000}shikigami as a special move.{0010}Mind this well: you can't make{0000}\"seals\" whenever you please.{0010}In battle, completing a \"seal\" uses{0000}Shiki Points from the bar below HP.{0010}Keep an eye on that bar, my boy.{0010}And so, use small moves often,{0000}or save up for one big move.{0010}Switch between them to suit the{0000}situation, and you'll be{0010}a full-fledged Tojinshi.{0010}"
   },
   {
    "id": "6934B4",

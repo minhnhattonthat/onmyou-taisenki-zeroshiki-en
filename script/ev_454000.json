@@ -104,7 +104,7 @@
    "script": "454068",
    "op": "073 0001",
    "jp": "まだだ！{0000}まだ、{00C8}には{0010}何かが足りない{0000}オレの力、そしてオレの思い{0010}うけとめてみな！{0010}",
-   "en": "Not yet!{0000}{00C8} is still{0010}missing something.{0000}Take my strength, and my feelings,{0010}head-on! Let's see ya do it!{0010}"
+   "en": "Not yet!{0000}You still lack something,{0010}{00C8}.{0000}Take my strength, and my feelings,{0010}head-on! Let's see ya do it!{0010}"
   },
   {
    "id": "454896",
@@ -272,7 +272,7 @@
    "script": "455944",
    "op": "036 00030001",
    "jp": "いや、違う{0000}結果的には闘うが、それは{0010}オレの中で解決をしたいからだ{0010}",
-   "en": "No, that's not it.{0000}We'll end up fighting, but that's{0010}because I want to settle something inside.{0010}"
+   "en": "No, that's not it.{0000}We'll end up fighting, but that's{0010}because I need to resolve my doubts.{0010}"
   },
   {
    "id": "455B94",
@@ -489,7 +489,7 @@
    "script": "457454",
    "op": "036 00090001",
    "jp": "ワタシは「天流」Р女ナヅナ{0000}ほとんどのことは分かるんだ！{0010}さて・・・{0010}「天流」ヤクモさまは{0000}まだ旅から戻ってきてないんだ{0010}でも{00C8}サンが来る{0000}ことは知っていたから{0010}それまでにやっておくように{0000}ヤクモさまからじきじきに{0010}言われたことがあるんだ{0010}そこの本殿左側の壁の奥に{0000}地下が広がっている{0010}地下は、ヤクモさまがいつも{0000}修行で使っているんだ{0010}{00C8}サンには今から{0010}その地下の最下層まで{0000}行ってきてほしいんだ{0010}きっと着いた頃には{0000}ヤクモさまも戻ってくると{0010}思うよ{0010}",
-   "en": "I'm Nazuna, a \"Tenryu\" shrine maiden!{0000}I know just about everything!{0010}Now then...{0010}Yakumo-sama of the \"Tenryu\"{0000}hasn't come back from his trip yet.{0010}But I knew {00C8}-san{0000}was coming, so{0010}there's something Yakumo-sama{0000}told me personally to have{0010}done before then.{0010}Behind the left wall of the main{0000}hall, there's an underground area.{0010}Yakumo-sama always uses that{0000}underground for his training.{0010}{00C8}-san, from now on,{0010}I'd like you to go all the way{0000}to the bottom floor down there.{0010}I bet by the time you get there,{0000}Yakumo-sama will be back too,{0010}I think!{0010}",
+   "en": "I'm Nazuna, a \"Tenryu\" shrine maiden!{0000}I know just about everything!{0010}Now then...{0010}Yakumo-sama of the \"Tenryu\"{0000}hasn't come back from his trip yet.{0010}But I knew {00C8}-san{0000}was coming, so{0010}there's something Yakumo-sama{0000}told me personally to have{0010}done before then.{0010}Behind the left wall of the main{0000}hall, there's an underground area.{0010}Yakumo-sama always uses that{0000}underground for his training.{0010}{00C8}-san, right now,{0010}I'd like you to go all the way{0000}to the bottom floor down there.{0010}I bet by the time you get there,{0000}Yakumo-sama will be back too,{0010}I think!{0010}",
    "notes": "gaiji Р=巫"
   },
   {

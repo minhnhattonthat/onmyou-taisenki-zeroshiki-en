@@ -153,7 +153,7 @@
    "script": "434C90",
    "op": "073 0001",
    "jp": "ヒャッホー！オレの勝ちだ！{0010}やっぱり、勝負の本質は勝ちに{0000}ありだぜ！{0010}おまえにはわるいが{0000}オレとのけいやくは次回に{0010}もちこしだな！　あばよ！{0010}",
-   "en": "Woo-hoo! I win!{0010}See, the heart of any contest{0000}is winning!{0010}Sorry for ya, but{0000}our contract's gonna{0010}have to wait! So long!{0010}"
+   "en": "Woo-hoo! I win!{0010}See, the heart of any contest{0000}is winning!{0010}Sorry, pal, but{0000}our contract's gonna{0010}have to wait! So long!{0010}"
   },
   {
    "id": "435210",
@@ -307,7 +307,7 @@
    "script": "436110",
    "op": "073 0001",
    "jp": "間に合ってないわ。１０分前に{0000}来てないとダメでしょう？{0010}",
-   "en": "You did not make it. You should{0000}be here ten minutes early, yes?{0010}"
+   "en": "No, you didn't. You're supposed{0000}to be here ten minutes early!{0010}"
   },
   {
    "id": "436350",
@@ -370,7 +370,7 @@
    "script": "43661C",
    "op": "073 0001",
    "jp": "見た感じ弱そうだけど、あなた{0010}式神でも使えそうな強い目を{0000}しているわね。よろしく{0010}",
-   "en": "You look weak, but you{0010}have strong eyes, like someone{0000}who could use shikigami. Hello.{0010}"
+   "en": "You look weak, but you{0010}have strong eyes, like a shikigami{0000}user. Nice to meet you.{0010}"
   },
   {
    "id": "436AC6",

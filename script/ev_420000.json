@@ -202,7 +202,7 @@
    "script": "421E70",
    "op": "073 0001",
    "jp": "なんじゃ？この老いぼれに{0000}まだ用があるというのか？{0010}じゃが…わしはもう、ムダな{0000}殺生は、したくないのじゃ{0010}このきもち、おぬしなら{0000}分かるじゃろ？{0010}",
-   "en": "What's this? You still have{0000}business with an old codger like me?{0010}But... I've no wish for any more{0000}pointless killing, my boy.{0010}You understand how I feel,{0000}don't you, eh?{0010}"
+   "en": "What's this? You still have{0000}business with an old codger like me?{0010}But... I've no wish for any more{0000}pointless killing, my boy.{0010}You of all people understand{0000}how I feel, eh?{0010}"
   },
   {
    "id": "421F7A",
@@ -335,7 +335,7 @@
    "script": "422A54",
    "op": "036 00000001",
    "jp": "闘いで速さは大きな武器だよ！{0010}",
-   "en": "In a fight, speed is a big weapon!{0010}"
+   "en": "In a fight, speed is a powerful weapon!{0010}"
   },
   {
    "id": "422CE6",
@@ -552,7 +552,7 @@
    "script": "423B58",
    "op": "073 0001",
    "jp": "やはり、わらわの占いに{0000}くるいは無かったようじゃ{0010}わらわは、そなたと命運を{0000}ともにいたしまする{0010}",
-   "en": "As I thought, my divination{0000}was not mistaken.{0010}I shall share my fate{0000}with yours.{0010}"
+   "en": "As I thought, my divination{0000}was not mistaken.{0010}I shall share{0000}your fate.{0010}"
   },
   {
    "id": "423EDC",

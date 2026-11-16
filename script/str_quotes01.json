@@ -92,7 +92,7 @@
   {
    "id": "12BF38",
    "jp": "すみませんねぇ…　　　　　　０．１秒遅れちゃいました",
-   "en": "So sorry...\nI was 0.1 seconds late.",
+   "en": "So sorry...\nI was 0.1 second late.",
    "max": 56,
    "pad": 14
   },
@@ -161,7 +161,7 @@
   {
    "id": "12C070",
    "jp": "楓族の誇りにかけて闘おう",
-   "en": "I fight on the pride of the Maple clan.",
+   "en": "For the honor of the Maple clan, I fight!",
    "max": 28
   },
   {
@@ -440,7 +440,7 @@
   {
    "id": "12C5A0",
    "jp": "さあっ！ビシッと行くよ！",
-   "en": "Come on! Let's go in sharp!",
+   "en": "Come on! Let's make this look good!",
    "max": 28
   },
   {
@@ -526,7 +526,7 @@
   {
    "id": "12C72C",
    "jp": "そちゅの能力　　　　　　　　期待してまちゅよ",
-   "en": "I'm expecting great thingz\nfrom youz abilitiez.",
+   "en": "I'm expecting great thingz\nfrom your abilitiez.",
    "max": 48,
    "pad": 14
   },
@@ -756,7 +756,7 @@
   {
    "id": "12CBF4",
    "jp": "楓族の名にかけて　　　　　　敵を倒しましょう",
-   "en": "On the name of the Maple clan,\nlet's defeat the foe.",
+   "en": "In the Maple clan's name,\nlet us defeat the foe!",
    "max": 48,
    "pad": 14
   },

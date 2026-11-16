@@ -90,7 +90,7 @@
    "script": "440E48",
    "op": "073 0001",
    "jp": "は・・・{0000}腹へった{0010}",
-   "en": "Ha...{0000}I'm hungry...{0010}"
+   "en": "Hu...{0000}Hungry...{0010}"
   },
   {
    "id": "440FB4",
@@ -104,7 +104,7 @@
    "script": "440E48",
    "op": "036 00060001",
    "jp": "は・・・{0010}",
-   "en": "Ha...{0010}"
+   "en": "Hu...{0010}"
   },
   {
    "id": "441000",
@@ -118,7 +118,7 @@
    "script": "440E48",
    "op": "036 00060001",
    "jp": "は・・・{0000}腹へった{0010}",
-   "en": "Ha...{0000}I'm hungry...{0010}"
+   "en": "Hu...{0000}Hungry...{0010}"
   },
   {
    "id": "441048",
@@ -216,7 +216,7 @@
    "script": "440E48",
    "op": "036 00060001",
    "jp": "は・・・{0010}",
-   "en": "Ha...{0010}"
+   "en": "Hu...{0010}"
   },
   {
    "id": "441472",
@@ -370,7 +370,7 @@
    "script": "440E48",
    "op": "036 00060001",
    "jp": "ごはんを頂いたお礼といっては{0000}なんですが、一戦しましょう{0010}きっとお互いの力がぶつかる{0000}ことで、つよくなれるはずです{0010}",
-   "en": "It's small thanks for the meal,{0000}but let us have a match.{0010}I'm sure that by clashing our{0000}strength, we'll both grow stronger.{0010}"
+   "en": "It's small thanks for the meal,{0000}but let us have a match.{0010}By testing ourselves against{0000}each other, we'll both grow stronger.{0010}"
   },
   {
    "id": "441AC0",
@@ -412,7 +412,7 @@
    "script": "440E48",
    "op": "036 00060001",
    "jp": "私も闘神士の名にかけて{0000}負けるわけにはいきません{0010}",
-   "en": "On my name as a Tojinshi,{0000}I cannot afford to lose either.{0010}"
+   "en": "On my honor as a Tojinshi,{0000}I cannot afford to lose either.{0010}"
   },
   {
    "id": "441DF8",

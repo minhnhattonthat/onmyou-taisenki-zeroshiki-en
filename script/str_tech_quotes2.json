@@ -80,7 +80,7 @@
   {
    "id": "408E20",
    "jp": "そろそろ体力がやばかたい！",
-   "en": "My HP's gettin'\ndangerous, lad!",
+   "en": "My HP's gettin'\ndangerously low, lad!",
    "max": 28,
    "ptrs": 2
   },
@@ -137,7 +137,7 @@
   {
    "id": "408F30",
    "jp": "上昇した力で敵を粉砕するたい",
-   "en": "I'll crush the foe with\nmy risen power, lad!",
+   "en": "I'll crush the foe with\nmy newfound strength, lad!",
    "max": 32,
    "ptrs": 2
   },
@@ -342,7 +342,7 @@
   {
    "id": "409330",
    "jp": "おいの技、とくと受けたか！！",
-   "en": "Did ya take my move\nin full?!",
+   "en": "Did ya feel the full\nforce of my move?!",
    "max": 32
   },
   {
