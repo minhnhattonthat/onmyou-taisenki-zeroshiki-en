@@ -107,6 +107,8 @@
 384A8C-384E8B   # gfx: guard emblem 防 (2 raw 32x32 animation frames)
 22D8B4-22E8B3   # gfx: battle win banner 勝 利 (2 raw 64x64 sprites, "YOU" / "WIN!")
 22E8B4-2320B3   # gfx: battle banners 敗北 開始 先制 終 (resource types 35..38, 7 raw 64x64 sprites)
+256A34-256AB3   # gfx: battle stat icon 運 (raw 16x16 → LUK)
+256C34-256EB3   # gfx: battle stat icons 妖 攻 防 早 護 (5 raw 16x16 → POW ATK DEF SPD GRD)
 403CCC-403CCF   # gfx: pointer to the party card LZ77 block 0x3B577C (moved to free space: grew past its room)
 # Battle super-move cut-in names in English (G5, tools/cutin.py): resource type 0x27 entries + the key pointers
 402A24-402A2B   # cutin: resource base table entry 0x27 (art base, size)

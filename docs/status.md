@@ -2,13 +2,20 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 9. Release in progress (session 31: polish list all ticked, story pass 11/11 chapters ok/fixed,
-  `tools/release.py` + README written; final text build 17d8c04e = work/strings_17d8c04e.tsv; 4,690 strings moved,
-  so every coverage runner and the visual tour must be re-run on it: work/qa/cover/ (old logs work/qa/cover_s30/,
-  old visual manifest + verdicts work/qa/old30/). Done on 17d8c04e: **tour15** (work/qa/cover/tour15, 56/56, states
-  tour15/st, textcover probe). Stopped: the chain was killed by Claude Code for low system memory during `cover.py
-  run` (7 Mesen at ~600 MB each; orphans killed). Resume from `cover.py run` (Next 0), with `--jobs 2` if memory is
-  short.
+- **Phase:** 9. Release in progress (session 32). Build now **3dd8d287** = 17d8c04e + the battle stat-change icons
+  運 妖 攻 防 早 護 redrawn as LUK POW ATK DEF SPD GRD plates (`gfx.stat_icon`, 505 bytes at 0x256A34..0x256EA9,
+  build/strings.tsv byte-identical, so string addresses and every coverage log stay valid; shot
+  work/qa/icon_en/cmp.png). Session 32 done on this text layout: `cover.py run` 315/317 scenes ok, `shikijobs`
+  ok, `shikijobs --unlock` only 54/76 (re-run). Chain script `work/qa/cover/chain32.sh` (J=3 jobs; edit it to start
+  at areajobs: the steps above it are done). It was killed again by Claude Code's low-memory reaper at areajobs
+  (20:38); the session-31 chain had NOT died: its `cover_all.sh` and 2 shikijobs were still running alongside and
+  were killed this session. Another project's emulator runs share this machine's memory. Visual QA: fresh
+  manifest work/qa/manifest.tsv + codex verdicts work/qa/verdicts (chunks31): 90 ok / 12 issue. The 5 frag2
+  issues = the stat icons (fixed above, re-shoot frag2 lab_1068_60 and lab_1360_40 on 3dd8d287). The 7 g11/g5
+  issues are pre-fix investigation sheets that the `*sheet*` glob pulled in: re-init the manifest with work/qa/g11s
+  (signs) and work/qa/g5s (cut-in; re-shot on the new build in work/qa/g5s/run, needs `sheet.py`) instead of
+  work/qa/g11 and work/qa/g5, as session 29 did. Old session-30 manifest moved to work/archive/qa_old30 (release.py
+  globs work/qa/**/manifest.tsv, so a stale one there fails the release).
 - **Done:**
   - Step 0: ROM pinned (`rom.sha1`), MesenCE 2.2.1 + GBA BIOS in `tools/mesen/`, guard hook in `.claude/settings.json`
     (canary blocked), pre-commit runs `tools/check.py` (a failing test was rejected), boot route `tools/routes/boot.txt`

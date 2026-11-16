@@ -37,6 +37,7 @@ Phase 5's marker build re-checks this list: any Japanese still on screen there t
 | Attack-tier plates 攻撃1 攻撃2 必殺技1 必殺技2 超必殺技 超絶必殺技 (G9; NOT the font string 1293B0, which is the shikigami page) | raw 0x22B6B4 + 0x240 k, 72x16 | Attack 1/2, Special 1/2, Super Special, Ultimate Special (small font) |
 | 攻撃ボーナス plate | raw 0x3856CC, 64x16 | Attack Bonus |
 | Party card stats HP 攻 妖 (the "slot frames with small kanji") | lz 0x3B577C (moved to free space: recompressed 516 > 488 bytes; pointer 0x403CCC) | HP / ATK / POW, label boxes widened |
+| Battle stat-change icons 運 妖 攻 防 早 護 (16x16 OBJ, pal 10, over a shikigami with an up/down arrow sprite below; found by vqa session 32 in work/qa/frag2 lab_1068_60 / lab_1360_40) | raw 0x256734 + 0x80 k (skulls ×3, down arrows ×3, 運, up arrows ×3, 妖 攻 防 早 護, feathers); 運 0x256A34, 妖..護 0x256C34.. | LUK POW ATK DEF SPD GRD plates (`gfx.stat_icon`: signs.MICRO caps at double height, outline 3, fill 5, body F/E/D); shot work/qa/icon_en/cmp.png |
 | Title copyright notice, battle SFX kana | not located / not redrawn | kept Japanese (D12) |
 
 ## Mid-game screens not yet seen (warp to each with the debug tool, phase 2/8)

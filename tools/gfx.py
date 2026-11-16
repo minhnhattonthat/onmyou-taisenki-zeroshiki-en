@@ -294,6 +294,31 @@ def banner(text, sx=2, sy=5):
     return draw
 
 
+def stat_icon(text):
+    """Battle stat-change icon (16x16 OBJ, pal 10, beside a shikigami with an up/down arrow sprite under it; raw
+    0x256734 + 0x80 k: skulls, arrows, then the kanji 運 妖 攻 防 早 護): the kanji is drawn as its own shape, outline
+    3, rim/fill 5, body graded by row F (top) / E / D (bottom). English: a 3-letter stat plate in the same colours,
+    signs.MICRO 3x5 caps at double height, box x 0..14 / y 1..14 (outline 3, rim 5, text x 2..12 / y 3..12)."""
+    import signs   # signs imports gfx
+
+    def draw(px):
+        for row in px:
+            row[:] = [0] * len(row)
+        for y in range(1, 15):
+            for x in range(0, 15):
+                px[y][x] = 3 if y in (1, 14) or x in (0, 14) else 5
+        x = 2
+        for ch in text:
+            for dy, row in enumerate(signs.MICRO[ch].split("|")):
+                for dx, c in enumerate(row):
+                    if c == "#":
+                        for k in (0, 1):
+                            y = 3 + dy * 2 + k
+                            px[y][x + dx] = 0xF if y <= 6 else 0xE if y <= 9 else 0xD
+            x += 4
+    return draw
+
+
 LABELS = {
     # name: (where, offset, parts, draw)   where = "raw" (ROM offset) or "lz" (LZ77 block offset, tile offset in it)
     "title_new": ("raw", 0x224874, BUTTON, title_button("New Game")),
@@ -337,6 +362,14 @@ LABELS = {
     "first_1": ("raw", 0x2308B4, [(0, 0, 8, 8)], banner("FIRST", sx=1, sy=4)),
     "first_2": ("raw", 0x2310B4, [(0, 0, 8, 8)], banner("STRIKE", sx=1, sy=4)),
     "end": ("raw", 0x2318B4, [(0, 0, 8, 8)], banner("END")),
+    # battle stat-change icons (session 32 vqa): 運 luck, 妖力 Power, 攻撃力 Attack, 防御力 Defense, 素早さ Speed,
+    # 加護力 Guard (glossary b021-b026; ATK/POW as on the party card)
+    "stat_luck": ("raw", 0x256A34, [(0, 0, 2, 2)], stat_icon("LUK")),
+    "stat_power": ("raw", 0x256C34, [(0, 0, 2, 2)], stat_icon("POW")),
+    "stat_attack": ("raw", 0x256CB4, [(0, 0, 2, 2)], stat_icon("ATK")),
+    "stat_defense": ("raw", 0x256D34, [(0, 0, 2, 2)], stat_icon("DEF")),
+    "stat_speed": ("raw", 0x256DB4, [(0, 0, 2, 2)], stat_icon("SPD")),
+    "stat_guard": ("raw", 0x256E34, [(0, 0, 2, 2)], stat_icon("GRD")),
 }
 
 
