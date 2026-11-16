@@ -87,6 +87,11 @@ full-width spaces (`　`) to 14 chars instead of using a newline code.
 Full list with every pointer location: `python -X utf8 tools/recon_strings.py ROM OUT.tsv` (544 pointer clusters).
 The build's model is `tools/strtab.py`: strings in 0x120000..0x140000 and 0x400000..0x419300 that an aligned u32
 from code (0..0x120000) or those areas reaches: 2,994 strings, 3,899 pointer words, none pointed at mid-string.
+**Quote picker** 0x08104E70: table r5 (0..9, the 10 battle-quote tables above, literals 0x08104EDC..0x08104F34),
+entry r3 + 2*r4, string pointer in r0 at 0x08104F3A (r5 > 9 → 0). `tools/debug/quotecycle.lua` hooks it for text
+coverage. The tech-quote tables 0x408258.. are reached through a per-shikigami table at 0x40A620 (85 u32: mostly
+0x08408B74), whose reader is not found yet (no literal load).
+
 **Not text:** 0x128F50..0x128F64 is a u16 LE table of fullwidth digit codes ０..９ (number drawing) that scans as text.
 Code literal-pool pointers are plain u32 words: repoint them by exact location, never by a ROM-wide value match.
 

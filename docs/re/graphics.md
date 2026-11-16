@@ -31,7 +31,7 @@ Phase 5's marker build re-checks this list: any Japanese still on screen there t
 + `vramfind.py`, a BG's with `tools/bgmap.py`)
 | Element | Source | English |
 |---|---|---|
-| Battle command wheel (G5/G9) 攻 防 逃 覧 替 | raw 0x22C434 + 0x200 k, 32x32 each | Attack / Guard / Run / List / Swap, big font ink 4, outline 2, drop 5 |
+| Battle command wheel (G5/G9) 攻 防 逃 覧 替 | raw 0x22C434 + 0x200 k, 32x32 each | Attack / Guard / Run / List / Swap, big font ink 4, outline 2, drop 5, every row drawn twice (session 23: the Drive screen shows this art scaled ~1.4x under an alternate-scanline mask, which erased 1 px horizontal strokes) |
 | Field ring menu 能 図 替 覧 記 | raw 0x3858CC + 0x200 k, same art | Status / Map / Party / List / Save (side labels are alpha-blended by the game: thin English strokes read fainter than the kanji) |
 | Guard emblem 防 (2 animation frames) | raw 0x384A8C, 0x384C8C | shield icon (D12) |
 | Attack-tier plates 攻撃1 攻撃2 必殺技1 必殺技2 超必殺技 超絶必殺技 (G9; NOT the font string 1293B0, which is the shikigami page) | raw 0x22B6B4 + 0x240 k, 72x16 | Attack 1/2, Special 1/2, Super Special, Ultimate Special (small font) |

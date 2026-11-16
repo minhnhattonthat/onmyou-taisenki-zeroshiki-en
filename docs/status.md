@@ -2,10 +2,10 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator in progress (session 22: re-tour + re-verdict done, 71/77 sheets ok; 2 text
-  fixes, tutorial Drive screen lettering open; text-coverage tooling built, first coverage run). Last build
-  2026-11-16 (session 22): build/onmyou_zeroshiki_en.gba = a32b1108… (tour9 + coverage ran on it); the session's
-  text fixes are in the source and in build/s22.gba (d6109a4c…), not yet in a full tour.
+- **Phase:** 8. QA in the emulator in progress (session 23: Drive screen fixed, full tour10 with the text probe,
+  manifest re-made, vqa run; text coverage 2342/5185 shown + 97 waived). Last build 2026-11-16 (session 23):
+  build/onmyou_zeroshiki_en.gba = 606f89ee… (tour10 `work/qa/cover/tour10` ran on it; manifest
+  work/qa/manifest.tsv records it).
 - **Done:**
   - Step 0: ROM pinned (`rom.sha1`), MesenCE 2.2.1 + GBA BIOS in `tools/mesen/`, guard hook in `.claude/settings.json`
     (canary blocked), pre-commit runs `tools/check.py` (a failing test was rejected), boot route `tools/routes/boot.txt`
@@ -198,23 +198,33 @@ Updated at the end of every session. Keep it to what the next session needs; his
     `warp_all.py --scenes FILE --var V`, `tools/debug/cover.py scenes|ranges|run|report` (one `script ID` scene per
     StartScript id holding text: 283; skill probe textcover.lua; report via the skill's textcover.py).
     `tbl/jp_known.txt` committed: `jp_left.py ... --known tbl/jp_known.txt` exits 0 (13 known runs).
+  - Session 23 (phase 8): **tutorial Drive screen** fixed: the Drive shows the battle-wheel art (also in normal
+    battles) scaled ~1.4x under a mask that blanks alternate scanlines; the battle wheel labels are now drawn with
+    every big-font row doubled (`gfx.letter(tall=True)`, `wheel(text, tall=True)`, caps rows 6..23). "Attack" reads
+    on the Drive (work/qa/s23a/z1.png) and the wheel (work/qa/s23b/z.png); the field ring keeps the normal height.
+    Visual-QA brief: D12 items (copyright notice, battle SFX kana) are standing non-bugs. Full **tour10** with the
+    text probe (`work/qa/cover/tour10`, 56/56, build 606f89ee) → manifest re-made (old: work/qa/manifest_s22.tsv,
+    verdicts_s22/), 10 vqa chunks run. **Waivers** `docs/text_unshown.tsv` (361 rows: debug menu, battle help, cut-in
+    keys, link-cable screens, name-entry glyph grid). **Quote picker** found: 0x08104E70 selects table r5 (0..9,
+    literals 0x08104EDC..0x08104F34), entry r3 + 2*r4, pointer in r0 at 0x08104F3A; `tools/debug/quotecycle.lua`
+    overrides it with each quote in turn (tested: work/qa/qc, one quote per ~800 battle frames). Tech-quote tables
+    (str_tech_quotes, 0x408258..) hang off a per-shikigami table at 0x40A620 (85 words; reader not found yet: no
+    literal load, find it with a read watch on 0x0840A620.. in battle).
 - **Next (phase 8: QA in the emulator; done-when in the skill's table):**
-  1. **Tutorial Drive screen** (tutorial_battle sheet frame 1,2; work/qa/s22c/tbz.png vs tbjpz.png): the Drive's
-     green screen shows the command-wheel art (`gfx.wheel`, raw 0x22C434) scaled up under a scanline mask that
-     blanks alternate rows, so the 1-px English strokes of "Attack" break up (codex read "Master"). Fix: bolder
-     wheel lettering (2-px stems, e.g. the CARD_FONT style scaled, or a short word like "ATK" in a 2-px font),
-     check the wheel itself still reads, or find whether the Drive screen has its own tiles.
-  2. After any change: rebuild, full tour `--out work/qa/tour10`, **delete** work/qa/manifest.tsv (qa_gate init
-     keeps an existing id's old path: "0 added") and re-init with `--build`, move verdicts aside, `tools/vqa.py`.
-     The D12 ドォォン kana will be flagged again: either redraw it or have the brief accept D12 items.
-  3. Text coverage: first `cover.py run` (283/283 scenes, build a32b1108, ~30 min with 4 jobs; report
-     work/qa/cover/report.txt): **2238/5185 shown**: script runs 1628/2191 (the rest: branches on flags, scripts
-     only reached as sub-scripts, NPC talk), table strings 610/2994 (quotes, techniques, abilities, areas, system,
-     credits, save, menus: they need the battle/menu/credits scenes run with the probe). A rebuild moves text, so
-     re-run cover.py (and the probe tour) on the build being judged. Then waive debug/unused (D9) in `docs/text_unshown.tsv`, add scenes for what is left (battles, menus, NPCs
-     need the 56-scene tour run with `--probe <skill>/scripts/lua/probes/textcover.lua --var RANGES=...` into
-     work/qa/cover/tour).
-  4. The rest of the done-when: graphics rows left
+  1. Read the session-23 vqa verdicts (work/qa/verdicts/chunk_*.tsv, log work/qa/vqa10.log); fix issues, re-verdict
+     fixed sheets; `qa_gate.py check work/qa/manifest.tsv work/qa/verdicts` must exit 0.
+  2. **Text coverage** (`cover.py report` → work/qa/cover/report.txt; now 2342/5185 shown, 97 waived, 2746 failing):
+     - quotes 1408: run quotecycle.lua in parallel battles (`START=t*1000+i`, ~50 quotes per job, a long hold, keep
+       the battle alive: poke the enemy HP each frame, find its address with valwatch), output under
+       work/qa/cover/ so the report counts it, plus the textcover probe.
+     - tech quotes 258: find the reader of table 0x0840A620 and do the same.
+     - techniques a/b 151, skills 53, weapons 10, abilities 31, kinds 22: shikigami pages for every shikigami
+       (find the page's shikigami-id RAM byte, poke it per run; menu_shiki_p1..p4 scenes).
+     - areas 103: map-menu area name per map (poke the map id), credits 38 (credits scene hold too short: scroll to
+       the end), battle_msgs 58, system 23, tutorial 57 + tutorial_help 11 (play the tutorial battle further),
+       save 6, menus2 12, script runs 551 (branches/NPC talk: per-script scenes with flags set).
+     Waive only what is shown unreachable, with the reason.
+  3. The rest of the done-when: graphics rows left
   (docs/re/graphics.md): G3 name-entry header/`けってい` (header already English as font text: check), G5 framed
   labels per screen (the Drive labels are done), G6 battle win/lose banners, G8, G11 town signs (low), G12 map
   labels, chapter cards / game over / credits: confirm each in tour sheets.
@@ -234,8 +244,7 @@ Updated at the end of every session. Keep it to what the next session needs; his
 - **Known limits of the warp:** event scenes run over map 23 (the house) unless the script changes map itself
   (`map=` per scene overrides); which map normally hosts each event is not mapped yet (NPCs come from `/116`
   entries in map scripts 8000+). No GOD/NOENC yet (battles: mash wins; `poke=` for HP).
-- **Open bugs:** tutorial Drive screen "Attack" unreadable under the scanline mask (Next 1). The manifest
-  (work/qa/manifest.tsv, tour9) fails until the next full tour + vqa pass. Cosmetic: speaker plate shows the old
+- **Open bugs:** see the session-23 vqa verdicts (Next 1). Cosmetic: speaker plate shows the old
   and new names overlapped for 1-2 frames on a speaker change (ch9_start; splot clears its tiles, so the overlap
   likely comes from the OBJ/tile update timing; check whether the original does the same).
   Cosmetic: field ring side labels are alpha-blended by the game, so the thin English strokes read fainter than
