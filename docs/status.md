@@ -207,9 +207,11 @@ Updated at the end of every session. Keep it to what the next session needs; his
   2. After any change: rebuild, full tour `--out work/qa/tour10`, **delete** work/qa/manifest.tsv (qa_gate init
      keeps an existing id's old path: "0 added") and re-init with `--build`, move verdicts aside, `tools/vqa.py`.
      The D12 ドォォン kana will be flagged again: either redraw it or have the brief accept D12 items.
-  3. Text coverage: `cover.py run` was started on build a32b1108 (results work/qa/cover/run, report
-     work/qa/cover/report.txt); rebuild only after it ends (strings.tsv must match the ROM it ran on), or re-run.
-     Then waive debug/unused (D9) in `docs/text_unshown.tsv`, add scenes for what is left (battles, menus, NPCs
+  3. Text coverage: first `cover.py run` (283/283 scenes, build a32b1108, ~30 min with 4 jobs; report
+     work/qa/cover/report.txt): **2238/5185 shown**: script runs 1628/2191 (the rest: branches on flags, scripts
+     only reached as sub-scripts, NPC talk), table strings 610/2994 (quotes, techniques, abilities, areas, system,
+     credits, save, menus: they need the battle/menu/credits scenes run with the probe). A rebuild moves text, so
+     re-run cover.py (and the probe tour) on the build being judged. Then waive debug/unused (D9) in `docs/text_unshown.tsv`, add scenes for what is left (battles, menus, NPCs
      need the 56-scene tour run with `--probe <skill>/scripts/lua/probes/textcover.lua --var RANGES=...` into
      work/qa/cover/tour).
   4. The rest of the done-when: graphics rows left
