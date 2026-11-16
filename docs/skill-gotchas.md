@@ -40,3 +40,5 @@ One line per gotcha: the reference file it belongs in, then the fact.
 - emulator-qa.md: emu.py drops a screenshot identical to the previous one, so a per-N-frames shot sequence on a static menu leaves only 1-2 files; that is expected, not a failed hook.
 - platform-gba.md: keystone rejects GNU numeric local labels (`bge 1f` / `1:`) with KS_ERR_ASM_INVALIDOPERAND; use named labels.
 - platform-gba.md (this game): sprite cell ids above 662 (bound literal 0x02960000 at 6 sites) are another resource type, so a sprite cell appended at id 994 silently drew nothing; give a fixed-width OBJ more tiles instead of a new cell.
+- emulator-qa.md (GBA, ppudump .io.bin): BGnHOFS/VOFS are write-only and read back as open-bus junk (0x12FB here), so a BG map lookup by screen position needs the game's own scroll shadow or a guess; find a label's source through its tiles (vramfind) instead.
+- translation.md / encoders: a `[XXXX]`/`{XXXX}` token check that tests only the brackets and the length also matches English like "[Weak]" or "[Swap]" and sends the letters as raw bytes (the label then draws nothing); require hex digits (this repo: enfont.encode_en, session 21).

@@ -27,6 +27,18 @@ Phase 5's marker build re-checks this list: any Japanese still on screen there t
 | G12 | Map labels | lz 0x67EA80 (266:22), low confidence | check in the tour |
 | G13 | Small kana/symbol font | raw 0x1B12D4+0x0C00..0x2800 (283:13..20) | a second, smaller font; find its users in phase 5 |
 
+## Phase 8 redraws (session 21, all in `tools/gfx.py` LABELS; find a sprite's source with ppudump + `tools/oaminfo.py`
++ `vramfind.py`, a BG's with `tools/bgmap.py`)
+| Element | Source | English |
+|---|---|---|
+| Battle command wheel (G5/G9) 攻 防 逃 覧 替 | raw 0x22C434 + 0x200 k, 32x32 each | Attack / Guard / Run / List / Swap, big font ink 4, outline 2, drop 5 |
+| Field ring menu 能 図 替 覧 記 | raw 0x3858CC + 0x200 k, same art | Status / Map / Party / List / Save (side labels are alpha-blended by the game: thin English strokes read fainter than the kanji) |
+| Guard emblem 防 (2 animation frames) | raw 0x384A8C, 0x384C8C | shield icon (D12) |
+| Attack-tier plates 攻撃1 攻撃2 必殺技1 必殺技2 超必殺技 超絶必殺技 (G9; NOT the font string 1293B0, which is the shikigami page) | raw 0x22B6B4 + 0x240 k, 72x16 | Attack 1/2, Special 1/2, Super Special, Ultimate Special (small font) |
+| 攻撃ボーナス plate | raw 0x3856CC, 64x16 | Attack Bonus |
+| Party card stats HP 攻 妖 (the "slot frames with small kanji") | lz 0x3B577C (moved to free space: recompressed 516 > 488 bytes; pointer 0x403CCC) | HP / ATK / POW, label boxes widened |
+| Title copyright notice, battle SFX kana | not located / not redrawn | kept Japanese (D12) |
+
 ## Mid-game screens not yet seen (warp to each with the debug tool, phase 2/8)
 Phase 2 warps now reach: battle win banner 勝利 (`battle_win`, graphic), loss (`battle_lose`), status (`menu_status`:
 labels レベル/経験値/式点), save 記録 (`menu_save`), shikigami status しきがみせんたく with stat labels
