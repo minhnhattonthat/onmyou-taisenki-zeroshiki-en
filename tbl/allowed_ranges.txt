@@ -105,6 +105,7 @@
 22C434-22CE33   # gfx: battle command wheel 攻 防 逃 覧 替 (5 raw 32x32 sprites)
 3858CC-3862CB   # gfx: field ring menu 能 図 替 覧 記 (5 raw 32x32 sprites)
 384A8C-384E8B   # gfx: guard emblem 防 (2 raw 32x32 animation frames)
+3B74F4-3BDC33   # title logo (tools/titlelogo.py, D13): raw 8bpp plate 3B74F4 + ribbon 3BCCF4 + 零 3BCFF4 + 式 3BD5F4
 22D8B4-22E8B3   # gfx: battle win banner 勝 利 (2 raw 64x64 sprites, "YOU" / "WIN!")
 22E8B4-2320B3   # gfx: battle banners 敗北 開始 先制 終 (resource types 35..38, 7 raw 64x64 sprites)
 256A34-256AB3   # gfx: battle stat icon 運 (raw 16x16 → LUK)

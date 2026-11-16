@@ -15,6 +15,11 @@ Updated at the end of every session. Keep it to what the next session needs; his
   work/archive/manifest_s32.tsv), codex vqa: 97/97 ok. Fixed `tools/vqa.py`: verdict files are now
   `<chunk dir>_<chunk>.tsv`; before, a new todo round's chunk_000.. overwrote the older round's verdicts.
   The stat-icon build (3dd8d287): 運 妖 攻 防 早 護 drawn as LUK POW ATK DEF SPD GRD plates (`gfx.stat_icon`).
+  **Session 34 (after v1.0):** English title logo (D13, user chose variant A): `tools/titlelogo.py` redraws the
+  8bpp logo OBJs: "ONMYOU TAISENKI" / "WAR CHRONICLE" / "ZERO" ▬ "SHIKI"; tests/test_titlelogo.py; cold-boot
+  intro + settled shots work/qa/logo3 (intro_sheet.png, final_x3.png). The v1.0 zip predates it: re-run
+  `tools/release.py` (as v1.1, or replace v1.0 if unpublished) before publishing. Not checked: whether the
+  ending/credits also show these logo resources.
 - **Done:**
   - Step 0: ROM pinned (`rom.sha1`), MesenCE 2.2.1 + GBA BIOS in `tools/mesen/`, guard hook in `.claude/settings.json`
     (canary blocked), pre-commit runs `tools/check.py` (a failing test was rejected), boot route `tools/routes/boot.txt`
@@ -386,5 +391,4 @@ Updated at the end of every session. Keep it to what the next session needs; his
   shot is black in both tours: a fade frame, not a crash.)
 - **Waiting on the user:** non-blocking: the session-31 coverage chain was stopped by Claude Code's low-memory
   reaper (it kills idle background shells under memory pressure); the next run should use `--jobs 2`, or Claude Code
-  can be started with CLAUDE_CODE_DISABLE_BG_SHELL_PRESSURE_REAP=1. (Title logo kept Japanese per D5: no official
-  English logo exists.)
+  can be started with CLAUDE_CODE_DISABLE_BG_SHELL_PRESSURE_REAP=1. (Title logo: English since session 34, D13.)

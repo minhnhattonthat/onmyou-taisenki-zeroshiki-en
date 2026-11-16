@@ -26,6 +26,7 @@ import evscript  # noqa: E402
 import font  # noqa: E402
 import gfx  # noqa: E402
 import signs  # noqa: E402
+import titlelogo  # noqa: E402
 import cutin  # noqa: E402
 import marker  # noqa: E402
 import vwf  # noqa: E402
@@ -96,6 +97,7 @@ def install_engine(img):
             img.write(font.glyph_offset(img.orig, code), font.encode(enfont.glyph(ch)), f"font {ch!r}")
     vwf.install(img, img.write)
     gfx.install(img, img.write)
+    titlelogo.install(img, img.write)
 
 
 # Pointer tables whose strings are used as data by some reader: that reader gets a copy of the table + the original
