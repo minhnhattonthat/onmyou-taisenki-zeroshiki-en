@@ -21,7 +21,7 @@ Updated at the end of every session. Keep it to what the next session needs; his
   (read-watch over title, credits to the post-credits save, ending_a/b: work/qa/logoread). v1.0 rebuilt with
   the logo (build **59eee76f**, patch sha1 e06c91a0…, zip 234,227 bytes); the visual-QA manifest was waived for
   59eee76f (only bytes 0x3B773A..0x3BDC04 differ from the toured 3dd8d287). **Published** as GitHub release v1.0
-  (tag on fbcde3b); the repo is still PRIVATE, so players can't see it until the owner makes it public.
+  (tag on fbcde3b); repo made public by the owner's request the same session.
 - **Done:**
   - Step 0: ROM pinned (`rom.sha1`), MesenCE 2.2.1 + GBA BIOS in `tools/mesen/`, guard hook in `.claude/settings.json`
     (canary blocked), pre-commit runs `tools/check.py` (a failing test was rejected), boot route `tools/routes/boot.txt`
@@ -316,8 +316,7 @@ Updated at the end of every session. Keep it to what the next session needs; his
     work/qa/cover/tour15), `cover.py scenes` + `run`, shikijobs ± --unlock, areajobs, quotejobs, `cover_extra.py
     --states work/qa/cover/tour15/st`, then labeljobs, talkjobs, msgjobs, `quotejobs --missing`, each after a
     `cover.py report > work/qa/cover/report.txt`.
-- **Next:** v1.0 is published (GitHub release, private repo); the owner decides on making the repo public. Then
-  bug reports via issues.
+- **Next:** v1.0 is published and the repo is public (2026-11-17). Bug reports via issues.
   After any later text or engine change, rebuild and redo the recipe below, then `tools/release.py --force`.
   Older notes (all done, kept for the recipe):
   00. Session-31 resume list (done session 33):
