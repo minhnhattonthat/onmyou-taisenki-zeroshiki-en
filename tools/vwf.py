@@ -780,6 +780,15 @@ TAG_ORIG = {  # the battle speaker name tag (docs/re/font.md "Battle name tag")
     0x01ED64: "0020814600276d461e35381c68300b49",  # 0x0801EC54 dialogue speaker plate: 5-tile loop
 }
 PLATE_END = 0x0801EE2A  # first instruction after the plate's 5-tile loop (0x0801ED64..0x0801EE28)
+# Widened speaker plate (docs/re/font.md "Speaker plate"): the BG frame grows from 6 to 8 map columns (x 8..71,
+# interior x 10..69, centre x 40), the OBJ text from 32x8 + 8x8 to 32x8 + 32x8 (tiles 0x68..0x6F, OBJ x 12 + offset).
+PLATE_TILES = 8
+PLATE_PX = 56          # longest name drawn; interior is 60 px
+PLATE_MID = 56         # text x offset from the OBJ's base x 12 = (PLATE_MID - width) / 2 -> centred on x 40
+PLATE_GFX = 0x171E6C   # raw BG tiles of the window parts (resource 0x1B0E94): plate top 1..6, bottom 8..0xD
+PLATE_MAPS = (0x19DE66, 0x19E1EA)  # raw 30-wide window maps: the plate's top row at col 1 (bottom row +60 bytes)
+PLATE_CELL_PART2 = 0x3E7998       # sprite cell 2 frame 0 part 2 (x 12, y -4, attr, tile byte offset 0x80)
+PLATE_BANDS = {0: (6, 7, 7, 8, 8), 1: (9, 9, 10, 10, 11)}  # fill colour per pixel row: top tiles rows 3..7, bottom 0..4
 SMALL_N = 0x260   # codes in the small font (0x8140..0x839F)
 
 TAG_SRC = """
@@ -787,8 +796,8 @@ TAG_SRC = """
     b tagw
     b smapline
     b plate
-@ plate(r0 = str) -> small pixel width capped at 40: the dialogue speaker plate (0x0801EC54), OBJ tiles 0x68..0x6C
-@ (0x06010D00). ROM strings are byte-order Shift-JIS; RAM ones (player name 0x020025AE, 0x020027B0 + 16n) hold
+@ plate(r0 = str) -> small pixel width capped at PLATE_PX: the dialogue speaker plate (0x0801EC54), OBJ tiles
+@ 0x68..0x6F (0x06010D00; widened from 5 tiles, see plate_frame). ROM strings are byte-order Shift-JIS; RAM ones (player name 0x020025AE, 0x020027B0 + 16n) hold
 @ native halfwords and are copied byte-swapped (<= 16 codes) first.
 plate:
     push {{r4, r5, lr}}
@@ -817,12 +826,12 @@ pl_end:
 pl_rom:
     adds r0, r4, #0
     ldr r1, plobj
-    movs r2, #5
-    movs r3, #{tagpx}
+    movs r2, #{platetiles}
+    movs r3, #{platepx}
     bl splot
-    cmp r0, #{tagpx}
+    cmp r0, #{platepx}
     ble pl_fit
-    movs r0, #{tagpx}
+    movs r0, #{platepx}
 pl_fit:
     add sp, #36
     pop {{r4, r5}}
@@ -1078,19 +1087,20 @@ tftab:   .word 0x084028EC
 def tag_code(far, swidths_addr):
     """Assemble the small-font blob at file offset `far`; returns (code, tag, tagw, smapline, plate entries)."""
     addr = 0x08000000 | far
-    src = TAG_SRC.format(ncodes=NCODES, smalln=SMALL_N, swidths=0x08000000 | swidths_addr, tagpx=ensmall.TAG_PX)
+    src = TAG_SRC.format(ncodes=NCODES, smalln=SMALL_N, swidths=0x08000000 | swidths_addr, tagpx=ensmall.TAG_PX,
+                         platepx=PLATE_PX, platetiles=PLATE_TILES)
     return _asm(src, addr), addr, addr + 2, addr + 4, addr + 6
 
 
 def plate_patch(plate):
     """Inline code at 0x0801ED64 replacing the speaker plate's 5-tile loop: plot via `plate`, then make the caller's
     centring step (x += table[n] at [sp + 0x10 + 2n], table (0, 16, 12, 8, 4, 0) = (40 - 8n) / 2) centre by pixels:
-    n = 1 and table[1] = (40 - width) / 2."""
+    n = 1 and table[1] = (PLATE_MID - width) / 2 (width <= PLATE_PX = PLATE_MID, so never negative)."""
     src = f"""
     adds r0, r6, #0
     ldr r3, paddr
     bl pcall
-    movs r1, #{ensmall.TAG_PX}
+    movs r1, #{PLATE_MID}
     subs r1, r1, r0
     asrs r1, r1, #1
     add r2, sp, #0x10
@@ -1106,6 +1116,43 @@ paddr: .word {plate | 1:#x}
     code = _asm(src, 0x0801ED64)
     assert 0x0801ED64 + len(code) <= PLATE_END
     return code
+
+
+def _plate_tile(t, bands, first_row):
+    """Recolour one 4bpp tile's fill (palette 6..0xC, the original's diagonal gradient) to one colour per pixel row,
+    so the plate's middle tiles become identical and can repeat."""
+    out = bytearray(t)
+    for y in range(8):
+        k = y - first_row
+        if not 0 <= k < len(bands):
+            continue
+        for x in range(8):
+            o = y * 4 + x // 2
+            sh = 4 * (x & 1)
+            if 6 <= (out[o] >> sh) & 15 <= 0xC:
+                out[o] = (out[o] & ~(15 << sh) & 0xFF) | (bands[k] << sh)
+    return bytes(out)
+
+
+def plate_frame(orig, write):
+    """Widen the dialogue speaker plate's BG frame from 6 to 8 columns and its OBJ text from 40 to 64 px."""
+    for i in range(1, 7):
+        o = PLATE_GFX + i * 32
+        write(o, _plate_tile(orig[o:o + 32], PLATE_BANDS[0], 3), f"speaker plate top tile {i}: banded fill")
+    for i in range(8, 0xE):
+        o = PLATE_GFX + i * 32
+        write(o, _plate_tile(orig[o:o + 32], PLATE_BANDS[1], 0), f"speaker plate bottom tile {i}: banded fill")
+    hw = lambda *v: b"".join(struct.pack("<H", x) for x in v)
+    for p in PLATE_MAPS:
+        assert orig[p:p + 18] == hw(1, 2, 3, 4, 5, 6, 0, 0, 0), f"plate map {p:06X} moved"
+        # bottom row cols 1..6 = plate, 7..10 = the box border's decoration, 11.. plain border (dropped by the shift)
+        b = p + 60
+        bot = struct.unpack_from("<12H", orig, b)
+        assert bot[:7] == (8, 9, 10, 11, 12, 13, 14) and bot[10] == bot[11], f"plate map {p:06X} bottom"
+        write(p, hw(1, 2, 3, 4, 5, 5, 5, 6), f"speaker plate map {p:06X}: top row 8 columns")
+        write(b, hw(8, 9, 10, 11, 12, 12, 12, 13, *bot[6:10]), f"speaker plate map {p:06X}: bottom row 8 columns")
+    assert orig[PLATE_CELL_PART2:PLATE_CELL_PART2 + 8] == hw(12, 0xFFFC, 0, 0x80), "plate sprite cell moved"
+    write(PLATE_CELL_PART2 + 4, hw(0x5000), "speaker plate sprite cell 2 part 2: 8x8 -> 32x8")
 
 
 def strip_code(far, widths_addr):
@@ -1223,6 +1270,7 @@ def install(img, write):
     tfar = img.alloc(len(tag_code(0x800000, 0x800000)[0]) + 16)
     tcode, ttag, ttagw, tmap, tplate = tag_code(tfar, swt_off)
     write(0x01ED64, plate_patch(tplate), "vwf speaker plate (0x0801EC54 loop -> plate, centred by pixels)")
+    plate_frame(orig, write)
     write(tfar, tcode, "vwf small-font code")
     write(0x110AE8, thunk(0x110AE8, tmap), "vwf smapline thunk (small-font BG labels 0x08110AE8)")
     # the default player name (40C51C) is copied to RAM 0x02010012 as 2 halfwords (2 JP chars): copy 5 (10 bytes,

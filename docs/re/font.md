@@ -54,6 +54,18 @@
   calls `plate` (TAG_SRC; RAM strings copied byte-swapped, splot ≤ 40 px) and sets n = 1, table[1] = (40 − w)/2
   in the caller's stack copy: centred by pixels. Verified 40 px stress name (work/qa/sp2/final.png) and JP names
   from all three sources (work/qa/sp3/plates.png). `fontcalls.lua --var FONTTYPE=12` found it.
+- **Speaker plate widened** (session 13, `vwf.plate_frame`): the plate's text OBJs come from sprite **cell 2** frame 0
+  (cell table 0x08403DA4: id·8 → (index, frames); frame 0x3E798C = n 2, parts x −20 32x8 tile +0, x +12 8x8 tile
+  +0x80 bytes; sprite x 32 → OBJ base **x 12**, not 16). Part 2 is now 32x8 (tiles 0x68..0x6F; 0x6D..0x6F were
+  blank in every toured scene). The BG frame is BG0 (cbb 1, map sbb 0) drawn by the generic layer copier 0x08006EE8
+  (src − base | pal) from **raw 30-wide maps** in ROM: plate at 0x19DE66 and 0x19E1EA (top row col 1..6 = tiles
+  1..6, bottom row +60 bytes = 8..0xD, then the box border's decoration 0xE.. and plain border); 0x19E0EA is a
+  right-hand plate variant, left alone (the plate routine always puts the OBJs left). Tiles are raw at 0x171E6C
+  (resource entry 0x1B0E94). The original fill was a diagonal gradient (palette 6..0xC), so repeating a tile showed
+  a seam: the fill is now one colour per pixel row (bands 6,7,7,8,8 / 9,9,A,A,B), the middle tiles are identical,
+  and the maps use 1,2,3,4,5,5,5,6 / 8,9,A,B,C,C,C,D (8 columns, interior x 10..69). Text centred on x 40:
+  table[1] = (56 − w)/2, cap 56 px. Shots work/qa/plw/z.png, work/qa/plt/plates.png. Probes: `bgdump.lua`
+  (BG maps + VRAM/palette dump once an OBJ tile shows), `valwatch.lua` (every write of a value to an address).
 - **names_list** (skills, weapons, techniques) is drawn by the OBJ-cell renderer 0x08014098 (VWF) from the
   shikigami menu's page routine **0x08035CA4**(id r0 ≤ 0x4B, page r1 0..4, r2), callers 0x08034EA4/0x08034EDC/
   0x080354C4/0x080354FE/0x080355D2/0x08035606. The page is u16 **0x0200512C**; d-pad **left** steps it back and

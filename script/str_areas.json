@@ -4,630 +4,630 @@
   {
    "id": "40B6B4",
    "jp": "黄龍のいおり",
-   "en": "",
+   "en": "Koryu's Hermitage",
    "max": 16
   },
   {
    "id": "40B6C4",
    "jp": "天流修練場",
-   "en": "",
+   "en": "Tenryu Training Hall",
    "max": 12
   },
   {
    "id": "40B6D0",
    "jp": "鬼門塚",
-   "en": "",
+   "en": "Kimon Mound",
    "max": 8
   },
   {
    "id": "40B6D8",
    "jp": "森",
-   "en": "",
+   "en": "Forest",
    "max": 4
   },
   {
    "id": "40B6DC",
    "jp": "神流の隠れ家",
-   "en": "",
+   "en": "Jinryu Hideout",
    "max": 16
   },
   {
    "id": "40B6EC",
    "jp": "朱雀の村",
-   "en": "",
+   "en": "Suzaku Village",
    "max": 12
   },
   {
    "id": "40B6F8",
    "jp": "青龍の村",
-   "en": "",
+   "en": "Seiryu Village",
    "max": 12
   },
   {
    "id": "40B704",
    "jp": "玄武の村",
-   "en": "",
+   "en": "Genbu Village",
    "max": 12
   },
   {
    "id": "40B710",
    "jp": "白虎の村",
-   "en": "",
+   "en": "Byakko Village",
    "max": 12
   },
   {
    "id": "40B71C",
    "jp": "霊石塚",
-   "en": "",
+   "en": "Spirit Stone Mound",
    "max": 8
   },
   {
    "id": "40B724",
    "jp": "公園",
-   "en": "",
+   "en": "Park",
    "max": 8
   },
   {
    "id": "40B72C",
    "jp": "竹林",
-   "en": "",
+   "en": "Bamboo Grove",
    "max": 8
   },
   {
    "id": "40B734",
    "jp": "妙霊山",
-   "en": "",
+   "en": "Mt. Myorei",
    "max": 8
   },
   {
    "id": "40B73C",
    "jp": "聖獣のほこら（地下７Ｆ）",
-   "en": "",
+   "en": "Sacred Beast Sanctum (B7F)",
    "max": 28
   },
   {
    "id": "40B758",
    "jp": "聖獣のほこら（地下６Ｆ）",
-   "en": "",
+   "en": "Sacred Beast Sanctum (B6F)",
    "max": 28
   },
   {
    "id": "40B774",
    "jp": "聖獣のほこら（地下５Ｆ）",
-   "en": "",
+   "en": "Sacred Beast Sanctum (B5F)",
    "max": 28
   },
   {
    "id": "40B790",
    "jp": "聖獣のほこら（地下４Ｆ）",
-   "en": "",
+   "en": "Sacred Beast Sanctum (B4F)",
    "max": 28
   },
   {
    "id": "40B7AC",
    "jp": "聖獣のほこら（地下３Ｆ）",
-   "en": "",
+   "en": "Sacred Beast Sanctum (B3F)",
    "max": 28
   },
   {
    "id": "40B7C8",
    "jp": "聖獣のほこら（地下２Ｆ）",
-   "en": "",
+   "en": "Sacred Beast Sanctum (B2F)",
    "max": 28
   },
   {
    "id": "40B7E4",
    "jp": "聖獣のほこら（地下１Ｆ）",
-   "en": "",
+   "en": "Sacred Beast Sanctum (B1F)",
    "max": 28
   },
   {
    "id": "40B800",
    "jp": "聖獣のほこら",
-   "en": "",
+   "en": "Sacred Beast Sanctum",
    "max": 16
   },
   {
    "id": "40B810",
    "jp": "黄龍のほこら（地下２Ｆ）",
-   "en": "",
+   "en": "Koryu Sanctum (B2F)",
    "max": 28
   },
   {
    "id": "40B82C",
    "jp": "黄龍のほこら（地下１Ｆ）",
-   "en": "",
+   "en": "Koryu Sanctum (B1F)",
    "max": 28
   },
   {
    "id": "40B848",
    "jp": "黄龍のほこら",
-   "en": "",
+   "en": "Koryu Sanctum",
    "max": 16
   },
   {
    "id": "40B858",
    "jp": "朱雀のほこら（地下３Ｆ）",
-   "en": "",
+   "en": "Suzaku Sanctum (B3F)",
    "max": 28
   },
   {
    "id": "40B874",
    "jp": "朱雀のほこら（地下２Ｆ）",
-   "en": "",
+   "en": "Suzaku Sanctum (B2F)",
    "max": 28
   },
   {
    "id": "40B890",
    "jp": "朱雀のほこら（地下１Ｆ）",
-   "en": "",
+   "en": "Suzaku Sanctum (B1F)",
    "max": 28
   },
   {
    "id": "40B8AC",
    "jp": "朱雀のほこら",
-   "en": "",
+   "en": "Suzaku Sanctum",
    "max": 16
   },
   {
    "id": "40B8BC",
    "jp": "青龍のほこら（地下３Ｆ）",
-   "en": "",
+   "en": "Seiryu Sanctum (B3F)",
    "max": 28
   },
   {
    "id": "40B8D8",
    "jp": "青龍のほこら（地下２Ｆ）",
-   "en": "",
+   "en": "Seiryu Sanctum (B2F)",
    "max": 28
   },
   {
    "id": "40B8F4",
    "jp": "青龍のほこら（地下１Ｆ）",
-   "en": "",
+   "en": "Seiryu Sanctum (B1F)",
    "max": 28
   },
   {
    "id": "40B910",
    "jp": "青龍のほこら",
-   "en": "",
+   "en": "Seiryu Sanctum",
    "max": 16
   },
   {
    "id": "40B920",
    "jp": "玄武のほこら（地下２Ｆ）",
-   "en": "",
+   "en": "Genbu Sanctum (B2F)",
    "max": 28
   },
   {
    "id": "40B93C",
    "jp": "玄武のほこら（地下１Ｆ）",
-   "en": "",
+   "en": "Genbu Sanctum (B1F)",
    "max": 28
   },
   {
    "id": "40B958",
    "jp": "玄武のほこら",
-   "en": "",
+   "en": "Genbu Sanctum",
    "max": 16
   },
   {
    "id": "40B968",
    "jp": "白虎のほこら（地下２Ｆ）",
-   "en": "",
+   "en": "Byakko Sanctum (B2F)",
    "max": 28
   },
   {
    "id": "40B984",
    "jp": "白虎のほこら（地下１Ｆ）",
-   "en": "",
+   "en": "Byakko Sanctum (B1F)",
    "max": 28
   },
   {
    "id": "40B9A0",
    "jp": "白虎のほこら",
-   "en": "",
+   "en": "Byakko Sanctum",
    "max": 16
   },
   {
    "id": "40B9B0",
    "jp": "御所（地下２Ｆ）",
-   "en": "",
+   "en": "The Gosho (B2F)",
    "max": 20
   },
   {
    "id": "40B9C4",
    "jp": "御所（地下１Ｆ）",
-   "en": "",
+   "en": "The Gosho (B1F)",
    "max": 20
   },
   {
    "id": "40B9D8",
    "jp": "御所",
-   "en": "",
+   "en": "The Gosho",
    "max": 8
   },
   {
    "id": "40B9E0",
    "jp": "謎の洞窟（地下２Ｆ）",
-   "en": "",
+   "en": "Mystery Cave (B2F)",
    "max": 24
   },
   {
    "id": "40B9F8",
    "jp": "謎の洞窟（地下１Ｆ）",
-   "en": "",
+   "en": "Mystery Cave (B1F)",
    "max": 24
   },
   {
    "id": "40BA10",
    "jp": "太陰神社（地下１５Ｆ）",
-   "en": "",
+   "en": "Taiin Shrine (B15F)",
    "max": 24
   },
   {
    "id": "40BA28",
    "jp": "太陰神社（地下１４Ｆ）",
-   "en": "",
+   "en": "Taiin Shrine (B14F)",
    "max": 24
   },
   {
    "id": "40BA40",
    "jp": "太陰神社（地下１３Ｆ）",
-   "en": "",
+   "en": "Taiin Shrine (B13F)",
    "max": 24
   },
   {
    "id": "40BA58",
    "jp": "太陰神社（地下１２Ｆ）",
-   "en": "",
+   "en": "Taiin Shrine (B12F)",
    "max": 24
   },
   {
    "id": "40BA70",
    "jp": "太陰神社（地下１１Ｆ）",
-   "en": "",
+   "en": "Taiin Shrine (B11F)",
    "max": 24
   },
   {
    "id": "40BA88",
    "jp": "太陰神社（地下１０Ｆ）",
-   "en": "",
+   "en": "Taiin Shrine (B10F)",
    "max": 24
   },
   {
    "id": "40BAA0",
    "jp": "太陰神社（地下９Ｆ）",
-   "en": "",
+   "en": "Taiin Shrine (B9F)",
    "max": 24
   },
   {
    "id": "40BAB8",
    "jp": "太陰神社（地下８Ｆ）",
-   "en": "",
+   "en": "Taiin Shrine (B8F)",
    "max": 24
   },
   {
    "id": "40BAD0",
    "jp": "太陰神社（地下７Ｆ）",
-   "en": "",
+   "en": "Taiin Shrine (B7F)",
    "max": 24
   },
   {
    "id": "40BAE8",
    "jp": "太陰神社（地下６Ｆ）",
-   "en": "",
+   "en": "Taiin Shrine (B6F)",
    "max": 24
   },
   {
    "id": "40BB00",
    "jp": "太陰神社（地下５Ｆ）",
-   "en": "",
+   "en": "Taiin Shrine (B5F)",
    "max": 24
   },
   {
    "id": "40BB18",
    "jp": "太陰神社（地下４Ｆ）",
-   "en": "",
+   "en": "Taiin Shrine (B4F)",
    "max": 24
   },
   {
    "id": "40BB30",
    "jp": "太陰神社（地下３Ｆ）",
-   "en": "",
+   "en": "Taiin Shrine (B3F)",
    "max": 24
   },
   {
    "id": "40BB48",
    "jp": "太陰神社（地下２Ｆ）",
-   "en": "",
+   "en": "Taiin Shrine (B2F)",
    "max": 24
   },
   {
    "id": "40BB60",
    "jp": "太陰神社（地下１Ｆ）",
-   "en": "",
+   "en": "Taiin Shrine (B1F)",
    "max": 24
   },
   {
    "id": "40BB78",
    "jp": "太白神社（地下１５Ｆ）",
-   "en": "",
+   "en": "Taihaku Shrine (B15F)",
    "max": 24
   },
   {
    "id": "40BB90",
    "jp": "太白神社（地下１４Ｆ）",
-   "en": "",
+   "en": "Taihaku Shrine (B14F)",
    "max": 24
   },
   {
    "id": "40BBA8",
    "jp": "太白神社（地下１３Ｆ）",
-   "en": "",
+   "en": "Taihaku Shrine (B13F)",
    "max": 24
   },
   {
    "id": "40BBC0",
    "jp": "太白神社（地下１２Ｆ）",
-   "en": "",
+   "en": "Taihaku Shrine (B12F)",
    "max": 24
   },
   {
    "id": "40BBD8",
    "jp": "太白神社（地下１１Ｆ）",
-   "en": "",
+   "en": "Taihaku Shrine (B11F)",
    "max": 24
   },
   {
    "id": "40BBF0",
    "jp": "太白神社（地下１０Ｆ）",
-   "en": "",
+   "en": "Taihaku Shrine (B10F)",
    "max": 24
   },
   {
    "id": "40BC08",
    "jp": "太白神社（地下９Ｆ）",
-   "en": "",
+   "en": "Taihaku Shrine (B9F)",
    "max": 24
   },
   {
    "id": "40BC20",
    "jp": "太白神社（地下８Ｆ）",
-   "en": "",
+   "en": "Taihaku Shrine (B8F)",
    "max": 24
   },
   {
    "id": "40BC38",
    "jp": "太白神社（地下７Ｆ）",
-   "en": "",
+   "en": "Taihaku Shrine (B7F)",
    "max": 24
   },
   {
    "id": "40BC50",
    "jp": "太白神社（地下６Ｆ）",
-   "en": "",
+   "en": "Taihaku Shrine (B6F)",
    "max": 24
   },
   {
    "id": "40BC68",
    "jp": "太白神社（地下５Ｆ）",
-   "en": "",
+   "en": "Taihaku Shrine (B5F)",
    "max": 24
   },
   {
    "id": "40BC80",
    "jp": "太白神社（地下４Ｆ）",
-   "en": "",
+   "en": "Taihaku Shrine (B4F)",
    "max": 24
   },
   {
    "id": "40BC98",
    "jp": "太白神社（地下３Ｆ）",
-   "en": "",
+   "en": "Taihaku Shrine (B3F)",
    "max": 24
   },
   {
    "id": "40BCB0",
    "jp": "太白神社（地下２Ｆ）",
-   "en": "",
+   "en": "Taihaku Shrine (B2F)",
    "max": 24
   },
   {
    "id": "40BCC8",
    "jp": "太白神社（地下１Ｆ）",
-   "en": "",
+   "en": "Taihaku Shrine (B1F)",
    "max": 24
   },
   {
    "id": "40BCE0",
    "jp": "鬼門道",
-   "en": "",
+   "en": "Kimon Road",
    "max": 8
   },
   {
    "id": "40BCE8",
    "jp": "地流ビル（地下５Ｆ）",
-   "en": "",
+   "en": "Chiryu Building (B5F)",
    "max": 24
   },
   {
    "id": "40BD00",
    "jp": "地流ビル（地下４Ｆ）",
-   "en": "",
+   "en": "Chiryu Building (B4F)",
    "max": 24
   },
   {
    "id": "40BD18",
    "jp": "地流ビル（地下３Ｆ）",
-   "en": "",
+   "en": "Chiryu Building (B3F)",
    "max": 24
   },
   {
    "id": "40BD30",
    "jp": "地流ビル（地下２Ｆ）",
-   "en": "",
+   "en": "Chiryu Building (B2F)",
    "max": 24
   },
   {
    "id": "40BD48",
    "jp": "地流ビル（地下１Ｆ）",
-   "en": "",
+   "en": "Chiryu Building (B1F)",
    "max": 24
   },
   {
    "id": "40BD60",
    "jp": "地流ビル前",
-   "en": "",
+   "en": "Outside the Chiryu Building",
    "max": 12
   },
   {
    "id": "40BD6C",
    "jp": "地流中継基地（地下３Ｆ）",
-   "en": "",
+   "en": "Chiryu Relay Base (B3F)",
    "max": 28
   },
   {
    "id": "40BD88",
    "jp": "地流中継基地（地下２Ｆ）",
-   "en": "",
+   "en": "Chiryu Relay Base (B2F)",
    "max": 28
   },
   {
    "id": "40BDA4",
    "jp": "地流中継基地（地下１Ｆ）",
-   "en": "",
+   "en": "Chiryu Relay Base (B1F)",
    "max": 28
   },
   {
    "id": "40BDC0",
    "jp": "ダム湖",
-   "en": "",
+   "en": "Dam Lake",
    "max": 8
   },
   {
    "id": "40BDC8",
    "jp": "太白神社",
-   "en": "",
+   "en": "Taihaku Shrine",
    "max": 12
   },
   {
    "id": "40BDD4",
    "jp": "太陰神社",
-   "en": "",
+   "en": "Taiin Shrine",
    "max": 12
   },
   {
    "id": "40BDE0",
    "jp": "天流の分社",
-   "en": "",
+   "en": "Tenryu Branch Shrine",
    "max": 12
   },
   {
    "id": "40BDEC",
    "jp": "病院",
-   "en": "",
+   "en": "Hospital",
    "max": 8
   },
   {
    "id": "40BDF4",
    "jp": "学校（３Ｆ）",
-   "en": "",
+   "en": "School (3F)",
    "max": 16
   },
   {
    "id": "40BE04",
    "jp": "学校（２Ｆ）",
-   "en": "",
+   "en": "School (2F)",
    "max": 16
   },
   {
    "id": "40BE14",
    "jp": "学校（１Ｆ）",
-   "en": "",
+   "en": "School (1F)",
    "max": 16
   },
   {
    "id": "40BE24",
    "jp": "学校（校舎前）",
-   "en": "",
+   "en": "School (Front Gate)",
    "max": 16
   },
   {
    "id": "40BE34",
    "jp": "京東町",
-   "en": "",
+   "en": "East Kyo Town",
    "max": 8
   },
   {
    "id": "40BE3C",
    "jp": "京北町",
-   "en": "",
+   "en": "North Kyo Town",
    "max": 8
   },
   {
    "id": "40BE44",
    "jp": "京西町",
-   "en": "",
+   "en": "West Kyo Town",
    "max": 8
   },
   {
    "id": "40BE4C",
    "jp": "京中町",
-   "en": "",
+   "en": "Central Kyo Town",
    "max": 8
   },
   {
    "id": "40BE54",
    "jp": "京南町",
-   "en": "",
+   "en": "South Kyo Town",
    "max": 8
   },
   {
    "id": "40BE5C",
    "jp": "天神町",
-   "en": "",
+   "en": "Tenjin Town",
    "max": 8
   },
   {
    "id": "40BE64",
    "jp": "京北エリア",
-   "en": "",
+   "en": "North Kyo Area",
    "max": 12,
    "ptrs": 25
   },
   {
    "id": "40BE70",
    "jp": "京東エリア",
-   "en": "",
+   "en": "East Kyo Area",
    "max": 12,
    "ptrs": 25
   },
   {
    "id": "40BE7C",
    "jp": "京西エリア",
-   "en": "",
+   "en": "West Kyo Area",
    "max": 12,
    "ptrs": 25
   },
   {
    "id": "40BE88",
    "jp": "京中エリア",
-   "en": "",
+   "en": "Central Kyo Area",
    "max": 12,
    "ptrs": 25
   },
   {
    "id": "40BE94",
    "jp": "京南エリア",
-   "en": "",
+   "en": "South Kyo Area",
    "max": 12,
    "ptrs": 25
   },
   {
    "id": "40BEA0",
    "jp": "天神エリア",
-   "en": "",
+   "en": "Tenjin Area",
    "max": 11
   }
  ]

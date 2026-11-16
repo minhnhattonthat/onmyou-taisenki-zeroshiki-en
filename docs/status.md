@@ -3,9 +3,8 @@
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
 - **Phase:** 6. Translate in progress: batches b001-b028 of 41 translated. Merged: all event scripts, str_abilities,
-  str_intro, str_menus, str_menus2, str_name_entry, str_quotes01/02. Written but held: b024/b025 (str_areas,
-  str_battle_msgs, str_char_names, str_credits) fail the check only on 14 speaker-plate names > 40 px (see Next);
-  str_quotes03 waits for b029. Last build 2026-11-16 (session 12): `build.py` sha1 e53aab07…, smoke ok, check ok.
+  str_intro, str_menus, str_menus2, str_name_entry, str_quotes01/02, str_areas, str_battle_msgs, str_char_names,
+  str_credits. str_quotes03 waits for b029. Last build 2026-11-16 (session 12): `build.py` sha1 e53aab07…, smoke ok, check ok.
 - **Done:**
   - Step 0: ROM pinned (`rom.sha1`), MesenCE 2.2.1 + GBA BIOS in `tools/mesen/`, guard hook in `.claude/settings.json`
     (canary blocked), pre-commit runs `tools/check.py` (a failing test was rejected), boot route `tools/routes/boot.txt`
@@ -112,13 +111,10 @@ Updated at the end of every session. Keep it to what the next session needs; his
     row (stats, conditions, battle fragments), synopsis step 7, `docs/polish.md` started. `oamfind.lua` takes
     `--var TLO=.. --var THI=..`: the speaker plate's text is OBJ 0/1 (tiles 0x68..0x6C, x 16/48, y 108); its
     frame is NOT an OBJ (BG layer).
-- **Speaker plate too narrow (blocks merging b024/b025):** str_char_names in the plate (40 px, frame interior
-  x 10..53) overflow: Tereyakko 45, Tsuneyakko 51, Maruyakko 45, Chiyoyakko 47, Matsuyakko 50, Umeyakko 41,
-  Takeyakko 46, Sekiyakko 42, Hamamura 41, Yamamoto 42 (x2), Yamashita 43, Yamaguchi 43 px (b024/b025.out.tsv
-  keep the full names). Per D4 fix by engine: widen the plate to 7 OBJ tiles (56 px) and its BG frame (find the
-  tilemap writer for the frame), then raise `speaker_tag` px in `tbl/windows.json` after a shot, and merge
-  `batches.py merge b023 b024 b025 b026` (str_areas/str_credits are split across them). Do this first next session
-  (it is phase-7 fit work but gates phase 6's merge).
+  - Phase 6 session 13 (2026-11-16): speaker plate widened by engine (`vwf.plate_frame`: BG frame 6 → 8 columns
+    with a banded fill, text OBJ 40 → 64 px, cap 56 px, centred on x 40; docs/re/font.md "Speaker plate widened",
+    shots work/qa/plt/plates.png); b023-b026 merged (all of str_areas, str_battle_msgs, str_char_names,
+    str_credits).
 - **Next (phase 6, translate; `references/translation.md`):** after the plate, translate `tl/b029.tsv` onward in order (read each
   with Read in ~40-line chunks: context-mode cuts larger outputs), write `tl/bNNN.out.tsv`, `batches.py check bNNN`
   to OK, then merge together with the batch that holds the rest of a file (`batches.py merge b009 b010 ...`: a

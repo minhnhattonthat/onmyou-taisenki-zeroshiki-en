@@ -4,151 +4,151 @@
   {
    "id": "40C9BC",
    "jp": "ＨＰは吸収できなかった！",
-   "en": "",
+   "en": "Couldn't drain any HP!",
    "max": 28,
    "ptrs": 2
   },
   {
    "id": "40C9D8",
    "jp": "のＨＰを吸収した！",
-   "en": "",
+   "en": "'s HP was drained!",
    "max": 19
   },
   {
    "id": "40D3B0",
    "jp": "【",
-   "en": "",
+   "en": "[",
    "max": 4
   },
   {
    "id": "40D3B4",
    "jp": "】",
-   "en": "",
+   "en": "]",
    "max": 4
   },
   {
    "id": "40D3B8",
    "jp": "すでに同じ効果が　　　　　　かかっている！",
-   "en": "",
+   "en": "The same effect\nis already active!",
    "max": 44,
    "pad": 14
   },
   {
    "id": "40D3E4",
    "jp": "効果がなかった！",
-   "en": "",
+   "en": "It had no effect!",
    "max": 20
   },
   {
    "id": "40D3F8",
    "jp": "１回だけ自身蘇生の効果！",
-   "en": "",
+   "en": "One-time self-revival took effect!",
    "max": 25
   },
   {
    "id": "40D734",
    "jp": "に・に・・・",
-   "en": "",
+   "en": "R-r-r...",
    "max": 16
   },
   {
    "id": "40D744",
    "jp": "敵は逃げ出した！",
-   "en": "",
+   "en": "The foe ran away!",
    "max": 20
   },
   {
    "id": "40D758",
    "jp": "に～げろおぉ～～～～～っ！！",
-   "en": "",
+   "en": "Ruuun for iiiiiit!!",
    "max": 32
   },
   {
    "id": "40D778",
    "jp": "逃げることはできないっ！！",
-   "en": "",
+   "en": "There's no escaping this!!",
    "max": 28
   },
   {
    "id": "40D794",
    "jp": "よし！　交替だ！",
-   "en": "",
+   "en": "All right! Switch!",
    "max": 20
   },
   {
    "id": "40D7A8",
    "jp": "　降・神！",
-   "en": "",
+   "en": ", des-cend!",
    "max": 12
   },
   {
    "id": "40D7B4",
    "jp": "敵は、",
-   "en": "",
+   "en": "The foe calls on",
    "max": 8,
    "ptrs": 2
   },
   {
    "id": "40D7BC",
    "jp": "を降神！",
-   "en": "",
+   "en": " to descend!",
    "max": 12,
    "ptrs": 2
   },
   {
    "id": "40D7C8",
    "jp": "仲間のＨＰが回復した！",
-   "en": "",
+   "en": "Allies' HP was restored!",
    "max": 24,
    "ptrs": 2
   },
   {
    "id": "40D7E0",
    "jp": "仲間のステータス異常が　　　回復した！",
-   "en": "",
+   "en": "Allies' status ailments\nwere cured!",
    "max": 40,
    "pad": 14
   },
   {
    "id": "40D808",
    "jp": "ＺＺＺ・・・",
-   "en": "",
+   "en": "Zzz...",
    "max": 16
   },
   {
    "id": "40D818",
    "jp": "動けない・・・",
-   "en": "",
+   "en": "Can't move...",
    "max": 16
   },
   {
    "id": "40D828",
    "jp": "石化している・・・",
-   "en": "",
+   "en": "Petrified...",
    "max": 20
   },
   {
    "id": "40D83C",
    "jp": "・・・・・",
-   "en": "",
+   "en": ".....",
    "max": 11
   },
   {
    "id": "40D878",
    "jp": "を倒した！",
-   "en": "",
+   "en": " was defeated!",
    "max": 12
   },
   {
    "id": "40D884",
    "jp": "は倒された！",
-   "en": "",
+   "en": " has fallen!",
    "max": 16
   },
   {
    "id": "40D894",
    "jp": "はふっかつ！！",
-   "en": "",
+   "en": " is revived!!",
    "max": 16
   },
   {
@@ -161,63 +161,63 @@
   {
    "id": "40D8A8",
    "jp": "逃げられなかった！",
-   "en": "",
+   "en": "Couldn't escape!",
    "max": 20
   },
   {
    "id": "40D8BC",
    "jp": "逃げることができた！",
-   "en": "",
+   "en": "Got away safely!",
    "max": 24
   },
   {
    "id": "40D8D4",
    "jp": "敵に逃げられた！",
-   "en": "",
+   "en": "The foe got away!",
    "max": 20
   },
   {
    "id": "40D8E8",
    "jp": "効果がなかった！",
-   "en": "",
+   "en": "It had no effect!",
    "max": 20
   },
   {
    "id": "40D8FC",
    "jp": "すでに呪縛されている！",
-   "en": "",
+   "en": "Already bound!",
    "max": 24
   },
   {
    "id": "40D914",
    "jp": "呪縛の効果！！",
-   "en": "",
+   "en": "Bind took effect!!",
    "max": 15
   },
   {
    "id": "40D964",
    "jp": "攻撃力が",
-   "en": "",
+   "en": "Attack",
    "max": 12,
    "ptrs": 2
   },
   {
    "id": "40D970",
    "jp": "アップ！",
-   "en": "",
+   "en": "up!",
    "max": 12
   },
   {
    "id": "40D97C",
    "jp": "効果が相殺されて消え去った！",
-   "en": "",
+   "en": "The effects canceled each other out!",
    "max": 32,
    "ptrs": 10
   },
   {
    "id": "40D99C",
    "jp": "すでに同じ効果が　　　　　　かかっている！",
-   "en": "",
+   "en": "The same effect\nis already active!",
    "max": 44,
    "pad": 14,
    "ptrs": 13
@@ -225,151 +225,151 @@
   {
    "id": "40D9C8",
    "jp": "効果がなかった！",
-   "en": "",
+   "en": "It had no effect!",
    "max": 20,
    "ptrs": 13
   },
   {
    "id": "40D9DC",
    "jp": "加護力が",
-   "en": "",
+   "en": "Guard",
    "max": 12,
    "ptrs": 2
   },
   {
    "id": "40D9E8",
    "jp": "素早さが",
-   "en": "",
+   "en": "Speed",
    "max": 12,
    "ptrs": 2
   },
   {
    "id": "40D9F4",
    "jp": "防御力が",
-   "en": "",
+   "en": "Defense",
    "max": 12,
    "ptrs": 2
   },
   {
    "id": "40DA00",
    "jp": "妖力が",
-   "en": "",
+   "en": "Power",
    "max": 7,
    "ptrs": 2
   },
   {
    "id": "40DA48",
    "jp": "すでに睡眠にかかっている！",
-   "en": "",
+   "en": "Already asleep!",
    "max": 28
   },
   {
    "id": "40DA64",
    "jp": "睡眠の効果！！",
-   "en": "",
+   "en": "Sleep took effect!!",
    "max": 16
   },
   {
    "id": "40DA74",
    "jp": "すでに毒にかかっている！",
-   "en": "",
+   "en": "Already poisoned!",
    "max": 28
   },
   {
    "id": "40DA90",
    "jp": "毒の効果！！",
-   "en": "",
+   "en": "Poison took effect!!",
    "max": 16
   },
   {
    "id": "40DAA0",
    "jp": "すでに石化している！",
-   "en": "",
+   "en": "Already petrified!",
    "max": 24
   },
   {
    "id": "40DAB8",
    "jp": "石化の効果！！",
-   "en": "",
+   "en": "Petrify took effect!!",
    "max": 16
   },
   {
    "id": "40DAC8",
    "jp": "すでに呪いにかかっている！",
-   "en": "",
+   "en": "Already cursed!",
    "max": 28
   },
   {
    "id": "40DAE4",
    "jp": "呪いの効果！！",
-   "en": "",
+   "en": "Curse took effect!!",
    "max": 16
   },
   {
    "id": "40DAF4",
    "jp": "すでに混乱している！",
-   "en": "",
+   "en": "Already confused!",
    "max": 24
   },
   {
    "id": "40DB0C",
    "jp": "混乱の効果！！",
-   "en": "",
+   "en": "Confusion took effect!!",
    "max": 16
   },
   {
    "id": "40DB1C",
    "jp": "！！！",
-   "en": "",
+   "en": "!!!",
    "max": 8
   },
   {
    "id": "40DB24",
    "jp": "すでに呪縛されている！",
-   "en": "",
+   "en": "Already bound!",
    "max": 24
   },
   {
    "id": "40DB3C",
    "jp": "呪縛の効果！！",
-   "en": "",
+   "en": "Bind took effect!!",
    "max": 15
   },
   {
    "id": "40DC20",
    "jp": "魅了の効果！！",
-   "en": "",
+   "en": "Charm took effect!!",
    "max": 16
   },
   {
    "id": "40DC30",
    "jp": "ダウン！",
-   "en": "",
+   "en": "down!",
    "max": 12,
    "ptrs": 2
   },
   {
    "id": "40DC3C",
    "jp": "幻影の効果！",
-   "en": "",
+   "en": "Phantom took effect!",
    "max": 16
   },
   {
    "id": "40DC4C",
    "jp": "カウンターの効果！！",
-   "en": "",
+   "en": "Counter took effect!!",
    "max": 21
   },
   {
    "id": "40E2E0",
    "jp": "【防御】",
-   "en": "",
+   "en": "[Defend]",
    "max": 9
   },
   {
    "id": "40E31C",
    "jp": "自分を攻撃！　",
-   "en": "",
+   "en": "Attacked itself!",
    "max": 16
   },
   {
@@ -382,74 +382,74 @@
   {
    "id": "40E330",
    "jp": "のダメージ！",
-   "en": "",
+   "en": " damage!",
    "max": 16,
    "ptrs": 2
   },
   {
    "id": "40E340",
    "jp": "のダメージを受けた！",
-   "en": "",
+   "en": " damage taken!",
    "max": 24
   },
   {
    "id": "40E358",
    "jp": "のダメージを与えた！",
-   "en": "",
+   "en": " damage dealt!",
    "max": 24
   },
   {
    "id": "40E370",
    "jp": "　睡眠から覚めた！",
-   "en": "",
+   "en": " woke up!",
    "max": 20
   },
   {
    "id": "40E384",
    "jp": "のカウンターを与えた！",
-   "en": "",
+   "en": " counter damage dealt!",
    "max": 24
   },
   {
    "id": "40E39C",
    "jp": "のカウンターを受けた！",
-   "en": "",
+   "en": " counter damage taken!",
    "max": 24
   },
   {
    "id": "40E3B4",
    "jp": "両者",
-   "en": "",
+   "en": "Both sides",
    "max": 8
   },
   {
    "id": "40E3BC",
    "jp": "幻影が身代わりとなった！",
-   "en": "",
+   "en": "A phantom took the hit!",
    "max": 28
   },
   {
    "id": "40E3D8",
    "jp": "の毒ダメージ！",
-   "en": "",
+   "en": " poison damage!",
    "max": 16
   },
   {
    "id": "40E3E8",
    "jp": "の呪いダメージ！",
-   "en": "",
+   "en": " curse damage!",
    "max": 17
   },
   {
    "id": "40E52C",
    "jp": "【",
-   "en": "",
+   "en": "[",
    "max": 4
   },
   {
    "id": "40E530",
    "jp": "】",
-   "en": "",
+   "en": "]",
    "max": 4
   },
   {

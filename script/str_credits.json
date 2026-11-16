@@ -5,7 +5,7 @@
   {
    "id": "1283F8",
    "jp": "　　　ゲームソフト制作　　　　",
-   "en": "",
+   "en": "Game Software Production",
    "max": 32,
    "pad": 3,
    "ptrs": 2
@@ -20,413 +20,413 @@
   {
    "id": "128438",
    "jp": "ディレクター　　　　　　　　　",
-   "en": "",
+   "en": "Director",
    "max": 32
   },
   {
    "id": "128458",
    "jp": "　　増田　清幸　　　カムイ　　",
-   "en": "",
+   "en": "    Kiyoyuki Masuda  (Kamui)",
    "max": 32,
    "ptrs": 2
   },
   {
    "id": "128478",
    "jp": "プログラマー　　　　　　　　　",
-   "en": "",
+   "en": "Programmers",
    "max": 32
   },
   {
    "id": "128498",
    "jp": "　　東　利文　　　　カムイ　　",
-   "en": "",
+   "en": "    Toshifumi Higashi  (Kamui)",
    "max": 32,
    "pad": 2
   },
   {
    "id": "1284B8",
    "jp": "　　吉川　成至　　　カムイ　　",
-   "en": "",
+   "en": "    Shigeyuki Yoshikawa  (Kamui)",
    "max": 32
   },
   {
    "id": "1284D8",
    "jp": "デザイナー　　　　　　　　　　",
-   "en": "",
+   "en": "Designers",
    "max": 32
   },
   {
    "id": "1284F8",
    "jp": "　　西村　貴之　　　カムイ　　",
-   "en": "",
+   "en": "    Takayuki Nishimura  (Kamui)",
    "max": 32
   },
   {
    "id": "128518",
    "jp": "　　立石　一博　　　カムイ　　",
-   "en": "",
+   "en": "    Kazuhiro Tateishi  (Kamui)",
    "max": 32
   },
   {
    "id": "128538",
    "jp": "　　池尻　剛　　　　カムイ　　",
-   "en": "",
+   "en": "    Tsuyoshi Ikejiri  (Kamui)",
    "max": 32
   },
   {
    "id": "128558",
    "jp": "　　中島　薫　　　　カムイ　　",
-   "en": "",
+   "en": "    Kaoru Nakajima  (Kamui)",
    "max": 32
   },
   {
    "id": "128578",
    "jp": "　　蓮尾　公裕　　　カムイ　　",
-   "en": "",
+   "en": "    Kimihiro Hasuo  (Kamui)",
    "max": 32
   },
   {
    "id": "128598",
    "jp": "　　青木　均　　　　カムイ　　",
-   "en": "",
+   "en": "    Hitoshi Aoki  (Kamui)",
    "max": 32
   },
   {
    "id": "1285B8",
    "jp": "　　関　貞策　　　　カムイ　　",
-   "en": "",
+   "en": "    Teisaku Seki  (Kamui)",
    "max": 32,
    "pad": 2
   },
   {
    "id": "1285D8",
    "jp": "　　関　和恵　　　　カムイ　　",
-   "en": "",
+   "en": "    Kazue Seki  (Kamui)",
    "max": 32,
    "pad": 2
   },
   {
    "id": "1285F8",
    "jp": "シナリオライター　　　　　　　",
-   "en": "",
+   "en": "Scenario Writer",
    "max": 32
   },
   {
    "id": "128618",
    "jp": "　　岩原　誠　　　　カムイ　　",
-   "en": "",
+   "en": "    Makoto Iwahara  (Kamui)",
    "max": 32
   },
   {
    "id": "128638",
    "jp": "サウンド　　　　　　　　　　　",
-   "en": "",
+   "en": "Sound",
    "max": 32
   },
   {
    "id": "128658",
    "jp": "　　　　　キューブ　　　　　　",
-   "en": "",
+   "en": "          Cube",
    "max": 32,
    "pad": 5
   },
   {
    "id": "128678",
    "jp": "デバッグ　　　　　　　　　　　",
-   "en": "",
+   "en": "Debugging",
    "max": 32
   },
   {
    "id": "128698",
    "jp": "　　ポール・トゥ・ウィン　　　",
-   "en": "",
+   "en": "    Pole To Win",
    "max": 32,
    "pad": 2
   },
   {
    "id": "1286B8",
    "jp": "ゲーム監修　　　　　　　　　　",
-   "en": "",
+   "en": "Game Supervision",
    "max": 32
   },
   {
    "id": "1286D8",
    "jp": "　　渡辺　洋一　　サンライズ　",
-   "en": "",
+   "en": "    Yoichi Watanabe  (Sunrise)",
    "max": 32
   },
   {
    "id": "1286F8",
    "jp": "　　若鍋　竜太　　サンライズ　",
-   "en": "",
+   "en": "    Ryuta Wakanabe  (Sunrise)",
    "max": 32
   },
   {
    "id": "128718",
    "jp": "　　望月　克己　　サンライズ　",
-   "en": "",
+   "en": "    Katsumi Mochizuki  (Sunrise)",
    "max": 32
   },
   {
    "id": "128738",
    "jp": "　　辰巳　真左美　サンライズ　",
-   "en": "",
+   "en": "    Masami Tatsumi  (Sunrise)",
    "max": 32
   },
   {
    "id": "128758",
    "jp": "　　住吉　隆治　　ウィズ　　　",
-   "en": "",
+   "en": "    Ryuji Sumiyoshi  (Wiz)",
    "max": 32
   },
   {
    "id": "128778",
    "jp": "　　北河原　真　　ウィズ　　　",
-   "en": "",
+   "en": "    Makoto Kitagawara  (Wiz)",
    "max": 32
   },
   {
    "id": "128798",
    "jp": "　　須藤　治　　　ウィズ　　　",
-   "en": "",
+   "en": "    Osamu Sudo  (Wiz)",
    "max": 32
   },
   {
    "id": "1287B8",
    "jp": "斉藤　征彦　Ⅴジャンプ編集部　",
-   "en": "",
+   "en": "Yukihiko Saito  (V Jump Editorial",
    "max": 32,
    "notes": "gaiji Ⅴ=Ｖ"
   },
   {
    "id": "1287D8",
    "jp": "　　　　　　　　　　／集英社　",
-   "en": "",
+   "en": "                    Dept. / Shueisha)",
    "max": 32,
    "pad": 10
   },
   {
    "id": "1287F8",
    "jp": "スペシャルサンクス　　　　　　",
-   "en": "",
+   "en": "Special Thanks",
    "max": 32
   },
   {
    "id": "128818",
    "jp": "　　　アサツーディ・ケイ　　　",
-   "en": "",
+   "en": "      Asatsu-DK",
    "max": 32,
    "pad": 3
   },
   {
    "id": "128838",
    "jp": "　　　マックス　ア　ミリオン　",
-   "en": "",
+   "en": "      Max a Million",
    "max": 32
   },
   {
    "id": "128858",
    "jp": "　　　シナテック　　　　　　　",
-   "en": "",
+   "en": "      Synatec",
    "max": 32,
    "pad": 3
   },
   {
    "id": "128878",
    "jp": "　　　レイアップ　　　　　　　",
-   "en": "",
+   "en": "      Layup",
    "max": 32,
    "pad": 3
   },
   {
    "id": "128898",
    "jp": "　　　　太田　健介　　　　　　",
-   "en": "",
+   "en": "        Kensuke Ota",
    "max": 32
   },
   {
    "id": "1288B8",
    "jp": "　　　　松野　勝太郎　　　　　",
-   "en": "",
+   "en": "        Katsutaro Matsuno",
    "max": 32
   },
   {
    "id": "1288D8",
    "jp": "　　　　川戸　祐太　　　　　　",
-   "en": "",
+   "en": "        Yuta Kawato",
    "max": 32
   },
   {
    "id": "1288F8",
    "jp": "　　　　射場　周作　　　　　　",
-   "en": "",
+   "en": "        Shusaku Iba",
    "max": 32
   },
   {
    "id": "128918",
    "jp": "　　　　西С　清人　　　　　　",
-   "en": "",
+   "en": "        Kiyoto Nishizawa",
    "max": 32,
    "notes": "gaiji С=澤"
   },
   {
    "id": "128938",
    "jp": "　　　　田中　庸介　　　　　　",
-   "en": "",
+   "en": "        Yosuke Tanaka",
    "max": 32
   },
   {
    "id": "128958",
    "jp": "　　　　原田　真史　　　　　　",
-   "en": "",
+   "en": "        Masashi Harada",
    "max": 32
   },
   {
    "id": "128978",
    "jp": "　　　　田中　良也　　　　　　",
-   "en": "",
+   "en": "        Yoshiya Tanaka",
    "max": 32
   },
   {
    "id": "128998",
    "jp": "　　　　佐々木　夕介　　　　　",
-   "en": "",
+   "en": "        Yusuke Sasaki",
    "max": 32,
    "pad": 4
   },
   {
    "id": "1289B8",
    "jp": "　　　　上村　照彦　　　　　　",
-   "en": "",
+   "en": "        Teruhiko Uemura",
    "max": 32
   },
   {
    "id": "1289D8",
    "jp": "　　　　猪谷　公彦　　　　　　",
-   "en": "",
+   "en": "        Kimihiko Inotani",
    "max": 32
   },
   {
    "id": "1289F8",
    "jp": "　　　　南Т　智輝　　　　　　",
-   "en": "",
+   "en": "        Tomoki Nanjo",
    "max": 32,
    "notes": "gaiji Т=條"
   },
   {
    "id": "128A18",
    "jp": "　　　　金　　У秀　　　　　　",
-   "en": "",
+   "en": "        An-su Kim",
    "max": 32,
    "notes": "gaiji У=晏"
   },
   {
    "id": "128A38",
    "jp": "　　　　富沢　義彦　　　　　　",
-   "en": "",
+   "en": "        Yoshihiko Tomizawa",
    "max": 32
   },
   {
    "id": "128A58",
    "jp": "　　　　福田　道生　　　　　　",
-   "en": "",
+   "en": "        Michio Fukuda",
    "max": 32
   },
   {
    "id": "128A78",
    "jp": "　　　　菱田　正和　　　　　　",
-   "en": "",
+   "en": "        Masakazu Hishida",
    "max": 32
   },
   {
    "id": "128A98",
    "jp": "プロモーション　　　　　　　　",
-   "en": "",
+   "en": "Promotion",
    "max": 32
   },
   {
    "id": "128AB8",
    "jp": "　　　　田中　穣　　　　　　　",
-   "en": "",
+   "en": "        Minoru Tanaka",
    "max": 32
   },
   {
    "id": "128AD8",
    "jp": "　　　　熊田　直樹　　　　　　",
-   "en": "",
+   "en": "        Naoki Kumada",
    "max": 32
   },
   {
    "id": "128AF8",
    "jp": "　　　　岡　　香織　　　　　　",
-   "en": "",
+   "en": "        Kaori Oka",
    "max": 32
   },
   {
    "id": "128B18",
    "jp": "　　　　武井　由香　　　　　　",
-   "en": "",
+   "en": "        Yuka Takei",
    "max": 32
   },
   {
    "id": "128B38",
    "jp": "パブリシティ　　　　　　　　　",
-   "en": "",
+   "en": "Publicity",
    "max": 32
   },
   {
    "id": "128B58",
    "jp": "　　　　黒С　豪　　　　　　　",
-   "en": "",
+   "en": "        Go Kurosawa",
    "max": 32,
    "notes": "gaiji С=澤"
   },
   {
    "id": "128B78",
    "jp": "　　　　向山　里映　　　　　　",
-   "en": "",
+   "en": "        Rie Mukoyama",
    "max": 32
   },
   {
    "id": "128B98",
    "jp": "プロデューサー　　　　　　　　",
-   "en": "",
+   "en": "Producer",
    "max": 32
   },
   {
    "id": "128BB8",
    "jp": "　　　　三戸　亮　　　　　　　",
-   "en": "",
+   "en": "        Ryo Mito",
    "max": 32
   },
   {
    "id": "128BD8",
    "jp": "チーフプロデューサー　　　　　",
-   "en": "",
+   "en": "Chief Producers",
    "max": 32
   },
   {
    "id": "128BF8",
    "jp": "　　　　渡辺　浩孝　　　　　　",
-   "en": "",
+   "en": "        Hirotaka Watanabe",
    "max": 32
   },
   {
    "id": "128C18",
    "jp": "　　　　内山　大輔　　　　　　",
-   "en": "",
+   "en": "        Daisuke Uchiyama",
    "max": 32
   },
   {
    "id": "128C38",
    "jp": "エグゼクティブ・プロデューサー",
-   "en": "",
+   "en": "Executive Producers",
    "max": 32
   },
   {
    "id": "128C58",
    "jp": "　　　　鵜之С　伸　　　　　　",
-   "en": "",
+   "en": "        Shin Unozawa",
    "max": 32,
    "pad": 4,
    "notes": "gaiji С=澤"
@@ -434,26 +434,26 @@
   {
    "id": "128C78",
    "jp": "　　　　東海林　隆　　　　　　",
-   "en": "",
+   "en": "        Takashi Shoji",
    "max": 32,
    "pad": 4
   },
   {
    "id": "128C98",
    "jp": "企画・製作　　　　　　　　　　",
-   "en": "",
+   "en": "Planning and Production",
    "max": 32
   },
   {
    "id": "128CB8",
    "jp": "株式会社　バンダイ　　　　　　",
-   "en": "",
+   "en": "BANDAI CO., LTD.",
    "max": 32
   },
   {
    "id": "128CD8",
    "jp": "　　　　　　ビデオゲーム事業部",
-   "en": "",
+   "en": "            Video Game Division",
    "max": 31,
    "pad": 6
   }
