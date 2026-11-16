@@ -13,7 +13,7 @@ Minor items deferred to one polish pass (translation.md §Review). Tick each `[x
 - [ ] 40C600/40C63C, str_menus link-cable texts - layout unverified (needs a link partner).
 - [ ] 129178 "Shiki Pts" (D10): widen the status-screen label OBJ (lr 0x0802EFFD, shows 48 px) and restore "Shiki Points" (50 px).
 - [ ] 12B494 "Healfire" (D10): fine as a coined compound; revisit only if the shikigami header gets more cells.
-- [ ] Battle name tag on the ENEMY side (side 1, e.g. Komaki in battle_win f3603, work/qa/tagq/battle_win/callshot_f3623): the right-hand plate is still 6 columns and tagw centres on x 40 for side 0, so side-1 text sits 8 px right of the plate centre and names over ~40 px clip at the screen edge. Widen the right plate (BG map) leftwards and centre per side.
+- [x] (session 18: vwf.plate_right, right plate 8 columns x 168..231, tag x step 0xB0 -> 0xA0, work/qa/tagr/ez.png) Battle name tag on the ENEMY side (side 1, e.g. Komaki in battle_win f3603, work/qa/tagq/battle_win/callshot_f3623): the right-hand plate is still 6 columns and tagw centres on x 40 for side 0, so side-1 text sits 8 px right of the plate centre and names over ~40 px clip at the screen edge. Widen the right plate (BG map) leftwards and centre per side.
 - [ ] 45C36A - "At the heart of the shikigami realm, the "Sacred Beast Altar", they dwell." reads inverted for Bannai; e.g. "The Kirin clan dwell at the "Sacred{0000}Beast Altar", heart of the shikigami realm." (phase 6 review).
 - [ ] tools/pairs.py - speaker column shows op codes (`036 00XX0001` / `098 00XX0000`, two portrait banks); map them to names before the phase 9 story pass (phase 6 review).
 

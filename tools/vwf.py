@@ -1278,6 +1278,34 @@ def plate_frame(orig, write):
     write(PLATE_CELL_PART2 + 4, hw(0x5000), "speaker plate sprite cell 2 part 2: 8x8 -> 32x8")
 
 
+# The right-hand (enemy side, side 1) plate: raw 30-wide maps whose top row has the plate at cols 23..28. Widened
+# leftwards to cols 21..28 (x 168..231, centre x 200 = the mirror of the left plate's x 40). The bottom border left of
+# it (cols ..22) shifts left by 2, dropping two tiles of a flat run that starts at col FLAT.
+PLATE_R_MAPS = {0x19E0BC: (11, 8, 13), 0x19E530: (10, 48, 49)}  # row start: (FLAT, bottom-left, bottom-right tile)
+TAG_SIDE_STEP = 0x0810F9A4  # movs r2, #0xB0: tag x = 0x20 + side * 0xB0 + (10 - r) * 2 -> step 0xA0 (16 px left)
+
+
+def plate_right(orig, write):
+    """Widen the battle's right-hand speaker plate from 6 to 8 columns (leftwards) and centre the enemy-side name tag
+    on it (docs/re/font.md "Enemy-side tag")."""
+    hw = lambda *v: b"".join(struct.pack("<H", x) for x in v)
+    for row, (flat, bl_, br_) in PLATE_R_MAPS.items():
+        top = struct.unpack_from("<30H", orig, row)
+        bot = struct.unpack_from("<30H", orig, row + 60)
+        assert top[21:30] == (0, 0, 1, 2, 3, 4, 5, 6, 0), f"right plate map {row:06X} moved"
+        assert bot[23:29] == (bl_, 9, 10, 11, 12, br_) and bot[flat] == bot[flat + 1] == bot[flat + 2], \
+            f"right plate map {row:06X} bottom"
+        write(row + 42, hw(1, 2, 3, 4, 5, 5, 5, 6), f"right plate map {row:06X}: top row cols 21..28")
+        new_bot = bot[flat + 2:23] + (bl_, 9, 10, 11, 12, 12, 12, br_)
+        write(row + 60 + flat * 2, hw(*new_bot), f"right plate map {row:06X}: bottom row, border shifted left 2")
+    for i in (48, 49):
+        o = PLATE_GFX + i * 32
+        write(o, _plate_tile(orig[o:o + 32], PLATE_BANDS[1], 0), f"right plate bottom corner tile {i}: banded fill")
+    s = TAG_SIDE_STEP & 0xFFFFFF
+    assert orig[s:s + 2] == bytes.fromhex("b022"), "vwf: tag side step moved"
+    write(s, bytes.fromhex("a022"), "battle name tag side 1: x step 0xB0 -> 0xA0 (centre x 200)")
+
+
 def strip_code(far, widths_addr):
     addr = 0x08000000 | far
     src = STRIP_SRC.format(ncodes=NCODES, widths=0x08000000 | widths_addr, nl=enfont.NEWLINE)
@@ -1394,6 +1422,7 @@ def install(img, write):
     tcode, ttag, ttagw, tmap, tplate, tfill, tpname, tctile, to8 = tag_code(tfar, swt_off)
     write(0x01ED64, plate_patch(tplate), "vwf speaker plate (0x0801EC54 loop -> plate, centred by pixels)")
     plate_frame(orig, write)
+    plate_right(orig, write)
     write(tfar, tcode, "vwf small-font code")
     write(0x110AE8, thunk(0x110AE8, tmap), "vwf smapline thunk (small-font BG labels 0x08110AE8)")
     # the default player name (40C51C) is copied to RAM 0x02010012 as 2 halfwords (2 JP chars): copy 5 (10 bytes,

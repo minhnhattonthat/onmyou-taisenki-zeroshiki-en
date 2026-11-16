@@ -11,6 +11,7 @@ local DELAY = tonumber(rawget(_G, "DELAY") or 20)
 local due
 L.on_frame(function()
   if not due then
+    if AT and L.frame < AT then return end  -- AT=3600: only a showing from that frame on
     for i = 0, 127 do
       local a = 0x07000000 + i * 8
       if (emu.read16(a + 4, M) & 0x3FF) == TILE and (emu.read16(a, M) & 0x300) ~= 0x200 then

@@ -15,6 +15,13 @@
 19DEA2-19DEB9   # plate BG map 1, bottom row
 19E1EA-19E1F9   # plate BG map 2, top row
 19E226-19E23D   # plate BG map 2, bottom row
+# Right-hand (enemy side) plate widened leftwards (vwf.plate_right)
+19E0E6-19E0F5   # right plate map A, top row cols 21..28
+19E10E-19E131   # right plate map A, bottom row cols 11..28
+19E55A-19E569   # right plate map B, top row cols 21..28
+19E580-19E5A5   # right plate map B, bottom row cols 10..28
+17246C-1724AB   # right plate corner tiles 48, 49: banded fill
+10F9A4-10F9A5   # battle name tag side 1 x step 0xB0 -> 0xA0
 3E799C-3E799D   # plate sprite cell 2 part 2 shape 8x8 -> 32x8
 #
 # Code hooks (tools/vwf.py): each one replaces the head of a routine it takes over, or one literal / immediate
