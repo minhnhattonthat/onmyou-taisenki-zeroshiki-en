@@ -125,8 +125,8 @@ Updated at the end of every session. Keep it to what the next session needs; his
   agent type is installed in this harness and the Orca brief forbids helpers: the worker translates itself,
   ~5 batches per session. Extend `docs/synopsis.md` as story batches are read. Line budget is generous (VWF: ~4 px
   a char, 224 px ≈ 50 chars), so don't over-shorten. After b041: reviewer pass (fresh read-only pass or
-  `codex exec`), polish list `docs/polish.md`. Char/shikigami name tables (`str_char_names`, `str_shikigami_names`)
-  are still JP: the speaker plate shows イッセイ etc. until their batch is done.
+  `codex exec`), polish list `docs/polish.md`. `str_shikigami_names` is still JP: the speaker
+  plate shows コゲンタ etc. until its batch is done (`str_char_names` is merged; plate cap now 56 px).
   Translator notes to carry into the briefs: the check wants the exact `{0000}`/`{0010}` counts of the JP and a
   glossary term must not be split across a `{0000}` ("Spirit{0000}Stone Mound" fails); gaiji readings are in the
   entry's `notes` (Р=巫, 巫女 = shrine maiden); str_battle_msgs 40E534 starts with `\n` (code-built weapon/skill
