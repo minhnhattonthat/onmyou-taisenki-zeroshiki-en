@@ -1324,7 +1324,21 @@ def install(img, write):
     write(0x111B70, thunk(0x111B70, tfill), "vwf fill7 thunk (in the replaced routine's body)")
     tag_tiles(orig, write, tfill)
     save_headers(orig, write)
+    plate_names(orig, write)
     return far
+
+
+def plate_names(orig, write):
+    """Speaker plate, shikigami case (a0 != 0): the name came from the RAM copy 0x020027B0 + 16*i, which new game
+    fills with only 5 characters of table 0x0812AEE0[i] (0x080111F4), so "Kogenta" showed as "Kogen". Read the
+    table itself instead (the build repoints it to the English; `plate` treats a 0x08.. address as a ROM string):
+    r6 = [0x0812AEE0 + 4*i] in place of r6 = 0x020027B0 + 16*i. The RAM copy has no other reader (text variables
+    0x0080..0x00C7 occur in no script)."""
+    assert orig[0x1ED5C:0x1ED64] == bytes.fromhex("464631010e480e18"), "vwf: plate name path moved"
+    assert orig[0x1ED9C:0x1EDA0] == struct.pack("<I", 0x020027B0), "vwf: plate name literal moved"
+    write(0x1ED5E, struct.pack("<H", 0x00B1), "vwf plate shikigami name: index*4")  # lsls r1, r6, #2
+    write(0x1ED62, struct.pack("<H", 0x5846), "vwf plate shikigami name: ldr r6, [r0, r1]")
+    write(0x1ED9C, struct.pack("<I", 0x0812AEE0), "vwf plate shikigami name: table 0x0812AEE0 (was RAM)")
 
 
 # Save / Load screen headers (str_save 127968 記録, 127970 読込み): one 16x16 OBJ per JP char, spaced 36 px apart

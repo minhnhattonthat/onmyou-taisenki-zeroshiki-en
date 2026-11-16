@@ -2,8 +2,8 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 7. Insert, fit, check: not started (phase 6 done 2026-11-16, session 16). Last build 2026-11-16
-  (session 16): `build.py` sha1 cc8d331a…, smoke ok, check ok.
+- **Phase:** 7. Insert, fit, check: in progress (session 17: ROM gate + lint green; size-8 OBJ overflows and the
+  enemy-side tag left, see Next). Last build 2026-11-16 (session 17): see the last commit message for sha1/smoke.
 - **Done:**
   - Step 0: ROM pinned (`rom.sha1`), MesenCE 2.2.1 + GBA BIOS in `tools/mesen/`, guard hook in `.claude/settings.json`
     (canary blocked), pre-commit runs `tools/check.py` (a failing test was rejected), boot route `tools/routes/boot.txt`
@@ -134,24 +134,39 @@ Updated at the end of every session. Keep it to what the next session needs; his
     88 Important (D1 honorifics on titles, 交替 = swap, weapon/item names, flattened old-man/courtly/bratty voices);
     all fixed as batch `tl/b042` (merged `--overwrite`), re-review of b042: Approved, 0 C/I. 113 Minors appended
     to `docs/polish.md`. Glossary "Reviewer pass" row.
+  - Phase 7 session 17 (2026-11-16): phase 6 review fixed first (D11 title honorifics: 宗家さま "Grand
+    Master-sama", 闘神士様 "Tojinshi-sama", 9 lines as `tl/b043`; glossary rows enforce them, `batches.py has_term`
+    matches mixed kanji+kana terms before particles; shikigami names table in the glossary; ベエ = "-bee").
+    **ROM gate** `tools/romgate.py` + `tbl/allowed_ranges.txt` + `tests/test_romgate.py` (in check.py): skill
+    romdiff with the write log, text writes only in their own room / on extractor pointer words (and pointing at
+    the new home), every other write inside an allowed range, no branch or literal into a `code` hook span
+    (`dead=` exemptions for replaced routines). **Lint: 0 errors, 0 guessed budgets** (key-item bar measured,
+    scene `menu_keyitem`; link window measured by its twin, the battle window; `{00C8}` budget = 80 px, worst-case
+    5 kana, 0 overflows). Engine: Save/Load headers drawn contiguous (OBJ x step 36 → 16, was "Loa  d";
+    `vwf.save_headers`); speaker plate reads shikigami names from ROM table 0x0812AEE0 (was the 5-char RAM copy;
+    `vwf.plate_names`; "Kogenta" verified in work/qa/pname). New scenes `title_load`, `menu_keyitem`
+    (`link_connect` can't reach the link option: lands on Load). `oamall.lua --var AT=frame`. 【ability】
+    message checked: 64-byte buffers, longest "[Magnetic Burst Stream]" 23 chars, battle box: fine.
 - **Next (phase 7: insert, fit, check; done-when: width/overflow lint clean, control codes matched, `romdiff.py`
-  shows no writes outside allowed ranges):**
-  1. **romdiff gate**: run `tools/romdiff.py` on the built ROM with the build's write log and an allowed-ranges list
-     (script regions, string tables, 0x800000+ relocation space, VWF/engine hooks); add it to `check.py` or the build.
+  shows no writes outside allowed ranges). Lint and gate are green, but these overflows are outside the lint's
+  model and must be fixed before phase 7 is called done:**
+  1. **OBJ cells size 8** (small font, fixed cells; plan + call-site table in docs/re/font.md "OBJ cells size 8"):
+     shikigami page header "Choose shikigami" overflows into the bottom bar; party card names clip at 5 tiles and
+     show HP digits ("Kogen 29"); 12 names > 40 px. Then add those fields to `tbl/windows.json` so the lint sees
+     them, and identify caller 0x08035B26.
   2. **Enemy-side battle tag** (docs/polish.md): side 1 sits 8 px right of its 6-column right-hand plate and clips
      past ~40 px (Komaki, battle_win f3603). Widen that plate's BG map leftwards and centre per side (tagw only
      sees the string; the side is r4 at 0x0810F9A0). Also still unverified: 129064 column header row (positions).
-  3. Lint warnings: 40 entries are checked against a *guessed* budget (`tbl/windows.json` guess variants): measure them.
-  4. Engine items below.
+  3. Then a full `warp_all.py` tour of the English build and a look at every sheet for other fixed-cell overflows
+     (party card labels 攻/妖 are graphics: phase 8).
   Translator notes to carry into the briefs: the check wants the exact `{0000}`/`{0010}` counts of the JP and a
   glossary term must not be split across a `{0000}` ("Spirit{0000}Stone Mound" fails); gaiji readings are in the
   entry's `notes` (Р=巫, 巫女 = shrine maiden); str_battle_msgs 40E534 starts with `\n` (code-built weapon/skill
   message); str_abilities rows split with `\n` (224 + 224 px); default name 40C51C ≤ 4 letters; keep_jp files
   (str_battle_kanji, str_debug_menu, str_battle_help, name-entry grid rows) stay empty.
-  Engine items still open (needed by phase 7 at the latest): widen the 5-cell shikigami-name RAM copy
-  (text.md "Shikigami name variables": "Kogenta" is 7 letters); player-name width `vars.00C8` (45 px now; the
-  kana tabs allow 5 × 16 = 80 px JP names); name-entry cursor still at 16 px × length (cosmetic); 0x08014098
-  size-8 mode still original fixed cells; code-built `【ability】` message (0x08112642).
+  Engine items still open: name-entry cursor still at 16 px × length (cosmetic). The 5-char RAM name copy
+  (0x020027B0 + 16i) now has no reader that shows English (plate reads ROM; text variables 0x0080..0x00C7 occur
+  in no script).
   (EWRAM 0x0203FF00, the VWF state, is never read by the original game: safe.)
 - **Known limits of the warp:** event scenes run over map 23 (the house) unless the script changes map itself
   (`map=` per scene overrides); which map normally hosts each event is not mapped yet (NPCs come from `/116`

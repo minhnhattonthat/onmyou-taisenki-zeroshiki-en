@@ -138,6 +138,21 @@ Only three code paths read the 16×16 font:
 | — | caller 0x08110C88 (same args): ≤ 28 bytes → one row, else 28 bytes + rest copied into a 60-byte stack buffer → 2 rows | | replaced (`twoline`): row = up to newline code 0x81AD or 224 px, bounded buffer, row 2 continues, rest dropped. A long English row overran the original's stack buffer and garbled VRAM. Verified tutorial_battle, battle_forest |
 Fixed-cell texts not in this list: status digits (number drawer, above), and the small font (below).
 
+### OBJ cells size 8 (small font, original fixed cells) — open (phase 7, session 17)
+0x08014098(str, tile idx, size, flag, [sp] max): size ≠ 16 runs the original: one small-font glyph per char into
+OBJ tile (idx + n) & 0x3FF (1D), flag ≠ 0 = RAM string (native halfwords), returns chars drawn (no size-8 caller
+uses the return). Every `movs r2, #8` caller (scratch scan of BLs to 0x08014098):
+| call | string | field |
+|---|---|---|
+| 0x08030C7C | 1292CC "Swap" (いれかえ, 4 cells) | fits by char count |
+| 0x08035216 | 1292D8 "Choose shikigami" (しきがみせんたく, 8 cells = 64 px) | shikigami page header between the L/R icons: overflows, "hikig" spills into the bottom bar (work/qa/s8/z.png). Needs VWF (70 px small; "Pick shikigami" 56 px) |
+| 0x08033314, 0x080343A8, 0x08034672 | table 0x0812AEE0[i] (shikigami names, ROM) | 0x08033314 (or one of them) = party card name: tiles 0x1E0..0x1E4 (5 tiles, 40 px); HP digits start at 0x1E5 and the row's sprites are chosen by the name's char count (7 chars → two 32x8 sprites over 0x1E0..0x1E7), so "Kogenta" shows as "Kogen" + HP digits "29" (work/qa/s8jp/z.png JP vs EN). 12 English names are > 40 px in the small font (Tsuiga White 53, Tsuruyakko 50, ...) |
+| 0x08035B26 | stack table of strings | not identified yet |
+Plan: callers pass size `0x20 | cap tiles`; a dispatcher in the tag blob (`TAG_SRC`, has `splot`) sends bit-5 sizes to
+splot(str, 0x06010000 + (idx & 0x3FF)·32, cap, cap·8) and everything else to the strip blob's `menu`; then make the
+party-card sprite count follow the pixel width (find the composer after 0x08033314), and decide the 12 long names
+(widen the field or shorter forms).
+
 ### Small font (resource type 12) and the battle name tag
 Lookup 0x080059A0(12, sjis + 0x7EC0): the resource table 0x08403DA4 (type·8 = index ptr, entries ptr) gives index
 0x3E12FA (0x260 codes, 0x8140..0x839F) and entries 0x3E7ABC; glyph = 32 bytes (one 8x8 4bpp tile, body F, drop

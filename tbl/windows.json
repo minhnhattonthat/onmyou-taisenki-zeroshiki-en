@@ -1,7 +1,7 @@
 {
   "about": "Width gate: box variants and which entries they draw. Read by tools/windows.py (marker.py, lint.py). px = line budget in px of the variant's font (big = enfont VWF, small = ensmall); \"jp\" = the JP's own cell width (16 px a JP char big, 8 small; pad strings: pad chars). lines 0 = the JP's own line count. last_px = budget of a page's last line (dialogue: wait orb); row_px = budget per row of the box (row 2+ uses the last). status measured = a stress line exactly px wide was seen whole in the named shot. Renderer map from tools/debug/drawcalls.lua (work/qa/dc/drawmap.tsv).",
   "vars": {
-    "00C8": 45,
+    "00C8": 80,
     "00CB": 24,
     "00CC": 24
   },

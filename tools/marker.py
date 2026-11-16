@@ -48,7 +48,8 @@ def script_marker(eid, jp):
             continue
         codes = CODE.findall(part)
         last = i + 1 >= len(parts) or parts[i + 1] == "{0010}"  # last line of a page: the wait orb takes x 226..
-        text = fill(f"[{eid}] " if first else "", dlg["last_px" if last else "px"] - 64 * len(codes))
+        var_px = sum(windows.data().get("vars", {}).get(c.strip("{}").upper(), 64) for c in codes)  # as lint.var_px
+        text = fill(f"[{eid}] " if first else "", dlg["last_px" if last else "px"] - var_px)
         first = False
         out.append(text + "".join(codes))
     return "".join(out)

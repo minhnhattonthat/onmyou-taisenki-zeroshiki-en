@@ -24,6 +24,9 @@
 002FFE-003027   # code: x/y from VWF state
 014098-0140A7   # code: strip thunk: OBJ menu cells 0x08014098
 014526-014529   # string drawer -> thunk
+01ED5E-01ED5F   # plate shikigami name: lsls r1, r6, #2 (vwf.plate_names)
+01ED62-01ED63   # plate shikigami name: ldr r6, [r0, r1]
+01ED9C-01ED9F   # plate shikigami name literal: RAM 0x020027B0 -> ROM table 0x0812AEE0
 01ED64-01ED83   # code: speaker plate loop 0x0801EC54 -> plate (pixel centring); dead=01ED64-01EE29 (the replaced 5-tile loop: its back-edge 0x0801EE28) dead=01ECE6-01ECFF (literal pool after `b 0x0801EE74`, decodes as a branch)
 0235D4-0235E3   # code: strip thunk: intro scroll
 023E3C-023E4B   # code: strip thunk: credits
