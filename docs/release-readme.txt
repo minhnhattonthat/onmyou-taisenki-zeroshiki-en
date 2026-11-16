@@ -26,12 +26,12 @@ What is translated
 ------------------
 - Story, all event dialogue, NPCs, shikigami contract scenes, tutorial: English.
 - Menus, items, skills, shikigami names and kinds, battle messages and quotes, save screen, area names: English.
-- Graphics with text: menu buttons, battle banners and plates, the Drive wheel, shop signs, super-move cut-in
-  names: redrawn in English.
+- Graphics with text: the title logo, menu buttons, battle banners and plates, the Drive wheel, shop signs,
+  super-move cut-in names: redrawn in English.
 - Name entry: an English (ABC) tab next to the kana grid; the player's default name is Riku.
 - Staff credits: English.
-- Left in Japanese on purpose: the title logo (there is no official English logo), the title screen's copyright
-  notice, the kana sound effects drawn over battle hits, and the kana tab of the name-entry grid.
+- Left in Japanese on purpose: the title screen's copyright notice, the kana sound effects drawn over battle
+  hits, and the kana tab of the name-entry grid.
 
 Known issues
 ------------

@@ -15,8 +15,8 @@ helps most.
 |---|---|
 | Dialogue / story (events, NPCs, shikigami contract scenes, tutorial) | Translated |
 | Menus, items, skills, shikigami names and kinds, battle messages and quotes, save screen, area names | Translated |
-| Graphics with text (menu buttons, battle banners and plates, Drive wheel, shop signs, super-move cut-in names) | Translated (redrawn) |
-| Title logo, title-screen copyright notice, kana sound effects over battle hits | Left in Japanese on purpose ([decisions](docs/decisions.md) D5, D12) |
+| Graphics with text (title logo, menu buttons, battle banners and plates, Drive wheel, shop signs, super-move cut-in names) | Translated (redrawn) |
+| Title-screen copyright notice, kana sound effects over battle hits | Left in Japanese on purpose ([decisions](docs/decisions.md) D12) |
 | Name entry | English ABC tab added; the kana tab stays; default name Riku |
 | Staff credits | Translated |
 
