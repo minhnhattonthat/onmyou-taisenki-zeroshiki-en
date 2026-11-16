@@ -67,10 +67,12 @@ local function reached(what)
   if S.opt.press and S.kind ~= "boot" then queue_route(S.opt.press) end
 end
 
--- poke=ADDR:VAL[,ADDR:VAL]: u16 writes for 10 frames once the scene is reached (battle_lose: player HP = 1)
+-- poke=ADDR:VAL[,ADDR:VAL]: u16 writes for 10 frames once the scene is reached (battle_lose: player HP = 1);
+-- poke_after=N starts them N frames later instead (after the press route has opened a menu that rebuilds RAM)
 if S.opt.poke then
+  local after = tonumber(S.opt.poke_after or 0)
   L.on_frame(function(f)
-    if reached_at and f - reached_at < 10 then
+    if reached_at and f - reached_at >= after and f - reached_at < after + 10 then
       for a, v in S.opt.poke:gmatch("(0x%x+):(%d+)") do emu.write16(tonumber(a), tonumber(v), M) end
     end
   end)

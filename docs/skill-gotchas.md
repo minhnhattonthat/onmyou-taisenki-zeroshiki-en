@@ -33,3 +33,5 @@ One line per gotcha: the reference file it belongs in, then the fact.
 - emulator-qa.md: a menu option that needs a save or link partner can't be warped to by input; measure its box by finding a twin call (same window-open arguments) whose box was measured.
 - graphics.md / platform-gba.md: widening a sprite cell (OAM shape in the game's cell table) widens every sprite that uses that cell. The speaker-plate cell was shared with the party-card name row, whose 5 tiles were followed by HP digit tiles: the "Kogen 29" bug blamed on char-count layout was this. Before widening a cell, list every sprite create that uses it; give each its own tiles (vramfree.lua finds free ones).
 - platform-gba.md: an English font with a 1 px outline colour shows that colour as a solid box where an OBJ palette maps it to black and the JP glyphs had no outline; strip the outline index in that renderer path.
+- platform-gba.md: keystone assembles Thumb `nop` as the Thumb-2 hint 0xBF00, which the GBA's ARM7TDMI can't run; write `mov r8, r8` (0x46C0) for padding.
+- emulator-qa.md: emu.py `--var AT=3500` arrives in Lua as a number, so `AT:gmatch` errors; wrap such vars in `tostring()`.

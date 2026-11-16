@@ -40,6 +40,7 @@ menu_shiki_p2  field 23  flags=0,1,2,21,22,23,24,28 press=6:start|300:-|6:right|
 menu_shiki_p1  field 23  flags=0,1,2,21,22,23,24,28 press=6:start|300:-|6:right|30:-|6:right|30:-|6:a|200:-|6:left|120:-|6:left|120:-|6:left|120:-|6:left|120:- mash=0 hold=1
 menu_map       field 23  flags=0,1,2,21,22,23,24,28 press=6:start|300:-|6:left|30:-|6:a|200:-    mash=0 hold=1
 menu_party     field 23  flags=0,1,2,21,22,23,24,28 press=6:start|300:-|6:left|30:-|6:left|30:-|6:a|200:- mash=0 hold=1
+menu_party_swap field 23  flags=0,1,2,21,22,23,24,28 press=6:start|300:-|6:left|30:-|6:left|30:-|6:a|200:-|6:a|200:-|6:down|60:-|6:down|60:- poke=0x02007BDC:3,0x0200273C:256,0x0200273E:65282 poke_after=600 mash=0 hold=1
 shikigami_talk field 23  flags=0,1,2,21,22,23,24,28 press=6:l|200:-                             mash=0 hold=1
 
 # --- battles

@@ -783,7 +783,7 @@
    "script": "4478A8",
    "op": "098 00150000",
    "jp": "何、めんどくせェこと{0000}言ってんだ！{0010}さっさと、やっつけちまおうぜ{0000}{00C8}{0010}",
-   "en": "Quit spoutin' that{0000}complicated junk!{0010}Let's just hurry up and beat him,{0000}{00C8}.{0010}"
+   "en": "Quit spoutin' that{0000}complicated junk!{0010}Let's just hurry up and{0000}beat him, {00C8}.{0010}"
   },
   {
    "id": "447A5C",

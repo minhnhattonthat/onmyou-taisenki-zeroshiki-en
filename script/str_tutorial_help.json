@@ -4,35 +4,35 @@
   {
    "id": "410AE4",
    "jp": "　　　　　　　【交替】　　　　　　　　　　式神を交替",
-   "en": "[Swap]\nSwap shikigami",
+   "en": "                        [Swap]\nSwap shikigami",
    "max": 56,
    "pad": 7
   },
   {
    "id": "410B1C",
    "jp": "　　　　　　　【一覧】　　　　　　　　　　式神の情報表示",
-   "en": "[List]\nShow shikigami info",
+   "en": "                         [List]\nShow shikigami info",
    "max": 60,
    "pad": 7
   },
   {
    "id": "410B58",
    "jp": "　　　　　　　【逃げる】　　　　　　　　　戦闘から逃げる",
-   "en": "[Run]\nRun from battle",
+   "en": "                         [Run]\nRun from battle",
    "max": 60,
    "pad": 7
   },
   {
    "id": "410B94",
    "jp": "　　　　　　　【防御】　　　　　　　　　　防御し式点蓄積",
-   "en": "[Guard]\nGuard, build Shiki Points",
+   "en": "                        [Guard]\nGuard, build Shiki Points",
    "max": 60,
    "pad": 7
   },
   {
    "id": "410BD0",
    "jp": "　　　　　　　【攻撃】　　　　　　　　　　式神へ攻撃指示",
-   "en": "[Attack]\nOrder shikigami to attack",
+   "en": "                       [Attack]\nOrder shikigami to attack",
    "max": 60,
    "pad": 7
   },

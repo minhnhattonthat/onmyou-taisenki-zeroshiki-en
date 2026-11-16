@@ -1,0 +1,7 @@
+40D7A8 battle message after a shikigami name: the JP blank separates name and chant, the English starts with ", "
+40C600 link window: the JP pads 17 blanks to reach row 2, the English uses \n plus spaces (same row, centred)
+40C63C link window: the JP pads 23 blanks to reach row 2, the English uses \n plus spaces (same row, centred)
+134388 battle quote: trailing pad at the end of the message, nothing is drawn after it
+135C38 battle quote: the JP wraps by blank padding and ends on a pad, the English wraps with \n
+135D70 battle quote: the JP wraps by blank padding and ends on a pad, the English wraps with \n
+129064 shikigami list column headers: the JP's last cell is an empty pad after 勝敗, the English row ends at W/L

@@ -1,0 +1,28 @@
+43DD78 the line is the player's name on its own, as in the JP ("...Sotaro's / {name}!")
+445CBC separate interjection "Hmmm?" (JP ンンン？ on its own line)
+44C3B8 separate interjection "Hmph!" (JP フン！ on its own line)
+44E0A6 separate question "Why?" (JP なぜです？ on its own line)
+44E854 separate exclamation "!!" (JP ！！ on its own line)
+451298 trailing-off "I..." (JP オレは・・・ on its own line)
+45F642 trailing-off "I..." (JP 俺は・・・ on its own line)
+4609A2 separate exclamation "Oh!" (JP あ！ on its own line)
+460F58 a silent "..." beat (JP ・・・ on its own line)
+13AC58 ability: multiplier on row 2, as the JP lays out its value column
+13AC7C ability: multiplier on row 2, as the JP lays out its value column
+13ACA4 ability: multiplier on row 2, as the JP lays out its value column
+13ACC8 ability: multiplier on row 2, as the JP lays out its value column
+13AD60 ability: multiplier on row 2, as the JP lays out its value column
+13AD84 ability: multiplier on row 2, as the JP lays out its value column
+13ADAC ability: multiplier on row 2, as the JP lays out its value column
+13ADD0 ability: multiplier on row 2, as the JP lays out its value column
+13ADF8 ability: multiplier on row 2, as the JP lays out its value column
+13AE1C ability: multiplier on row 2, as the JP lays out its value column
+13AE44 ability: multiplier on row 2, as the JP lays out its value column
+13AE68 ability: multiplier on row 2, as the JP lays out its value column
+13AF38 ability: multiplier on row 2, as the JP lays out its value column
+13AF60 ability: multiplier on row 2, as the JP lays out its value column
+13AF88 ability: multiplier on row 2, as the JP lays out its value column
+13AFB0 ability: multiplier on row 2, as the JP lays out its value column
+13AFD8 ability: multiplier on row 2, as the JP lays out its value column
+13B000 ability: multiplier on row 2, as the JP lays out its value column
+13B028 ability: multiplier on row 2, as the JP lays out its value column
