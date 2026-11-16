@@ -419,7 +419,7 @@ menu:
     cmp r2, #16
     bne morig
     cmp r3, #0
-    bne morig
+    bne mram
     push {{lr}}
     lsls r1, r1, #22
     lsrs r1, r1, #17
@@ -429,6 +429,69 @@ menu:
     bl line
     adds r0, #15
     lsrs r0, r0, #4
+    pop {{r1}}
+    bx r1
+@ flag != 0: a RAM string (native halfwords, e.g. the player name on the status page, was drawn "R i k u"):
+@ copy <= 16 codes byte-swapped to the stack, then as above, then drop the outline (colour E: black in this OBJ's
+@ palette, and the JP glyphs had none) from the plotted cells.
+mram:
+    push {{r4, r5, r6, lr}}
+    sub sp, #36
+    mov r4, sp
+    movs r2, #0
+mr_cp:
+    ldrh r3, [r0, r2]
+    cmp r3, #0
+    beq mr_end
+    lsrs r5, r3, #8
+    lsls r3, r3, #24
+    lsrs r3, r3, #16
+    orrs r3, r5
+    strh r3, [r4, r2]
+    adds r2, #2
+    cmp r2, #32
+    blt mr_cp
+mr_end:
+    movs r3, #0
+    strh r3, [r4, r2]
+    adds r0, r4, #0
+    lsls r1, r1, #22
+    lsrs r1, r1, #17
+    ldr r3, objvram
+    adds r1, r1, r3
+    adds r4, r1, #0
+    movs r2, #0
+    bl line
+    adds r0, #15
+    lsrs r0, r0, #4
+    adds r5, r0, #0
+    lsls r2, r0, #6
+mr_e:
+    cmp r2, #0
+    beq mr_done
+    ldrh r0, [r4]
+    movs r3, #0
+mr_n:
+    adds r1, r0, #0
+    lsrs r1, r3
+    movs r6, #15
+    ands r1, r6
+    cmp r1, #14
+    bne mr_k
+    lsls r6, r3
+    bics r0, r6
+mr_k:
+    adds r3, #4
+    cmp r3, #16
+    blt mr_n
+    strh r0, [r4]
+    adds r4, #2
+    subs r2, #1
+    b mr_e
+mr_done:
+    adds r0, r5, #0
+    add sp, #36
+    pop {{r4, r5, r6}}
     pop {{r1}}
     bx r1
 morig:

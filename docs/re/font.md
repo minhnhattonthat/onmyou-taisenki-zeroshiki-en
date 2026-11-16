@@ -138,7 +138,24 @@ Only three code paths read the 16×16 font:
 | — | caller 0x08110C88 (same args): ≤ 28 bytes → one row, else 28 bytes + rest copied into a 60-byte stack buffer → 2 rows | | replaced (`twoline`): row = up to newline code 0x81AD or 224 px, bounded buffer, row 2 continues, rest dropped. A long English row overran the original's stack buffer and garbled VRAM. Verified tutorial_battle, battle_forest |
 Fixed-cell texts not in this list: status digits (number drawer, above), and the small font (below).
 
-### OBJ cells size 8 (small font, original fixed cells) — open (phase 7, session 17)
+### OBJ cells size 8 — done (phase 7, session 18: `vwf.obj8_patch`, shots work/qa/o8/)
+- **Cause of "Kogen 29"**: the party card's name sprite uses sprite cell 2, the same cell as the dialogue speaker
+  plate, which `plate_frame` widened to 32x8 + 32x8. A card owns only 5 name tiles (0x1E0 + 15k; HP digits from
+  0x1E5), so the 64 px sprite showed the HP digit tiles. Sprite create 0x08030438 (r8 = 15k), name draw
+  0x0803437A (r5 = k), card 4 (lone centred card) literals 0x08030794 / 0x080347C0 (tile 0x20D).
+- **Fix**: names get 8 own tiles at 0x3C0 + 8k (card 4: 0x3D8). `tools/debug/vramfree.lua` over all 53 scenes
+  (work/qa/vfall): 0x3C0..0x3DF hold pixels only in battles, which load their own OBJ tiles; the field uses tiles
+  < 0xB0, the menus 0..0x3F and 0x190..0x20C. `ctile` (bl at 0x0803043E) gives the sprite its tile and on card 0
+  clears all 32 tiles; `pname` (bl at 0x080343A8 / 0x08034672) plots the name, 64 px cap (the row is x 20..84).
+- **Labels** (`o8`, `vwf.O8_CALLS`: the call's `movs r3, #0` becomes the cap in tiles): page header 1292D8 (8 OBJs
+  x 92..155, "Pick shikigami" 56 px), page labels table 0x08129328 at tile 0x186 (one fixed 5-OBJ sprite x 112..151
+  on every page: 40 px), party Swap 1292CC (4 tiles at 0x2EE; not seen in a shot yet). Centred in the cap.
+  `splot` r3 = max px | start x << 16. Lint variants `obj8_cells` / `obj8_label`.
+- Not reached yet: 0x08033314 (names at tile 0x21C + 5k, sprite create 0x08030AEC, x 196, y 8 + 16k: a 3-entry
+  list, probably needs ≥ 2 shikigami; callers of 0x0803324C at 0x08031432/0x080314A6/0x080316E2). If it shares
+  cell 2 it will show 3 tiles of the next entry: check when a scene reaches it.
+
+Original notes:
 0x08014098(str, tile idx, size, flag, [sp] max): size ≠ 16 runs the original: one small-font glyph per char into
 OBJ tile (idx + n) & 0x3FF (1D), flag ≠ 0 = RAM string (native halfwords), returns chars drawn (no size-8 caller
 uses the return). Every `movs r2, #8` caller (scratch scan of BLs to 0x08014098):
@@ -166,7 +183,12 @@ centred by bytes, 8 px a char. Patch (`vwf.py` TAG_SRC, small art `tools/ensmall
 (VWF in the small font, clipped to 40 px), 0x0810F98A bl → `tagw` at 0x08111B60 (the dead routine body):
 (pixel width capped at 40, + 2) / 4, so (10 − r)·2 centres by pixels (Japanese: 8 px a char gives the byte count
 back). Verified battle_forest "Kogenta", tutorial_battle "Ryuuko" (`build.py --qa`, `work/qa/tag2/z.png`).
-**Tag budget: 40 px of `ensmall` width.**
+**Tag budget: 40 px of `ensmall` width.** (Later 56 px: tag_tiles, session 15.)
+**Enemy-side tag** (session 18, `vwf.plate_right`): x = 0x20 + side·0xB0 + (10 − r)·2 at 0x0810F9A4; the
+right-hand plate is in raw 30-wide maps 0x19E0BC (bottom corners 8/13) and 0x19E530 (battle; corners 48/49 = BG
+tiles 0x170/0x171), top row cols 23..28. Widened to cols 21..28 (x 168..231, centre 200, mirror of the left plate),
+the bottom border left of it shifted 2 columns left (two tiles of a flat run dropped), step 0xB0 → 0xA0.
+Verified "Komaki" in battle_win (work/qa/tagr/ez.png). Map 0x19E0BC (non-battle right plate) not seen in a shot.
 **0x08110AE8** (BG labels, 10 callers) → `smapline`: n = ceil(small width / 8) tiles at dest, plotted by the shared
 `splot`, map entries for those n tiles, returns dest + 32n. The original wrote one tile per char with no limit, so
 a long string overwrote the BG tiles after dest (the marker build showed "hchc…" and "quick" fragments around the

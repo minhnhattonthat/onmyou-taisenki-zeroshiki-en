@@ -2,8 +2,8 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 7. Insert, fit, check: in progress (session 17: ROM gate + lint green; size-8 OBJ overflows and the
-  enemy-side tag left, see Next). Last build 2026-11-16 (session 17): see the last commit message for sha1/smoke.
+- **Phase:** 8. QA in the emulator: next (phase 7 done in session 18: lint 0 errors, control codes matched, ROM gate
+  green, the known fixed-cell overflows fixed). Last build 2026-11-16 (session 18): sha1 2ce0c9bd…, smoke ok.
 - **Done:**
   - Step 0: ROM pinned (`rom.sha1`), MesenCE 2.2.1 + GBA BIOS in `tools/mesen/`, guard hook in `.claude/settings.json`
     (canary blocked), pre-commit runs `tools/check.py` (a failing test was rejected), boot route `tools/routes/boot.txt`
@@ -147,18 +147,21 @@ Updated at the end of every session. Keep it to what the next session needs; his
     `vwf.plate_names`; "Kogenta" verified in work/qa/pname). New scenes `title_load`, `menu_keyitem`
     (`link_connect` can't reach the link option: lands on Load). `oamall.lua --var AT=frame`. 【ability】
     message checked: 64-byte buffers, longest "[Magnetic Burst Stream]" 23 chars, battle box: fine.
-- **Next (phase 7: insert, fit, check; done-when: width/overflow lint clean, control codes matched, `romdiff.py`
-  shows no writes outside allowed ranges). Lint and gate are green, but these overflows are outside the lint's
-  model and must be fixed before phase 7 is called done:**
-  1. **OBJ cells size 8** (small font, fixed cells; plan + call-site table in docs/re/font.md "OBJ cells size 8"):
-     shikigami page header "Choose shikigami" overflows into the bottom bar; party card names clip at 5 tiles and
-     show HP digits ("Kogen 29"); 12 names > 40 px. Then add those fields to `tbl/windows.json` so the lint sees
-     them, and identify caller 0x08035B26.
-  2. **Enemy-side battle tag** (docs/polish.md): side 1 sits 8 px right of its 6-column right-hand plate and clips
-     past ~40 px (Komaki, battle_win f3603). Widen that plate's BG map leftwards and centre per side (tagw only
-     sees the string; the side is r4 at 0x0810F9A0). Also still unverified: 129064 column header row (positions).
-  3. Then a full `warp_all.py` tour of the English build and a look at every sheet for other fixed-cell overflows
-     (party card labels 攻/妖 are graphics: phase 8).
+  - Phase 7 done (2026-11-16, session 18): **party-card names** were "Kogen" + HP digits because sprite cell 2 is
+    shared with the widened speaker plate: names now on own OBJ tiles 0x3C0 + 8k (free outside battles, proven by
+    `vramfree.lua` over all 53 scenes), VWF 64 px (`vwf.obj8_patch`, pname/ctile). **Size-8 labels** (page header
+    → "Pick shikigami", page labels, Swap) → centred small VWF (`o8`); lint variants `obj8_cells`/`obj8_label`.
+    **Enemy-side tag**: right plate widened leftwards to 8 columns, tag centred on x 200 (`vwf.plate_right`).
+    **RAM-string OBJ labels** (status page player name was "R i k u") → VWF with the outline dropped (`menu`
+    → `mram`). Full tour `work/qa/tour7` 53/53. Probes: `valwatch.lua FROM=`, `bgdump.lua AT=`. Details
+    docs/re/font.md "OBJ cells size 8", "Enemy-side tag".
+- **Next (phase 8: QA in the emulator; done-when in the skill's table):** qa_gate manifest over the tour sheets
+  (`work/qa/tour7` or a fresh tour) with a fresh read-only verdict pass per sheet; graphics-text rows from the
+  phase-1 survey (G1..G13: party card labels 攻/妖, HP, NEXT Lv, battle wheel, chapter cards, game over, credits)
+  redrawn in English and checked in zoomed cold-boot shots; `inkbox.py` on choice/centred boxes; `textcover.py`.
+  Still unseen in a shot (add scenes for them): the 3-entry name list at tile 0x21C (0x08033314, needs ≥ 2
+  shikigami; may show 3 tiles of the next entry if it shares sprite cell 2), the party Swap label, the
+  non-battle right speaker plate (map 0x19E0BC), the 129064 column header row.
   Translator notes to carry into the briefs: the check wants the exact `{0000}`/`{0010}` counts of the JP and a
   glossary term must not be split across a `{0000}` ("Spirit{0000}Stone Mound" fails); gaiji readings are in the
   entry's `notes` (Р=巫, 巫女 = shrine maiden); str_battle_msgs 40E534 starts with `\n` (code-built weapon/skill
