@@ -634,4 +634,5 @@
 13AF88	unused: ability 5 (row 4 of table 0x0813AB90, only reader 0x08036330) belongs to no shikigami: the per-shikigami ability table 0x0813B04E (76 ids) never holds 5
 41401C	unused: speaker-plate index 38 occurs only on op 094/098 lines, which call the plate 0x0801EC54 with a0=1 (shikigami-name path); the ROM name table 0x0841392C (only reader 0x0801ED44) is read only on the a0=0 path (probe: script 1756 logs a0=1 r1=0x24)
 414028	unused: speaker-plate index 36 occurs only on op 094/098 lines (a0=1 path), never with the ROM name table (see 41401C)
+413FD0	unused: speaker-plate indices 50..53 (its 4 pointers) occur only on op 098 lines (a0=1 path: 098 0051/0053 in the scripts), never with the ROM name table (see 41401C)
 4140F8	player name: table entries 0/11/19 (Riku's portraits) show the player's chosen name from RAM 0x020025AE instead (op 036 xxxx0001 lines in script 703 call the plate with index 0)

@@ -2,9 +2,10 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator in progress (session 29: visual-QA gate, inkbox and graphics rows done; only the
-  text-coverage gate is left (306 failing): Next 0. String layout still identical to 8a6054e7 (build/strings.tsv =
-  work/strings_8a6054e7.tsv), so every coverage log under work/qa/cover counts).
+- **Phase:** 9. Release next (phase 8 done session 30: text-coverage gate `cover.py report` exits 0, 4811 shown /
+  374 waived / 0 failing; visual-QA gate, graphics rows, inkbox done session 29; smoke ok on build 024ba050).
+  String layout still identical to 8a6054e7 (build/strings.tsv = work/strings_8a6054e7.tsv): any rebuild that moves
+  strings means re-running the coverage runners (Next 2 recipe) before the release gate.
 - **Done:**
   - Step 0: ROM pinned (`rom.sha1`), MesenCE 2.2.1 + GBA BIOS in `tools/mesen/`, guard hook in `.claude/settings.json`
     (canary blocked), pre-commit runs `tools/check.py` (a failing test was rejected), boot route `tools/routes/boot.txt`
@@ -276,13 +277,17 @@ Updated at the end of every session. Keep it to what the next session needs; his
     Yes/No checked session 20; field ring labels are alpha-blended on striped art (vqa ok). New
     `tools/debug/cover_extra.py` re-runs credits, key items, misc, seal2, wheelhelp, viewfoe_0x4C/0x4B (all done
     this session from tour13/st states). quotejobs done (8 jobs, all ok).
-- **Next (phase 8: QA in the emulator; done-when in the skill's table):**
-  0. **Text coverage gate (the last phase-8 item)**: `cover.py report` = 306 failing. labeljobs was stopped
-     part-way (Claude Code killed the run for low system memory: use `--jobs 4`, not 10, and don't run tours beside
-     it); talkjobs and msgjobs never ran. The runners read **work/qa/cover/report.txt**, which `cover.py report`
-     does NOT write itself: run `python -X utf8 tools/debug/cover.py report > work/qa/cover/report.txt` before each
-     of `labeljobs.py --jobs 4`, `talkjobs.py --jobs 4`, `msgjobs.py --jobs 4`, then the report once more: exit 0 →
-     phase 8 done (set Phase to 9).
+  - Session 30 (phase 8 done): coverage runners on build 024ba050 (layout 8a6054e7), one at a time with `--jobs 4`,
+    `cover.py report > work/qa/cover/report.txt` before each: labeljobs 142/142 (306 → 164), talkjobs 55/55 (→ 109),
+    msgjobs 50 messages (→ 58), `quotejobs.py --missing --jobs 4` 58 quotes (→ 0). Waived 413FD0 しきがみ (plate
+    indices 50..53 occur only on op 098 = a0=1 path, like 41401C). Final report copy work/qa/cover/report30.txt.
+- **Next (phase 9: Release; done-when in the skill's table):**
+  0. Phase-9 items: story-pass verdict per chapter (`qa_gate.py check work/qa/story/manifest.tsv ...`,
+     `references/translation.md` §Review), `docs/polish.md` all ticked, `tools/release.py` runs every manifest's
+     `qa_gate.py check` + text coverage (`cover.py report` exit 0), `jp_left.py --known tbl/jp_known.txt` clean,
+     debug tool off in the release build, patch built/re-applied/verified, README hashes, zip. Never `gh release
+     create`. Coverage recipe if strings move: run `cover.py report > work/qa/cover/report.txt` before each of
+     `labeljobs.py`, `talkjobs.py`, `msgjobs.py`, `quotejobs.py --missing` (all `--jobs 4`: more ran out of memory).
   1. (done session 29, kept for the recipe) **Visual-QA gate on the current build**: tour14 =
      `warp_all.py build/onmyou_zeroshiki_en.gba --out
      work/qa/cover/tour14 --states work/qa/cover/tour14/st --probe <skill>/scripts/lua/probes/textcover.lua --var
