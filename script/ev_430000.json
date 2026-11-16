@@ -440,7 +440,7 @@
    "script": "432750",
    "op": "098 00380000",
    "jp": "ふうん、ちょっと気分がいいわ{0010}そのまま、すこしまってて{0000}もらえる？{00C8}{0010}あのアンジって式神{0000}どうやら女性に弱いみたいよ{0010}私のカンはするどいのよ{0000}ここは私にまかせてね{0010}おまたせ、アンジさん{0000}お願いがあるんだけど…{0010}",
-   "en": "Hmm, that does feel rather nice.{0010}Could you wait right there{0000}a moment, {00C8}?{0010}That Anji shikigami seems{0000}to have a weakness for women.{0010}My intuition is sharp, you know.{0000}Leave this one to me.{0010}Sorry to keep you, Anji-san.{0000}I have a little favor to ask...{0010}"
+   "en": "Hmm, that does feel rather nice.{0010}Could you stay there a moment?{0000}Now, {00C8}...{0010}That Anji shikigami seems{0000}to have a weakness for women.{0010}My intuition is sharp, you know.{0000}Leave this one to me.{0010}Sorry to keep you, Anji-san.{0000}I have a little favor to ask...{0010}"
   },
   {
    "id": "4329E0",
@@ -573,7 +573,7 @@
    "script": "43334C",
    "op": "098 00650000",
    "jp": "すみませんねぇ。あなたと{0000}けいやくしたいのですが、{0010}私の質問に答えてくれたらの{0000}話です{0010}では、すばやくいきましょう{0010}タツノオトシゴを中国読みで何{0000}というかしってますか？{0010}",
-   "en": "So sorry. I'd like to make{0000}a contract with you,{0010}but only if you answer{0000}my question.{0010}Now then, let's be quick about it.{0010}Do you know what the seahorse{0000}is called in Chinese?{0010}"
+   "en": "So sorry. I'd like to make{0000}a contract with you,{0010}but only if you answer{0000}my question.{0010}Now then, let's be quick about it.{0010}Do you know what my kind's name{0000}means in Chinese?{0010}"
   },
   {
    "id": "4334D2",

@@ -120,7 +120,7 @@
   {
    "id": "129244",
    "jp": "金の矢",
-   "en": "Gold Arrow",
+   "en": "Golden Arrow",
    "max": 8
   },
   {
@@ -132,7 +132,7 @@
   {
    "id": "129258",
    "jp": "笹",
-   "en": "Bamboo Leaf",
+   "en": "Bamboo Leaves",
    "max": 4
   },
   {
@@ -150,14 +150,14 @@
   {
    "id": "129270",
    "jp": "リュージのお弁当",
-   "en": "Ryuji's Lunch",
+   "en": "Ryuji's Lunch Box",
    "max": 20,
    "ptrs": 2
   },
   {
    "id": "129284",
    "jp": "モモのお弁当",
-   "en": "Momo's Lunch",
+   "en": "Momo's Lunch Box",
    "max": 13,
    "ptrs": 2
   },

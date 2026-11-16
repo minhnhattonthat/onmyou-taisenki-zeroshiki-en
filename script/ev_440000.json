@@ -552,7 +552,7 @@
    "script": "44268C",
    "op": "036 00630001",
    "jp": "オレは、天と地、どっちが{0000}正しいのかわからない{0010}",
-   "en": "I don't know which is right:{0000}heaven or earth.{0010}"
+   "en": "I don't know who's right:{0000}the \"Tenryu\" or the \"Chiryu\".{0010}"
   },
   {
    "id": "44286C",
@@ -741,7 +741,7 @@
    "script": "443574",
    "op": "036 00000001",
    "jp": "おじいちゃんのことを悪く{0000}いうな！たしかに歴史の表には{0010}出てこないけれど{0000}力をあわせて守っているんだ{0010}無意味なんかじゃない！{0010}",
-   "en": "Don't badmouth my grandpa!{0000}It's true they never come out{0010}in the open, but they protect{0000}things by working together.{0010}It's not pointless!{0010}"
+   "en": "Don't badmouth my grandpa!{0000}We may not appear{0010}in the history books, but{0000}we keep our school alive together!{0010}It's not pointless!{0010}"
   },
   {
    "id": "443794",

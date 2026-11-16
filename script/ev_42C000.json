@@ -307,7 +307,7 @@
    "script": "42D9DC",
    "op": "098 00440000",
    "jp": "まて！わしをこのまま{0000}放っておく気か？{0010}おぬしには、武士道を{0000}愛するきもちはないのか？{0010}わしはこの先{0000}どうすればいいんじゃ{0010}果たして生きて{0000}いけるんじゃろうか…{0010}",
-   "en": "Wait! You're just going to{0000}leave me like this?{0010}Have you no love at all{0000}for the way of the warrior?{0010}What am I to do{0000}from here on?{0010}Can I even go on{0000}living like this...?{0010}"
+   "en": "Wait! You'd leave an old man{0000}like this, would you?{0010}Have you no love at all{0000}for the way of the warrior, lad?{0010}What am I to do now,{0000}eh?{0010}Will I even manage{0000}to carry on living...?{0010}"
   },
   {
    "id": "42DDC2",
@@ -713,7 +713,7 @@
    "script": "42FBB4",
    "op": "073 0001",
    "jp": "わしの奇策をやぶるとは、おぬし、ただ者じゃないのう！",
-   "en": "Foiling my ruse? You're no mere boy!"
+   "en": "You've foiled my ruse! No ordinary lad, eh?"
   },
   {
    "id": "42FC54",

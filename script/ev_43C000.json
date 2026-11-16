@@ -83,7 +83,7 @@
    "script": "43C92C",
    "op": "036 00030001",
    "jp": "うむ、ごくろう{0010}これで、「地流」宗家に{0000}よけいなことをされずにすむ{0010}",
-   "en": "Mm. Well done.{0010}Now the \"Chiryu\" Grand Master{0000}won't get in our way.{0010}"
+   "en": "Mm. Well done.{0010}Now the \"Chiryu\" Grand Master{0000}won't take unnecessary steps.{0010}"
   },
   {
    "id": "43CEA8",
@@ -356,7 +356,7 @@
    "script": "43DCC8",
    "op": "036 00870001",
    "jp": "いや、会ったことはないが{0000}ソウタロウさんから聞いている{0010}ココにキミが来たらバトルを{0000}するようにと、前々から{0010}ソウタロウさんに言われている{0010}今すぐバトルするかい？{0010}",
-   "en": "No, we haven't, but I've{0000}heard about you from Sotaro.{0010}He told me long ago that if{0000}you ever came here, I should{0010}battle you. Sotaro's orders.{0010}Want to battle right now?{0010}"
+   "en": "No, we haven't, but I've{0000}heard about you from Sotaro-san.{0010}He told me long ago that if{0000}you ever came here, I should{0010}battle you. Sotaro-san's orders.{0010}Want to battle right now?{0010}"
   },
   {
    "id": "43DEC0",
@@ -377,7 +377,7 @@
    "script": "43DCC8",
    "op": "073 0001",
    "jp": "さすが、ソウタロウさんの縁者{0000}さっそく、式神と話してくれ{0010}",
-   "en": "As expected of Sotaro's kin.{0000}Go on, talk to the shikigami.{0010}"
+   "en": "As expected of Sotaro-san's kin.{0000}Go on, talk to the shikigami.{0010}"
   },
   {
    "id": "43E064",
@@ -839,7 +839,7 @@
    "script": "43FAD0",
    "op": "098 00150000",
    "jp": "ああ。前の「地流」宗家で{0000}「サカシキ」という邪法で{0010}自らをきょうかし、神の力を{0000}求めたおそろしいやつだ{0010}",
-   "en": "Yeah. Under the last \"Chiryu\"{0000}Grand Master he used a dark art,{0010}\"Sakashiki\", to power himself{0000}up. A monster after a god's power.{0010}"
+   "en": "Yeah. He was the last \"Chiryu\"{0000}Grand Master. Used the dark art{0010}\"Sakashiki\" to power himself up{0000}and sought a god's power. Scary guy.{0010}"
   },
   {
    "id": "43FF0A",
@@ -951,7 +951,7 @@
    "script": "43FAD0",
    "op": "036 00020001",
    "jp": "今できることは、マホロバの{0000}眠っている場所をみつけて{0010}めざめさせないことね{0000}きたいしてるわ。闘神士さん{0010}",
-   "en": "What you can do now is find where{0000}Mahoroba is sleeping{0010}and keep him from waking.{0000}I'm counting on you, Tojinshi.{0010}"
+   "en": "What you can do now is find where{0000}Mahoroba is sleeping{0010}and keep him from waking.{0000}I'm counting on you, Tojinshi-san.{0010}"
   },
   {
    "id": "4408AC",

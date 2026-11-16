@@ -335,7 +335,7 @@
    "script": "449F60",
    "op": "098 00150000",
    "jp": "式神は道具じゃねェんだよ{0000}いくら式神が強くても{0010}使うヤツがダメだったら{0000}けっきょく、やくたたずだ！{0010}とくに、オマエのように{0000}式神だけに闘わせればいいって{0010}ヤツは、式神がかわいそうだぜ{0010}",
-   "en": "Shikigami ain't tools.{0000}However strong a shikigami is,{0010}if its user's no good,{0000}it's useless in the end!{0010}Especially guys like you who{0000}figure the shikigami can do{0010}all the fightin'. I pity 'em.{0010}"
+   "en": "Shikigami ain't tools.{0000}However strong a shikigami is,{0010}if its user's no good,{0000}it's useless in the end!{0010}Guys like you make shikigami{0000}do all the fightin'.{0010}I feel sorry for your shikigami!{0010}"
   },
   {
    "id": "44A3DA",

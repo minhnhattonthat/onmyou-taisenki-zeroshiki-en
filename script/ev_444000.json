@@ -125,7 +125,7 @@
    "script": "444B9C",
    "op": "073 0001",
    "jp": "ようやく、ここまできたようね{0000}「天流」の闘神士さん{0010}",
-   "en": "So you've finally made it this far,{0000}\"Tenryu\" Tojinshi.{0010}"
+   "en": "So you've finally made it this far,{0000}\"Tenryu\" Tojinshi-san.{0010}"
   },
   {
    "id": "444C9C",
@@ -188,7 +188,7 @@
    "script": "444B9C",
    "op": "073 0001",
    "jp": "ようやく、ここまできたようね{0000}「天流」の闘神士さん{0010}",
-   "en": "So you've finally made it this far,{0000}\"Tenryu\" Tojinshi.{0010}"
+   "en": "So you've finally made it this far,{0000}\"Tenryu\" Tojinshi-san.{0010}"
   },
   {
    "id": "444FBC",
@@ -692,7 +692,7 @@
    "script": "446D0C",
    "op": "036 00700001",
    "jp": "んー、確かに私は{0000}闘いがきらいです{0010}しかし、代々「地流」に{0000}つかえる身・・・{0010}一生に一度くらいは{0000}「地流」宗家さまのごおんに{0010}むくいるのもいいかもしれない{0010}",
-   "en": "Hmm, it's true that{0000}I dislike fighting.{0010}But my family has served{0000}the \"Chiryu\" for generations...{0010}Perhaps once in my life I{0000}should repay the kindness{0010}of the \"Chiryu\" Grand Master.{0010}"
+   "en": "Hmm, it's true that{0000}I dislike fighting.{0010}But my family has served{0000}the \"Chiryu\" for generations...{0010}Perhaps once in my life I{0000}should repay the kindness{0010}of the \"Chiryu\" Grand Master-sama.{0010}"
   },
   {
    "id": "4472B6",
@@ -860,7 +860,7 @@
    "script": "447FA8",
    "op": "098 00150000",
    "jp": "そのまさか　だ{0010}",
-   "en": "It could be.{0010}"
+   "en": "That's right.{0010}"
   },
   {
    "id": "4480EA",

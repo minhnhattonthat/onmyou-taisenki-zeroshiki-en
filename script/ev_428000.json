@@ -686,7 +686,7 @@
    "script": "42B774",
    "op": "073 0001",
    "jp": "まったく、なんだい！　こんな{0000}子供にやられるなんざ、だらし{0010}ないったらありゃしない！{0010}…で、あたいに何か用かい？{0010}いっとくけど、{0000}あたいに手をだしてみな！{0010}タダじゃすまさないよ！{0010}",
-   "en": "Honestly, what is this! Losing to{0000}a mere child... how utterly{0010}pathetic of me!{0010}...So, what do you want with me?{0010}Just so you know,{0000}lay one finger on me{0010}and you'll pay dearly for it!{0010}"
+   "en": "Oh, come on! Gettin' beaten by{0000}a kid like this... What a{0010}disgrace I am!{0010}...So, what d'you want with me?{0010}I'm warnin' ya,{0000}lay one finger on me{0010}and I'll make ya sorry!{0010}"
   },
   {
    "id": "42B896",
@@ -812,7 +812,7 @@
    "script": "42B774",
    "op": "073 0001",
    "jp": "まったく、なんだい！　こんな{0000}子供にやられるなんざ、だらし{0010}ないったらありゃしない！{0010}フンッ！交渉したかったら{0000}シラトリを連れておいで！{0010}他のヤツの言うことなんか{0000}これっぽっちも聞きやしないよ{0010}",
-   "en": "Honestly, what is this! Losing to{0000}a mere child... how utterly{0010}pathetic of me!{0010}Hmph! If you want to bargain,{0000}bring Shiratori here!{0010}I won't listen to a single word{0000}from anybody else!{0010}"
+   "en": "Oh, come on! Gettin' beaten by{0000}a kid like this... What a{0010}disgrace I am!{0010}Hmph! If ya wanna bargain,{0000}bring Shiratori here!{0010}I won't listen to a single word{0000}from anybody else!{0010}"
   },
   {
    "id": "42BF3C",

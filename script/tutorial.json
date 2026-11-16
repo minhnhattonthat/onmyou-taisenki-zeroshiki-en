@@ -385,28 +385,28 @@
    "script": "6930A4",
    "op": "073 0001",
    "jp": "式神のバトルは、自分の式神が{0000}全てＨＰ０になれば負ける{0010}そこで死ぬことはないが{0000}連戦の時にも困らないように{0010}ＨＰは常に気をつけるんじゃ{0010}回復ポイントなどのＨＰ回復{0000}手段もあるが油断は禁物{0010}なるべく多くの式神を入手して{0000}長い戦いに備えるべきなのじゃ{0010}",
-   "en": "In shikigami battles, you lose{0000}when all your shikigami hit 0 HP.{0010}You won't die from it, but{0000}so you're not stuck in a long fight,{0010}always keep an eye on your HP.{0010}There are ways to recover HP, such{0000}as recovery points, but stay alert.{0010}Gather as many shikigami as you can{0000}and prepare for long battles.{0010}"
+   "en": "In shikigami battles, you lose{0000}when all your shikigami hit 0 HP.{0010}You won't die, but battles may{0000}come one after another, my boy.{0010}Always keep an eye on your HP.{0010}Recovery points can restore HP,{0000}but don't let your guard down.{0010}Gather as many shikigami as you can{0000}and prepare for long battles, eh?{0010}"
   },
   {
    "id": "693210",
    "script": "6931E4",
    "op": "073 0001",
    "jp": "闘神士は、式神に指示をする{0000}必要がある。{0010}指示の方法が「印」と呼ばれる{0000}線の組み合わせなのじゃ{0010}「ドライブ」で「攻」を選ぶと{0000}印入力画面になるのじゃ{0010}印を十字ボタンで入力すれば{0000}正解なら赤、失敗なら青になる{0010}赤を続けていけば{0000}「印」は金色に光る{0010}「印」が完成した証拠じゃ{0010}完成した「印」は式神に伝わり{0000}必殺技となるのじゃ{0010}重要な点として、「印」は{0000}むやみに作れないのじゃ{0010}バトル時、ＨＰの下にある{0000}式点というバーを消費して{0010}「印」は完成するのじゃ{0010}じゃからして{0000}こまめに小さい技を出したり{0010}まとめて大技を出したりと{0000}状況に応じて使い分けられれば{0010}一人前の闘神士となるのじゃ{0010}",
-   "en": "A Tojinshi must give orders{0000}to their shikigami.{0010}Those orders are made with lines{0000}combined into what we call \"seals.\"{0010}Choose \"Attack\" in the \"Drive\"{0000}to open the seal input screen.{0010}Enter the seal with the + Pad: right{0000}strokes turn red, wrong ones blue.{0010}Keep the reds coming and{0000}the \"seal\" glows gold.{0010}That's the proof the \"seal\" is done.{0010}A finished \"seal\" reaches your{0000}shikigami as a special move.{0010}Mind this well: you can't make{0000}\"seals\" whenever you please.{0010}In battle, a seal uses up the bar{0000}under your HP, the Shiki Points,{0010}to complete the \"seal.\"{0010}And so, use small moves often,{0000}or save up for one big move.{0010}Switch between them to suit the{0000}situation, and you'll be{0010}a full-fledged Tojinshi.{0010}"
+   "en": "A Tojinshi must give orders{0000}to their shikigami.{0010}We give orders through patterns{0000}of lines called \"seals,\" my boy.{0010}Choose \"Attack\" in the \"Drive\"{0000}to open the seal input screen.{0010}Enter the seal with the + Pad: right{0000}strokes turn red, wrong ones blue.{0010}Keep the reds coming and{0000}the \"seal\" glows gold.{0010}That's the proof the \"seal\" is done.{0010}A finished \"seal\" reaches your{0000}shikigami as a special move.{0010}Mind this well: you can't make{0000}\"seals\" whenever you please.{0010}In battle, a seal uses up the bar{0000}under your HP, the Shiki Points,{0010}to complete the \"seal.\"{0010}And so, use small moves often,{0000}or save up for one big move.{0010}Switch between them to suit the{0000}situation, and you'll be{0010}a full-fledged Tojinshi.{0010}"
   },
   {
    "id": "6934B4",
    "script": "693488",
    "op": "073 0001",
    "jp": "闘神士は、最大３体の式神に{0000}指示して闘いを行う{0010}つまり、３式神ＶＳ３式神{0000}ということになる{0010}指示は必ず「ドライブ」を{0000}通して行われるのじゃ{0010}闘神士は「ドライブ」により{0000}５つの行動を取ることができる{0010}１に「攻撃」。敵を攻撃する{0000}基本じゃ。必殺技も複数あるぞ{0010}２に「防御」。敵からうける{0000}ダメージを減らすことができる{0010}３に「逃げる」。逃げられない{0000}場合もあるので注意が必要じゃ{0010}４に「一覧」。式神たちの{0000}細かいデータを分析できる{0010}５に「交替」。戦闘中の式神と{0000}控えの式神を入れかえることで{0010}戦局を有利にすることができる{0010}",
-   "en": "A Tojinshi gives orders to up to{0000}three shikigami in battle.{0010}In other words, it's{0000}3 shikigami vs. 3 shikigami.{0010}Orders are always given{0000}through the \"Drive.\"{0010}With the \"Drive,\" a Tojinshi{0000}can take five actions.{0010}One: \"Attack.\" The basics of{0000}fighting. There are special moves too.{0010}Two: \"Guard.\" It reduces the{0000}damage the enemy deals you.{0010}Three: \"Run.\" Mind that sometimes{0000}you can't get away.{0010}Four: \"List.\" Analyze your{0000}shikigami's detailed data.{0010}Five: \"Swap.\" Switch the shikigami{0000}in battle with one in reserve{0010}to turn the battle your way.{0010}"
+   "en": "A Tojinshi gives orders to up to{0000}three shikigami in battle.{0010}In other words, it's{0000}3 shikigami vs. 3 shikigami.{0010}Orders always go through{0000}the \"Drive,\" my boy.{0010}With the \"Drive,\" a Tojinshi{0000}can take five actions.{0010}One: \"Attack.\" The basics of{0000}fighting. There are special moves too.{0010}Two: \"Guard.\" It reduces the{0000}damage the enemy deals you.{0010}Three: \"Run.\" Mind that sometimes{0000}you can't get away.{0010}Four: \"List.\" Analyze your{0000}shikigami's detailed data.{0010}Five: \"Swap.\" Switch the shikigami{0000}in battle with one in reserve{0010}to turn the battle your way.{0010}"
   },
   {
    "id": "693714",
    "script": "6936E8",
    "op": "073 0001",
    "jp": "闘神士は、この世を悪から{0000}守るためにいるのじゃ{0010}「ドライブ」を用いて{0000}荒ぶる「式神」の力をかりる{0010}まずは式神と話をして{0000}仲間にするのじゃ{0010}仲間式神をセットすることで{0000}バトル参加が可能になる{0010}最大３体までバトルの前に{0000}セットしておくのじゃ{0010}セットは「ドライブメニュー」{0000}を開き「替」を選べばよい{0010}バトルが始まったら、その３体{0000}以外は参加することができん{0010}式神には、天敵となる式神が{0000}必ずいるものじゃ{0010}闘う順番、交替のチャンスを{0000}体で覚えれば、強くなれるぞ{0010}",
-   "en": "Tojinshi exist to protect{0000}this world from evil.{0010}With the \"Drive,\" they borrow{0000}the power of wild \"shikigami.\"{0010}First, talk to a shikigami{0000}and make it your ally.{0010}Set ally shikigami and{0000}they can join battles.{0010}Set up to three of them{0000}before a battle.{0010}To set them, open the \"Drive menu\"{0000}and choose \"Swap.\"{0010}Once a battle starts, only those{0000}three can take part.{0010}Every shikigami has another{0000}shikigami that's its natural enemy.{0010}Learn the battle order and when to{0000}swap by heart, and you'll grow strong.{0010}"
+   "en": "Tojinshi exist to protect this{0000}world from evil, my boy.{0010}With the \"Drive,\" they borrow{0000}the power of wild \"shikigami.\"{0010}First, talk to a shikigami{0000}and make it your ally.{0010}Set ally shikigami and{0000}they can join battles.{0010}Set up to three of them{0000}before a battle.{0010}To set them, open the \"Drive menu\"{0000}and choose \"Swap.\"{0010}Once a battle starts, only those{0000}three can take part.{0010}Every shikigami has another{0000}shikigami that's its natural enemy.{0010}Learn the battle order and when to{0000}swap by heart, and you'll grow strong.{0010}"
   },
   {
    "id": "69392C",

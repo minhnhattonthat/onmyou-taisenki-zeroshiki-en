@@ -26,7 +26,7 @@
   {
    "id": "131EC0",
    "jp": "勝ってかぶとの緒を　　　　　しめよ…それが大事だ",
-   "en": "After a win, tighten your helmet...\nthat's what matters.",
+   "en": "Even after victory, stay vigilant...\nthat's what matters.",
    "max": 52,
    "pad": 14
   },
@@ -706,14 +706,14 @@
   {
    "id": "132EA4",
    "jp": "なかなか味のある　　　　　　闘いでしたな",
-   "en": "That was quite\na tasteful fight.",
+   "en": "That was quite a satisfying battle.",
    "max": 44,
    "pad": 14
   },
   {
    "id": "132ED0",
    "jp": "あっしに掛かりゃ　　　　　　こんなもんでさ",
-   "en": "Leave it to me,\nthat's how it goes.",
+   "en": "That's how it's done, boss.",
    "max": 44,
    "pad": 14
   },

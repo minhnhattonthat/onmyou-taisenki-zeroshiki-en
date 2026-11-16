@@ -192,3 +192,8 @@ Other shikigami and NPC names: Hepburn without macrons, as in `script/str_shikig
   shall"; でっせ/やさかい Kansai -> "pal"/"ya". Polish candidates: 羅知鱈喪来 kept as "Rachi Tara Morai"; 鯔驚 "Mullet
   Shock"; 茶子菜々 "Chako Nana" (readings unsure).
 - Puns: 誇り/埃 (pride/dust) -> "pride" / lion pride; 鯛/恋 quiz kept as "koi"... love (polish candidate).
+- Reviewer pass (b042 fixes): 宗家さま = "Grand Master-sama", 闘神士さん = "Tojinshi-san" (D1 honorifics apply to titles
+  too); weapon names inside battle quotes use the str_skills English (Big Dipper Crossing, Pressure-Point Horn,
+  Blazing Flight, Dragon Wrath Fang); items 金の矢 Golden Arrow, 笹 Bamboo Leaves, お弁当 "Lunch Box" (Ryuji's/Momo's),
+  回天三八式改 Kaiten Type 38 Modified; 逆天砲武嵐 = "Comeback Home Run" (逆転ホームラン pun); 交替 always "swap",
+  never "switch" (かえる "switch" is fine); Bannai's lectures and old-man quotes keep a light "my boy"/"eh" marker.

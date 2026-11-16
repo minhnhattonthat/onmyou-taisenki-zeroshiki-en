@@ -46,7 +46,7 @@
   {
    "id": "12D3A4",
    "jp": "交替してほしいのぅ",
-   "en": "I'd like to switch out, eh.",
+   "en": "I'd like to swap out, eh.",
    "max": 20
   },
   {
@@ -86,7 +86,7 @@
   {
    "id": "12D4A8",
    "jp": "まだ我のＨＰがあるうちに　　交替ぞよ",
-   "en": "Switch me out while I\nstill have HP, I say.",
+   "en": "Swap me out while I still have HP, I say.",
    "max": 40,
    "pad": 14
   },
@@ -158,7 +158,7 @@
   {
    "id": "12D644",
    "jp": "交替を希望する　　　　　　　せっちゃを助けよ！",
-   "en": "Requesting a thwitch!\nThave thith one!",
+   "en": "Requesting a thwap! Thave thith one!",
    "max": 48,
    "pad": 14
   },
@@ -243,14 +243,14 @@
   {
    "id": "12D850",
    "jp": "わしのＨＰをみるかぎり　　　あと一発というところか",
-   "en": "Judging by my HP,\nI can take one more hit.",
+   "en": "Judging by my HP, one more hit will finish me, eh.",
    "max": 52,
    "pad": 14
   },
   {
    "id": "12D884",
    "jp": "ここは交替したほうが　　　　よさそうだな",
-   "en": "Looks like I'd better\nswitch out here.",
+   "en": "Looks like I'd better swap out here.",
    "max": 44,
    "pad": 14
   },
@@ -276,7 +276,7 @@
   {
    "id": "12D924",
    "jp": "交替するとＨＰが少し　　　　回復するって知ってたかい？",
-   "en": "Did ya know switching out\nrestores a little HP?",
+   "en": "Did ya know swapping out restores a little HP?",
    "max": 56,
    "pad": 14
   },
@@ -339,7 +339,7 @@
   {
    "id": "12DA70",
    "jp": "わしが倒れても　　　　　　　汝の罪は消えぬ",
-   "en": "Even if I fall,\nyour sins will not vanish.",
+   "en": "Even if I fall, thy sins shall not vanish.",
    "max": 44,
    "pad": 14
   },
@@ -592,7 +592,7 @@
   {
    "id": "12E04C",
    "jp": "交替を希望するであります",
-   "en": "Requesting a switch, sir!",
+   "en": "Requesting a swap, sir!",
    "max": 28
   },
   {
@@ -748,7 +748,7 @@
   {
    "id": "12E49C",
    "jp": "もしかして　　　　　　　　　今、あちきって…ピンチ？",
-   "en": "Wait, am I...\nin a pinch right now?",
+   "en": "Wait, hon, am I... in trouble?",
    "max": 56,
    "pad": 14
   },

@@ -398,7 +398,7 @@
    "script": "46512C",
    "op": "124 0014",
    "jp": "告白するけど、向こうの{0000}女の子のことが好きだったんだ{0010}",
-   "en": "I'm gonna confess, but actually I liked{0000}the girl over there all along.{0010}"
+   "en": "I have to admit, I used to like{0000}the girl over there.{0010}"
   },
   {
    "id": "4655B4",
@@ -447,7 +447,7 @@
    "script": "4655F4",
    "op": "124 0007",
    "jp": "くわしくは知らないが、京東に{0000}ある塚に、その名があったよ{0010}",
-   "en": "I don't know the details, but there's{0000}a mound in East Kyo with that name.{0010}"
+   "en": "I don't know much, but I saw that{0000}name on a mound in East Kyo.{0010}"
   },
   {
    "id": "4658D6",
@@ -993,7 +993,7 @@
    "script": "46730C",
    "op": "124 0008",
    "jp": "まるで、おぬしはこれから{0000}遠くに行く顔をしとるのう{0010}",
-   "en": "You look like someone who's{0000}about to go somewhere far away.{0010}"
+   "en": "You look ready to journey{0000}far away, my boy.{0010}"
   },
   {
    "id": "4673EE",
@@ -1070,7 +1070,7 @@
    "script": "46777C",
    "op": "124 0002",
    "jp": "ここは、風雅な場所{0000}京西町よ{0010}",
-   "en": "This is the elegant{0000}town of West Kyo.{0010}"
+   "en": "This is West Kyo Town,{0000}a place of elegance.{0010}"
   },
   {
    "id": "467806",
@@ -1091,7 +1091,7 @@
    "script": "46788C",
    "op": "124 0002",
    "jp": "町を出た西には広い竹林が{0000}広がっているそうじゃ{0010}",
-   "en": "They say a wide bamboo grove{0000}spreads out west of town.{0010}"
+   "en": "They say a vast bamboo grove{0000}lies west of town, my boy.{0010}"
   },
   {
    "id": "467928",
@@ -1105,7 +1105,7 @@
    "script": "46788C",
    "op": "124 0015",
    "jp": "あれから、だいぶ体の{0000}調子がよいようじゃ{0010}",
-   "en": "Since then, my body's been{0000}feeling much better.{0010}"
+   "en": "I've been feeling much better{0000}since then, my boy.{0010}"
   },
   {
    "id": "4679FC",

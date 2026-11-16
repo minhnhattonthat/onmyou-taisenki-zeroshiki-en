@@ -370,7 +370,7 @@
   {
    "id": "139C0C",
    "jp": "早めに交替するんだ　　　　　相手が悪いぞ！",
-   "en": "Switch out quickly!\nThis foe is bad news!",
+   "en": "Swap out quickly!\nThis foe is bad news!",
    "max": 44,
    "pad": 14
   },
@@ -391,7 +391,7 @@
   {
    "id": "139C8C",
    "jp": "この相手と闘いますのは　　　わらわでは、難しいようじゃ",
-   "en": "Fighting this foe would\nbe hard for me.",
+   "en": "To face this foe would\nprove most taxing for me.",
    "max": 56,
    "pad": 14
   },
@@ -419,13 +419,13 @@
   {
    "id": "139D58",
    "jp": "この相手、わらわとの相性が　悪いようじゃ",
-   "en": "It seems my affinity\nwith this foe is poor.",
+   "en": "My affinity with this foe\nseems poor indeed.",
    "max": 44
   },
   {
    "id": "139D84",
    "jp": "この闘い、わらわにとって　　不利なようじゃ",
-   "en": "It seems this fight is\nnot in my favor.",
+   "en": "This battle seems unlikely\nto favor me, alas.",
    "max": 44,
    "pad": 14
   },
@@ -505,7 +505,7 @@
   {
    "id": "139FC0",
    "jp": "交替じゃ！相手が悪いわ！",
-   "en": "Switch out, lad! Bad foe!",
+   "en": "Swap out, lad!\nThis foe's bad news!",
    "max": 28
   },
   {
@@ -532,7 +532,7 @@
   {
    "id": "13A064",
    "jp": "こりゃ相手が悪いで！　　　　交替せなあかん！",
-   "en": "This foe's bad news!\nGotta switch out!",
+   "en": "This foe's bad news, pal!\nGotta swap out!",
    "max": 48,
    "pad": 14
   },
@@ -559,7 +559,7 @@
   {
    "id": "13A11C",
    "jp": "相手が悪いでちゅよ　　　　　早めに交替するでちゅ",
-   "en": "Bad opponent, you know.\nZwitch out quickly!",
+   "en": "This foe iz bad news.\nZwap out quickly!",
    "max": 52,
    "pad": 14
   },
@@ -594,7 +594,7 @@
   {
    "id": "13A208",
    "jp": "この闘い、早めの交替を　　　希望するであります",
-   "en": "Request an early switch\nfor this fight, sir!",
+   "en": "Request an early swap\nfor this fight, sir!",
    "max": 48,
    "pad": 14
   },
@@ -804,14 +804,14 @@
   {
    "id": "13A730",
    "jp": "この闘い、わらわのほうが　　不利でありまする",
-   "en": "In this fight, I am\nat a disadvantage.",
+   "en": "Alas, this battle's odds\nare not in my favor.",
    "max": 48,
    "pad": 14
   },
   {
    "id": "13A760",
    "jp": "占いによりますと敵との　　　相性は最悪とでておりまする",
-   "en": "My divination says our affinity\nwith the foe is the worst.",
+   "en": "The omens foretell a most ill\naffinity with this foe.",
    "max": 56,
    "pad": 14
   },
@@ -832,14 +832,14 @@
   {
    "id": "13A7F0",
    "jp": "この敵との相性だと　　　　　あたい負けちゃうよー！",
-   "en": "With this affinity,\nI'm gonna lose, hon!",
+   "en": "With this affinity,\nI'm gonna looose!",
    "max": 52,
    "pad": 14
   },
   {
    "id": "13A824",
    "jp": "あーん！敵とあたいの　　　　相性が悪いよぉー！",
-   "en": "Waaah! My affinity with\nthe foe is bad, hon!",
+   "en": "Waaah! My affinity with\nthis foe is so baaad!",
    "max": 48,
    "pad": 14
   },
@@ -872,7 +872,7 @@
   {
    "id": "13A908",
    "jp": "マロと闘う相手との　　　　　相性が悪いでおじゃる",
-   "en": "Maro's affinity with this foe\nis most poor, I daresay.",
+   "en": "Our affinity with this foe\nis most poor, ojaru.",
    "max": 52,
    "pad": 14
   },

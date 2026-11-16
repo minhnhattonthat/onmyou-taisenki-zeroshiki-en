@@ -2,10 +2,8 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 6. Translate in progress: all 41 batches translated and merged (batch check 0 errors); only the
-  reviewer pass is left. Last build 2026-11-16 (session 15): `build.py` sha1 d8260680…, smoke ok, check ok.
-  (Session 14 build: sha1 a22d1a9b…, smoke ok,
-  check ok.
+- **Phase:** 7. Insert, fit, check: not started (phase 6 done 2026-11-16, session 16). Last build 2026-11-16
+  (session 16): `build.py` sha1 cc8d331a…, smoke ok, check ok.
 - **Done:**
   - Step 0: ROM pinned (`rom.sha1`), MesenCE 2.2.1 + GBA BIOS in `tools/mesen/`, guard hook in `.claude/settings.json`
     (canary blocked), pre-commit runs `tools/check.py` (a failing test was rejected), boot route `tools/routes/boot.txt`
@@ -130,12 +128,21 @@ Updated at the end of every session. Keep it to what the next session needs; his
     flow by returned cells), `obj_room` (shikigami page labels, 96 px), `status_label` (48 px), `padded` (key items,
     0x080144F4). D10: "Shiki Pts", "Healfire", header の = "-". New probes `oamall.lua` (whole OAM + used tile
     ranges), `vramfree.lua`.
-- **Next (phase 6):**
-  1. **Enemy-side battle tag** (docs/polish.md): side 1 sits 8 px right of its 6-column right-hand plate and clips
+  - Phase 6 done (2026-11-16, session 16): reviewer pass with `codex exec` (read-only) over all 41 batches:
+    `tools/pairs.py` (pairs files from script/ English, `work/review/bNNN.pairs.txt`) + `tools/review.py` (one codex
+    run per batch, brief `docs/reviewer-brief.md`, reports `work/review/bNNN.review.md`, `--summary`). 0 Critical,
+    88 Important (D1 honorifics on titles, 交替 = swap, weapon/item names, flattened old-man/courtly/bratty voices);
+    all fixed as batch `tl/b042` (merged `--overwrite`), re-review of b042: Approved, 0 C/I. 113 Minors appended
+    to `docs/polish.md`. Glossary "Reviewer pass" row.
+- **Next (phase 7: insert, fit, check; done-when: width/overflow lint clean, control codes matched, `romdiff.py`
+  shows no writes outside allowed ranges):**
+  1. **romdiff gate**: run `tools/romdiff.py` on the built ROM with the build's write log and an allowed-ranges list
+     (script regions, string tables, 0x800000+ relocation space, VWF/engine hooks); add it to `check.py` or the build.
+  2. **Enemy-side battle tag** (docs/polish.md): side 1 sits 8 px right of its 6-column right-hand plate and clips
      past ~40 px (Komaki, battle_win f3603). Widen that plate's BG map leftwards and centre per side (tagw only
      sees the string; the side is r4 at 0x0810F9A0). Also still unverified: 129064 column header row (positions).
-  2. **Reviewer pass** (fresh read-only pass or `codex exec`) over all English, findings -> `docs/polish.md`; then
-     phase 6 is done (done-when: batch check 0 errors, glossary updated, no Critical/Important review issues).
+  3. Lint warnings: 40 entries are checked against a *guessed* budget (`tbl/windows.json` guess variants): measure them.
+  4. Engine items below.
   Translator notes to carry into the briefs: the check wants the exact `{0000}`/`{0010}` counts of the JP and a
   glossary term must not be split across a `{0000}` ("Spirit{0000}Stone Mound" fails); gaiji readings are in the
   entry's `notes` (Р=巫, 巫女 = shrine maiden); str_battle_msgs 40E534 starts with `\n` (code-built weapon/skill

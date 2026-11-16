@@ -239,13 +239,13 @@
   {
    "id": "1368BC",
    "jp": "これが我が知の力じゃ",
-   "en": "This is the power of my wisdom.",
+   "en": "This is the power of my wisdom, eh?",
    "max": 24
   },
   {
    "id": "1368D4",
    "jp": "この技を見た者の負けは　　　必至じゃ！",
-   "en": "Whoever sees this move\nis sure to lose!",
+   "en": "Whoever sees this move\nis sure to lose, my boy!",
    "max": 40,
    "pad": 14
   },
@@ -825,7 +825,7 @@
   {
    "id": "1373E4",
    "jp": "今日も絶好調でおじゃる",
-   "en": "In fine form again today,\nI daresay.",
+   "en": "We are in finest form today, ojaru!",
    "max": 24
   },
   {
@@ -858,7 +858,7 @@
   {
    "id": "1374B0",
    "jp": "標的は大ダメージでござる！",
-   "en": "The target took heavy damage!",
+   "en": "Grievous damage to the target, indeed!",
    "max": 28
   },
   {
