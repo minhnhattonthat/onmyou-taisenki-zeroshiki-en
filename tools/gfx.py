@@ -55,10 +55,11 @@ def ntiles(parts):
     return sum(w * h for _, _, w, h in parts)
 
 
-def letter(px, text, x0, x1, top, ink=0xF, shadow=0xE, outline=False, font="small", drop=None):
+def letter(px, text, x0, x1, top, ink=0xF, shadow=0xE, outline=False, font="small", drop=None, tall=False):
     """Draw text centred between x0 and x1 (exclusive), art row 0 at `top`. font: "small" (ensmall, 6 px caps,
     1 px advance gap) or "big" (enfont, the dialogue font: 9 px caps). shadow None = no shadow/outline.
-    drop: a colour for a 1 px drop shadow down-right of the inked + outlined shape."""
+    drop: a colour for a 1 px drop shadow down-right of the inked + outlined shape. tall: every font row drawn
+    twice (2 px horizontal strokes, for art that is shown scaled under a scanline mask)."""
     f = ensmall if font == "small" else enfont
     gap = 1 if font == "small" else enfont.SPACING
     w = sum(f.width(c) for c in text) - gap
@@ -70,7 +71,8 @@ def letter(px, text, x0, x1, top, ink=0xF, shadow=0xE, outline=False, font="smal
             for dy, row in enumerate(f.rows(ch)):
                 for dx, c in enumerate(row):
                     if c == "#":
-                        body.add((x + dx, top + dy))
+                        for k in ((0, 1) if tall else (0,)):
+                            body.add((x + dx, top + (2 * dy + k if tall else dy)))
         x += f.width(ch)
     around = [] if shadow is None else (
         [(1, 0), (0, 1), (1, 1)] + ([(-1, 0), (0, -1), (-1, -1), (1, -1), (-1, 1)] if outline else []))
@@ -143,14 +145,17 @@ def yesno(sel_yes):
 SPR32 = [(0, 0, 4, 4)]
 
 
-def wheel(text):
+def wheel(text, tall=False):
     """Battle command wheel (the Drive, OBJ tiles 0x148.. in battle, raw 0x22C434 + 0x200 k: 攻 防 逃 覧 替): one
     32x32 sprite per command, the kanji in red 4 outlined 2 with highlight 3 and a 5 drop shadow. English: the big
-    font, ink 4, outline 2, drop 5, centred (caps rows 11..19)."""
+    font, ink 4, outline 2, drop 5, centred (caps rows 11..19).
+    tall (the battle wheel): the Drive screen in the tutorial battle shows this art scaled ~1.4x under a mask that
+    blanks every other scanline, which wiped out 1 px horizontal strokes ("Attack" read as "Master"); each font row
+    is drawn twice instead (caps rows 6..23)."""
     def draw(px):
         for row in px:
             row[:] = [0] * len(row)
-        letter(px, text, 0, 32, 11, ink=4, shadow=2, outline=True, font="big", drop=5)
+        letter(px, text, 0, 32, 6 if tall else 11, ink=4, shadow=2, outline=True, font="big", drop=5, tall=tall)
     return draw
 
 
@@ -244,11 +249,11 @@ LABELS = {
     "yesno": ("lz", (0x3B4D40, 0), YESNO, yesno(False)),       # No selected (the default)
     "yesno_b": ("lz", (0x3B4FB0, 0), YESNO, yesno(True)),      # Yes selected
     # glossary b021-b026: 【攻撃】【防御】【逃げる】【一覧】【交替】 = [Attack] [Guard] [Run] [List] [Swap]
-    "wheel_attack": ("raw", 0x22C434, SPR32, wheel("Attack")),
-    "wheel_guard": ("raw", 0x22C634, SPR32, wheel("Guard")),
-    "wheel_run": ("raw", 0x22C834, SPR32, wheel("Run")),
-    "wheel_list": ("raw", 0x22CA34, SPR32, wheel("List")),
-    "wheel_swap": ("raw", 0x22CC34, SPR32, wheel("Swap")),
+    "wheel_attack": ("raw", 0x22C434, SPR32, wheel("Attack", tall=True)),
+    "wheel_guard": ("raw", 0x22C634, SPR32, wheel("Guard", tall=True)),
+    "wheel_run": ("raw", 0x22C834, SPR32, wheel("Run", tall=True)),
+    "wheel_list": ("raw", 0x22CA34, SPR32, wheel("List", tall=True)),
+    "wheel_swap": ("raw", 0x22CC34, SPR32, wheel("Swap", tall=True)),
     # field ring menu (Start; OBJ tiles 0x000.., raw 0x3858CC + 0x200 k: 能 図 替 覧 記, same art as the wheel):
     # centre = status, left = map, left x2 = party, right x2 = shikigami list, right = save
     "ring_status": ("raw", 0x3858CC, SPR32, wheel("Status")),

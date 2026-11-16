@@ -27,6 +27,8 @@ Standing non-bugs, `ok`:
 - the name-entry kana grid and its カナ / かな tabs stay Japanese (D9: they enter Japanese kana; the ABC tab is English);
 - spaced letters in a fixed 16-px-cell header are a known limit only if the original also uses one glyph per cell;
 - "Shiki Pts" on the status page and "Healfire" are deliberate abbreviations (D10).
+- two kinds of art stay Japanese (D12): the title screen's copyright notice (©海童博行・富沢義彦／集英社… 2004) and
+  the kana sound-effect sprites over battle hits (ドォォン, バシッ and the like). Any other Japanese is an issue.
 
 ## Verdicts
 One line per sheet id, nothing else:

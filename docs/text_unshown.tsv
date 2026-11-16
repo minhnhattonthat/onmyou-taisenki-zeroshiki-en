@@ -1,0 +1,361 @@
+125E04	unused (D9): leftover graphics-viewer debug menu, table 0x08125E68, not reachable in normal play
+125E10	unused (D9): leftover graphics-viewer debug menu, table 0x08125E68, not reachable in normal play
+125E1C	unused (D9): leftover graphics-viewer debug menu, table 0x08125E68, not reachable in normal play
+125E24	unused (D9): leftover graphics-viewer debug menu, table 0x08125E68, not reachable in normal play
+125E30	unused (D9): leftover graphics-viewer debug menu, table 0x08125E68, not reachable in normal play
+125E3C	unused (D9): leftover graphics-viewer debug menu, table 0x08125E68, not reachable in normal play
+125E48	unused (D9): leftover graphics-viewer debug menu, table 0x08125E68, not reachable in normal play
+125E50	unused (D9): leftover graphics-viewer debug menu, table 0x08125E68, not reachable in normal play
+125E5C	unused (D9): leftover graphics-viewer debug menu, table 0x08125E68, not reachable in normal play
+125E9C	unused (D9): leftover graphics-viewer debug menu, table 0x08125E68, not reachable in normal play
+125EA8	unused (D9): leftover graphics-viewer debug menu, table 0x08125E68, not reachable in normal play
+125EB4	unused (D9): leftover graphics-viewer debug menu, table 0x08125E68, not reachable in normal play
+125EBC	unused (D9): leftover graphics-viewer debug menu, table 0x08125E68, not reachable in normal play
+125EC4	unused (D9): leftover graphics-viewer debug menu, table 0x08125E68, not reachable in normal play
+125ECC	unused (D9): leftover graphics-viewer debug menu, table 0x08125E68, not reachable in normal play
+125ED4	unused (D9): leftover graphics-viewer debug menu, table 0x08125E68, not reachable in normal play
+125EDC	unused (D9): leftover graphics-viewer debug menu, table 0x08125E68, not reachable in normal play
+126190	unused (D9): only reader 0x0800F010 has no caller (dead code, test filler)
+1261AC	unused (D9): only reader 0x0800F010 has no caller (dead code, test filler)
+1261C8	unused (D9): only reader 0x0800F010 has no caller (dead code, test filler)
+12623C	unused (D9): only reader 0x0800F010 has no caller (dead code, test filler)
+126274	unused (D9): only reader 0x0800F010 has no caller (dead code, test filler)
+1262B0	unused (D9): only reader 0x0800F010 has no caller (dead code, test filler)
+1262EC	unused (D9): only reader 0x0800F010 has no caller (dead code, test filler)
+40EB5C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EB60	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EB64	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EB68	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EB6C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EB70	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EB74	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EB78	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EB7C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EB80	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EB84	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EB88	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EB8C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EB90	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EB94	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EB98	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EB9C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EBA0	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EBA4	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EBA8	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EBAC	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EBB0	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EBB4	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EBB8	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EBBC	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EBC0	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EBC4	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EBC8	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EBCC	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EBD0	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EBD4	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EBD8	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EBDC	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EBE0	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EBE4	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EBE8	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EBEC	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EBF0	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EBF4	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EBF8	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EBFC	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC00	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC04	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC08	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC0C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC10	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC14	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC18	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC1C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC20	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC24	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC28	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC2C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC30	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC34	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC38	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC3C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC40	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC44	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC48	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC4C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC50	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC54	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC58	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC5C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC60	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC64	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC68	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC6C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC70	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC74	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC78	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC7C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC80	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC84	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC88	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC8C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC90	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC94	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC98	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EC9C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ECA0	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ECA4	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ECA8	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ECAC	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ECB0	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ECB4	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ECB8	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ECBC	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ECC0	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ECC4	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ECC8	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ECCC	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ECD0	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ECD4	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ECD8	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ECDC	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ECE0	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ECE4	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ECE8	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ECEC	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ECF0	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ECF4	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ECF8	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ECFC	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED00	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED04	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED08	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED0C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED10	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED14	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED18	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED1C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED20	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED24	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED28	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED2C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED30	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED34	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED38	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED3C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED40	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED44	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED48	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED4C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED50	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED54	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED58	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED5C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED60	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED64	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED68	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED6C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED70	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED74	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED78	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED7C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED80	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED84	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED88	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED8C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED90	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED94	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED98	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40ED9C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EDA0	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EDA4	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EDA8	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EDAC	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EDB0	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EDB4	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EDB8	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EDBC	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EDC0	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EDC4	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EDC8	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EDCC	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EDD0	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EDD4	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EDD8	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EDDC	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EDE0	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EDE4	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EDE8	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EDEC	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EDF0	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EDF4	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EDF8	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EDFC	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE00	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE04	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE08	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE0C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE10	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE14	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE18	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE1C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE20	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE24	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE28	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE2C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE30	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE34	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE38	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE3C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE40	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE44	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE48	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE4C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE50	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE54	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE58	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE5C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE60	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE64	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE68	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE6C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE70	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE74	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE78	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE7C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE80	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE84	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE88	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE8C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE90	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE94	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE98	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EE9C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EEA0	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EEA4	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EEA8	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EEAC	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EEB0	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EEB4	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EEB8	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EEBC	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EEC0	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EEC4	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EEC8	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EECC	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EED0	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EED4	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EED8	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EEDC	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EEE0	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EEE4	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EEE8	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EEEC	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EEF0	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EEF4	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EEF8	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EEFC	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EF00	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EF04	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EF08	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EF0C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EF10	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EF14	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EF18	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EF1C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EF20	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EF24	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EF28	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EF2C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EF30	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EF34	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EF38	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EF3C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EF40	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EF44	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EF48	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EF4C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EF50	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EF54	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EF58	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40EF5C	data_keys: super-move cut-in lookup keys read by 0x08109614, never drawn as text (kept JP)
+40C698	link_window: link-cable (2-player) screens, need a second GBA (the title Link option is unreachable in one emulator)
+40C6B8	link_window: link-cable (2-player) screens, need a second GBA (the title Link option is unreachable in one emulator)
+40C6D8	link_window: link-cable (2-player) screens, need a second GBA (the title Link option is unreachable in one emulator)
+40C6F8	link_window: link-cable (2-player) screens, need a second GBA (the title Link option is unreachable in one emulator)
+40C724	link_window: link-cable (2-player) screens, need a second GBA (the title Link option is unreachable in one emulator)
+40C744	link_window: link-cable (2-player) screens, need a second GBA (the title Link option is unreachable in one emulator)
+40C764	link_window: link-cable (2-player) screens, need a second GBA (the title Link option is unreachable in one emulator)
+40C77C	link_window: link-cable (2-player) screens, need a second GBA (the title Link option is unreachable in one emulator)
+40C7B8	link_window: link-cable (2-player) screens, need a second GBA (the title Link option is unreachable in one emulator)
+40C7F4	link_window: link-cable (2-player) screens, need a second GBA (the title Link option is unreachable in one emulator)
+40C808	link_window: link-cable (2-player) screens, need a second GBA (the title Link option is unreachable in one emulator)
+40C828	link_window: link-cable (2-player) screens, need a second GBA (the title Link option is unreachable in one emulator)
+40C840	link_window: link-cable (2-player) screens, need a second GBA (the title Link option is unreachable in one emulator)
+40C860	link_window: link-cable (2-player) screens, need a second GBA (the title Link option is unreachable in one emulator)
+40C88C	link_window: link-cable (2-player) screens, need a second GBA (the title Link option is unreachable in one emulator)
+40C8B8	link_window: link-cable (2-player) screens, need a second GBA (the title Link option is unreachable in one emulator)
+40C8E4	link_window: link-cable (2-player) screens, need a second GBA (the title Link option is unreachable in one emulator)
+40C904	link_window: link-cable (2-player) screens, need a second GBA (the title Link option is unreachable in one emulator)
+40C924	link_window: link-cable (2-player) screens, need a second GBA (the title Link option is unreachable in one emulator)
+40C2A0	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C2AC	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C2B8	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C2C4	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C2D0	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C2DC	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C2E8	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C2F4	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C300	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C30C	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C318	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C324	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C330	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C33C	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C348	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C354	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C360	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C36C	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C378	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C384	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C390	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C39C	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C3A8	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C3B4	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C3C0	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C3CC	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C3D8	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C3E4	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C3F0	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C3FC	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C408	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C414	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C420	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C42C	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C438	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C444	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C450	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C45C	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C468	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C474	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C480	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C48C	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C498	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C4A4	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C4B0	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C4BC	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C4C8	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C4D4	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C4E0	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C4EC	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C4F8	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C504	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C53C	name_grid (D9, keep_jp): name-entry glyph set, drawn one glyph per cell by index (gridline), not read from its first byte; grid seen in the name_entry / name_entry_abc sheets
+40C578	link_window: link-cable connect messages, need a second GBA
+40C588	link_window: link-cable connect messages, need a second GBA
+40C5A0	link_window: link-cable connect messages, need a second GBA
+40C5B4	link_window: link-cable connect messages, need a second GBA
+40C5C8	link_window: link-cable connect messages, need a second GBA
+40C5DC	link_window: link-cable connect messages, need a second GBA
+40C600	link_window: link-cable connect messages, need a second GBA
+40C63C	link_window: link-cable connect messages, need a second GBA
