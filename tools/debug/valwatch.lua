@@ -8,6 +8,7 @@ local hi, want, max = WATCH_HI or lo, VALUE, MAX or 40
 local n = 0
 L.on_write(lo, hi, function(addr, value)
   if want and value ~= want then return end
+  if FROM and L.frame < FROM then return end  -- FROM=3200: ignore writes before that frame
   n = n + 1
   if n > max then return end
   local s = emu.getState()

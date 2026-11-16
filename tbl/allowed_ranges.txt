@@ -38,6 +38,16 @@
 03A0A4-03A0B3   # code: smapline thunk: name-entry small label
 03A168-03A187   # code: map-line 0x0803A168 strip thunk + gridline thunk in its body
 03A85C-03A85D   # default player name copy: 2 -> 5 halfwords
+# Size-8 OBJ text (vwf.obj8_patch, docs/re/font.md "OBJ cells size 8"): party-card names on own tiles 0x3C0.., labels
+03043E-030441   # party card name sprite: movs/lsls 0x1E0 -> bl ctile
+0343A2-0343A3   # party card name: r1 = 8k
+0343A8-0343AB   # party card name: bl 0x08014098 -> pname
+030794-030797   # card 4 name sprite tile literal 0x20D -> 0x3D8
+0347C0-0347C3   # card 4 name pname offset literal 0x20D -> 0x18
+034672-034675   # card 4 name: bl -> pname
+035214-035219   # shikigami page header: movs r3, #8 + bl o8
+035B24-035B29   # shikigami page labels: movs r3, #5 + bl o8
+030C7A-030C7F   # party Swap label: movs r3, #4 + bl o8
 03AEB2-03AEB5   # name-entry grid rows -> gridline
 10971C-10971F   # literal: techniques_b reader -> JP copy (build.py JP_COPIES)
 10F98A-10F98D   # tag centring by pixel width
@@ -53,5 +63,5 @@
 110AE8-110AF7   # code: smapline thunk: small-font BG labels 0x08110AE8
 110BAC-110BBB   # code: strip thunk: battle results 0x08110BAC
 110C88-110C97   # code: strip thunk: battle text rows 0x08110C88
-111B50-111B7F   # code: tag thunk 0x08111B50 + tagw + fill7 thunks in the replaced body; dead=111B50-111C07 (the replaced routine's own loop)
+111B50-111BAF   # code: tag thunk 0x08111B50 + tagw + fill7 + pname + ctile + o8 thunks in the replaced body; dead=111B50-111C07 (the replaced routine's own loop)
 120A80-120A83   # battle name tag tile literal (last of the 6)

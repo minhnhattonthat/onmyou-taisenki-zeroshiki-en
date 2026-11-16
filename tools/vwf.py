@@ -795,6 +795,11 @@ TAG_TILE = 0x3D3
 TAG_TILES = 8
 TAG_LITERALS = (0x10F9DC, 0x120A80, 0x115754, 0x1157DC, 0x115E50, 0x1162F4)  # words 0x3DB loaded as the tile
 TAG_FILL_CALLS = (0x1156EA, 0x115772, 0x115DE6, 0x116296)  # bl 0x08005354(2, tile): the 5-tile plain fill
+# Party-menu shikigami names (docs/re/font.md "OBJ cells size 8"): cards 0..2 at OBJ_NAME_TILE + 8k, card 4 (the
+# lone centred card) at + 0x18. 0x3C0..0x3DF hold pixels only in battles (tools/debug/vramfree.lua over all 53
+# scenes, work/qa/vfall), and battles reload their own OBJ tiles.
+OBJ_NAME_TILE = 0x3C0
+PNAME_THUNK, CTILE_THUNK, O8_THUNK = 0x08111B80, 0x08111B90, 0x08111BA0  # in the dead body of 0x08111B50
 
 TAG_SRC = """
     b tag
@@ -802,6 +807,77 @@ TAG_SRC = """
     b smapline
     b plate
     b fill7
+    b pname
+    b ctile
+    b o8
+@ pname(r0 = str, r1 = tile offset from OBJ_NAME_TILE): a shikigami name on a party card, in the small font, into 8
+@ tiles (64 px) at OBJ tile OBJ_NAME_TILE + r1 (the cards' own 5 tiles were too few once sprite cell 2 was widened to
+@ 32x8 + 32x8 for the speaker plate; see obj8_patch).
+pname:
+    push {{lr}}
+    ldr r2, pnbase
+    adds r1, r1, r2
+    lsls r1, r1, #5
+    ldr r2, tobj
+    adds r1, r1, r2
+    movs r2, #8
+    movs r3, #64
+    bl splot
+    pop {{r1}}
+    bx r1
+
+@ ctile(r6 = card k, r8 = 15k) -> OBJ_NAME_TILE + 8k - r8: replaces `movs r0, #0x1E0` before the card's sprite create
+@ (the caller adds r8 back). Card 0 first clears all 32 name tiles (empty cards draw no name, and a battle may have
+@ left pixels there).
+ctile:
+    push {{lr}}
+    sub sp, #8
+    cmp r6, #0
+    bne ct_skip
+    movs r0, #0
+    str r0, [sp]
+    mov r0, sp
+    ldr r1, ctvram
+    ldr r2, ctlen
+    svc #0xb
+ct_skip:
+    lsls r0, r6, #3
+    ldr r1, pnbase
+    adds r0, r0, r1
+    mov r1, r8
+    subs r0, r0, r1
+    add sp, #8
+    pop {{r1}}
+    bx r1
+
+@ o8(r0 = str, r1 = tile index, r2 = size 8, r3 = cap tiles): a small-font OBJ label (0x08014098 size 8 callers,
+@ their `movs r3, #0` patched to the cap) drawn at variable width into cap tiles at (index & 0x3FF), centred.
+o8:
+    push {{r4, r5, r6, lr}}
+    adds r4, r0, #0
+    lsls r1, r1, #22
+    lsrs r1, r1, #17
+    ldr r0, tobj
+    adds r5, r1, r0
+    lsls r6, r3, #3
+    adds r0, r4, #0
+    bl smeasure
+    cmp r0, r6
+    ble o8fit
+    adds r0, r6, #0
+o8fit:
+    subs r0, r6, r0
+    lsrs r0, r0, #1
+    lsls r3, r0, #16
+    orrs r3, r6
+    lsrs r2, r6, #3
+    adds r0, r4, #0
+    adds r1, r5, #0
+    bl splot
+    pop {{r4, r5, r6}}
+    pop {{r1}}
+    bx r1
+
 @ fill7(r0 = resource type, r1 = tile): the battle tag's plain fill (resource 2 = 5 tiles of colour 1) loaded by
 @ 0x08005354 at tile and tile + 2, so it covers 7 tiles (56 px, the widened tag; tile + 7 is left as the tag
 @ code cleared it). Called from the four fill paths 0x081156EA/0x08115772/0x08115DE6/0x08116296.
@@ -917,8 +993,9 @@ smdone:
     pop {{r1}}
     bx r1
 
-@ splot(r0 = str, r1 = dest tiles (8x8 4bpp, consecutive), r2 = tiles to clear, r3 = max px) -> width in px:
-@ plot the string in the small font (type 12) at variable width (small width table), clipped to max px.
+@ splot(r0 = str, r1 = dest tiles (8x8 4bpp, consecutive), r2 = tiles to clear, r3 = max px | start x << 16)
+@ -> end x in px: plot the string in the small font (type 12) at variable width (small width table) from start x,
+@ clipped to max px.
 splot:
     push {{r4, r5, r6, r7, lr}}
     mov r4, r8
@@ -929,9 +1006,12 @@ splot:
     sub sp, #8
     mov r8, r0
     mov sb, r1
+    lsrs r0, r3, #16
+    mov sl, r0
+    lsls r3, r3, #16
+    lsrs r3, r3, #16
     mov fp, r3
     movs r0, #0
-    mov sl, r0
     str r0, [sp]
     mov r0, sp
     lsls r2, r2, #3
@@ -1107,6 +1187,9 @@ tk7ec0:  .word 0x7EC0
 tk0fff:  .word 0x0FFF
 tlookup: .word 0x080059A1
 tftab:   .word 0x084028EC
+pnbase:  .word {nametile:#x}
+ctvram:  .word {nametile_addr:#x}
+ctlen:   .word 0x05000100
 """
 
 
@@ -1114,8 +1197,9 @@ def tag_code(far, swidths_addr):
     """Assemble the small-font blob at file offset `far`; returns (code, tag, tagw, smapline, plate entries)."""
     addr = 0x08000000 | far
     src = TAG_SRC.format(ncodes=NCODES, smalln=SMALL_N, swidths=0x08000000 | swidths_addr, tagpx=ensmall.TAG_PX,
-                         tagtiles=TAG_TILES, platepx=PLATE_PX, platetiles=PLATE_TILES)
-    return _asm(src, addr), addr, addr + 2, addr + 4, addr + 6, addr + 8
+                         tagtiles=TAG_TILES, platepx=PLATE_PX, platetiles=PLATE_TILES, nametile=OBJ_NAME_TILE,
+                         nametile_addr=0x06010000 + OBJ_NAME_TILE * 32)
+    return (_asm(src, addr), addr, addr + 2, addr + 4, addr + 6, addr + 8, addr + 10, addr + 12, addr + 14)
 
 
 def tag_tiles(orig, write, fill7):
@@ -1307,7 +1391,7 @@ def install(img, write):
     swt_off = img.alloc(len(swt))
     write(swt_off, swt, "vwf small widths")
     tfar = img.alloc(len(tag_code(0x800000, 0x800000)[0]) + 16)
-    tcode, ttag, ttagw, tmap, tplate, tfill = tag_code(tfar, swt_off)
+    tcode, ttag, ttagw, tmap, tplate, tfill, tpname, tctile, to8 = tag_code(tfar, swt_off)
     write(0x01ED64, plate_patch(tplate), "vwf speaker plate (0x0801EC54 loop -> plate, centred by pixels)")
     plate_frame(orig, write)
     write(tfar, tcode, "vwf small-font code")
@@ -1323,9 +1407,47 @@ def install(img, write):
     write(0x10F98A, bl(0x0810F98A, 0x08111B60), "vwf tag centring: pixel width")
     write(0x111B70, thunk(0x111B70, tfill), "vwf fill7 thunk (in the replaced routine's body)")
     tag_tiles(orig, write, tfill)
+    write(PNAME_THUNK & 0xFFFFFF, thunk(PNAME_THUNK & 0xFFFFFF, tpname), "vwf pname thunk (in the replaced routine's body)")
+    write(CTILE_THUNK & 0xFFFFFF, thunk(CTILE_THUNK & 0xFFFFFF, tctile), "vwf ctile thunk (in the replaced routine's body)")
+    write(O8_THUNK & 0xFFFFFF, thunk(O8_THUNK & 0xFFFFFF, to8), "vwf o8 thunk (in the replaced routine's body)")
+    obj8_patch(orig, write)
     save_headers(orig, write)
     plate_names(orig, write)
     return far
+
+
+# Size-8 callers of 0x08014098 (docs/re/font.md "OBJ cells size 8"): (offset of `movs r3, #0`, offset of the bl,
+# cap tiles, what). The label OBJs are fixed 8x8 cells, one per JP char of the longest string they show.
+O8_CALLS = [(0x35214, 0x35216, 8, "shikigami page header 1292D8 (8 OBJs x 92..155)"),
+            (0x35B24, 0x35B26, 5, "shikigami page labels table 0x08129328 (5 OBJs x 112..151)"),
+            (0x30C7A, 0x30C7C, 4, "party Swap label 1292CC")]
+
+
+def obj8_patch(orig, write):
+    """Party-card names and the size-8 OBJ labels. Sprite cell 2 (also the dialogue speaker plate) is 32x8 + 32x8
+    since plate_frame, so a card's name row shows 8 tiles from its base, but each card owned only 5 (0x1E0 + 15k;
+    the HP digits follow), so "Kogenta" showed as "Kogen" + HP digits. Names move to 8 own tiles each."""
+    bl_menu = 0x08014098
+    # cards 0..2: sprite create (0x08030438: r8 = 15k; `movs r0, #0xF0; lsls r0, r0, #1` = 0x1E0, then add r8)
+    assert orig[0x3043E:0x30442] == bytes.fromhex("f0204000"), "obj8: card sprite tile moved"
+    write(0x3043E, bl(0x0803043E, CTILE_THUNK), "obj8 party card name sprite: tile 0x3C0 + 8k (ctile)")
+    # cards 0..2: name draw (r5 = k): r1 = 8k, bl pname
+    assert orig[0x343A2:0x343A4] == bytes.fromhex("211c"), "obj8: card name tile arg moved"
+    assert orig[0x343A8:0x343AC] == bl(0x080343A8, bl_menu), "obj8: card name call moved"
+    write(0x343A2, struct.pack("<H", 0x00E9), "obj8 party card name: r1 = 8k (lsls r1, r5, #3)")
+    write(0x343A8, bl(0x080343A8, PNAME_THUNK), "obj8 party card name -> pname")
+    # card 4 (tile literal 0x20D at 0x08030794 for the sprite, 0x080347C0 for the draw)
+    for lit in (0x30794, 0x347C0):
+        assert orig[lit:lit + 4] == struct.pack("<I", 0x20D), f"obj8: card 4 literal {lit:06X} moved"
+    write(0x30794, struct.pack("<I", OBJ_NAME_TILE + 0x18), "obj8 card 4 name sprite tile 0x20D -> 0x3D8")
+    write(0x347C0, struct.pack("<I", 0x18), "obj8 card 4 name: pname offset 0x18")
+    assert orig[0x34672:0x34676] == bl(0x08034672, bl_menu), "obj8: card 4 name call moved"
+    write(0x34672, bl(0x08034672, PNAME_THUNK), "obj8 card 4 name -> pname")
+    for movs, call, cap, why in O8_CALLS:
+        assert orig[movs:movs + 2] == bytes.fromhex("0023"), f"obj8: movs r3 at {movs:06X} moved"
+        assert orig[call:call + 4] == bl(0x08000000 | call, bl_menu), f"obj8: call {call:06X} moved"
+        write(movs, struct.pack("<H", 0x2300 | cap), f"obj8 {why}: cap {cap} tiles")
+        write(call, bl(0x08000000 | call, O8_THUNK), f"obj8 {why} -> o8 (small VWF, centred)")
 
 
 def plate_names(orig, write):
