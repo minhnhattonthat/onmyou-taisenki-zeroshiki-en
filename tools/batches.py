@@ -143,8 +143,10 @@ def problems(entry, en, terms):
     plain = TOKEN.sub("", en)
     if bad := sorted({c for c in plain if not encodable(c) and c != "\n"}):
         out.append(f"unencodable characters {bad}")
-    if re.search(r"\\u[0-9a-fA-F]{4}", en) or "\t" in en:
-        out.append("escape sequence or tab in the English")
+    # a real tab is the wide blank glyph (enfont "\t", set in script/ JSON); a literal "\t" / "\uXXXX" is an escape
+    # a translator typed into the TSV
+    if re.search(r"\\u[0-9a-fA-F]{4}|\\t", en):
+        out.append("escape sequence in the English")
     want = Counter(t for t in TOKEN.findall(jp) if t not in FREE)
     have = Counter(t for t in TOKEN.findall(en) if t not in FREE)
     if want != have:

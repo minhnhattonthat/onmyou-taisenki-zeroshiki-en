@@ -31,7 +31,7 @@ ORDINAL = re.compile(r"\{00C[89A-C]\}(st|nd|rd|th)\b")
 KEEP = ROOT / "script" / "keep_jp.txt"
 BLANK_OK = ROOT / "script" / "blank_ok.txt"
 STUB_OK = ROOT / "script" / "stub_ok.txt"
-BLANKS = (" ", "　")
+BLANKS = (" ", "　", "\t")  # "\t" = the wide blank glyph (enfont)
 STUB = 6  # a wrapped paragraph's last line shorter than this many letters is an orphan
 
 

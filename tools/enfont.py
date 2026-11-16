@@ -22,7 +22,11 @@ CODES = {" ": 0x8140, "!": 0x8149, '"': 0x8168, "#": 0x8194, "$": 0x8190, "%": 0
          "(": 0x8169, ")": 0x816A, "*": 0x8196, "+": 0x817B, ",": 0x8143, "-": 0x817C, ".": 0x8144, "/": 0x815E,
          ":": 0x8146, ";": 0x8147, "<": 0x8183, "=": 0x8181, ">": 0x8184, "?": 0x8148, "@": 0x8197, "[": 0x816D,
          "]": 0x816E, "_": 0x8151, "~": 0x8160, "…": 0x8163, "—": 0x815C, "♪": 0x81F4, "*": 0x8196,
-         "“": 0x8167, "‘": 0x8165}
+         "“": 0x8167, "‘": 0x8165,
+         # "\t" = a wide blank (15 px, one character): indents text past art without spending the message's
+         # character budget on 4 px spaces (battle help rows clear the command wheel like the JP's 16 px spaces).
+         # 〒 0x81A7 occurs in no script text.
+         "\t": 0x81A7}
 CODES.update({chr(0x30 + i): 0x824F + i for i in range(10)})
 CODES.update({chr(0x41 + i): 0x8260 + i for i in range(26)})
 CODES.update({chr(0x61 + i): 0x8281 + i for i in range(26)})
@@ -121,6 +125,7 @@ ART = {
     "_": ". . . . . . . . . . ####",
     "…": ". . . . . . . . #.#.#",
     "♪": "..## ..#. ..#. ..#. ..#. .##. ###. ###. .#..",
+    "\t": "..............",
 }
 
 
