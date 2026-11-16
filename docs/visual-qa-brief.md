@@ -31,6 +31,9 @@ Standing non-bugs, `ok`:
   the kana sound-effect sprites over battle hits (ドォォン, バシッ and the like). Any other Japanese is an issue.
 - the battle command ring / Drive panel: its green-and-pink striped backdrop and the half-hidden side labels are the
   original's art (scanline mask); English labels drawn over those stripes are fine if the middle label reads.
+- town-sign sheets (JP crop left, English right): crops end at the shot or map edge, so a sign cut at a crop edge is
+  not clipped in the game; the red "DVD" beside "VIDEO" is Latin letters (original art); "V E G" is drawn faint
+  like the original's engraved 八百長; the florist sign 花 is a tulip pictogram on purpose (16 x 13 px of own tiles).
 
 ## Verdicts
 One line per sheet id, nothing else:

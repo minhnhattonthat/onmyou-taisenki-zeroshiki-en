@@ -155,8 +155,7 @@ SIGNS = {
     # map 65 (idx 15, pal E): green awning 花; only tiles 107/108/111/112 (x 24..39) are its own
     "flowers": (15, [[0x0FC, 0x0FD, 0x0FD, 0x0FD, 0x0FD], [0x105, 0x106, 0x106, 0x107, 0x108],
                      [0x10F, 0x110, 0x110, 0x111, 0x112]],
-                lambda px: redraw(px, "", (24, 10, 40, 23), font="micro", ink=6, top=11, cols={6, 0xE},
-                                  lines=["FLOW", "ERS"])),
+                lambda px: flower(px)),
     # map 60 (idx 14, pal B): purple awning クリーニング
     "cleaning_p": (14, [[0x192, 0x193, 0x193, 0x193, 0x193, 0x193, 0x193, 0x193],
                         [0x1A0, 0x1A1, 0x1A2, 0x1A3, 0x1A4, 0x1A5, 0x1A6, 0x1A1]],
@@ -177,6 +176,31 @@ SIGNS = {
                     [0x088, 0x089, 0x08A, 0x08B, 0x08C, 0x08D, 0x08E, 0x08F, 0x090, None]],
                lambda px: redraw(px, "DENTIST", (12, 8, 62, 15), ink=6, top=8, cols={6})),
 }
+
+
+FLOWER = ["#...#...#",
+          "##.###.##",
+          "#########",
+          "#########",
+          ".#######.",
+          "..#####..",
+          "....#....",
+          ".#..#..#.",
+          "..#.#.#..",
+          "...###...",
+          "....#...."]
+
+
+def flower(px):
+    """花 (florist): 16 x 13 px of own tiles fit only "FLOW"/"ERS" split over two lines, so the sign gets a flower
+    tulip in the kanji's ink and drop shadow instead (word-free, like the ◇◇ leaf marks beside it)."""
+    blank(px, (24, 10, 40, 23), {6, 0xE})
+    ink = {(11 + dy, 27 + dx) for dy, row in enumerate(FLOWER) for dx, c in enumerate(row) if c == "#"}
+    for y, x in ink:
+        if (y + 1, x) not in ink:
+            px[y + 1][x] = 0xE
+    for y, x in ink:
+        px[y][x] = 6
 
 
 def grocer(px):
