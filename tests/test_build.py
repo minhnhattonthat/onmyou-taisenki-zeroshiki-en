@@ -76,6 +76,17 @@ def test_relocate_all_keeps_everything_reachable(orig):
             assert new >= build.FREE[0] and rom[new:new + len(raw) + 1] == raw + b"\0", hex(off)
 
 
+def test_layout_maps_every_text_to_its_built_address(orig):
+    """build/strings.tsv (textcover.py input): each script run and table string id -> the address its first byte
+    was built at; with everything relocated, the bytes there are the original text."""
+    lay = []
+    rom, _ = build.build(orig, relocate=True, layout=lay)
+    assert len(lay) == len({i for i, _ in lay})
+    for i, at in lay:
+        assert at >= build.FREE[0], hex(i)
+        assert rom[at:at + 2] == orig[i:i + 2], hex(i)
+
+
 def test_pinned_script_moves_with_its_slot(orig):
     rom, _ = build.build(orig, relocate=True)
     for script, locs in evscript.PINNED.items():

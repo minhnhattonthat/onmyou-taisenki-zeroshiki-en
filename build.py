@@ -42,6 +42,7 @@ class Image:
         self.orig = orig
         self.buf = bytearray(orig)
         self.log = []
+        self.layout = []  # (text id, address the game reads its first byte from), for build/strings.tsv
         self.free = FREE[0]
 
     def write(self, off, data, who):
@@ -126,10 +127,25 @@ def keep_jp_tables(img):
         img.repoint(lits, new, f"jp copy {table:06X} ptr")
 
 
-def build(orig, relocate=False, scripts=None, strings=None, engine=False):
+def text_runs(off, toks, at, new_toks):
+    """(text id, built address) per text run of the script at off (id = the run's original offset), placed at `at`
+    with new_toks (same token layout as toks: overrides only change text)."""
+    out, p, q = [], off, at
+    for t, n in zip(toks, new_toks):
+        if t[0] == "text":
+            out.append((p, q))
+        p += len(evscript.encode([t]))
+        q += len(evscript.encode([n]))
+    return out
+
+
+def build(orig, relocate=False, scripts=None, strings=None, engine=False, layout=None):
     """Return (rom bytes, write log). scripts/strings: optional {offset: tokens} / {offset: bytes} overrides.
-    engine: install the English font + VWF (off for the identity tests)."""
+    engine: install the English font + VWF (off for the identity tests). layout: a list to receive
+    (text id, built address of its first byte) for every script run and table string."""
     img = Image(orig)
+    if layout is not None:
+        img.layout = layout
     if engine:
         install_engine(img)
         keep_jp_tables(img)
@@ -137,13 +153,15 @@ def build(orig, relocate=False, scripts=None, strings=None, engine=False):
     for off, toks in sorted(sc.scripts.items()):
         if off not in sc.refs:
             continue  # dead bare /999
-        toks = (scripts or {}).get(off, toks)
-        place(img, off, evscript.encode(toks) + b"\0", sc.room[off], sc.refs[off], f"script {off:06X}", relocate,
-              evscript.PINNED.get(off, ()))
+        new_toks = (scripts or {}).get(off, toks)
+        at = place(img, off, evscript.encode(new_toks) + b"\0", sc.room[off], sc.refs[off], f"script {off:06X}",
+                   relocate, evscript.PINNED.get(off, ()))
+        img.layout += text_runs(off, toks, at, new_toks)
     st = strtab.Strings(orig)
     for off, raw in sorted(st.strings.items()):
         raw = (strings or {}).get(off, raw)
-        place(img, off, raw + b"\0", st.room[off], st.refs[off], f"string {off:06X}", relocate)
+        img.layout.append((off, place(img, off, raw + b"\0", st.room[off], st.refs[off], f"string {off:06X}",
+                                      relocate)))
     if len(img.buf) > len(orig):  # grow to a whole MiB, 0xFF filled
         img.buf += b"\xff" * ((-len(img.buf)) % 0x100000)
     return bytes(img.buf), img.log
@@ -172,12 +190,17 @@ def main():
             raise SystemExit(f"--qa: no entry {', '.join(qa)}")
         a.out = a.out or str(OUT.with_name("qa.gba"))
     scripts, strings = textdb.overrides(orig, files)
-    rom, log = build(orig, relocate=a.relocate_all, scripts=scripts, strings=strings, engine=not a.no_engine)
+    layout = []
+    rom, log = build(orig, relocate=a.relocate_all, scripts=scripts, strings=strings, engine=not a.no_engine,
+                     layout=layout)
     a.out = a.out or str(OUT.with_name("marker.gba") if a.marker else OUT)
     out = Path(a.out)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_bytes(rom)
     out.with_suffix(".writes").write_text("".join(x + "\n" for x in log), encoding="utf-8")
+    if out == OUT:  # textcover.py input: id<TAB>GBA address the game reads the text's first byte from
+        out.with_name("strings.tsv").write_text(
+            "".join(f"{i:06X}\t{0x08000000 | at:08X}\n" for i, at in sorted(layout)), encoding="utf-8")
     sha = hashlib.sha1(rom).hexdigest()
     same = "identical to the original" if rom == orig else f"{len(log)} writes"
     print(f"{out.relative_to(ROOT) if out.is_relative_to(ROOT) else out}: {len(rom):#x} bytes, sha1 {sha}, {same}")

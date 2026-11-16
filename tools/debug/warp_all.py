@@ -22,6 +22,9 @@ ROM = ROOT / "rom" / "Onmyou Taisenki Zeroshiki (Japan).gba"
 PROBES = []  # extra --script probes (--probe)
 SEQ = [0, 0]  # --seq N, --hold H
 KINDS = {}    # scene name -> kind (script scenes hold 45 frames by default)
+VARS = []     # extra --var for emu.py (--var), e.g. a probe's RANGES
+DEFAULT_SCENES = ROOT / "tools" / "debug" / "scenes.txt"
+SCENES = [DEFAULT_SCENES]  # --scenes
 
 
 def kind_of(name):
@@ -50,6 +53,10 @@ def run(rom, name, opt, out, states):
            "--state-out", str((states / f"{name}.mss").resolve())]
     for p in PROBES:
         cmd += ["--script", str(Path(p).resolve())]
+    for v in VARS:
+        cmd += ["--var", v]
+    if SCENES[0] != DEFAULT_SCENES:
+        cmd += ["--var", f"SCENES_FILE='{SCENES[0].resolve().as_posix()}'"]
     mash = opt.get("mash", "40")
     if mash != "0":
         cmd += ["--mash", mash]
@@ -82,13 +89,18 @@ def main():
     ap.add_argument("--seq", type=int, default=0, help="QA: a shot every N frames after the scene is reached, "
                     "and <out>/<scene>/sheet.png from them (--changed 0.02)")
     ap.add_argument("--hold", type=int, default=1500, help="with --seq: frames to keep running after the scene")
+    ap.add_argument("--scenes", default=str(DEFAULT_SCENES), help="scene list (default tools/debug/scenes.txt; "
+                    "tools/debug/cover.py writes one per event script for text coverage)")
+    ap.add_argument("--var", action="append", default=[], help="extra emu.py --var (repeatable), e.g. a probe's")
     a = ap.parse_args()
     PROBES[:] = a.probe
+    VARS[:] = a.var
     SEQ[:] = [a.seq, a.hold]
-    KINDS.update({n: k for n, k, _ in scenes(ROOT / "tools" / "debug" / "scenes.txt")})
+    SCENES[0] = Path(a.scenes)
+    KINDS.update({n: k for n, k, _ in scenes(SCENES[0])})
     out, states = Path(a.out), Path(a.states)
     states.mkdir(parents=True, exist_ok=True)
-    todo = scenes(ROOT / "tools" / "debug" / "scenes.txt")
+    todo = scenes(SCENES[0])
     if a.only:
         keep = set(a.only.split(","))
         todo = [s for s in todo if s[0] in keep]

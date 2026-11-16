@@ -2,9 +2,10 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator in progress (session 21: 14 of the 16 first-pass visual-QA issues fixed, 2 kept
-  Japanese by D12; re-tour + re-verdict of the changed scenes still to do). Last build 2026-11-16 (session 21):
-  sha1 a32b1108…
+- **Phase:** 8. QA in the emulator in progress (session 22: re-tour + re-verdict done, 71/77 sheets ok; 2 text
+  fixes, tutorial Drive screen lettering open; text-coverage tooling built, first coverage run). Last build
+  2026-11-16 (session 22): build/onmyou_zeroshiki_en.gba = a32b1108… (tour9 + coverage ran on it); the session's
+  text fixes are in the source and in build/s22.gba (d6109a4c…), not yet in a full tour.
 - **Done:**
   - Step 0: ROM pinned (`rom.sha1`), MesenCE 2.2.1 + GBA BIOS in `tools/mesen/`, guard hook in `.claude/settings.json`
     (canary blocked), pre-commit runs `tools/check.py` (a failing test was rejected), boot route `tools/routes/boot.txt`
@@ -185,23 +186,40 @@ Updated at the end of every session. Keep it to what the next session needs; his
     SFX kana stay Japanese (revisit). New `tools/bgmap.py` (BG map entries of a ppudump). Checked in shots:
     work/qa/s21a (Load, Riku, [Weak], ch11), s21b (Save/Load), s21c (ring, party), bw2 (wheel, shield), bw4
     (plates).
-- **Next (phase 8: QA in the emulator; done-when in the skill's table):** re-tour the scenes changed in session 21
-  with the current build (`warp_all.py build/onmyou_zeroshiki_en.gba --seq 90 --hold 1500 --out work/qa/tour9`;
-  at least battle_forest, battle_lose, battle_win, tutorial_battle, menu_ring, menu_keyitem, menu_map,
-  menu_party, menu_status, menu_shiki_p1..p4, title_load, link_connect, menu_save, ch11_start; simplest: all
-  53), re-init the manifest with `--build`, re-run `tools/vqa.py` on the new chunks, fix what they flag. Then the
-  rest of the done-when: graphics rows left
+  - Session 22 (phase 8): full re-tour `work/qa/tour9` (56/56, build a32b1108), manifest re-made from it (old one
+    `work/qa/manifest_s20.tsv`, verdicts `work/qa/verdicts_s20/`), `tools/vqa.py` on 10 chunks: 71 ok, 6 issue.
+    Handled: battle_win "Short / cut" → "Quick / input" (40F724/40F730, the L-button label of the 印 panel: shot
+    work/qa/s22d/ql.png); ch13 Koryu page break (ev_45C000.json, "Ohoho, what have we here? / A visitor, way out
+    in a place like this..."). Checked, not bugs: ch6_start empty box (a frame between pages; dense capture
+    work/qa/s22a/box4.png shows page 4 "Taihaku Shrine" drawn); ch9_start garbled plate (Villager→Kogenta overlap
+    for 1-2 frames, then clean: work/qa/s22b/plate*.png; cosmetic, in polish). Still open: battle_win ドォォン SFX
+    kana (D12, kept) and the **tutorial Drive screen** (below). **Text coverage tooling**: `build.py` writes
+    `build/strings.tsv` (5,185 ids → built address; `build(layout=)`, test_layout_maps_every_text_to_its_built_address),
+    `warp_all.py --scenes FILE --var V`, `tools/debug/cover.py scenes|ranges|run|report` (one `script ID` scene per
+    StartScript id holding text: 283; skill probe textcover.lua; report via the skill's textcover.py).
+    `tbl/jp_known.txt` committed: `jp_left.py ... --known tbl/jp_known.txt` exits 0 (13 known runs).
+- **Next (phase 8: QA in the emulator; done-when in the skill's table):**
+  1. **Tutorial Drive screen** (tutorial_battle sheet frame 1,2; work/qa/s22c/tbz.png vs tbjpz.png): the Drive's
+     green screen shows the command-wheel art (`gfx.wheel`, raw 0x22C434) scaled up under a scanline mask that
+     blanks alternate rows, so the 1-px English strokes of "Attack" break up (codex read "Master"). Fix: bolder
+     wheel lettering (2-px stems, e.g. the CARD_FONT style scaled, or a short word like "ATK" in a 2-px font),
+     check the wheel itself still reads, or find whether the Drive screen has its own tiles.
+  2. After any change: rebuild, full tour `--out work/qa/tour10`, **delete** work/qa/manifest.tsv (qa_gate init
+     keeps an existing id's old path: "0 added") and re-init with `--build`, move verdicts aside, `tools/vqa.py`.
+     The D12 ドォォン kana will be flagged again: either redraw it or have the brief accept D12 items.
+  3. Text coverage: `cover.py run` was started on build a32b1108 (results work/qa/cover/run, report
+     work/qa/cover/report.txt); rebuild only after it ends (strings.tsv must match the ROM it ran on), or re-run.
+     Then waive debug/unused (D9) in `docs/text_unshown.tsv`, add scenes for what is left (battles, menus, NPCs
+     need the 56-scene tour run with `--probe <skill>/scripts/lua/probes/textcover.lua --var RANGES=...` into
+     work/qa/cover/tour).
+  4. The rest of the done-when: graphics rows left
   (docs/re/graphics.md): G3 name-entry header/`けってい` (header already English as font text: check), G5 framed
   labels per screen (the Drive labels are done), G6 battle win/lose banners, G8, G11 town signs (low), G12 map
   labels, chapter cards / game over / credits: confirm each in tour sheets.
-  Text coverage: `build/strings.tsv` (id → first-byte address in the built ROM) does not exist yet; write it from
-  the build layout, log reads with the skill's `lua/probes/textcover.lua` on a per-event-script warp run (541
-  scripts; generate scenes or a script loop), waive debug/unused (D9) in `docs/text_unshown.tsv`.
   Still unseen in a shot (add scenes): the party Swap label 1292CC, the
   non-battle right speaker plate (map 0x19E0BC: an event with a right-hand speaker), the 129064 column header
   row, the centred tutorial-help headers 410AE4.. (session 19 changed them; find when the battle shows them).
-  Review minors left: commit `tbl/jp_known.txt` (str_debug_menu 0x125E9C/0x125EA8/0x125EDC + name-entry kana
-  rows 0x40C36C..0x40C4BC, D9) and pass `--known` to jp_left.py; D10 "Shiki Pts" → "Shiki Points" via OBJ VWF.
+  Review minors left: pass `--known tbl/jp_known.txt` to jp_left.py in the release script; D10 "Shiki Pts" → "Shiki Points" via OBJ VWF.
   Translator notes to carry into the briefs: the check wants the exact `{0000}`/`{0010}` counts of the JP and a
   glossary term must not be split across a `{0000}` ("Spirit{0000}Stone Mound" fails); gaiji readings are in the
   entry's `notes` (Р=巫, 巫女 = shrine maiden); str_battle_msgs 40E534 starts with `\n` (code-built weapon/skill
@@ -214,8 +232,10 @@ Updated at the end of every session. Keep it to what the next session needs; his
 - **Known limits of the warp:** event scenes run over map 23 (the house) unless the script changes map itself
   (`map=` per scene overrides); which map normally hosts each event is not mapped yet (NPCs come from `/116`
   entries in map scripts 8000+). No GOD/NOENC yet (battles: mash wins; `poke=` for HP).
-- **Open bugs:** the 16 first-pass verdict issues (session 20, build fe1956a3) are fixed or ruled (session 21,
-  D12) but not yet re-verdicted: the manifest still fails until the re-tour + `tools/vqa.py` pass above.
+- **Open bugs:** tutorial Drive screen "Attack" unreadable under the scanline mask (Next 1). The manifest
+  (work/qa/manifest.tsv, tour9) fails until the next full tour + vqa pass. Cosmetic: speaker plate shows the old
+  and new names overlapped for 1-2 frames on a speaker change (ch9_start; splot clears its tiles, so the overlap
+  likely comes from the OBJ/tile update timing; check whether the original does the same).
   Cosmetic: field ring side labels are alpha-blended by the game, so the thin English strokes read fainter than
   the kanji did (a bolder 2-px font would help); shikigami-page cell gaps (docs/polish.md). (battle_win's scene
   shot is black in both tours: a fade frame, not a crash.)

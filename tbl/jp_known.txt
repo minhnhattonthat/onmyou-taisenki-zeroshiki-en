@@ -1,0 +1,13 @@
+125E9C debug menu label シナリオ (str_debug_menu: dead debug menu, D9)
+125EA8 debug menu label パレット (D9)
+125EDC debug menu label バンゴウ (D9)
+40C36C name-entry kana grid row (keep_jp: the player's name is typed in kana here; ABC tab is English)
+40C384 name-entry kana grid row
+40C390 name-entry kana grid row
+40C3D8 name-entry kana grid row
+40C3F0 name-entry kana grid row
+40C438 name-entry kana grid row
+40C450 name-entry kana grid row
+40C45C name-entry kana grid row
+40C4A4 name-entry kana grid row
+40C4BC name-entry kana grid row
