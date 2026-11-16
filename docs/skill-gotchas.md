@@ -35,3 +35,8 @@ One line per gotcha: the reference file it belongs in, then the fact.
 - platform-gba.md: an English font with a 1 px outline colour shows that colour as a solid box where an OBJ palette maps it to black and the JP glyphs had no outline; strip the outline index in that renderer path.
 - platform-gba.md: keystone assembles Thumb `nop` as the Thumb-2 hint 0xBF00, which the GBA's ARM7TDMI can't run; write `mov r8, r8` (0x46C0) for padding.
 - emulator-qa.md: emu.py `--var AT=3500` arrives in Lua as a number, so `AT:gmatch` errors; wrap such vars in `tostring()`.
+- graphics.md: vramfind.py matched the title-menu button tiles to scattered single tiles of a dedup tileset (0x1442xx, dup:N) while the real source was a contiguous 14-tile run elsewhere (0x224874); a VRAM write watch (valwatch lr/r0 at the BIOS CpuSet PC 0xB90) gave the true source in one run.
+- emulator-qa.md: probes/watch.lua in read mode on a ROM range sees no BIOS CpuSet/DMA reads (0 hits for tiles the game did copy); watch the VRAM destination for writes instead and read r0 (source) at the BIOS PC.
+- emulator-qa.md: emu.py drops a screenshot identical to the previous one, so a per-N-frames shot sequence on a static menu leaves only 1-2 files; that is expected, not a failed hook.
+- platform-gba.md: keystone rejects GNU numeric local labels (`bge 1f` / `1:`) with KS_ERR_ASM_INVALIDOPERAND; use named labels.
+- platform-gba.md (this game): sprite cell ids above 662 (bound literal 0x02960000 at 6 sites) are another resource type, so a sprite cell appended at id 994 silently drew nothing; give a fixed-width OBJ more tiles instead of a new cell.

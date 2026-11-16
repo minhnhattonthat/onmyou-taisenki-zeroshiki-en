@@ -14,9 +14,9 @@ Phase 5's marker build re-checks this list: any Japanese still on screen there t
 | # | Screen / element | Source (sweep sheet:row) | Notes |
 |---|---|---|---|
 | G1 | Title logo 陰陽大戦記 / 零式 (+ furigana おんみょうたいせんき, ゼロシキ) | raw 0x140000+0x4400..0x8400 (269:26, 270:0) and/or 0x2247F4+0x7C00..0xD800 (284:24..285) | No official English logo → per D5 keep the Japanese logo; translate the furigana line / add English subtitle |
-| G2 | Title menu はじめから / つづきから / つうしん | guess: 0x2247F4 framed labels (283:25, 284:20) | seen at title (smoke-orig f000840) |
+| G2 | Title menu はじめから / つづきから / つうしん | **raw 0x224874 / 0x224A34 / 0x224BF4**, 14 tiles each (32x16 + 16x16 + 8x16 OBJ), CpuSet to OBJ tiles 0x388.. at title | **DONE** (session 20): "New Game" / "Continue" / "Link", `tools/gfx.py` (small font, F outlined E, fill striped 9/8); shot work/qa/g8n/t.png |
 | G3 | Name entry: header 名前入力, tabs カナ / かな / ABC, `START けってい` | guess: 0x2247F4+0x0000..0x6C00 framed labels; 0x140000+0x34000 (275:25) | play session p1 step 3; kana grid itself is font text (0x125E04 / 0x40C2A0) |
-| G4 | Yes/No buttons はい / いいえ | lz 0x3B4D40, 0x3B4FB0 (65:27..29), lz 0x3B577C (66:8..9) | name-entry confirm (p1 step 4) |
+| G4 | Yes/No buttons はい / いいえ | **lz 0x3B4D40 (No selected) + 0x3B4FB0 (Yes selected)**, 64 tiles = two 64x32 OBJs; 0x3B577C is NOT Yes/No (slot frames with small kanji: screen unknown, check the tour) | **DONE** (session 20): big-font "Yes"/"No", both states, LZ77 rewritten in place (`gfx.lz77_compress`); scenes name_confirm / name_confirm_yes, shots work/qa/g8n/y.png, y2.png |
 | G5 | Framed menu / status labels (dense outlined kanji+kana) | raw 0x22E3F4..0x2563F4 (2247F4+0x9C00..0x31C00; sheets 285..290) | ~160 KB of labels: menus, status screen, likely technique/skill name plates; identify per screen in phase 8 |
 | G6 | Large dark lettering / logo pieces | lz 0x687AC4, 0x687E84 (268:15..30) | possibly chapter or battle banners (勝利 / 敗北?) |
 | G7 | Outlined hiragana strip | lz 0x6884F8 (269:0..2) | probably name-entry or effect lettering |

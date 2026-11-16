@@ -2,9 +2,9 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 8. QA in the emulator: next (phase 7 done in session 18: lint 0 errors, control codes matched, ROM gate
-  green; one known fixed-cell overflow still open: the party Swap list, see open bugs). Last build 2026-11-16
-  (session 19): sha1 c55261f8…, smoke ok.
+- **Phase:** 8. QA in the emulator in progress (session 20: Swap list fixed, title buttons + Yes/No redrawn,
+  per-scene QA sheets + codex visual-QA runner, first verdict pass). Last build 2026-11-16 (session 20): sha1
+  fe1956a3…
 - **Done:**
   - Step 0: ROM pinned (`rom.sha1`), MesenCE 2.2.1 + GBA BIOS in `tools/mesen/`, guard hook in `.claude/settings.json`
     (canary blocked), pre-commit runs `tools/check.py` (a failing test was rejected), boot route `tools/routes/boot.txt`
@@ -163,11 +163,27 @@ Updated at the end of every session. Keep it to what the next session needs; his
     (425E90, 42DCF8, 4479F4, 46148C) + 12DC48. Minors 2+3 too (chars cap counts `{XXXX}` as 4, `started` gate
     dropped). Important 3: new scene `menu_party_swap` (party menu, A on card → swap list; `poke_after=` in
     warp.lua fakes 3 owned shikigami) reproduces the bug; probe `tools/debug/ramlog.lua` (RAM at frames).
-- **Next (phase 8: QA in the emulator; done-when in the skill's table):** qa_gate manifest over the tour sheets
-  (`work/qa/tour7` or a fresh tour) with a fresh read-only verdict pass per sheet; graphics-text rows from the
-  phase-1 survey (G1..G13: party card labels 攻/妖, HP, NEXT Lv, battle wheel, chapter cards, game over, credits)
-  redrawn in English and checked in zoomed cold-boot shots; `inkbox.py` on choice/centred boxes; `textcover.py`.
-  First fix the Swap list bug (open bugs). Still unseen in a shot (add scenes): the party Swap label 1292CC, the
+  - Session 20 (phase 8): **Swap list fixed** (`vwf.swap_list`): cell ids > 662 are another resource type (bound
+    0x02960000), so rows keep cell 2 (64 px) and get 8 own tiles (rows 0..7 at 0x21C + 8k, rows 8..9 at 0x3E0 +
+    8(k-8), tile fn 0x08111BB0), row x 196 → 192, names via o8 cap 7 (Tsuiga White 53 px fits); scenes
+    `menu_party_swap10` (10 widest names, work/qa/sw3). **Graphics** `tools/gfx.py` (decode/encode OBJ tile runs,
+    letter with the small or big English font, in-place LZ77 compressor, `install` from build.py; `gfx.py show`):
+    G2 title buttons, G4 Yes/No both states (scene `name_confirm_yes`); inkbox symmetric. **QA tooling**:
+    `warp_all.py --seq 90 --hold 1500` = shot every 90 frames after the scene + `<scene>/sheet*.png` (full size);
+    tours `work/qa/tour8` (EN) and `work/qa/tour_jp` (original); `work/qa/manifest.tsv` (qa_gate, glob sheet*.png);
+    `tools/vqa.py` = codex (read-only) per chunk with EN + JP sheet, brief `docs/visual-qa-brief.md`, verdicts
+    `work/qa/verdicts/chunk_NNN.tsv`. Helpers `tools/lzdump.py` (every LZ block → work/lz for vramfind),
+    `tools/oaminfo.py` (sprites in a rect from an .oam.bin).
+- **Next (phase 8: QA in the emulator; done-when in the skill's table):** act on the verdicts in
+  `work/qa/verdicts/` (`qa_gate.py check work/qa/manifest.tsv work/qa/verdicts`; fix each issue, re-tour those
+  scenes, re-init the manifest with `--build`, re-run `tools/vqa.py` on the new chunks). Graphics rows left
+  (docs/re/graphics.md): G3 name-entry header/`けってい` (header already English as font text: check), G5 framed
+  labels per screen, G6 battle win/lose banners, G8, G11 town signs (low), G12 map labels, LZ 0x3B577C (slot
+  frames with small kanji: find the screen), chapter cards / game over / credits: confirm each in tour8 sheets.
+  Text coverage: `build/strings.tsv` (id → first-byte address in the built ROM) does not exist yet; write it from
+  the build layout, log reads with the skill's `lua/probes/textcover.lua` on a per-event-script warp run (541
+  scripts; generate scenes or a script loop), waive debug/unused (D9) in `docs/text_unshown.tsv`.
+  Still unseen in a shot (add scenes): the party Swap label 1292CC, the
   non-battle right speaker plate (map 0x19E0BC: an event with a right-hand speaker), the 129064 column header
   row, the centred tutorial-help headers 410AE4.. (session 19 changed them; find when the battle shows them).
   Review minors left: commit `tbl/jp_known.txt` (str_debug_menu 0x125E9C/0x125EA8/0x125EDC + name-entry kana
@@ -184,16 +200,19 @@ Updated at the end of every session. Keep it to what the next session needs; his
 - **Known limits of the warp:** event scenes run over map 23 (the house) unless the script changes map itself
   (`map=` per scene overrides); which map normally hosts each event is not mapped yet (NPCs come from `/116`
   entries in map scripts 8000+). No GOD/NOENC yet (battles: mash wins; `poke=` for HP).
-- **Open bugs:**
-  - **Party Swap list names bleed** (scene `menu_party_swap`, shot work/qa/p8sw before the fix attempt:
-    "GorozTak", "TakamBan"). 10 rows (sprite create 0x08030AEC: slot 0x1B+k, r1 = cell 2, tile sp+4 = 0x21C + 5k,
-    x 196 → OBJ x 176, y 8 + 16k; names 0x08033314 from list bytes 0x0200273C, count u16 0x02007BDC, cursor
-    0x0200557B). Each row owns 5 tiles but cell 2 is 64 px since plate_frame, so it shows 3 tiles of the next
-    row. The button's inner width is ~48 px (x 176..224; scroll bar at 228..236, thumb = OBJ tile 0x262).
-    Tried (`vwf.swap_list`, not installed): copy the 994-entry cell table (literals 0x59D0 0x5A54 0x5A7C 0x5AAC
-    0x5AC8 0x5B04 0xB34C) with cell 994 = cell 2 but part 2 16x8, 6 tiles per row, o8 cap 6 → the rows vanish
-    (no OAM entries): an id ≥ 994 is refused or overruns a per-id array. Next ideas: reuse an id < 994 whose
-    entry is never used, or stride 8 tiles in a free 80-tile run (0x21C..0x261 is free, 0x262/0x266..0x269 are
-    the thumb/arrows), or a stride 7 with tile 0 blank (window tile 7 of the last row = 0x262).
+- **Open bugs:** first codex verdict pass (session 20, build fe1956a3, `work/qa/vqa.log`): 77 sheets, 61 ok,
+  16 issue. Fix these, then re-tour + re-verdict the changed sheets:
+  - Battle command wheel labels 技 / 防 still Japanese (battle_forest, battle_lose, battle_win: graphics); guard
+    graphic 防 (battle_lose/battle_win row 2 col 2).
+  - 攻撃1 / 攻撃ボーナス labels Japanese (battle_win/sheet_2, tutorial_battle): survey G9 said 攻撃１ is font text
+    (0x1293B0): check whether its entry is translated / which renderer draws it.
+  - Kana sound-effect graphics over the battle (battle_win/sheet_3): decide translate vs keep (SFX art).
+  - Ring menu ("Drive") lettering Japanese (menu_keyitem, menu_map, menu_party): G5 framed labels.
+  - Party card stat labels 攻 / 技 Japanese (menu_party, survey "party card labels").
+  - "Load" header left of centre (link_connect, title_load): vwf.save_headers base for the Load header.
+  - "Riku" left of centre in its name plate (menu_keyitem frame 3,1).
+  - Shikigami affinity page drops 【不利】 next to "Harvest clan" (menu_shiki_p1 sheet + sheet_2): check the entry.
+  - Title copyright lines Japanese under PUSH START BUTTON (title/sheet_2): graphics.
+  - ch11_start: page ends mid-sentence ("My friends who were suffering"): rebalance the page break.
   - (battle_win's scene shot is black in both the old and new tours: a fade frame, not a crash.)
 - **Waiting on the user:** nothing. (Title logo kept Japanese per D5: no official English logo exists.)
