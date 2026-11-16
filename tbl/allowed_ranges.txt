@@ -1,0 +1,50 @@
+# Where build.py may write, besides text (tools/romgate.py checks text writes structurally: a string or script
+# only inside its own room or in free space, a pointer write only on a pointer word the extractor found).
+# One range per line: LO-HI (inclusive, hex file offsets) # reason. A write outside every range fails the gate.
+#
+# Free space past the 8 MiB original (relocated text, VWF code + width tables, JP copy of techniques_b)
+800000-FFFFFF   # FREE in build.py
+#
+# Fonts (tools/enfont.py, tools/ensmall.py): English glyphs over fullwidth Shift-JIS codes
+1B4F74-1BB673   # 16x16 dialogue font, glyphs of the 93 English codes
+1B1F94-1B3953   # 8x8 small font (resource type 12), glyphs of the English codes
+#
+# Speaker plate widened (vwf.plate_frame, docs/re/font.md "Speaker plate widened")
+171E8C-17202B   # plate BG tiles 1..13: banded fill
+19DE66-19DE75   # plate BG map 1, top row 8 columns
+19DEA2-19DEB9   # plate BG map 1, bottom row
+19E1EA-19E1F9   # plate BG map 2, top row
+19E226-19E23D   # plate BG map 2, bottom row
+3E799C-3E799D   # plate sprite cell 2 part 2 shape 8x8 -> 32x8
+#
+# Code hooks (tools/vwf.py): each one replaces the head of a routine it takes over, or one literal / immediate
+# `code` = a span of replaced instructions: romgate fails if any branch or literal lands strictly inside it.
+0029F0-002A17   # code: window glyph routine 0x080029F0 thunk + odd-x halfword 0x08002A16 (WIN_SRC)
+002F68-002F87   # code: thunk wrapper + string thunk
+002FFE-003027   # code: x/y from VWF state
+014098-0140A7   # code: strip thunk: OBJ menu cells 0x08014098
+014526-014529   # string drawer -> thunk
+01ED64-01ED83   # code: speaker plate loop 0x0801EC54 -> plate (pixel centring); dead=01ED64-01EE29 (the replaced 5-tile loop: its back-edge 0x0801EE28) dead=01ECE6-01ECFF (literal pool after `b 0x0801EE74`, decodes as a branch)
+0235D4-0235E3   # code: strip thunk: intro scroll
+023E3C-023E4B   # code: strip thunk: credits
+02DD36-02DD37   # newline index
+03A0A4-03A0B3   # code: smapline thunk: name-entry small label
+03A168-03A187   # code: map-line 0x0803A168 strip thunk + gridline thunk in its body
+03A85C-03A85D   # default player name copy: 2 -> 5 halfwords
+03AEB2-03AEB5   # name-entry grid rows -> gridline
+10971C-10971F   # literal: techniques_b reader -> JP copy (build.py JP_COPIES)
+10F98A-10F98D   # tag centring by pixel width
+10F9DC-10F9DF   # battle name tag tile literal 0x3DB -> 0x3D3 (vwf.tag_tiles; 6 literals, also 115754 ...)
+115754-115757   # tag tile literal
+1157DC-1157DF   # tag tile literal
+115E50-115E53   # tag tile literal
+1162F4-1162F7   # tag tile literal
+1156EA-1156ED   # tag fill: resource 2 -> fill7 (4 call sites)
+115772-115775   # tag fill
+115DE6-115DE9   # tag fill
+116296-116299   # tag fill
+110AE8-110AF7   # code: smapline thunk: small-font BG labels 0x08110AE8
+110BAC-110BBB   # code: strip thunk: battle results 0x08110BAC
+110C88-110C97   # code: strip thunk: battle text rows 0x08110C88
+111B50-111B7F   # code: tag thunk 0x08111B50 + tagw + fill7 thunks in the replaced body; dead=111B50-111C07 (the replaced routine's own loop)
+120A80-120A83   # battle name tag tile literal (last of the 6)
