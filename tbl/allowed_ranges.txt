@@ -81,6 +81,8 @@
 224A34-224BF3   # gfx: title menu button Continue
 224BF4-224DB3   # gfx: title menu button Link
 3B4D40-3B520B   # gfx: Yes/No buttons, two LZ77 blocks (No / Yes selected) rewritten in place (tools/gfx.py)
+22B6B4-22C433   # gfx: battle attack-tier plates 攻撃1 攻撃2 必殺技1 必殺技2 超必殺技 超絶必殺技 (6 raw 72x16)
+3856CC-3858CB   # gfx: 攻撃ボーナス plate (raw 64x16)
 22C434-22CE33   # gfx: battle command wheel 攻 防 逃 覧 替 (5 raw 32x32 sprites)
 3858CC-3862CB   # gfx: field ring menu 能 図 替 覧 記 (5 raw 32x32 sprites)
 384A8C-384E8B   # gfx: guard emblem 防 (2 raw 32x32 animation frames)

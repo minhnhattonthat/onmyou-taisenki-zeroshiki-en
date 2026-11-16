@@ -218,6 +218,24 @@ def party_card(px):
             x += len(CARD_FONT[c][0]) + 1
 
 
+PLATE = [(0, 0, 4, 2), (32, 0, 4, 2), (64, 0, 1, 2)]   # 32x16 + 32x16 + 8x16 = 72x16
+
+
+def attack_plate(text, x1=70):
+    """Battle attack-tier plate (top left while the 印 panel is up; raw 0x22B6B4 + 0x240 k: 攻撃1 攻撃2 必殺技1
+    必殺技2 超必殺技 超絶必殺技): frame 4/F/1/2, interior x 2..x1-1 rows 2..12 in a row gradient (1, 2 2, 3 x5,
+    4 x3), text 9 outlined 4. English in the big font when it fits, else the small font. The 64x16 攻撃ボーナス
+    plate (x1 = 62) is drawn the same way."""
+    def draw(px):
+        for y in range(2, 13):
+            bg = px[y][2]
+            for x in range(2, x1):
+                px[y][x] = bg
+        big = enfont.text_width(text) - enfont.SPACING + 2 <= x1 - 2
+        letter(px, text, 2, x1, 3 if big else 4, ink=9, shadow=4, outline=True, font="big" if big else "small")
+    return draw
+
+
 LABELS = {
     # name: (where, offset, parts, draw)   where = "raw" (ROM offset) or "lz" (LZ77 block offset, tile offset in it)
     "title_new": ("raw", 0x224874, BUTTON, title_button("New Game")),
@@ -239,6 +257,15 @@ LABELS = {
     "ring_list": ("raw", 0x385ECC, SPR32, wheel("List")),
     "ring_save": ("raw", 0x3860CC, SPR32, wheel("Save")),
     "party_card": ("lz", (0x3B577C, 0), [(0, 0, 8, 8)], party_card),
+    # str_system 1293B0.. uses "Special move 1" / "Super special" / "Ultimate special" in text; plates title-case
+    "plate_attack1": ("raw", 0x22B6B4, PLATE, attack_plate("Attack 1")),
+    "plate_attack2": ("raw", 0x22B8F4, PLATE, attack_plate("Attack 2")),
+    "plate_special1": ("raw", 0x22BB34, PLATE, attack_plate("Special 1")),
+    "plate_special2": ("raw", 0x22BD74, PLATE, attack_plate("Special 2")),
+    "plate_super": ("raw", 0x22BFB4, PLATE, attack_plate("Super Special")),
+    "plate_ultimate": ("raw", 0x22C1F4, PLATE, attack_plate("Ultimate Special")),
+    # bottom left after a sealed attack, over "x 150%" (two 32x16 OBJs; the field strip shows it red, pal 15)
+    "plate_bonus": ("raw", 0x3856CC, [(0, 0, 4, 2), (32, 0, 4, 2)], attack_plate("Attack Bonus", 62)),
     "guard_emblem": ("raw", 0x384A8C, SPR32, guard_emblem),
     "guard_emblem_b": ("raw", 0x384C8C, SPR32, guard_emblem),
 }
