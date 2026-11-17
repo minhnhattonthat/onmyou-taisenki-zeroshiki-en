@@ -230,3 +230,12 @@ English had a 2..15 px gap ("Silver  clan", "Byakko-  Kogenta"). `vwf.join_patch
 (after the number fix, 0x08110BEC), which copies the strings into one stack line and draws it; the later calls are
 `movs r0, #0; nop`. Strings are read through the game's own literal words (0x08036210, 0x08035C9C, 0x08035CA0), so
 relocation still works. Shot: work/qa/join/sheet.png.
+
+## Split OBJ strings (session 35)
+
+The reverse case: Sotaro's notebook (top state 78/79, 0x08028320; script op `/231`; warp `note`) draws its four
+topic labels as ONE string, 129064 式神　闘い方印入力勝敗　, with one 0x08014098 call (0x08028674, tile 0x136, 12
+cells), and the OAM shows cells 3k..3k+2 (48 px) as row k. One continuous VWF line cut the English at 48 px
+("Shikigami S" / "tyle Seals" / "W/L", a player report). `vwf.cols_patch`: that call goes to `cols` (0x08110C98,
+the dead body of 0x08110C88), which draws each `\n`-separated segment with its own 0x08014098 call at tile
+0x136 + 12k. Variant `note_topics` (48 px per row, 4 rows). Shot: work/qa/note/final/final.png.

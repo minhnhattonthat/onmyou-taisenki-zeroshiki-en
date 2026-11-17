@@ -22,6 +22,13 @@ Updated at the end of every session. Keep it to what the next session needs; his
   the logo (build **59eee76f**, patch sha1 e06c91a0…, zip 234,227 bytes); the visual-QA manifest was waived for
   59eee76f (only bytes 0x3B773A..0x3BDC04 differ from the toured 3dd8d287). **Published** as GitHub release v1.0
   (tag on fbcde3b); repo made public by the owner's request the same session.
+  **Session 35 (after v1.0, player screenshot):** Sotaro's notebook still had Japanese and broken labels
+  ("Shikigami S" / "tyle Seals" / "W/L"). Topic labels 129064 are one string cut into 48 px rows by the OAM →
+  `vwf.cols_patch` draws each `\n` segment in its own row (docs/re/font.md "Split OBJ strings"); en "Shikigami /
+  Combat / Hand Seals / Win/Loss". Header tab ソウタロウノート and the B-button 閉じる plate redrawn
+  (`gfx.note_header` SOTARO'S NOTES, `gfx.note_close` Close; docs/re/graphics.md). New warps `note`, `note_close`
+  (script op /231). Build **36525b05**, smoke ok, shot work/qa/note/final/final.png. Not yet released: v1.0 still
+  has the bug; a v1.1 patch needs `tools/release.py` (owner's call).
 - **Done:**
   - Step 0: ROM pinned (`rom.sha1`), MesenCE 2.2.1 + GBA BIOS in `tools/mesen/`, guard hook in `.claude/settings.json`
     (canary blocked), pre-commit runs `tools/check.py` (a failing test was rejected), boot route `tools/routes/boot.txt`
@@ -370,8 +377,9 @@ Updated at the end of every session. Keep it to what the next session needs; his
   20); run `<skill>/scripts/inkbox.py` on every choice box and centred menu box in tour11's shots (Yes/No, title
   menu, Save/Load headers, ring labels, speaker plate, battle tag) and record the results.
   Still unseen in a shot (add scenes): the party Swap label 1292CC, the
-  non-battle right speaker plate (map 0x19E0BC: an event with a right-hand speaker), the 129064 column header
-  row, the centred tutorial-help headers 410AE4.. (session 19 changed them; find when the battle shows them).
+  non-battle right speaker plate (map 0x19E0BC: an event with a right-hand speaker), the centred tutorial-help
+  headers 410AE4.. (session 19 changed them; find when the battle shows them). (129064 was the notebook topic
+  list: fixed session 35.)
   Review minors left: pass `--known tbl/jp_known.txt` to jp_left.py in the release script; D10 "Shiki Pts" → "Shiki Points" via OBJ VWF.
   Translator notes to carry into the briefs: the check wants the exact `{0000}`/`{0010}` counts of the JP and a
   glossary term must not be split across a `{0000}` ("Spirit{0000}Stone Mound" fails); gaiji readings are in the

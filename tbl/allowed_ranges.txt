@@ -94,6 +94,11 @@
 035C60-035C63   # join: header kind + - + name
 035C74-035C77   # join: header - call off
 035C8C-035C8F   # join: header name call off
+# Sotaro's notebook topic labels 129064: one 0x08014098 call per \n segment, 3 OBJ cells per row (vwf.cols_patch)
+110C98-110CDB   # code: cols routine in the replaced body of 0x08110C88; dead=110C98-110D4F (that routine's own body)
+028674-028677   # cols: bl 0x08014098 -> cols
+3BDC34-3BE833   # gfx: notebook frame header tab ソウタロウノート (raw 64x64 + 32x64, tools/gfx.py note_header)
+3BEF34-3BF353   # gfx: notebook B-button 閉じる plate (raw 88x24, 33 tiles, tools/gfx.py note_close)
 111B50-111BCF   # code: tag thunk 0x08111B50 + tagw + fill7 + pname + ctile + o8 thunks + Swap list tile fn (0x08111BB0) in the replaced body; dead=111B50-111C07 (the replaced routine's own loop)
 120A80-120A83   # battle name tag tile literal (last of the 6)
 224874-224A33   # gfx: title menu button New Game (14 raw tiles, tools/gfx.py)

@@ -38,6 +38,8 @@ Phase 5's marker build re-checks this list: any Japanese still on screen there t
 | 攻撃ボーナス plate | raw 0x3856CC, 64x16 | Attack Bonus |
 | Party card stats HP 攻 妖 (the "slot frames with small kanji") | lz 0x3B577C (moved to free space: recompressed 516 > 488 bytes; pointer 0x403CCC) | HP / ATK / POW, label boxes widened |
 | Battle stat-change icons 運 妖 攻 防 早 護 (16x16 OBJ, pal 10, over a shikigami with an up/down arrow sprite below; found by vqa session 32 in work/qa/frag2 lab_1068_60 / lab_1360_40) | raw 0x256734 + 0x80 k (skulls ×3, down arrows ×3, 運, up arrows ×3, 妖 攻 防 早 護, feathers); 運 0x256A34, 妖..護 0x256C34.. | LUK POW ATK DEF SPD GRD plates (`gfx.stat_icon`: signs.MICRO caps at double height, outline 3, fill 5, body F/E/D); shot work/qa/icon_en/cmp.png |
+| Sotaro's notebook header tab ソウタロウノート (session 35, player report; warp `note`) | raw 0x3BDC34, frame OBJs 64x64 + 32x64 at (72,20)/(136,20), pal 11; text rows 8..12, x 8..65 | SOTARO'S NOTES (signs.MICRO 3x5 caps + apostrophe, ink F, shadow 6), `gfx.note_header` |
+| Notebook B-button plate 閉じる (warp `note_close`: two B presses dismiss Sotaro, then it shows bottom left) | raw 0x3BEF34, 88x24 = 32x16 32x16 16x16 8x16 + a 32x8 32x8 16x8 8x8 row (33 tiles, OBJ tiles 0x166..) | Close (big font, ink E outlined 1), `gfx.note_close` |
 | Title copyright notice, battle SFX kana | not located / not redrawn | kept Japanese (D12) |
 
 ## Mid-game screens not yet seen (warp to each with the debug tool, phase 2/8)

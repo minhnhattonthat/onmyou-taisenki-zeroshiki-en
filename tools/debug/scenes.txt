@@ -22,6 +22,11 @@ intro_scroll   boot  press=600:-|6:start|150:-|6:start|150:-|6:a|400:-|6:start|2
 intro_event    boot  press=600:-|6:start|150:-|6:start|150:-|6:a|400:-|6:start|200:-|6:left|20:-|6:a|1200:- hold=300
 tutorial_battle boot press=600:-|6:start|150:-|6:start|150:-|6:a|400:-|6:start|200:-|6:left|20:-|6:a|400:- until_op=035 hold=900 frames=45000 deadline=44000
 credits        top   63                                                                    mash=0 hold=900
+# Sotaro's notebook: script op /231 (prologue 1004 after "It's Grandpa's notebook."); top state 78 init / 79 loop
+# 0x08028320. Topic labels = one string 129064, 3 OBJ cells (48 px) per row; header tab + Close button are art
+# (gfx note_header / note_close). Two B presses dismiss Sotaro's intro line, then the B-button Close plate shows.
+note           raw   /231                                                                  mash=0 hold=300
+note_close     raw   /231  press=200:-|6:b|200:-|6:b|200:-                                 mash=0 hold=300
 
 # --- field and menus
 field_house    field 23                                                                     mash=0 hold=300

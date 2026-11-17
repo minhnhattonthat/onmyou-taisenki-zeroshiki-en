@@ -1517,6 +1517,7 @@ def install(img, write):
     swap_list(img, write)
     num_patch(orig, write)
     join_patch(orig, write)
+    cols_patch(orig, write)
     return far
 
 
@@ -1752,6 +1753,59 @@ def join_patch(orig, write):
         for off in later:
             assert orig[off:off + 4] == bl(0x08000000 | off, 0x08014098), f"vwf: join call moved at {off:06X}"
             write(off, b"\x00\x20\xc0\x46", f"vwf join: {why} (drawn by join)")
+
+
+# Sotaro's notebook (top state 78, 0x08028320; warp `note`): the four topic labels are ONE string, 129064
+# 式神　闘い方印入力勝敗　, drawn by 0x08014098 into 12 OBJ cells from tile 0x136; the OAM shows cells 3k..3k+2 (48 px)
+# as row k. One continuous VWF line split the English across the rows ("Shikigami S" / "tyle Seals"). `cols` draws
+# each newline-separated segment of the string as its own 0x08014098 call at tile 0x136 + 12k (3 cells of 4 tiles).
+COLS_FN = 0x08110C98     # in the dead body of 0x08110C88, after its strip thunk (the body runs to 0x08110D50)
+COLS_CALL = 0x028674     # the bl 0x08014098 after `ldr r0, =0x08129064; movs r1, #0x136; movs r2, #16; movs r3, #0`
+COLS_SRC = """
+cols:   push {{r4, r5, r6, lr}}
+        sub sp, #44
+        adds r4, r0, #0
+        adds r5, r1, #0
+seg:    add r2, sp, #4
+cp:     ldrb r3, [r4]
+        cmp r3, #0
+        beq put_e
+        ldrb r6, [r4, #1]
+        adds r4, #2
+        cmp r3, #0x81
+        bne put
+        cmp r6, #0xad
+        beq put_e
+put:    strb r3, [r2]
+        strb r6, [r2, #1]
+        adds r2, #2
+        b cp
+put_e:  movs r3, #0
+        strb r3, [r2]
+        str r3, [sp]
+        add r0, sp, #4
+        adds r1, r5, #0
+        movs r2, #16
+        bl {menu:#x}
+        adds r5, #12
+        ldrb r3, [r4]
+        cmp r3, #0
+        bne seg
+        add sp, #44
+        pop {{r4, r5, r6}}
+        pop {{r1}}
+        bx r1
+"""
+
+
+def cols_patch(orig, write):
+    code = _asm(COLS_SRC.format(menu=0x08014098), COLS_FN)
+    assert COLS_FN + len(code) <= 0x08110D50, "vwf: cols routine overruns the dead body"
+    write(COLS_FN & 0xFFFFFF, code, "vwf cols (notebook topic labels, one 3-cell row each)")
+    assert orig[COLS_CALL - 14:COLS_CALL] == bytes.fromhex("3a489b2149000025009510220023"), \
+        "vwf: cols call site moved"
+    assert orig[COLS_CALL:COLS_CALL + 4] == bl(0x08000000 | COLS_CALL, 0x08014098), "vwf: cols call moved"
+    write(COLS_CALL, bl(0x08000000 | COLS_CALL, COLS_FN), "vwf cols: notebook topic labels 129064")
 
 
 def small_glyph_offset(rom, code):

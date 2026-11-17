@@ -319,6 +319,55 @@ def stat_icon(text):
     return draw
 
 
+NOTE_FRAME = [(0, 0, 8, 8), (64, 0, 4, 8)]           # notebook frame: 64x64 + 32x64 OBJs at (72, 20) / (136, 20)
+NOTE_CLOSE = [(0, 0, 4, 2), (32, 0, 4, 2), (64, 0, 2, 2), (80, 0, 1, 2),
+              (0, 16, 4, 1), (32, 16, 4, 1), (64, 16, 2, 1), (80, 16, 1, 1)]   # 88x24 B-button plate, 33 tiles
+
+
+def note_header(text):
+    """Sotaro's notebook frame (raw 0x3BDC34, pal 11; warp `note`): the tab reads ソウタロウノート in 5-row katakana,
+    ink F with a shadow 6 below and below-right, on rows 8..12 striped 4 (even) / 2 (odd), x 8..65. English: the
+    same 5 rows in signs.MICRO 3x5 caps (+ an apostrophe), same ink and shadow."""
+    import signs   # signs imports gfx
+
+    def draw(px):
+        glyphs = dict(signs.MICRO, **{"'": ".#.|.#.|...|...|..."})
+        for y in range(8, 13):
+            bg = px[y][8]
+            for x in range(8, 66):
+                px[y][x] = bg
+        w = 4 * len(text) - 1
+        x = 8 + (58 - w) // 2
+        assert x >= 8, f"gfx note_header: {text!r} is {w} px, room 58"
+        body = set()
+        for ch in text:
+            if ch != " ":
+                for dy, row in enumerate(glyphs[ch].split("|")):
+                    body |= {(x + dx, 8 + dy) for dx, c in enumerate(row) if c == "#"}
+            x += 4
+        for bx, by in body:
+            for p in ((bx, by + 1), (bx + 1, by + 1)):
+                if p not in body:
+                    px[p[1]][p[0]] = 6
+        for bx, by in body:
+            px[by][bx] = 0xF
+    return draw
+
+
+def note_close(text):
+    """Notebook B-button plate (raw 0x3BEF34, pal 11, 88x24): B icon x 3..24, then 閉じる in ink 1 outlined E over
+    rows 4..18 of the fill (4 4, 5 x11, 2, 4 by row). The kanji go to the row's fill (x 25..78, the right cap from
+    x 79 stays), English in the big font, ink E outlined 1 as the JP."""
+    def draw(px):
+        for y in range(4, 19):
+            bg = px[y][26]
+            for x in range(25, 79):
+                if px[y][x] in (1, 0xE):
+                    px[y][x] = bg
+        letter(px, text, 25, 79, 7, ink=0xE, shadow=1, outline=True, font="big")
+    return draw
+
+
 LABELS = {
     # name: (where, offset, parts, draw)   where = "raw" (ROM offset) or "lz" (LZ77 block offset, tile offset in it)
     "title_new": ("raw", 0x224874, BUTTON, title_button("New Game")),
@@ -370,6 +419,9 @@ LABELS = {
     "stat_defense": ("raw", 0x256D34, [(0, 0, 2, 2)], stat_icon("DEF")),
     "stat_speed": ("raw", 0x256DB4, [(0, 0, 2, 2)], stat_icon("SPD")),
     "stat_guard": ("raw", 0x256E34, [(0, 0, 2, 2)], stat_icon("GRD")),
+    # Sotaro's notebook (glossary ソウタロウ = Sotaro): header tab ソウタロウノート and the B-button 閉じる plate
+    "note_header": ("raw", 0x3BDC34, NOTE_FRAME, note_header("SOTARO'S NOTES")),
+    "note_close": ("raw", 0x3BEF34, NOTE_CLOSE, note_close("Close")),
 }
 
 
