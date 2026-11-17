@@ -142,6 +142,13 @@ def text_runs(off, toks, at, new_toks):
     return out
 
 
+# Strings that grew after a release: {id: bytes its moved copy took in that release's free space}. The old slot is
+# kept as a hole (0xFF) and the string is placed after everything else, so every other address stays as released:
+# the hotfix patch stays small and text-coverage logs (matched by address, build/strings.tsv) stay valid.
+# 129064 (notebook topics, v1.1): v1.0 "Shikigami Style  Seals  W/L" = 54 bytes + NUL, padded to 56.
+LATE = {0x129064: 56}
+
+
 def build(orig, relocate=False, scripts=None, strings=None, engine=False, layout=None):
     """Return (rom bytes, write log). scripts/strings: optional {offset: tokens} / {offset: bytes} overrides.
     engine: install the English font + VWF (off for the identity tests). layout: a list to receive
@@ -162,14 +169,22 @@ def build(orig, relocate=False, scripts=None, strings=None, engine=False, layout
                    relocate, evscript.PINNED.get(off, ()))
         img.layout += text_runs(off, toks, at, new_toks)
     st = strtab.Strings(orig)
+    late = []
     for off, raw in sorted(st.strings.items()):
         raw = (strings or {}).get(off, raw)
+        if engine and not relocate and off in LATE and len(raw) + 1 > LATE[off]:
+            img.alloc(LATE[off])  # the released slot, left as a hole
+            late.append((off, raw))
+            continue
         img.layout.append((off, place(img, off, raw + b"\0", st.room[off], st.refs[off], f"string {off:06X}",
                                       relocate)))
     if engine:
         # last, so a tileset that has to move takes free space after every string (string addresses stay put)
         signs.install(img, img.write)
         cutin.install(img, img.write)
+    for off, raw in late:
+        img.layout.append((off, place(img, off, raw + b"\0", st.room[off], st.refs[off], f"string {off:06X}",
+                                      relocate)))
     if len(img.buf) > len(orig):  # grow to a whole MiB, 0xFF filled
         img.buf += b"\xff" * ((-len(img.buf)) % 0x100000)
     return bytes(img.buf), img.log

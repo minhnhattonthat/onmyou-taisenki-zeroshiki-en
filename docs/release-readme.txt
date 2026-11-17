@@ -33,6 +33,13 @@ What is translated
 - Left in Japanese on purpose: the title screen's copyright notice, the kana sound effects drawn over battle
   hits, and the kana tab of the name-entry grid.
 
+Changes
+-------
+v1.1  Sotaro's Notebook (the battle tutorial menu): the topic labels were cut off across rows ("Shikigami S",
+      "tyle Seals"); they now read Shikigami / Combat / Hand Seals / Win/Loss. The notebook's header tab and its
+      B-button Close plate were still Japanese art; both are redrawn in English.
+v1.0  First release.
+
 Known issues
 ------------
 - The link-cable (two-player) menus are translated but were not tested with a second console.

@@ -27,8 +27,12 @@ Updated at the end of every session. Keep it to what the next session needs; his
   `vwf.cols_patch` draws each `\n` segment in its own row (docs/re/font.md "Split OBJ strings"); en "Shikigami /
   Combat / Hand Seals / Win/Loss". Header tab ソウタロウノート and the B-button 閉じる plate redrawn
   (`gfx.note_header` SOTARO'S NOTES, `gfx.note_close` Close; docs/re/graphics.md). New warps `note`, `note_close`
-  (script op /231). Build **36525b05**, smoke ok, shot work/qa/note/final/final.png. Not yet released: v1.0 still
-  has the bug; a v1.1 patch needs `tools/release.py` (owner's call).
+  (script op /231). **v1.1 released** (owner's request): `build.LATE` keeps 129064's v1.0 slot (0x876404, 56 bytes)
+  as a hole and places the longer string after everything else, so no other address moved (vs v1.0 only the
+  notebook bytes differ; the first try, 36525b05, shifted every later relocated string and broke the address-matched
+  coverage logs). Build **5fa1dce3**, patch sha1 1071701d…, result CRC32 387F61DC, zip 234,839 bytes; visual-QA
+  manifest waived for 5fa1dce3 with that evidence; cover report 4562/5185, 623 waived, 0 failing (notebook log
+  work/qa/cover/s35_note). Zip README has a Changes section (docs/release-readme.txt).
 - **Done:**
   - Step 0: ROM pinned (`rom.sha1`), MesenCE 2.2.1 + GBA BIOS in `tools/mesen/`, guard hook in `.claude/settings.json`
     (canary blocked), pre-commit runs `tools/check.py` (a failing test was rejected), boot route `tools/routes/boot.txt`
