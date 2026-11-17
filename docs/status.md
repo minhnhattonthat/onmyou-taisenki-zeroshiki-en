@@ -376,10 +376,13 @@ Updated at the end of every session. Keep it to what the next session needs; his
   found); credits are font text (credits sheet ok). **inkbox.py**: only the Yes/No buttons were checked (session
   20); run `<skill>/scripts/inkbox.py` on every choice box and centred menu box in tour11's shots (Yes/No, title
   menu, Save/Load headers, ring labels, speaker plate, battle tag) and record the results.
-  Still unseen in a shot (add scenes): the party Swap label 1292CC, the
-  non-battle right speaker plate (map 0x19E0BC: an event with a right-hand speaker), the centred tutorial-help
-  headers 410AE4.. (session 19 changed them; find when the battle shows them). (129064 was the notebook topic
-  list: fixed session 35.)
+  Session 35 checked the unseen list: tutorial-help headers 410AE4.. now have warps `battle_help_swap/list/run/
+  guard/attack` (all five English, header centred; work/qa/warp/scenes_s35.png). 129064 = the notebook topics
+  (fixed). Still not seen on screen, nothing more to do unless a player reports it: the party Swap label 1292CC
+  (drawn at party init 0x08030C7C, then its sprite is hidden by 0x080325A8; VRAM tiles 0x2EE.. hold a centred
+  English "Swap" in menu_party and menu_party_swap, work/qa/swap; A or R in the swap list doesn't show it) and the
+  non-battle right speaker plate map 0x19E0BC (`tools/debug/mapreads.lua` on its top row over 20 story states x
+  4000 mashed frames: no reads; the battle only reads its lower rows; copied by 0x08006EC8, lr 0x08006967).
   Review minors left: pass `--known tbl/jp_known.txt` to jp_left.py in the release script; D10 "Shiki Pts" → "Shiki Points" via OBJ VWF.
   Translator notes to carry into the briefs: the check wants the exact `{0000}`/`{0010}` counts of the JP and a
   glossary term must not be split across a `{0000}` ("Spirit{0000}Stone Mound" fails); gaiji readings are in the

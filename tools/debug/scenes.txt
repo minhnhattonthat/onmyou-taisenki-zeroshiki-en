@@ -56,6 +56,14 @@ shikigami_talk field 23  flags=0,1,2,21,22,23,24,28 press=6:l|200:-             
 battle_forest  raw   /0350110000800060000  until_op=035                                     mash=0 hold=900
 battle_win     raw   /0350110000800060000  until_op=035                                     hold=3000
 battle_lose    raw   /0350110000800060000  until_op=035  poke=0x02019938:1                  hold=480
+# battle help rows (str_tutorial_help 410AE4..; header centred over the body): RIGHT turns the command ring
+# Attack -> Swap -> List -> Run -> Guard -> Attack, each turn types that row out. 1200 frames idle first (Kogenta's
+# opening line); Attack needs a full turn because the first row shown is under that line.
+battle_help_swap   raw /0350110000800060000 until_op=035 press=1200:-|10:right|250:-|300:- mash=0 hold=1
+battle_help_list   raw /0350110000800060000 until_op=035 press=1200:-|10:right|250:-|10:right|250:-|300:- mash=0 hold=1
+battle_help_run    raw /0350110000800060000 until_op=035 press=1200:-|10:right|250:-|10:right|250:-|10:right|250:-|300:- mash=0 hold=1
+battle_help_guard  raw /0350110000800060000 until_op=035 press=1200:-|10:right|250:-|10:right|250:-|10:right|250:-|10:right|250:-|300:- mash=0 hold=1
+battle_help_attack raw /0350110000800060000 until_op=035 press=1200:-|10:right|250:-|10:right|250:-|10:right|250:-|10:right|250:-|10:right|250:-|300:- mash=0 hold=1
 
 # --- story events, one per chapter group (opening script of each id block)
 prologue_morning script 1004

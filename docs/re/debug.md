@@ -17,7 +17,11 @@ Scene list and syntax: `tools/debug/scenes.txt`. Script ids: `tools/script_index
 - Field = mode 2 (`0x02005074`). Event scenes: after 60 field frames write **0x020037BE = script id** and
   **mode = 8**: the field's own "run script [0x37BE]" state (0x0800FBF4), the same path the game uses.
 - Credits: top-level state byte **0x03003523** = 63 at the title (3) runs the staff credits (0x08023680, table
-  0x08128CF8). 59..61 = intro scroll (0x08022F98). 62 = new-game intro.
+  0x08128CF8). 59..61 = intro scroll (0x08022F98). 62 = new-game intro. 78/79 = Sotaro's notebook (0x08028320),
+  but `top 78` from the title ignores input: open it with the script op `/231` (scene `note`, raw kind) instead.
+- Battle help rows: battle_forest + RIGHT presses turn the command ring (scenes `battle_help_*`).
+- `tools/debug/mapreads.lua` (LO, HI): first read per 0x40 block with PC and LR + a shot; for data copied by a
+  shared routine, LR names the caller.
 - Battles: injected `/035...` (args copied from a story battle) starts a battle from the field.
 
 ## RAM and code map
